@@ -1,0 +1,37 @@
+{
+  "name": "ipah",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node --max-old-space-size=4096 node_modules/nuxt/bin/nuxt.js",
+    "build": "node --max-old-space-size=4096 node_modules/nuxt/bin/nuxt.js build",
+    "start": "node --max-old-space-size=4096 node_modules/nuxt/bin/nuxt.js start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/auth": "^4.9.1",
+    "@nuxtjs/axios": "^5.12.2",
+    "ant-design-vue": "^1.7.7",
+    "bcrypt": "^5.0.1",
+    "core-js": "^3.6.5",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "echarts": "^4.9.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mqtt": "^4.2.8",
+    "mysql": "^2.18.1",
+    "nuxt": "^2.14.6",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "v-calendar": "^2.3.2",
+    "vue-slick-carousel": "^1.0.6",
+    "vue2-timepicker": "^1.1.6"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.11.2"
+  }
+}

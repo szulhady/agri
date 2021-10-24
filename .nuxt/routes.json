@@ -1,0 +1,163 @@
+[
+  {
+    "name": "adminStatus",
+    "path": "/adminStatus",
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\IPAH\\\\ipahAuth - Copy\\\\pages\\\\adminStatus.vue",
+    "chunkName": "pages/adminStatus",
+    "_name": "_00378620"
+  },
+  {
+    "name": "control",
+    "path": "/control",
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\IPAH\\\\ipahAuth - Copy\\\\pages\\\\control.vue",
+    "chunkName": "pages/control",
+    "_name": "_42dbcfac"
+  },
+  {
+    "name": "current",
+    "path": "/current",
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\IPAH\\\\ipahAuth - Copy\\\\pages\\\\current.vue",
+    "chunkName": "pages/current",
+    "_name": "_66228c70"
+  },
+  {
+    "name": "detail",
+    "path": "/detail",
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\IPAH\\\\ipahAuth - Copy\\\\pages\\\\detail.vue",
+    "chunkName": "pages/detail",
+    "_name": "_64866952"
+  },
+  {
+    "name": "general",
+    "path": "/general",
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\IPAH\\\\ipahAuth - Copy\\\\pages\\\\general.vue",
+    "chunkName": "pages/general",
+    "_name": "_450a9492"
+  },
+  {
+    "name": "inspire",
+    "path": "/inspire",
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\IPAH\\\\ipahAuth - Copy\\\\pages\\\\inspire.vue",
+    "chunkName": "pages/inspire",
+    "_name": "_3a63d6a9"
+  },
+  {
+    "name": "ipah2Status",
+    "path": "/ipah2Status",
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\IPAH\\\\ipahAuth - Copy\\\\pages\\\\ipah2Status.vue",
+    "chunkName": "pages/ipah2Status",
+    "_name": "_49b529c5"
+  },
+  {
+    "name": "ipahStatus",
+    "path": "/ipahStatus",
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\IPAH\\\\ipahAuth - Copy\\\\pages\\\\ipahStatus.vue",
+    "chunkName": "pages/ipahStatus",
+    "_name": "_d9170bbe"
+  },
+  {
+    "name": "kongPoStatus",
+    "path": "/kongPoStatus",
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\IPAH\\\\ipahAuth - Copy\\\\pages\\\\kongPoStatus.vue",
+    "chunkName": "pages/kongPoStatus",
+    "_name": "_a03a2062"
+  },
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\IPAH\\\\ipahAuth - Copy\\\\pages\\\\login.vue",
+    "chunkName": "pages/login",
+    "_name": "_22d29578"
+  },
+  {
+    "name": "overview-admin",
+    "path": "/overview-admin",
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\IPAH\\\\ipahAuth - Copy\\\\pages\\\\overview-admin.vue",
+    "chunkName": "pages/overview-admin",
+    "_name": "_51e9b8fc"
+  },
+  {
+    "name": "register",
+    "path": "/register",
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\IPAH\\\\ipahAuth - Copy\\\\pages\\\\register.vue",
+    "chunkName": "pages/register",
+    "_name": "_1630f064"
+  },
+  {
+    "name": "scheduleIpah1",
+    "path": "/scheduleIpah1",
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\IPAH\\\\ipahAuth - Copy\\\\pages\\\\scheduleIpah1.vue",
+    "chunkName": "pages/scheduleIpah1",
+    "_name": "_a04b80ca"
+  },
+  {
+    "name": "scheduleIpah2",
+    "path": "/scheduleIpah2",
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\IPAH\\\\ipahAuth - Copy\\\\pages\\\\scheduleIpah2.vue",
+    "chunkName": "pages/scheduleIpah2",
+    "_name": "_a02f51c8"
+  },
+  {
+    "name": "scheduleKongPo",
+    "path": "/scheduleKongPo",
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\IPAH\\\\ipahAuth - Copy\\\\pages\\\\scheduleKongPo.vue",
+    "chunkName": "pages/scheduleKongPo",
+    "_name": "_2cc29d18"
+  },
+  {
+    "name": "scheduleTkpmPagoh",
+    "path": "/scheduleTkpmPagoh",
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\IPAH\\\\ipahAuth - Copy\\\\pages\\\\scheduleTkpmPagoh.vue",
+    "chunkName": "pages/scheduleTkpmPagoh",
+    "_name": "_6454f85a"
+  },
+  {
+    "name": "tkpmPagohStatus",
+    "path": "/tkpmPagohStatus",
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\IPAH\\\\ipahAuth - Copy\\\\pages\\\\tkpmPagohStatus.vue",
+    "chunkName": "pages/tkpmPagohStatus",
+    "_name": "_76b48dbc"
+  },
+  {
+    "name": "trendsIpah1",
+    "path": "/trendsIpah1",
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\IPAH\\\\ipahAuth - Copy\\\\pages\\\\trendsIpah1.vue",
+    "chunkName": "pages/trendsIpah1",
+    "_name": "_d08e4748"
+  },
+  {
+    "name": "trendsIpah2",
+    "path": "/trendsIpah2",
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\IPAH\\\\ipahAuth - Copy\\\\pages\\\\trendsIpah2.vue",
+    "chunkName": "pages/trendsIpah2",
+    "_name": "_d0721846"
+  },
+  {
+    "name": "trendsKongPo",
+    "path": "/trendsKongPo",
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\IPAH\\\\ipahAuth - Copy\\\\pages\\\\trendsKongPo.vue",
+    "chunkName": "pages/trendsKongPo",
+    "_name": "_04d8a65a"
+  },
+  {
+    "name": "trendsTkpmPagoh",
+    "path": "/trendsTkpmPagoh",
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\IPAH\\\\ipahAuth - Copy\\\\pages\\\\trendsTkpmPagoh.vue",
+    "chunkName": "pages/trendsTkpmPagoh",
+    "_name": "_37a5d814"
+  },
+  {
+    "name": "user",
+    "path": "/user",
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\IPAH\\\\ipahAuth - Copy\\\\pages\\\\user.vue",
+    "chunkName": "pages/user",
+    "_name": "_2e49960c"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\IPAH\\\\ipahAuth - Copy\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_592af261"
+  }
+]

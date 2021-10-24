@@ -1,0 +1,155 @@
+{
+  "CardTitle": {
+    "description": "Auto imported from components/CardTitle.vue"
+  },
+  "Duration": {
+    "description": "Auto imported from components/Duration.vue"
+  },
+  "Logo": {
+    "description": "Auto imported from components/Logo.vue"
+  },
+  "Notification": {
+    "description": "Auto imported from components/Notification.vue"
+  },
+  "PageTitle": {
+    "description": "Auto imported from components/PageTitle.vue"
+  },
+  "VuetifyLogo": {
+    "description": "Auto imported from components/VuetifyLogo.vue"
+  },
+  "ControlPumpStatus": {
+    "description": "Auto imported from components/Control/PumpStatus.vue"
+  },
+  "DetailOperationInformation": {
+    "description": "Auto imported from components/detail/operationInformation.vue"
+  },
+  "DetailReport": {
+    "description": "Auto imported from components/detail/report.vue"
+  },
+  "DetailUsers": {
+    "description": "Auto imported from components/detail/users.vue"
+  },
+  "DetailYieldCropInformation": {
+    "description": "Auto imported from components/detail/yieldCropInformation.vue"
+  },
+  "LoginForm": {
+    "description": "Auto imported from components/Login/Form.vue"
+  },
+  "GeneralUserInfo": {
+    "description": "Auto imported from components/General/UserInfo.vue"
+  },
+  "OverviewCardDataLeaf": {
+    "description": "Auto imported from components/Overview/CardDataLeaf.vue"
+  },
+  "OverviewCardDataSoil": {
+    "description": "Auto imported from components/Overview/CardDataSoil.vue"
+  },
+  "OverviewCardDataWater": {
+    "description": "Auto imported from components/Overview/CardDataWater.vue"
+  },
+  "OverviewCardOverviewData": {
+    "description": "Auto imported from components/Overview/CardOverviewData.vue"
+  },
+  "OverviewCardServer": {
+    "description": "Auto imported from components/Overview/CardServer.vue"
+  },
+  "OverviewCardSummary": {
+    "description": "Auto imported from components/Overview/CardSummary.vue"
+  },
+  "OverviewCardWeather3": {
+    "description": "Auto imported from components/Overview/CardWeather3.vue"
+  },
+  "OverviewTable": {
+    "description": "Auto imported from components/Overview/Table.vue"
+  },
+  "RegisterForm2": {
+    "description": "Auto imported from components/Register/Form2.vue"
+  },
+  "ScheduleCalendar": {
+    "description": "Auto imported from components/Schedule/Calendar.vue"
+  },
+  "ScheduleTableSchedule": {
+    "description": "Auto imported from components/Schedule/TableSchedule.vue"
+  },
+  "ScheduleTableScheduleNutrient": {
+    "description": "Auto imported from components/Schedule/TableScheduleNutrient.vue"
+  },
+  "ScheduleTime": {
+    "description": "Auto imported from components/Schedule/Time.vue"
+  },
+  "StatusIpah1Status": {
+    "description": "Auto imported from components/Status/Ipah1Status.vue"
+  },
+  "StatusIpah2Status": {
+    "description": "Auto imported from components/Status/Ipah2Status.vue"
+  },
+  "StatusKongPoStatus": {
+    "description": "Auto imported from components/Status/KongPoStatus.vue"
+  },
+  "StatusTkpmPagohStatus": {
+    "description": "Auto imported from components/Status/TkpmPagohStatus.vue"
+  },
+  "TrendCardStationTrendIpah1": {
+    "description": "Auto imported from components/Trend/CardStationTrendIpah1.vue"
+  },
+  "TrendCardStationTrendIpah2": {
+    "description": "Auto imported from components/Trend/CardStationTrendIpah2.vue"
+  },
+  "TrendCardStationTrendKongPo": {
+    "description": "Auto imported from components/Trend/CardStationTrendKongPo.vue"
+  },
+  "TrendCardStationTrendTkpmPagoh": {
+    "description": "Auto imported from components/Trend/CardStationTrendTkpmPagoh.vue"
+  },
+  "TrendLineChart": {
+    "description": "Auto imported from components/Trend/LineChart.vue"
+  },
+  "TrendLineChartSingleData": {
+    "description": "Auto imported from components/Trend/LineChartSingleData.vue"
+  },
+  "AdminOverviewCardDataLeafAdmin": {
+    "description": "Auto imported from components/Admin/Overview/CardDataLeafAdmin.vue"
+  },
+  "AdminOverviewCardDataSoilAdmin": {
+    "description": "Auto imported from components/Admin/Overview/CardDataSoilAdmin.vue"
+  },
+  "AdminOverviewCardDataWaterAdmin": {
+    "description": "Auto imported from components/Admin/Overview/CardDataWaterAdmin.vue"
+  },
+  "AdminOverviewCardOverviewDataAdmin": {
+    "description": "Auto imported from components/Admin/Overview/CardOverviewDataAdmin.vue"
+  },
+  "AdminOverviewCardSummaryAdmin": {
+    "description": "Auto imported from components/Admin/Overview/CardSummaryAdmin.vue"
+  },
+  "AdminOverviewIpah2StatusAdmin": {
+    "description": "Auto imported from components/Admin/Overview/ipah2StatusAdmin.vue"
+  },
+  "AdminOverviewIpahStatusAdmin": {
+    "description": "Auto imported from components/Admin/Overview/ipahStatusAdmin.vue"
+  },
+  "AdminOverviewTkpmPagohStatusAdmin": {
+    "description": "Auto imported from components/Admin/Overview/tkpmPagohStatusAdmin.vue"
+  },
+  "OverviewSingleData": {
+    "description": "Auto imported from components/Overview/Single/Data.vue"
+  },
+  "OverviewSingleGauge": {
+    "description": "Auto imported from components/Overview/Single/Gauge.vue"
+  },
+  "OverviewSingleServer": {
+    "description": "Auto imported from components/Overview/Single/Server.vue"
+  },
+  "OverviewSingleSummary": {
+    "description": "Auto imported from components/Overview/Single/Summary.vue"
+  },
+  "OverviewSingleWeather": {
+    "description": "Auto imported from components/Overview/Single/Weather.vue"
+  },
+  "OverviewSingleWeatherMain": {
+    "description": "Auto imported from components/Overview/Single/WeatherMain.vue"
+  },
+  "AdminOverviewSingleData": {
+    "description": "Auto imported from components/Admin/Overview/Single/Data.vue"
+  }
+}
