@@ -1,10 +1,10 @@
 <template>
   <div>
     <v-card class="card-color elevation-12 ">
-      <v-card-title class="color mb-4">REAL-TIME DATA</v-card-title>
+      <v-card-title class="color mb-4">STATUS</v-card-title>
       <v-row style="display:flex; justify-content:space-evenly">
         <v-col
-          v-for="(category, index) in stations"
+          v-for="(category, index) in stations.slice(0, -1)"
           :key="index"
           cols="3"
           class="mb-3 categories-container"
@@ -63,13 +63,74 @@
     <!-- <v-row> -->
     <v-card class="elevation-10 mt-10">
       <div v-if="activeStation === 0">
-        <ipahStatusAdmin />
+        <ipahStatusAdmin
+          :classSV1="ipahStatus.SV1 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV2="ipahStatus.SV2 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV3="ipahStatus.SV3 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV4="ipahStatus.SV4 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV5="ipahStatus.SV5 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV6="ipahStatus.SV6 == 1 ? 'filter-green' : 'filter-red'"
+          :classPump="ipahStatus.P == 1 ? 'filter-green' : 'filter-red'"
+          :classDosingPump="ipahStatus.DP == 1 ? 'filter-green' : 'filter-red'"
+        />
       </div>
       <div v-if="activeStation === 1">
-        <ipah2StatusAdmin />
+        <ipah2StatusAdmin
+          :classSV1="tkpmIpahStatus.SV1 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV2="tkpmIpahStatus.SV2 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV3="tkpmIpahStatus.SV3 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV4="tkpmIpahStatus.SV4 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV5="tkpmIpahStatus.SV5 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV6="tkpmIpahStatus.SV6 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV7="tkpmIpahStatus.SV7 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV8="tkpmIpahStatus.SV8 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV9="tkpmIpahStatus.SV9 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV10="tkpmIpahStatus.SV10 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV11="tkpmIpahStatus.SV11 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV12="tkpmIpahStatus.SV12 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV13="tkpmIpahStatus.SV13 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV14="tkpmIpahStatus.SV14 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV15="tkpmIpahStatus.SV15 == 1 ? 'filter-green' : 'filter-red'"
+          classPump="filter-green"
+          :classDosingPump="
+            tkpmIpahStatus.DP == 1 ? 'filter-green' : 'filter-red'
+          "
+          classPumpNaturalWater="filter-green"
+          :classPump1="tkpmIpahStatus.P1 == 1 ? 'filter-green' : 'filter-red'"
+          :classPump2="tkpmIpahStatus.P2 == 1 ? 'filter-green' : 'filter-red'"
+          :classPump3="tkpmIpahStatus.P3 == 1 ? 'filter-green' : 'filter-red'"
+          ph="7"
+        />
       </div>
       <div v-if="activeStation === 2">
-        <tkpmPagohStatusAdmin />
+        <tkpmPagohStatusAdmin
+          :classSV1="tkpmPagohStatus.SV1 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV2="tkpmPagohStatus.SV2 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV3="tkpmPagohStatus.SV3 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV4="tkpmPagohStatus.SV4 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV5="tkpmPagohStatus.SV5 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV6="tkpmPagohStatus.SV6 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV7="tkpmPagohStatus.SV7 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV8="tkpmPagohStatus.SV8 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV9="tkpmPagohStatus.SV9 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV10="tkpmPagohStatus.SV10 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV11="tkpmPagohStatus.SV11 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV12="tkpmPagohStatus.SV12 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV13="tkpmPagohStatus.SV13 == 1 ? 'filter-green' : 'filter-red'"
+          :classSV14="tkpmPagohStatus.SV14 == 1 ? 'filter-green' : 'filter-red'"
+          :classDosingPump1="
+            tkpmPagohStatus.DP1 == 1 ? 'filter-green' : 'filter-red'
+          "
+          :classDosingPump2="
+            tkpmPagohStatus.DP2 == 1 ? 'filter-green' : 'filter-red'
+          "
+          :classPump1="tkpmPagohStatus.P1 == 1 ? 'filter-green' : 'filter-red'"
+          :classPump2="tkpmPagohStatus.P2 == 1 ? 'filter-green' : 'filter-red'"
+          :classPump3="tkpmPagohStatus.P3 == 1 ? 'filter-green' : 'filter-red'"
+          :classPumpNaturalWater="
+            tkpmPagohStatus.PNW == 1 ? 'filter-green' : 'filter-red'
+          "
+        />
       </div>
     </v-card>
     <!-- </v-row> -->
@@ -81,9 +142,9 @@ import CardDataSoilAdmin from "~/components/Admin/Overview/CardDataSoilAdmin";
 import CardDataLeafAdmin from "~/components/Admin/Overview/CardDataLeafAdmin";
 import CardDataWaterAdmin from "~/components/Admin/Overview/CardDataWaterAdmin";
 
-import ipahStatusAdmin from "~/components/Admin/Overview/ipahStatusAdmin";
-import ipah2StatusAdmin from "~/components/Admin/Overview/ipah2StatusAdmin";
-import tkpmPagohStatusAdmin from "~/components/Admin/Overview/tkpmPagohStatusAdmin";
+import ipahStatusAdmin from "~/components/Status/Ipah1Status";
+import ipah2StatusAdmin from "~/components/Status/Ipah2Status";
+import tkpmPagohStatusAdmin from "~/components/Status/TkpmPagohStatus";
 
 import { mapState } from "vuex";
 
@@ -134,7 +195,10 @@ export default {
   },
   computed: {
     ...mapState({
-      stations: state => state.stations
+      stations: state => state.stations,
+      ipahStatus: state => state.ipahStatus,
+      tkpmIpahStatus: state => state.tkpmIpahStatus,
+      tkpmPagohStatus: state => state.tkpmPagohStatus
     })
   }
 };

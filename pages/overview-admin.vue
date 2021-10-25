@@ -1,11 +1,11 @@
 <template>
   <section>
     <PageTitle title="ADMIN" />
-    <CardSummaryAdmin class="mb-4" />
+    <!-- <CardSummaryAdmin class="mb-4" /> -->
     <CardOverviewDataAdmin class="mb-8" />
     <v-row>
       <v-col>
-        <CardWeather />
+        <!-- <CardWeather /> -->
       </v-col>
     </v-row>
   </section>

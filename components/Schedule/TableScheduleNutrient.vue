@@ -92,13 +92,17 @@ export default {
       // }
 
       if (this.activeUser == 0) {
-        api = "http://127.0.0.1:5000/api/schedule/ipah1/nutrient";
+        // api = "http://127.0.0.1:5000/api/schedule/ipah1/nutrient";
+        api = "http://139.59.109.48/api/schedule/ipah1/nutrient";
       } else if (this.activeUser == 1) {
-        api = "http://127.0.0.1:5000/api/schedule/ipah2/nutrient";
+        // api = "http://127.0.0.1:5000/api/schedule/ipah2/nutrient";
+        api = "http://139.59.109.48/api/schedule/ipah2/nutrient";
       } else if (this.activeUser == 2) {
-        api = "http://127.0.0.1:5000/api/schedule/tkpmPagoh/nutrien";
+        // api = "http://127.0.0.1:5000/api/schedule/tkpmPagoh/nutrient";
+        api = "http://139.59.109.48/api/schedule/tkpmPagoh/nutrient";
       } else {
-        api = "http://127.0.0.1:5000/api/schedule/kongPo/nutrient";
+        // api = "http://127.0.0.1:5000/api/schedule/kongPo/nutrient";
+        api = "http://139.59.109.48/api/schedule/kongPo/nutrient";
       }
       this.$axios
         .$delete(api, {

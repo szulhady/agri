@@ -31,11 +31,22 @@
             <v-col class="ml-10 ml-lg-0" cols="4">
               <v-row>
                 <v-col>
-                  <h4>
-                    Default time for nutrient preparation process on selected
-                    date is on 12am. Please select date and duration (minute)
-                    for dosing process.
-                  </h4>
+                  <div>
+                    <h4>
+                      Default time for nutrient preparation process on selected
+                      date is on 5am. Please select date and duration (minute)
+                      for dosing process.
+                    </h4>
+                    <!-- <h4>
+                      Below is guideline for duration input:
+                    </h4>
+                    <h4>
+                      - To get EC value 2.0, please select 30 minutes
+                    </h4>
+                    <h4>
+                      - To get EC value 2.0, please select 30 minutes
+                    </h4> -->
+                  </div>
                 </v-col>
               </v-row>
               <v-row>
@@ -107,8 +118,7 @@
             <v-col class="ml-10 ml-lg-0">
               <h4>
                 Please fill first option first, then fill other options if
-                needed. Options for 7am and 1pm are not available due to
-                nutrient preparation process ongoing.
+                needed.
               </h4>
             </v-col>
           </v-row>
@@ -120,11 +130,7 @@
                 <vue-timepicker
                   v-model="yourStringTimeValue1"
                   format="HH:mm"
-                  :hour-range="[
-                    [0, 7],
-                    [8, 12],
-                    [14, 23]
-                  ]"
+                  :hour-range="[[7, 23]]"
                   hide-disabled-hours
                 ></vue-timepicker>
               </div>
@@ -168,11 +174,7 @@
                 <vue-timepicker
                   v-model="yourStringTimeValue2"
                   format="HH:mm"
-                  :hour-range="[
-                    [0, 7],
-                    [8, 12],
-                    [14, 23]
-                  ]"
+                  :hour-range="[[7, 23]]"
                   hide-disabled-hours
                 ></vue-timepicker>
               </div>
@@ -216,11 +218,7 @@
                 <vue-timepicker
                   v-model="yourStringTimeValue3"
                   format="HH:mm"
-                  :hour-range="[
-                    [0, 6],
-                    [8, 12],
-                    [14, 23]
-                  ]"
+                  :hour-range="[[7, 23]]"
                   hide-disabled-hours
                 ></vue-timepicker>
               </div>
@@ -264,11 +262,7 @@
                 <vue-timepicker
                   v-model="yourStringTimeValue4"
                   format="HH:mm"
-                  :hour-range="[
-                    [0, 6],
-                    [8, 12],
-                    [14, 23]
-                  ]"
+                  :hour-range="[[7, 23]]"
                   hide-disabled-hours
                 ></vue-timepicker>
               </div>
@@ -312,11 +306,7 @@
                 <vue-timepicker
                   v-model="yourStringTimeValue5"
                   format="HH:mm"
-                  :hour-range="[
-                    [0, 6],
-                    [8, 12],
-                    [14, 23]
-                  ]"
+                  :hour-range="[[7, 23]]"
                   hide-disabled-hours
                 ></vue-timepicker>
               </div>
@@ -360,11 +350,7 @@
                 <vue-timepicker
                   v-model="yourStringTimeValue6"
                   format="HH:mm"
-                  :hour-range="[
-                    [0, 6],
-                    [8, 12],
-                    [14, 23]
-                  ]"
+                  :hour-range="[[7, 23]]"
                   hide-disabled-hours
                 ></vue-timepicker>
               </div>
@@ -408,11 +394,7 @@
                 <vue-timepicker
                   v-model="yourStringTimeValue7"
                   format="HH:mm"
-                  :hour-range="[
-                    [0, 6],
-                    [8, 12],
-                    [14, 23]
-                  ]"
+                  :hour-range="[[7, 23]]"
                   hide-disabled-hours
                 ></vue-timepicker>
               </div>
@@ -456,11 +438,7 @@
                 <vue-timepicker
                   v-model="yourStringTimeValue8"
                   format="HH:mm"
-                  :hour-range="[
-                    [0, 6],
-                    [8, 12],
-                    [14, 23]
-                  ]"
+                  :hour-range="[[7, 23]]"
                   hide-disabled-hours
                 ></vue-timepicker>
               </div>
@@ -504,11 +482,7 @@
                 <vue-timepicker
                   v-model="yourStringTimeValue9"
                   format="HH:mm"
-                  :hour-range="[
-                    [0, 6],
-                    [8, 12],
-                    [14, 23]
-                  ]"
+                  :hour-range="[[7, 23]]"
                   hide-disabled-hours
                 ></vue-timepicker>
               </div>
@@ -552,11 +526,7 @@
                 <vue-timepicker
                   v-model="yourStringTimeValue10"
                   format="HH:mm"
-                  :hour-range="[
-                    [0, 6],
-                    [8, 12],
-                    [14, 23]
-                  ]"
+                  :hour-range="[[7, 23]]"
                   hide-disabled-hours
                 ></vue-timepicker>
               </div>
@@ -777,8 +747,8 @@ export default {
     },
     getScheduleIpah1Nutrient: function() {
       this.$axios
-        .$get("http://127.0.0.1:5000/api/schedule/ipah2/nutrient")
-        // .$get("http://139.59.109.48/api/schedule/nutrient/ipah1")
+        // .$get("http://127.0.0.1:5000/api/schedule/ipah2/nutrient")
+        .$get("http://139.59.109.48/api/schedule/ipah2/nutrient")
         .then(response => {
           response.forEach(i => {
             this.isDateBeforeTodayNutrient(i);
@@ -791,8 +761,8 @@ export default {
     },
     sendScheduleIpah2: function(date, time, block, duration, substance) {
       this.$axios
-        .$post("http://127.0.0.1:5000/api/setSchedule/ipah2", {
-          // .$post("http://139.59.109.48/api/setSchedule/ipah2", {
+        // .$post("http://127.0.0.1:5000/api/setSchedule/ipah2", {
+        .$post("http://139.59.109.48/api/setSchedule/ipah2", {
           date: date,
           time: time,
           block: block,
@@ -809,8 +779,8 @@ export default {
     },
     sendScheduleIpah1Nutient: function(date, duration) {
       this.$axios
-        // .$post("http://139.59.109.48/api/setSchedule/ipah2/nutrient", {
-        .$post("http://127.0.0.1:5000/api/setSchedule/ipah2/nutrient", {
+        .$post("http://139.59.109.48/api/setSchedule/ipah2/nutrient", {
+          // .$post("http://127.0.0.1:5000/api/setSchedule/ipah2/nutrient", {
           date: date,
           time: "23:00:00",
           duration: duration

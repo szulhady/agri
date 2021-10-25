@@ -83,12 +83,6 @@ export default {
       right: true,
       rightDrawer: false,
       items: [
-        // {
-        //   icon: "mdi-view-dashboard",
-        //   title: "USER",
-        //   state: this.$auth.hasScope("user"),
-        //   to: "/detail"
-        // },
         {
           icon: "mdi-view-dashboard",
           title: "OVERVIEW",
@@ -145,6 +139,12 @@ export default {
           title: "STATUS",
           state: this.$auth.hasScope("admin"),
           to: "/adminStatus"
+        },
+        {
+          icon: "mdi-book-open-variant",
+          title: "DETAILS",
+          state: this.$auth.hasScope("admin"),
+          to: "/adminDetail"
         },
         // {
         //   icon: "mdi-gauge",
@@ -222,6 +222,12 @@ export default {
             this.$auth.$state.user.station[0] == "kongPo",
           // this.$auth.user.userId == 8,
           to: "/trendsKongPo"
+        },
+        {
+          icon: "mdi-book-open-variant",
+          title: "INPUT",
+          state: this.$auth.hasScope("user"),
+          to: "/detail"
         }
       ],
       miniVariant: false,
@@ -273,10 +279,12 @@ export default {
       countWarningsTkpmPagoh: "countWarningsTkpmPagoh",
       stringArray: "stringArray",
       ipahStatus: "ipahStatus",
-      SET_WEATHER: "SET_WEATHER"
+      SET_WEATHER: "SET_WEATHER",
+      setDetailActive: "setDetailActive"
     }),
     logout: async function() {
       await this.$auth.logout();
+      this.setDetailActive("");
       this.doUnSubscribe();
       // this.resetState()
       this.rightDrawer = false;
@@ -364,7 +372,7 @@ export default {
       this.client.on("message", (topic, message) => {
         if (topic === "nexplex/sense/ipah/block1") {
           message = JSON.parse(message);
-          // console.log("block 1", message, new Date());
+          console.log("block 1", message, new Date());
           let payload = {
             station: 0,
             block: 0,
@@ -414,7 +422,7 @@ export default {
 
         if (topic === "nexplex/sense/ipah/block2") {
           message = JSON.parse(message);
-          // console.log("block 2", message, new Date());
+          console.log("block 2", message, new Date());
           let payload = {
             station: 0,
             block: 1,
@@ -759,68 +767,137 @@ export default {
         }
 
         if (topic === "nexplex/sense") {
-          message = JSON.parse(message);
           console.log(message);
-          if (message.ID == 301) {
-            let payload1 = {
-              station: 3,
-              block: 0,
-              soilNitrogen: message.NTR1,
-              soilPhosphorus: message.PHOS1,
-              soilPotassium: message.POT1,
-              soilPH: message.pH1,
-              soilEC: message.EC1,
-              soilMS: message.HMD1
-            };
-            let payload2 = {
-              station: 3,
-              block: 1,
-              soilNitrogen: message.NTR2,
-              soilPhosphorus: message.PHOS2,
-              soilPotassium: message.POT2,
-              soilPH: message.pH2,
-              soilEC: message.EC2,
-              soilMS: message.HMD2
-            };
-            this.getCurrentDataKongPo(payload1);
-            this.getCurrentDataKongPo(payload2);
-            this.check(3, 0, 0, " Nitrogen", message.NTR1, 20);
-            this.check(3, 0, 1, " Phosphorus", message.PHOS1, 20);
-            this.check(3, 0, 2, " Potassium", message.POT1, 20);
-            this.check(3, 0, 3, " pH", message.pH1, 7);
-            this.check(3, 0, 4, " EC", message.EC1, 10);
-            this.check(3, 0, 5, " MS", message.HMD1, 10);
+          // console.log(typeof message);
+          try {
+            // JSON.parse(message)
+            message = JSON.parse(message);
+            if (message.ID == 301) {
+              let payload1 = {
+                station: 3,
+                block: 0,
+                soilNitrogen: message.NTR1,
+                soilPhosphorus: message.PHOS1,
+                soilPotassium: message.POT1,
+                soilPH: message.pH1,
+                soilEC: message.EC1,
+                soilMS: message.HMD1
+              };
+              let payload2 = {
+                station: 3,
+                block: 1,
+                soilNitrogen: message.NTR2,
+                soilPhosphorus: message.PHOS2,
+                soilPotassium: message.POT2,
+                soilPH: message.pH2,
+                soilEC: message.EC2,
+                soilMS: message.HMD2
+              };
+              this.getCurrentDataKongPo(payload1);
+              this.getCurrentDataKongPo(payload2);
+              this.check(3, 0, 0, " Nitrogen", message.NTR1, 20);
+              this.check(3, 0, 1, " Phosphorus", message.PHOS1, 20);
+              this.check(3, 0, 2, " Potassium", message.POT1, 20);
+              this.check(3, 0, 3, " pH", message.pH1, 7);
+              this.check(3, 0, 4, " EC", message.EC1, 10);
+              this.check(3, 0, 5, " MS", message.HMD1, 10);
 
-            this.check(3, 1, 0, " Nitrogen", message.NTR2, 20);
-            this.check(3, 1, 1, " Phosphorus", message.PHOS2, 20);
-            this.check(3, 1, 2, " Potassium", message.POT2, 20);
-            this.check(3, 1, 3, " pH", message.pH2, 7);
-            this.check(3, 1, 4, " EC", message.EC2, 10);
-            this.check(3, 1, 5, " MS", message.HMD2, 10);
+              this.check(3, 1, 0, " Nitrogen", message.NTR2, 20);
+              this.check(3, 1, 1, " Phosphorus", message.PHOS2, 20);
+              this.check(3, 1, 2, " Potassium", message.POT2, 20);
+              this.check(3, 1, 3, " pH", message.pH2, 7);
+              this.check(3, 1, 4, " EC", message.EC2, 10);
+              this.check(3, 1, 5, " MS", message.HMD2, 10);
 
-            const payloadStringArray = {
-              indexStation: 0,
-              indexBlock: 0
-            };
-            this.stringArray(payloadStringArray);
-            const val = [
-              "soilNitrogen",
-              "soilPhosphorus",
-              "soilPotassium",
-              "soilPH",
-              "soilEC",
-              "soilMS",
-              "soilTEMP"
-            ];
-            // //currentTrend
-            for (let j = 0; j < val.length; j++) {
-              let sensor = val[j];
-              let indexStation = 0;
-              let indexSensor = j;
-              let data = { sensor, indexStation, indexSensor };
-              this.getCurrentDataArrayIpah1(data);
+              const payloadStringArray = {
+                indexStation: 0,
+                indexBlock: 0
+              };
+              this.stringArray(payloadStringArray);
+              const val = [
+                "soilNitrogen",
+                "soilPhosphorus",
+                "soilPotassium",
+                "soilPH",
+                "soilEC",
+                "soilMS",
+                "soilTEMP"
+              ];
+              // //currentTrend
+              for (let j = 0; j < val.length; j++) {
+                let sensor = val[j];
+                let indexStation = 0;
+                let indexSensor = j;
+                let data = { sensor, indexStation, indexSensor };
+                this.getCurrentDataArrayIpah1(data);
+              }
+              console.log("heeee");
             }
+          } catch (e) {
+            console.log("eliminated");
+            return false;
           }
+          console.log(message);
+          // if (message.ID == 301) {
+          //   let payload1 = {
+          //     station: 3,
+          //     block: 0,
+          //     soilNitrogen: message.NTR1,
+          //     soilPhosphorus: message.PHOS1,
+          //     soilPotassium: message.POT1,
+          //     soilPH: message.pH1,
+          //     soilEC: message.EC1,
+          //     soilMS: message.HMD1
+          //   };
+          //   let payload2 = {
+          //     station: 3,
+          //     block: 1,
+          //     soilNitrogen: message.NTR2,
+          //     soilPhosphorus: message.PHOS2,
+          //     soilPotassium: message.POT2,
+          //     soilPH: message.pH2,
+          //     soilEC: message.EC2,
+          //     soilMS: message.HMD2
+          //   };
+          //   this.getCurrentDataKongPo(payload1);
+          //   this.getCurrentDataKongPo(payload2);
+          //   this.check(3, 0, 0, " Nitrogen", message.NTR1, 20);
+          //   this.check(3, 0, 1, " Phosphorus", message.PHOS1, 20);
+          //   this.check(3, 0, 2, " Potassium", message.POT1, 20);
+          //   this.check(3, 0, 3, " pH", message.pH1, 7);
+          //   this.check(3, 0, 4, " EC", message.EC1, 10);
+          //   this.check(3, 0, 5, " MS", message.HMD1, 10);
+
+          //   this.check(3, 1, 0, " Nitrogen", message.NTR2, 20);
+          //   this.check(3, 1, 1, " Phosphorus", message.PHOS2, 20);
+          //   this.check(3, 1, 2, " Potassium", message.POT2, 20);
+          //   this.check(3, 1, 3, " pH", message.pH2, 7);
+          //   this.check(3, 1, 4, " EC", message.EC2, 10);
+          //   this.check(3, 1, 5, " MS", message.HMD2, 10);
+
+          //   const payloadStringArray = {
+          //     indexStation: 0,
+          //     indexBlock: 0
+          //   };
+          //   this.stringArray(payloadStringArray);
+          //   const val = [
+          //     "soilNitrogen",
+          //     "soilPhosphorus",
+          //     "soilPotassium",
+          //     "soilPH",
+          //     "soilEC",
+          //     "soilMS",
+          //     "soilTEMP"
+          //   ];
+          //   // //currentTrend
+          //   for (let j = 0; j < val.length; j++) {
+          //     let sensor = val[j];
+          //     let indexStation = 0;
+          //     let indexSensor = j;
+          //     let data = { sensor, indexStation, indexSensor };
+          //     this.getCurrentDataArrayIpah1(data);
+          //   }
+          // }
         }
       });
     },
@@ -860,7 +937,8 @@ export default {
     },
     getWeatherIpah1: function() {
       this.$axios
-        .$get("http://127.0.0.1:5000/api/openWeatherMap/ipah1")
+        .$get("http://139.59.109.48/api/openWeatherMap/ipah1")
+        // .$get("http://127.0.0.1:5000/api/openWeatherMap/ipah1")
         .then(response => {
           console.log(response);
           this.SET_WEATHER(response);
@@ -872,7 +950,8 @@ export default {
     },
     getWeatherIpah2: function() {
       this.$axios
-        .$get("http://127.0.0.1:5000/api/openWeatherMap/ipah2")
+        .$get("http://139.59.109.48/api/openWeatherMap/ipah2")
+        // .$get("http://127.0.0.1:5000/api/openWeatherMap/ipah2")
         .then(response => {
           console.log(response);
           this.SET_WEATHER(response);
@@ -884,7 +963,8 @@ export default {
     },
     getWeatherPagoh: function() {
       this.$axios
-        .$get("http://127.0.0.1:5000/api/openWeatherMap/tkpmPagoh")
+        .$get("http://139.59.109.48/api/openWeatherMap/tkpmPagoh")
+        // .$get("http://127.0.0.1:5000/api/openWeatherMap/tkpmPagoh")
         .then(response => {
           console.log(response);
           this.SET_WEATHER(response);
@@ -896,7 +976,8 @@ export default {
     },
     getWeatherKongPo: function() {
       this.$axios
-        .$get("http://127.0.0.1:5000/api/openWeatherMap/kongPo")
+        .$get("http://139.59.109.48/api/openWeatherMap/kongPo")
+        // .$get("http://127.0.0.1:5000/api/openWeatherMap/kongPo")
         .then(response => {
           console.log(response);
           this.SET_WEATHER(response);

@@ -96,13 +96,23 @@
                 <div>
                   <h4>
                     Nutrient preparation is done via schedule set by user on
-                    schedule panel. It is done on 11.00pm on choosen date.
-                    Please fill duration input and click button below to start
-                    nutrient preparation manually.
+                    schedule panel. It is done on 5.00am on choosen date. Please
+                    fill duration input and click button below to start nutrient
+                    preparation manually.
                   </h4>
                 </div>
-                <div style="display:flex; justify-content:center">
-                  <v-btn class="mt-4 mb-4">Start Preparation</v-btn>
+                <div
+                  style="display:flex; flex-direction:column;justify-content:center; align-items:center"
+                >
+                  <v-text-field
+                    label="Duration (minute)"
+                    type="number"
+                    v-model.number="duration"
+                    class="short"
+                  ></v-text-field>
+                  <v-btn @click="nutrient" class="mt-4 mb-4"
+                    >Start Preparation</v-btn
+                  >
                 </div>
               </v-col>
             </v-row>
@@ -150,7 +160,10 @@ export default {
   methods: {
     ...mapMutations({
       setTkpmPagohManualFill: "setTkpmPagohManualFill",
-      setTkpmPagohManualStop: "setTkpmPagohManualStop"
+      setTkpmPagohManualStop: "setTkpmPagohManualStop",
+      setTkpmPagohManualNutrient: "setTkpmPagohManualNutrient",
+      setTkpmPagohManualNutrient: "setTkpmPagohManualNutrient",
+      setTkpmPagohManualNutrientDuration: "setTkpmPagohManualNutrientDuration"
     }),
     trigger: function(device, state, deviceName) {
       this.state2 = false;
@@ -190,6 +203,19 @@ export default {
     stop: function() {
       this.setTkpmPagohManualStop(true);
       console.log("stop");
+    },
+    nutrient: function() {
+      if (!this.duration) {
+        alert("Please select valid duration");
+        return;
+      }
+      if (!Number.isInteger(this.duration) || this.duration < 1) {
+        alert("Please select valid duration (integer number)");
+        return;
+      }
+      this.setTkpmPagohManualNutrientDuration(this.duration);
+      this.setTkpmPagohManualNutrient(true);
+      console.log("heree");
     }
   },
   data() {
@@ -232,7 +258,8 @@ export default {
       substance: "(substance)",
       itemsSubstance: ["water", "fertilizer"],
       block: [],
-      itemsBlock: ["Block 1", "Block 2", "Block 3"]
+      itemsBlock: ["Block 1", "Block 2", "Block 3"],
+      duration: ""
     };
   },
   computed: {

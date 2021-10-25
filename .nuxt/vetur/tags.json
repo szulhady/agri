@@ -20,6 +20,21 @@
   "ControlPumpStatus": {
     "description": "Auto imported from components/Control/PumpStatus.vue"
   },
+  "DetailLayout": {
+    "description": "Auto imported from components/detail/layout.vue"
+  },
+  "DetailLayout2": {
+    "description": "Auto imported from components/detail/layout2.vue"
+  },
+  "DetailLayout3": {
+    "description": "Auto imported from components/detail/layout3.vue"
+  },
+  "DetailLayout4": {
+    "description": "Auto imported from components/detail/layout4.vue"
+  },
+  "DetailLayoutFull": {
+    "description": "Auto imported from components/detail/layoutFull.vue"
+  },
   "DetailOperationInformation": {
     "description": "Auto imported from components/detail/operationInformation.vue"
   },
@@ -32,11 +47,11 @@
   "DetailYieldCropInformation": {
     "description": "Auto imported from components/detail/yieldCropInformation.vue"
   },
-  "LoginForm": {
-    "description": "Auto imported from components/Login/Form.vue"
-  },
   "GeneralUserInfo": {
     "description": "Auto imported from components/General/UserInfo.vue"
+  },
+  "LoginForm": {
+    "description": "Auto imported from components/Login/Form.vue"
   },
   "OverviewCardDataLeaf": {
     "description": "Auto imported from components/Overview/CardDataLeaf.vue"

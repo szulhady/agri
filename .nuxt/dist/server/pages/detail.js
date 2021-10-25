@@ -1,32 +1,14 @@
-exports.ids = [55,12,13,14,15,35];
+exports.ids = [61,13,17,18,19,20,40];
 exports.modules = {
 
-/***/ 169:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(179);
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add CSS to SSR context
-var add = __webpack_require__(6).default
-module.exports.__inject__ = function (context) {
-  add("1aad47fc", content, true, context)
-};
-
-/***/ }),
-
-/***/ 170:
+/***/ 174:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var _colorable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7);
 /* harmony import */ var _themeable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8);
 /* harmony import */ var _registrable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(32);
-/* harmony import */ var _util_helpers__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(0);
+/* harmony import */ var _util_helpers__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1);
 /* harmony import */ var _util_console__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(4);
 /* harmony import */ var _util_mixins__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(3);
 // Mixins
@@ -290,7 +272,7 @@ const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_5__[/* default *
 
 /***/ }),
 
-/***/ 171:
+/***/ 175:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -298,7 +280,7 @@ const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_5__[/* default *
 // UNUSED EXPORTS: VLabel
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VLabel/VLabel.sass
-var VLabel = __webpack_require__(185);
+var VLabel = __webpack_require__(186);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/colorable/index.js
 var colorable = __webpack_require__(7);
@@ -310,7 +292,7 @@ var themeable = __webpack_require__(8);
 var mixins = __webpack_require__(3);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/util/helpers.js
-var helpers = __webpack_require__(0);
+var helpers = __webpack_require__(1);
 
 // CONCATENATED MODULE: ./node_modules/vuetify/lib/components/VLabel/VLabel.js
 // Styles
@@ -382,7 +364,25 @@ var helpers = __webpack_require__(0);
 
 /***/ }),
 
-/***/ 172:
+/***/ 176:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(195);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add CSS to SSR context
+var add = __webpack_require__(6).default
+module.exports.__inject__ = function (context) {
+  add("1aad47fc", content, true, context)
+};
+
+/***/ }),
+
+/***/ 177:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -417,7 +417,7 @@ var componentNormalizer = __webpack_require__(15);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(178)
+  var style0 = __webpack_require__(194)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -439,13 +439,13 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 174:
+/***/ 179:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(182);
+var content = __webpack_require__(183);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -453,7 +453,7 @@ __webpack_require__(6).default("4f4f805e", content, true)
 
 /***/ }),
 
-/***/ 175:
+/***/ 180:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -461,16 +461,16 @@ __webpack_require__(6).default("4f4f805e", content, true)
 // UNUSED EXPORTS: VInput
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VInput/VInput.sass
-var VInput = __webpack_require__(183);
+var VInput = __webpack_require__(184);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VIcon/index.js
 var VIcon = __webpack_require__(22);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VLabel/index.js + 1 modules
-var VLabel = __webpack_require__(171);
+var VLabel = __webpack_require__(175);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VMessages/VMessages.sass
-var VMessages = __webpack_require__(187);
+var VMessages = __webpack_require__(188);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/colorable/index.js
 var colorable = __webpack_require__(7);
@@ -482,7 +482,7 @@ var themeable = __webpack_require__(8);
 var mixins = __webpack_require__(3);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/util/helpers.js
-var helpers = __webpack_require__(0);
+var helpers = __webpack_require__(1);
 
 // CONCATENATED MODULE: ./node_modules/vuetify/lib/components/VMessages/VMessages.js
 // Styles
@@ -542,7 +542,7 @@ var helpers = __webpack_require__(0);
 var binds_attrs = __webpack_require__(24);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/validatable/index.js
-var validatable = __webpack_require__(170);
+var validatable = __webpack_require__(174);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/util/mergeData.js
 var mergeData = __webpack_require__(21);
@@ -842,68 +842,168 @@ const baseMixins = Object(mixins["a" /* default */])(binds_attrs["a" /* default 
 
 /***/ }),
 
-/***/ 178:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PageTitle_vue_vue_type_style_index_0_id_48d66cb0_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(169);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PageTitle_vue_vue_type_style_index_0_id_48d66cb0_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PageTitle_vue_vue_type_style_index_0_id_48d66cb0_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PageTitle_vue_vue_type_style_index_0_id_48d66cb0_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PageTitle_vue_vue_type_style_index_0_id_48d66cb0_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-
-
-/***/ }),
-
-/***/ 179:
+/***/ 183:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(5);
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".title[data-v-48d66cb0]{color:#4e4e4e;font-size:1.5rem!important;font-weight:500;letter-spacing:2px!important}@media (max-width:500px){.title[data-v-48d66cb0]{font-size:17px!important;margin-top:5px!important;margin-bottom:10px!important}}@media (max-width:360px){.title[data-v-48d66cb0]{font-size:15px!important;margin-top:5px!important;margin-bottom:10px!important}}@media (max-width:320px){.title[data-v-48d66cb0]{font-size:13px!important;margin-top:5px!important;margin-bottom:10px!important}}@media (max-width:300px){.title[data-v-48d66cb0]{font-size:11px!important;margin-top:0!important;margin-bottom:5px!important}}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, ".theme--light.v-text-field>.v-input__control>.v-input__slot:before{border-color:rgba(0,0,0,.42)}.theme--light.v-text-field:not(.v-input--has-state):hover>.v-input__control>.v-input__slot:before{border-color:rgba(0,0,0,.87)}.theme--light.v-text-field.v-input--is-disabled .v-input__slot:before{-o-border-image:repeating-linear-gradient(90deg,rgba(0,0,0,.38) 0,rgba(0,0,0,.38) 2px,transparent 0,transparent 4px) 1 repeat;border-image:repeating-linear-gradient(90deg,rgba(0,0,0,.38) 0,rgba(0,0,0,.38) 2px,transparent 0,transparent 4px) 1 repeat}.theme--light.v-text-field--filled>.v-input__control>.v-input__slot{background:rgba(0,0,0,.06)}.theme--light.v-text-field--filled:not(.v-input--is-focused):not(.v-input--has-state)>.v-input__control>.v-input__slot:hover{background:rgba(0,0,0,.12)}.theme--light.v-text-field--solo>.v-input__control>.v-input__slot{background:#fff}.theme--light.v-text-field--solo-inverted>.v-input__control>.v-input__slot{background:rgba(0,0,0,.06)}.theme--light.v-text-field--solo-inverted.v-input--is-focused>.v-input__control>.v-input__slot{background:#424242}.theme--light.v-text-field--solo-inverted.v-input--is-focused>.v-input__control>.v-input__slot input{color:#fff}.theme--light.v-text-field--solo-inverted.v-input--is-focused>.v-input__control>.v-input__slot input::-moz-placeholder{color:hsla(0,0%,100%,.5)}.theme--light.v-text-field--solo-inverted.v-input--is-focused>.v-input__control>.v-input__slot input:-ms-input-placeholder{color:hsla(0,0%,100%,.5)}.theme--light.v-text-field--solo-inverted.v-input--is-focused>.v-input__control>.v-input__slot input::placeholder{color:hsla(0,0%,100%,.5)}.theme--light.v-text-field--solo-inverted.v-input--is-focused>.v-input__control>.v-input__slot .v-label{color:hsla(0,0%,100%,.7)}.theme--light.v-text-field--outlined:not(.v-input--is-focused):not(.v-input--has-state)>.v-input__control>.v-input__slot fieldset{color:rgba(0,0,0,.38)}.theme--light.v-text-field--outlined:not(.v-input--is-focused):not(.v-input--has-state):not(.v-input--is-disabled)>.v-input__control>.v-input__slot:hover fieldset{color:rgba(0,0,0,.86)}.theme--light.v-text-field--outlined:not(.v-input--is-focused).v-input--is-disabled>.v-input__control>.v-input__slot fieldset{color:rgba(0,0,0,.26)}.theme--dark.v-text-field>.v-input__control>.v-input__slot:before{border-color:hsla(0,0%,100%,.7)}.theme--dark.v-text-field:not(.v-input--has-state):hover>.v-input__control>.v-input__slot:before{border-color:#fff}.theme--dark.v-text-field.v-input--is-disabled .v-input__slot:before{-o-border-image:repeating-linear-gradient(90deg,hsla(0,0%,100%,.5) 0,hsla(0,0%,100%,.5) 2px,transparent 0,transparent 4px) 1 repeat;border-image:repeating-linear-gradient(90deg,hsla(0,0%,100%,.5) 0,hsla(0,0%,100%,.5) 2px,transparent 0,transparent 4px) 1 repeat}.theme--dark.v-text-field--filled>.v-input__control>.v-input__slot{background:hsla(0,0%,100%,.08)}.theme--dark.v-text-field--filled:not(.v-input--is-focused):not(.v-input--has-state)>.v-input__control>.v-input__slot:hover{background:hsla(0,0%,100%,.16)}.theme--dark.v-text-field--solo>.v-input__control>.v-input__slot{background:#1e1e1e}.theme--dark.v-text-field--solo-inverted>.v-input__control>.v-input__slot{background:hsla(0,0%,100%,.16)}.theme--dark.v-text-field--solo-inverted.v-input--is-focused>.v-input__control>.v-input__slot{background:#fff}.theme--dark.v-text-field--solo-inverted.v-input--is-focused>.v-input__control>.v-input__slot input{color:rgba(0,0,0,.87)}.theme--dark.v-text-field--solo-inverted.v-input--is-focused>.v-input__control>.v-input__slot input::-moz-placeholder{color:rgba(0,0,0,.38)}.theme--dark.v-text-field--solo-inverted.v-input--is-focused>.v-input__control>.v-input__slot input:-ms-input-placeholder{color:rgba(0,0,0,.38)}.theme--dark.v-text-field--solo-inverted.v-input--is-focused>.v-input__control>.v-input__slot input::placeholder{color:rgba(0,0,0,.38)}.theme--dark.v-text-field--solo-inverted.v-input--is-focused>.v-input__control>.v-input__slot .v-label{color:rgba(0,0,0,.6)}.theme--dark.v-text-field--outlined:not(.v-input--is-focused):not(.v-input--has-state)>.v-input__control>.v-input__slot fieldset{color:hsla(0,0%,100%,.24)}.theme--dark.v-text-field--outlined:not(.v-input--is-focused):not(.v-input--has-state):not(.v-input--is-disabled)>.v-input__control>.v-input__slot:hover fieldset{color:#fff}.theme--dark.v-text-field--outlined:not(.v-input--is-focused).v-input--is-disabled>.v-input__control>.v-input__slot fieldset{color:hsla(0,0%,100%,.16)}.v-text-field{padding-top:12px;margin-top:4px}.v-text-field__prefix,.v-text-field__suffix{line-height:20px}.v-text-field input{flex:1 1 auto;line-height:20px;padding:8px 0;max-width:100%;min-width:0;width:100%}.v-text-field .v-input__control,.v-text-field .v-input__slot,.v-text-field fieldset{border-radius:inherit}.v-text-field.v-input--has-state .v-input__control>.v-text-field__details>.v-counter,.v-text-field.v-input--is-disabled .v-input__control>.v-text-field__details>.v-counter,.v-text-field.v-input--is-disabled .v-input__control>.v-text-field__details>.v-messages,.v-text-field .v-input__control,.v-text-field fieldset{color:inherit}.v-text-field.v-input--dense{padding-top:0}.v-text-field.v-input--dense .v-label{top:4px}.v-text-field.v-input--dense:not(.v-text-field--outlined) .v-text-field__prefix,.v-text-field.v-input--dense:not(.v-text-field--outlined) .v-text-field__suffix,.v-text-field.v-input--dense:not(.v-text-field--outlined) input{padding:4px 0 2px}.v-text-field.v-input--dense:not(.v-text-field--outlined) .v-text-field__prefix{padding-right:4px}.v-text-field.v-input--dense:not(.v-text-field--outlined) .v-text-field__suffix{padding-left:4px}.v-text-field.v-input--dense[type=text]::-ms-clear{display:none}.v-text-field.v-input--dense .v-input__append-inner,.v-text-field.v-input--dense .v-input__prepend-inner{margin-top:0}.v-text-field .v-input__append-inner,.v-text-field .v-input__prepend-inner{align-self:flex-start;display:inline-flex;margin-top:4px;line-height:1;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.v-application--is-ltr .v-text-field .v-input__prepend-inner{margin-right:auto;padding-right:4px}.v-application--is-ltr .v-text-field .v-input__append-inner,.v-application--is-rtl .v-text-field .v-input__prepend-inner{margin-left:auto;padding-left:4px}.v-application--is-rtl .v-text-field .v-input__append-inner{margin-right:auto;padding-right:4px}.v-text-field .v-counter{white-space:nowrap}.v-application--is-ltr .v-text-field .v-counter{margin-left:8px}.v-application--is-rtl .v-text-field .v-counter{margin-right:8px}.v-text-field .v-label{max-width:90%;overflow:hidden;text-overflow:ellipsis;top:6px;white-space:nowrap;pointer-events:none}.v-application--is-ltr .v-text-field .v-label{transform-origin:top left}.v-application--is-rtl .v-text-field .v-label{transform-origin:top right}.v-text-field .v-label--active{max-width:133%;transform:translateY(-18px) scale(.75);pointer-events:auto}.v-text-field>.v-input__control>.v-input__slot{cursor:text}.v-text-field>.v-input__control>.v-input__slot:after,.v-text-field>.v-input__control>.v-input__slot:before{bottom:-1px;content:\"\";left:0;position:absolute;transition:.3s cubic-bezier(.25,.8,.5,1);width:100%}.v-text-field>.v-input__control>.v-input__slot:before{border-color:inherit;border-style:solid;border-width:thin 0 0}.v-text-field>.v-input__control>.v-input__slot:after{background-color:currentColor;border-color:currentcolor;border-style:solid;border-width:thin 0;transform:scaleX(0)}.v-text-field__details{display:flex;flex:1 0 auto;max-width:100%;min-height:14px;overflow:hidden}.v-text-field__prefix,.v-text-field__suffix{align-self:center;cursor:default;transition:color .3s cubic-bezier(.25,.8,.5,1);white-space:nowrap}.v-application--is-ltr .v-text-field__prefix{text-align:right;padding-right:4px}.v-application--is-rtl .v-text-field__prefix{text-align:left;padding-left:4px}.v-text-field__suffix{white-space:nowrap}.v-application--is-ltr .v-text-field__suffix{padding-left:4px}.v-application--is-rtl .v-text-field__suffix{padding-right:4px}.v-application--is-ltr .v-text-field--reverse .v-text-field__prefix{text-align:left;padding-right:0;padding-left:4px}.v-application--is-rtl .v-text-field--reverse .v-text-field__prefix{text-align:right;padding-right:4px;padding-left:0}.v-application--is-ltr .v-text-field--reverse .v-text-field__suffix{padding-left:0;padding-right:4px}.v-application--is-rtl .v-text-field--reverse .v-text-field__suffix{padding-left:4px;padding-right:0}.v-text-field>.v-input__control>.v-input__slot>.v-text-field__slot{display:flex;flex:1 1 auto;position:relative}.v-text-field:not(.v-text-field--is-booted) .v-label,.v-text-field:not(.v-text-field--is-booted) legend{transition:none}.v-text-field--filled,.v-text-field--full-width,.v-text-field--outlined{position:relative}.v-text-field--filled>.v-input__control>.v-input__slot,.v-text-field--full-width>.v-input__control>.v-input__slot,.v-text-field--outlined>.v-input__control>.v-input__slot{align-items:stretch;min-height:56px}.v-text-field--filled.v-input--dense>.v-input__control>.v-input__slot,.v-text-field--full-width.v-input--dense>.v-input__control>.v-input__slot,.v-text-field--outlined.v-input--dense>.v-input__control>.v-input__slot{min-height:52px}.v-text-field--filled.v-input--dense.v-text-field--outlined.v-text-field--filled>.v-input__control>.v-input__slot,.v-text-field--filled.v-input--dense.v-text-field--outlined>.v-input__control>.v-input__slot,.v-text-field--filled.v-input--dense.v-text-field--single-line>.v-input__control>.v-input__slot,.v-text-field--full-width.v-input--dense.v-text-field--outlined.v-text-field--filled>.v-input__control>.v-input__slot,.v-text-field--full-width.v-input--dense.v-text-field--outlined>.v-input__control>.v-input__slot,.v-text-field--full-width.v-input--dense.v-text-field--single-line>.v-input__control>.v-input__slot,.v-text-field--outlined.v-input--dense.v-text-field--outlined.v-text-field--filled>.v-input__control>.v-input__slot,.v-text-field--outlined.v-input--dense.v-text-field--outlined>.v-input__control>.v-input__slot,.v-text-field--outlined.v-input--dense.v-text-field--single-line>.v-input__control>.v-input__slot{min-height:40px}.v-text-field--outlined{border-radius:4px}.v-text-field--enclosed .v-input__append-inner,.v-text-field--enclosed .v-input__append-outer,.v-text-field--enclosed .v-input__prepend-inner,.v-text-field--enclosed .v-input__prepend-outer,.v-text-field--full-width .v-input__append-inner,.v-text-field--full-width .v-input__append-outer,.v-text-field--full-width .v-input__prepend-inner,.v-text-field--full-width .v-input__prepend-outer{margin-top:17px}.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo) .v-input__append-inner,.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo) .v-input__append-outer,.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo) .v-input__prepend-inner,.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo) .v-input__prepend-outer,.v-text-field--full-width.v-input--dense:not(.v-text-field--solo) .v-input__append-inner,.v-text-field--full-width.v-input--dense:not(.v-text-field--solo) .v-input__append-outer,.v-text-field--full-width.v-input--dense:not(.v-text-field--solo) .v-input__prepend-inner,.v-text-field--full-width.v-input--dense:not(.v-text-field--solo) .v-input__prepend-outer{margin-top:14px}.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__append-inner,.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__append-outer,.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__prepend-inner,.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__prepend-outer,.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__append-inner,.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__append-outer,.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__prepend-inner,.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__prepend-outer{margin-top:9px}.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__append-inner,.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__append-outer,.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__prepend-inner,.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__prepend-outer,.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__append-inner,.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__append-outer,.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__prepend-inner,.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__prepend-outer{margin-top:8px}.v-text-field--filled .v-label,.v-text-field--full-width .v-label{top:18px}.v-text-field--filled .v-label--active,.v-text-field--full-width .v-label--active{transform:translateY(-6px) scale(.75)}.v-text-field--filled.v-input--dense .v-label,.v-text-field--full-width.v-input--dense .v-label{top:17px}.v-text-field--filled.v-input--dense .v-label--active,.v-text-field--full-width.v-input--dense .v-label--active{transform:translateY(-10px) scale(.75)}.v-text-field--filled.v-input--dense.v-text-field--single-line .v-label,.v-text-field--full-width.v-input--dense.v-text-field--single-line .v-label{top:11px}.v-text-field--filled{border-radius:4px 4px 0 0}.v-text-field--filled:not(.v-text-field--single-line) input{margin-top:22px}.v-text-field--filled.v-input--dense:not(.v-text-field--single-line).v-text-field--outlined input{margin-top:0}.v-text-field--filled .v-text-field__prefix,.v-text-field--filled .v-text-field__suffix{max-height:32px;margin-top:20px}.v-text-field--full-width{border-radius:0}.v-text-field--outlined .v-text-field__slot,.v-text-field--single-line .v-text-field__slot{align-items:center}.v-text-field.v-text-field--enclosed{margin:0;padding:0}.v-text-field.v-text-field--enclosed.v-text-field--single-line .v-text-field__prefix,.v-text-field.v-text-field--enclosed.v-text-field--single-line .v-text-field__suffix{margin-top:0}.v-text-field.v-text-field--enclosed:not(.v-text-field--filled) .v-progress-linear__background{display:none}.v-text-field.v-text-field--enclosed .v-text-field__details,.v-text-field.v-text-field--enclosed:not(.v-text-field--rounded)>.v-input__control>.v-input__slot{padding:0 12px}.v-text-field.v-text-field--enclosed .v-text-field__details{padding-top:0;margin-bottom:8px}.v-application--is-ltr .v-text-field--reverse input{text-align:right}.v-application--is-rtl .v-text-field--reverse input{text-align:left}.v-application--is-ltr .v-text-field--reverse .v-label{transform-origin:top right}.v-application--is-rtl .v-text-field--reverse .v-label{transform-origin:top left}.v-text-field--reverse .v-text-field__slot,.v-text-field--reverse>.v-input__control>.v-input__slot{flex-direction:row-reverse}.v-text-field--outlined>.v-input__control>.v-input__slot:after,.v-text-field--outlined>.v-input__control>.v-input__slot:before,.v-text-field--rounded>.v-input__control>.v-input__slot:after,.v-text-field--rounded>.v-input__control>.v-input__slot:before,.v-text-field--solo>.v-input__control>.v-input__slot:after,.v-text-field--solo>.v-input__control>.v-input__slot:before{display:none}.v-text-field--outlined,.v-text-field--solo{border-radius:4px}.v-text-field--outlined{margin-bottom:16px;transition:border .3s cubic-bezier(.25,.8,.5,1)}.v-text-field--outlined .v-label{top:18px}.v-text-field--outlined .v-label--active{transform:translateY(-24px) scale(.75)}.v-text-field--outlined.v-input--dense .v-label{top:10px}.v-text-field--outlined.v-input--dense .v-label--active{transform:translateY(-16px) scale(.75)}.v-text-field--outlined fieldset{border-collapse:collapse;border:1px solid;bottom:0;left:0;pointer-events:none;position:absolute;right:0;top:-5px;transition-duration:.3s;transition-property:color,border-width;transition-timing-function:cubic-bezier(.25,.8,.25,1)}.v-application--is-ltr .v-text-field--outlined fieldset{padding-left:8px}.v-application--is-ltr .v-text-field--outlined.v-text-field--reverse fieldset,.v-application--is-rtl .v-text-field--outlined fieldset{padding-right:8px}.v-application--is-rtl .v-text-field--outlined.v-text-field--reverse fieldset{padding-left:8px}.v-text-field--outlined legend{line-height:11px;padding:0;transition:width .3s cubic-bezier(.25,.8,.5,1)}.v-application--is-ltr .v-text-field--outlined legend{text-align:left}.v-application--is-rtl .v-text-field--outlined legend{text-align:right}.v-application--is-ltr .v-text-field--outlined.v-text-field--reverse legend{margin-left:auto}.v-application--is-rtl .v-text-field--outlined.v-text-field--reverse legend{margin-right:auto}.v-application--is-ltr .v-text-field--outlined.v-text-field--rounded legend{margin-left:12px}.v-application--is-rtl .v-text-field--outlined.v-text-field--rounded legend{margin-right:12px}.v-text-field--outlined>.v-input__control>.v-input__slot{background:transparent}.v-text-field--outlined .v-text-field__prefix{max-height:32px}.v-text-field--outlined .v-input__append-outer,.v-text-field--outlined .v-input__prepend-outer{margin-top:18px}.v-text-field--outlined.v-input--has-state fieldset,.v-text-field--outlined.v-input--is-focused fieldset{border:2px solid}.v-text-field--rounded{border-radius:28px}.v-text-field--rounded>.v-input__control>.v-input__slot{padding:0 24px}.v-text-field--shaped{border-radius:16px 16px 0 0}.v-text-field.v-text-field--solo .v-label{top:calc(50% - 9px)}.v-text-field.v-text-field--solo .v-input__control{min-height:48px;padding:0}.v-text-field.v-text-field--solo .v-input__control input{caret-color:auto}.v-text-field.v-text-field--solo.v-input--dense>.v-input__control{min-height:38px}.v-text-field.v-text-field--solo:not(.v-text-field--solo-flat)>.v-input__control>.v-input__slot{box-shadow:0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12)}.v-text-field.v-text-field--solo .v-input__append-inner,.v-text-field.v-text-field--solo .v-input__prepend-inner{align-self:center;margin-top:0}.v-text-field.v-text-field--solo .v-input__append-outer,.v-text-field.v-text-field--solo .v-input__prepend-outer{margin-top:12px}.v-text-field.v-text-field--solo.v-input--dense .v-input__append-outer,.v-text-field.v-text-field--solo.v-input--dense .v-input__prepend-outer{margin-top:7px}.v-text-field.v-input--is-focused>.v-input__control>.v-input__slot:after{transform:scaleX(1)}.v-text-field.v-input--has-state>.v-input__control>.v-input__slot:before{border-color:currentColor}", ""]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
 
 /***/ }),
 
-/***/ 180:
+/***/ 184:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(185);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+__webpack_require__(6).default("22487aae", content, true)
+
+/***/ }),
+
+/***/ 185:
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(5);
+var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, ".theme--light.v-input,.theme--light.v-input input,.theme--light.v-input textarea{color:rgba(0,0,0,.87)}.theme--light.v-input input::-moz-placeholder,.theme--light.v-input textarea::-moz-placeholder{color:rgba(0,0,0,.38)}.theme--light.v-input input:-ms-input-placeholder,.theme--light.v-input textarea:-ms-input-placeholder{color:rgba(0,0,0,.38)}.theme--light.v-input input::placeholder,.theme--light.v-input textarea::placeholder{color:rgba(0,0,0,.38)}.theme--light.v-input--is-disabled,.theme--light.v-input--is-disabled input,.theme--light.v-input--is-disabled textarea{color:rgba(0,0,0,.38)}.theme--dark.v-input,.theme--dark.v-input input,.theme--dark.v-input textarea{color:#fff}.theme--dark.v-input input::-moz-placeholder,.theme--dark.v-input textarea::-moz-placeholder{color:hsla(0,0%,100%,.5)}.theme--dark.v-input input:-ms-input-placeholder,.theme--dark.v-input textarea:-ms-input-placeholder{color:hsla(0,0%,100%,.5)}.theme--dark.v-input input::placeholder,.theme--dark.v-input textarea::placeholder{color:hsla(0,0%,100%,.5)}.theme--dark.v-input--is-disabled,.theme--dark.v-input--is-disabled input,.theme--dark.v-input--is-disabled textarea{color:hsla(0,0%,100%,.5)}.v-input{align-items:flex-start;display:flex;flex:1 1 auto;font-size:16px;letter-spacing:normal;max-width:100%;text-align:left}.v-input .v-progress-linear{top:calc(100% - 1px);left:0}.v-input input{max-height:32px}.v-input input:invalid,.v-input textarea:invalid{box-shadow:none}.v-input input:active,.v-input input:focus,.v-input textarea:active,.v-input textarea:focus{outline:none}.v-input .v-label{height:20px;line-height:20px;letter-spacing:normal}.v-input__append-outer,.v-input__prepend-outer{display:inline-flex;margin-bottom:4px;margin-top:4px;line-height:1}.v-input__append-outer .v-icon,.v-input__prepend-outer .v-icon{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.v-application--is-ltr .v-input__append-outer{margin-left:9px}.v-application--is-ltr .v-input__prepend-outer,.v-application--is-rtl .v-input__append-outer{margin-right:9px}.v-application--is-rtl .v-input__prepend-outer{margin-left:9px}.v-input__control{display:flex;flex-direction:column;height:auto;flex-grow:1;flex-wrap:wrap;min-width:0;width:100%}.v-input__icon{align-items:center;display:inline-flex;height:24px;flex:1 0 auto;justify-content:center;min-width:24px;width:24px}.v-input__icon--clear{border-radius:50%}.v-input__icon--clear .v-icon--disabled{visibility:hidden}.v-input__slot{align-items:center;color:inherit;display:flex;margin-bottom:8px;min-height:inherit;position:relative;transition:.3s cubic-bezier(.25,.8,.5,1);width:100%}.v-input--dense>.v-input__control>.v-input__slot{margin-bottom:4px}.v-input--is-disabled:not(.v-input--is-readonly){pointer-events:none}.v-input--is-loading>.v-input__control>.v-input__slot:after,.v-input--is-loading>.v-input__control>.v-input__slot:before{display:none}.v-input--hide-details>.v-input__control>.v-input__slot{margin-bottom:0}.v-input--has-state.error--text .v-label{-webkit-animation:v-shake .6s cubic-bezier(.25,.8,.5,1);animation:v-shake .6s cubic-bezier(.25,.8,.5,1)}", ""]);
+// Exports
+module.exports = ___CSS_LOADER_EXPORT___;
+
+
+/***/ }),
+
+/***/ 186:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(187);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+__webpack_require__(6).default("371f82d0", content, true)
+
+/***/ }),
+
+/***/ 187:
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(5);
+var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, ".theme--light.v-label{color:rgba(0,0,0,.6)}.theme--light.v-label--is-disabled{color:rgba(0,0,0,.38)}.theme--dark.v-label{color:hsla(0,0%,100%,.7)}.theme--dark.v-label--is-disabled{color:hsla(0,0%,100%,.5)}.v-label{font-size:16px;line-height:1;min-height:8px;transition:.3s cubic-bezier(.25,.8,.5,1)}", ""]);
+// Exports
+module.exports = ___CSS_LOADER_EXPORT___;
+
+
+/***/ }),
+
+/***/ 188:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(189);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+__webpack_require__(6).default("2bb34da4", content, true)
+
+/***/ }),
+
+/***/ 189:
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(5);
+var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, ".theme--light.v-messages{color:rgba(0,0,0,.6)}.theme--dark.v-messages{color:hsla(0,0%,100%,.7)}.v-messages{flex:1 1 auto;font-size:12px;min-height:14px;min-width:1px;position:relative}.v-application--is-ltr .v-messages{text-align:left}.v-application--is-rtl .v-messages{text-align:right}.v-messages__message{line-height:12px;word-break:break-word;word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}", ""]);
+// Exports
+module.exports = ___CSS_LOADER_EXPORT___;
+
+
+/***/ }),
+
+/***/ 190:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(191);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+__webpack_require__(6).default("3dc908a0", content, true)
+
+/***/ }),
+
+/***/ 191:
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(5);
+var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, ".theme--light.v-counter{color:rgba(0,0,0,.6)}.theme--dark.v-counter{color:hsla(0,0%,100%,.7)}.v-counter{flex:0 1 auto;font-size:12px;min-height:12px;line-height:12px}", ""]);
+// Exports
+module.exports = ___CSS_LOADER_EXPORT___;
+
+
+/***/ }),
+
+/***/ 192:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var core_js_modules_esnext_map_delete_all_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(147);
+/* harmony import */ var core_js_modules_esnext_map_delete_all_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(151);
 /* harmony import */ var core_js_modules_esnext_map_delete_all_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_esnext_map_delete_all_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var core_js_modules_esnext_map_every_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(148);
+/* harmony import */ var core_js_modules_esnext_map_every_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(152);
 /* harmony import */ var core_js_modules_esnext_map_every_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_esnext_map_every_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var core_js_modules_esnext_map_filter_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(149);
+/* harmony import */ var core_js_modules_esnext_map_filter_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(153);
 /* harmony import */ var core_js_modules_esnext_map_filter_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_esnext_map_filter_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var core_js_modules_esnext_map_find_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(150);
+/* harmony import */ var core_js_modules_esnext_map_find_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(154);
 /* harmony import */ var core_js_modules_esnext_map_find_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_esnext_map_find_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var core_js_modules_esnext_map_find_key_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(151);
+/* harmony import */ var core_js_modules_esnext_map_find_key_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(155);
 /* harmony import */ var core_js_modules_esnext_map_find_key_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_esnext_map_find_key_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var core_js_modules_esnext_map_includes_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(152);
+/* harmony import */ var core_js_modules_esnext_map_includes_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(156);
 /* harmony import */ var core_js_modules_esnext_map_includes_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_esnext_map_includes_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var core_js_modules_esnext_map_key_of_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(153);
+/* harmony import */ var core_js_modules_esnext_map_key_of_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(157);
 /* harmony import */ var core_js_modules_esnext_map_key_of_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_esnext_map_key_of_js__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var core_js_modules_esnext_map_map_keys_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(154);
+/* harmony import */ var core_js_modules_esnext_map_map_keys_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(158);
 /* harmony import */ var core_js_modules_esnext_map_map_keys_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_esnext_map_map_keys_js__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var core_js_modules_esnext_map_map_values_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(155);
+/* harmony import */ var core_js_modules_esnext_map_map_values_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(159);
 /* harmony import */ var core_js_modules_esnext_map_map_values_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_esnext_map_map_values_js__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var core_js_modules_esnext_map_merge_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(156);
+/* harmony import */ var core_js_modules_esnext_map_merge_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(160);
 /* harmony import */ var core_js_modules_esnext_map_merge_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_esnext_map_merge_js__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var core_js_modules_esnext_map_reduce_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(157);
+/* harmony import */ var core_js_modules_esnext_map_reduce_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(161);
 /* harmony import */ var core_js_modules_esnext_map_reduce_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_esnext_map_reduce_js__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var core_js_modules_esnext_map_some_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(158);
+/* harmony import */ var core_js_modules_esnext_map_some_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(162);
 /* harmony import */ var core_js_modules_esnext_map_some_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_esnext_map_some_js__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var core_js_modules_esnext_map_update_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(159);
+/* harmony import */ var core_js_modules_esnext_map_update_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(163);
 /* harmony import */ var core_js_modules_esnext_map_update_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_esnext_map_update_js__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _src_components_VGrid_VGrid_sass__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(71);
+/* harmony import */ var _src_components_VGrid_VGrid_sass__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(75);
 /* harmony import */ var _src_components_VGrid_VGrid_sass__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_src_components_VGrid_VGrid_sass__WEBPACK_IMPORTED_MODULE_13__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(2);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_14__);
 /* harmony import */ var _util_mergeData__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(21);
-/* harmony import */ var _util_helpers__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(0);
+/* harmony import */ var _util_helpers__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(1);
 
 
 
@@ -1065,42 +1165,42 @@ const cache = new Map();
 
 /***/ }),
 
-/***/ 181:
+/***/ 193:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var core_js_modules_esnext_map_delete_all_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(147);
+/* harmony import */ var core_js_modules_esnext_map_delete_all_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(151);
 /* harmony import */ var core_js_modules_esnext_map_delete_all_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_esnext_map_delete_all_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var core_js_modules_esnext_map_every_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(148);
+/* harmony import */ var core_js_modules_esnext_map_every_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(152);
 /* harmony import */ var core_js_modules_esnext_map_every_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_esnext_map_every_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var core_js_modules_esnext_map_filter_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(149);
+/* harmony import */ var core_js_modules_esnext_map_filter_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(153);
 /* harmony import */ var core_js_modules_esnext_map_filter_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_esnext_map_filter_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var core_js_modules_esnext_map_find_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(150);
+/* harmony import */ var core_js_modules_esnext_map_find_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(154);
 /* harmony import */ var core_js_modules_esnext_map_find_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_esnext_map_find_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var core_js_modules_esnext_map_find_key_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(151);
+/* harmony import */ var core_js_modules_esnext_map_find_key_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(155);
 /* harmony import */ var core_js_modules_esnext_map_find_key_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_esnext_map_find_key_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var core_js_modules_esnext_map_includes_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(152);
+/* harmony import */ var core_js_modules_esnext_map_includes_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(156);
 /* harmony import */ var core_js_modules_esnext_map_includes_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_esnext_map_includes_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var core_js_modules_esnext_map_key_of_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(153);
+/* harmony import */ var core_js_modules_esnext_map_key_of_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(157);
 /* harmony import */ var core_js_modules_esnext_map_key_of_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_esnext_map_key_of_js__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var core_js_modules_esnext_map_map_keys_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(154);
+/* harmony import */ var core_js_modules_esnext_map_map_keys_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(158);
 /* harmony import */ var core_js_modules_esnext_map_map_keys_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_esnext_map_map_keys_js__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var core_js_modules_esnext_map_map_values_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(155);
+/* harmony import */ var core_js_modules_esnext_map_map_values_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(159);
 /* harmony import */ var core_js_modules_esnext_map_map_values_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_esnext_map_map_values_js__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var core_js_modules_esnext_map_merge_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(156);
+/* harmony import */ var core_js_modules_esnext_map_merge_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(160);
 /* harmony import */ var core_js_modules_esnext_map_merge_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_esnext_map_merge_js__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var core_js_modules_esnext_map_reduce_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(157);
+/* harmony import */ var core_js_modules_esnext_map_reduce_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(161);
 /* harmony import */ var core_js_modules_esnext_map_reduce_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_esnext_map_reduce_js__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var core_js_modules_esnext_map_some_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(158);
+/* harmony import */ var core_js_modules_esnext_map_some_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(162);
 /* harmony import */ var core_js_modules_esnext_map_some_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_esnext_map_some_js__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var core_js_modules_esnext_map_update_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(159);
+/* harmony import */ var core_js_modules_esnext_map_update_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(163);
 /* harmony import */ var core_js_modules_esnext_map_update_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_esnext_map_update_js__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _src_components_VGrid_VGrid_sass__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(71);
+/* harmony import */ var _src_components_VGrid_VGrid_sass__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(75);
 /* harmony import */ var _src_components_VGrid_VGrid_sass__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_src_components_VGrid_VGrid_sass__WEBPACK_IMPORTED_MODULE_13__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(2);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_14__);
 /* harmony import */ var _util_mergeData__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(21);
-/* harmony import */ var _util_helpers__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(0);
+/* harmony import */ var _util_helpers__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(1);
 
 
 
@@ -1259,145 +1359,91 @@ const cache = new Map();
 
 /***/ }),
 
-/***/ 182:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 194:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(5);
-var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-___CSS_LOADER_EXPORT___.push([module.i, ".theme--light.v-text-field>.v-input__control>.v-input__slot:before{border-color:rgba(0,0,0,.42)}.theme--light.v-text-field:not(.v-input--has-state):hover>.v-input__control>.v-input__slot:before{border-color:rgba(0,0,0,.87)}.theme--light.v-text-field.v-input--is-disabled .v-input__slot:before{-o-border-image:repeating-linear-gradient(90deg,rgba(0,0,0,.38) 0,rgba(0,0,0,.38) 2px,transparent 0,transparent 4px) 1 repeat;border-image:repeating-linear-gradient(90deg,rgba(0,0,0,.38) 0,rgba(0,0,0,.38) 2px,transparent 0,transparent 4px) 1 repeat}.theme--light.v-text-field--filled>.v-input__control>.v-input__slot{background:rgba(0,0,0,.06)}.theme--light.v-text-field--filled:not(.v-input--is-focused):not(.v-input--has-state)>.v-input__control>.v-input__slot:hover{background:rgba(0,0,0,.12)}.theme--light.v-text-field--solo>.v-input__control>.v-input__slot{background:#fff}.theme--light.v-text-field--solo-inverted>.v-input__control>.v-input__slot{background:rgba(0,0,0,.06)}.theme--light.v-text-field--solo-inverted.v-input--is-focused>.v-input__control>.v-input__slot{background:#424242}.theme--light.v-text-field--solo-inverted.v-input--is-focused>.v-input__control>.v-input__slot input{color:#fff}.theme--light.v-text-field--solo-inverted.v-input--is-focused>.v-input__control>.v-input__slot input::-moz-placeholder{color:hsla(0,0%,100%,.5)}.theme--light.v-text-field--solo-inverted.v-input--is-focused>.v-input__control>.v-input__slot input:-ms-input-placeholder{color:hsla(0,0%,100%,.5)}.theme--light.v-text-field--solo-inverted.v-input--is-focused>.v-input__control>.v-input__slot input::placeholder{color:hsla(0,0%,100%,.5)}.theme--light.v-text-field--solo-inverted.v-input--is-focused>.v-input__control>.v-input__slot .v-label{color:hsla(0,0%,100%,.7)}.theme--light.v-text-field--outlined:not(.v-input--is-focused):not(.v-input--has-state)>.v-input__control>.v-input__slot fieldset{color:rgba(0,0,0,.38)}.theme--light.v-text-field--outlined:not(.v-input--is-focused):not(.v-input--has-state):not(.v-input--is-disabled)>.v-input__control>.v-input__slot:hover fieldset{color:rgba(0,0,0,.86)}.theme--light.v-text-field--outlined:not(.v-input--is-focused).v-input--is-disabled>.v-input__control>.v-input__slot fieldset{color:rgba(0,0,0,.26)}.theme--dark.v-text-field>.v-input__control>.v-input__slot:before{border-color:hsla(0,0%,100%,.7)}.theme--dark.v-text-field:not(.v-input--has-state):hover>.v-input__control>.v-input__slot:before{border-color:#fff}.theme--dark.v-text-field.v-input--is-disabled .v-input__slot:before{-o-border-image:repeating-linear-gradient(90deg,hsla(0,0%,100%,.5) 0,hsla(0,0%,100%,.5) 2px,transparent 0,transparent 4px) 1 repeat;border-image:repeating-linear-gradient(90deg,hsla(0,0%,100%,.5) 0,hsla(0,0%,100%,.5) 2px,transparent 0,transparent 4px) 1 repeat}.theme--dark.v-text-field--filled>.v-input__control>.v-input__slot{background:hsla(0,0%,100%,.08)}.theme--dark.v-text-field--filled:not(.v-input--is-focused):not(.v-input--has-state)>.v-input__control>.v-input__slot:hover{background:hsla(0,0%,100%,.16)}.theme--dark.v-text-field--solo>.v-input__control>.v-input__slot{background:#1e1e1e}.theme--dark.v-text-field--solo-inverted>.v-input__control>.v-input__slot{background:hsla(0,0%,100%,.16)}.theme--dark.v-text-field--solo-inverted.v-input--is-focused>.v-input__control>.v-input__slot{background:#fff}.theme--dark.v-text-field--solo-inverted.v-input--is-focused>.v-input__control>.v-input__slot input{color:rgba(0,0,0,.87)}.theme--dark.v-text-field--solo-inverted.v-input--is-focused>.v-input__control>.v-input__slot input::-moz-placeholder{color:rgba(0,0,0,.38)}.theme--dark.v-text-field--solo-inverted.v-input--is-focused>.v-input__control>.v-input__slot input:-ms-input-placeholder{color:rgba(0,0,0,.38)}.theme--dark.v-text-field--solo-inverted.v-input--is-focused>.v-input__control>.v-input__slot input::placeholder{color:rgba(0,0,0,.38)}.theme--dark.v-text-field--solo-inverted.v-input--is-focused>.v-input__control>.v-input__slot .v-label{color:rgba(0,0,0,.6)}.theme--dark.v-text-field--outlined:not(.v-input--is-focused):not(.v-input--has-state)>.v-input__control>.v-input__slot fieldset{color:hsla(0,0%,100%,.24)}.theme--dark.v-text-field--outlined:not(.v-input--is-focused):not(.v-input--has-state):not(.v-input--is-disabled)>.v-input__control>.v-input__slot:hover fieldset{color:#fff}.theme--dark.v-text-field--outlined:not(.v-input--is-focused).v-input--is-disabled>.v-input__control>.v-input__slot fieldset{color:hsla(0,0%,100%,.16)}.v-text-field{padding-top:12px;margin-top:4px}.v-text-field__prefix,.v-text-field__suffix{line-height:20px}.v-text-field input{flex:1 1 auto;line-height:20px;padding:8px 0;max-width:100%;min-width:0;width:100%}.v-text-field .v-input__control,.v-text-field .v-input__slot,.v-text-field fieldset{border-radius:inherit}.v-text-field.v-input--has-state .v-input__control>.v-text-field__details>.v-counter,.v-text-field.v-input--is-disabled .v-input__control>.v-text-field__details>.v-counter,.v-text-field.v-input--is-disabled .v-input__control>.v-text-field__details>.v-messages,.v-text-field .v-input__control,.v-text-field fieldset{color:inherit}.v-text-field.v-input--dense{padding-top:0}.v-text-field.v-input--dense .v-label{top:4px}.v-text-field.v-input--dense:not(.v-text-field--outlined) .v-text-field__prefix,.v-text-field.v-input--dense:not(.v-text-field--outlined) .v-text-field__suffix,.v-text-field.v-input--dense:not(.v-text-field--outlined) input{padding:4px 0 2px}.v-text-field.v-input--dense:not(.v-text-field--outlined) .v-text-field__prefix{padding-right:4px}.v-text-field.v-input--dense:not(.v-text-field--outlined) .v-text-field__suffix{padding-left:4px}.v-text-field.v-input--dense[type=text]::-ms-clear{display:none}.v-text-field.v-input--dense .v-input__append-inner,.v-text-field.v-input--dense .v-input__prepend-inner{margin-top:0}.v-text-field .v-input__append-inner,.v-text-field .v-input__prepend-inner{align-self:flex-start;display:inline-flex;margin-top:4px;line-height:1;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.v-application--is-ltr .v-text-field .v-input__prepend-inner{margin-right:auto;padding-right:4px}.v-application--is-ltr .v-text-field .v-input__append-inner,.v-application--is-rtl .v-text-field .v-input__prepend-inner{margin-left:auto;padding-left:4px}.v-application--is-rtl .v-text-field .v-input__append-inner{margin-right:auto;padding-right:4px}.v-text-field .v-counter{white-space:nowrap}.v-application--is-ltr .v-text-field .v-counter{margin-left:8px}.v-application--is-rtl .v-text-field .v-counter{margin-right:8px}.v-text-field .v-label{max-width:90%;overflow:hidden;text-overflow:ellipsis;top:6px;white-space:nowrap;pointer-events:none}.v-application--is-ltr .v-text-field .v-label{transform-origin:top left}.v-application--is-rtl .v-text-field .v-label{transform-origin:top right}.v-text-field .v-label--active{max-width:133%;transform:translateY(-18px) scale(.75);pointer-events:auto}.v-text-field>.v-input__control>.v-input__slot{cursor:text}.v-text-field>.v-input__control>.v-input__slot:after,.v-text-field>.v-input__control>.v-input__slot:before{bottom:-1px;content:\"\";left:0;position:absolute;transition:.3s cubic-bezier(.25,.8,.5,1);width:100%}.v-text-field>.v-input__control>.v-input__slot:before{border-color:inherit;border-style:solid;border-width:thin 0 0}.v-text-field>.v-input__control>.v-input__slot:after{background-color:currentColor;border-color:currentcolor;border-style:solid;border-width:thin 0;transform:scaleX(0)}.v-text-field__details{display:flex;flex:1 0 auto;max-width:100%;min-height:14px;overflow:hidden}.v-text-field__prefix,.v-text-field__suffix{align-self:center;cursor:default;transition:color .3s cubic-bezier(.25,.8,.5,1);white-space:nowrap}.v-application--is-ltr .v-text-field__prefix{text-align:right;padding-right:4px}.v-application--is-rtl .v-text-field__prefix{text-align:left;padding-left:4px}.v-text-field__suffix{white-space:nowrap}.v-application--is-ltr .v-text-field__suffix{padding-left:4px}.v-application--is-rtl .v-text-field__suffix{padding-right:4px}.v-application--is-ltr .v-text-field--reverse .v-text-field__prefix{text-align:left;padding-right:0;padding-left:4px}.v-application--is-rtl .v-text-field--reverse .v-text-field__prefix{text-align:right;padding-right:4px;padding-left:0}.v-application--is-ltr .v-text-field--reverse .v-text-field__suffix{padding-left:0;padding-right:4px}.v-application--is-rtl .v-text-field--reverse .v-text-field__suffix{padding-left:4px;padding-right:0}.v-text-field>.v-input__control>.v-input__slot>.v-text-field__slot{display:flex;flex:1 1 auto;position:relative}.v-text-field:not(.v-text-field--is-booted) .v-label,.v-text-field:not(.v-text-field--is-booted) legend{transition:none}.v-text-field--filled,.v-text-field--full-width,.v-text-field--outlined{position:relative}.v-text-field--filled>.v-input__control>.v-input__slot,.v-text-field--full-width>.v-input__control>.v-input__slot,.v-text-field--outlined>.v-input__control>.v-input__slot{align-items:stretch;min-height:56px}.v-text-field--filled.v-input--dense>.v-input__control>.v-input__slot,.v-text-field--full-width.v-input--dense>.v-input__control>.v-input__slot,.v-text-field--outlined.v-input--dense>.v-input__control>.v-input__slot{min-height:52px}.v-text-field--filled.v-input--dense.v-text-field--outlined.v-text-field--filled>.v-input__control>.v-input__slot,.v-text-field--filled.v-input--dense.v-text-field--outlined>.v-input__control>.v-input__slot,.v-text-field--filled.v-input--dense.v-text-field--single-line>.v-input__control>.v-input__slot,.v-text-field--full-width.v-input--dense.v-text-field--outlined.v-text-field--filled>.v-input__control>.v-input__slot,.v-text-field--full-width.v-input--dense.v-text-field--outlined>.v-input__control>.v-input__slot,.v-text-field--full-width.v-input--dense.v-text-field--single-line>.v-input__control>.v-input__slot,.v-text-field--outlined.v-input--dense.v-text-field--outlined.v-text-field--filled>.v-input__control>.v-input__slot,.v-text-field--outlined.v-input--dense.v-text-field--outlined>.v-input__control>.v-input__slot,.v-text-field--outlined.v-input--dense.v-text-field--single-line>.v-input__control>.v-input__slot{min-height:40px}.v-text-field--outlined{border-radius:4px}.v-text-field--enclosed .v-input__append-inner,.v-text-field--enclosed .v-input__append-outer,.v-text-field--enclosed .v-input__prepend-inner,.v-text-field--enclosed .v-input__prepend-outer,.v-text-field--full-width .v-input__append-inner,.v-text-field--full-width .v-input__append-outer,.v-text-field--full-width .v-input__prepend-inner,.v-text-field--full-width .v-input__prepend-outer{margin-top:17px}.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo) .v-input__append-inner,.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo) .v-input__append-outer,.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo) .v-input__prepend-inner,.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo) .v-input__prepend-outer,.v-text-field--full-width.v-input--dense:not(.v-text-field--solo) .v-input__append-inner,.v-text-field--full-width.v-input--dense:not(.v-text-field--solo) .v-input__append-outer,.v-text-field--full-width.v-input--dense:not(.v-text-field--solo) .v-input__prepend-inner,.v-text-field--full-width.v-input--dense:not(.v-text-field--solo) .v-input__prepend-outer{margin-top:14px}.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__append-inner,.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__append-outer,.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__prepend-inner,.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__prepend-outer,.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__append-inner,.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__append-outer,.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__prepend-inner,.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--single-line .v-input__prepend-outer{margin-top:9px}.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__append-inner,.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__append-outer,.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__prepend-inner,.v-text-field--enclosed.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__prepend-outer,.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__append-inner,.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__append-outer,.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__prepend-inner,.v-text-field--full-width.v-input--dense:not(.v-text-field--solo).v-text-field--outlined .v-input__prepend-outer{margin-top:8px}.v-text-field--filled .v-label,.v-text-field--full-width .v-label{top:18px}.v-text-field--filled .v-label--active,.v-text-field--full-width .v-label--active{transform:translateY(-6px) scale(.75)}.v-text-field--filled.v-input--dense .v-label,.v-text-field--full-width.v-input--dense .v-label{top:17px}.v-text-field--filled.v-input--dense .v-label--active,.v-text-field--full-width.v-input--dense .v-label--active{transform:translateY(-10px) scale(.75)}.v-text-field--filled.v-input--dense.v-text-field--single-line .v-label,.v-text-field--full-width.v-input--dense.v-text-field--single-line .v-label{top:11px}.v-text-field--filled{border-radius:4px 4px 0 0}.v-text-field--filled:not(.v-text-field--single-line) input{margin-top:22px}.v-text-field--filled.v-input--dense:not(.v-text-field--single-line).v-text-field--outlined input{margin-top:0}.v-text-field--filled .v-text-field__prefix,.v-text-field--filled .v-text-field__suffix{max-height:32px;margin-top:20px}.v-text-field--full-width{border-radius:0}.v-text-field--outlined .v-text-field__slot,.v-text-field--single-line .v-text-field__slot{align-items:center}.v-text-field.v-text-field--enclosed{margin:0;padding:0}.v-text-field.v-text-field--enclosed.v-text-field--single-line .v-text-field__prefix,.v-text-field.v-text-field--enclosed.v-text-field--single-line .v-text-field__suffix{margin-top:0}.v-text-field.v-text-field--enclosed:not(.v-text-field--filled) .v-progress-linear__background{display:none}.v-text-field.v-text-field--enclosed .v-text-field__details,.v-text-field.v-text-field--enclosed:not(.v-text-field--rounded)>.v-input__control>.v-input__slot{padding:0 12px}.v-text-field.v-text-field--enclosed .v-text-field__details{padding-top:0;margin-bottom:8px}.v-application--is-ltr .v-text-field--reverse input{text-align:right}.v-application--is-rtl .v-text-field--reverse input{text-align:left}.v-application--is-ltr .v-text-field--reverse .v-label{transform-origin:top right}.v-application--is-rtl .v-text-field--reverse .v-label{transform-origin:top left}.v-text-field--reverse .v-text-field__slot,.v-text-field--reverse>.v-input__control>.v-input__slot{flex-direction:row-reverse}.v-text-field--outlined>.v-input__control>.v-input__slot:after,.v-text-field--outlined>.v-input__control>.v-input__slot:before,.v-text-field--rounded>.v-input__control>.v-input__slot:after,.v-text-field--rounded>.v-input__control>.v-input__slot:before,.v-text-field--solo>.v-input__control>.v-input__slot:after,.v-text-field--solo>.v-input__control>.v-input__slot:before{display:none}.v-text-field--outlined,.v-text-field--solo{border-radius:4px}.v-text-field--outlined{margin-bottom:16px;transition:border .3s cubic-bezier(.25,.8,.5,1)}.v-text-field--outlined .v-label{top:18px}.v-text-field--outlined .v-label--active{transform:translateY(-24px) scale(.75)}.v-text-field--outlined.v-input--dense .v-label{top:10px}.v-text-field--outlined.v-input--dense .v-label--active{transform:translateY(-16px) scale(.75)}.v-text-field--outlined fieldset{border-collapse:collapse;border:1px solid;bottom:0;left:0;pointer-events:none;position:absolute;right:0;top:-5px;transition-duration:.3s;transition-property:color,border-width;transition-timing-function:cubic-bezier(.25,.8,.25,1)}.v-application--is-ltr .v-text-field--outlined fieldset{padding-left:8px}.v-application--is-ltr .v-text-field--outlined.v-text-field--reverse fieldset,.v-application--is-rtl .v-text-field--outlined fieldset{padding-right:8px}.v-application--is-rtl .v-text-field--outlined.v-text-field--reverse fieldset{padding-left:8px}.v-text-field--outlined legend{line-height:11px;padding:0;transition:width .3s cubic-bezier(.25,.8,.5,1)}.v-application--is-ltr .v-text-field--outlined legend{text-align:left}.v-application--is-rtl .v-text-field--outlined legend{text-align:right}.v-application--is-ltr .v-text-field--outlined.v-text-field--reverse legend{margin-left:auto}.v-application--is-rtl .v-text-field--outlined.v-text-field--reverse legend{margin-right:auto}.v-application--is-ltr .v-text-field--outlined.v-text-field--rounded legend{margin-left:12px}.v-application--is-rtl .v-text-field--outlined.v-text-field--rounded legend{margin-right:12px}.v-text-field--outlined>.v-input__control>.v-input__slot{background:transparent}.v-text-field--outlined .v-text-field__prefix{max-height:32px}.v-text-field--outlined .v-input__append-outer,.v-text-field--outlined .v-input__prepend-outer{margin-top:18px}.v-text-field--outlined.v-input--has-state fieldset,.v-text-field--outlined.v-input--is-focused fieldset{border:2px solid}.v-text-field--rounded{border-radius:28px}.v-text-field--rounded>.v-input__control>.v-input__slot{padding:0 24px}.v-text-field--shaped{border-radius:16px 16px 0 0}.v-text-field.v-text-field--solo .v-label{top:calc(50% - 9px)}.v-text-field.v-text-field--solo .v-input__control{min-height:48px;padding:0}.v-text-field.v-text-field--solo .v-input__control input{caret-color:auto}.v-text-field.v-text-field--solo.v-input--dense>.v-input__control{min-height:38px}.v-text-field.v-text-field--solo:not(.v-text-field--solo-flat)>.v-input__control>.v-input__slot{box-shadow:0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12)}.v-text-field.v-text-field--solo .v-input__append-inner,.v-text-field.v-text-field--solo .v-input__prepend-inner{align-self:center;margin-top:0}.v-text-field.v-text-field--solo .v-input__append-outer,.v-text-field.v-text-field--solo .v-input__prepend-outer{margin-top:12px}.v-text-field.v-text-field--solo.v-input--dense .v-input__append-outer,.v-text-field.v-text-field--solo.v-input--dense .v-input__prepend-outer{margin-top:7px}.v-text-field.v-input--is-focused>.v-input__control>.v-input__slot:after{transform:scaleX(1)}.v-text-field.v-input--has-state>.v-input__control>.v-input__slot:before{border-color:currentColor}", ""]);
-// Exports
-module.exports = ___CSS_LOADER_EXPORT___;
-
-
-/***/ }),
-
-/***/ 183:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(184);
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-__webpack_require__(6).default("22487aae", content, true)
-
-/***/ }),
-
-/***/ 184:
-/***/ (function(module, exports, __webpack_require__) {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(5);
-var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-___CSS_LOADER_EXPORT___.push([module.i, ".theme--light.v-input,.theme--light.v-input input,.theme--light.v-input textarea{color:rgba(0,0,0,.87)}.theme--light.v-input input::-moz-placeholder,.theme--light.v-input textarea::-moz-placeholder{color:rgba(0,0,0,.38)}.theme--light.v-input input:-ms-input-placeholder,.theme--light.v-input textarea:-ms-input-placeholder{color:rgba(0,0,0,.38)}.theme--light.v-input input::placeholder,.theme--light.v-input textarea::placeholder{color:rgba(0,0,0,.38)}.theme--light.v-input--is-disabled,.theme--light.v-input--is-disabled input,.theme--light.v-input--is-disabled textarea{color:rgba(0,0,0,.38)}.theme--dark.v-input,.theme--dark.v-input input,.theme--dark.v-input textarea{color:#fff}.theme--dark.v-input input::-moz-placeholder,.theme--dark.v-input textarea::-moz-placeholder{color:hsla(0,0%,100%,.5)}.theme--dark.v-input input:-ms-input-placeholder,.theme--dark.v-input textarea:-ms-input-placeholder{color:hsla(0,0%,100%,.5)}.theme--dark.v-input input::placeholder,.theme--dark.v-input textarea::placeholder{color:hsla(0,0%,100%,.5)}.theme--dark.v-input--is-disabled,.theme--dark.v-input--is-disabled input,.theme--dark.v-input--is-disabled textarea{color:hsla(0,0%,100%,.5)}.v-input{align-items:flex-start;display:flex;flex:1 1 auto;font-size:16px;letter-spacing:normal;max-width:100%;text-align:left}.v-input .v-progress-linear{top:calc(100% - 1px);left:0}.v-input input{max-height:32px}.v-input input:invalid,.v-input textarea:invalid{box-shadow:none}.v-input input:active,.v-input input:focus,.v-input textarea:active,.v-input textarea:focus{outline:none}.v-input .v-label{height:20px;line-height:20px;letter-spacing:normal}.v-input__append-outer,.v-input__prepend-outer{display:inline-flex;margin-bottom:4px;margin-top:4px;line-height:1}.v-input__append-outer .v-icon,.v-input__prepend-outer .v-icon{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.v-application--is-ltr .v-input__append-outer{margin-left:9px}.v-application--is-ltr .v-input__prepend-outer,.v-application--is-rtl .v-input__append-outer{margin-right:9px}.v-application--is-rtl .v-input__prepend-outer{margin-left:9px}.v-input__control{display:flex;flex-direction:column;height:auto;flex-grow:1;flex-wrap:wrap;min-width:0;width:100%}.v-input__icon{align-items:center;display:inline-flex;height:24px;flex:1 0 auto;justify-content:center;min-width:24px;width:24px}.v-input__icon--clear{border-radius:50%}.v-input__icon--clear .v-icon--disabled{visibility:hidden}.v-input__slot{align-items:center;color:inherit;display:flex;margin-bottom:8px;min-height:inherit;position:relative;transition:.3s cubic-bezier(.25,.8,.5,1);width:100%}.v-input--dense>.v-input__control>.v-input__slot{margin-bottom:4px}.v-input--is-disabled:not(.v-input--is-readonly){pointer-events:none}.v-input--is-loading>.v-input__control>.v-input__slot:after,.v-input--is-loading>.v-input__control>.v-input__slot:before{display:none}.v-input--hide-details>.v-input__control>.v-input__slot{margin-bottom:0}.v-input--has-state.error--text .v-label{-webkit-animation:v-shake .6s cubic-bezier(.25,.8,.5,1);animation:v-shake .6s cubic-bezier(.25,.8,.5,1)}", ""]);
-// Exports
-module.exports = ___CSS_LOADER_EXPORT___;
-
-
-/***/ }),
-
-/***/ 185:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(186);
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-__webpack_require__(6).default("371f82d0", content, true)
-
-/***/ }),
-
-/***/ 186:
-/***/ (function(module, exports, __webpack_require__) {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(5);
-var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-___CSS_LOADER_EXPORT___.push([module.i, ".theme--light.v-label{color:rgba(0,0,0,.6)}.theme--light.v-label--is-disabled{color:rgba(0,0,0,.38)}.theme--dark.v-label{color:hsla(0,0%,100%,.7)}.theme--dark.v-label--is-disabled{color:hsla(0,0%,100%,.5)}.v-label{font-size:16px;line-height:1;min-height:8px;transition:.3s cubic-bezier(.25,.8,.5,1)}", ""]);
-// Exports
-module.exports = ___CSS_LOADER_EXPORT___;
-
-
-/***/ }),
-
-/***/ 187:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(188);
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-__webpack_require__(6).default("2bb34da4", content, true)
-
-/***/ }),
-
-/***/ 188:
-/***/ (function(module, exports, __webpack_require__) {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(5);
-var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-___CSS_LOADER_EXPORT___.push([module.i, ".theme--light.v-messages{color:rgba(0,0,0,.6)}.theme--dark.v-messages{color:hsla(0,0%,100%,.7)}.v-messages{flex:1 1 auto;font-size:12px;min-height:14px;min-width:1px;position:relative}.v-application--is-ltr .v-messages{text-align:left}.v-application--is-rtl .v-messages{text-align:right}.v-messages__message{line-height:12px;word-break:break-word;word-wrap:break-word;-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto}", ""]);
-// Exports
-module.exports = ___CSS_LOADER_EXPORT___;
-
-
-/***/ }),
-
-/***/ 189:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(190);
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-__webpack_require__(6).default("3dc908a0", content, true)
-
-/***/ }),
-
-/***/ 190:
-/***/ (function(module, exports, __webpack_require__) {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(5);
-var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-___CSS_LOADER_EXPORT___.push([module.i, ".theme--light.v-counter{color:rgba(0,0,0,.6)}.theme--dark.v-counter{color:hsla(0,0%,100%,.7)}.v-counter{flex:0 1 auto;font-size:12px;min-height:12px;line-height:12px}", ""]);
-// Exports
-module.exports = ___CSS_LOADER_EXPORT___;
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PageTitle_vue_vue_type_style_index_0_id_48d66cb0_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(176);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PageTitle_vue_vue_type_style_index_0_id_48d66cb0_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PageTitle_vue_vue_type_style_index_0_id_48d66cb0_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PageTitle_vue_vue_type_style_index_0_id_48d66cb0_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PageTitle_vue_vue_type_style_index_0_id_48d66cb0_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
 
 /***/ 195:
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(5);
+var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, ".title[data-v-48d66cb0]{color:#4e4e4e;font-size:1.5rem!important;font-weight:500;letter-spacing:2px!important}@media (max-width:500px){.title[data-v-48d66cb0]{font-size:17px!important;margin-top:5px!important;margin-bottom:10px!important}}@media (max-width:360px){.title[data-v-48d66cb0]{font-size:15px!important;margin-top:5px!important;margin-bottom:10px!important}}@media (max-width:320px){.title[data-v-48d66cb0]{font-size:13px!important;margin-top:5px!important;margin-bottom:10px!important}}@media (max-width:300px){.title[data-v-48d66cb0]{font-size:11px!important;margin-top:0!important;margin-bottom:5px!important}}", ""]);
+// Exports
+module.exports = ___CSS_LOADER_EXPORT___;
+
+
+/***/ }),
+
+/***/ 199:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _src_components_VDivider_VDivider_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(205);
+/* harmony import */ var _src_components_VDivider_VDivider_sass__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_src_components_VDivider_VDivider_sass__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _mixins_themeable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8);
+// Styles
+ // Mixins
+
+
+/* harmony default export */ __webpack_exports__["a"] = (_mixins_themeable__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"].extend({
+  name: 'v-divider',
+  props: {
+    inset: Boolean,
+    vertical: Boolean
+  },
+
+  render(h) {
+    // WAI-ARIA attributes
+    let orientation;
+
+    if (!this.$attrs.role || this.$attrs.role === 'separator') {
+      orientation = this.vertical ? 'vertical' : 'horizontal';
+    }
+
+    return h('hr', {
+      class: {
+        'v-divider': true,
+        'v-divider--inset': this.inset,
+        'v-divider--vertical': this.vertical,
+        ...this.themeClasses
+      },
+      attrs: {
+        role: 'separator',
+        'aria-orientation': orientation,
+        ...this.$attrs
+      },
+      on: this.$listeners
+    });
+  }
+
+}));
+
+/***/ }),
+
+/***/ 200:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VTextField/VTextField.sass
-var VTextField = __webpack_require__(174);
+var VTextField = __webpack_require__(179);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VInput/index.js + 3 modules
-var VInput = __webpack_require__(175);
+var VInput = __webpack_require__(180);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VCounter/VCounter.sass
-var VCounter = __webpack_require__(189);
+var VCounter = __webpack_require__(190);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/themeable/index.js
 var themeable = __webpack_require__(8);
@@ -1447,7 +1493,7 @@ var mixins = __webpack_require__(3);
 
 /* harmony default export */ var components_VCounter = (VCounter_VCounter);
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VLabel/index.js + 1 modules
-var VLabel = __webpack_require__(171);
+var VLabel = __webpack_require__(175);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/directives/intersect/index.js
 var intersect = __webpack_require__(25);
@@ -1501,22 +1547,22 @@ function intersectable(options) {
   });
 }
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/loadable/index.js + 2 modules
-var loadable = __webpack_require__(42);
+var loadable = __webpack_require__(44);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/validatable/index.js
-var validatable = __webpack_require__(170);
+var validatable = __webpack_require__(174);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/directives/resize/index.js
-var resize = __webpack_require__(52);
+var resize = __webpack_require__(55);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/directives/ripple/index.js
 var ripple = __webpack_require__(23);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/util/dom.js
-var dom = __webpack_require__(43);
+var dom = __webpack_require__(45);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/util/helpers.js
-var helpers = __webpack_require__(0);
+var helpers = __webpack_require__(1);
 
 // CONCATENATED MODULE: ./node_modules/vuetify/lib/components/VTextField/VTextField.js
 // Styles
@@ -2040,7 +2086,35 @@ const dirtyTypes = ['color', 'file', 'time', 'date', 'datetime-local', 'week', '
 
 /***/ }),
 
-/***/ 264:
+/***/ 205:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(206);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+__webpack_require__(6).default("7132a15d", content, true)
+
+/***/ }),
+
+/***/ 206:
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(5);
+var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, ".theme--light.v-divider{border-color:rgba(0,0,0,.12)}.theme--dark.v-divider{border-color:hsla(0,0%,100%,.12)}.v-divider{display:block;flex:1 1 0px;max-width:100%;height:0;max-height:0;border:solid;border-width:thin 0 0;transition:inherit}.v-divider--inset:not(.v-divider--vertical){max-width:calc(100% - 72px)}.v-application--is-ltr .v-divider--inset:not(.v-divider--vertical){margin-left:72px}.v-application--is-rtl .v-divider--inset:not(.v-divider--vertical){margin-right:72px}.v-divider--vertical{align-self:stretch;border:solid;border-width:0 thin 0 0;display:inline-flex;height:inherit;min-height:100%;max-height:100%;max-width:0;width:0;vertical-align:text-bottom;margin:0 -1px}.v-divider--vertical.v-divider--inset{margin-top:8px;min-height:0;max-height:calc(100% - 16px)}", ""]);
+// Exports
+module.exports = ___CSS_LOADER_EXPORT___;
+
+
+/***/ }),
+
+/***/ 274:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2183,19 +2257,1566 @@ const dirtyTypes = ['color', 'file', 'time', 'date', 'datetime-local', 'week', '
 
 /***/ }),
 
-/***/ 384:
+/***/ 312:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(313);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+__webpack_require__(6).default("0d135400", content, true)
+
+/***/ }),
+
+/***/ 313:
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(5);
+var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, ".v-window{overflow:hidden}.v-window__container{display:flex;flex-direction:column;height:inherit;position:relative;transition:.3s cubic-bezier(.25,.8,.5,1)}.v-window__container--is-active{overflow:hidden}.v-window__next,.v-window__prev{background:rgba(0,0,0,.3);border-radius:50%;position:absolute;margin:0 16px;top:calc(50% - 20px);z-index:1}.v-window__next .v-btn:hover,.v-window__prev .v-btn:hover{background:none}.v-application--is-ltr .v-window__prev{left:0}.v-application--is-ltr .v-window__next,.v-application--is-rtl .v-window__prev{right:0}.v-application--is-rtl .v-window__next{left:0}.v-window--show-arrows-on-hover{overflow:hidden}.v-window--show-arrows-on-hover .v-window__next,.v-window--show-arrows-on-hover .v-window__prev{transition:transform .2s cubic-bezier(.25,.8,.5,1)}.v-application--is-ltr .v-window--show-arrows-on-hover .v-window__prev{transform:translateX(-200%)}.v-application--is-ltr .v-window--show-arrows-on-hover .v-window__next,.v-application--is-rtl .v-window--show-arrows-on-hover .v-window__prev{transform:translateX(200%)}.v-application--is-rtl .v-window--show-arrows-on-hover .v-window__next{transform:translateX(-200%)}.v-window--show-arrows-on-hover:hover .v-window__next,.v-window--show-arrows-on-hover:hover .v-window__prev{transform:translateX(0)}.v-window-x-reverse-transition-enter-active,.v-window-x-reverse-transition-leave-active,.v-window-x-transition-enter-active,.v-window-x-transition-leave-active,.v-window-y-reverse-transition-enter-active,.v-window-y-reverse-transition-leave-active,.v-window-y-transition-enter-active,.v-window-y-transition-leave-active{transition:.3s cubic-bezier(.25,.8,.5,1)}.v-window-x-reverse-transition-leave,.v-window-x-reverse-transition-leave-to,.v-window-x-transition-leave,.v-window-x-transition-leave-to,.v-window-y-reverse-transition-leave,.v-window-y-reverse-transition-leave-to,.v-window-y-transition-leave,.v-window-y-transition-leave-to{position:absolute!important;top:0;width:100%}.v-window-x-transition-enter{transform:translateX(100%)}.v-window-x-reverse-transition-enter,.v-window-x-transition-leave-to{transform:translateX(-100%)}.v-window-x-reverse-transition-leave-to{transform:translateX(100%)}.v-window-y-transition-enter{transform:translateY(100%)}.v-window-y-reverse-transition-enter,.v-window-y-transition-leave-to{transform:translateY(-100%)}.v-window-y-reverse-transition-leave-to{transform:translateY(100%)}", ""]);
+// Exports
+module.exports = ___CSS_LOADER_EXPORT___;
+
+
+/***/ }),
+
+/***/ 335:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/detail/users.vue?vue&type=template&id=55895d75&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',[_c('v-card',[_c('v-card-title',[_vm._v("\n      User registration\n    ")]),_vm._v(" "),[_c('v-form',{on:{"submit":function($event){$event.preventDefault();}},model:{value:(_vm.valid),callback:function ($$v) {_vm.valid=$$v},expression:"valid"}},[_c('v-container',[_c('v-row',[_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"rules":_vm.nameRules,"label":"Full name","required":""},model:{value:(_vm.fullName),callback:function ($$v) {_vm.fullName=$$v},expression:"fullName"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Width area","required":""},model:{value:(_vm.widthArea),callback:function ($$v) {_vm.widthArea=$$v},expression:"widthArea"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Type of plant","required":""},model:{value:(_vm.typeOfPlant),callback:function ($$v) {_vm.typeOfPlant=$$v},expression:"typeOfPlant"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Location","required":""},model:{value:(_vm.location),callback:function ($$v) {_vm.location=$$v},expression:"location"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Type of plant system","required":""},model:{value:(_vm.typeOfPlantSystem),callback:function ($$v) {_vm.typeOfPlantSystem=$$v},expression:"typeOfPlantSystem"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Type of irrigation system","required":""},model:{value:(_vm.typeOfIrrigationSystem),callback:function ($$v) {_vm.typeOfIrrigationSystem=$$v},expression:"typeOfIrrigationSystem"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Type of water source","required":""},model:{value:(_vm.typeOfWaterSource),callback:function ($$v) {_vm.typeOfWaterSource=$$v},expression:"typeOfWaterSource"}})],1)],1),_vm._v(" "),_c('v-btn',{attrs:{"color":"primary"},on:{"click":_vm.generateReport}},[_vm._v("\n            Generate report\n          ")])],1)],1)]],2)],1)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/detail/layoutFull.vue?vue&type=template&id=7ce2d08c&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-card',{staticClass:"mx-auto",attrs:{"max-width":"500"}},[_c('v-card-title',{staticClass:"text-h6 font-weight-regular justify-space-between"},[_c('span',[_vm._v(_vm._s(_vm.currentTitle))]),_vm._v(" "),_c('v-avatar',{staticClass:"subheading white--text",attrs:{"color":"primary lighten-2","size":"24"},domProps:{"textContent":_vm._s(_vm.step)}})],1),_vm._v(" "),_c('v-window',{model:{value:(_vm.step),callback:function ($$v) {_vm.step=$$v},expression:"step"}},[_c('v-window-item',{attrs:{"value":1}},[_c('v-card',{staticClass:"px-10 py-5"},[_c('table',{staticStyle:{"border-collapse":"collapse","border":"none","margin":"auto"}},[_c('tbody',[_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("Full name\n                    ")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border":"solid windowtext 1.0pt","border-left":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.fullName)+"\n                  ")])])])]),_vm._v(" "),_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","border-top":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("Width area")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border-top":"none","border-left":"none","border-bottom":"solid windowtext 1.0pt","border-right":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.widthArea))])])])]),_vm._v(" "),_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","border-top":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("Type of plant")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border-top":"none","border-left":"none","border-bottom":"solid windowtext 1.0pt","border-right":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.typeOfPlant))])])])]),_vm._v(" "),_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","border-top":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("Location")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border-top":"none","border-left":"none","border-bottom":"solid windowtext 1.0pt","border-right":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.location))])])])]),_vm._v(" "),_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","border-top":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("Type of plant system")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border-top":"none","border-left":"none","border-bottom":"solid windowtext 1.0pt","border-right":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.typeOfPlantSystem))])])])]),_vm._v(" "),_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","border-top":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("Type of irrigation system")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border-top":"none","border-left":"none","border-bottom":"solid windowtext 1.0pt","border-right":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.typeOfIrrigationSystem))])])])]),_vm._v(" "),_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","border-top":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("Type of water source")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border-top":"none","border-left":"none","border-bottom":"solid windowtext 1.0pt","border-right":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.typeOfWaterSource))])])])])])])])],1),_vm._v(" "),_c('v-window-item',{attrs:{"value":2}},[_c('v-card',{staticClass:"px-10 py-5"},[_c('table',{staticStyle:{"border-collapse":"collapse","border":"none","margin":"auto"}},[_c('tbody',[_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("Type of water pump\n                    ")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border":"solid windowtext 1.0pt","border-left":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.typeOfWaterPump)+"\n                  ")])])])]),_vm._v(" "),_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","border-top":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("Water pump output")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border-top":"none","border-left":"none","border-bottom":"solid windowtext 1.0pt","border-right":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.waterPumpOutput))])])])]),_vm._v(" "),_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","border-top":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("Type of fertilizer")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border-top":"none","border-left":"none","border-bottom":"solid windowtext 1.0pt","border-right":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.typeOfFertilizer))])])])]),_vm._v(" "),_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","border-top":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("Type of insecticide")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border-top":"none","border-left":"none","border-bottom":"solid windowtext 1.0pt","border-right":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.typeOfInsecticide))])])])]),_vm._v(" "),_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","border-top":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("Type of nozzle")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border-top":"none","border-left":"none","border-bottom":"solid windowtext 1.0pt","border-right":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.typeOfNozzle))])])])]),_vm._v(" "),_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","border-top":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("Duration of flush")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border-top":"none","border-left":"none","border-bottom":"solid windowtext 1.0pt","border-right":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.durationOfFlush))])])])]),_vm._v(" "),_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","border-top":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("Date of planting")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border-top":"none","border-left":"none","border-bottom":"solid windowtext 1.0pt","border-right":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.dateOfPlanting))])])])]),_vm._v(" "),_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","border-top":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("Date of crop yield")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border-top":"none","border-left":"none","border-bottom":"solid windowtext 1.0pt","border-right":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.dateOfCropYield))])])])]),_vm._v(" "),_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","border-top":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("Fertilizing date")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border-top":"none","border-left":"none","border-bottom":"solid windowtext 1.0pt","border-right":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.fertilizingDate))])])])]),_vm._v(" "),_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","border-top":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("Insecticide process date")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border-top":"none","border-left":"none","border-bottom":"solid windowtext 1.0pt","border-right":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.insecticideProcessDate))])])])])])])])],1),_vm._v(" "),_c('v-window-item',{attrs:{"value":3}},[_c('v-card',{staticClass:"px-10 py-5"},[_c('table',{staticStyle:{"border-collapse":"collapse","border":"none","margin":"auto"}},[_c('tbody',[_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("Date of planting\n                    ")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border":"solid windowtext 1.0pt","border-left":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.dateOfPlantingYieldCropInformation)+"\n                  ")])])])]),_vm._v(" "),_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","border-top":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("Date of crop yield")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border-top":"none","border-left":"none","border-bottom":"solid windowtext 1.0pt","border-right":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.dateOfCropYieldYieldCropInformation))])])])]),_vm._v(" "),_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","border-top":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("Yield quantity")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border-top":"none","border-left":"none","border-bottom":"solid windowtext 1.0pt","border-right":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.yieldQuantity))])])])]),_vm._v(" "),_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","border-top":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("Damage yield quantity")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border-top":"none","border-left":"none","border-bottom":"solid windowtext 1.0pt","border-right":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.damageYieldQuantity))])])])]),_vm._v(" "),_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","border-top":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("Selling price")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border-top":"none","border-left":"none","border-bottom":"solid windowtext 1.0pt","border-right":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.sellingPrice))])])])]),_vm._v(" "),_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","border-top":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("Sales revenue")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border-top":"none","border-left":"none","border-bottom":"solid windowtext 1.0pt","border-right":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.salesRevenue))])])])])])])])],1),_vm._v(" "),_c('v-window-item',{attrs:{"value":4}},[_c('v-card',{staticClass:"px-10 py-5"},[_c('table',{staticStyle:{"border-collapse":"collapse","border":"none","margin":"auto"}},[_c('tbody',[_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("Seasonal result\n                    ")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border":"solid windowtext 1.0pt","border-left":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.seasonalResult)+"\n                  ")])])])]),_vm._v(" "),_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","border-top":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("Annual result")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border-top":"none","border-left":"none","border-bottom":"solid windowtext 1.0pt","border-right":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.annualResult))])])])]),_vm._v(" "),_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","border-top":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("Sales revenue")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border-top":"none","border-left":"none","border-bottom":"solid windowtext 1.0pt","border-right":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.salesRevenueReport))])])])]),_vm._v(" "),_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","border-top":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("Yield improvement")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border-top":"none","border-left":"none","border-bottom":"solid windowtext 1.0pt","border-right":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.yieldImprovement))])])])]),_vm._v(" "),_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","border-top":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("Irrigation period")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border-top":"none","border-left":"none","border-bottom":"solid windowtext 1.0pt","border-right":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.irrigationPeriod))])])])]),_vm._v(" "),_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","border-top":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("Rain intensity")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border-top":"none","border-left":"none","border-bottom":"solid windowtext 1.0pt","border-right":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.rainIntensity))])])])]),_vm._v(" "),_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","border-top":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("Days of raining")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border-top":"none","border-left":"none","border-bottom":"solid windowtext 1.0pt","border-right":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.daysOfRaining))])])])]),_vm._v(" "),_c('tr',[_c('td',{staticStyle:{"width":"162.8pt","border":"solid windowtext 1.0pt","border-top":"none","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('strong',[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v("System breakdown")])])])]),_vm._v(" "),_c('td',{staticStyle:{"width":"288.0pt","border-top":"none","border-left":"none","border-bottom":"solid windowtext 1.0pt","border-right":"solid windowtext 1.0pt","padding":"0cm 5.4pt 0cm 5.4pt","height":"26.0pt"}},[_c('p',{staticStyle:{"margin-top":"0cm","margin-right":"0cm","margin-bottom":"0cm","margin-left":"0cm","line-height":"normal","font-size":"15px","font-family":"\"Calibri\",sans-serif"}},[_c('span',{staticStyle:{"font-family":"\"Century Gothic\",sans-serif"}},[_vm._v(_vm._s(_vm.detail.systemBreakdown))])])])])])])])],1)],1),_vm._v(" "),_c('v-divider'),_vm._v(" "),_c('v-card-actions',[_c('v-btn',{attrs:{"disabled":_vm.step === 1,"text":""},on:{"click":function($event){_vm.step--}}},[_vm._v("\n      Back\n    ")]),_vm._v(" "),_c('v-spacer'),_vm._v(" "),_c('v-btn',{attrs:{"disabled":_vm.step === 4,"color":"primary","depressed":""},on:{"click":function($event){_vm.step++}}},[_vm._v("\n      Next\n    ")])],1)],1)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/detail/users.vue?vue&type=template&id=55895d75&
+// CONCATENATED MODULE: ./components/detail/layoutFull.vue?vue&type=template&id=7ce2d08c&
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/detail/layoutFull.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ var layoutFullvue_type_script_lang_js_ = ({
+  data: () => ({
+    step: 1,
+    fullName: "fullName",
+    widthArea: "widthArea",
+    typeOfPlant: "typeOfPlant",
+    location: "location",
+    typeOfPlantSystem: "typeOfPlantSystem",
+    typeOfIrrigationSystem: "typeOfIrrigationSystem",
+    typeOfWaterSource: "typeOfWaterSource",
+    typeOfWaterPump: "typeOfWaterPump",
+    waterPumpOutput: "waterPumpOutput",
+    typeOfFertilizer: "typeOfFertilizer",
+    typeOfInsecticide: "typeOfInsecticide",
+    typeOfNozzle: "typeOfNozzle",
+    durationOfFlush: "durationOfFlush",
+    dateOfPlanting: "dateOfPlanting",
+    dateOfCropYield: "dateOfCropYield",
+    fertilizingDate: "fertilizingDate",
+    insecticideProcessDate: "insecticideProcessDate",
+    dateOfPlantingYieldCropInformation: "dateOfPlantingYieldCropInformation",
+    dateOfCropYieldYieldCropInformation: "dateOfCropYieldYieldCropInformation",
+    yieldQuantity: "yieldQuantity",
+    damageYieldQuantity: "damageYieldQuantity",
+    sellingPrice: "sellingPrice",
+    salesRevenue: "salesRevenue",
+    seasonalResult: "seasonalResult",
+    annualResult: "annualResult",
+    salesRevenueReport: "salesRevenueReport",
+    yieldImprovement: "yieldImprovement",
+    irrigationPeriod: "irrigationPeriod",
+    rainIntensity: "rainIntensity",
+    daysOfRaining: "daysOfRaining",
+    systemBreakdown: "systemBreakdown"
+  }),
+  computed: {
+    // ...mapState({
+    //   user: state => state.activeUser
+    // }),
+    currentTitle() {
+      switch (this.step) {
+        case 1:
+          return "User registration";
+
+        case 2:
+          return "Operation information";
+
+        case 3:
+          return "Yield crop information";
+
+        default:
+          return "Report";
+      }
+    }
+
+  },
+  methods: {// getDetails: function() {
+    //   let api;
+    //   if (this.user == 0) {
+    //     api = "http://127.0.0.1:5000/api/report/ipah1";
+    //   } else if (this.user == 1) {
+    //     api = "http://127.0.0.1:5000/api/report/ipah2";
+    //   } else if (this.user == 2) {
+    //     api = "http://127.0.0.1:5000/api/report/tkpmPagoh";
+    //   }
+    //   this.$axios
+    //     .$get(api)
+    //     // .$get("http://139.59.109.48/api/schedule/nutrient/ipah1")
+    //     .then(response => {
+    //       // response.forEach(i => {
+    //       //   this.isDateBeforeTodayNutrient(i);
+    //       // });
+    //       // this.getScheduleIpah1();
+    //       console.log(response);
+    //       if (this.user == 0) {
+    //         this.setDetailIpah1(response);
+    //       }
+    //     })
+    //     .catch(error => {
+    //       console.log(error);
+    //     });
+    // }
+  },
+  props: ["detail"],
+
+  async mounted() {
+    console.log(this.detail);
+  }
+
+});
+// CONCATENATED MODULE: ./components/detail/layoutFull.vue?vue&type=script&lang=js&
+ /* harmony default export */ var detail_layoutFullvue_type_script_lang_js_ = (layoutFullvue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
+var componentNormalizer = __webpack_require__(15);
+
+// EXTERNAL MODULE: ./node_modules/vuetify-loader/lib/runtime/installComponents.js
+var installComponents = __webpack_require__(19);
+var installComponents_default = /*#__PURE__*/__webpack_require__.n(installComponents);
+
+// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VAvatar/VAvatar.js
+var VAvatar = __webpack_require__(51);
+
+// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VBtn/VBtn.js + 2 modules
+var VBtn = __webpack_require__(56);
+
+// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VCard/VCard.js
+var VCard = __webpack_require__(47);
+
+// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VCard/index.js
+var components_VCard = __webpack_require__(14);
+
+// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VDivider/VDivider.js
+var VDivider = __webpack_require__(199);
+
+// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VSpacer.js
+var VSpacer = __webpack_require__(171);
+
+// EXTERNAL MODULE: ./node_modules/vuetify/src/components/VWindow/VWindow.sass
+var VWindow = __webpack_require__(312);
+
+// EXTERNAL MODULE: ./node_modules/vuetify/lib/directives/touch/index.js
+var touch = __webpack_require__(60);
+
+// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VBtn/index.js
+var components_VBtn = __webpack_require__(76);
+
+// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VIcon/index.js
+var VIcon = __webpack_require__(22);
+
+// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VItemGroup/VItemGroup.js
+var VItemGroup = __webpack_require__(37);
+
+// CONCATENATED MODULE: ./node_modules/vuetify/lib/components/VWindow/VWindow.js
+// Styles
+ // Directives
+
+ // Components
+
+
+
+
+/* @vue/component */
+
+/* harmony default export */ var VWindow_VWindow = (VItemGroup["a" /* BaseItemGroup */].extend({
+  name: 'v-window',
+  directives: {
+    Touch: touch["a" /* default */]
+  },
+
+  provide() {
+    return {
+      windowGroup: this
+    };
+  },
+
+  props: {
+    activeClass: {
+      type: String,
+      default: 'v-window-item--active'
+    },
+    continuous: Boolean,
+    mandatory: {
+      type: Boolean,
+      default: true
+    },
+    nextIcon: {
+      type: [Boolean, String],
+      default: '$next'
+    },
+    prevIcon: {
+      type: [Boolean, String],
+      default: '$prev'
+    },
+    reverse: Boolean,
+    showArrows: Boolean,
+    showArrowsOnHover: Boolean,
+    touch: Object,
+    touchless: Boolean,
+    value: {
+      required: false
+    },
+    vertical: Boolean
+  },
+
+  data() {
+    return {
+      changedByDelimiters: false,
+      internalHeight: undefined,
+      transitionHeight: undefined,
+      transitionCount: 0,
+      isBooted: false,
+      isReverse: false
+    };
+  },
+
+  computed: {
+    isActive() {
+      return this.transitionCount > 0;
+    },
+
+    classes() {
+      return { ...VItemGroup["a" /* BaseItemGroup */].options.computed.classes.call(this),
+        'v-window--show-arrows-on-hover': this.showArrowsOnHover
+      };
+    },
+
+    computedTransition() {
+      if (!this.isBooted) return '';
+      const axis = this.vertical ? 'y' : 'x';
+      const reverse = this.internalReverse ? !this.isReverse : this.isReverse;
+      const direction = reverse ? '-reverse' : '';
+      return `v-window-${axis}${direction}-transition`;
+    },
+
+    hasActiveItems() {
+      return Boolean(this.items.find(item => !item.disabled));
+    },
+
+    hasNext() {
+      return this.continuous || this.internalIndex < this.items.length - 1;
+    },
+
+    hasPrev() {
+      return this.continuous || this.internalIndex > 0;
+    },
+
+    internalIndex() {
+      return this.items.findIndex((item, i) => {
+        return this.internalValue === this.getValue(item, i);
+      });
+    },
+
+    internalReverse() {
+      return this.$vuetify.rtl ? !this.reverse : this.reverse;
+    }
+
+  },
+  watch: {
+    internalIndex(val, oldVal) {
+      this.isReverse = this.updateReverse(val, oldVal);
+    }
+
+  },
+
+  mounted() {
+    window.requestAnimationFrame(() => this.isBooted = true);
+  },
+
+  methods: {
+    genDefaultSlot() {
+      return this.$slots.default;
+    },
+
+    genContainer() {
+      const children = [this.genDefaultSlot()];
+
+      if (this.showArrows) {
+        children.push(this.genControlIcons());
+      }
+
+      return this.$createElement('div', {
+        staticClass: 'v-window__container',
+        class: {
+          'v-window__container--is-active': this.isActive
+        },
+        style: {
+          height: this.internalHeight || this.transitionHeight
+        }
+      }, children);
+    },
+
+    genIcon(direction, icon, click) {
+      var _ref;
+
+      const on = {
+        click: e => {
+          e.stopPropagation();
+          this.changedByDelimiters = true;
+          click();
+        }
+      };
+      const attrs = {
+        'aria-label': this.$vuetify.lang.t(`$vuetify.carousel.${direction}`)
+      };
+      const children = (_ref = this.$scopedSlots[direction] == null ? void 0 : this.$scopedSlots[direction]({
+        on,
+        attrs
+      })) != null ? _ref : [this.$createElement(components_VBtn["a" /* default */], {
+        props: {
+          icon: true
+        },
+        attrs,
+        on
+      }, [this.$createElement(VIcon["a" /* default */], {
+        props: {
+          large: true
+        }
+      }, icon)])];
+      return this.$createElement('div', {
+        staticClass: `v-window__${direction}`
+      }, children);
+    },
+
+    genControlIcons() {
+      const icons = [];
+      const prevIcon = this.$vuetify.rtl ? this.nextIcon : this.prevIcon;
+      /* istanbul ignore else */
+
+      if (this.hasPrev && prevIcon && typeof prevIcon === 'string') {
+        const icon = this.genIcon('prev', prevIcon, this.prev);
+        icon && icons.push(icon);
+      }
+
+      const nextIcon = this.$vuetify.rtl ? this.prevIcon : this.nextIcon;
+      /* istanbul ignore else */
+
+      if (this.hasNext && nextIcon && typeof nextIcon === 'string') {
+        const icon = this.genIcon('next', nextIcon, this.next);
+        icon && icons.push(icon);
+      }
+
+      return icons;
+    },
+
+    getNextIndex(index) {
+      const nextIndex = (index + 1) % this.items.length;
+      const item = this.items[nextIndex];
+      if (item.disabled) return this.getNextIndex(nextIndex);
+      return nextIndex;
+    },
+
+    getPrevIndex(index) {
+      const prevIndex = (index + this.items.length - 1) % this.items.length;
+      const item = this.items[prevIndex];
+      if (item.disabled) return this.getPrevIndex(prevIndex);
+      return prevIndex;
+    },
+
+    next() {
+      /* istanbul ignore if */
+      if (!this.hasActiveItems || !this.hasNext) return;
+      const nextIndex = this.getNextIndex(this.internalIndex);
+      const item = this.items[nextIndex];
+      this.internalValue = this.getValue(item, nextIndex);
+    },
+
+    prev() {
+      /* istanbul ignore if */
+      if (!this.hasActiveItems || !this.hasPrev) return;
+      const lastIndex = this.getPrevIndex(this.internalIndex);
+      const item = this.items[lastIndex];
+      this.internalValue = this.getValue(item, lastIndex);
+    },
+
+    updateReverse(val, oldVal) {
+      const itemsLength = this.items.length;
+      const lastIndex = itemsLength - 1;
+      if (itemsLength <= 2) return val < oldVal;
+
+      if (val === lastIndex && oldVal === 0) {
+        return true;
+      } else if (val === 0 && oldVal === lastIndex) {
+        return false;
+      } else {
+        return val < oldVal;
+      }
+    }
+
+  },
+
+  render(h) {
+    const data = {
+      staticClass: 'v-window',
+      class: this.classes,
+      directives: []
+    };
+
+    if (!this.touchless) {
+      const value = this.touch || {
+        left: () => {
+          this.$vuetify.rtl ? this.prev() : this.next();
+        },
+        right: () => {
+          this.$vuetify.rtl ? this.next() : this.prev();
+        },
+        end: e => {
+          e.stopPropagation();
+        },
+        start: e => {
+          e.stopPropagation();
+        }
+      };
+      data.directives.push({
+        name: 'touch',
+        value
+      });
+    }
+
+    return h('div', data, [this.genContainer()]);
+  }
+
+}));
+// EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/bootable/index.js
+var bootable = __webpack_require__(59);
+
+// EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/groupable/index.js
+var groupable = __webpack_require__(33);
+
+// EXTERNAL MODULE: ./node_modules/vuetify/lib/util/helpers.js
+var helpers = __webpack_require__(1);
+
+// EXTERNAL MODULE: ./node_modules/vuetify/lib/util/mixins.js
+var mixins = __webpack_require__(3);
+
+// CONCATENATED MODULE: ./node_modules/vuetify/lib/components/VWindow/VWindowItem.js
+// Mixins
+
+ // Directives
+
+ // Utilities
+
+
+
+const baseMixins = Object(mixins["a" /* default */])(bootable["a" /* default */], Object(groupable["a" /* factory */])('windowGroup', 'v-window-item', 'v-window'));
+/* harmony default export */ var VWindowItem = (baseMixins.extend().extend().extend({
+  name: 'v-window-item',
+  directives: {
+    Touch: touch["a" /* default */]
+  },
+  props: {
+    disabled: Boolean,
+    reverseTransition: {
+      type: [Boolean, String],
+      default: undefined
+    },
+    transition: {
+      type: [Boolean, String],
+      default: undefined
+    },
+    value: {
+      required: false
+    }
+  },
+
+  data() {
+    return {
+      isActive: false,
+      inTransition: false
+    };
+  },
+
+  computed: {
+    classes() {
+      return this.groupClasses;
+    },
+
+    computedTransition() {
+      if (!this.windowGroup.internalReverse) {
+        return typeof this.transition !== 'undefined' ? this.transition || '' : this.windowGroup.computedTransition;
+      }
+
+      return typeof this.reverseTransition !== 'undefined' ? this.reverseTransition || '' : this.windowGroup.computedTransition;
+    }
+
+  },
+  methods: {
+    genDefaultSlot() {
+      return this.$slots.default;
+    },
+
+    genWindowItem() {
+      return this.$createElement('div', {
+        staticClass: 'v-window-item',
+        class: this.classes,
+        directives: [{
+          name: 'show',
+          value: this.isActive
+        }],
+        on: this.$listeners
+      }, this.genDefaultSlot());
+    },
+
+    onAfterTransition() {
+      if (!this.inTransition) {
+        return;
+      } // Finalize transition state.
+
+
+      this.inTransition = false;
+
+      if (this.windowGroup.transitionCount > 0) {
+        this.windowGroup.transitionCount--; // Remove container height if we are out of transition.
+
+        if (this.windowGroup.transitionCount === 0) {
+          this.windowGroup.transitionHeight = undefined;
+        }
+      }
+    },
+
+    onBeforeTransition() {
+      if (this.inTransition) {
+        return;
+      } // Initialize transition state here.
+
+
+      this.inTransition = true;
+
+      if (this.windowGroup.transitionCount === 0) {
+        // Set initial height for height transition.
+        this.windowGroup.transitionHeight = Object(helpers["g" /* convertToUnit */])(this.windowGroup.$el.clientHeight);
+      }
+
+      this.windowGroup.transitionCount++;
+    },
+
+    onTransitionCancelled() {
+      this.onAfterTransition(); // This should have the same path as normal transition end.
+    },
+
+    onEnter(el) {
+      if (!this.inTransition) {
+        return;
+      }
+
+      this.$nextTick(() => {
+        // Do not set height if no transition or cancelled.
+        if (!this.computedTransition || !this.inTransition) {
+          return;
+        } // Set transition target height.
+
+
+        this.windowGroup.transitionHeight = Object(helpers["g" /* convertToUnit */])(el.clientHeight);
+      });
+    }
+
+  },
+
+  render(h) {
+    return h('transition', {
+      props: {
+        name: this.computedTransition
+      },
+      on: {
+        // Handlers for enter windows.
+        beforeEnter: this.onBeforeTransition,
+        afterEnter: this.onAfterTransition,
+        enterCancelled: this.onTransitionCancelled,
+        // Handlers for leave windows.
+        beforeLeave: this.onBeforeTransition,
+        afterLeave: this.onAfterTransition,
+        leaveCancelled: this.onTransitionCancelled,
+        // Enter handler for height transition.
+        enter: this.onEnter
+      }
+    }, this.showLazyContent(() => [this.genWindowItem()]));
+  }
+
+}));
+// CONCATENATED MODULE: ./components/detail/layoutFull.vue
+
+
+
+
+
+/* normalize component */
+
+var component = Object(componentNormalizer["a" /* default */])(
+  detail_layoutFullvue_type_script_lang_js_,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  "022d6dcb"
+  
+)
+
+/* harmony default export */ var layoutFull = __webpack_exports__["default"] = (component.exports);
+
+/* vuetify-loader */
+
+
+
+
+
+
+
+
+
+
+installComponents_default()(component, {VAvatar: VAvatar["a" /* default */],VBtn: VBtn["a" /* default */],VCard: VCard["a" /* default */],VCardActions: components_VCard["a" /* VCardActions */],VCardTitle: components_VCard["c" /* VCardTitle */],VDivider: VDivider["a" /* default */],VSpacer: VSpacer["a" /* default */],VWindow: VWindow_VWindow,VWindowItem: VWindowItem})
+
+
+/***/ }),
+
+/***/ 390:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/detail/users.vue?vue&type=template&id=d8e18728&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',[_c('v-card',[[_c('v-form',{on:{"submit":function($event){$event.preventDefault();}},model:{value:(_vm.valid),callback:function ($$v) {_vm.valid=$$v},expression:"valid"}},[_c('v-container',[_c('v-card-title',[_vm._v("\n            FORM\n          ")]),_vm._v(" "),_c('v-card-title',[_vm._v("\n            User registration\n          ")]),_vm._v(" "),_c('v-row',[_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"rules":_vm.nameRules,"label":"Full name","required":""},model:{value:(_vm.fullName),callback:function ($$v) {_vm.fullName=$$v},expression:"fullName"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Width area","required":""},model:{value:(_vm.widthArea),callback:function ($$v) {_vm.widthArea=$$v},expression:"widthArea"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Type of plant","required":""},model:{value:(_vm.typeOfPlant),callback:function ($$v) {_vm.typeOfPlant=$$v},expression:"typeOfPlant"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Location","required":""},model:{value:(_vm.location),callback:function ($$v) {_vm.location=$$v},expression:"location"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Type of plant system","required":""},model:{value:(_vm.typeOfPlantSystem),callback:function ($$v) {_vm.typeOfPlantSystem=$$v},expression:"typeOfPlantSystem"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Type of irrigation system","required":""},model:{value:(_vm.typeOfIrrigationSystem),callback:function ($$v) {_vm.typeOfIrrigationSystem=$$v},expression:"typeOfIrrigationSystem"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Type of water source","required":""},model:{value:(_vm.typeOfWaterSource),callback:function ($$v) {_vm.typeOfWaterSource=$$v},expression:"typeOfWaterSource"}})],1)],1),_vm._v(" "),_c('v-card-title',[_vm._v("\n            Operation information\n          ")]),_vm._v(" "),_c('v-row',[_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Type of water pump","required":""},model:{value:(_vm.typeOfWaterPump),callback:function ($$v) {_vm.typeOfWaterPump=$$v},expression:"typeOfWaterPump"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Water pump output","required":""},model:{value:(_vm.waterPumpOutput),callback:function ($$v) {_vm.waterPumpOutput=$$v},expression:"waterPumpOutput"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Type of fertilizer","required":""},model:{value:(_vm.typeOfFertilizer),callback:function ($$v) {_vm.typeOfFertilizer=$$v},expression:"typeOfFertilizer"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Type of insecticide","required":""},model:{value:(_vm.typeOfInsecticide),callback:function ($$v) {_vm.typeOfInsecticide=$$v},expression:"typeOfInsecticide"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Type of nozzle","required":""},model:{value:(_vm.typeOfNozzle),callback:function ($$v) {_vm.typeOfNozzle=$$v},expression:"typeOfNozzle"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Duration of flush","required":""},model:{value:(_vm.durationOfFlush),callback:function ($$v) {_vm.durationOfFlush=$$v},expression:"durationOfFlush"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Date of planting","required":""},model:{value:(_vm.dateOfPlanting),callback:function ($$v) {_vm.dateOfPlanting=$$v},expression:"dateOfPlanting"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Date of crop yield","required":""},model:{value:(_vm.dateOfCropYield),callback:function ($$v) {_vm.dateOfCropYield=$$v},expression:"dateOfCropYield"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Fertilizing date","required":""},model:{value:(_vm.fertilizingDate),callback:function ($$v) {_vm.fertilizingDate=$$v},expression:"fertilizingDate"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Insecticide process date","required":""},model:{value:(_vm.insecticideProcessDate),callback:function ($$v) {_vm.insecticideProcessDate=$$v},expression:"insecticideProcessDate"}})],1)],1),_vm._v(" "),_c('v-card-title',[_vm._v("\n            Yield crop information\n          ")]),_vm._v(" "),_c('v-row',[_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Date of planting","required":""},model:{value:(_vm.dateOfPlantingYieldCropInformation),callback:function ($$v) {_vm.dateOfPlantingYieldCropInformation=$$v},expression:"dateOfPlantingYieldCropInformation"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Date of crop yield","required":""},model:{value:(_vm.dateOfCropYieldYieldCropInformation),callback:function ($$v) {_vm.dateOfCropYieldYieldCropInformation=$$v},expression:"dateOfCropYieldYieldCropInformation"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Yield quantity","required":""},model:{value:(_vm.yieldQuantity),callback:function ($$v) {_vm.yieldQuantity=$$v},expression:"yieldQuantity"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Damage yield quantity","required":""},model:{value:(_vm.damageYieldQuantity),callback:function ($$v) {_vm.damageYieldQuantity=$$v},expression:"damageYieldQuantity"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Selling price","required":""},model:{value:(_vm.sellingPrice),callback:function ($$v) {_vm.sellingPrice=$$v},expression:"sellingPrice"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Sales revenue","required":""},model:{value:(_vm.salesRevenue),callback:function ($$v) {_vm.salesRevenue=$$v},expression:"salesRevenue"}})],1)],1),_vm._v(" "),_c('v-card-title',[_vm._v("\n            Report\n          ")]),_vm._v(" "),_c('v-row',[_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Seasonal result","required":""},model:{value:(_vm.seasonalResult),callback:function ($$v) {_vm.seasonalResult=$$v},expression:"seasonalResult"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Annual result","required":""},model:{value:(_vm.annualResult),callback:function ($$v) {_vm.annualResult=$$v},expression:"annualResult"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Sales revenue","required":""},model:{value:(_vm.salesRevenueReport),callback:function ($$v) {_vm.salesRevenueReport=$$v},expression:"salesRevenueReport"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Yield improvement","required":""},model:{value:(_vm.yieldImprovement),callback:function ($$v) {_vm.yieldImprovement=$$v},expression:"yieldImprovement"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Irrigation period","required":""},model:{value:(_vm.irrigationPeriod),callback:function ($$v) {_vm.irrigationPeriod=$$v},expression:"irrigationPeriod"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Rain intensity","required":""},model:{value:(_vm.rainIntensity),callback:function ($$v) {_vm.rainIntensity=$$v},expression:"rainIntensity"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Days of raining","required":""},model:{value:(_vm.daysOfRaining),callback:function ($$v) {_vm.daysOfRaining=$$v},expression:"daysOfRaining"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"System breakdown","required":""},model:{value:(_vm.systemBreakdown),callback:function ($$v) {_vm.systemBreakdown=$$v},expression:"systemBreakdown"}})],1)],1),_vm._v(" "),_c('v-btn',{attrs:{"color":"primary"},on:{"click":_vm.generateReport}},[_vm._v("\n            Submit\n          ")])],1)],1)]],2)],1)}
+var staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./components/detail/users.vue?vue&type=template&id=d8e18728&
+
+// EXTERNAL MODULE: external "vuex"
+var external_vuex_ = __webpack_require__(11);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/detail/users.vue?vue&type=script&lang=js&
 //
@@ -2269,7 +3890,198 @@ var staticRenderFns = []
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 /* harmony default export */ var usersvue_type_script_lang_js_ = ({
+  computed: { ...Object(external_vuex_["mapState"])({
+      user: state => state.activeUser
+    })
+  },
   data: () => ({
     valid: false,
     fullName: "",
@@ -2279,7 +4091,31 @@ var staticRenderFns = []
     typeOfPlantSystem: "",
     typeOfIrrigationSystem: "",
     typeOfWaterSource: "",
-    nameRules: [v => !!v || "Name is required", v => v.length <= 10 || "Name must be less than 10 characters"],
+    typeOfWaterPump: "",
+    waterPumpOutput: "",
+    typeOfFertilizer: "",
+    typeOfInsecticide: "",
+    typeOfNozzle: "",
+    durationOfFlush: "",
+    dateOfPlanting: "",
+    dateOfCropYield: "",
+    fertilizingDate: "",
+    insecticideProcessDate: "",
+    dateOfPlantingYieldCropInformation: "",
+    dateOfCropYieldYieldCropInformation: "",
+    yieldQuantity: "",
+    damageYieldQuantity: "",
+    sellingPrice: "",
+    salesRevenue: "",
+    seasonalResult: "",
+    annualResult: "",
+    salesRevenueReport: "",
+    yieldImprovement: "",
+    irrigationPeriod: "",
+    rainIntensity: "",
+    daysOfRaining: "",
+    systemBreakdown: "",
+    nameRules: [v => !!v || "Name is required", v => v.length <= 1000 || "Must be less than 1000 characters"],
     email: "",
     emailRules: [v => !!v || "E-mail is required", v => /.+@.+/.test(v) || "E-mail must be valid"]
   }),
@@ -2287,21 +4123,54 @@ var staticRenderFns = []
     generateReport: function () {
       console.log("submited");
       this.$axios // .$post("http://139.59.109.48/api/setSchedule/ipah2/nutrient", {
-      .$post("http://127.0.0.1:5000/api/report/userRegister", {
+      // .$post("http://127.0.0.1:5000/api/report/form", {
+      .$post("http://139.59.109.48/api/report/form", {
+        user_id: this.user,
         fullName: this.fullName,
         widthArea: this.widthArea,
         typeOfPlant: this.typeOfPlant,
         location: this.location,
         typeOfPlantSystem: this.typeOfPlantSystem,
         typeOfIrrigationSystem: this.typeOfIrrigationSystem,
-        typeOfWaterSource: this.typeOfWaterSource
+        typeOfWaterSource: this.typeOfWaterSource,
+        typeOfWaterPump: this.typeOfWaterPump,
+        waterPumpOutput: this.waterPumpOutput,
+        typeOfFertilizer: this.typeOfFertilizer,
+        typeOfInsecticide: this.typeOfInsecticide,
+        typeOfNozzle: this.typeOfNozzle,
+        durationOfFlush: this.durationOfFlush,
+        dateOfPlanting: this.dateOfPlanting,
+        dateOfCropYield: this.dateOfCropYield,
+        fertilizingDate: this.fertilizingDate,
+        insecticideProcessDate: this.insecticideProcessDate,
+        dateOfPlantingYieldCropInformation: this.dateOfPlantingYieldCropInformation,
+        dateOfCropYieldYieldCropInformation: this.dateOfCropYieldYieldCropInformation,
+        yieldQuantity: this.yieldQuantity,
+        damageYieldQuantity: this.damageYieldQuantity,
+        sellingPrice: this.sellingPrice,
+        salesRevenue: this.salesRevenue,
+        seasonalResult: this.seasonalResult,
+        annualResult: this.annualResult,
+        salesRevenueReport: this.salesRevenueReport,
+        yieldImprovement: this.yieldImprovement,
+        irrigationPeriod: this.irrigationPeriod,
+        rainIntensity: this.rainIntensity,
+        daysOfRaining: this.daysOfRaining,
+        systemBreakdown: this.systemBreakdown
       }).then(response => {
         console.log(response); // window.location.reload();
+
+        window.location.reload();
       }).catch(error => {
         console.log(error);
       });
     }
+  },
+
+  mounted() {
+    console.log(this.$auth.$state.user.userId);
   }
+
 });
 // CONCATENATED MODULE: ./components/detail/users.vue?vue&type=script&lang=js&
  /* harmony default export */ var detail_usersvue_type_script_lang_js_ = (usersvue_type_script_lang_js_); 
@@ -2313,28 +4182,28 @@ var installComponents = __webpack_require__(19);
 var installComponents_default = /*#__PURE__*/__webpack_require__.n(installComponents);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VBtn/VBtn.js + 2 modules
-var VBtn = __webpack_require__(55);
+var VBtn = __webpack_require__(56);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VCard/VCard.js
-var VCard = __webpack_require__(45);
+var VCard = __webpack_require__(47);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VCard/index.js
 var components_VCard = __webpack_require__(14);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VCol.js
-var VCol = __webpack_require__(180);
+var VCol = __webpack_require__(192);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VContainer.js + 1 modules
-var VContainer = __webpack_require__(167);
+var VContainer = __webpack_require__(172);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VForm/VForm.js
-var VForm = __webpack_require__(264);
+var VForm = __webpack_require__(274);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VRow.js
-var VRow = __webpack_require__(181);
+var VRow = __webpack_require__(193);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VTextField/VTextField.js + 3 modules
-var VTextField = __webpack_require__(195);
+var VTextField = __webpack_require__(200);
 
 // CONCATENATED MODULE: ./components/detail/users.vue
 
@@ -2370,12 +4239,12 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 
 
-installComponents_default()(component, {VBtn: VBtn["a" /* default */],VCard: VCard["a" /* default */],VCardTitle: components_VCard["b" /* VCardTitle */],VCol: VCol["a" /* default */],VContainer: VContainer["a" /* default */],VForm: VForm["a" /* default */],VRow: VRow["a" /* default */],VTextField: VTextField["a" /* default */]})
+installComponents_default()(component, {VBtn: VBtn["a" /* default */],VCard: VCard["a" /* default */],VCardTitle: components_VCard["c" /* VCardTitle */],VCol: VCol["a" /* default */],VContainer: VContainer["a" /* default */],VForm: VForm["a" /* default */],VRow: VRow["a" /* default */],VTextField: VTextField["a" /* default */]})
 
 
 /***/ }),
 
-/***/ 385:
+/***/ 391:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2531,28 +4400,28 @@ var installComponents = __webpack_require__(19);
 var installComponents_default = /*#__PURE__*/__webpack_require__.n(installComponents);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VBtn/VBtn.js + 2 modules
-var VBtn = __webpack_require__(55);
+var VBtn = __webpack_require__(56);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VCard/VCard.js
-var VCard = __webpack_require__(45);
+var VCard = __webpack_require__(47);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VCard/index.js
 var components_VCard = __webpack_require__(14);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VCol.js
-var VCol = __webpack_require__(180);
+var VCol = __webpack_require__(192);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VContainer.js + 1 modules
-var VContainer = __webpack_require__(167);
+var VContainer = __webpack_require__(172);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VForm/VForm.js
-var VForm = __webpack_require__(264);
+var VForm = __webpack_require__(274);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VRow.js
-var VRow = __webpack_require__(181);
+var VRow = __webpack_require__(193);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VTextField/VTextField.js + 3 modules
-var VTextField = __webpack_require__(195);
+var VTextField = __webpack_require__(200);
 
 // CONCATENATED MODULE: ./components/detail/operationInformation.vue
 
@@ -2588,12 +4457,12 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 
 
-installComponents_default()(component, {VBtn: VBtn["a" /* default */],VCard: VCard["a" /* default */],VCardTitle: components_VCard["b" /* VCardTitle */],VCol: VCol["a" /* default */],VContainer: VContainer["a" /* default */],VForm: VForm["a" /* default */],VRow: VRow["a" /* default */],VTextField: VTextField["a" /* default */]})
+installComponents_default()(component, {VBtn: VBtn["a" /* default */],VCard: VCard["a" /* default */],VCardTitle: components_VCard["c" /* VCardTitle */],VCol: VCol["a" /* default */],VContainer: VContainer["a" /* default */],VForm: VForm["a" /* default */],VRow: VRow["a" /* default */],VTextField: VTextField["a" /* default */]})
 
 
 /***/ }),
 
-/***/ 386:
+/***/ 392:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2713,28 +4582,28 @@ var installComponents = __webpack_require__(19);
 var installComponents_default = /*#__PURE__*/__webpack_require__.n(installComponents);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VBtn/VBtn.js + 2 modules
-var VBtn = __webpack_require__(55);
+var VBtn = __webpack_require__(56);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VCard/VCard.js
-var VCard = __webpack_require__(45);
+var VCard = __webpack_require__(47);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VCard/index.js
 var components_VCard = __webpack_require__(14);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VCol.js
-var VCol = __webpack_require__(180);
+var VCol = __webpack_require__(192);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VContainer.js + 1 modules
-var VContainer = __webpack_require__(167);
+var VContainer = __webpack_require__(172);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VForm/VForm.js
-var VForm = __webpack_require__(264);
+var VForm = __webpack_require__(274);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VRow.js
-var VRow = __webpack_require__(181);
+var VRow = __webpack_require__(193);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VTextField/VTextField.js + 3 modules
-var VTextField = __webpack_require__(195);
+var VTextField = __webpack_require__(200);
 
 // CONCATENATED MODULE: ./components/detail/yieldCropInformation.vue
 
@@ -2770,12 +4639,12 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 
 
-installComponents_default()(component, {VBtn: VBtn["a" /* default */],VCard: VCard["a" /* default */],VCardTitle: components_VCard["b" /* VCardTitle */],VCol: VCol["a" /* default */],VContainer: VContainer["a" /* default */],VForm: VForm["a" /* default */],VRow: VRow["a" /* default */],VTextField: VTextField["a" /* default */]})
+installComponents_default()(component, {VBtn: VBtn["a" /* default */],VCard: VCard["a" /* default */],VCardTitle: components_VCard["c" /* VCardTitle */],VCol: VCol["a" /* default */],VContainer: VContainer["a" /* default */],VForm: VForm["a" /* default */],VRow: VRow["a" /* default */],VTextField: VTextField["a" /* default */]})
 
 
 /***/ }),
 
-/***/ 387:
+/***/ 393:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2913,28 +4782,28 @@ var installComponents = __webpack_require__(19);
 var installComponents_default = /*#__PURE__*/__webpack_require__.n(installComponents);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VBtn/VBtn.js + 2 modules
-var VBtn = __webpack_require__(55);
+var VBtn = __webpack_require__(56);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VCard/VCard.js
-var VCard = __webpack_require__(45);
+var VCard = __webpack_require__(47);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VCard/index.js
 var components_VCard = __webpack_require__(14);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VCol.js
-var VCol = __webpack_require__(180);
+var VCol = __webpack_require__(192);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VContainer.js + 1 modules
-var VContainer = __webpack_require__(167);
+var VContainer = __webpack_require__(172);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VForm/VForm.js
-var VForm = __webpack_require__(264);
+var VForm = __webpack_require__(274);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VRow.js
-var VRow = __webpack_require__(181);
+var VRow = __webpack_require__(193);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VTextField/VTextField.js + 3 modules
-var VTextField = __webpack_require__(195);
+var VTextField = __webpack_require__(200);
 
 // CONCATENATED MODULE: ./components/detail/report.vue
 
@@ -2970,39 +4839,45 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 
 
-installComponents_default()(component, {VBtn: VBtn["a" /* default */],VCard: VCard["a" /* default */],VCardTitle: components_VCard["b" /* VCardTitle */],VCol: VCol["a" /* default */],VContainer: VContainer["a" /* default */],VForm: VForm["a" /* default */],VRow: VRow["a" /* default */],VTextField: VTextField["a" /* default */]})
+installComponents_default()(component, {VBtn: VBtn["a" /* default */],VCard: VCard["a" /* default */],VCardTitle: components_VCard["c" /* VCardTitle */],VCol: VCol["a" /* default */],VContainer: VContainer["a" /* default */],VForm: VForm["a" /* default */],VRow: VRow["a" /* default */],VTextField: VTextField["a" /* default */]})
 
 
 /***/ }),
 
-/***/ 433:
+/***/ 445:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/detail.vue?vue&type=template&id=940306c8&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',[_c('PageTitle',{attrs:{"title":"USER"}}),_vm._ssrNode(" "),_c('Users'),_vm._ssrNode(" "),_c('OperationInformation',{staticClass:"mt-6"}),_vm._ssrNode(" "),_c('YieldCropInformation',{staticClass:"mt-6"}),_vm._ssrNode(" "),_c('Report',{staticClass:"mt-6"})],2)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/detail.vue?vue&type=template&id=2724d780&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',[_c('PageTitle',{attrs:{"title":"DETAILS"}}),_vm._ssrNode(" "),_c('v-btn',{on:{"click":function($event){return _vm.change(1)}}},[_vm._v("\n    Form\n  ")]),_vm._ssrNode(" "),_c('v-btn',{on:{"click":function($event){return _vm.change(2)}}},[_vm._v("Detail ")]),_vm._ssrNode(" "),(_vm.page == 1)?_c('Users'):_vm._e(),_vm._ssrNode(" "),(_vm.page == 2)?_c('Layout',{attrs:{"detail":_vm.detailActive}}):_vm._e()],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/detail.vue?vue&type=template&id=940306c8&
+// CONCATENATED MODULE: ./pages/detail.vue?vue&type=template&id=2724d780&
 
 // EXTERNAL MODULE: ./components/PageTitle.vue + 4 modules
-var PageTitle = __webpack_require__(172);
+var PageTitle = __webpack_require__(177);
 
 // EXTERNAL MODULE: ./components/detail/users.vue + 4 modules
-var users = __webpack_require__(384);
+var users = __webpack_require__(390);
+
+// EXTERNAL MODULE: ./components/detail/layoutFull.vue + 6 modules
+var layoutFull = __webpack_require__(335);
 
 // EXTERNAL MODULE: ./components/detail/operationInformation.vue + 4 modules
-var operationInformation = __webpack_require__(385);
+var operationInformation = __webpack_require__(391);
 
 // EXTERNAL MODULE: ./components/detail/yieldCropInformation.vue + 4 modules
-var yieldCropInformation = __webpack_require__(386);
+var yieldCropInformation = __webpack_require__(392);
 
 // EXTERNAL MODULE: ./components/detail/report.vue + 4 modules
-var report = __webpack_require__(387);
+var report = __webpack_require__(393);
+
+// EXTERNAL MODULE: external "vuex"
+var external_vuex_ = __webpack_require__(11);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/detail.vue?vue&type=script&lang=js&
 //
@@ -3015,6 +4890,13 @@ var report = __webpack_require__(387);
 //
 //
 //
+//
+//
+//
+//
+//
+
+
 
 
 
@@ -3026,13 +4908,86 @@ var report = __webpack_require__(387);
     Users: users["default"],
     OperationInformation: operationInformation["default"],
     YieldCropInformation: yieldCropInformation["default"],
-    Report: report["default"]
+    Report: report["default"],
+    Layout: layoutFull["default"]
+  },
+  methods: { ...Object(external_vuex_["mapMutations"])({
+      setDetailActive: "setDetailActive",
+      setDetailIpah1: "setDetailIpah1",
+      setDetailIpah2: "setDetailIpah2",
+      setDetailTkpmPagoh: "setDetailTkpmPagoh"
+    }),
+    change: function (val) {
+      this.page = val;
+    },
+    getDetails: function () {
+      let api;
+
+      if (this.user == 0) {
+        // api = "http://127.0.0.1:5000/api/report/ipah1";
+        api = "http://139.59.109.48/api/report/ipah1";
+      } else if (this.user == 1) {
+        // api = "http://127.0.0.1:5000/api/report/ipah2";
+        api = "http://139.59.109.48/api/report/ipah2";
+      } else if (this.user == 2) {
+        // api = "http://127.0.0.1:5000/api/report/tkpmPagoh";
+        api = "http://139.59.109.48/api/report/tkpmPagoh";
+      }
+
+      this.$axios.$get(api) // .$get("http://139.59.109.48/api/schedule/nutrient/ipah1")
+      .then(response => {
+        // response.forEach(i => {
+        //   this.isDateBeforeTodayNutrient(i);
+        // });
+        // this.getScheduleIpah1();
+        // console.log(response);
+        if (this.user == 0) {
+          this.setDetailActive(response);
+          this.setDetailIpah1(response);
+        } else if (this.user == 1) {
+          this.setDetailActive(response);
+          this.setDetailIpah2(response);
+        } else if (this.user == 2) {
+          this.setDetailActive(response);
+          this.setDetailTkpmPagoh(response);
+        }
+      }).catch(error => {
+        console.log(error);
+      });
+    }
+  },
+
+  data() {
+    return {
+      page: 1
+    };
+  },
+
+  async mounted() {
+    this.getDetails();
+    console.log(this.detailIpah1);
+  },
+
+  computed: { ...Object(external_vuex_["mapState"])({
+      user: state => state.activeUser,
+      detailActive: state => state.detailActive,
+      detailIpah1: state => state.detailIpah1,
+      detailIpah2: state => state.detailIpah2,
+      detailTkpmPagoh: state => state.detailTkpmPagoh
+    })
   }
 });
 // CONCATENATED MODULE: ./pages/detail.vue?vue&type=script&lang=js&
  /* harmony default export */ var pages_detailvue_type_script_lang_js_ = (detailvue_type_script_lang_js_); 
 // EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
 var componentNormalizer = __webpack_require__(15);
+
+// EXTERNAL MODULE: ./node_modules/vuetify-loader/lib/runtime/installComponents.js
+var installComponents = __webpack_require__(19);
+var installComponents_default = /*#__PURE__*/__webpack_require__.n(installComponents);
+
+// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VBtn/VBtn.js + 2 modules
+var VBtn = __webpack_require__(56);
 
 // CONCATENATED MODULE: ./pages/detail.vue
 
@@ -3059,8 +5014,25 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var detail = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {PageTitle: __webpack_require__(172).default})
+installComponents_default()(component, {PageTitle: __webpack_require__(177).default})
 
+
+/* vuetify-loader */
+
+
+installComponents_default()(component, {VBtn: VBtn["a" /* default */]})
+
+
+/***/ }),
+
+/***/ 76:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _VBtn__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(56);
+
+
+/* harmony default export */ __webpack_exports__["a"] = (_VBtn__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"]);
 
 /***/ })
 

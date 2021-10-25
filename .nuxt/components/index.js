@@ -7,12 +7,17 @@ export { default as Notification } from '../..\\components\\Notification.vue'
 export { default as PageTitle } from '../..\\components\\PageTitle.vue'
 export { default as VuetifyLogo } from '../..\\components\\VuetifyLogo.vue'
 export { default as ControlPumpStatus } from '../..\\components\\Control\\PumpStatus.vue'
+export { default as DetailLayout } from '../..\\components\\detail\\layout.vue'
+export { default as DetailLayout2 } from '../..\\components\\detail\\layout2.vue'
+export { default as DetailLayout3 } from '../..\\components\\detail\\layout3.vue'
+export { default as DetailLayout4 } from '../..\\components\\detail\\layout4.vue'
+export { default as DetailLayoutFull } from '../..\\components\\detail\\layoutFull.vue'
 export { default as DetailOperationInformation } from '../..\\components\\detail\\operationInformation.vue'
 export { default as DetailReport } from '../..\\components\\detail\\report.vue'
 export { default as DetailUsers } from '../..\\components\\detail\\users.vue'
 export { default as DetailYieldCropInformation } from '../..\\components\\detail\\yieldCropInformation.vue'
-export { default as LoginForm } from '../..\\components\\Login\\Form.vue'
 export { default as GeneralUserInfo } from '../..\\components\\General\\UserInfo.vue'
+export { default as LoginForm } from '../..\\components\\Login\\Form.vue'
 export { default as OverviewCardDataLeaf } from '../..\\components\\Overview\\CardDataLeaf.vue'
 export { default as OverviewCardDataSoil } from '../..\\components\\Overview\\CardDataSoil.vue'
 export { default as OverviewCardDataWater } from '../..\\components\\Overview\\CardDataWater.vue'
@@ -59,12 +64,17 @@ export const LazyNotification = import('../..\\components\\Notification.vue' /* 
 export const LazyPageTitle = import('../..\\components\\PageTitle.vue' /* webpackChunkName: "components/page-title" */).then(c => wrapFunctional(c.default || c))
 export const LazyVuetifyLogo = import('../..\\components\\VuetifyLogo.vue' /* webpackChunkName: "components/vuetify-logo" */).then(c => wrapFunctional(c.default || c))
 export const LazyControlPumpStatus = import('../..\\components\\Control\\PumpStatus.vue' /* webpackChunkName: "components/control-pump-status" */).then(c => wrapFunctional(c.default || c))
+export const LazyDetailLayout = import('../..\\components\\detail\\layout.vue' /* webpackChunkName: "components/detail-layout" */).then(c => wrapFunctional(c.default || c))
+export const LazyDetailLayout2 = import('../..\\components\\detail\\layout2.vue' /* webpackChunkName: "components/detail-layout2" */).then(c => wrapFunctional(c.default || c))
+export const LazyDetailLayout3 = import('../..\\components\\detail\\layout3.vue' /* webpackChunkName: "components/detail-layout3" */).then(c => wrapFunctional(c.default || c))
+export const LazyDetailLayout4 = import('../..\\components\\detail\\layout4.vue' /* webpackChunkName: "components/detail-layout4" */).then(c => wrapFunctional(c.default || c))
+export const LazyDetailLayoutFull = import('../..\\components\\detail\\layoutFull.vue' /* webpackChunkName: "components/detail-layout-full" */).then(c => wrapFunctional(c.default || c))
 export const LazyDetailOperationInformation = import('../..\\components\\detail\\operationInformation.vue' /* webpackChunkName: "components/detail-operation-information" */).then(c => wrapFunctional(c.default || c))
 export const LazyDetailReport = import('../..\\components\\detail\\report.vue' /* webpackChunkName: "components/detail-report" */).then(c => wrapFunctional(c.default || c))
 export const LazyDetailUsers = import('../..\\components\\detail\\users.vue' /* webpackChunkName: "components/detail-users" */).then(c => wrapFunctional(c.default || c))
 export const LazyDetailYieldCropInformation = import('../..\\components\\detail\\yieldCropInformation.vue' /* webpackChunkName: "components/detail-yield-crop-information" */).then(c => wrapFunctional(c.default || c))
-export const LazyLoginForm = import('../..\\components\\Login\\Form.vue' /* webpackChunkName: "components/login-form" */).then(c => wrapFunctional(c.default || c))
 export const LazyGeneralUserInfo = import('../..\\components\\General\\UserInfo.vue' /* webpackChunkName: "components/general-user-info" */).then(c => wrapFunctional(c.default || c))
+export const LazyLoginForm = import('../..\\components\\Login\\Form.vue' /* webpackChunkName: "components/login-form" */).then(c => wrapFunctional(c.default || c))
 export const LazyOverviewCardDataLeaf = import('../..\\components\\Overview\\CardDataLeaf.vue' /* webpackChunkName: "components/overview-card-data-leaf" */).then(c => wrapFunctional(c.default || c))
 export const LazyOverviewCardDataSoil = import('../..\\components\\Overview\\CardDataSoil.vue' /* webpackChunkName: "components/overview-card-data-soil" */).then(c => wrapFunctional(c.default || c))
 export const LazyOverviewCardDataWater = import('../..\\components\\Overview\\CardDataWater.vue' /* webpackChunkName: "components/overview-card-data-water" */).then(c => wrapFunctional(c.default || c))

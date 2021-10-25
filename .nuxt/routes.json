@@ -1,5 +1,12 @@
 [
   {
+    "name": "adminDetail",
+    "path": "/adminDetail",
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\IPAH\\\\ipahAuth - Copy\\\\pages\\\\adminDetail.vue",
+    "chunkName": "pages/adminDetail",
+    "_name": "_99518462"
+  },
+  {
     "name": "adminStatus",
     "path": "/adminStatus",
     "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\IPAH\\\\ipahAuth - Copy\\\\pages\\\\adminStatus.vue",

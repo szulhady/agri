@@ -1,7 +1,7 @@
-exports.ids = [74];
+exports.ids = [80];
 exports.modules = {
 
-/***/ 450:
+/***/ 462:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73,7 +73,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* vuetify-loader */
 
 
-installComponents_default()(component, {VCardTitle: VCard["b" /* VCardTitle */]})
+installComponents_default()(component, {VCardTitle: VCard["c" /* VCardTitle */]})
 
 
 /***/ })

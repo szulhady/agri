@@ -62,9 +62,9 @@
                 <div>
                   <h4>
                     Nutrient preparation is done via schedule set by user on
-                    schedule panel. It is done on 11.00pm on choosen date.
-                    Please fill duration input and click button below to start
-                    nutrient preparation manually.
+                    schedule panel. It is done on 5.00am on choosen date. Please
+                    fill duration input and click button below to start nutrient
+                    preparation manually.
                   </h4>
                 </div>
 
@@ -72,13 +72,15 @@
                 <div
                   style="display:flex; flex-direction:column;justify-content:center; align-items:center"
                 >
-                  <v-select
-                    :items="itemsDuration"
+                  <v-text-field
                     label="Duration (minute)"
-                    v-model="duration"
+                    type="number"
+                    v-model.number="duration"
                     class="short"
-                  ></v-select>
-                  <v-btn class="mt-4 mb-4">Start Preparation</v-btn>
+                  ></v-text-field>
+                  <v-btn @click="nutrient" class="mt-4 mb-4"
+                    >Start Preparation</v-btn
+                  >
                 </div>
               </v-col>
             </v-row>
@@ -125,7 +127,9 @@ export default {
   methods: {
     ...mapMutations({
       setIpah1ManualFill: "setIpah1ManualFill",
-      setIpah1ManualStop: "setIpah1ManualStop"
+      setIpah1ManualStop: "setIpah1ManualStop",
+      setIpah1ManualNutrient: "setIpah1ManualNutrient",
+      setIpah1ManualNutrientDuration: "setIpah1ManualNutrientDuration"
     }),
     trigger: function(device, state, deviceName) {
       this.state2 = false;
@@ -165,6 +169,19 @@ export default {
     stop: function() {
       this.setIpah1ManualStop(true);
       console.log("stop");
+    },
+    nutrient: function() {
+      if (!this.duration) {
+        alert("Please select valid duration");
+        return;
+      }
+      if (!Number.isInteger(this.duration) || this.duration < 1) {
+        alert("Please select valid duration (integer number)");
+        return;
+      }
+      this.setIpah1ManualNutrientDuration(this.duration);
+      this.setIpah1ManualNutrient(true);
+      console.log("heree");
     }
   },
   components: {

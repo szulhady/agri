@@ -212,6 +212,12 @@ export default {
             this.$auth.$state.user.station[0] == "kongPo",
           // this.$auth.user.userId == 8,
           to: "/trendsKongPo"
+        },
+        {
+          icon: "mdi-book-open-variant",
+          title: "INPUT",
+          state: this.$auth.hasScope("user"),
+          to: "/detail"
         }
       ],
       miniVariant: false,
@@ -250,10 +256,13 @@ export default {
       setActiveUser: "setActiveUser",
       setIpah1ManualFill: "setIpah1ManualFill",
       setIpah1ManualStop: "setIpah1ManualStop",
+      setIpah1ManualNutrient: "setIpah1ManualNutrient",
       setIpah2ManualFill: "setIpah2ManualFill",
       setIpah2ManualStop: "setIpah2ManualStop",
+      setIpah2ManualNutrient: "setIpah2ManualNutrient",
       setTkpmPagohManualFill: "setTkpmPagohManualFill",
       setTkpmPagohManualStop: "setTkpmPagohManualStop",
+      setTkpmPagohManualNutrient: "setTkpmPagohManualNutrient",
       setKongPoManualFill: "setKongPoManualFill",
       setKongPoManualStop: "setKongPoManualStop",
       setKongPoManualNutrient: "setKongPoManualNutrient"
@@ -303,13 +312,13 @@ export default {
 
         if (topic === "np/s/tkpmIpah/c") {
           message = JSON.parse(message);
-          // console.log(message);
+          console.log(message);
           this.tkpmIpahStatus(message);
         }
 
         if (topic === "np/s/tkpmPagoh/c") {
           message = JSON.parse(message);
-          // console.log(message);
+          console.log(message);
           this.tkpmPagohStatus(message);
         }
 
@@ -353,10 +362,17 @@ export default {
       updatedDate4: state => state.updated4,
       ipah1ManualFill: state => state.ipah1ManualFill,
       ipah1ManualStop: state => state.ipah1ManualStop,
+      ipah1ManualNutrient: state => state.ipah1ManualNutrient,
+      ipah1ManualNutrientDuration: state => state.ipah1ManualNutrientDuration,
+      ipah2ManualNutrientDuration: state => state.ipah2ManualNutrientDuration,
+      tkpmPagohManualNutrientDuration: state =>
+        state.tkpmPagohManualNutrientDuration,
       ipah2ManualFill: state => state.ipah2ManualFill,
       ipah2ManualStop: state => state.ipah2ManualStop,
+      ipah2ManualNutrient: state => state.ipah2ManualNutrient,
       tkpmPagohManualFill: state => state.tkpmPagohManualFill,
       tkpmPagohManualStop: state => state.tkpmPagohManualStop,
+      tkpmPagohManualNutrient: state => state.tkpmPagohManualNutrient,
       kongPoManualFill: state => state.kongPoManualFill,
       kongPoManualStop: state => state.kongPoManualStop,
       kongPoManualNutrient: state => state.kongPoManualNutrient
@@ -406,48 +422,80 @@ export default {
     },
     ipah1ManualFill: function() {
       if (this.ipah1ManualFill == true) {
-        this.client.publish("debug/ipah/wf", "100");
+        this.client.publish("np/c/ipah/wf", "10");
       }
       this.setIpah1ManualFill(false);
       console.log(this.ipah1ManualFill);
     },
     ipah1ManualStop: function() {
       if (this.ipah1ManualStop == true) {
-        this.client.publish("debug/ipah/wf", "200");
+        this.client.publish("np/c/ipah/wf", "20");
       }
       this.setIpah1ManualStop(false);
       console.log(this.ipah1ManualStop);
     },
+    ipah1ManualNutrient: function() {
+      if (this.ipah1ManualNutrient == true) {
+        this.client.publish(
+          "filter/np/c/ipah/n",
+          `{"D1":10,"D2":${this.ipah1ManualNutrientDuration}}`
+        );
+        // console.log(this.ipah1ManualNutrientDuration);
+      }
+      this.setIpah1ManualNutrient(false);
+      console.log(this.ipah1ManualNutrient);
+    },
     ipah2ManualFill: function() {
       if (this.ipah2ManualFill == true) {
-        this.client.publish("debug/ipah2/wf", "100");
+        this.client.publish("np/c/tkpmIpah/wf", "10");
       }
       this.setIpah2ManualFill(false);
       console.log(this.ipah2ManualFill);
     },
     ipah2ManualStop: function() {
       if (this.ipah2ManualStop == true) {
-        this.client.publish("debug/ipah2/wf", "200");
+        // this.client.publish("np/c/tkpmIpah/wf", "20");
       }
       this.setIpah2ManualStop(false);
-      console.log(this.ipah2ManualStop);
+      console.log(this.ipah2ManualNutrientDuration);
+    },
+    ipah2ManualNutrient: function() {
+      if (this.ipah2ManualNutrient == true) {
+        this.client.publish(
+          "filter/np/c/tkpmIpah/n",
+          `{"D1":10,"D2":${this.ipah2ManualNutrientDuration}}`
+        );
+        console.log("here");
+      }
+      this.setIpah2ManualNutrient(false);
+      // console.log(this.ipah2ManualNutrientDuration);
     },
 
     tkpmPagohManualFill: function() {
       if (this.tkpmPagohManualFill == true) {
-        this.client.publish("debug/tkpmPagoh/wf", "100");
+        this.client.publish("np/c/tkpmPagoh/wf", "10");
       }
       this.setTkpmPagohManualFill(false);
       console.log(this.tkpmPagohManualFill);
     },
     tkpmPagohManualStop: function() {
       if (this.tkpmPagohManualStop == true) {
-        this.client.publish("debug/tkpmPagoh/wf", "200");
+        this.client.publish("np/c/tkpmPagoh/wf", "20");
       }
       this.setTkpmPagohManualStop(false);
       console.log(this.tkpmPagohManualStop);
     },
-
+    tkpmPagohManualNutrient: function() {
+      if (this.tkpmPagohManualNutrient == true) {
+        this.client.publish(
+          "filter/np/c/tkpmPagoh/n",
+          `{"D1":10,"D2":${this.tkpmPagohManualNutrientDuration}}`
+        );
+        // console.log("here");
+      }
+      this.setTkpmPagohManualNutrient(false);
+      // console.log(this.tkpmPagohManualNutrientDuration);
+    },
     kongPoManualFill: function() {
       if (this.kongPoManualFill == true) {
         this.client.publish("np/c/kongpo/wf", "10");

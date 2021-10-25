@@ -179,13 +179,13 @@ export const state = () => ({
           cols:6,
           sensors:['N','P','K', 'pH', 'EC', 'SM','Temp'],
           sensorData:[
-            new sensor('N','N',0,'%',40,false, 'N'),
-            new sensor('P','P',0,'%',40,false, 'P'),
-            new sensor('K','K',0,'%',40,false, 'K'),
-            new sensor('pH','pH',0,'%',25,false, 'pH'),
-            new sensor('EC','EC',0,'%',25,false, 'EC'),
-            new sensor('SM','SM',0,'%',25,false, 'SM'),
-            new sensor('Temp','Temp',0,'%',25,false, 'Temp')
+            new sensor('N','N',0,'',40,false, 'N'),
+            new sensor('P','P',0,'',40,false, 'P'),
+            new sensor('K','K',0,'',40,false, 'K'),
+            new sensor('pH','pH',0,'',25,false, 'pH'),
+            new sensor('EC','EC',0,'',25,false, 'EC'),
+            new sensor('SM','SM',0,'',25,false, 'SM'),
+            new sensor('Temp','Temp',0,'',25,false, 'Temp')
           ],
           warnings:[],
           warningsCounts: [],
@@ -196,13 +196,13 @@ export const state = () => ({
           cols:6,
           sensors:['N','P','K', 'pH', 'EC', 'SM','Temp'],
           sensorData:[
-            new sensor('N','N',0,'%',40,false, 'N'),
-            new sensor('P','P',0,'%',40,false, 'P'),
-            new sensor('K','K',0,'%',40,false, 'K'),
-            new sensor('pH','pH',0,'%',25,false, 'pH'),
-            new sensor('EC','EC',0,'%',25,false, 'EC'),
-            new sensor('SM','SM',0,'%',25,false, 'SM'),
-            new sensor('Temp','Temp',0,'%',25,false, 'Temp')
+            new sensor('N','N',0,'',40,false, 'N'),
+            new sensor('P','P',0,'',40,false, 'P'),
+            new sensor('K','K',0,'',40,false, 'K'),
+            new sensor('pH','pH',0,'',25,false, 'pH'),
+            new sensor('EC','EC',0,'',25,false, 'EC'),
+            new sensor('SM','SM',0,'',25,false, 'SM'),
+            new sensor('Temp','Temp',0,'',25,false, 'Temp')
           ],
           warnings:[],
           warningsCounts: [],
@@ -213,13 +213,13 @@ export const state = () => ({
           cols:6,
           sensors:['N','P','K', 'pH', 'EC', 'SM','Temp'],
           sensorData:[
-            new sensor('N','N',0,'%',40,false, 'N'),
-            new sensor('P','P',0,'%',40,false, 'P'),
-            new sensor('K','K',0,'%',40,false, 'K'),
-            new sensor('pH','pH',0,'%',25,false, 'pH'),
-            new sensor('EC','EC',0,'%',25,false, 'EC'),
-            new sensor('SM','SM',0,'%',25,false, 'SM'),
-            new sensor('Temp','Temp',0,'%',25,false, 'Temp')
+            new sensor('N','N',0,'',40,false, 'N'),
+            new sensor('P','P',0,'',40,false, 'P'),
+            new sensor('K','K',0,'',40,false, 'K'),
+            new sensor('pH','pH',0,'',25,false, 'pH'),
+            new sensor('EC','EC',0,'',25,false, 'EC'),
+            new sensor('SM','SM',0,'',25,false, 'SM'),
+            new sensor('Temp','Temp',0,'',25,false, 'Temp')
           ],
           warnings:[],
           warningsCounts: [],
@@ -230,13 +230,13 @@ export const state = () => ({
           cols:6,
           sensors:['N','P','K', 'pH', 'EC', 'SM','Temp'],
           sensorData:[
-            new sensor('N','N',0,'%',40,false, 'N'),
-            new sensor('P','P',0,'%',40,false, 'P'),
-            new sensor('K','K',0,'%',40,false, 'K'),
-            new sensor('pH','pH',0,'%',25,false, 'pH'),
-            new sensor('EC','EC',0,'%',25,false, 'EC'),
-            new sensor('SM','SM',0,'%',25,false, 'SM'),
-            new sensor('Temp','Temp',0,'%',25,false, 'Temp')
+            new sensor('N','N',0,'',40,false, 'N'),
+            new sensor('P','P',0,'',40,false, 'P'),
+            new sensor('K','K',0,'',40,false, 'K'),
+            new sensor('pH','pH',0,'',25,false, 'pH'),
+            new sensor('EC','EC',0,'',25,false, 'EC'),
+            new sensor('SM','SM',0,'',25,false, 'SM'),
+            new sensor('Temp','Temp',0,'',25,false, 'Temp')
           ],
           warnings:[],
           warningsCounts: [],
@@ -249,22 +249,23 @@ export const state = () => ({
           cols:6,
           sensors:['Level', 'pH', 'EC'],
           sensorData:[
-            new sensor('Level','Level',0,'%',40,false, 'Level'),
-            new sensor('pH','pH',0,'%',25,false, 'pH'),
-            new sensor('EC','EC',0,'%',25,false, 'EC'),
+            new sensor('Level','Water Tank Level',0,'',40,false, 'Level'),
+            new sensor('Level','Fertilizer Tank Level',0,'',40,false, 'Level'),
+            new sensor('pH','pH',0,'',25,false, 'pH'),
+            new sensor('EC','EC',0,'',25,false, 'EC'),
           ],
           warnings:[]
         },
       ],
       sensors:['N','P','K', 'pH', 'EC', 'SM','Temp'],
       sensorData:[
-        new sensor('N','N',0,'%',40,false, 'N'),
-        new sensor('P','P',0,'%',40,false, 'P'),
-        new sensor('K','K',0,'%',40,false, 'K'),
-        new sensor('pH','pH',0,'%',25,false, 'pH'),
-        new sensor('EC','EC',0,'%',25,false, 'EC'),
-        new sensor('SM','SM',0,'%',25,false, 'SM'),
-        new sensor('Temp','Temp',0,'%',25,false, 'Temp')
+        new sensor('N','N',0,'',40,false, 'N'),
+        new sensor('P','P',0,'',40,false, 'P'),
+        new sensor('K','K',0,'',40,false, 'K'),
+        new sensor('pH','pH',0,'',25,false, 'pH'),
+        new sensor('EC','EC',0,'',25,false, 'EC'),
+        new sensor('SM','SM',0,'',25,false, 'SM'),
+        new sensor('Temp','Temp',0,'',25,false, 'Temp')
       ],
       warnings:[],
       warningsCounts: [],
@@ -296,9 +297,9 @@ export const state = () => ({
           cols:4,
           sensors:[ 'pH','EC', 'SM'],
           sensorData:[
-            new sensor('pH','pH',0,'%',25,false, 'pH'),
-            new sensor('EC','EC',0,'%',25,false, 'EC'),
-            new sensor('SM','SM',0,'%',25,false, 'SM'),
+            new sensor('pH','pH',0,'',25,false, 'pH'),
+            new sensor('EC','EC',0,'',25,false, 'EC'),
+            new sensor('SM','SM',0,'',25,false, 'SM'),
           ],
           warnings:[],
           warningsCounts: [],
@@ -309,9 +310,9 @@ export const state = () => ({
           cols:4,
           sensors:[ 'pH','EC', 'SM'],
           sensorData:[
-            new sensor('pH','pH',0,'%',25,false, 'pH'),
-            new sensor('EC','EC',0,'%',25,false, 'EC'),
-            new sensor('SM','SM',0,'%',25,false, 'SM'),
+            new sensor('pH','pH',0,'',25,false, 'pH'),
+            new sensor('EC','EC',0,'',25,false, 'EC'),
+            new sensor('SM','SM',0,'',25,false, 'SM'),
           ],
           warnings:[],
           warningsCounts: [],
@@ -323,9 +324,9 @@ export const state = () => ({
           cols:4,
           sensors:[ 'pH','EC', 'SM'],
           sensorData:[
-            new sensor('pH','pH',0,'%',25,false, 'pH'),
-            new sensor('EC','EC',0,'%',25,false, 'EC'),
-            new sensor('SM','SM',0,'%',25,false, 'SM'),
+            new sensor('pH','pH',0,'',25,false, 'pH'),
+            new sensor('EC','EC',0,'',25,false, 'EC'),
+            new sensor('SM','SM',0,'',25,false, 'SM'),
           ],
           warnings:[],
           warningsCounts: [],
@@ -338,8 +339,8 @@ export const state = () => ({
           cols:4,
           sensors:['pH', 'EC'],
           sensorData:[
-            new sensor('pH','pH',0,'%',25,false, 'pH'),
-            new sensor('EC','EC',0,'%',25,false, 'EC'),
+            new sensor('pH','pH',0,'',25,false, 'pH'),
+            new sensor('EC','EC',0,'',25,false, 'EC'),
           ],
           warnings:[]
         },
@@ -349,8 +350,8 @@ export const state = () => ({
           cols:4,
           sensors:['pH', 'EC'],
           sensorData:[
-            new sensor('pH','pH',0,'%',25,false, 'pH'),
-            new sensor('EC','EC',0,'%',25,false, 'EC'),
+            new sensor('pH','pH',0,'',25,false, 'pH'),
+            new sensor('EC','EC',0,'',25,false, 'EC'),
           ],
           warnings:[]
           },
@@ -360,17 +361,17 @@ export const state = () => ({
           cols:4,
           sensors:['pH', 'EC'],
           sensorData:[
-            new sensor('pH','pH',0,'%',25,false, 'pH'),
-            new sensor('EC','EC',0,'%',25,false, 'EC'),
+            new sensor('pH','pH',0,'',25,false, 'pH'),
+            new sensor('EC','EC',0,'',25,false, 'EC'),
           ],
          warnings:[]
         },
       ],
       sensors:['pH', 'EC', 'SM'],
       sensorData:[
-        new sensor('pH','pH',0,'%',25,false, 'pH'),
-        new sensor('EC','EC',0,'%',25,false, 'EC'),
-        new sensor('SM','SM',0,'%',25,false, 'SM'),
+        new sensor('pH','pH',0,'',25,false, 'pH'),
+        new sensor('EC','EC',0,'',25,false, 'EC'),
+        new sensor('SM','SM',0,'',25,false, 'SM'),
       ],
       warnings:[],
       warningsCounts: [],
@@ -401,9 +402,9 @@ export const state = () => ({
           cols:4,
           sensors:['pH', 'EC', 'SM'],
           sensorData:[
-            new sensor('pH','pH',0,'%',25,false, 'pH'),
-            new sensor('EC','EC',0,'%',25,false, 'EC'),
-            new sensor('SM','SM',0,'%',25,false, 'SM'),
+            new sensor('pH','pH',0,'',25,false, 'pH'),
+            new sensor('EC','EC',0,'',25,false, 'EC'),
+            new sensor('SM','SM',0,'',25,false, 'SM'),
           ],
           warnings:[],
           warningsCounts: [],
@@ -414,9 +415,9 @@ export const state = () => ({
           cols:4,
           sensors:['pH', 'EC', 'SM'],
           sensorData:[
-            new sensor('pH','pH',0,'%',25,false, 'pH'),
-            new sensor('EC','EC',0,'%',25,false, 'EC'),
-            new sensor('SM','SM',0,'%',25,false, 'SM'),
+            new sensor('pH','pH',0,'',25,false, 'pH'),
+            new sensor('EC','EC',0,'',25,false, 'EC'),
+            new sensor('SM','SM',0,'',25,false, 'SM'),
           ],
           warnings:[],
           warningsCounts: [],
@@ -427,9 +428,9 @@ export const state = () => ({
           cols:4,
           sensors:['pH', 'EC', 'SM'],
           sensorData:[
-            new sensor('pH','pH',0,'%',25,false, 'pH'),
-            new sensor('EC','EC',0,'%',25,false, 'EC'),
-            new sensor('SM','SM',0,'%',25,false, 'SM'),
+            new sensor('pH','pH',0,'',25,false, 'pH'),
+            new sensor('EC','EC',0,'',25,false, 'EC'),
+            new sensor('SM','SM',0,'',25,false, 'SM'),
           ],
           warnings:[],
           warningsCounts: [],
@@ -442,9 +443,9 @@ export const state = () => ({
           cols:4,
           sensors:['Level', 'pH', 'EC'],
           sensorData:[
-            new sensor('Level','Level',0,'%',40,false, 'Level'),
-            new sensor('pH','pH',0,'%',25,false, 'pH'),
-            new sensor('EC','EC',0,'%',25,false, 'EC'),
+            new sensor('Level','Level',0,'',40,false, 'Level'),
+            new sensor('pH','pH',0,'',25,false, 'pH'),
+            new sensor('EC','EC',0,'',25,false, 'EC'),
           ],
           warnings:[]
         },
@@ -454,9 +455,9 @@ export const state = () => ({
           cols:4,
           sensors:['Level', 'pH', 'EC'],
           sensorData:[
-            new sensor('Level','Level',0,'%',40,false, 'Level'),
-            new sensor('pH','pH',0,'%',25,false, 'pH'),
-            new sensor('EC','EC',0,'%',25,false, 'EC'),
+            new sensor('Level','Level',0,'',40,false, 'Level'),
+            new sensor('pH','pH',0,'',25,false, 'pH'),
+            new sensor('EC','EC',0,'',25,false, 'EC'),
           ],
           warnings:[]
           },
@@ -466,18 +467,18 @@ export const state = () => ({
           cols:4,
           sensors:['Level', 'pH', 'EC'],
           sensorData:[
-            new sensor('Level','Level',0,'%',40,false, 'Level'),
-            new sensor('pH','pH',0,'%',25,false, 'pH'),
-            new sensor('EC','EC',0,'%',25,false, 'EC'),
+            new sensor('Level','Level',0,'',40,false, 'Level'),
+            new sensor('pH','pH',0,'',25,false, 'pH'),
+            new sensor('EC','EC',0,'',25,false, 'EC'),
           ],
          warnings:[]
         },
       ],
       sensors:['pH', 'EC', 'SM',],
       sensorData:[
-        new sensor('pH','pH',0,'%',25,false, 'pH'),
-        new sensor('EC','EC',0,'%',25,false, 'EC'),
-        new sensor('SM','SM',0,'%',25,false, 'SM'),
+        new sensor('pH','pH',0,'',25,false, 'pH'),
+        new sensor('EC','EC',0,'',25,false, 'EC'),
+        new sensor('SM','SM',0,'',25,false, 'SM'),
       ],
       warnings:[],
       warningsCounts: [],
@@ -508,12 +509,12 @@ export const state = () => ({
           cols:6,
           sensors:['N','P','K', 'pH', 'EC', 'SM'],
           sensorData:[
-            new sensor('N','N',0,'%',40,false, 'N'),
-            new sensor('P','P',0,'%',40,false, 'P'),
-            new sensor('K','K',0,'%',40,false, 'K'),
-            new sensor('pH','pH',0,'%',25,false, 'pH'),
-            new sensor('EC','EC',0,'%',25,false, 'EC'),
-            new sensor('SM','SM',0,'%',25,false, 'SM'),
+            new sensor('N','N',0,'',40,false, 'N'),
+            new sensor('P','P',0,'',40,false, 'P'),
+            new sensor('K','K',0,'',40,false, 'K'),
+            new sensor('pH','pH',0,'',25,false, 'pH'),
+            new sensor('EC','EC',0,'',25,false, 'EC'),
+            new sensor('SM','SM',0,'',25,false, 'SM'),
           ],
           warnings:[],
           warningsCounts: [],
@@ -524,12 +525,12 @@ export const state = () => ({
           cols:6,
           sensors:['N','P','K', 'pH', 'EC', 'SM'],
           sensorData:[
-            new sensor('N','N',0,'%',40,false, 'N'),
-            new sensor('P','P',0,'%',40,false, 'P'),
-            new sensor('K','K',0,'%',40,false, 'K'),
-            new sensor('pH','pH',0,'%',25,false, 'pH'),
-            new sensor('EC','EC',0,'%',25,false, 'EC'),
-            new sensor('SM','SM',0,'%',25,false, 'SM'),
+            new sensor('N','N',0,'',40,false, 'N'),
+            new sensor('P','P',0,'',40,false, 'P'),
+            new sensor('K','K',0,'',40,false, 'K'),
+            new sensor('pH','pH',0,'',25,false, 'pH'),
+            new sensor('EC','EC',0,'',25,false, 'EC'),
+            new sensor('SM','SM',0,'',25,false, 'SM'),
           ],
           warnings:[],
           warningsCounts: [],
@@ -542,21 +543,21 @@ export const state = () => ({
           cols:6,
           sensors:['Level', 'pH', 'EC'],
           sensorData:[
-            new sensor('Level','Level',0,'%',40,false, 'Level'),
-            new sensor('pH','pH',0,'%',25,false, 'pH'),
-            new sensor('EC','EC',0,'%',25,false, 'EC'),
+            new sensor('Level','Level',0,'',40,false, 'Level'),
+            new sensor('pH','pH',0,'',25,false, 'pH'),
+            new sensor('EC','EC',0,'',25,false, 'EC'),
           ],
           warnings:[]
         },
       ],
       sensors:['N','P','K', 'pH', 'EC', 'SM'],
       sensorData:[
-        new sensor('N','N',0,'%',40,false, 'N'),
-        new sensor('P','P',0,'%',40,false, 'P'),
-        new sensor('K','K',0,'%',40,false, 'K'),
-        new sensor('pH','pH',0,'%',25,false, 'pH'),
-        new sensor('EC','EC',0,'%',25,false, 'EC'),
-        new sensor('SM','SM',0,'%',25,false, 'SM'),
+        new sensor('N','N',0,'',40,false, 'N'),
+        new sensor('P','P',0,'',40,false, 'P'),
+        new sensor('K','K',0,'',40,false, 'K'),
+        new sensor('pH','pH',0,'',25,false, 'pH'),
+        new sensor('EC','EC',0,'',25,false, 'EC'),
+        new sensor('SM','SM',0,'',25,false, 'SM'),
       ],
       warnings:[],
       warningsCounts: [],
@@ -576,6 +577,7 @@ export const state = () => ({
       ],
     },
   ],
+ 
   activeUser:0,
   trendsIpah1:[
     {
@@ -2051,13 +2053,24 @@ export const state = () => ({
 ],
 ipah1ManualFill:false,
 ipah1ManualStop:false,
+ipah1ManualNutrient:false,
+ipah1ManualNutrientDuration:"",
 ipah2ManualFill:false,
 ipah2ManualStop:false,
+ipah2ManualNutrient:false,
+ipah2ManualNutrientDuration:"",
 tkpmPagohManualFill:false,
 tkpmPagohManualStop:false,
+tkpmPagohManualNutrient:false,
+tkpmPagohManualNutrientDuration:"",
 kongPoManualFill:false,
 kongPoManualStop:false,
 kongPoManualNutrient:false,
+
+detailActive:"",
+detailIpah1:"",
+detailIpah2:"",
+detailTkpmPagoh:""
 });
 
 
@@ -3260,21 +3273,36 @@ export const mutations = {
     setIpah1ManualStop(state, payload){
       state.ipah1ManualStop= payload;
     },
-
+    setIpah1ManualNutrient(state, payload){
+      state.ipah1ManualNutrient= payload;
+    },
+    setIpah1ManualNutrientDuration(state, payload){
+      state.ipah1ManualNutrientDuration= payload;
+    },
     setIpah2ManualFill(state, payload){
       state.ipah2ManualFill= payload;
     },
     setIpah2ManualStop(state, payload){
       state.ipah2ManualStop= payload;
     },
-
+    setIpah2ManualNutrient(state, payload){
+      state.ipah2ManualNutrient= payload;
+    },
+    setIpah2ManualNutrientDuration(state, payload){
+      state.ipah2ManualNutrientDuration= payload;
+    },
     setTkpmPagohManualFill(state, payload){
       state.tkpmPagohManualFill= payload;
     },
     setTkpmPagohManualStop(state, payload){
       state.tkpmPagohManualStop= payload;
     },
-
+    setTkpmPagohManualNutrient(state, payload){
+      state.tkpmPagohManualNutrient= payload;
+    },
+    setTkpmPagohManualNutrientDuration(state, payload){
+      state.tkpmPagohManualNutrientDuration= payload;
+    },
     setKongPoManualFill(state, payload){
       state.kongPoManualFill= payload;
     },
@@ -3283,7 +3311,24 @@ export const mutations = {
     },
     setKongPoManualNutrient(state, payload){
       state.kongPoManualNutrient= payload;
-    }
+    },
+
+
+    // REPORT
+
+    setDetailActive(state, payload){
+      state.detailActive = payload
+    },
+
+    setDetailIpah1(state, payload){
+      state.detailIpah1 = payload
+    },
+    setDetailIpah2(state, payload){
+      state.detailIpah2 = payload
+    },
+    setDetailTkpmPagoh(state, payload){
+      state.detailTkpmPagoh = payload
+    },
 
 };
 

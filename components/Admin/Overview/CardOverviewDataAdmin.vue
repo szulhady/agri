@@ -4,7 +4,7 @@
       <v-card-title class="color mb-4">REAL-TIME DATA</v-card-title>
       <v-row style="display:flex; justify-content:space-evenly">
         <v-col
-          v-for="(category, index) in stations"
+          v-for="(category, index) in stations.slice(0, -1)"
           :key="index"
           cols="3"
           class="mb-3 categories-container"
