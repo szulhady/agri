@@ -454,7 +454,7 @@ export default {
     },
     ipah2ManualStop: function() {
       if (this.ipah2ManualStop == true) {
-        // this.client.publish("np/c/tkpmIpah/wf", "20");
+        this.client.publish("np/c/tkpmIpah/wf", "20");
       }
       this.setIpah2ManualStop(false);
       console.log(this.ipah2ManualNutrientDuration);
