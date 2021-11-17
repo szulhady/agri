@@ -930,7 +930,8 @@ export default {
     },
     getWeatherIpah1: function() {
       this.$axios
-        .$get("http://139.59.109.48/api/openWeatherMap/ipah1")
+        // .$get("http://139.59.109.48/api/openWeatherMap/ipah1")
+        .$get("http://159.223.55.150/api/openWeatherMap/ipah1")
         // .$get("http://127.0.0.1:5000/api/openWeatherMap/ipah1")
         .then(response => {
           this.SET_WEATHER(response);
@@ -942,7 +943,8 @@ export default {
     },
     getWeatherIpah2: function() {
       this.$axios
-        .$get("http://139.59.109.48/api/openWeatherMap/ipah2")
+        // .$get("http://139.59.109.48/api/openWeatherMap/ipah2")
+        .$get("http://159.223.55.150/api/openWeatherMap/ipah2")
         // .$get("http://127.0.0.1:5000/api/openWeatherMap/ipah2")
         .then(response => {
           this.SET_WEATHER(response);
@@ -954,7 +956,8 @@ export default {
     },
     getWeatherPagoh: function() {
       this.$axios
-        .$get("http://139.59.109.48/api/openWeatherMap/tkpmPagoh")
+        // .$get("http://139.59.109.48/api/openWeatherMap/tkpmPagoh")
+        .$get("http://159.223.55.150/api/openWeatherMap/tkpmPagoh")
         // .$get("http://127.0.0.1:5000/api/openWeatherMap/tkpmPagoh")
         .then(response => {
           this.SET_WEATHER(response);
@@ -966,7 +969,8 @@ export default {
     },
     getWeatherKongPo: function() {
       this.$axios
-        .$get("http://139.59.109.48/api/openWeatherMap/kongPo")
+        // .$get("http://139.59.109.48/api/openWeatherMap/kongPo")
+        .$get("http://159.223.55.150/api/openWeatherMap/kongPo")
         // .$get("http://127.0.0.1:5000/api/openWeatherMap/kongPo")
         .then(response => {
           this.SET_WEATHER(response);

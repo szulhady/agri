@@ -13466,12 +13466,12 @@ var nuxt_loading_component = Object(componentNormalizer["a" /* default */])(
 )
 
 /* harmony default export */ var nuxt_loading = (nuxt_loading_component.exports);
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/default.vue?vue&type=template&id=5433d021&
-var defaultvue_type_template_id_5433d021_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-app',{attrs:{"dark":""}},[_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":""},model:{value:(_vm.drawer),callback:function ($$v) {_vm.drawer=$$v},expression:"drawer"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1),_vm._v(" "),_c('v-app-bar',{attrs:{"fixed":"","app":""}},[_c('v-toolbar-title',{staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name"},[_c('h4',{staticStyle:{"color":"white"}},[_vm._v(_vm._s(_vm.loggedInUser.username))])]):_vm._e(),_vm._v(" "),_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1),_vm._v(" "),_c('v-main',[_c('v-container',[_c('nuxt')],1)],1),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('div',{staticClass:"layer",attrs:{"id":"layer"}}):_vm._e()]),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('v-card',{staticClass:"logout elevation-12"},[_c('v-card-title',[_vm._v("\n        Logout\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("\n        Are you sure?\n      ")]),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"success logout-btn",on:{"click":_vm.logout}},[_vm._v("Yes")]),_vm._v(" "),_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1):_vm._e()],1),_vm._v(" "),_c('v-footer',{attrs:{"absolute":!_vm.fixed,"app":""}},[_c('span',[_vm._v("© "+_vm._s(new Date().getFullYear()))])])],1)}
-var defaultvue_type_template_id_5433d021_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/default.vue?vue&type=template&id=7b5bbc1f&
+var defaultvue_type_template_id_7b5bbc1f_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-app',{attrs:{"dark":""}},[_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":""},model:{value:(_vm.drawer),callback:function ($$v) {_vm.drawer=$$v},expression:"drawer"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1),_vm._v(" "),_c('v-app-bar',{attrs:{"fixed":"","app":""}},[_c('v-toolbar-title',{staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name"},[_c('h4',{staticStyle:{"color":"white"}},[_vm._v(_vm._s(_vm.loggedInUser.username))])]):_vm._e(),_vm._v(" "),_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1),_vm._v(" "),_c('v-main',[_c('v-container',[_c('nuxt')],1)],1),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('div',{staticClass:"layer",attrs:{"id":"layer"}}):_vm._e()]),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('v-card',{staticClass:"logout elevation-12"},[_c('v-card-title',[_vm._v("\n        Logout\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("\n        Are you sure?\n      ")]),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"success logout-btn",on:{"click":_vm.logout}},[_vm._v("Yes")]),_vm._v(" "),_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1):_vm._e()],1),_vm._v(" "),_c('v-footer',{attrs:{"absolute":!_vm.fixed,"app":""}},[_c('span',[_vm._v("© "+_vm._s(new Date().getFullYear()))])])],1)}
+var defaultvue_type_template_id_7b5bbc1f_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./layouts/default.vue?vue&type=template&id=5433d021&
+// CONCATENATED MODULE: ./layouts/default.vue?vue&type=template&id=7b5bbc1f&
 
 // EXTERNAL MODULE: ./src/class.js
 var src_class = __webpack_require__(0);
@@ -14454,7 +14454,8 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
     },
 
     getWeatherIpah1: function () {
-      this.$axios.$get("http://139.59.109.48/api/openWeatherMap/ipah1") // .$get("http://127.0.0.1:5000/api/openWeatherMap/ipah1")
+      this.$axios // .$get("http://139.59.109.48/api/openWeatherMap/ipah1")
+      .$get("http://159.223.55.150/api/openWeatherMap/ipah1") // .$get("http://127.0.0.1:5000/api/openWeatherMap/ipah1")
       .then(response => {
         this.SET_WEATHER(response); // window.location.reload();
       }).catch(error => {
@@ -14462,7 +14463,8 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
       });
     },
     getWeatherIpah2: function () {
-      this.$axios.$get("http://139.59.109.48/api/openWeatherMap/ipah2") // .$get("http://127.0.0.1:5000/api/openWeatherMap/ipah2")
+      this.$axios // .$get("http://139.59.109.48/api/openWeatherMap/ipah2")
+      .$get("http://159.223.55.150/api/openWeatherMap/ipah2") // .$get("http://127.0.0.1:5000/api/openWeatherMap/ipah2")
       .then(response => {
         this.SET_WEATHER(response); // window.location.reload();
       }).catch(error => {
@@ -14470,7 +14472,8 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
       });
     },
     getWeatherPagoh: function () {
-      this.$axios.$get("http://139.59.109.48/api/openWeatherMap/tkpmPagoh") // .$get("http://127.0.0.1:5000/api/openWeatherMap/tkpmPagoh")
+      this.$axios // .$get("http://139.59.109.48/api/openWeatherMap/tkpmPagoh")
+      .$get("http://159.223.55.150/api/openWeatherMap/tkpmPagoh") // .$get("http://127.0.0.1:5000/api/openWeatherMap/tkpmPagoh")
       .then(response => {
         this.SET_WEATHER(response); // window.location.reload();
       }).catch(error => {
@@ -14478,7 +14481,8 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
       });
     },
     getWeatherKongPo: function () {
-      this.$axios.$get("http://139.59.109.48/api/openWeatherMap/kongPo") // .$get("http://127.0.0.1:5000/api/openWeatherMap/kongPo")
+      this.$axios // .$get("http://139.59.109.48/api/openWeatherMap/kongPo")
+      .$get("http://159.223.55.150/api/openWeatherMap/kongPo") // .$get("http://127.0.0.1:5000/api/openWeatherMap/kongPo")
       .then(response => {
         this.SET_WEATHER(response); // window.location.reload();
       }).catch(error => {
@@ -15796,8 +15800,8 @@ if (style0.__inject__) style0.__inject__(context)
 
 var default_component = Object(componentNormalizer["a" /* default */])(
   layouts_defaultvue_type_script_lang_js_,
-  defaultvue_type_template_id_5433d021_render,
-  defaultvue_type_template_id_5433d021_staticRenderFns,
+  defaultvue_type_template_id_7b5bbc1f_render,
+  defaultvue_type_template_id_7b5bbc1f_staticRenderFns,
   false,
   default_injectStyles,
   null,
