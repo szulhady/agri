@@ -253,6 +253,7 @@ export default {
       ipahStatus: "ipahStatus",
       tkpmIpahStatus: "tkpmIpahStatus",
       tkpmPagohStatus: "tkpmPagohStatus",
+      kongPoStatus: "kongPoStatus",
       setActiveUser: "setActiveUser",
       setIpah1ManualFill: "setIpah1ManualFill",
       setIpah1ManualStop: "setIpah1ManualStop",
@@ -322,9 +323,15 @@ export default {
           this.tkpmPagohStatus(message);
         }
 
+        if (topic === "np/s/kongpo/c") {
+          message = JSON.parse(message);
+          console.log(message);
+          this.kongPoStatus(message);
+        }
+
         if (topic === "ipah/test") {
           message = JSON.parse(message);
-          // console.log(message);
+          console.log(message);
         }
       });
     },

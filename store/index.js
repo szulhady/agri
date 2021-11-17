@@ -2751,7 +2751,7 @@ export const mutations = {
         state.ipahStatus.SV1=1
         state.ipahStatus.SV3=1
         state.ipahStatus.P=1
-        state.ipahProcess = 'Nutrient prepatation. Water filling process in fertilizer solution tank.'
+        state.ipahProcess = 'Nutrient preparation. Water filling process in fertilizer solution tank.'
       }
 
       // Logic for water dripping on blocks
@@ -2882,7 +2882,7 @@ export const mutations = {
         state.tkpmIpahStatus.SV11=1
         state.tkpmIpahStatus.SV12=1
         state.tkpmIpahStatus.P3=1
-        state.tkpmIpahProcess = 'Nutrient prepatation. Water filling process in fertilizer solution tank.'
+        state.tkpmIpahProcess = 'Nutrient preparation. Water filling process in fertilizer solution tank.'
       }
 
       // Logic for water dripping on blocks
@@ -3036,7 +3036,7 @@ export const mutations = {
         state.tkpmPagohStatus.SV9=1
         state.tkpmPagohStatus.SV11=1
         state.tkpmPagohStatus.P3=1
-        state.tkpmPagohProcess = 'Nutrient prepatation. Water filling process in fertilizer solution tank.'
+        state.tkpmPagohProcess = 'Nutrient preparation. Water filling process in fertilizer solution tank.'
       }
 
       // Logic for water dripping on blocks
@@ -3100,138 +3100,113 @@ export const mutations = {
           state.kongPoStatus.SV3=0
           state.kongPoStatus.SV4=0
           state.kongPoStatus.SV5=0
-          state.kongPoStatus.P1=0
-          state.kongPoStatus.P2=0
+          state.kongPoStatus.PTW=0 //P1
+          state.kongPoStatus.PNW=0 //P2
           state.kongPoStatus.DP=0
-    
+
           // Water Dripping on Block 1
           if(payload.WDB1==1){
-            state.tkpmPagohStatus.SV3=1
-            state.tkpmPagohStatus.SV12=1
-            state.tkpmPagohStatus.P1=1
-            state.tkpmPagohProcess = 'Water dripping on block 1.'
+            state.kongPoStatus.SV4=1
+            state.kongPoStatus.PNW=1
+            state.kongPoProcess = 'Water dripping on block 1.'
           }
     
           // Water Dripping on Block 2
-          if(payload.WDB2==1){
-            state.tkpmPagohStatus.SV6=1
-            state.tkpmPagohStatus.SV13=1
-            state.tkpmPagohStatus.P2=1
-            state.tkpmPagohProcess = 'Water dripping on block 2.'
-          }
+          // if(payload.WDB2==1){
+          //   state.kongPoStatus.SV6=1
+          //   state.kongPoStatus.SV13=1
+          //   state.kongPoStatus.P2=1
+          //   state.kongPoProcess = 'Water dripping on block 2.'
+          // }
      
           // Water Dripping on Block 3
-          if(payload.WDB3==1){
-            state.tkpmPagohStatus.SV9=1
-            state.tkpmPagohStatus.SV14=1
-            state.tkpmPagohStatus.P3=1
-            state.tkpmPagohProcess = 'Water dripping on block 3.'
-          }
+          // if(payload.WDB3==1){
+          //   state.kongPoStatus.SV9=1
+          //   state.kongPoStatus.SV14=1
+          //   state.kongPoStatus.P3=1
+          //   state.kongPoProcess = 'Water dripping on block 3.'
+          // }
     
           // Nutrient Dripping on Block 1
           if(payload.NDB1==1){
-            state.tkpmPagohStatus.SV4=1
-            state.tkpmPagohStatus.SV12=1
-            state.tkpmPagohStatus.P1=1
-            state.tkpmPagohProcess = 'Nutrient dripping on block 1.'
+            state.kongPoStatus.SV1=1
+            state.kongPoStatus.SV3=1
+            state.kongPoStatus.PTW=1
+            state.kongPoProcess = 'Nutrient dripping on block 1.'
           }
     
           // Nutrient Dripping on Block 2
-          if(payload.NDB2==1){
-            state.tkpmPagohStatus.SV7=1
-            state.tkpmPagohStatus.SV13=1
-            state.tkpmPagohStatus.P2=1
-            state.tkpmPagohProcess = 'Nutrient dripping on block 2.'
-          }
+          // if(payload.NDB2==1){
+          //   state.tkpmPagohStatus.SV7=1
+          //   state.tkpmPagohStatus.SV13=1
+          //   state.tkpmPagohStatus.PTW=1
+          //   state.kongPoProcess = 'Nutrient dripping on block 2.'
+          // }
     
           // Nutrient Dripping on Block 3
-          if(payload.NDB3==1){
-            state.tkpmPagohStatus.SV10=1
-            state.tkpmPagohStatus.SV14=1
-            state.tkpmPagohStatus.P3=1
-            state.tkpmPagohProcess = 'Nutrient dripping on block 3.'
-          }
+          // if(payload.NDB3==1){
+          //   state.tkpmPagohStatus.SV10=1
+          //   state.tkpmPagohStatus.SV14=1
+          //   state.tkpmPagohStatus.P3=1
+          //   state.kongPoProcess = 'Nutrient dripping on block 3.'
+          // }
     
           // Nutrient Filling (Nutrient preparation, Dosing process)
           if(payload.NF==1){
-            state.tkpmPagohStatus.SV4=1
-            state.tkpmPagohStatus.SV5=1
-            state.tkpmPagohStatus.P1=1
-            state.tkpmPagohStatus.SV7=1
-            state.tkpmPagohStatus.SV8=1
-            state.tkpmPagohStatus.P2=1
-            state.tkpmPagohStatus.SV10=1
-            state.tkpmPagohStatus.SV11=1
-            state.tkpmPagohStatus.P3=1
-            state.tkpmPagohStatus.DP1=1
-            state.tkpmPagohStatus.DP2=1
-            state.tkpmPagohProcess = 'Nutrient preparation. Dosing process is ongoing.'
+            state.kongPoStatus.SV1=1
+            state.kongPoStatus.SV2=1
+            state.kongPoStatus.PTW1=1
+            state.kongPoStatus.DP=1
+            state.kongPoProcess = 'Nutrient preparation. Dosing process is ongoing.'
           }
     
           //Water Filling (Nutrient preparation)
           if(payload.WF==1){
-            state.tkpmPagohStatus.SV3=1
-            state.tkpmPagohStatus.SV5=1
-            state.tkpmPagohStatus.P1=1
-            state.tkpmPagohStatus.SV6=1
-            state.tkpmPagohStatus.SV8=1
-            state.tkpmPagohStatus.P2=1
-            state.tkpmPagohStatus.SV9=1
-            state.tkpmPagohStatus.SV11=1
-            state.tkpmPagohStatus.P3=1
-            state.tkpmPagohProcess = 'Nutrient prepatation. Water filling process in fertilizer solution tank.'
+            state.kongPoStatus.SV5=1
+            state.kongPoStatus.PTW1=1
+            state.kongPoStatus.SV2=1
+            state.kongPoProcess = 'Nutrient preparation. Water filling process in fertilizer solution tank.'
           }
     
           // Logic for water dripping on blocks
-          if (payload.WDB1 == 1 && payload.WDB2 == 1){
-            state.tkpmPagohProcess = 'Water dripping on block 1 and 2.'
-          }
-          if (payload.WDB1 == 1 && payload.WDB3 == 1){
-            state.tkpmPagohProcess = 'Water dripping on block 1 and 3.'
-          }
-          if (payload.WDB2 == 1 && payload.WDB3 == 1){
-            state.tkpmPagohProcess = 'Water dripping on block 2 and 3.'
-          }
-          if (payload.WDB1 == 1 && payload.WDB2 == 1 && payload.WDB3 == 1){
-            state.tkpmPagohProcess = 'Water dripping on all block.'
-          }
+          // if (payload.WDB1 == 1 && payload.WDB2 == 1){
+          //   state.kongPoProcess = 'Water dripping on block 1 and 2.'
+          // }
+          // if (payload.WDB1 == 1 && payload.WDB3 == 1){
+          //   state.kongPoProcess = 'Water dripping on block 1 and 3.'
+          // }
+          // if (payload.WDB2 == 1 && payload.WDB3 == 1){
+          //   state.kongPoProcess = 'Water dripping on block 2 and 3.'
+          // }
+          // if (payload.WDB1 == 1 && payload.WDB2 == 1 && payload.WDB3 == 1){
+          //   state.kongPoProcess = 'Water dripping on all block.'
+          // }
     
           // Logic for nutrient dripping on blocks
-          if (payload.NDB1 == 1 && payload.NDB2 == 1){
-            state.tkpmPagohProcess = 'Nutrient dripping on block 1 and 2.'
-          }
-          if (payload.NDB1 == 1 && payload.NDB3 == 1){
-            state.tkpmPagohProcess = 'Nutrient dripping on block 1 and 3.'
-          }
-          if (payload.NDB2 == 1 && payload.NDB3 == 1){
-            state.tkpmPagohProcess = 'Nutrient dripping on block 2 and 3.'
-          }
-          if (payload.NDB1 == 1 && payload.NDB2 == 1 && payload.NDB3 == 1){
-            state.tkpmPagohProcess = 'Nutrient dripping on all block.'
-          }
+          // if (payload.NDB1 == 1 && payload.NDB2 == 1){
+          //   state.kongPoProcess = 'Nutrient dripping on block 1 and 2.'
+          // }
+          // if (payload.NDB1 == 1 && payload.NDB3 == 1){
+          //   state.kongPoProcess = 'Nutrient dripping on block 1 and 3.'
+          // }
+          // if (payload.NDB2 == 1 && payload.NDB3 == 1){
+          //   state.kongPoProcess = 'Nutrient dripping on block 2 and 3.'
+          // }
+          // if (payload.NDB1 == 1 && payload.NDB2 == 1 && payload.NDB3 == 1){
+          //   state.kongPoProcess = 'Nutrient dripping on all block.'
+          // }
           
           // System idle. No process
-          if(payload.WDB1==0 && payload.WDB2==0 && payload.WDB3==0 && payload.NDB1==0 && payload.NDB2==0 && payload.NDB3==0 && payload.NF==0 && payload.WF==0){
-            state.tkpmPagohStatus.SV1=0
-            state.tkpmPagohStatus.SV2=0
-            state.tkpmPagohStatus.SV3=0
-            state.tkpmPagohStatus.SV4=0
-            state.tkpmPagohStatus.SV5=0
-            state.tkpmPagohStatus.SV6=0
-            state.tkpmPagohStatus.SV7=0
-            state.tkpmPagohStatus.SV8=0
-            state.tkpmPagohStatus.SV9=0
-            state.tkpmPagohStatus.SV10=0
-            state.tkpmPagohStatus.SV11=0
-            state.tkpmPagohStatus.SV12=0
-            state.tkpmPagohStatus.SV13=0
-            state.tkpmPagohStatus.SV14=0
-            state.tkpmPagohStatus.P1=0
-            state.tkpmPagohStatus.P2=0
-            state.tkpmPagohStatus.P3=0
-            state.tkpmPagohStatus.DP1=0
-            state.tkpmPagohStatus.DP2=0
-            state.tkpmPagohProcess = 'System is idle'
+          if(payload.WDB1==0 && payload.NDB1==0 && payload.NF==0 && payload.WF==0){
+            state.kongPoStatus.SV1=0
+            state.kongPoStatus.SV2=0
+            state.kongPoStatus.SV3=0
+            state.kongPoStatus.SV4=0
+            state.kongPoStatus.SV5=0
+            state.kongPoStatus.PTW=0
+            state.kongPoStatus.PNW=0
+            state.kongPoStatus.DP=0
+            state.kongPoProcess = 'System is idle'
           }
         },
 

@@ -18,6 +18,7 @@ export { default as DetailUsers } from '../..\\components\\detail\\users.vue'
 export { default as DetailYieldCropInformation } from '../..\\components\\detail\\yieldCropInformation.vue'
 export { default as GeneralUserInfo } from '../..\\components\\General\\UserInfo.vue'
 export { default as LoginForm } from '../..\\components\\Login\\Form.vue'
+export { default as RegisterForm2 } from '../..\\components\\Register\\Form2.vue'
 export { default as OverviewCardDataLeaf } from '../..\\components\\Overview\\CardDataLeaf.vue'
 export { default as OverviewCardDataSoil } from '../..\\components\\Overview\\CardDataSoil.vue'
 export { default as OverviewCardDataWater } from '../..\\components\\Overview\\CardDataWater.vue'
@@ -26,7 +27,6 @@ export { default as OverviewCardServer } from '../..\\components\\Overview\\Card
 export { default as OverviewCardSummary } from '../..\\components\\Overview\\CardSummary.vue'
 export { default as OverviewCardWeather3 } from '../..\\components\\Overview\\CardWeather3.vue'
 export { default as OverviewTable } from '../..\\components\\Overview\\Table.vue'
-export { default as RegisterForm2 } from '../..\\components\\Register\\Form2.vue'
 export { default as ScheduleCalendar } from '../..\\components\\Schedule\\Calendar.vue'
 export { default as ScheduleTableSchedule } from '../..\\components\\Schedule\\TableSchedule.vue'
 export { default as ScheduleTableScheduleNutrient } from '../..\\components\\Schedule\\TableScheduleNutrient.vue'
@@ -75,6 +75,7 @@ export const LazyDetailUsers = import('../..\\components\\detail\\users.vue' /* 
 export const LazyDetailYieldCropInformation = import('../..\\components\\detail\\yieldCropInformation.vue' /* webpackChunkName: "components/detail-yield-crop-information" */).then(c => wrapFunctional(c.default || c))
 export const LazyGeneralUserInfo = import('../..\\components\\General\\UserInfo.vue' /* webpackChunkName: "components/general-user-info" */).then(c => wrapFunctional(c.default || c))
 export const LazyLoginForm = import('../..\\components\\Login\\Form.vue' /* webpackChunkName: "components/login-form" */).then(c => wrapFunctional(c.default || c))
+export const LazyRegisterForm2 = import('../..\\components\\Register\\Form2.vue' /* webpackChunkName: "components/register-form2" */).then(c => wrapFunctional(c.default || c))
 export const LazyOverviewCardDataLeaf = import('../..\\components\\Overview\\CardDataLeaf.vue' /* webpackChunkName: "components/overview-card-data-leaf" */).then(c => wrapFunctional(c.default || c))
 export const LazyOverviewCardDataSoil = import('../..\\components\\Overview\\CardDataSoil.vue' /* webpackChunkName: "components/overview-card-data-soil" */).then(c => wrapFunctional(c.default || c))
 export const LazyOverviewCardDataWater = import('../..\\components\\Overview\\CardDataWater.vue' /* webpackChunkName: "components/overview-card-data-water" */).then(c => wrapFunctional(c.default || c))
@@ -83,7 +84,6 @@ export const LazyOverviewCardServer = import('../..\\components\\Overview\\CardS
 export const LazyOverviewCardSummary = import('../..\\components\\Overview\\CardSummary.vue' /* webpackChunkName: "components/overview-card-summary" */).then(c => wrapFunctional(c.default || c))
 export const LazyOverviewCardWeather3 = import('../..\\components\\Overview\\CardWeather3.vue' /* webpackChunkName: "components/overview-card-weather3" */).then(c => wrapFunctional(c.default || c))
 export const LazyOverviewTable = import('../..\\components\\Overview\\Table.vue' /* webpackChunkName: "components/overview-table" */).then(c => wrapFunctional(c.default || c))
-export const LazyRegisterForm2 = import('../..\\components\\Register\\Form2.vue' /* webpackChunkName: "components/register-form2" */).then(c => wrapFunctional(c.default || c))
 export const LazyScheduleCalendar = import('../..\\components\\Schedule\\Calendar.vue' /* webpackChunkName: "components/schedule-calendar" */).then(c => wrapFunctional(c.default || c))
 export const LazyScheduleTableSchedule = import('../..\\components\\Schedule\\TableSchedule.vue' /* webpackChunkName: "components/schedule-table-schedule" */).then(c => wrapFunctional(c.default || c))
 export const LazyScheduleTableScheduleNutrient = import('../..\\components\\Schedule\\TableScheduleNutrient.vue' /* webpackChunkName: "components/schedule-table-schedule-nutrient" */).then(c => wrapFunctional(c.default || c))
