@@ -176,54 +176,54 @@ export default {
             this.$auth.$state.user.station[0] == "kongPo",
           // this.$auth.user.userId == 9,
           to: "/scheduleKongPo"
-        },
-        {
-          icon: "mdi-chart-areaspline",
-          title: "TRENDS",
-          state:
-            this.$auth.hasScope("user") &&
-            this.$auth.$state.user.station[0] == "ipah1",
-          // this.$auth.user.userId == 1,
-          to: "/trendsIpah1"
-        },
-        {
-          icon: "mdi-chart-areaspline",
-          title: "TRENDS",
-          state:
-            this.$auth.hasScope("user") &&
-            this.$auth.$state.user.station[0] == "ipah2",
-          // this.$auth.user.userId == 3,
-          to: "/trendsIpah2"
-        },
-        {
-          icon: "mdi-chart-areaspline",
-          title: "TRENDS",
-          state:
-            this.$auth.hasScope("user") &&
-            this.$auth.$state.user.station[0] == "tkpmPagoh",
-          // this.$auth.user.userId == 8,
-          to: "/trendsTkpmPagoh"
-        },
-        {
-          icon: "mdi-chart-areaspline",
-          title: "TRENDS",
-          state:
-            this.$auth.hasScope("user") &&
-            this.$auth.$state.user.station[0] == "kongPo",
-          // this.$auth.user.userId == 8,
-          to: "/trendsKongPo"
-        },
-        {
-          icon: "mdi-book-open-variant",
-          title: "INPUT",
-          state: this.$auth.hasScope("user"),
-          to: "/detail"
         }
+        // {
+        //   icon: "mdi-chart-areaspline",
+        //   title: "TRENDS",
+        //   state:
+        //     this.$auth.hasScope("user") &&
+        //     this.$auth.$state.user.station[0] == "ipah1",
+        //   // this.$auth.user.userId == 1,
+        //   to: "/trendsIpah1"
+        // },
+        // {
+        //   icon: "mdi-chart-areaspline",
+        //   title: "TRENDS",
+        //   state:
+        //     this.$auth.hasScope("user") &&
+        //     this.$auth.$state.user.station[0] == "ipah2",
+        //   // this.$auth.user.userId == 3,
+        //   to: "/trendsIpah2"
+        // },
+        // {
+        //   icon: "mdi-chart-areaspline",
+        //   title: "TRENDS",
+        //   state:
+        //     this.$auth.hasScope("user") &&
+        //     this.$auth.$state.user.station[0] == "tkpmPagoh",
+        //   // this.$auth.user.userId == 8,
+        //   to: "/trendsTkpmPagoh"
+        // },
+        // {
+        //   icon: "mdi-chart-areaspline",
+        //   title: "TRENDS",
+        //   state:
+        //     this.$auth.hasScope("user") &&
+        //     this.$auth.$state.user.station[0] == "kongPo",
+        //   // this.$auth.user.userId == 8,
+        //   to: "/trendsKongPo"
+        // },
+        // {
+        //   icon: "mdi-book-open-variant",
+        //   title: "INPUT",
+        //   state: this.$auth.hasScope("user"),
+        //   to: "/detail"
+        // }
       ],
       miniVariant: false,
       title: "SMART FERTIGATION DASHBOARD",
       connection: {
-        host: "tron.airmode.live",
+        host: this.$auth.$state.user.server_mqtt,
         port: 8083,
         endpoint: "/mqtt",
         clean: true, // Reserved session
@@ -367,6 +367,7 @@ export default {
       ipah2ManualNutrientDuration: state => state.ipah2ManualNutrientDuration,
       tkpmPagohManualNutrientDuration: state =>
         state.tkpmPagohManualNutrientDuration,
+      kongPoManualNutrientDuration: state => state.kongPoManualNutrientDuration,
       ipah2ManualFill: state => state.ipah2ManualFill,
       ipah2ManualStop: state => state.ipah2ManualStop,
       ipah2ManualNutrient: state => state.ipah2ManualNutrient,
@@ -398,66 +399,73 @@ export default {
   watch: {
     updatedDate: function() {
       if (this.updatedDate == true) {
-        console.log("here");
+        // console.log("here");
         // this.client.publish("debug/test/database/ipah1", "updated");
       }
     },
     updatedDate2: function() {
       if (this.updatedDate2 == true) {
-        console.log("here2");
+        // console.log("here2");
         // this.client.publish("debug/test/database/ipah2", "updated");
       }
     },
     updatedDate3: function() {
       if (this.updatedDate3 == true) {
-        console.log("here2");
+        // console.log("here2");
         // this.client.publish("debug/test/database/tkpmPagoh", "updated");
       }
     },
     updatedDate4: function() {
       if (this.updatedDate4 == true) {
-        console.log("here2");
+        // console.log("here2");
         // this.client.publish("debug/test/database/kongPo", "updated");
       }
     },
     ipah1ManualFill: function() {
       if (this.ipah1ManualFill == true) {
         this.client.publish("np/c/ipah/wf", "10");
+        // console.log("np/c/ipah/wf", "10");
       }
       this.setIpah1ManualFill(false);
-      console.log(this.ipah1ManualFill);
+      // console.log(this.ipah1ManualFill);
     },
     ipah1ManualStop: function() {
       if (this.ipah1ManualStop == true) {
         this.client.publish("np/c/ipah/wf", "20");
+        // console.log("np/c/ipah/wf", "20");
       }
       this.setIpah1ManualStop(false);
-      console.log(this.ipah1ManualStop);
+      // console.log(this.ipah1ManualStop);
     },
     ipah1ManualNutrient: function() {
       if (this.ipah1ManualNutrient == true) {
         this.client.publish(
           "filter/np/c/ipah/n",
           `{"D1":10,"D2":${this.ipah1ManualNutrientDuration}}`
+          // console.log(
+          //   "filter/np/c/ipah/n",
+          //   `{"D1":10,"D2":${this.ipah1ManualNutrientDuration}}`
         );
         // console.log(this.ipah1ManualNutrientDuration);
       }
       this.setIpah1ManualNutrient(false);
-      console.log(this.ipah1ManualNutrient);
+      // console.log(this.ipah1ManualNutrient);
     },
     ipah2ManualFill: function() {
       if (this.ipah2ManualFill == true) {
         this.client.publish("np/c/tkpmIpah/wf", "10");
+        // console.log("np/c/tkpmIpah/wf", "10");
       }
       this.setIpah2ManualFill(false);
-      console.log(this.ipah2ManualFill);
+      // console.log(this.ipah2ManualFill);
     },
     ipah2ManualStop: function() {
       if (this.ipah2ManualStop == true) {
         this.client.publish("np/c/tkpmIpah/wf", "20");
+        // console.log("np/c/tkpmIpah/wf", "20");
       }
       this.setIpah2ManualStop(false);
-      console.log(this.ipah2ManualNutrientDuration);
+      // console.log(this.ipah2ManualNutrientDuration);
     },
     ipah2ManualNutrient: function() {
       if (this.ipah2ManualNutrient == true) {
@@ -465,7 +473,11 @@ export default {
           "filter/np/c/tkpmIpah/n",
           `{"D1":10,"D2":${this.ipah2ManualNutrientDuration}}`
         );
-        console.log("here");
+        // console.log(
+        //   "filter/np/c/tkpmIpah/n",
+        //   `{"D1":10,"D2":${this.ipah2ManualNutrientDuration}}`
+        // );
+        // console.log("here");
       }
       this.setIpah2ManualNutrient(false);
       // console.log(this.ipah2ManualNutrientDuration);
@@ -474,16 +486,18 @@ export default {
     tkpmPagohManualFill: function() {
       if (this.tkpmPagohManualFill == true) {
         this.client.publish("np/c/tkpmPagoh/wf", "10");
+        // console.log("np/c/tkpmPagoh/wf", "10");
       }
       this.setTkpmPagohManualFill(false);
-      console.log(this.tkpmPagohManualFill);
+      // console.log(this.tkpmPagohManualFill);
     },
     tkpmPagohManualStop: function() {
       if (this.tkpmPagohManualStop == true) {
         this.client.publish("np/c/tkpmPagoh/wf", "20");
+        // console.log("np/c/tkpmPagoh/wf", "20");
       }
       this.setTkpmPagohManualStop(false);
-      console.log(this.tkpmPagohManualStop);
+      // console.log(this.tkpmPagohManualStop);
     },
     tkpmPagohManualNutrient: function() {
       if (this.tkpmPagohManualNutrient == true) {
@@ -491,7 +505,10 @@ export default {
           "filter/np/c/tkpmPagoh/n",
           `{"D1":10,"D2":${this.tkpmPagohManualNutrientDuration}}`
         );
-        // console.log("here");
+        // console.log(
+        //   "filter/np/c/tkpmPagoh/n",
+        //   `{"D1":10,"D2":${this.tkpmPagohManualNutrientDuration}}`
+        // );
       }
       this.setTkpmPagohManualNutrient(false);
       // console.log(this.tkpmPagohManualNutrientDuration);
@@ -499,24 +516,32 @@ export default {
     kongPoManualFill: function() {
       if (this.kongPoManualFill == true) {
         this.client.publish("np/c/kongpo/wf", "10");
+        // console.log("np/c/kongpo/wf", "10");
       }
       this.setKongPoManualFill(false);
-      console.log(this.kongPoManualFill);
+      // console.log(this.kongPoManualFill);
     },
     kongPoManualStop: function() {
       if (this.kongPoManualStop == true) {
         this.client.publish("np/c/kongpo/wf", "20");
+        // console.log("np/c/kongpo/wf", "20");
       }
       this.setKongPoManualStop(false);
-      console.log(this.kongPoManualStop);
+      // console.log(this.kongPoManualStop);
     },
     kongPoManualNutrient: function() {
       if (this.kongPoManualNutrient == true) {
-        this.client.publish("filter/np/c/kongpo/n", `{"D1":10,"D2":1}`);
-        console.log("here");
+        this.client.publish(
+          "filter/np/c/kongpo/n",
+          `{"D1":10,"D2":${this.kongPoManualNutrientDuration}}`
+        );
+        // console.log(
+        //   "filter/np/c/kongpo/n",
+        //   `{"D1":10,"D2":${this.kongPoManualNutrientDuration}}`
+        // );
       }
       this.setKongPoManualNutrient(false);
-      console.log(this.kongPoManualNutrient);
+      // console.log(this.kongPoManualNutrient);
     }
   }
 };
@@ -526,6 +551,9 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 * {
   font-family: "Montserrat", sans-serif;
+}
+.icon2 .v-icon {
+  color: #888 !important;
 }
 /* Sidebar */
 .v-navigation-drawer {

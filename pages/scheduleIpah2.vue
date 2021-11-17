@@ -32,7 +32,7 @@
               <v-row>
                 <v-col>
                   <div>
-                    <h4>
+                    <h4 style="text-align: justify">
                       Default time for nutrient preparation process on selected
                       date is on 5am. Please select date and duration (minute)
                       for dosing process.
@@ -67,7 +67,7 @@
                     ></v-text-field>
                   </div>
                   <div>
-                    <v-btn class="mt-5" @click="sendScheduleNutrient">
+                    <v-btn class="mt-5" @click="checkScheduleNutrient">
                       SET SCHEDULE
                     </v-btn>
                   </div>
@@ -108,7 +108,7 @@
           </div>
 
           <div>
-            <v-btn class="mt-5" @click="sendSchedule">
+            <v-btn class="mt-5" @click="checkSchedule">
               SET SCHEDULE
             </v-btn>
           </div>
@@ -137,19 +137,13 @@
               <div class="mx-3">
                 <v-select
                   v-model="block1"
-                  :items="items1"
+                  :items="items"
                   label="Block"
                   multiple
                   class="short"
                 ></v-select>
               </div>
               <div class="mx-3">
-                <!-- <v-select
-                    v-model="duration1"
-                    :items="itemsDuration1"
-                    label="Duration"
-                    class="short"
-                  ></v-select> -->
                 <v-text-field
                   label="Duration (minute)"
                   :rules="rules"
@@ -181,19 +175,13 @@
               <div class="mx-3">
                 <v-select
                   v-model="block2"
-                  :items="items2"
+                  :items="items"
                   label="Block"
                   multiple
                   class="short"
                 ></v-select>
               </div>
               <div class="mx-3">
-                <!-- <v-select
-                    v-model="duration2"
-                    :items="itemsDuration2"
-                    label="Duration"
-                    class="short"
-                  ></v-select> -->
                 <v-text-field
                   label="Duration (minute)"
                   :rules="rules"
@@ -224,7 +212,7 @@
               </div>
               <div class="mx-3">
                 <v-select
-                  :items="items3"
+                  :items="items"
                   label="Block"
                   v-model="block3"
                   class="short"
@@ -232,12 +220,6 @@
                 ></v-select>
               </div>
               <div class="mx-3">
-                <!-- <v-select
-                    v-model="duration3"
-                    :items="itemsDuration3"
-                    label="Duration"
-                    class="short"
-                  ></v-select> -->
                 <v-text-field
                   label="Duration (minute)"
                   :rules="rules"
@@ -267,13 +249,15 @@
                 ></vue-timepicker>
               </div>
               <div class="mx-3">
-                <!-- <v-select
-                    :items="items4"
-                    label="Block"
-                    v-model="block4"
-                    class="short"
-                    multiple
-                  ></v-select> -->
+                <v-select
+                  :items="items"
+                  label="Block"
+                  v-model="block4"
+                  class="short"
+                  multiple
+                ></v-select>
+              </div>
+              <div class="mx-3">
                 <v-text-field
                   label="Duration (minute)"
                   :rules="rules"
@@ -281,14 +265,6 @@
                   v-model.number="duration4"
                   class="short"
                 ></v-text-field>
-              </div>
-              <div class="mx-3">
-                <v-select
-                  v-model="duration4"
-                  :items="itemsDuration4"
-                  label="Duration"
-                  class="short"
-                ></v-select>
               </div>
               <div style="">
                 <v-select
@@ -312,7 +288,7 @@
               </div>
               <div class="mx-3">
                 <v-select
-                  :items="items5"
+                  :items="items"
                   label="Block"
                   v-model="block5"
                   class="short"
@@ -320,12 +296,6 @@
                 ></v-select>
               </div>
               <div class="mx-3">
-                <!-- <v-select
-                    v-model="duration5"
-                    :items="itemsDuration5"
-                    label="Duration"
-                    class="short"
-                  ></v-select> -->
                 <v-text-field
                   label="Duration (minute)"
                   :rules="rules"
@@ -356,7 +326,7 @@
               </div>
               <div class="mx-3">
                 <v-select
-                  :items="items6"
+                  :items="items"
                   label="Block"
                   v-model="block6"
                   class="short"
@@ -364,12 +334,6 @@
                 ></v-select>
               </div>
               <div class="mx-3">
-                <!-- <v-select
-                    v-model="duration6"
-                    :items="itemsDuration6"
-                    label="Duration"
-                    class="short"
-                  ></v-select> -->
                 <v-text-field
                   label="Duration (minute)"
                   :rules="rules"
@@ -400,7 +364,7 @@
               </div>
               <div class="mx-3">
                 <v-select
-                  :items="items7"
+                  :items="items"
                   label="Block"
                   v-model="block7"
                   class="short"
@@ -408,12 +372,6 @@
                 ></v-select>
               </div>
               <div class="mx-3">
-                <!-- <v-select
-                    v-model="duration7"
-                    :items="itemsDuration7"
-                    label="Duration"
-                    class="short"
-                  ></v-select> -->
                 <v-text-field
                   label="Duration (minute)"
                   :rules="rules"
@@ -444,7 +402,7 @@
               </div>
               <div class="mx-3">
                 <v-select
-                  :items="items8"
+                  :items="items"
                   label="Block"
                   v-model="block8"
                   class="short"
@@ -452,12 +410,6 @@
                 ></v-select>
               </div>
               <div class="mx-3">
-                <!-- <v-select
-                    v-model="duration8"
-                    :items="itemsDuration8"
-                    label="Duration"
-                    class="short"
-                  ></v-select> -->
                 <v-text-field
                   label="Duration (minute)"
                   :rules="rules"
@@ -488,7 +440,7 @@
               </div>
               <div class="mx-3">
                 <v-select
-                  :items="items9"
+                  :items="items"
                   label="Block"
                   v-model="block9"
                   class="short"
@@ -496,12 +448,6 @@
                 ></v-select>
               </div>
               <div class="mx-3">
-                <!-- <v-select
-                    v-model="duration9"
-                    :items="itemsDuration9"
-                    label="Duration"
-                    class="short"
-                  ></v-select> -->
                 <v-text-field
                   label="Duration (minute)"
                   :rules="rules"
@@ -532,7 +478,7 @@
               </div>
               <div class="mx-3">
                 <v-select
-                  :items="items10"
+                  :items="items"
                   label="Block"
                   v-model="block10"
                   class="short"
@@ -540,12 +486,6 @@
                 ></v-select>
               </div>
               <div class="mx-3">
-                <!-- <v-select
-                    v-model="duration10"
-                    :items="itemsDuration10"
-                    label="Duration"
-                    class="short"
-                  ></v-select> -->
                 <v-text-field
                   label="Duration (minute)"
                   :rules="rules"
@@ -563,6 +503,228 @@
                 ></v-select>
               </div>
             </v-col>
+            <v-col cols="12" class="userInput col-md-6">
+              <div>
+                <label>11)</label>
+                <vue-timepicker
+                  v-model="yourStringTimeValue11"
+                  format="HH:mm"
+                  :hour-range="[[7, 23]]"
+                  hide-disabled-hours
+                ></vue-timepicker>
+              </div>
+              <div class="mx-3">
+                <v-select
+                  v-model="block11"
+                  :items="items"
+                  label="Block"
+                  multiple
+                  class="short"
+                ></v-select>
+              </div>
+              <div class="mx-3">
+                <v-text-field
+                  label="Duration (minute)"
+                  :rules="rules"
+                  type="number"
+                  v-model.number="duration11"
+                  class="short"
+                ></v-text-field>
+              </div>
+              <div style="">
+                <v-select
+                  :items="itemsSubstance"
+                  label="Substance"
+                  v-model="substance11"
+                  class="short"
+                ></v-select>
+              </div>
+            </v-col>
+            <v-col cols="12" class="userInput col-md-6">
+              <div>
+                <label>12)</label>
+                <vue-timepicker
+                  v-model="yourStringTimeValue12"
+                  format="HH:mm"
+                  :hour-range="[[7, 23]]"
+                  hide-disabled-hours
+                ></vue-timepicker>
+              </div>
+              <div class="mx-3">
+                <v-select
+                  v-model="block12"
+                  :items="items"
+                  label="Block"
+                  multiple
+                  class="short"
+                ></v-select>
+              </div>
+              <div class="mx-3">
+                <v-text-field
+                  label="Duration (minute)"
+                  :rules="rules"
+                  type="number"
+                  v-model.number="duration12"
+                  class="short"
+                ></v-text-field>
+              </div>
+              <div style="">
+                <v-select
+                  :items="itemsSubstance"
+                  label="Substance"
+                  v-model="substance12"
+                  class="short"
+                ></v-select>
+              </div>
+            </v-col>
+            <v-col cols="12" class="userInput col-md-6">
+              <div>
+                <label>13)</label>
+                <vue-timepicker
+                  v-model="yourStringTimeValue13"
+                  format="HH:mm"
+                  :hour-range="[[7, 23]]"
+                  hide-disabled-hours
+                ></vue-timepicker>
+              </div>
+              <div class="mx-3">
+                <v-select
+                  v-model="block13"
+                  :items="items"
+                  label="Block"
+                  multiple
+                  class="short"
+                ></v-select>
+              </div>
+              <div class="mx-3">
+                <v-text-field
+                  label="Duration (minute)"
+                  :rules="rules"
+                  type="number"
+                  v-model.number="duration13"
+                  class="short"
+                ></v-text-field>
+              </div>
+              <div style="">
+                <v-select
+                  :items="itemsSubstance"
+                  label="Substance"
+                  v-model="substance13"
+                  class="short"
+                ></v-select>
+              </div>
+            </v-col>
+            <v-col cols="12" class="userInput col-md-6">
+              <div>
+                <label>14)</label>
+                <vue-timepicker
+                  v-model="yourStringTimeValue14"
+                  format="HH:mm"
+                  :hour-range="[[7, 23]]"
+                  hide-disabled-hours
+                ></vue-timepicker>
+              </div>
+              <div class="mx-3">
+                <v-select
+                  v-model="block14"
+                  :items="items"
+                  label="Block"
+                  multiple
+                  class="short"
+                ></v-select>
+              </div>
+              <div class="mx-3">
+                <v-text-field
+                  label="Duration (minute)"
+                  :rules="rules"
+                  type="number"
+                  v-model.number="duration14"
+                  class="short"
+                ></v-text-field>
+              </div>
+              <div style="">
+                <v-select
+                  :items="itemsSubstance"
+                  label="Substance"
+                  v-model="substance14"
+                  class="short"
+                ></v-select>
+              </div>
+            </v-col>
+            <v-col cols="12" class="userInput col-md-6">
+              <div>
+                <label>15)</label>
+                <vue-timepicker
+                  v-model="yourStringTimeValue15"
+                  format="HH:mm"
+                  :hour-range="[[7, 23]]"
+                  hide-disabled-hours
+                ></vue-timepicker>
+              </div>
+              <div class="mx-3">
+                <v-select
+                  v-model="block15"
+                  :items="items"
+                  label="Block"
+                  multiple
+                  class="short"
+                ></v-select>
+              </div>
+              <div class="mx-3">
+                <v-text-field
+                  label="Duration (minute)"
+                  :rules="rules"
+                  type="number"
+                  v-model.number="duration15"
+                  class="short"
+                ></v-text-field>
+              </div>
+              <div style="">
+                <v-select
+                  :items="itemsSubstance"
+                  label="Substance"
+                  v-model="substance15"
+                  class="short"
+                ></v-select>
+              </div>
+            </v-col>
+            <v-col cols="12" class="userInput col-md-6">
+              <div>
+                <label>16)</label>
+                <vue-timepicker
+                  v-model="yourStringTimeValue16"
+                  format="HH:mm"
+                  :hour-range="[[7, 23]]"
+                  hide-disabled-hours
+                ></vue-timepicker>
+              </div>
+              <div class="mx-3">
+                <v-select
+                  v-model="block16"
+                  :items="items"
+                  label="Block"
+                  multiple
+                  class="short"
+                ></v-select>
+              </div>
+              <div class="mx-3">
+                <v-text-field
+                  label="Duration (minute)"
+                  :rules="rules"
+                  type="number"
+                  v-model.number="duration16"
+                  class="short"
+                ></v-text-field>
+              </div>
+              <div style="">
+                <v-select
+                  :items="itemsSubstance"
+                  label="Substance"
+                  v-model="substance16"
+                  class="short"
+                ></v-select>
+              </div>
+            </v-col>
           </v-row>
         </v-col>
       </v-row>
@@ -576,6 +738,128 @@
         </v-col>
       </v-row>
     </v-card>
+
+    <!-- AFTER POST SCHEDULE -->
+    <v-dialog v-model="dialog" persistent max-width="290">
+      <v-card>
+        <v-card-title>
+          Status
+        </v-card-title>
+        <hr class="hr" />
+        <v-card-subtitle>{{ message }}</v-card-subtitle>
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn
+            v-if="message == 'Success'"
+            text
+            @click="reloadPage"
+            class="success"
+          >
+            Okay
+          </v-btn>
+          <v-btn
+            v-if="message != 'Success'"
+            text
+            @click="dialog = false"
+            class="success"
+          >
+            Okay
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+
+    <!-- POST SCHEDULE CONFIRMATION -->
+    <v-dialog v-model="dialogPost" persistent max-width="490">
+      <v-card>
+        <v-card-title>
+          Action
+        </v-card-title>
+        <hr class="hr" />
+        <v-card-subtitle
+          >Are you confirm to set schedule as below?</v-card-subtitle
+        >
+        <v-card-subtitle
+          >{{ dateStart }} -
+          {{ dateEnd }}
+        </v-card-subtitle>
+        <v-card-subtitle v-for="(time, index) in allTime" :key="index"
+          >({{ index + 1 }}) Time : {{ allTime[index] }}, Block :
+          {{ allBlock[index] }}, Duration : {{ allDuration[index] }}, Substance
+          :
+          {{ allSubstance[index] }}
+        </v-card-subtitle>
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn text @click="sendSchedule" class="success">
+            Confirm
+          </v-btn>
+          <v-btn text @click="dialogPost = false" class="error">
+            Cancel
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+
+    <!-- AFTER POST SCHEDULE NUTRIENT -->
+    <v-dialog v-model="dialogNutrient" persistent max-width="290">
+      <v-card>
+        <v-card-title>
+          Status
+        </v-card-title>
+        <hr class="hr" />
+        <v-card-subtitle>{{ messageNutrient }}</v-card-subtitle>
+        <v-card-subtitle></v-card-subtitle>
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn
+            v-if="messageNutrient == 'Success'"
+            text
+            @click="reloadPage"
+            class="success"
+          >
+            Okay
+          </v-btn>
+          <v-btn
+            v-if="messageNutrient != 'Success'"
+            text
+            @click="dialog = false"
+            class="success"
+          >
+            Okay
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+
+    <!-- POST SCHEDULE CONFIRMATION NUTRIENT -->
+    <v-dialog v-model="dialogPostNutrient" persistent max-width="490">
+      <v-card>
+        <v-card-title>
+          Action
+        </v-card-title>
+        <hr class="hr" />
+        <v-card-subtitle
+          >Are you confirm to set schedule as below?</v-card-subtitle
+        >
+        <v-card-subtitle
+          >{{ dateStartNutrient }} -
+          {{ dateEndNutrient }}
+        </v-card-subtitle>
+        <v-card-subtitle
+          >Duration : {{ durationNutrient }} minute/s
+        </v-card-subtitle>
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn text @click="sendScheduleNutrient" class="success">
+            Confirm
+          </v-btn>
+          <v-btn text @click="dialogPostNutrient = false" class="error">
+            Cancel
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
     <!-- </client-only> -->
   </section>
 </template>
@@ -606,28 +890,15 @@ export default {
   },
   data() {
     return {
+      dialog: false,
+      dialogNutrient: false,
+      dialogPost: false,
+      dialogPostNutrient: false,
+      message: "",
+      messageNutrient: "",
       detail: [],
       rules: [value => !!value || ""],
-      items1: ["1", "2", "3"],
-      items2: ["1", "2", "3"],
-      items3: ["1", "2", "3"],
-      items4: ["1", "2", "3"],
-      items5: ["1", "2", "3"],
-      items6: ["1", "2", "3"],
-      items7: ["1", "2", "3"],
-      items8: ["1", "2", "3"],
-      items9: ["1", "2", "3"],
-      items10: ["1", "2", "3"],
-      itemsDuration1: ["10", "20", "30"],
-      itemsDuration2: ["10", "20", "30"],
-      itemsDuration3: ["10", "20", "30"],
-      itemsDuration4: ["10", "20", "30"],
-      itemsDuration5: ["10", "20", "30"],
-      itemsDuration6: ["10", "20", "30"],
-      itemsDuration7: ["10", "20", "30"],
-      itemsDuration8: ["10", "20", "30"],
-      itemsDuration9: ["10", "20", "30"],
-      itemsDuration10: ["10", "20", "30"],
+      items: ["1", "2", "3"],
       duration1: "",
       duration2: "",
       duration3: "",
@@ -638,6 +909,12 @@ export default {
       duration8: "",
       duration9: "",
       duration10: "",
+      duration11: "",
+      duration12: "",
+      duration13: "",
+      duration14: "",
+      duration15: "",
+      duration16: "",
       durationNutrient: "",
       block1: "",
       block2: "",
@@ -649,6 +926,12 @@ export default {
       block8: "",
       block9: "",
       block10: "",
+      block11: "",
+      block12: "",
+      block13: "",
+      block14: "",
+      block15: "",
+      block16: "",
       substance1: "",
       substance2: "",
       substance3: "",
@@ -659,6 +942,12 @@ export default {
       substance8: "",
       substance9: "",
       substance10: "",
+      substance11: "",
+      substance12: "",
+      substance13: "",
+      substance14: "",
+      substance15: "",
+      substance16: "",
       itemsSubstance: ["water", "fertilizer"],
       today: moment().format("YYYY-MM-DD"),
       availableDates: [],
@@ -694,12 +983,23 @@ export default {
       yourStringTimeValue8: "",
       yourStringTimeValue9: "",
       yourStringTimeValue10: "",
+      yourStringTimeValue11: "",
+      yourStringTimeValue12: "",
+      yourStringTimeValue13: "",
+      yourStringTimeValue14: "",
+      yourStringTimeValue15: "",
+      yourStringTimeValue16: "",
       allTime: [],
       allBlock: [],
       allDuration: [],
+      allBlock2: [],
       allDurationNutrient: [],
       allSubstance: [],
-      detailNutrient: []
+      detailNutrient: [],
+      dateStart: "",
+      dateEnd: "",
+      dateStartNutrient: "",
+      dateEndNutrient: ""
     };
   },
   methods: {
@@ -732,12 +1032,12 @@ export default {
     },
     getScheduleIpah1: function() {
       this.$axios
-        .$get("http://139.59.109.48/api/schedule/ipah2")
+        // .$get("http://127.0.0.1:5000/api/schedule/ipah2")
+        .$get("http://159.223.55.150/api/schedule/ipah2")
+        // .$get("http://139.59.109.48/api/schedule/ipah2")
         .then(response => {
-          console.log(response);
           response.forEach(i => {
             // this.disabled.push(moment(i).format("YYYY-MM-DD"))
-            console.log(i);
             this.isDateBeforeToday(i);
           });
         })
@@ -748,7 +1048,8 @@ export default {
     getScheduleIpah1Nutrient: function() {
       this.$axios
         // .$get("http://127.0.0.1:5000/api/schedule/ipah2/nutrient")
-        .$get("http://139.59.109.48/api/schedule/ipah2/nutrient")
+        .$get("http://159.223.55.150/api/schedule/ipah2/nutrient")
+        // .$get("http://139.59.109.48/api/schedule/ipah2/nutrient")
         .then(response => {
           response.forEach(i => {
             this.isDateBeforeTodayNutrient(i);
@@ -762,7 +1063,8 @@ export default {
     sendScheduleIpah2: function(date, time, block, duration, substance) {
       this.$axios
         // .$post("http://127.0.0.1:5000/api/setSchedule/ipah2", {
-        .$post("http://139.59.109.48/api/setSchedule/ipah2", {
+        .$post("http://159.223.55.150/api/setSchedule/ipah2", {
+          // .$post("http://139.59.109.48/api/setSchedule/ipah2", {
           date: date,
           time: time,
           block: block,
@@ -770,7 +1072,6 @@ export default {
           substance: substance
         })
         .then(response => {
-          console.log(response);
           window.location.reload();
         })
         .catch(error => {
@@ -779,14 +1080,14 @@ export default {
     },
     sendScheduleIpah1Nutient: function(date, duration) {
       this.$axios
-        .$post("http://139.59.109.48/api/setSchedule/ipah2/nutrient", {
-          // .$post("http://127.0.0.1:5000/api/setSchedule/ipah2/nutrient", {
+        // .$post("http://139.59.109.48/api/setSchedule/ipah2/nutrient", {
+        // .$post("http://127.0.0.1:5000/api/setSchedule/ipah2/nutrient", {
+        .$post("http://159.223.55.150/api/setSchedule/ipah2/nutrient", {
           date: date,
-          time: "23:00:00",
+          time: "05:00:00",
           duration: duration
         })
         .then(response => {
-          console.log(response);
           window.location.reload();
         })
         .catch(error => {
@@ -804,149 +1105,7 @@ export default {
       dates = [...dates, moment(endDate).format("YYYY-MM-DD")];
       return dates;
     },
-    sendSchedule: function() {
-      // if (this.selectedDate.length < 1) {
-      //   alert("Please select valid date");
-      //   return;
-      // }
-      // if (
-      //   this.yourStringTimeValue1.includes("mm") ||
-      //   this.yourStringTimeValue1.includes("hh") ||
-      //   !this.yourStringTimeValue1
-      // ) {
-      //   alert("Please select valid time");
-      //   return;
-      // }
-
-      // time
-      // if (this.yourStringTimeValue1) {
-      //   this.allTime.push(this.yourStringTimeValue1);
-      // }
-      // if (this.yourStringTimeValue2) {
-      //   this.allTime.push(this.yourStringTimeValue2);
-      // }
-      // if (this.yourStringTimeValue3) {
-      //   this.allTime.push(this.yourStringTimeValue3);
-      // }
-      // if (this.yourStringTimeValue4) {
-      //   this.allTime.push(this.yourStringTimeValue4);
-      // }
-      // if (this.yourStringTimeValue5) {
-      //   this.allTime.push(this.yourStringTimeValue5);
-      // }
-      // if (this.yourStringTimeValue6) {
-      //   this.allTime.push(this.yourStringTimeValue6);
-      // }
-      // if (this.yourStringTimeValue7) {
-      //   this.allTime.push(this.yourStringTimeValue7);
-      // }
-      // if (this.yourStringTimeValue8) {
-      //   this.allTime.push(this.yourStringTimeValue8);
-      // }
-      // if (this.yourStringTimeValue9) {
-      //   this.allTime.push(this.yourStringTimeValue9);
-      // }
-      // if (this.yourStringTimeValue10) {
-      //   this.allTime.push(this.yourStringTimeValue10);
-      // }
-      // console.log(this.allTime);
-
-      // block
-      // if (this.block1) {
-      //   this.allBlock.push(this.block1);
-      // }
-      // if (this.block2) {
-      //   this.allBlock.push(this.block2);
-      // }
-      // if (this.block3) {
-      //   this.allBlock.push(this.block3);
-      // }
-      // if (this.block4) {
-      //   this.allBlock.push(this.block4);
-      // }
-      // if (this.block5) {
-      //   this.allBlock.push(this.block5);
-      // }
-      // if (this.block6) {
-      //   this.allBlock.push(this.block6);
-      // }
-      // if (this.block7) {
-      //   this.allBlock.push(this.block7);
-      // }
-      // if (this.block8) {
-      //   this.allBlock.push(this.block8);
-      // }
-      // if (this.block9) {
-      //   this.allBlock.push(this.block9);
-      // }
-      // if (this.block10) {
-      //   this.allBlock.push(this.block10);
-      // }
-
-      // duration
-      // if (this.duration1) {
-      //   this.allDuration.push(this.duration1);
-      // }
-      // if (this.duration2) {
-      //   this.allDuration.push(this.duration2);
-      // }
-      // if (this.duration3) {
-      //   this.allDuration.push(this.duration3);
-      // }
-      // if (this.duration4) {
-      //   this.allDuration.push(this.duration4);
-      // }
-      // if (this.duration5) {
-      //   this.allDuration.push(this.duration5);
-      // }
-      // if (this.duration6) {
-      //   this.allDuration.push(this.duration6);
-      // }
-      // if (this.duration7) {
-      //   this.allDuration.push(this.duration7);
-      // }
-      // if (this.duration8) {
-      //   this.allDuration.push(this.duration8);
-      // }
-      // if (this.duration9) {
-      //   this.allDuration.push(this.duration9);
-      // }
-      // if (this.duration10) {
-      //   this.allDuration.push(this.duration10);
-      // }
-
-      // substance
-      // if (this.substance1) {
-      //   this.allSubstance.push(this.substance1);
-      // }
-      // if (this.substance2) {
-      //   this.allSubstance.push(this.substance2);
-      // }
-      // if (this.substance3) {
-      //   this.allSubstance.push(this.substance3);
-      // }
-      // if (this.substance4) {
-      //   this.allSubstance.push(this.substance4);
-      // }
-      // if (this.substance5) {
-      //   this.allSubstance.push(this.substance5);
-      // }
-      // if (this.substance6) {
-      //   this.allSubstance.push(this.substance6);
-      // }
-      // if (this.substance7) {
-      //   this.allSubstance.push(this.substance7);
-      // }
-      // if (this.substance8) {
-      //   this.allSubstance.push(this.substance8);
-      // }
-      // if (this.substance9) {
-      //   this.allSubstance.push(this.substance9);
-      // }
-      // if (this.substance10) {
-      //   this.allSubstance.push(this.substance10);
-      // }
-
+    checkSchedule: function() {
       this.allTime = [];
       this.allBlock = [];
       this.allDuration = [];
@@ -963,7 +1122,6 @@ export default {
       }
 
       // time
-
       if (this.yourStringTimeValue1) {
         if (
           this.yourStringTimeValue1.includes("mm") ||
@@ -989,7 +1147,6 @@ export default {
         this.allBlock.push(this.block1);
         this.allDuration.push(this.duration1);
         this.allSubstance.push(this.substance1);
-        console.log(this.allTime);
       }
 
       if (this.yourStringTimeValue2) {
@@ -1226,21 +1383,177 @@ export default {
         this.allSubstance.push(this.substance10);
       }
 
-      let allBlock2 = [];
-      allBlock2.push(this.allBlock.join("/"));
-      console.log(allBlock2);
-      //
-      this.selectedDate.forEach(date => {
-        this.sendScheduleIpah2(
-          date,
-          this.allTime,
-          allBlock2,
-          this.allDuration,
-          this.allSubstance
-        );
-      });
+      if (this.yourStringTimeValue11) {
+        if (
+          this.yourStringTimeValue11.includes("mm") ||
+          this.yourStringTimeValue11.includes("HH")
+        ) {
+          alert("Please select valid time");
+          return;
+        }
+        if (!Number.isInteger(this.duration11) || this.duration11 < 1) {
+          alert("Please select valid duration (integer number).");
+          return;
+        }
+        if (!this.block11) {
+          alert("Please select valid block.");
+          return;
+        }
+        if (!this.substance11) {
+          alert("Please select valid substance.");
+          return;
+        }
+        this.allTime.push(this.yourStringTimeValue11);
+        this.allBlock.push(this.block11);
+        this.allDuration.push(this.duration11);
+        this.allSubstance.push(this.substance11);
+      }
+
+      if (this.yourStringTimeValue12) {
+        if (
+          this.yourStringTimeValue12.includes("mm") ||
+          this.yourStringTimeValue12.includes("HH")
+        ) {
+          alert("Please select valid time");
+          return;
+        }
+        if (!Number.isInteger(this.duration12) || this.duration12 < 1) {
+          alert("Please select valid duration (integer number).");
+          return;
+        }
+        if (!this.block12) {
+          alert("Please select valid block.");
+          return;
+        }
+        if (!this.substance12) {
+          alert("Please select valid substance.");
+          return;
+        }
+        this.allTime.push(this.yourStringTimeValue12);
+        this.allBlock.push(this.block12);
+        this.allDuration.push(this.duration12);
+        this.allSubstance.push(this.substance12);
+      }
+
+      if (this.yourStringTimeValue13) {
+        if (
+          this.yourStringTimeValue13.includes("mm") ||
+          this.yourStringTimeValue13.includes("HH")
+        ) {
+          alert("Please select valid time");
+          return;
+        }
+        if (!Number.isInteger(this.duration13) || this.duration13 < 1) {
+          alert("Please select valid duration (integer number).");
+          return;
+        }
+        if (!this.block13) {
+          alert("Please select valid block.");
+          return;
+        }
+        if (!this.substance13) {
+          alert("Please select valid substance.");
+          return;
+        }
+        this.allTime.push(this.yourStringTimeValue13);
+        this.allBlock.push(this.block13);
+        this.allDuration.push(this.duration13);
+        this.allSubstance.push(this.substance13);
+      }
+
+      if (this.yourStringTimeValue14) {
+        if (
+          this.yourStringTimeValue14.includes("mm") ||
+          this.yourStringTimeValue14.includes("HH")
+        ) {
+          alert("Please select valid time");
+          return;
+        }
+        if (!Number.isInteger(this.duration14) || this.duration14 < 1) {
+          alert("Please select valid duration (integer number).");
+          return;
+        }
+        if (!this.block14) {
+          alert("Please select valid block.");
+          return;
+        }
+        if (!this.substance14) {
+          alert("Please select valid substance.");
+          return;
+        }
+        this.allTime.push(this.yourStringTimeValue14);
+        this.allBlock.push(this.block14);
+        this.allDuration.push(this.duration14);
+        this.allSubstance.push(this.substance14);
+      }
+
+      if (this.yourStringTimeValue15) {
+        if (
+          this.yourStringTimeValue15.includes("mm") ||
+          this.yourStringTimeValue15.includes("HH")
+        ) {
+          alert("Please select valid time");
+          return;
+        }
+        if (!Number.isInteger(this.duration15) || this.duration15 < 1) {
+          alert("Please select valid duration (integer number).");
+          return;
+        }
+        if (!this.block15) {
+          alert("Please select valid block.");
+          return;
+        }
+        if (!this.substance15) {
+          alert("Please select valid substance.");
+          return;
+        }
+        this.allTime.push(this.yourStringTimeValue15);
+        this.allBlock.push(this.block15);
+        this.allDuration.push(this.duration15);
+        this.allSubstance.push(this.substance15);
+      }
+
+      if (this.yourStringTimeValue16) {
+        if (
+          this.yourStringTimeValue16.includes("mm") ||
+          this.yourStringTimeValue16.includes("HH")
+        ) {
+          alert("Please select valid time");
+          return;
+        }
+        if (!Number.isInteger(this.duration16) || this.duration16 < 1) {
+          alert("Please select valid duration (integer number).");
+          return;
+        }
+        if (!this.block16) {
+          alert("Please select valid block.");
+          return;
+        }
+        if (!this.substance16) {
+          alert("Please select valid substance.");
+          return;
+        }
+        this.allTime.push(this.yourStringTimeValue16);
+        this.allBlock.push(this.block16);
+        this.allDuration.push(this.duration16);
+        this.allSubstance.push(this.substance16);
+      }
+
+      this.allBlock2 = [];
+      this.allBlock2.push(this.allBlock.join("/"));
+      this.dialogPost = true;
     },
-    sendScheduleNutrient: function() {
+    sendSchedule: function() {
+      this.sendScheduleIpah2(
+        this.selectedDate,
+        this.allTime,
+        this.allBlock2,
+        this.allDuration,
+        this.allSubstance
+      );
+      this.dialogPost = false;
+    },
+    checkScheduleNutrient: function() {
       if (this.selectedDateNutrient.length < 1) {
         alert("Please select valid date");
         return;
@@ -1260,11 +1573,15 @@ export default {
       if (this.durationNutrient) {
         this.allDurationNutrient.push(this.durationNutrient);
       }
-
+      this.dialogPostNutrient = true;
       //
-      this.selectedDateNutrient.forEach(date => {
-        this.sendScheduleIpah1Nutient(date, this.allDurationNutrient);
-      });
+    },
+    sendScheduleNutrient: function() {
+      this.sendScheduleIpah1Nutient(
+        this.selectedDateNutrient,
+        this.allDurationNutrient
+      );
+      this.dialogPostNutrient = false;
     }
   },
   watch: {
@@ -1275,8 +1592,9 @@ export default {
         this.range.start,
         this.range.end
       );
-      // console.log(dateList);
       this.selectedDate = dateList;
+      this.dateStart = moment(this.range.start).format("Do MMMM YYYY");
+      this.dateEnd = moment(this.range.end).format("Do MMMM YYYY");
     },
     rangeNutrient: function(val) {
       this.startNutrient = moment(this.rangeNutrient.start).format(
@@ -1288,10 +1606,15 @@ export default {
         this.rangeNutrient.end
       );
       this.selectedDateNutrient = dateListNutrient;
+      this.dateStartNutrient = moment(this.rangeNutrient.start).format(
+        "Do MMMM YYYY"
+      );
+      this.dateEndNutrient = moment(this.rangeNutrient.end).format(
+        "Do MMMM YYYY"
+      );
     }
   },
   async mounted() {
-    // this.getScheduleIpah1();
     this.getScheduleIpah1Nutrient();
   }
 };

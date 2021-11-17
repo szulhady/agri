@@ -30,6 +30,7 @@
             :feels_like="weather[1].feels_like"
             :temp_max="weather[1].temp_max"
             :temp_min="weather[1].temp_min"
+            :humidity="weather[1].humidity"
           />
           <!-- 
             :feels_like_day="forecasts[1].main.temp"
@@ -45,6 +46,7 @@
             :feels_like="weather[2].feels_like"
             :temp_max="weather[2].temp_max"
             :temp_min="weather[2].temp_min"
+            :humidity="weather[2].humidity"
           />
           <!-- <Weather
             day="Tuesday"
@@ -63,6 +65,7 @@
             :feels_like="weather[3].feels_like"
             :temp_max="weather[3].temp_max"
             :temp_min="weather[3].temp_min"
+            :humidity="weather[3].humidity"
           />
           <!-- <Weather
             day="Wednesday"
@@ -81,6 +84,7 @@
             :feels_like="weather[4].feels_like"
             :temp_max="weather[4].temp_max"
             :temp_min="weather[4].temp_min"
+            :humidity="weather[4].humidity"
           />
           <!-- <Weather
             day="Thursday"

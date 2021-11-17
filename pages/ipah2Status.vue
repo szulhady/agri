@@ -45,11 +45,11 @@
             :classPump1="tkpmIpahStatus.P1 == 1 ? 'filter-green' : 'filter-red'"
             :classPump2="tkpmIpahStatus.P2 == 1 ? 'filter-green' : 'filter-red'"
             :classPump3="tkpmIpahStatus.P3 == 1 ? 'filter-green' : 'filter-red'"
-            ph="7"
-            waterLvl="30"
-            EC1="2"
-            EC2="4"
-            EC3="5"
+            ph=""
+            waterLvl=""
+            EC1=""
+            EC2=""
+            EC3=""
           />
         </v-col>
         <v-col
@@ -73,10 +73,11 @@
                   Water Filling for fetilizer solution tank
                 </v-card-title>
                 <div>
-                  <h4>
-                    Press FILL button to start filling water manually into
-                    fetilizer solution tank. Press STOP button to stop filling
-                    process.
+                  <h4 style="text-align: justify">
+                    Press <span style="font-weight:bold">FILL</span> button to
+                    start filling water manually into fetilizer solution tank.
+                    Press <span style="font-weight:bold">STOP</span> button to
+                    stop filling process.
                   </h4>
                   <div style="display:flex; justify-content:space-evenly">
                     <v-btn @click="fill" class="mt-4 mb-4">FILL</v-btn>
@@ -87,11 +88,12 @@
                   Nutrient Preparation
                 </v-card-title>
                 <div>
-                  <h4>
+                  <h4 style="text-align: justify">
                     Nutrient preparation is done via schedule set by user on
-                    schedule panel. It is done on 5.00am on choosen date. Please
-                    fill duration input and click button below to start nutrient
-                    preparation manually.
+                    schedule panel. It is done on
+                    <span style="font-weight:bold">5.00am on choosen date</span
+                    >. Please fill duration input and click button below to
+                    start nutrient preparation manually.
                   </h4>
                 </div>
                 <div

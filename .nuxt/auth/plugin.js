@@ -14,7 +14,7 @@ export default function (ctx, inject) {
 
   // Register strategies
   // local
-  $auth.registerStrategy('local', new scheme_3e2123be($auth, {"endpoints":{"login":{"url":"http://139.59.109.48/api/auth/login","method":"post","propertyName":"token"},"logout":false,"user":{"url":"http://139.59.109.48/api/auth/me","method":"GET","propertyName":false}},"scheme":"local","token":{"maxAge":10000,"type":"Bearer"},"tokenType":"Bearer","localStorage":false,"_name":"local"}))
+  $auth.registerStrategy('local', new scheme_3e2123be($auth, {"endpoints":{"login":{"url":"http://159.223.55.150/api/auth/login","method":"post","propertyName":"token"},"logout":false,"user":{"url":"http://159.223.55.150/api/auth/me","method":"GET","propertyName":false}},"scheme":"local","token":{"maxAge":10000,"type":"Bearer"},"tokenType":"Bearer","localStorage":false,"_name":"local"}))
 
   // Inject it to nuxt context as $auth
   inject('auth', $auth)

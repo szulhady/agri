@@ -186,54 +186,54 @@ export default {
             this.$auth.$state.user.station[0] == "kongPo",
           // this.$auth.user.userId == 9,
           to: "/scheduleKongPo"
-        },
-        {
-          icon: "mdi-chart-areaspline",
-          title: "TRENDS",
-          state:
-            this.$auth.hasScope("user") &&
-            this.$auth.$state.user.station[0] == "ipah1",
-          // this.$auth.user.userId == 1,
-          to: "/trendsIpah1"
-        },
-        {
-          icon: "mdi-chart-areaspline",
-          title: "TRENDS",
-          state:
-            this.$auth.hasScope("user") &&
-            this.$auth.$state.user.station[0] == "ipah2",
-          // this.$auth.user.userId == 3,
-          to: "/trendsIpah2"
-        },
-        {
-          icon: "mdi-chart-areaspline",
-          title: "TRENDS",
-          state:
-            this.$auth.hasScope("user") &&
-            this.$auth.$state.user.station[0] == "tkpmPagoh",
-          // this.$auth.user.userId == 8,
-          to: "/trendsTkpmPagoh"
-        },
-        {
-          icon: "mdi-chart-areaspline",
-          title: "TRENDS",
-          state:
-            this.$auth.hasScope("user") &&
-            this.$auth.$state.user.station[0] == "kongPo",
-          // this.$auth.user.userId == 8,
-          to: "/trendsKongPo"
-        },
-        {
-          icon: "mdi-book-open-variant",
-          title: "INPUT",
-          state: this.$auth.hasScope("user"),
-          to: "/detail"
         }
+        // {
+        //   icon: "mdi-chart-areaspline",
+        //   title: "TRENDS",
+        //   state:
+        //     this.$auth.hasScope("user") &&
+        //     this.$auth.$state.user.station[0] == "ipah1",
+        //   // this.$auth.user.userId == 1,
+        //   to: "/trendsIpah1"
+        // },
+        // {
+        //   icon: "mdi-chart-areaspline",
+        //   title: "TRENDS",
+        //   state:
+        //     this.$auth.hasScope("user") &&
+        //     this.$auth.$state.user.station[0] == "ipah2",
+        //   // this.$auth.user.userId == 3,
+        //   to: "/trendsIpah2"
+        // },
+        // {
+        //   icon: "mdi-chart-areaspline",
+        //   title: "TRENDS",
+        //   state:
+        //     this.$auth.hasScope("user") &&
+        //     this.$auth.$state.user.station[0] == "tkpmPagoh",
+        //   // this.$auth.user.userId == 8,
+        //   to: "/trendsTkpmPagoh"
+        // },
+        // {
+        //   icon: "mdi-chart-areaspline",
+        //   title: "TRENDS",
+        //   state:
+        //     this.$auth.hasScope("user") &&
+        //     this.$auth.$state.user.station[0] == "kongPo",
+        //   // this.$auth.user.userId == 8,
+        //   to: "/trendsKongPo"
+        // },
+        // {
+        //   icon: "mdi-book-open-variant",
+        //   title: "INPUT",
+        //   state: this.$auth.hasScope("user"),
+        //   to: "/detail"
+        // }
       ],
       miniVariant: false,
       title: "SMART FERTIGATION DASHBOARD",
       connection: {
-        host: "tron.airmode.live",
+        host: this.$auth.$state.user.server_mqtt,
         port: 8083,
         endpoint: "/mqtt",
         clean: true, // Reserved session
@@ -242,7 +242,7 @@ export default {
       },
       subscription: {
         // topic: "geyzer/#",
-        topic: "nexplex/sense/#",
+        topic: ["nexplex/sense/#", "np/s/#"],
         qos: 0
       },
       receiveNews: "",
@@ -372,7 +372,6 @@ export default {
       this.client.on("message", (topic, message) => {
         if (topic === "nexplex/sense/ipah/block1") {
           message = JSON.parse(message);
-          console.log("block 1", message, new Date());
           let payload = {
             station: 0,
             block: 0,
@@ -422,7 +421,6 @@ export default {
 
         if (topic === "nexplex/sense/ipah/block2") {
           message = JSON.parse(message);
-          console.log("block 2", message, new Date());
           let payload = {
             station: 0,
             block: 1,
@@ -768,9 +766,7 @@ export default {
 
         if (topic === "nexplex/sense") {
           console.log(message);
-          // console.log(typeof message);
           try {
-            // JSON.parse(message)
             message = JSON.parse(message);
             if (message.ID == 301) {
               let payload1 = {
@@ -831,13 +827,10 @@ export default {
                 let data = { sensor, indexStation, indexSensor };
                 this.getCurrentDataArrayIpah1(data);
               }
-              console.log("heeee");
             }
           } catch (e) {
-            console.log("eliminated");
             return false;
           }
-          console.log(message);
           // if (message.ID == 301) {
           //   let payload1 = {
           //     station: 3,
@@ -940,7 +933,6 @@ export default {
         .$get("http://139.59.109.48/api/openWeatherMap/ipah1")
         // .$get("http://127.0.0.1:5000/api/openWeatherMap/ipah1")
         .then(response => {
-          console.log(response);
           this.SET_WEATHER(response);
           // window.location.reload();
         })
@@ -953,7 +945,6 @@ export default {
         .$get("http://139.59.109.48/api/openWeatherMap/ipah2")
         // .$get("http://127.0.0.1:5000/api/openWeatherMap/ipah2")
         .then(response => {
-          console.log(response);
           this.SET_WEATHER(response);
           // window.location.reload();
         })
@@ -966,7 +957,6 @@ export default {
         .$get("http://139.59.109.48/api/openWeatherMap/tkpmPagoh")
         // .$get("http://127.0.0.1:5000/api/openWeatherMap/tkpmPagoh")
         .then(response => {
-          console.log(response);
           this.SET_WEATHER(response);
           // window.location.reload();
         })
@@ -979,7 +969,6 @@ export default {
         .$get("http://139.59.109.48/api/openWeatherMap/kongPo")
         // .$get("http://127.0.0.1:5000/api/openWeatherMap/kongPo")
         .then(response => {
-          console.log(response);
           this.SET_WEATHER(response);
           // window.location.reload();
         })

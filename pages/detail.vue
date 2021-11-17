@@ -47,13 +47,16 @@ export default {
       let api;
       if (this.user == 0) {
         // api = "http://127.0.0.1:5000/api/report/ipah1";
-        api = "http://139.59.109.48/api/report/ipah1";
+        // api = "http://139.59.109.48/api/report/ipah1";
+        api = "http://159.223.55.150/api/report/ipah1";
       } else if (this.user == 1) {
         // api = "http://127.0.0.1:5000/api/report/ipah2";
-        api = "http://139.59.109.48/api/report/ipah2";
+        // api = "http://139.59.109.48/api/report/ipah2";
+        api = "http://159.223.55.150/api/report/ipah2";
       } else if (this.user == 2) {
         // api = "http://127.0.0.1:5000/api/report/tkpmPagoh";
-        api = "http://139.59.109.48/api/report/tkpmPagoh";
+        // api = "http://139.59.109.48/api/report/tkpmPagoh";
+        api = "http://159.223.55.150/api/report/tkpmPagoh";
       }
       this.$axios
         .$get(api)
@@ -87,7 +90,7 @@ export default {
   },
   async mounted() {
     this.getDetails();
-    console.log(this.detailIpah1);
+    // console.log(this.detailIpah1);
   },
   computed: {
     ...mapState({

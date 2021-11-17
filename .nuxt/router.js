@@ -4,30 +4,30 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _99518462 = () => interopDefault(import('..\\pages\\adminDetail.vue' /* webpackChunkName: "pages/adminDetail" */))
-const _00378620 = () => interopDefault(import('..\\pages\\adminStatus.vue' /* webpackChunkName: "pages/adminStatus" */))
-const _42dbcfac = () => interopDefault(import('..\\pages\\control.vue' /* webpackChunkName: "pages/control" */))
-const _66228c70 = () => interopDefault(import('..\\pages\\current.vue' /* webpackChunkName: "pages/current" */))
-const _64866952 = () => interopDefault(import('..\\pages\\detail.vue' /* webpackChunkName: "pages/detail" */))
-const _450a9492 = () => interopDefault(import('..\\pages\\general.vue' /* webpackChunkName: "pages/general" */))
-const _3a63d6a9 = () => interopDefault(import('..\\pages\\inspire.vue' /* webpackChunkName: "pages/inspire" */))
-const _49b529c5 = () => interopDefault(import('..\\pages\\ipah2Status.vue' /* webpackChunkName: "pages/ipah2Status" */))
-const _d9170bbe = () => interopDefault(import('..\\pages\\ipahStatus.vue' /* webpackChunkName: "pages/ipahStatus" */))
-const _a03a2062 = () => interopDefault(import('..\\pages\\kongPoStatus.vue' /* webpackChunkName: "pages/kongPoStatus" */))
-const _22d29578 = () => interopDefault(import('..\\pages\\login.vue' /* webpackChunkName: "pages/login" */))
-const _51e9b8fc = () => interopDefault(import('..\\pages\\overview-admin.vue' /* webpackChunkName: "pages/overview-admin" */))
-const _1630f064 = () => interopDefault(import('..\\pages\\register.vue' /* webpackChunkName: "pages/register" */))
-const _a04b80ca = () => interopDefault(import('..\\pages\\scheduleIpah1.vue' /* webpackChunkName: "pages/scheduleIpah1" */))
-const _a02f51c8 = () => interopDefault(import('..\\pages\\scheduleIpah2.vue' /* webpackChunkName: "pages/scheduleIpah2" */))
-const _2cc29d18 = () => interopDefault(import('..\\pages\\scheduleKongPo.vue' /* webpackChunkName: "pages/scheduleKongPo" */))
-const _6454f85a = () => interopDefault(import('..\\pages\\scheduleTkpmPagoh.vue' /* webpackChunkName: "pages/scheduleTkpmPagoh" */))
-const _76b48dbc = () => interopDefault(import('..\\pages\\tkpmPagohStatus.vue' /* webpackChunkName: "pages/tkpmPagohStatus" */))
-const _d08e4748 = () => interopDefault(import('..\\pages\\trendsIpah1.vue' /* webpackChunkName: "pages/trendsIpah1" */))
-const _d0721846 = () => interopDefault(import('..\\pages\\trendsIpah2.vue' /* webpackChunkName: "pages/trendsIpah2" */))
-const _04d8a65a = () => interopDefault(import('..\\pages\\trendsKongPo.vue' /* webpackChunkName: "pages/trendsKongPo" */))
-const _37a5d814 = () => interopDefault(import('..\\pages\\trendsTkpmPagoh.vue' /* webpackChunkName: "pages/trendsTkpmPagoh" */))
-const _2e49960c = () => interopDefault(import('..\\pages\\user.vue' /* webpackChunkName: "pages/user" */))
-const _592af261 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _d4a5737c = () => interopDefault(import('..\\pages\\adminDetail.vue' /* webpackChunkName: "pages/adminDetail" */))
+const _3b8b753a = () => interopDefault(import('..\\pages\\adminStatus.vue' /* webpackChunkName: "pages/adminStatus" */))
+const _3cd3ecc2 = () => interopDefault(import('..\\pages\\control.vue' /* webpackChunkName: "pages/control" */))
+const _6ba8f3bb = () => interopDefault(import('..\\pages\\current.vue' /* webpackChunkName: "pages/current" */))
+const _b918b602 = () => interopDefault(import('..\\pages\\detail.vue' /* webpackChunkName: "pages/detail" */))
+const _7c34efaa = () => interopDefault(import('..\\pages\\general.vue' /* webpackChunkName: "pages/general" */))
+const _4dc3dec8 = () => interopDefault(import('..\\pages\\inspire.vue' /* webpackChunkName: "pages/inspire" */))
+const _2c0b3238 = () => interopDefault(import('..\\pages\\ipah2Status.vue' /* webpackChunkName: "pages/ipah2Status" */))
+const _465bd164 = () => interopDefault(import('..\\pages\\ipahStatus.vue' /* webpackChunkName: "pages/ipahStatus" */))
+const _184df5bc = () => interopDefault(import('..\\pages\\kongPoStatus.vue' /* webpackChunkName: "pages/kongPoStatus" */))
+const _5ea8b02b = () => interopDefault(import('..\\pages\\login.vue' /* webpackChunkName: "pages/login" */))
+const _4baaf7a9 = () => interopDefault(import('..\\pages\\overview-admin.vue' /* webpackChunkName: "pages/overview-admin" */))
+const _4ebdf4d1 = () => interopDefault(import('..\\pages\\register.vue' /* webpackChunkName: "pages/register" */))
+const _54cff74e = () => interopDefault(import('..\\pages\\scheduleIpah1.vue' /* webpackChunkName: "pages/scheduleIpah1" */))
+const _54de0ecf = () => interopDefault(import('..\\pages\\scheduleIpah2.vue' /* webpackChunkName: "pages/scheduleIpah2" */))
+const _39401fbe = () => interopDefault(import('..\\pages\\scheduleKongPo.vue' /* webpackChunkName: "pages/scheduleKongPo" */))
+const _0cf22a06 = () => interopDefault(import('..\\pages\\scheduleTkpmPagoh.vue' /* webpackChunkName: "pages/scheduleTkpmPagoh" */))
+const _95c9b6a2 = () => interopDefault(import('..\\pages\\tkpmPagohStatus.vue' /* webpackChunkName: "pages/tkpmPagohStatus" */))
+const _7a0ee4cf = () => interopDefault(import('..\\pages\\trendsIpah1.vue' /* webpackChunkName: "pages/trendsIpah1" */))
+const _7a1cfc50 = () => interopDefault(import('..\\pages\\trendsIpah2.vue' /* webpackChunkName: "pages/trendsIpah2" */))
+const _65feb2c0 = () => interopDefault(import('..\\pages\\trendsKongPo.vue' /* webpackChunkName: "pages/trendsKongPo" */))
+const _760c6f07 = () => interopDefault(import('..\\pages\\trendsTkpmPagoh.vue' /* webpackChunkName: "pages/trendsTkpmPagoh" */))
+const _40bbd8f9 = () => interopDefault(import('..\\pages\\user.vue' /* webpackChunkName: "pages/user" */))
+const _d5fde5d8 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -42,99 +42,99 @@ export const routerOptions = {
 
   routes: [{
     path: "/adminDetail",
-    component: _99518462,
+    component: _d4a5737c,
     name: "adminDetail"
   }, {
     path: "/adminStatus",
-    component: _00378620,
+    component: _3b8b753a,
     name: "adminStatus"
   }, {
     path: "/control",
-    component: _42dbcfac,
+    component: _3cd3ecc2,
     name: "control"
   }, {
     path: "/current",
-    component: _66228c70,
+    component: _6ba8f3bb,
     name: "current"
   }, {
     path: "/detail",
-    component: _64866952,
+    component: _b918b602,
     name: "detail"
   }, {
     path: "/general",
-    component: _450a9492,
+    component: _7c34efaa,
     name: "general"
   }, {
     path: "/inspire",
-    component: _3a63d6a9,
+    component: _4dc3dec8,
     name: "inspire"
   }, {
     path: "/ipah2Status",
-    component: _49b529c5,
+    component: _2c0b3238,
     name: "ipah2Status"
   }, {
     path: "/ipahStatus",
-    component: _d9170bbe,
+    component: _465bd164,
     name: "ipahStatus"
   }, {
     path: "/kongPoStatus",
-    component: _a03a2062,
+    component: _184df5bc,
     name: "kongPoStatus"
   }, {
     path: "/login",
-    component: _22d29578,
+    component: _5ea8b02b,
     name: "login"
   }, {
     path: "/overview-admin",
-    component: _51e9b8fc,
+    component: _4baaf7a9,
     name: "overview-admin"
   }, {
     path: "/register",
-    component: _1630f064,
+    component: _4ebdf4d1,
     name: "register"
   }, {
     path: "/scheduleIpah1",
-    component: _a04b80ca,
+    component: _54cff74e,
     name: "scheduleIpah1"
   }, {
     path: "/scheduleIpah2",
-    component: _a02f51c8,
+    component: _54de0ecf,
     name: "scheduleIpah2"
   }, {
     path: "/scheduleKongPo",
-    component: _2cc29d18,
+    component: _39401fbe,
     name: "scheduleKongPo"
   }, {
     path: "/scheduleTkpmPagoh",
-    component: _6454f85a,
+    component: _0cf22a06,
     name: "scheduleTkpmPagoh"
   }, {
     path: "/tkpmPagohStatus",
-    component: _76b48dbc,
+    component: _95c9b6a2,
     name: "tkpmPagohStatus"
   }, {
     path: "/trendsIpah1",
-    component: _d08e4748,
+    component: _7a0ee4cf,
     name: "trendsIpah1"
   }, {
     path: "/trendsIpah2",
-    component: _d0721846,
+    component: _7a1cfc50,
     name: "trendsIpah2"
   }, {
     path: "/trendsKongPo",
-    component: _04d8a65a,
+    component: _65feb2c0,
     name: "trendsKongPo"
   }, {
     path: "/trendsTkpmPagoh",
-    component: _37a5d814,
+    component: _760c6f07,
     name: "trendsTkpmPagoh"
   }, {
     path: "/user",
-    component: _2e49960c,
+    component: _40bbd8f9,
     name: "user"
   }, {
     path: "/",
-    component: _592af261,
+    component: _d5fde5d8,
     name: "index"
   }],
 

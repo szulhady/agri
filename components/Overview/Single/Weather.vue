@@ -43,8 +43,9 @@
       {{ description }}
     </v-card-subtitle>
     <v-card-subtitle> Feels like: {{ feels_like }} °C </v-card-subtitle>
-    <v-card-subtitle> Temp max: {{ temp_max }} °C </v-card-subtitle>
-    <v-card-subtitle> Temp min: {{ temp_min }} °C </v-card-subtitle>
+    <!-- <v-card-subtitle> Temp max: {{ temp_max }} °C </v-card-subtitle>
+    <v-card-subtitle> Temp min: {{ temp_min }} °C </v-card-subtitle> -->
+    <v-card-subtitle> Humidity: {{ humidity }} °C </v-card-subtitle>
   </v-card>
 </template>
 
@@ -57,7 +58,8 @@ export default {
     "temp_max",
     "temp_min",
     "description",
-    "date"
+    "date",
+    "humidity"
   ]
 };
 </script>

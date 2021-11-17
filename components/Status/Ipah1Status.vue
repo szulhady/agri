@@ -290,13 +290,13 @@ export default {
 .filter-red {
   /* filter: invert(48%) sepia(100%) s
   0 */
-  /* filter: invert(48%) sepia(100%) saturate(7414%) hue-rotate(-1deg)
-    brightness(94%) contrast(119%); */
-  -webkit-animation: blinkRed 1s infinite;
+  filter: invert(48%) sepia(100%) saturate(7414%) hue-rotate(-1deg)
+    brightness(94%) contrast(119%);
+  /* -webkit-animation: blinkRed 1s infinite;
   -moz-animation: blinkRed 1s infinite;
   -ms-animation: blinkRed 1s infinite;
   -o-animation: blinkRed 1s infinite;
-  animation: blinkRed 1s infinite;
+  animation: blinkRed 1s infinite; */
 }
 
 /* BLINK RED */

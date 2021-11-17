@@ -317,7 +317,8 @@ export default {
       this.$axios
         // .$post("http://139.59.109.48/api/setSchedule/ipah2/nutrient", {
         // .$post("http://127.0.0.1:5000/api/report/form", {
-        .$post("http://139.59.109.48/api/report/form", {
+        // .$post("http://139.59.109.48/api/report/form", {
+        .$post("http://159.223.55.150/api/report/form", {
           user_id: this.user,
           fullName: this.fullName,
           widthArea: this.widthArea,
@@ -357,7 +358,7 @@ export default {
           systemBreakdown: this.systemBreakdown
         })
         .then(response => {
-          console.log(response);
+          // console.log(response);
           // window.location.reload();
           window.location.reload();
         })
@@ -367,7 +368,7 @@ export default {
     }
   },
   mounted() {
-    console.log(this.$auth.$state.user.userId);
+    // console.log(this.$auth.$state.user.userId);
   }
 };
 </script>

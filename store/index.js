@@ -2066,6 +2066,7 @@ tkpmPagohManualNutrientDuration:"",
 kongPoManualFill:false,
 kongPoManualStop:false,
 kongPoManualNutrient:false,
+kongPoManualNutrientDuration:"",
 
 detailActive:"",
 detailIpah1:"",
@@ -2078,11 +2079,9 @@ export const mutations = {
     // api for OpenWeatherMap
     SET_WEATHER (state, value) {
       // state.weatherIpah = []
-      
-      // console.log(value)
+
       const data = value.list.filter(forecast => forecast.dt_txt.slice(-8) === '12:00:00' && forecast.dt_txt.slice(0, 10) !== state.today)
-      
-      console.log(data)
+
       let weather = [
         {
           dt_txt:data[0].dt_txt.slice(0, -9),
@@ -2142,8 +2141,6 @@ export const mutations = {
         }
       ]
       state.weatherIpah = weather
-      console.log(state.weatherIpah)
-      // console.log(value)
     },
     SET_FORECASTS (state, value) {
       const data = value.list.filter(forecast => forecast.dt_txt.slice(-8) === '12:00:00' && forecast.dt_txt.slice(0, 10) !== state.today)
@@ -2157,7 +2154,6 @@ export const mutations = {
     },
     setActiveGraph(state, payload){
       state.activeGraph=payload
-      // console.log(state.arrayTime)
     },
 
     //SET ACTIVE USER
@@ -2188,22 +2184,18 @@ export const mutations = {
     // SET UPDATED
     updateDateState(state,payload){
       state.updated=payload
-      console.log("here2");
     },
     // SET UPDATED
     updateDateState2(state,payload){
       state.updated2=payload
-      console.log("here3");
     },
     // SET UPDATED
     updateDateState3(state,payload){
       state.updated3=payload
-      console.log("here3");
     },
     // SET UPDATED
     updateDateState4(state,payload){
       state.updated4=payload
-      console.log("here4");
     },
 
     // IPAH1 //
@@ -2217,19 +2209,16 @@ export const mutations = {
      state.trendsIpah1[indexStation].hourly[indexSensor].max=data.max;
      state.trendsIpah1[indexStation].hourly[indexSensor].avg=data.avg;
      state.trendsIpah1[indexStation].hourly[indexSensor].hour=data.hour
-    //  console.log(state.trendsIpah1)
    },
  // Daily
  getDailyIpah1(state,payload){
   let indexStation=payload.indexStation;
   let indexSensor=payload.indexSensor;
   let data=payload;
-  // console.log(data)
   state.trendsIpah1[indexStation].daily[indexSensor].min=data.min;
   state.trendsIpah1[indexStation].daily[indexSensor].max=data.max;
   state.trendsIpah1[indexStation].daily[indexSensor].avg=data.avg;
   state.trendsIpah1[indexStation].daily[indexSensor].day=data.day
-  // console.log(state.trends[0].daily)
 },
   // Monthly
   getMonthlyIpah1(state,payload){
@@ -2240,7 +2229,6 @@ export const mutations = {
     state.trendsIpah1[indexStation].monthly[indexSensor].max=data.max;
     state.trendsIpah1[indexStation].monthly[indexSensor].avg=data.avg;
     state.trendsIpah1[indexStation].monthly[indexSensor].monthName=data.monthName;
-    // console.log(state.trendsIpah1)
   },
   //Insert array time for current trend IPAH1
   getCurrentTimeArrayIpah1(state,payload){
@@ -2345,19 +2333,16 @@ export const mutations = {
      state.trendsIpah2[indexStation].hourly[indexSensor].max=data.max;
      state.trendsIpah2[indexStation].hourly[indexSensor].avg=data.avg;
      state.trendsIpah2[indexStation].hourly[indexSensor].hour=data.hour
-    //  console.log(state.trendsIpah1)
    },
  // Daily
  getDailyIpah2(state,payload){
   let indexStation=payload.indexStation;
   let indexSensor=payload.indexSensor;
   let data=payload;
-  // console.log(data)
   state.trendsIpah2[indexStation].daily[indexSensor].min=data.min;
   state.trendsIpah2[indexStation].daily[indexSensor].max=data.max;
   state.trendsIpah2[indexStation].daily[indexSensor].avg=data.avg;
   state.trendsIpah2[indexStation].daily[indexSensor].day=data.day
-  // console.log(state.trends[0].daily)
 },
   // Monthly
   getMonthlyIpah2(state,payload){
@@ -2368,7 +2353,6 @@ export const mutations = {
     state.trendsIpah2[indexStation].monthly[indexSensor].max=data.max;
     state.trendsIpah2[indexStation].monthly[indexSensor].avg=data.avg;
     state.trendsIpah2[indexStation].monthly[indexSensor].monthName=data.monthName;
-    // console.log(state.trendsIpah1)
   },
 
   //Insert array time for current trend IPAH2
@@ -2437,19 +2421,16 @@ export const mutations = {
      state.trendsTkpmPagoh[indexStation].hourly[indexSensor].max=data.max;
      state.trendsTkpmPagoh[indexStation].hourly[indexSensor].avg=data.avg;
      state.trendsTkpmPagoh[indexStation].hourly[indexSensor].hour=data.hour
-    //  console.log(state.trendsIpah1)
    },
  // Daily
  getDailyTkpmPagoh(state,payload){
   let indexStation=payload.indexStation;
   let indexSensor=payload.indexSensor;
   let data=payload;
-  // console.log(data)
   state.trendsTkpmPagoh[indexStation].daily[indexSensor].min=data.min;
   state.trendsTkpmPagoh[indexStation].daily[indexSensor].max=data.max;
   state.trendsTkpmPagoh[indexStation].daily[indexSensor].avg=data.avg;
   state.trendsTkpmPagoh[indexStation].daily[indexSensor].day=data.day
-  // console.log(state.trends[0].daily)
 },
   // Monthly
   getMonthlyTkpmPagoh(state,payload){
@@ -2460,7 +2441,6 @@ export const mutations = {
     state.trendsTkpmPagoh[indexStation].monthly[indexSensor].max=data.max;
     state.trendsTkpmPagoh[indexStation].monthly[indexSensor].avg=data.avg;
     state.trendsTkpmPagoh[indexStation].monthly[indexSensor].monthName=data.monthName;
-    // console.log(state.trendsIpah1)
   },
 
   //Insert array time for current trend TkpmPagoh
@@ -2529,19 +2509,16 @@ export const mutations = {
      state.trendsKongPo[indexStation].hourly[indexSensor].max=data.max;
      state.trendsKongPo[indexStation].hourly[indexSensor].avg=data.avg;
      state.trendsKongPo[indexStation].hourly[indexSensor].hour=data.hour
-    //  console.log(state.trendsIpah1)
    },
  // Daily
  getDailyKongPo(state,payload){
   let indexStation=payload.indexStation;
   let indexSensor=payload.indexSensor;
   let data=payload;
-  // console.log(data)
   state.trendsKongPo[indexStation].daily[indexSensor].min=data.min;
   state.trendsKongPo[indexStation].daily[indexSensor].max=data.max;
   state.trendsKongPo[indexStation].daily[indexSensor].avg=data.avg;
   state.trendsKongPo[indexStation].daily[indexSensor].day=data.day
-  // console.log(state.trends[0].daily)
 },
   // Monthly
   getMonthlyKongPo(state,payload){
@@ -2552,7 +2529,6 @@ export const mutations = {
     state.trendsKongPo[indexStation].monthly[indexSensor].max=data.max;
     state.trendsKongPo[indexStation].monthly[indexSensor].avg=data.avg;
     state.trendsKongPo[indexStation].monthly[indexSensor].monthName=data.monthName;
-    // console.log(state.trendsIpah1)
   },
   //Insert array time for current trend KONG PO
   getCurrentTimeArrayKongPo(state,payload){
@@ -2649,7 +2625,6 @@ export const mutations = {
       state.stations[indexStation].sensorSoil[indexBlock].sensorData[indexSensor].isHigh = isHigh
       state.stations[indexStation].sensorSoil[indexBlock].warningsCounts[indexSensor] = value
       state.stations[indexStation].sensorSoil[indexBlock].warnings[indexSensor] = warningString
-      // console.log(state.stations[0].sensorSoil[0].warnings)
     },
   // toString() warnings array for table
   stringArray (state, payload) {
@@ -2710,12 +2685,6 @@ export const mutations = {
         }, warnings)
       }
       state.summaryKongPo[2].data = warnings
-    },
-
-    // STATUS IPAH 
-    ipahStatus(state,payload){
-      state.ipahStatus.SV1= 1
-      console.log(state.ipahStatus)
     },
 
     //STATUS IPAH 
@@ -3312,6 +3281,9 @@ export const mutations = {
     setKongPoManualNutrient(state, payload){
       state.kongPoManualNutrient= payload;
     },
+    setKongPoManualNutrientDuration(state, payload){
+      state.kongPoManualNutrientDuration= payload;
+    },
 
 
     // REPORT
@@ -3338,7 +3310,6 @@ export const getters = {
   },
 
   loggedInUser(state) {
-    // console.log(state.auth.user.userId)
     return state.auth.user
     // return {username:"ali"}
   },
