@@ -32,7 +32,8 @@ module.exports = {
     'plugins/echarts.js',
     { src: '~/plugins/v-calender', ssr: false },
     'plugins/ant-design-vue',
-    'plugins/echarts.js'
+    'plugins/echarts.js',
+    'plugins/v-mask.js'
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)

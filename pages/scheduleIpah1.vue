@@ -33,8 +33,8 @@
                   <div>
                     <h4 style="text-align: justify">
                       Default time for nutrient preparation process on selected
-                      date is on 5am. Please select date and duration (minute)
-                      for dosing process.
+                      date is on 5am. Please select date and EC value ( eg: 1.00
+                      ) for dosing process.
                     </h4>
                     <!-- <h4>
                       Below is guideline for duration input:
@@ -57,13 +57,19 @@
                         v-model="durationNutrient"
                         class="long"
                       ></v-select> -->
-                    <v-text-field
-                      label="Duration (minute)"
+                    <!-- <v-text-field
+                      label="EC value"
                       :rules="rules"
                       type="number"
                       v-model.number="durationNutrient"
                       class="long"
-                    ></v-text-field>
+                    ></v-text-field> -->
+                    <input
+                      class="long2"
+                      type="text"
+                      v-mask="'#.##'"
+                      v-model.number="durationNutrient"
+                    />
                   </div>
                   <div>
                     <v-btn class="mt-5" @click="checkScheduleNutrient">
@@ -815,9 +821,7 @@
           >{{ dateStartNutrient }} -
           {{ dateEndNutrient }}
         </v-card-subtitle>
-        <v-card-subtitle
-          >Duration : {{ durationNutrient }} minute/s
-        </v-card-subtitle>
+        <v-card-subtitle>EC value : {{ durationNutrient2 }} </v-card-subtitle>
         <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn text @click="sendScheduleNutrient" class="success">
@@ -884,6 +888,7 @@ export default {
       duration15: "",
       duration16: "",
       durationNutrient: "",
+      durationNutrient2: "",
       block1: "",
       block2: "",
       block3: "",
@@ -1518,24 +1523,27 @@ export default {
       this.dialogPost = false;
     },
     checkScheduleNutrient: function() {
+      this.allDurationNutrient = [];
       if (this.selectedDateNutrient.length < 1) {
         alert("Please select valid date");
         return;
       }
       if (!this.durationNutrient) {
-        alert("Please select valid duration");
+        alert("Please select valid EC value");
         return;
       }
-      if (
-        !Number.isInteger(this.durationNutrient) ||
-        this.durationNutrient < 1
-      ) {
-        alert("Please select valid duration (integer number)");
+      if (!this.durationNutrient.toFixed(2) || this.durationNutrient < 0) {
+        // if (
+        //   !Number.isInteger(this.durationNutrient) ||
+        //   this.durationNutrient < 1
+        // ) {
+        alert("Please select valid EC value (eg:1.00)");
         return;
       }
       // duration
       if (this.durationNutrient) {
-        this.allDurationNutrient.push(this.durationNutrient);
+        this.allDurationNutrient.push(this.durationNutrient.toFixed(2));
+        this.durationNutrient2 = this.durationNutrient.toFixed(2);
       }
       //
       this.dialogPostNutrient = true;
@@ -1606,6 +1614,10 @@ export default {
 }
 .long {
   width: 150px;
+}
+.long2 {
+  border: black 1px solid;
+  text-align: center;
 }
 
 .hr {

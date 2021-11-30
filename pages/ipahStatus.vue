@@ -65,7 +65,7 @@
                     Nutrient preparation is done via schedule set by user on
                     schedule panel. It is done on
                     <span style="font-weight:bold">5.00am on choosen date</span
-                    >. Please fill duration input and click button below to
+                    >. Please fill EC value input and click button below to
                     start nutrient preparation manually.
                   </h4>
                 </div>
@@ -74,12 +74,18 @@
                 <div
                   style="display:flex; flex-direction:column;justify-content:center; align-items:center"
                 >
-                  <v-text-field
+                  <!-- <v-text-field
                     label="Duration (minute)"
                     type="number"
                     v-model.number="duration"
                     class="short"
-                  ></v-text-field>
+                  ></v-text-field> -->
+                  <input
+                    class="long2"
+                    type="text"
+                    v-mask="'#.##'"
+                    v-model.number="duration"
+                  />
                   <v-btn @click="nutrient" class="mt-4 mb-4"
                     >Start Preparation</v-btn
                   >
@@ -177,13 +183,13 @@ export default {
         alert("Please select valid duration");
         return;
       }
-      if (!Number.isInteger(this.duration) || this.duration < 1) {
-        alert("Please select valid duration (integer number)");
+      if (!this.duration.toFixed(2) || this.duration < 0) {
+        alert("Please select valid EC value (eg:1.00)");
         return;
       }
-      this.setIpah1ManualNutrientDuration(this.duration);
+      this.setIpah1ManualNutrientDuration(this.duration.toFixed(2));
       this.setIpah1ManualNutrient(true);
-      console.log("heree");
+      // console.log("heree");
     }
   },
   components: {
@@ -435,6 +441,11 @@ export default {
   width: 100px;
   margin-right: 10px;
   margin-bottom: 10px;
+}
+
+.long2 {
+  border: black 1px solid;
+  text-align: center;
 }
 
 /* layer */

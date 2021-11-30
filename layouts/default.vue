@@ -261,9 +261,12 @@ export default {
     ...mapMutations({
       setActiveUser: "setActiveUser",
       getCurrentDataIpah1: "getCurrentDataIpah1",
+      getCurrentDataNutrientIpah1: "getCurrentDataNutrientIpah1",
+      getCurrentDataNutrientIpah1EC: "getCurrentDataNutrientIpah1EC",
       getCurrentTimeArrayIpah1: "getCurrentTimeArrayIpah1",
       getCurrentDataArrayIpah1: "getCurrentDataArrayIpah1",
       getCurrentDataIpah2: "getCurrentDataIpah2",
+      getCurrentDataNutrientIpah2: "getCurrentDataNutrientIpah2",
       getCurrentTimeArrayIpah2: "getCurrentTimeArrayIpah2",
       getCurrentDataArrayIpah2: "getCurrentDataArrayIpah2",
       getCurrentDataTkpmPagoh: "getCurrentDataTkpmPagoh",
@@ -389,7 +392,7 @@ export default {
           this.check(0, 0, 2, " Potassium", message.POT, 20);
           this.check(0, 0, 3, " pH", message.pH, 7);
           this.check(0, 0, 4, " EC", message.EC, 10);
-          this.check(0, 0, 5, " MS", message.HMD, 10);
+          this.check(0, 0, 5, " Humidity", message.HMD, 10);
           this.check(0, 0, 6, " Temp", message.TMP, 10);
           const payloadStringArray = {
             indexStation: 0,
@@ -438,7 +441,7 @@ export default {
           this.check(0, 1, 2, " Potassium", message.POT, 10);
           this.check(0, 1, 3, " pH", message.pH, 7);
           this.check(0, 1, 4, " EC", message.EC, 10);
-          this.check(0, 1, 5, " MS", message.HMD, 10);
+          this.check(0, 1, 5, " Humidity", message.HMD, 10);
           this.check(0, 1, 6, " Temp", message.TMP, 10);
           const payloadStringArray = {
             indexStation: 0,
@@ -486,7 +489,7 @@ export default {
           this.check(0, 2, 2, " Potassium", message.POT, 10);
           this.check(0, 2, 3, " pH", message.pH, 7);
           this.check(0, 2, 4, " EC", message.EC, 10);
-          this.check(0, 2, 5, " MS", message.HMD, 10);
+          this.check(0, 2, 5, " Humidity", message.HMD, 10);
           this.check(0, 2, 6, " Temp", message.TMP, 10);
           const payloadStringArray = {
             indexStation: 0,
@@ -534,7 +537,7 @@ export default {
           this.check(0, 3, 2, " Potassium", message.POT, 10);
           this.check(0, 3, 3, " pH", message.pH, 7);
           this.check(0, 3, 4, " EC", message.EC, 10);
-          this.check(0, 3, 5, " MS", message.HMD, 10);
+          this.check(0, 3, 5, " Humidity", message.HMD, 10);
           this.check(0, 3, 6, " Temp", message.TMP, 10);
           const payloadStringArray = {
             indexStation: 0,
@@ -563,6 +566,31 @@ export default {
           this.countWarningsIpah(data);
         }
 
+        if (topic === "np/s/ipah/n") {
+          message = JSON.parse(message);
+          let payload = {
+            station: 0,
+            waterTankLevel: message.WL1,
+            fertilizerTankLevel: message.WL2,
+            pH: message.pH
+            // EC: message.EC
+          };
+          console.log(message);
+          console.log(payload);
+          this.getCurrentDataNutrientIpah1(payload);
+        }
+
+        if (topic == "nexplex/sense") {
+          message = JSON.parse(message);
+          if (TID == 318) {
+            let payload = {
+              station: 0,
+              EC: message.EC
+            };
+            this.getCurrentDataNutrientIpah1EC(payload);
+          }
+        }
+
         if (topic === "nexplex/sense/tkpmIpah/block1") {
           message = JSON.parse(message);
           let payload = {
@@ -576,7 +604,7 @@ export default {
 
           this.check(1, 0, 0, " pH", message.pH, 7);
           this.check(1, 0, 1, " EC", message.EC, 10);
-          this.check(1, 0, 2, " SM", message.HMD, 10);
+          this.check(1, 0, 2, " Humidity", message.HMD, 10);
 
           const payloadStringArray = {
             indexStation: 1,
@@ -610,7 +638,7 @@ export default {
           this.getCurrentDataIpah2(payload);
           this.check(1, 1, 0, " pH", message.pH, 7);
           this.check(1, 1, 1, " EC", message.EC, 10);
-          this.check(1, 1, 2, " SM", message.HMD, 10);
+          this.check(1, 1, 2, " Humidity", message.HMD, 10);
 
           const payloadStringArray = {
             indexStation: 1,
@@ -643,7 +671,7 @@ export default {
           this.getCurrentDataIpah2(payload);
           this.check(1, 2, 0, " pH", message.pH, 7);
           this.check(1, 2, 1, " EC", message.EC, 10);
-          this.check(1, 2, 2, " SM", message.HMD, 0.5);
+          this.check(1, 2, 2, " Humidity", message.HMD, 0.5);
 
           const payloadStringArray = {
             indexStation: 1,
@@ -664,6 +692,11 @@ export default {
           this.countWarningsTkpmIpah(data);
         }
 
+        if (topic === "np/s/tkpmIpah/n") {
+          message = JSON.parse(message);
+          console.log(message);
+        }
+
         if (topic === "nexplex/sense/tkpmPagoh/block1") {
           message = JSON.parse(message);
           let payload = {
@@ -676,7 +709,7 @@ export default {
           this.getCurrentDataTkpmPagoh(payload);
           this.check(2, 0, 0, " pH", message.pH, 7);
           this.check(2, 0, 1, " EC", message.EC, 0.2);
-          this.check(2, 0, 2, " SM", message.HMD, 10);
+          this.check(2, 0, 2, " Humidity", message.HMD, 10);
 
           const payloadStringArray = {
             indexStation: 2,
@@ -710,7 +743,7 @@ export default {
           this.getCurrentDataTkpmPagoh(payload);
           this.check(2, 1, 0, " pH", message.pH, 7);
           this.check(2, 1, 1, " EC", message.EC, 10);
-          this.check(2, 1, 2, " SM", message.HMD, 10);
+          this.check(2, 1, 2, " Humidity", message.HMD, 10);
 
           const payloadStringArray = {
             indexStation: 2,
@@ -743,7 +776,7 @@ export default {
           this.getCurrentDataTkpmPagoh(payload);
           this.check(2, 2, 0, " pH", message.pH, 7);
           this.check(2, 2, 1, " EC", message.EC, 10);
-          this.check(2, 2, 2, " SM", message.HMD, 10);
+          this.check(2, 2, 2, " Humidity", message.HMD, 10);
 
           const payloadStringArray = {
             indexStation: 2,
@@ -796,14 +829,14 @@ export default {
               this.check(3, 0, 2, " Potassium", message.POT1, 20);
               this.check(3, 0, 3, " pH", message.pH1, 7);
               this.check(3, 0, 4, " EC", message.EC1, 10);
-              this.check(3, 0, 5, " MS", message.HMD1, 10);
+              this.check(3, 0, 5, " Humidity", message.HMD1, 10);
 
               this.check(3, 1, 0, " Nitrogen", message.NTR2, 20);
               this.check(3, 1, 1, " Phosphorus", message.PHOS2, 20);
               this.check(3, 1, 2, " Potassium", message.POT2, 20);
               this.check(3, 1, 3, " pH", message.pH2, 7);
               this.check(3, 1, 4, " EC", message.EC2, 10);
-              this.check(3, 1, 5, " MS", message.HMD2, 10);
+              this.check(3, 1, 5, " Humidity", message.HMD2, 10);
 
               const payloadStringArray = {
                 indexStation: 0,

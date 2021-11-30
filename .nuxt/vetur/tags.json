@@ -53,9 +53,6 @@
   "LoginForm": {
     "description": "Auto imported from components/Login/Form.vue"
   },
-  "RegisterForm2": {
-    "description": "Auto imported from components/Register/Form2.vue"
-  },
   "OverviewCardDataLeaf": {
     "description": "Auto imported from components/Overview/CardDataLeaf.vue"
   },
@@ -79,6 +76,9 @@
   },
   "OverviewTable": {
     "description": "Auto imported from components/Overview/Table.vue"
+  },
+  "RegisterForm2": {
+    "description": "Auto imported from components/Register/Form2.vue"
   },
   "ScheduleCalendar": {
     "description": "Auto imported from components/Schedule/Calendar.vue"
