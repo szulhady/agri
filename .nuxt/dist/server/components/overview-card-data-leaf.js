@@ -1,7 +1,7 @@
 exports.ids = [26,34];
 exports.modules = {
 
-/***/ 194:
+/***/ 185:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -198,7 +198,7 @@ const cache = new Map();
 
 /***/ }),
 
-/***/ 195:
+/***/ 186:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -410,7 +410,7 @@ module.exports.__inject__ = function (context) {
 
 /***/ }),
 
-/***/ 253:
+/***/ 256:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -670,7 +670,7 @@ var staticRenderFns = []
 // CONCATENATED MODULE: ./components/Overview/CardDataLeaf.vue?vue&type=template&id=ff4265a4&
 
 // EXTERNAL MODULE: ./components/Overview/Single/Gauge.vue + 4 modules
-var Gauge = __webpack_require__(253);
+var Gauge = __webpack_require__(256);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Overview/CardDataLeaf.vue?vue&type=script&lang=js&
 //
@@ -715,10 +715,10 @@ var installComponents = __webpack_require__(19);
 var installComponents_default = /*#__PURE__*/__webpack_require__.n(installComponents);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VCol.js
-var VCol = __webpack_require__(194);
+var VCol = __webpack_require__(185);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VRow.js
-var VRow = __webpack_require__(195);
+var VRow = __webpack_require__(186);
 
 // CONCATENATED MODULE: ./components/Overview/CardDataLeaf.vue
 

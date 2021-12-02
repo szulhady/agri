@@ -43,7 +43,7 @@ module.exports =
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("./" + ({"1":"components/admin-overview-card-data-leaf-admin","2":"components/admin-overview-card-data-soil-admin","3":"components/admin-overview-card-data-water-admin","4":"components/admin-overview-card-overview-data-admin","5":"components/admin-overview-card-summary-admin","6":"components/admin-overview-ipah-status-admin","7":"components/admin-overview-ipah2-status-admin","8":"components/admin-overview-single-data","9":"components/admin-overview-tkpm-pagoh-status-admin","10":"components/card-title","11":"components/control-pump-status","12":"components/detail-layout","13":"components/detail-layout-full","14":"components/detail-layout2","15":"components/detail-layout3","16":"components/detail-layout4","17":"components/detail-operation-information","18":"components/detail-report","19":"components/detail-users","20":"components/detail-yield-crop-information","21":"components/duration","22":"components/general-user-info","23":"components/login-form","24":"components/logo","25":"components/notification","26":"components/overview-card-data-leaf","27":"components/overview-card-data-soil","28":"components/overview-card-data-water","29":"components/overview-card-overview-data","30":"components/overview-card-server","31":"components/overview-card-summary","32":"components/overview-card-weather3","33":"components/overview-single-data","34":"components/overview-single-gauge","35":"components/overview-single-server","36":"components/overview-single-summary","37":"components/overview-single-weather","38":"components/overview-single-weather-main","39":"components/overview-table","40":"components/page-title","41":"components/register-form2","42":"components/schedule-calendar","43":"components/schedule-table-schedule","44":"components/schedule-table-schedule-nutrient","45":"components/schedule-time","46":"components/status-ipah1-status","47":"components/status-ipah2-status","48":"components/status-kong-po-status","49":"components/status-tkpm-pagoh-status","50":"components/trend-card-station-trend-ipah1","51":"components/trend-card-station-trend-ipah2","52":"components/trend-card-station-trend-kong-po","53":"components/trend-card-station-trend-tkpm-pagoh","54":"components/trend-line-chart","55":"components/trend-line-chart-single-data","56":"components/vuetify-logo","57":"pages/adminDetail","58":"pages/adminStatus","59":"pages/control","60":"pages/current","61":"pages/detail","62":"pages/general","63":"pages/index","64":"pages/inspire","65":"pages/ipah2Status","66":"pages/ipahStatus","67":"pages/kongPoStatus","68":"pages/login","69":"pages/overview-admin","70":"pages/register","71":"pages/scheduleIpah1","72":"pages/scheduleIpah2","73":"pages/scheduleKongPo","74":"pages/scheduleTkpmPagoh","75":"pages/tkpmPagohStatus","76":"pages/trendsIpah1","77":"pages/trendsIpah2","78":"pages/trendsKongPo","79":"pages/trendsTkpmPagoh","80":"pages/user"}[chunkId]||chunkId) + ".js");
+/******/ 			var chunk = require("./" + ({"1":"components/admin-overview-card-data-leaf-admin","2":"components/admin-overview-card-data-soil-admin","3":"components/admin-overview-card-data-water-admin","4":"components/admin-overview-card-overview-data-admin","5":"components/admin-overview-card-summary-admin","6":"components/admin-overview-ipah-status-admin","7":"components/admin-overview-ipah2-status-admin","8":"components/admin-overview-single-data","9":"components/admin-overview-tkpm-pagoh-status-admin","10":"components/card-title","11":"components/control-pump-status","12":"components/detail-layout","13":"components/detail-layout-full","14":"components/detail-layout2","15":"components/detail-layout3","16":"components/detail-layout4","17":"components/detail-operation-information","18":"components/detail-report","19":"components/detail-users","20":"components/detail-yield-crop-information","21":"components/duration","22":"components/general-user-info","23":"components/login-form","24":"components/logo","25":"components/notification","26":"components/overview-card-data-leaf","27":"components/overview-card-data-soil","28":"components/overview-card-data-water","29":"components/overview-card-overview-data","30":"components/overview-card-server","31":"components/overview-card-summary","32":"components/overview-card-weather3","33":"components/overview-single-data","34":"components/overview-single-gauge","35":"components/overview-single-server","36":"components/overview-single-summary","37":"components/overview-single-weather","38":"components/overview-single-weather-main","39":"components/overview-table","40":"components/page-title","41":"components/register-form2","42":"components/schedule-calendar","43":"components/schedule-table-schedule","44":"components/schedule-table-schedule-nutrient","45":"components/schedule-time","46":"components/status-ipah1-status","47":"components/status-ipah2-status","48":"components/status-kong-po-status","49":"components/status-tkpm-pagoh-status","50":"components/trend-card-station-trend-ipah1","51":"components/trend-card-station-trend-ipah2","52":"components/trend-card-station-trend-kong-po","53":"components/trend-card-station-trend-tkpm-pagoh","54":"components/trend-line-chart","55":"components/trend-line-chart-single-data","56":"components/vuetify-logo","57":"pages/adminDetail","58":"pages/adminDetailIpah1","59":"pages/adminStatus","60":"pages/control","61":"pages/current","62":"pages/detail","63":"pages/general","64":"pages/index","65":"pages/inspire","66":"pages/ipah2Status","67":"pages/ipahStatus","68":"pages/kongPoStatus","69":"pages/login","70":"pages/overview-admin","71":"pages/register","72":"pages/scheduleIpah1","73":"pages/scheduleIpah2","74":"pages/scheduleKongPo","75":"pages/scheduleTkpmPagoh","76":"pages/tkpmPagohStatus","77":"pages/trendsIpah1","78":"pages/trendsIpah2","79":"pages/trendsKongPo","80":"pages/trendsTkpmPagoh","81":"pages/user"}[chunkId]||chunkId) + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -12746,53 +12746,55 @@ function shouldScrollToTop(route) {
 
 
 
-const _d4a5737c = () => interopDefault(__webpack_require__.e(/* import() | pages/adminDetail */ 57).then(__webpack_require__.bind(null, 453)));
+const _d4a5737c = () => interopDefault(__webpack_require__.e(/* import() | pages/adminDetail */ 57).then(__webpack_require__.bind(null, 456)));
 
-const _3b8b753a = () => interopDefault(__webpack_require__.e(/* import() | pages/adminStatus */ 58).then(__webpack_require__.bind(null, 454)));
+const _27abd41e = () => interopDefault(__webpack_require__.e(/* import() | pages/adminDetailIpah1 */ 58).then(__webpack_require__.bind(null, 457)));
 
-const _3cd3ecc2 = () => interopDefault(__webpack_require__.e(/* import() | pages/control */ 59).then(__webpack_require__.bind(null, 455)));
+const _3b8b753a = () => interopDefault(__webpack_require__.e(/* import() | pages/adminStatus */ 59).then(__webpack_require__.bind(null, 458)));
 
-const _6ba8f3bb = () => interopDefault(__webpack_require__.e(/* import() | pages/current */ 60).then(__webpack_require__.bind(null, 456)));
+const _3cd3ecc2 = () => interopDefault(__webpack_require__.e(/* import() | pages/control */ 60).then(__webpack_require__.bind(null, 459)));
 
-const _b918b602 = () => interopDefault(__webpack_require__.e(/* import() | pages/detail */ 61).then(__webpack_require__.bind(null, 457)));
+const _6ba8f3bb = () => interopDefault(__webpack_require__.e(/* import() | pages/current */ 61).then(__webpack_require__.bind(null, 460)));
 
-const _7c34efaa = () => interopDefault(__webpack_require__.e(/* import() | pages/general */ 62).then(__webpack_require__.bind(null, 458)));
+const _b918b602 = () => interopDefault(__webpack_require__.e(/* import() | pages/detail */ 62).then(__webpack_require__.bind(null, 461)));
 
-const _4dc3dec8 = () => interopDefault(__webpack_require__.e(/* import() | pages/inspire */ 64).then(__webpack_require__.bind(null, 483)));
+const _7c34efaa = () => interopDefault(__webpack_require__.e(/* import() | pages/general */ 63).then(__webpack_require__.bind(null, 462)));
 
-const _2c0b3238 = () => interopDefault(__webpack_require__.e(/* import() | pages/ipah2Status */ 65).then(__webpack_require__.bind(null, 459)));
+const _4dc3dec8 = () => interopDefault(__webpack_require__.e(/* import() | pages/inspire */ 65).then(__webpack_require__.bind(null, 487)));
 
-const _465bd164 = () => interopDefault(__webpack_require__.e(/* import() | pages/ipahStatus */ 66).then(__webpack_require__.bind(null, 460)));
+const _2c0b3238 = () => interopDefault(__webpack_require__.e(/* import() | pages/ipah2Status */ 66).then(__webpack_require__.bind(null, 463)));
 
-const _184df5bc = () => interopDefault(__webpack_require__.e(/* import() | pages/kongPoStatus */ 67).then(__webpack_require__.bind(null, 461)));
+const _465bd164 = () => interopDefault(__webpack_require__.e(/* import() | pages/ipahStatus */ 67).then(__webpack_require__.bind(null, 464)));
 
-const _5ea8b02b = () => interopDefault(__webpack_require__.e(/* import() | pages/login */ 68).then(__webpack_require__.bind(null, 462)));
+const _184df5bc = () => interopDefault(__webpack_require__.e(/* import() | pages/kongPoStatus */ 68).then(__webpack_require__.bind(null, 465)));
 
-const _4baaf7a9 = () => interopDefault(__webpack_require__.e(/* import() | pages/overview-admin */ 69).then(__webpack_require__.bind(null, 463)));
+const _5ea8b02b = () => interopDefault(__webpack_require__.e(/* import() | pages/login */ 69).then(__webpack_require__.bind(null, 466)));
 
-const _4ebdf4d1 = () => interopDefault(__webpack_require__.e(/* import() | pages/register */ 70).then(__webpack_require__.bind(null, 464)));
+const _4baaf7a9 = () => interopDefault(__webpack_require__.e(/* import() | pages/overview-admin */ 70).then(__webpack_require__.bind(null, 467)));
 
-const _54cff74e = () => interopDefault(__webpack_require__.e(/* import() | pages/scheduleIpah1 */ 71).then(__webpack_require__.bind(null, 465)));
+const _4ebdf4d1 = () => interopDefault(__webpack_require__.e(/* import() | pages/register */ 71).then(__webpack_require__.bind(null, 468)));
 
-const _54de0ecf = () => interopDefault(__webpack_require__.e(/* import() | pages/scheduleIpah2 */ 72).then(__webpack_require__.bind(null, 466)));
+const _54cff74e = () => interopDefault(__webpack_require__.e(/* import() | pages/scheduleIpah1 */ 72).then(__webpack_require__.bind(null, 469)));
 
-const _39401fbe = () => interopDefault(__webpack_require__.e(/* import() | pages/scheduleKongPo */ 73).then(__webpack_require__.bind(null, 467)));
+const _54de0ecf = () => interopDefault(__webpack_require__.e(/* import() | pages/scheduleIpah2 */ 73).then(__webpack_require__.bind(null, 470)));
 
-const _0cf22a06 = () => interopDefault(__webpack_require__.e(/* import() | pages/scheduleTkpmPagoh */ 74).then(__webpack_require__.bind(null, 468)));
+const _39401fbe = () => interopDefault(__webpack_require__.e(/* import() | pages/scheduleKongPo */ 74).then(__webpack_require__.bind(null, 471)));
 
-const _95c9b6a2 = () => interopDefault(__webpack_require__.e(/* import() | pages/tkpmPagohStatus */ 75).then(__webpack_require__.bind(null, 469)));
+const _0cf22a06 = () => interopDefault(__webpack_require__.e(/* import() | pages/scheduleTkpmPagoh */ 75).then(__webpack_require__.bind(null, 472)));
 
-const _7a0ee4cf = () => interopDefault(__webpack_require__.e(/* import() | pages/trendsIpah1 */ 76).then(__webpack_require__.bind(null, 470)));
+const _95c9b6a2 = () => interopDefault(__webpack_require__.e(/* import() | pages/tkpmPagohStatus */ 76).then(__webpack_require__.bind(null, 473)));
 
-const _7a1cfc50 = () => interopDefault(__webpack_require__.e(/* import() | pages/trendsIpah2 */ 77).then(__webpack_require__.bind(null, 471)));
+const _7a0ee4cf = () => interopDefault(__webpack_require__.e(/* import() | pages/trendsIpah1 */ 77).then(__webpack_require__.bind(null, 474)));
 
-const _65feb2c0 = () => interopDefault(__webpack_require__.e(/* import() | pages/trendsKongPo */ 78).then(__webpack_require__.bind(null, 472)));
+const _7a1cfc50 = () => interopDefault(__webpack_require__.e(/* import() | pages/trendsIpah2 */ 78).then(__webpack_require__.bind(null, 475)));
 
-const _760c6f07 = () => interopDefault(__webpack_require__.e(/* import() | pages/trendsTkpmPagoh */ 79).then(__webpack_require__.bind(null, 473)));
+const _65feb2c0 = () => interopDefault(__webpack_require__.e(/* import() | pages/trendsKongPo */ 79).then(__webpack_require__.bind(null, 476)));
 
-const _40bbd8f9 = () => interopDefault(__webpack_require__.e(/* import() | pages/user */ 80).then(__webpack_require__.bind(null, 474)));
+const _760c6f07 = () => interopDefault(__webpack_require__.e(/* import() | pages/trendsTkpmPagoh */ 80).then(__webpack_require__.bind(null, 477)));
 
-const _d5fde5d8 = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 63).then(__webpack_require__.bind(null, 475)));
+const _40bbd8f9 = () => interopDefault(__webpack_require__.e(/* import() | pages/user */ 81).then(__webpack_require__.bind(null, 478)));
+
+const _d5fde5d8 = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 64).then(__webpack_require__.bind(null, 479)));
 
 const emptyFn = () => {};
 
@@ -12807,6 +12809,10 @@ const routerOptions = {
     path: "/adminDetail",
     component: _d4a5737c,
     name: "adminDetail"
+  }, {
+    path: "/adminDetailIpah1",
+    component: _27abd41e,
+    name: "adminDetailIpah1"
   }, {
     path: "/adminStatus",
     component: _3b8b753a,
@@ -15929,12 +15935,12 @@ var login_component = Object(componentNormalizer["a" /* default */])(
 
 installComponents_default()(login_component, {VMain: VMain_VMain})
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/status.vue?vue&type=template&id=f06c3e68&
-var statusvue_type_template_id_f06c3e68_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-app',{attrs:{"dark":""}},[_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":"","temporary":""},model:{value:(_vm.drawer),callback:function ($$v) {_vm.drawer=$$v},expression:"drawer"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1),_vm._v(" "),_c('v-app-bar',{attrs:{"fixed":"","app":""}},[_c('v-app-bar-nav-icon',{staticStyle:{"color":"white"},on:{"click":function($event){$event.stopPropagation();_vm.drawer = !_vm.drawer}}}),_vm._v(" "),_c('v-toolbar-title',{staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name"},[_c('h4',{staticStyle:{"color":"white"}},[_vm._v(_vm._s(_vm.loggedInUser.username))])]):_vm._e(),_vm._v(" "),_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1),_vm._v(" "),_c('v-main',[_c('v-container',[_c('nuxt')],1)],1),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('div',{staticClass:"layer",attrs:{"id":"layer"}}):_vm._e()]),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('v-card',{staticClass:"logout elevation-12"},[_c('v-card-title',[_vm._v("\n        Logout\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("\n        Are you sure?\n      ")]),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"success logout-btn",on:{"click":_vm.logout}},[_vm._v("Yes")]),_vm._v(" "),_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1):_vm._e()],1),_vm._v(" "),_c('v-footer',{attrs:{"absolute":!_vm.fixed,"app":""}},[_c('span',[_vm._v("© "+_vm._s(new Date().getFullYear()))])])],1)}
-var statusvue_type_template_id_f06c3e68_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/status.vue?vue&type=template&id=8774f7ca&
+var statusvue_type_template_id_8774f7ca_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-app',{attrs:{"dark":""}},[_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":"","temporary":""},model:{value:(_vm.drawer),callback:function ($$v) {_vm.drawer=$$v},expression:"drawer"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1),_vm._v(" "),_c('v-app-bar',{attrs:{"fixed":"","app":""}},[_c('v-app-bar-nav-icon',{staticStyle:{"color":"white"},on:{"click":function($event){$event.stopPropagation();_vm.drawer = !_vm.drawer}}}),_vm._v(" "),_c('v-toolbar-title',{staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name"},[_c('h4',{staticStyle:{"color":"white"}},[_vm._v(_vm._s(_vm.loggedInUser.username))])]):_vm._e(),_vm._v(" "),_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1),_vm._v(" "),_c('v-main',[_c('v-container',[_c('nuxt')],1)],1),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('div',{staticClass:"layer",attrs:{"id":"layer"}}):_vm._e()]),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('v-card',{staticClass:"logout elevation-12"},[_c('v-card-title',[_vm._v("\n        Logout\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("\n        Are you sure?\n      ")]),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"success logout-btn",on:{"click":_vm.logout}},[_vm._v("Yes")]),_vm._v(" "),_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1):_vm._e()],1),_vm._v(" "),_c('v-footer',{attrs:{"absolute":!_vm.fixed,"app":""}},[_c('span',[_vm._v("© "+_vm._s(new Date().getFullYear()))])])],1)}
+var statusvue_type_template_id_8774f7ca_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./layouts/status.vue?vue&type=template&id=f06c3e68&
+// CONCATENATED MODULE: ./layouts/status.vue?vue&type=template&id=8774f7ca&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/status.vue?vue&type=script&lang=js&
 //
@@ -16237,7 +16243,7 @@ var statusvue_type_template_id_f06c3e68_staticRenderFns = []
           this.ipahStatus(message);
         }
 
-        if (topic === "np/s/tkpmIpah/c") {
+        if (topic === "np/s/tkpmIpah/c/true") {
           message = JSON.parse(message);
           console.log(message);
           this.tkpmIpahStatus(message);
@@ -16510,8 +16516,8 @@ if (style0.__inject__) style0.__inject__(context)
 
 var status_component = Object(componentNormalizer["a" /* default */])(
   layouts_statusvue_type_script_lang_js_,
-  statusvue_type_template_id_f06c3e68_render,
-  statusvue_type_template_id_f06c3e68_staticRenderFns,
+  statusvue_type_template_id_8774f7ca_render,
+  statusvue_type_template_id_8774f7ca_staticRenderFns,
   false,
   status_injectStyles,
   null,
@@ -16811,61 +16817,61 @@ function wrapFunctional(options) {
 
 
 const components = {
-  CardTitle: () => __webpack_require__.e(/* import() | components/card-title */ 10).then(__webpack_require__.bind(null, 201)).then(c => wrapFunctional(c.default || c)),
+  CardTitle: () => __webpack_require__.e(/* import() | components/card-title */ 10).then(__webpack_require__.bind(null, 199)).then(c => wrapFunctional(c.default || c)),
   Duration: () => __webpack_require__.e(/* import() | components/duration */ 21).then(__webpack_require__.bind(null, 180)).then(c => wrapFunctional(c.default || c)),
-  Logo: () => __webpack_require__.e(/* import() | components/logo */ 24).then(__webpack_require__.bind(null, 484)).then(c => wrapFunctional(c.default || c)),
-  Notification: () => __webpack_require__.e(/* import() | components/notification */ 25).then(__webpack_require__.bind(null, 258)).then(c => wrapFunctional(c.default || c)),
+  Logo: () => __webpack_require__.e(/* import() | components/logo */ 24).then(__webpack_require__.bind(null, 488)).then(c => wrapFunctional(c.default || c)),
+  Notification: () => __webpack_require__.e(/* import() | components/notification */ 25).then(__webpack_require__.bind(null, 261)).then(c => wrapFunctional(c.default || c)),
   PageTitle: () => __webpack_require__.e(/* import() | components/page-title */ 40).then(__webpack_require__.bind(null, 179)).then(c => wrapFunctional(c.default || c)),
-  VuetifyLogo: () => __webpack_require__.e(/* import() | components/vuetify-logo */ 56).then(__webpack_require__.bind(null, 485)).then(c => wrapFunctional(c.default || c)),
-  ControlPumpStatus: () => __webpack_require__.e(/* import() | components/control-pump-status */ 11).then(__webpack_require__.bind(null, 401)).then(c => wrapFunctional(c.default || c)),
-  DetailLayout: () => __webpack_require__.e(/* import() | components/detail-layout */ 12).then(__webpack_require__.bind(null, 476)).then(c => wrapFunctional(c.default || c)),
-  DetailLayout2: () => __webpack_require__.e(/* import() | components/detail-layout2 */ 14).then(__webpack_require__.bind(null, 477)).then(c => wrapFunctional(c.default || c)),
-  DetailLayout3: () => __webpack_require__.e(/* import() | components/detail-layout3 */ 15).then(__webpack_require__.bind(null, 478)).then(c => wrapFunctional(c.default || c)),
-  DetailLayout4: () => __webpack_require__.e(/* import() | components/detail-layout4 */ 16).then(__webpack_require__.bind(null, 479)).then(c => wrapFunctional(c.default || c)),
-  DetailLayoutFull: () => __webpack_require__.e(/* import() | components/detail-layout-full */ 13).then(__webpack_require__.bind(null, 347)).then(c => wrapFunctional(c.default || c)),
-  DetailOperationInformation: () => __webpack_require__.e(/* import() | components/detail-operation-information */ 17).then(__webpack_require__.bind(null, 403)).then(c => wrapFunctional(c.default || c)),
-  DetailReport: () => __webpack_require__.e(/* import() | components/detail-report */ 18).then(__webpack_require__.bind(null, 405)).then(c => wrapFunctional(c.default || c)),
-  DetailUsers: () => __webpack_require__.e(/* import() | components/detail-users */ 19).then(__webpack_require__.bind(null, 402)).then(c => wrapFunctional(c.default || c)),
-  DetailYieldCropInformation: () => __webpack_require__.e(/* import() | components/detail-yield-crop-information */ 20).then(__webpack_require__.bind(null, 404)).then(c => wrapFunctional(c.default || c)),
-  GeneralUserInfo: () => __webpack_require__.e(/* import() | components/general-user-info */ 22).then(__webpack_require__.bind(null, 406)).then(c => wrapFunctional(c.default || c)),
+  VuetifyLogo: () => __webpack_require__.e(/* import() | components/vuetify-logo */ 56).then(__webpack_require__.bind(null, 489)).then(c => wrapFunctional(c.default || c)),
+  ControlPumpStatus: () => __webpack_require__.e(/* import() | components/control-pump-status */ 11).then(__webpack_require__.bind(null, 402)).then(c => wrapFunctional(c.default || c)),
+  DetailLayout: () => __webpack_require__.e(/* import() | components/detail-layout */ 12).then(__webpack_require__.bind(null, 480)).then(c => wrapFunctional(c.default || c)),
+  DetailLayout2: () => __webpack_require__.e(/* import() | components/detail-layout2 */ 14).then(__webpack_require__.bind(null, 481)).then(c => wrapFunctional(c.default || c)),
+  DetailLayout3: () => __webpack_require__.e(/* import() | components/detail-layout3 */ 15).then(__webpack_require__.bind(null, 482)).then(c => wrapFunctional(c.default || c)),
+  DetailLayout4: () => __webpack_require__.e(/* import() | components/detail-layout4 */ 16).then(__webpack_require__.bind(null, 483)).then(c => wrapFunctional(c.default || c)),
+  DetailLayoutFull: () => __webpack_require__.e(/* import() | components/detail-layout-full */ 13).then(__webpack_require__.bind(null, 319)).then(c => wrapFunctional(c.default || c)),
+  DetailOperationInformation: () => __webpack_require__.e(/* import() | components/detail-operation-information */ 17).then(__webpack_require__.bind(null, 404)).then(c => wrapFunctional(c.default || c)),
+  DetailReport: () => __webpack_require__.e(/* import() | components/detail-report */ 18).then(__webpack_require__.bind(null, 406)).then(c => wrapFunctional(c.default || c)),
+  DetailUsers: () => __webpack_require__.e(/* import() | components/detail-users */ 19).then(__webpack_require__.bind(null, 403)).then(c => wrapFunctional(c.default || c)),
+  DetailYieldCropInformation: () => __webpack_require__.e(/* import() | components/detail-yield-crop-information */ 20).then(__webpack_require__.bind(null, 405)).then(c => wrapFunctional(c.default || c)),
+  GeneralUserInfo: () => __webpack_require__.e(/* import() | components/general-user-info */ 22).then(__webpack_require__.bind(null, 407)).then(c => wrapFunctional(c.default || c)),
   LoginForm: () => __webpack_require__.e(/* import() | components/login-form */ 23).then(__webpack_require__.bind(null, 383)).then(c => wrapFunctional(c.default || c)),
   OverviewCardDataLeaf: () => __webpack_require__.e(/* import() | components/overview-card-data-leaf */ 26).then(__webpack_require__.bind(null, 350)).then(c => wrapFunctional(c.default || c)),
   OverviewCardDataSoil: () => __webpack_require__.e(/* import() | components/overview-card-data-soil */ 27).then(__webpack_require__.bind(null, 349)).then(c => wrapFunctional(c.default || c)),
   OverviewCardDataWater: () => __webpack_require__.e(/* import() | components/overview-card-data-water */ 28).then(__webpack_require__.bind(null, 351)).then(c => wrapFunctional(c.default || c)),
-  OverviewCardOverviewData: () => __webpack_require__.e(/* import() | components/overview-card-overview-data */ 29).then(__webpack_require__.bind(null, 416)).then(c => wrapFunctional(c.default || c)),
-  OverviewCardServer: () => __webpack_require__.e(/* import() | components/overview-card-server */ 30).then(__webpack_require__.bind(null, 418)).then(c => wrapFunctional(c.default || c)),
-  OverviewCardSummary: () => __webpack_require__.e(/* import() | components/overview-card-summary */ 31).then(__webpack_require__.bind(null, 415)).then(c => wrapFunctional(c.default || c)),
+  OverviewCardOverviewData: () => __webpack_require__.e(/* import() | components/overview-card-overview-data */ 29).then(__webpack_require__.bind(null, 417)).then(c => wrapFunctional(c.default || c)),
+  OverviewCardServer: () => __webpack_require__.e(/* import() | components/overview-card-server */ 30).then(__webpack_require__.bind(null, 419)).then(c => wrapFunctional(c.default || c)),
+  OverviewCardSummary: () => __webpack_require__.e(/* import() | components/overview-card-summary */ 31).then(__webpack_require__.bind(null, 416)).then(c => wrapFunctional(c.default || c)),
   OverviewCardWeather3: () => __webpack_require__.e(/* import() | components/overview-card-weather3 */ 32).then(__webpack_require__.bind(null, 348)).then(c => wrapFunctional(c.default || c)),
-  OverviewTable: () => __webpack_require__.e(/* import() | components/overview-table */ 39).then(__webpack_require__.bind(null, 417)).then(c => wrapFunctional(c.default || c)),
-  RegisterForm2: () => __webpack_require__.e(/* import() | components/register-form2 */ 41).then(__webpack_require__.bind(null, 410)).then(c => wrapFunctional(c.default || c)),
-  ScheduleCalendar: () => __webpack_require__.e(/* import() | components/schedule-calendar */ 42).then(__webpack_require__.bind(null, 291)).then(c => wrapFunctional(c.default || c)),
-  ScheduleTableSchedule: () => __webpack_require__.e(/* import() | components/schedule-table-schedule */ 43).then(__webpack_require__.bind(null, 293)).then(c => wrapFunctional(c.default || c)),
-  ScheduleTableScheduleNutrient: () => __webpack_require__.e(/* import() | components/schedule-table-schedule-nutrient */ 44).then(__webpack_require__.bind(null, 294)).then(c => wrapFunctional(c.default || c)),
-  ScheduleTime: () => __webpack_require__.e(/* import() | components/schedule-time */ 45).then(__webpack_require__.bind(null, 292)).then(c => wrapFunctional(c.default || c)),
-  StatusIpah1Status: () => __webpack_require__.e(/* import() | components/status-ipah1-status */ 46).then(__webpack_require__.bind(null, 313)).then(c => wrapFunctional(c.default || c)),
-  StatusIpah2Status: () => __webpack_require__.e(/* import() | components/status-ipah2-status */ 47).then(__webpack_require__.bind(null, 314)).then(c => wrapFunctional(c.default || c)),
-  StatusKongPoStatus: () => __webpack_require__.e(/* import() | components/status-kong-po-status */ 48).then(__webpack_require__.bind(null, 407)).then(c => wrapFunctional(c.default || c)),
-  StatusTkpmPagohStatus: () => __webpack_require__.e(/* import() | components/status-tkpm-pagoh-status */ 49).then(__webpack_require__.bind(null, 315)).then(c => wrapFunctional(c.default || c)),
-  TrendCardStationTrendIpah1: () => __webpack_require__.e(/* import() | components/trend-card-station-trend-ipah1 */ 50).then(__webpack_require__.bind(null, 411)).then(c => wrapFunctional(c.default || c)),
-  TrendCardStationTrendIpah2: () => __webpack_require__.e(/* import() | components/trend-card-station-trend-ipah2 */ 51).then(__webpack_require__.bind(null, 412)).then(c => wrapFunctional(c.default || c)),
-  TrendCardStationTrendKongPo: () => __webpack_require__.e(/* import() | components/trend-card-station-trend-kong-po */ 52).then(__webpack_require__.bind(null, 413)).then(c => wrapFunctional(c.default || c)),
-  TrendCardStationTrendTkpmPagoh: () => __webpack_require__.e(/* import() | components/trend-card-station-trend-tkpm-pagoh */ 53).then(__webpack_require__.bind(null, 414)).then(c => wrapFunctional(c.default || c)),
+  OverviewTable: () => __webpack_require__.e(/* import() | components/overview-table */ 39).then(__webpack_require__.bind(null, 418)).then(c => wrapFunctional(c.default || c)),
+  RegisterForm2: () => __webpack_require__.e(/* import() | components/register-form2 */ 41).then(__webpack_require__.bind(null, 411)).then(c => wrapFunctional(c.default || c)),
+  ScheduleCalendar: () => __webpack_require__.e(/* import() | components/schedule-calendar */ 42).then(__webpack_require__.bind(null, 300)).then(c => wrapFunctional(c.default || c)),
+  ScheduleTableSchedule: () => __webpack_require__.e(/* import() | components/schedule-table-schedule */ 43).then(__webpack_require__.bind(null, 302)).then(c => wrapFunctional(c.default || c)),
+  ScheduleTableScheduleNutrient: () => __webpack_require__.e(/* import() | components/schedule-table-schedule-nutrient */ 44).then(__webpack_require__.bind(null, 303)).then(c => wrapFunctional(c.default || c)),
+  ScheduleTime: () => __webpack_require__.e(/* import() | components/schedule-time */ 45).then(__webpack_require__.bind(null, 301)).then(c => wrapFunctional(c.default || c)),
+  StatusIpah1Status: () => __webpack_require__.e(/* import() | components/status-ipah1-status */ 46).then(__webpack_require__.bind(null, 296)).then(c => wrapFunctional(c.default || c)),
+  StatusIpah2Status: () => __webpack_require__.e(/* import() | components/status-ipah2-status */ 47).then(__webpack_require__.bind(null, 297)).then(c => wrapFunctional(c.default || c)),
+  StatusKongPoStatus: () => __webpack_require__.e(/* import() | components/status-kong-po-status */ 48).then(__webpack_require__.bind(null, 408)).then(c => wrapFunctional(c.default || c)),
+  StatusTkpmPagohStatus: () => __webpack_require__.e(/* import() | components/status-tkpm-pagoh-status */ 49).then(__webpack_require__.bind(null, 298)).then(c => wrapFunctional(c.default || c)),
+  TrendCardStationTrendIpah1: () => __webpack_require__.e(/* import() | components/trend-card-station-trend-ipah1 */ 50).then(__webpack_require__.bind(null, 412)).then(c => wrapFunctional(c.default || c)),
+  TrendCardStationTrendIpah2: () => __webpack_require__.e(/* import() | components/trend-card-station-trend-ipah2 */ 51).then(__webpack_require__.bind(null, 413)).then(c => wrapFunctional(c.default || c)),
+  TrendCardStationTrendKongPo: () => __webpack_require__.e(/* import() | components/trend-card-station-trend-kong-po */ 52).then(__webpack_require__.bind(null, 414)).then(c => wrapFunctional(c.default || c)),
+  TrendCardStationTrendTkpmPagoh: () => __webpack_require__.e(/* import() | components/trend-card-station-trend-tkpm-pagoh */ 53).then(__webpack_require__.bind(null, 415)).then(c => wrapFunctional(c.default || c)),
   TrendLineChart: () => __webpack_require__.e(/* import() | components/trend-line-chart */ 54).then(__webpack_require__.bind(null, 237)).then(c => wrapFunctional(c.default || c)),
   TrendLineChartSingleData: () => __webpack_require__.e(/* import() | components/trend-line-chart-single-data */ 55).then(__webpack_require__.bind(null, 238)).then(c => wrapFunctional(c.default || c)),
-  AdminOverviewCardDataLeafAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-card-data-leaf-admin */ 1).then(__webpack_require__.bind(null, 317)).then(c => wrapFunctional(c.default || c)),
-  AdminOverviewCardDataSoilAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-card-data-soil-admin */ 2).then(__webpack_require__.bind(null, 316)).then(c => wrapFunctional(c.default || c)),
-  AdminOverviewCardDataWaterAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-card-data-water-admin */ 3).then(__webpack_require__.bind(null, 318)).then(c => wrapFunctional(c.default || c)),
-  AdminOverviewCardOverviewDataAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-card-overview-data-admin */ 4).then(__webpack_require__.bind(null, 409)).then(c => wrapFunctional(c.default || c)),
-  AdminOverviewCardSummaryAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-card-summary-admin */ 5).then(__webpack_require__.bind(null, 408)).then(c => wrapFunctional(c.default || c)),
-  AdminOverviewIpah2StatusAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-ipah2-status-admin */ 7).then(__webpack_require__.bind(null, 480)).then(c => wrapFunctional(c.default || c)),
-  AdminOverviewIpahStatusAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-ipah-status-admin */ 6).then(__webpack_require__.bind(null, 481)).then(c => wrapFunctional(c.default || c)),
-  AdminOverviewTkpmPagohStatusAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-tkpm-pagoh-status-admin */ 9).then(__webpack_require__.bind(null, 482)).then(c => wrapFunctional(c.default || c)),
+  AdminOverviewCardDataLeafAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-card-data-leaf-admin */ 1).then(__webpack_require__.bind(null, 321)).then(c => wrapFunctional(c.default || c)),
+  AdminOverviewCardDataSoilAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-card-data-soil-admin */ 2).then(__webpack_require__.bind(null, 320)).then(c => wrapFunctional(c.default || c)),
+  AdminOverviewCardDataWaterAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-card-data-water-admin */ 3).then(__webpack_require__.bind(null, 322)).then(c => wrapFunctional(c.default || c)),
+  AdminOverviewCardOverviewDataAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-card-overview-data-admin */ 4).then(__webpack_require__.bind(null, 410)).then(c => wrapFunctional(c.default || c)),
+  AdminOverviewCardSummaryAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-card-summary-admin */ 5).then(__webpack_require__.bind(null, 409)).then(c => wrapFunctional(c.default || c)),
+  AdminOverviewIpah2StatusAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-ipah2-status-admin */ 7).then(__webpack_require__.bind(null, 484)).then(c => wrapFunctional(c.default || c)),
+  AdminOverviewIpahStatusAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-ipah-status-admin */ 6).then(__webpack_require__.bind(null, 485)).then(c => wrapFunctional(c.default || c)),
+  AdminOverviewTkpmPagohStatusAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-tkpm-pagoh-status-admin */ 9).then(__webpack_require__.bind(null, 486)).then(c => wrapFunctional(c.default || c)),
   OverviewSingleData: () => __webpack_require__.e(/* import() | components/overview-single-data */ 33).then(__webpack_require__.bind(null, 273)).then(c => wrapFunctional(c.default || c)),
-  OverviewSingleGauge: () => __webpack_require__.e(/* import() | components/overview-single-gauge */ 34).then(__webpack_require__.bind(null, 253)).then(c => wrapFunctional(c.default || c)),
+  OverviewSingleGauge: () => __webpack_require__.e(/* import() | components/overview-single-gauge */ 34).then(__webpack_require__.bind(null, 256)).then(c => wrapFunctional(c.default || c)),
   OverviewSingleServer: () => __webpack_require__.e(/* import() | components/overview-single-server */ 35).then(__webpack_require__.bind(null, 352)).then(c => wrapFunctional(c.default || c)),
-  OverviewSingleSummary: () => __webpack_require__.e(/* import() | components/overview-single-summary */ 36).then(__webpack_require__.bind(null, 290)).then(c => wrapFunctional(c.default || c)),
-  OverviewSingleWeather: () => __webpack_require__.e(/* import() | components/overview-single-weather */ 37).then(__webpack_require__.bind(null, 320)).then(c => wrapFunctional(c.default || c)),
-  OverviewSingleWeatherMain: () => __webpack_require__.e(/* import() | components/overview-single-weather-main */ 38).then(__webpack_require__.bind(null, 319)).then(c => wrapFunctional(c.default || c)),
+  OverviewSingleSummary: () => __webpack_require__.e(/* import() | components/overview-single-summary */ 36).then(__webpack_require__.bind(null, 299)).then(c => wrapFunctional(c.default || c)),
+  OverviewSingleWeather: () => __webpack_require__.e(/* import() | components/overview-single-weather */ 37).then(__webpack_require__.bind(null, 324)).then(c => wrapFunctional(c.default || c)),
+  OverviewSingleWeatherMain: () => __webpack_require__.e(/* import() | components/overview-single-weather-main */ 38).then(__webpack_require__.bind(null, 323)).then(c => wrapFunctional(c.default || c)),
   AdminOverviewSingleData: () => __webpack_require__.e(/* import() | components/admin-overview-single-data */ 8).then(__webpack_require__.bind(null, 231)).then(c => wrapFunctional(c.default || c))
 };
 

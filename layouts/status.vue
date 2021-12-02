@@ -311,7 +311,7 @@ export default {
           this.ipahStatus(message);
         }
 
-        if (topic === "np/s/tkpmIpah/c") {
+        if (topic === "np/s/tkpmIpah/c/true") {
           message = JSON.parse(message);
           console.log(message);
           this.tkpmIpahStatus(message);
