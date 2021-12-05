@@ -87,8 +87,8 @@
                     stop filling process.
                   </h4>
                   <div style="display:flex; justify-content:space-evenly">
-                    <v-btn disabled @click="fill" class="mt-4 mb-4">FILL</v-btn>
-                    <v-btn disabled @click="stop" class="mt-4 mb-4">STOP</v-btn>
+                    <v-btn @click="fill" class="mt-4 mb-4">FILL</v-btn>
+                    <v-btn @click="stop" class="mt-4 mb-4">STOP</v-btn>
                   </div>
                 </div>
                 <v-card-title>

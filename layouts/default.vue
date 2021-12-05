@@ -186,7 +186,7 @@ export default {
             this.$auth.$state.user.station[0] == "kongPo",
           // this.$auth.user.userId == 9,
           to: "/scheduleKongPo"
-        }
+        },
         // {
         //   icon: "mdi-chart-areaspline",
         //   title: "TRENDS",
@@ -223,12 +223,12 @@ export default {
         //   // this.$auth.user.userId == 8,
         //   to: "/trendsKongPo"
         // },
-        // {
-        //   icon: "mdi-book-open-variant",
-        //   title: "INPUT",
-        //   state: this.$auth.hasScope("user"),
-        //   to: "/detail"
-        // }
+        {
+          icon: "mdi-book-open-variant",
+          title: "INPUT",
+          state: this.$auth.hasScope("user"),
+          to: "/detail"
+        }
       ],
       miniVariant: false,
       title: "SMART FERTIGATION DASHBOARD",
@@ -242,7 +242,7 @@ export default {
       },
       subscription: {
         // topic: "geyzer/#",
-        topic: ["nexplex/sense/#", "np/s/#"],
+        topic: ["nexplex/sense/#", "np/s/#", "new/nexplex/#"],
         qos: 0
       },
       receiveNews: "",
@@ -575,21 +575,21 @@ export default {
             pH: message.pH
             // EC: message.EC
           };
-          console.log(message);
-          console.log(payload);
+          // console.log(message);
+          // console.log(payload);
           this.getCurrentDataNutrientIpah1(payload);
         }
 
-        if (topic == "nexplex/sense") {
-          message = JSON.parse(message);
-          if (TID == 318) {
-            let payload = {
-              station: 0,
-              EC: message.EC
-            };
-            this.getCurrentDataNutrientIpah1EC(payload);
-          }
-        }
+        // if (topic == "nexplex/sense") {
+        //   message = JSON.parse(message);
+        //   if (TID == 318) {
+        //     let payload = {
+        //       station: 0,
+        //       EC: message.EC
+        //     };
+        //     this.getCurrentDataNutrientIpah1EC(payload);
+        //   }
+        // }
 
         if (topic === "nexplex/sense/tkpmIpah/block1") {
           message = JSON.parse(message);
@@ -694,10 +694,10 @@ export default {
 
         if (topic === "np/s/tkpmIpah/n") {
           message = JSON.parse(message);
-          console.log(message);
+          // console.log(message);
         }
 
-        if (topic === "nexplex/sense/tkpmPagoh/block1") {
+        if (topic === "new/nexplex/tkpmPagoh/sense/block1") {
           message = JSON.parse(message);
           let payload = {
             station: 2,
@@ -731,7 +731,7 @@ export default {
           this.countWarningsTkpmPagoh(data);
         }
 
-        if (topic === "nexplex/sense/tkpmPagoh/block2") {
+        if (topic === "new/nexplex/tkpmPagoh/sense/block2") {
           message = JSON.parse(message);
           let payload = {
             station: 2,
@@ -764,7 +764,7 @@ export default {
           this.countWarningsTkpmPagoh(data);
         }
 
-        if (topic === "nexplex/sense/tkpmPagoh/block3") {
+        if (topic === "new/nexplex/tkpmPagoh/sense/block3") {
           message = JSON.parse(message);
           let payload = {
             station: 2,
@@ -798,9 +798,16 @@ export default {
         }
 
         if (topic === "nexplex/sense") {
-          console.log(message);
+          // console.log(message);
           try {
             message = JSON.parse(message);
+            if (TID == 318) {
+              let payload = {
+                station: 0,
+                EC: message.EC
+              };
+              this.getCurrentDataNutrientIpah1EC(payload);
+            }
             if (message.ID == 301) {
               let payload1 = {
                 station: 3,

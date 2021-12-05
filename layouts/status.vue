@@ -232,7 +232,7 @@ export default {
       },
       subscription: {
         // topic: "geyzer/#",
-        topic: ["np/#"],
+        topic: ["np/#", "new/#"],
         qos: 0
       },
       receiveNews: "",
@@ -311,13 +311,13 @@ export default {
           this.ipahStatus(message);
         }
 
-        if (topic === "np/s/tkpmIpah/c/true") {
+        if (topic === "new/np/tkpmIpah/s/c/true") {
           message = JSON.parse(message);
           console.log(message);
           this.tkpmIpahStatus(message);
         }
 
-        if (topic === "np/s/tkpmPagoh/c") {
+        if (topic === "new/np/tkpmPagoh/s/c/true") {
           message = JSON.parse(message);
           console.log(message);
           this.tkpmPagohStatus(message);
@@ -500,7 +500,8 @@ export default {
     },
     tkpmPagohManualStop: function() {
       if (this.tkpmPagohManualStop == true) {
-        this.client.publish("np/c/tkpmPagoh/wf", "20");
+        console.log("404");
+        this.client.publish("np/c/tkpmPagoh/wf", "404");
         // console.log("np/c/tkpmPagoh/wf", "20");
       }
       this.setTkpmPagohManualStop(false);

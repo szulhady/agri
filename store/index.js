@@ -3058,17 +3058,51 @@ export const mutations = {
       }
 
       //Water Filling (Nutrient preparation)
-      if(payload.WF==1){
+      if(payload.WF1==1){
+        state.tkpmPagohStatus.SV1=1
         state.tkpmPagohStatus.SV3=1
         state.tkpmPagohStatus.SV5=1
         state.tkpmPagohStatus.P1=1
+        // console.log(state.tkpmPagohStatus.SV1)
+        // state.tkpmPagohStatus.SV6=1
+        // state.tkpmPagohStatus.SV8=1
+        // state.tkpmPagohStatus.P2=1
+        // state.tkpmPagohStatus.SV9=1
+        // state.tkpmPagohStatus.SV11=1
+        // state.tkpmPagohStatus.P3=1
+        state.tkpmPagohProcess = 'Water filling process in fertilizer solution tank 1.'
+      }
+
+      if(payload.WF2==0){
+        state.tkpmPagohStatus.SV2=1
         state.tkpmPagohStatus.SV6=1
         state.tkpmPagohStatus.SV8=1
         state.tkpmPagohStatus.P2=1
+        state.tkpmPagohProcess = 'Water filling process in fertilizer solution tank 2.'
+        console.log(state.tkpmPagohStatus)
+      }
+
+      if(payload.WF3==1){
         state.tkpmPagohStatus.SV9=1
         state.tkpmPagohStatus.SV11=1
         state.tkpmPagohStatus.P3=1
-        state.tkpmPagohProcess = 'Nutrient preparation. Water filling process in fertilizer solution tank.'
+        state.tkpmPagohProcess = 'Water filling process in fertilizer solution tank 3.'
+      }
+
+      if(payload.WF1==1 && payload.WF2==1){
+        state.tkpmPagohProcess = 'Water filling process in fertilizer solution tank 1 and 2.'
+      }
+
+      if(payload.WF1==1 && payload.WF3==1){
+        state.tkpmPagohProcess = 'Water filling process in fertilizer solution tank 1 and 3.'
+      }
+
+      if(payload.WF2==1 && payload.WF3==1){
+        state.tkpmPagohProcess = 'Water filling process in fertilizer solution tank 2 and 3.'
+      }
+
+      if(payload.WF1==1 && payload.WF2==1 && payload.WF3==1){
+        state.tkpmPagohProcess = 'Water filling process in all fertilizer solution tanks.'
       }
 
       // Logic for water dripping on blocks
@@ -3100,7 +3134,7 @@ export const mutations = {
       }
       
       // System idle. No process
-      if(payload.WDB1==0 && payload.WDB2==0 && payload.WDB3==0 && payload.NDB1==0 && payload.NDB2==0 && payload.NDB3==0 && payload.NF==0 && payload.WF==0){
+      if(payload.WDB1==0 && payload.WDB2==0 && payload.WDB3==0 && payload.NDB1==0 && payload.NDB2==0 && payload.NDB3==0 && payload.NF==0 && payload.WF1==0 && payload.WF2 == 0 && payload.WF3 == 0){
         state.tkpmPagohStatus.SV1=0
         state.tkpmPagohStatus.SV2=0
         state.tkpmPagohStatus.SV3=0
