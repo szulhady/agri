@@ -3073,13 +3073,13 @@ export const mutations = {
         state.tkpmPagohProcess = 'Water filling process in fertilizer solution tank 1.'
       }
 
-      if(payload.WF2==0){
+      if(payload.WF2==1){
         state.tkpmPagohStatus.SV2=1
         state.tkpmPagohStatus.SV6=1
         state.tkpmPagohStatus.SV8=1
         state.tkpmPagohStatus.P2=1
         state.tkpmPagohProcess = 'Water filling process in fertilizer solution tank 2.'
-        console.log(state.tkpmPagohStatus)
+        
       }
 
       if(payload.WF3==1){
@@ -3156,6 +3156,7 @@ export const mutations = {
         state.tkpmPagohStatus.DP2=0
         state.tkpmPagohProcess = 'System is idle'
       }
+      console.log(state.tkpmPagohStatus)
     },
 
         // STATUS KONG PO 
