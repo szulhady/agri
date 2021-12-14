@@ -242,7 +242,7 @@ export default {
       },
       subscription: {
         // topic: "geyzer/#",
-        topic: ["nexplex/sense/#", "np/s/#", "new/nexplex/#"],
+        topic: ["nexplex/sense/#", "np/s/#", "new/nexplex/#", "nexplex/sense"],
         qos: 0
       },
       receiveNews: "",
@@ -798,10 +798,11 @@ export default {
         }
 
         if (topic === "nexplex/sense") {
-          // console.log(message);
           try {
             message = JSON.parse(message);
-            if (TID == 318) {
+
+            if (message.TID == 381) {
+              // console.log(message);
               let payload = {
                 station: 0,
                 EC: message.EC
@@ -809,6 +810,7 @@ export default {
               this.getCurrentDataNutrientIpah1EC(payload);
             }
             if (message.ID == 301) {
+              // console.log(message);
               let payload1 = {
                 station: 3,
                 block: 0,
@@ -841,9 +843,9 @@ export default {
               this.check(3, 1, 0, " Nitrogen", message.NTR2, 20);
               this.check(3, 1, 1, " Phosphorus", message.PHOS2, 20);
               this.check(3, 1, 2, " Potassium", message.POT2, 20);
-              this.check(3, 1, 3, " pH", message.pH2, 7);
-              this.check(3, 1, 4, " EC", message.EC2, 10);
-              this.check(3, 1, 5, " Humidity", message.HMD2, 10);
+              this.check(3, 1, 3, " pH", message.pH2, -7);
+              this.check(3, 1, 4, " EC", message.EC2, -10);
+              this.check(3, 1, 5, " Humidity", message.HMD2, -10);
 
               const payloadStringArray = {
                 indexStation: 0,

@@ -305,7 +305,7 @@ export default {
           console.log("here");
           this.ipahStatus();
         }
-        if (topic === "np/s/ipah/c") {
+        if (topic === "new/np/ipah/s/c/true") {
           message = JSON.parse(message);
           // console.log(message);
           this.ipahStatus(message);

@@ -3276,7 +3276,6 @@ export const mutations = {
             state.kongPoProcess = 'System is idle'
           }
         },
-
     // SET COMMAND FOR FILL/STOP 
     setIpah1ManualFill(state, payload){
       state.ipah1ManualFill= payload;
