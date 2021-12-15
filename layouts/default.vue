@@ -186,7 +186,7 @@ export default {
             this.$auth.$state.user.station[0] == "kongPo",
           // this.$auth.user.userId == 9,
           to: "/scheduleKongPo"
-        },
+        }
         // {
         //   icon: "mdi-chart-areaspline",
         //   title: "TRENDS",
@@ -223,12 +223,12 @@ export default {
         //   // this.$auth.user.userId == 8,
         //   to: "/trendsKongPo"
         // },
-        {
-          icon: "mdi-book-open-variant",
-          title: "INPUT",
-          state: this.$auth.hasScope("user"),
-          to: "/detail"
-        }
+        // {
+        //   icon: "mdi-book-open-variant",
+        //   title: "INPUT",
+        //   state: this.$auth.hasScope("user"),
+        //   to: "/detail"
+        // }
       ],
       miniVariant: false,
       title: "SMART FERTIGATION DASHBOARD",

@@ -11676,8 +11676,6 @@ const mutations = {
       state.tkpmPagohStatus.DP2 = 0;
       state.tkpmPagohProcess = 'System is idle';
     }
-
-    console.log(state.tkpmPagohStatus);
   },
 
   // STATUS KONG PO 
@@ -11694,53 +11692,25 @@ const mutations = {
 
     state.kongPoStatus.DP = 0; // Water Dripping on Block 1
 
-    if (payload.WDB1 == 1) {
+    if (payload.WDB == 1) {
       state.kongPoStatus.SV4 = 1;
       state.kongPoStatus.PNW = 1;
       state.kongPoProcess = 'Water dripping on block 1.';
-    } // Water Dripping on Block 2
-    // if(payload.WDB2==1){
-    //   state.kongPoStatus.SV6=1
-    //   state.kongPoStatus.SV13=1
-    //   state.kongPoStatus.P2=1
-    //   state.kongPoProcess = 'Water dripping on block 2.'
-    // }
-    // Water Dripping on Block 3
-    // if(payload.WDB3==1){
-    //   state.kongPoStatus.SV9=1
-    //   state.kongPoStatus.SV14=1
-    //   state.kongPoStatus.P3=1
-    //   state.kongPoProcess = 'Water dripping on block 3.'
-    // }
-    // Nutrient Dripping on Block 1
+    } // Nutrient Dripping on Block 1
 
 
-    if (payload.NDB1 == 1) {
+    if (payload.NDB == 1) {
       state.kongPoStatus.SV1 = 1;
       state.kongPoStatus.SV3 = 1;
       state.kongPoStatus.PTW = 1;
       state.kongPoProcess = 'Nutrient dripping on block 1.';
-    } // Nutrient Dripping on Block 2
-    // if(payload.NDB2==1){
-    //   state.tkpmPagohStatus.SV7=1
-    //   state.tkpmPagohStatus.SV13=1
-    //   state.tkpmPagohStatus.PTW=1
-    //   state.kongPoProcess = 'Nutrient dripping on block 2.'
-    // }
-    // Nutrient Dripping on Block 3
-    // if(payload.NDB3==1){
-    //   state.tkpmPagohStatus.SV10=1
-    //   state.tkpmPagohStatus.SV14=1
-    //   state.tkpmPagohStatus.P3=1
-    //   state.kongPoProcess = 'Nutrient dripping on block 3.'
-    // }
-    // Nutrient Filling (Nutrient preparation, Dosing process)
+    } // Nutrient Filling (Nutrient preparation, Dosing process)
 
 
     if (payload.NF == 1) {
       state.kongPoStatus.SV1 = 1;
       state.kongPoStatus.SV2 = 1;
-      state.kongPoStatus.PTW1 = 1;
+      state.kongPoStatus.PTW = 1;
       state.kongPoStatus.DP = 1;
       state.kongPoProcess = 'Nutrient preparation. Dosing process is ongoing.';
     } //Water Filling (Nutrient preparation)
@@ -11748,39 +11718,13 @@ const mutations = {
 
     if (payload.WF == 1) {
       state.kongPoStatus.SV5 = 1;
-      state.kongPoStatus.PTW1 = 1;
+      state.kongPoStatus.PTW = 1;
       state.kongPoStatus.SV2 = 1;
-      state.kongPoProcess = 'Nutrient preparation. Water filling process in fertilizer solution tank.';
-    } // Logic for water dripping on blocks
-    // if (payload.WDB1 == 1 && payload.WDB2 == 1){
-    //   state.kongPoProcess = 'Water dripping on block 1 and 2.'
-    // }
-    // if (payload.WDB1 == 1 && payload.WDB3 == 1){
-    //   state.kongPoProcess = 'Water dripping on block 1 and 3.'
-    // }
-    // if (payload.WDB2 == 1 && payload.WDB3 == 1){
-    //   state.kongPoProcess = 'Water dripping on block 2 and 3.'
-    // }
-    // if (payload.WDB1 == 1 && payload.WDB2 == 1 && payload.WDB3 == 1){
-    //   state.kongPoProcess = 'Water dripping on all block.'
-    // }
-    // Logic for nutrient dripping on blocks
-    // if (payload.NDB1 == 1 && payload.NDB2 == 1){
-    //   state.kongPoProcess = 'Nutrient dripping on block 1 and 2.'
-    // }
-    // if (payload.NDB1 == 1 && payload.NDB3 == 1){
-    //   state.kongPoProcess = 'Nutrient dripping on block 1 and 3.'
-    // }
-    // if (payload.NDB2 == 1 && payload.NDB3 == 1){
-    //   state.kongPoProcess = 'Nutrient dripping on block 2 and 3.'
-    // }
-    // if (payload.NDB1 == 1 && payload.NDB2 == 1 && payload.NDB3 == 1){
-    //   state.kongPoProcess = 'Nutrient dripping on all block.'
-    // }
-    // System idle. No process
+      state.kongPoProcess = 'Water filling process in fertilizer solution tank.';
+    } // System idle. No process
 
 
-    if (payload.WDB1 == 0 && payload.NDB1 == 0 && payload.NF == 0 && payload.WF == 0) {
+    if (payload.WDB == 0 && payload.NDB == 0 && payload.NF == 0 && payload.WF == 0) {
       state.kongPoStatus.SV1 = 0;
       state.kongPoStatus.SV2 = 0;
       state.kongPoStatus.SV3 = 0;
@@ -13511,12 +13455,12 @@ var nuxt_loading_component = Object(componentNormalizer["a" /* default */])(
 )
 
 /* harmony default export */ var nuxt_loading = (nuxt_loading_component.exports);
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/default.vue?vue&type=template&id=7a5b2f31&
-var defaultvue_type_template_id_7a5b2f31_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-app',{attrs:{"dark":""}},[_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":""},model:{value:(_vm.drawer),callback:function ($$v) {_vm.drawer=$$v},expression:"drawer"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1),_vm._v(" "),_c('v-app-bar',{attrs:{"fixed":"","app":""}},[_c('v-toolbar-title',{staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name"},[_c('h4',{staticStyle:{"color":"white"}},[_vm._v(_vm._s(_vm.loggedInUser.username))])]):_vm._e(),_vm._v(" "),_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1),_vm._v(" "),_c('v-main',[_c('v-container',[_c('nuxt')],1)],1),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('div',{staticClass:"layer",attrs:{"id":"layer"}}):_vm._e()]),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('v-card',{staticClass:"logout elevation-12"},[_c('v-card-title',[_vm._v("\n        Logout\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("\n        Are you sure?\n      ")]),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"success logout-btn",on:{"click":_vm.logout}},[_vm._v("Yes")]),_vm._v(" "),_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1):_vm._e()],1),_vm._v(" "),_c('v-footer',{attrs:{"absolute":!_vm.fixed,"app":""}},[_c('span',[_vm._v("© "+_vm._s(new Date().getFullYear()))])])],1)}
-var defaultvue_type_template_id_7a5b2f31_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/default.vue?vue&type=template&id=279464fd&
+var defaultvue_type_template_id_279464fd_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-app',{attrs:{"dark":""}},[_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":""},model:{value:(_vm.drawer),callback:function ($$v) {_vm.drawer=$$v},expression:"drawer"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1),_vm._v(" "),_c('v-app-bar',{attrs:{"fixed":"","app":""}},[_c('v-toolbar-title',{staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name"},[_c('h4',{staticStyle:{"color":"white"}},[_vm._v(_vm._s(_vm.loggedInUser.username))])]):_vm._e(),_vm._v(" "),_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1),_vm._v(" "),_c('v-main',[_c('v-container',[_c('nuxt')],1)],1),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('div',{staticClass:"layer",attrs:{"id":"layer"}}):_vm._e()]),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('v-card',{staticClass:"logout elevation-12"},[_c('v-card-title',[_vm._v("\n        Logout\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("\n        Are you sure?\n      ")]),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"success logout-btn",on:{"click":_vm.logout}},[_vm._v("Yes")]),_vm._v(" "),_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1):_vm._e()],1),_vm._v(" "),_c('v-footer',{attrs:{"absolute":!_vm.fixed,"app":""}},[_c('span',[_vm._v("© "+_vm._s(new Date().getFullYear()))])])],1)}
+var defaultvue_type_template_id_279464fd_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./layouts/default.vue?vue&type=template&id=7a5b2f31&
+// CONCATENATED MODULE: ./layouts/default.vue?vue&type=template&id=279464fd&
 
 // EXTERNAL MODULE: ./src/class.js
 var src_class = __webpack_require__(1);
@@ -13681,7 +13625,7 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
         state: this.$auth.hasScope("user") && this.$auth.$state.user.station[0] == "kongPo",
         // this.$auth.user.userId == 9,
         to: "/scheduleKongPo"
-      }, // {
+      } // {
       //   icon: "mdi-chart-areaspline",
       //   title: "TRENDS",
       //   state:
@@ -13717,12 +13661,13 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
       //   // this.$auth.user.userId == 8,
       //   to: "/trendsKongPo"
       // },
-      {
-        icon: "mdi-book-open-variant",
-        title: "INPUT",
-        state: this.$auth.hasScope("user"),
-        to: "/detail"
-      }],
+      // {
+      //   icon: "mdi-book-open-variant",
+      //   title: "INPUT",
+      //   state: this.$auth.hasScope("user"),
+      //   to: "/detail"
+      // }
+      ],
       miniVariant: false,
       title: "SMART FERTIGATION DASHBOARD",
       connection: {
@@ -15883,8 +15828,8 @@ if (style0.__inject__) style0.__inject__(context)
 
 var default_component = Object(componentNormalizer["a" /* default */])(
   layouts_defaultvue_type_script_lang_js_,
-  defaultvue_type_template_id_7a5b2f31_render,
-  defaultvue_type_template_id_7a5b2f31_staticRenderFns,
+  defaultvue_type_template_id_279464fd_render,
+  defaultvue_type_template_id_279464fd_staticRenderFns,
   false,
   default_injectStyles,
   null,
@@ -15974,12 +15919,12 @@ var login_component = Object(componentNormalizer["a" /* default */])(
 
 installComponents_default()(login_component, {VMain: VMain_VMain})
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/status.vue?vue&type=template&id=ca6700ca&
-var statusvue_type_template_id_ca6700ca_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-app',{attrs:{"dark":""}},[_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":"","temporary":""},model:{value:(_vm.drawer),callback:function ($$v) {_vm.drawer=$$v},expression:"drawer"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1),_vm._v(" "),_c('v-app-bar',{attrs:{"fixed":"","app":""}},[_c('v-app-bar-nav-icon',{staticStyle:{"color":"white"},on:{"click":function($event){$event.stopPropagation();_vm.drawer = !_vm.drawer}}}),_vm._v(" "),_c('v-toolbar-title',{staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name"},[_c('h4',{staticStyle:{"color":"white"}},[_vm._v(_vm._s(_vm.loggedInUser.username))])]):_vm._e(),_vm._v(" "),_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1),_vm._v(" "),_c('v-main',[_c('v-container',[_c('nuxt')],1)],1),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('div',{staticClass:"layer",attrs:{"id":"layer"}}):_vm._e()]),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('v-card',{staticClass:"logout elevation-12"},[_c('v-card-title',[_vm._v("\n        Logout\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("\n        Are you sure?\n      ")]),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"success logout-btn",on:{"click":_vm.logout}},[_vm._v("Yes")]),_vm._v(" "),_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1):_vm._e()],1),_vm._v(" "),_c('v-footer',{attrs:{"absolute":!_vm.fixed,"app":""}},[_c('span',[_vm._v("© "+_vm._s(new Date().getFullYear()))])])],1)}
-var statusvue_type_template_id_ca6700ca_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/status.vue?vue&type=template&id=6660b16c&
+var statusvue_type_template_id_6660b16c_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-app',{attrs:{"dark":""}},[_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":"","temporary":""},model:{value:(_vm.drawer),callback:function ($$v) {_vm.drawer=$$v},expression:"drawer"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1),_vm._v(" "),_c('v-app-bar',{attrs:{"fixed":"","app":""}},[_c('v-app-bar-nav-icon',{staticStyle:{"color":"white"},on:{"click":function($event){$event.stopPropagation();_vm.drawer = !_vm.drawer}}}),_vm._v(" "),_c('v-toolbar-title',{staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name"},[_c('h4',{staticStyle:{"color":"white"}},[_vm._v(_vm._s(_vm.loggedInUser.username))])]):_vm._e(),_vm._v(" "),_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1),_vm._v(" "),_c('v-main',[_c('v-container',[_c('nuxt')],1)],1),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('div',{staticClass:"layer",attrs:{"id":"layer"}}):_vm._e()]),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('v-card',{staticClass:"logout elevation-12"},[_c('v-card-title',[_vm._v("\n        Logout\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("\n        Are you sure?\n      ")]),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"success logout-btn",on:{"click":_vm.logout}},[_vm._v("Yes")]),_vm._v(" "),_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1):_vm._e()],1),_vm._v(" "),_c('v-footer',{attrs:{"absolute":!_vm.fixed,"app":""}},[_c('span',[_vm._v("© "+_vm._s(new Date().getFullYear()))])])],1)}
+var statusvue_type_template_id_6660b16c_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./layouts/status.vue?vue&type=template&id=ca6700ca&
+// CONCATENATED MODULE: ./layouts/status.vue?vue&type=template&id=6660b16c&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/status.vue?vue&type=script&lang=js&
 //
@@ -16130,7 +16075,7 @@ var statusvue_type_template_id_ca6700ca_staticRenderFns = []
         state: this.$auth.hasScope("user") && this.$auth.$state.user.station[0] == "kongPo",
         // this.$auth.user.userId == 9,
         to: "/scheduleKongPo"
-      }, // {
+      } // {
       //   icon: "mdi-chart-areaspline",
       //   title: "TRENDS",
       //   state:
@@ -16166,12 +16111,13 @@ var statusvue_type_template_id_ca6700ca_staticRenderFns = []
       //   // this.$auth.user.userId == 8,
       //   to: "/trendsKongPo"
       // },
-      {
-        icon: "mdi-book-open-variant",
-        title: "INPUT",
-        state: this.$auth.hasScope("user"),
-        to: "/detail"
-      }],
+      // {
+      //   icon: "mdi-book-open-variant",
+      //   title: "INPUT",
+      //   state: this.$auth.hasScope("user"),
+      //   to: "/detail"
+      // }
+      ],
       miniVariant: false,
       title: "SMART FERTIGATION DASHBOARD",
       connection: {
@@ -16270,38 +16216,24 @@ var statusvue_type_template_id_ca6700ca_staticRenderFns = []
         console.log("Connection failed", error);
       });
       this.client.on("message", (topic, message) => {
-        if (topic === "debug/test") {
-          console.log("here");
-          this.ipahStatus();
-        }
-
         if (topic === "new/np/ipah/s/c/true") {
-          message = JSON.parse(message); // console.log(message);
-
+          message = JSON.parse(message);
           this.ipahStatus(message);
         }
 
         if (topic === "new/np/tkpmIpah/s/c/true") {
           message = JSON.parse(message);
-          console.log(message);
           this.tkpmIpahStatus(message);
         }
 
         if (topic === "new/np/tkpmPagoh/s/c/true") {
           message = JSON.parse(message);
-          console.log(message);
           this.tkpmPagohStatus(message);
         }
 
-        if (topic === "np/s/kongpo/c") {
+        if (topic === "new/np/kongpo/s/c/true") {
           message = JSON.parse(message);
-          console.log(message);
           this.kongPoStatus(message);
-        }
-
-        if (topic === "ipah/test") {
-          message = JSON.parse(message);
-          console.log(message);
         }
       });
     },
@@ -16331,14 +16263,7 @@ var statusvue_type_template_id_ca6700ca_staticRenderFns = []
           console.log("Unsubscribe error", error);
         }
       });
-    } // ...mapMutations({
-    //   setActiveUser: "setActiveUser",
-    //   setIpah1ManualFill: "setIpah1ManualFill",
-    //   setIpah1ManualStop: "setIpah1ManualStop",
-    //   setIpah2ManualFill: "setIpah2ManualFill",
-    //   setIpah2ManualStop: "setIpah2ManualStop"
-    // })
-
+    }
 
   },
   computed: { ...Object(external_vuex_["mapGetters"])(["loggedInUser", "isAuthenticated"]),
@@ -16481,14 +16406,15 @@ var statusvue_type_template_id_ca6700ca_staticRenderFns = []
     },
     kongPoManualFill: function () {
       if (this.kongPoManualFill == true) {
-        this.client.publish("np/c/kongpo/wf", "10"); // console.log("np/c/kongpo/wf", "10");
+        this.client.publish("np/kongpo/c/wf", "10");
+        console.log("np/kongpo/c/wf", "10");
       }
 
       this.setKongPoManualFill(false); // console.log(this.kongPoManualFill);
     },
     kongPoManualStop: function () {
       if (this.kongPoManualStop == true) {
-        this.client.publish("np/c/kongpo/wf", "20"); // console.log("np/c/kongpo/wf", "20");
+        this.client.publish("np/kongpo/c/wf", "20"); // console.log("np/c/kongpo/wf", "20");
       }
 
       this.setKongPoManualStop(false); // console.log(this.kongPoManualStop);
@@ -16555,8 +16481,8 @@ if (style0.__inject__) style0.__inject__(context)
 
 var status_component = Object(componentNormalizer["a" /* default */])(
   layouts_statusvue_type_script_lang_js_,
-  statusvue_type_template_id_ca6700ca_render,
-  statusvue_type_template_id_ca6700ca_staticRenderFns,
+  statusvue_type_template_id_6660b16c_render,
+  statusvue_type_template_id_6660b16c_staticRenderFns,
   false,
   status_injectStyles,
   null,

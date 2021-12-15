@@ -176,7 +176,7 @@ export default {
             this.$auth.$state.user.station[0] == "kongPo",
           // this.$auth.user.userId == 9,
           to: "/scheduleKongPo"
-        },
+        }
         // {
         //   icon: "mdi-chart-areaspline",
         //   title: "TRENDS",
@@ -213,12 +213,12 @@ export default {
         //   // this.$auth.user.userId == 8,
         //   to: "/trendsKongPo"
         // },
-        {
-          icon: "mdi-book-open-variant",
-          title: "INPUT",
-          state: this.$auth.hasScope("user"),
-          to: "/detail"
-        }
+        // {
+        //   icon: "mdi-book-open-variant",
+        //   title: "INPUT",
+        //   state: this.$auth.hasScope("user"),
+        //   to: "/detail"
+        // }
       ],
       miniVariant: false,
       title: "SMART FERTIGATION DASHBOARD",
@@ -301,37 +301,24 @@ export default {
         console.log("Connection failed", error);
       });
       this.client.on("message", (topic, message) => {
-        if (topic === "debug/test") {
-          console.log("here");
-          this.ipahStatus();
-        }
         if (topic === "new/np/ipah/s/c/true") {
           message = JSON.parse(message);
-          // console.log(message);
           this.ipahStatus(message);
         }
 
         if (topic === "new/np/tkpmIpah/s/c/true") {
           message = JSON.parse(message);
-          console.log(message);
           this.tkpmIpahStatus(message);
         }
 
         if (topic === "new/np/tkpmPagoh/s/c/true") {
           message = JSON.parse(message);
-          console.log(message);
           this.tkpmPagohStatus(message);
         }
 
-        if (topic === "np/s/kongpo/c") {
+        if (topic === "new/np/kongpo/s/c/true") {
           message = JSON.parse(message);
-          console.log(message);
           this.kongPoStatus(message);
-        }
-
-        if (topic === "ipah/test") {
-          message = JSON.parse(message);
-          console.log(message);
         }
       });
     },
@@ -352,13 +339,6 @@ export default {
         }
       });
     }
-    // ...mapMutations({
-    //   setActiveUser: "setActiveUser",
-    //   setIpah1ManualFill: "setIpah1ManualFill",
-    //   setIpah1ManualStop: "setIpah1ManualStop",
-    //   setIpah2ManualFill: "setIpah2ManualFill",
-    //   setIpah2ManualStop: "setIpah2ManualStop"
-    // })
   },
   computed: {
     ...mapGetters(["loggedInUser", "isAuthenticated"]),
@@ -523,15 +503,15 @@ export default {
     },
     kongPoManualFill: function() {
       if (this.kongPoManualFill == true) {
-        this.client.publish("np/c/kongpo/wf", "10");
-        // console.log("np/c/kongpo/wf", "10");
+        this.client.publish("np/kongpo/c/wf", "10");
+        console.log("np/kongpo/c/wf", "10");
       }
       this.setKongPoManualFill(false);
       // console.log(this.kongPoManualFill);
     },
     kongPoManualStop: function() {
       if (this.kongPoManualStop == true) {
-        this.client.publish("np/c/kongpo/wf", "20");
+        this.client.publish("np/kongpo/c/wf", "20");
         // console.log("np/c/kongpo/wf", "20");
       }
       this.setKongPoManualStop(false);
