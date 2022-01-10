@@ -318,6 +318,7 @@ export default {
 
         if (topic === "new/np/kongpo/s/c/true") {
           message = JSON.parse(message);
+          console.log(message);
           this.kongPoStatus(message);
         }
       });

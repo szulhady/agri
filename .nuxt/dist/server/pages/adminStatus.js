@@ -633,7 +633,7 @@ module.exports.__inject__ = function (context) {
 
 /***/ }),
 
-/***/ 231:
+/***/ 230:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2711,7 +2711,7 @@ var external_vuex_ = __webpack_require__(11);
 var CardTitle = __webpack_require__(199);
 
 // EXTERNAL MODULE: ./components/Admin/Overview/Single/Data.vue + 4 modules
-var Data = __webpack_require__(231);
+var Data = __webpack_require__(230);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Admin/Overview/CardDataSoilAdmin.vue?vue&type=script&lang=js&
 //
@@ -2862,7 +2862,7 @@ var external_vuex_ = __webpack_require__(11);
 var CardTitle = __webpack_require__(199);
 
 // EXTERNAL MODULE: ./components/Admin/Overview/Single/Data.vue + 4 modules
-var Data = __webpack_require__(231);
+var Data = __webpack_require__(230);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Admin/Overview/CardDataLeafAdmin.vue?vue&type=script&lang=js&
 //
@@ -3014,7 +3014,7 @@ var external_vuex_ = __webpack_require__(11);
 var CardTitle = __webpack_require__(199);
 
 // EXTERNAL MODULE: ./components/Admin/Overview/Single/Data.vue + 4 modules
-var Data = __webpack_require__(231);
+var Data = __webpack_require__(230);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Admin/Overview/CardDataWaterAdmin.vue?vue&type=script&lang=js&
 //

@@ -242,7 +242,13 @@ export default {
       },
       subscription: {
         // topic: "geyzer/#",
-        topic: ["nexplex/sense/#", "np/s/#", "new/nexplex/#", "nexplex/sense"],
+        topic: [
+          "nexplex/sense/#",
+          "np/s/#",
+          "new/nexplex/#",
+          "nexplex/sense",
+          "kongkong/topic/#"
+        ],
         qos: 0
       },
       receiveNews: "",
@@ -360,7 +366,7 @@ export default {
     // Create connection
     createConnection() {
       const { host, port, endpoint, ...options } = this.connection;
-      const connectUrl = `wss://${host}:${port}${endpoint}`;
+      const connectUrl = `ws://${host}:${port}${endpoint}`;
       try {
         this.client = mqtt.connect(connectUrl, options);
       } catch (error) {
@@ -797,79 +803,216 @@ export default {
           this.countWarningsTkpmPagoh(data);
         }
 
-        if (topic === "nexplex/sense") {
+        if (topic === "kongkong/topic/data") {
           try {
             message = JSON.parse(message);
 
-            if (message.TID == 381) {
-              // console.log(message);
-              let payload = {
-                station: 0,
-                EC: message.EC
-              };
-              this.getCurrentDataNutrientIpah1EC(payload);
-            }
-            if (message.ID == 301) {
-              // console.log(message);
-              let payload1 = {
-                station: 3,
-                block: 0,
-                soilNitrogen: message.NTR1,
-                soilPhosphorus: message.PHOS1,
-                soilPotassium: message.POT1,
-                soilPH: message.pH1,
-                soilEC: message.EC1,
-                soilMS: message.HMD1
-              };
-              let payload2 = {
-                station: 3,
-                block: 1,
-                soilNitrogen: message.NTR2,
-                soilPhosphorus: message.PHOS2,
-                soilPotassium: message.POT2,
-                soilPH: message.pH2,
-                soilEC: message.EC2,
-                soilMS: message.HMD2
-              };
-              this.getCurrentDataKongPo(payload1);
-              this.getCurrentDataKongPo(payload2);
-              this.check(3, 0, 0, " Nitrogen", message.NTR1, 20);
-              this.check(3, 0, 1, " Phosphorus", message.PHOS1, 20);
-              this.check(3, 0, 2, " Potassium", message.POT1, 20);
-              this.check(3, 0, 3, " pH", message.pH1, 7);
-              this.check(3, 0, 4, " EC", message.EC1, 10);
-              this.check(3, 0, 5, " Humidity", message.HMD1, 10);
+            // if (message.TID == 381) {
+            //   // console.log(message);
+            //   let payload = {
+            //     station: 0,
+            //     EC: message.EC
+            //   };
+            //   this.getCurrentDataNutrientIpah1EC(payload);
+            // }
+            // if (message.ID == 301) {
+            // console.log(message);
+            let payload1 = {
+              station: 3,
+              block: 0,
+              soilNitrogen: message.NTR1,
+              soilPhosphorus: message.PHOS1,
+              soilPotassium: message.POT1,
+              soilPH: message.pH1,
+              soilEC: message.EC1,
+              soilMS: message.HMD1
+            };
+            // let payload2 = {
+            //   station: 3,
+            //   block: 1,
+            //   soilNitrogen: message.NTR2,
+            //   soilPhosphorus: message.PHOS2,
+            //   soilPotassium: message.POT2,
+            //   soilPH: message.pH2,
+            //   soilEC: message.EC2,
+            //   soilMS: message.HMD2
+            // };
+            this.getCurrentDataKongPo(payload1);
+            // this.getCurrentDataKongPo(payload2);
+            this.check(3, 0, 0, " Nitrogen", message.NTR1, 20);
+            this.check(3, 0, 1, " Phosphorus", message.PHOS1, 20);
+            this.check(3, 0, 2, " Potassium", message.POT1, 20);
+            this.check(3, 0, 3, " pH", message.pH1, 7);
+            this.check(3, 0, 4, " EC", message.EC1, 10);
+            this.check(3, 0, 5, " Humidity", message.HMD1, 10);
 
-              this.check(3, 1, 0, " Nitrogen", message.NTR2, 20);
-              this.check(3, 1, 1, " Phosphorus", message.PHOS2, 20);
-              this.check(3, 1, 2, " Potassium", message.POT2, 20);
-              this.check(3, 1, 3, " pH", message.pH2, -7);
-              this.check(3, 1, 4, " EC", message.EC2, -10);
-              this.check(3, 1, 5, " Humidity", message.HMD2, -10);
+            // this.check(3, 1, 0, " Nitrogen", message.NTR2, 20);
+            // this.check(3, 1, 1, " Phosphorus", message.PHOS2, 20);
+            // this.check(3, 1, 2, " Potassium", message.POT2, 20);
+            // this.check(3, 1, 3, " pH", message.pH2, -7);
+            // this.check(3, 1, 4, " EC", message.EC2, -10);
+            // this.check(3, 1, 5, " Humidity", message.HMD2, -10);
 
-              const payloadStringArray = {
-                indexStation: 0,
-                indexBlock: 0
-              };
-              this.stringArray(payloadStringArray);
-              const val = [
-                "soilNitrogen",
-                "soilPhosphorus",
-                "soilPotassium",
-                "soilPH",
-                "soilEC",
-                "soilMS",
-                "soilTEMP"
-              ];
-              // //currentTrend
-              for (let j = 0; j < val.length; j++) {
-                let sensor = val[j];
-                let indexStation = 0;
-                let indexSensor = j;
-                let data = { sensor, indexStation, indexSensor };
-                this.getCurrentDataArrayIpah1(data);
-              }
+            const payloadStringArray = {
+              indexStation: 0,
+              indexBlock: 0
+            };
+            this.stringArray(payloadStringArray);
+            const val = [
+              "soilNitrogen",
+              "soilPhosphorus",
+              "soilPotassium",
+              "soilPH",
+              "soilEC",
+              "soilMS",
+              "soilTEMP"
+            ];
+            // //currentTrend
+            for (let j = 0; j < val.length; j++) {
+              let sensor = val[j];
+              let indexStation = 0;
+              let indexSensor = j;
+              let data = { sensor, indexStation, indexSensor };
+              this.getCurrentDataArrayIpah1(data);
             }
+            // }
+          } catch (e) {
+            return false;
+          }
+          // if (message.ID == 301) {
+          //   let payload1 = {
+          //     station: 3,
+          //     block: 0,
+          //     soilNitrogen: message.NTR1,
+          //     soilPhosphorus: message.PHOS1,
+          //     soilPotassium: message.POT1,
+          //     soilPH: message.pH1,
+          //     soilEC: message.EC1,
+          //     soilMS: message.HMD1
+          //   };
+          //   let payload2 = {
+          //     station: 3,
+          //     block: 1,
+          //     soilNitrogen: message.NTR2,
+          //     soilPhosphorus: message.PHOS2,
+          //     soilPotassium: message.POT2,
+          //     soilPH: message.pH2,
+          //     soilEC: message.EC2,
+          //     soilMS: message.HMD2
+          //   };
+          //   this.getCurrentDataKongPo(payload1);
+          //   this.getCurrentDataKongPo(payload2);
+          //   this.check(3, 0, 0, " Nitrogen", message.NTR1, 20);
+          //   this.check(3, 0, 1, " Phosphorus", message.PHOS1, 20);
+          //   this.check(3, 0, 2, " Potassium", message.POT1, 20);
+          //   this.check(3, 0, 3, " pH", message.pH1, 7);
+          //   this.check(3, 0, 4, " EC", message.EC1, 10);
+          //   this.check(3, 0, 5, " MS", message.HMD1, 10);
+
+          //   this.check(3, 1, 0, " Nitrogen", message.NTR2, 20);
+          //   this.check(3, 1, 1, " Phosphorus", message.PHOS2, 20);
+          //   this.check(3, 1, 2, " Potassium", message.POT2, 20);
+          //   this.check(3, 1, 3, " pH", message.pH2, 7);
+          //   this.check(3, 1, 4, " EC", message.EC2, 10);
+          //   this.check(3, 1, 5, " MS", message.HMD2, 10);
+
+          //   const payloadStringArray = {
+          //     indexStation: 0,
+          //     indexBlock: 0
+          //   };
+          //   this.stringArray(payloadStringArray);
+          //   const val = [
+          //     "soilNitrogen",
+          //     "soilPhosphorus",
+          //     "soilPotassium",
+          //     "soilPH",
+          //     "soilEC",
+          //     "soilMS",
+          //     "soilTEMP"
+          //   ];
+          //   // //currentTrend
+          //   for (let j = 0; j < val.length; j++) {
+          //     let sensor = val[j];
+          //     let indexStation = 0;
+          //     let indexSensor = j;
+          //     let data = { sensor, indexStation, indexSensor };
+          //     this.getCurrentDataArrayIpah1(data);
+          //   }
+          // }
+        }
+        if (topic === "kongkong/topic/data2") {
+          try {
+            message = JSON.parse(message);
+
+            // if (message.TID == 381) {
+            //   // console.log(message);
+            //   let payload = {
+            //     station: 0,
+            //     EC: message.EC
+            //   };
+            //   this.getCurrentDataNutrientIpah1EC(payload);
+            // }
+            // if (message.ID == 301) {
+            // console.log(message);
+            // let payload1 = {
+            //   station: 3,
+            //   block: 0,
+            //   soilNitrogen: message.NTR1,
+            //   soilPhosphorus: message.PHOS1,
+            //   soilPotassium: message.POT1,
+            //   soilPH: message.pH1,
+            //   soilEC: message.EC1,
+            //   soilMS: message.HMD1
+            // };
+            let payload2 = {
+              station: 3,
+              block: 1,
+              soilNitrogen: message.NTR2,
+              soilPhosphorus: message.PHOS2,
+              soilPotassium: message.POT2,
+              soilPH: message.pH2,
+              soilEC: message.EC2,
+              soilMS: message.HMD2
+            };
+            // this.getCurrentDataKongPo(payload1);
+            this.getCurrentDataKongPo(payload2);
+            // this.check(3, 0, 0, " Nitrogen", message.NTR1, 20);
+            // this.check(3, 0, 1, " Phosphorus", message.PHOS1, 20);
+            // this.check(3, 0, 2, " Potassium", message.POT1, 20);
+            // this.check(3, 0, 3, " pH", message.pH1, 7);
+            // this.check(3, 0, 4, " EC", message.EC1, 10);
+            // this.check(3, 0, 5, " Humidity", message.HMD1, 10);
+
+            this.check(3, 1, 0, " Nitrogen", message.NTR2, 20);
+            this.check(3, 1, 1, " Phosphorus", message.PHOS2, 20);
+            this.check(3, 1, 2, " Potassium", message.POT2, 20);
+            this.check(3, 1, 3, " pH", message.pH2, -7);
+            this.check(3, 1, 4, " EC", message.EC2, -10);
+            this.check(3, 1, 5, " Humidity", message.HMD2, -10);
+
+            const payloadStringArray = {
+              indexStation: 0,
+              indexBlock: 0
+            };
+            this.stringArray(payloadStringArray);
+            const val = [
+              "soilNitrogen",
+              "soilPhosphorus",
+              "soilPotassium",
+              "soilPH",
+              "soilEC",
+              "soilMS",
+              "soilTEMP"
+            ];
+            // //currentTrend
+            for (let j = 0; j < val.length; j++) {
+              let sensor = val[j];
+              let indexStation = 0;
+              let indexSensor = j;
+              let data = { sensor, indexStation, indexSensor };
+              this.getCurrentDataArrayIpah1(data);
+            }
+            // }
           } catch (e) {
             return false;
           }

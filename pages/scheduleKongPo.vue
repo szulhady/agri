@@ -32,21 +32,27 @@
                 <v-col>
                   <h4 style="text-align: justify">
                     Default time for nutrient preparation process on selected
-                    date is on 5am. Please select date and duration (minute) for
-                    dosing process.
+                    date is on 5am. Please select date and EC value ( eg: 1.00 )
+                    for dosing process.
                   </h4>
                 </v-col>
               </v-row>
               <v-row>
                 <v-col cols="12" class="userInputNutriet">
                   <div>
-                    <v-text-field
+                    <!-- <v-text-field
                       label="Duration (minute)"
                       :rules="rules"
                       type="number"
                       v-model.number="durationNutrient"
                       class="long"
-                    ></v-text-field>
+                    ></v-text-field> -->
+                           <input
+                      class="long2"
+                      type="text"
+                      v-mask="'#.##'"
+                      v-model.number="durationNutrient"
+                    />
                   </div>
                   <div>
                     <v-btn class="mt-5" @click="checkScheduleNutrient">

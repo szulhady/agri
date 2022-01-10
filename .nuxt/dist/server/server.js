@@ -13455,12 +13455,12 @@ var nuxt_loading_component = Object(componentNormalizer["a" /* default */])(
 )
 
 /* harmony default export */ var nuxt_loading = (nuxt_loading_component.exports);
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/default.vue?vue&type=template&id=279464fd&
-var defaultvue_type_template_id_279464fd_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-app',{attrs:{"dark":""}},[_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":""},model:{value:(_vm.drawer),callback:function ($$v) {_vm.drawer=$$v},expression:"drawer"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1),_vm._v(" "),_c('v-app-bar',{attrs:{"fixed":"","app":""}},[_c('v-toolbar-title',{staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name"},[_c('h4',{staticStyle:{"color":"white"}},[_vm._v(_vm._s(_vm.loggedInUser.username))])]):_vm._e(),_vm._v(" "),_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1),_vm._v(" "),_c('v-main',[_c('v-container',[_c('nuxt')],1)],1),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('div',{staticClass:"layer",attrs:{"id":"layer"}}):_vm._e()]),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('v-card',{staticClass:"logout elevation-12"},[_c('v-card-title',[_vm._v("\n        Logout\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("\n        Are you sure?\n      ")]),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"success logout-btn",on:{"click":_vm.logout}},[_vm._v("Yes")]),_vm._v(" "),_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1):_vm._e()],1),_vm._v(" "),_c('v-footer',{attrs:{"absolute":!_vm.fixed,"app":""}},[_c('span',[_vm._v("© "+_vm._s(new Date().getFullYear()))])])],1)}
-var defaultvue_type_template_id_279464fd_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/default.vue?vue&type=template&id=64853be2&
+var defaultvue_type_template_id_64853be2_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-app',{attrs:{"dark":""}},[_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":""},model:{value:(_vm.drawer),callback:function ($$v) {_vm.drawer=$$v},expression:"drawer"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1),_vm._v(" "),_c('v-app-bar',{attrs:{"fixed":"","app":""}},[_c('v-toolbar-title',{staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name"},[_c('h4',{staticStyle:{"color":"white"}},[_vm._v(_vm._s(_vm.loggedInUser.username))])]):_vm._e(),_vm._v(" "),_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1),_vm._v(" "),_c('v-main',[_c('v-container',[_c('nuxt')],1)],1),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('div',{staticClass:"layer",attrs:{"id":"layer"}}):_vm._e()]),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('v-card',{staticClass:"logout elevation-12"},[_c('v-card-title',[_vm._v("\n        Logout\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("\n        Are you sure?\n      ")]),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"success logout-btn",on:{"click":_vm.logout}},[_vm._v("Yes")]),_vm._v(" "),_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1):_vm._e()],1),_vm._v(" "),_c('v-footer',{attrs:{"absolute":!_vm.fixed,"app":""}},[_c('span',[_vm._v("© "+_vm._s(new Date().getFullYear()))])])],1)}
+var defaultvue_type_template_id_64853be2_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./layouts/default.vue?vue&type=template&id=279464fd&
+// CONCATENATED MODULE: ./layouts/default.vue?vue&type=template&id=64853be2&
 
 // EXTERNAL MODULE: ./src/class.js
 var src_class = __webpack_require__(1);
@@ -13683,7 +13683,7 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
       },
       subscription: {
         // topic: "geyzer/#",
-        topic: ["nexplex/sense/#", "np/s/#", "new/nexplex/#", "nexplex/sense"],
+        topic: ["nexplex/sense/#", "np/s/#", "new/nexplex/#", "nexplex/sense", "kongkong/topic/#"],
         qos: 0
       },
       receiveNews: "",
@@ -13830,7 +13830,7 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
         endpoint,
         ...options
       } = this.connection;
-      const connectUrl = `wss://${host}:${port}${endpoint}`;
+      const connectUrl = `ws://${host}:${port}${endpoint}`;
 
       try {
         this.client = external_mqtt_default.a.connect(connectUrl, options);
@@ -14305,74 +14305,201 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
           this.countWarningsTkpmPagoh(data);
         }
 
-        if (topic === "nexplex/sense") {
+        if (topic === "kongkong/topic/data") {
           try {
-            message = JSON.parse(message);
+            message = JSON.parse(message); // if (message.TID == 381) {
+            //   // console.log(message);
+            //   let payload = {
+            //     station: 0,
+            //     EC: message.EC
+            //   };
+            //   this.getCurrentDataNutrientIpah1EC(payload);
+            // }
+            // if (message.ID == 301) {
+            // console.log(message);
 
-            if (message.TID == 381) {
-              // console.log(message);
-              let payload = {
-                station: 0,
-                EC: message.EC
-              };
-              this.getCurrentDataNutrientIpah1EC(payload);
-            }
+            let payload1 = {
+              station: 3,
+              block: 0,
+              soilNitrogen: message.NTR1,
+              soilPhosphorus: message.PHOS1,
+              soilPotassium: message.POT1,
+              soilPH: message.pH1,
+              soilEC: message.EC1,
+              soilMS: message.HMD1
+            }; // let payload2 = {
+            //   station: 3,
+            //   block: 1,
+            //   soilNitrogen: message.NTR2,
+            //   soilPhosphorus: message.PHOS2,
+            //   soilPotassium: message.POT2,
+            //   soilPH: message.pH2,
+            //   soilEC: message.EC2,
+            //   soilMS: message.HMD2
+            // };
 
-            if (message.ID == 301) {
-              // console.log(message);
-              let payload1 = {
-                station: 3,
-                block: 0,
-                soilNitrogen: message.NTR1,
-                soilPhosphorus: message.PHOS1,
-                soilPotassium: message.POT1,
-                soilPH: message.pH1,
-                soilEC: message.EC1,
-                soilMS: message.HMD1
-              };
-              let payload2 = {
-                station: 3,
-                block: 1,
-                soilNitrogen: message.NTR2,
-                soilPhosphorus: message.PHOS2,
-                soilPotassium: message.POT2,
-                soilPH: message.pH2,
-                soilEC: message.EC2,
-                soilMS: message.HMD2
-              };
-              this.getCurrentDataKongPo(payload1);
-              this.getCurrentDataKongPo(payload2);
-              this.check(3, 0, 0, " Nitrogen", message.NTR1, 20);
-              this.check(3, 0, 1, " Phosphorus", message.PHOS1, 20);
-              this.check(3, 0, 2, " Potassium", message.POT1, 20);
-              this.check(3, 0, 3, " pH", message.pH1, 7);
-              this.check(3, 0, 4, " EC", message.EC1, 10);
-              this.check(3, 0, 5, " Humidity", message.HMD1, 10);
-              this.check(3, 1, 0, " Nitrogen", message.NTR2, 20);
-              this.check(3, 1, 1, " Phosphorus", message.PHOS2, 20);
-              this.check(3, 1, 2, " Potassium", message.POT2, 20);
-              this.check(3, 1, 3, " pH", message.pH2, -7);
-              this.check(3, 1, 4, " EC", message.EC2, -10);
-              this.check(3, 1, 5, " Humidity", message.HMD2, -10);
-              const payloadStringArray = {
-                indexStation: 0,
-                indexBlock: 0
-              };
-              this.stringArray(payloadStringArray);
-              const val = ["soilNitrogen", "soilPhosphorus", "soilPotassium", "soilPH", "soilEC", "soilMS", "soilTEMP"]; // //currentTrend
+            this.getCurrentDataKongPo(payload1); // this.getCurrentDataKongPo(payload2);
 
-              for (let j = 0; j < val.length; j++) {
-                let sensor = val[j];
-                let indexStation = 0;
-                let indexSensor = j;
-                let data = {
-                  sensor,
-                  indexStation,
-                  indexSensor
-                };
-                this.getCurrentDataArrayIpah1(data);
-              }
-            }
+            this.check(3, 0, 0, " Nitrogen", message.NTR1, 20);
+            this.check(3, 0, 1, " Phosphorus", message.PHOS1, 20);
+            this.check(3, 0, 2, " Potassium", message.POT1, 20);
+            this.check(3, 0, 3, " pH", message.pH1, 7);
+            this.check(3, 0, 4, " EC", message.EC1, 10);
+            this.check(3, 0, 5, " Humidity", message.HMD1, 10); // this.check(3, 1, 0, " Nitrogen", message.NTR2, 20);
+            // this.check(3, 1, 1, " Phosphorus", message.PHOS2, 20);
+            // this.check(3, 1, 2, " Potassium", message.POT2, 20);
+            // this.check(3, 1, 3, " pH", message.pH2, -7);
+            // this.check(3, 1, 4, " EC", message.EC2, -10);
+            // this.check(3, 1, 5, " Humidity", message.HMD2, -10);
+
+            const payloadStringArray = {
+              indexStation: 0,
+              indexBlock: 0
+            };
+            this.stringArray(payloadStringArray);
+            const val = ["soilNitrogen", "soilPhosphorus", "soilPotassium", "soilPH", "soilEC", "soilMS", "soilTEMP"]; // //currentTrend
+
+            for (let j = 0; j < val.length; j++) {
+              let sensor = val[j];
+              let indexStation = 0;
+              let indexSensor = j;
+              let data = {
+                sensor,
+                indexStation,
+                indexSensor
+              };
+              this.getCurrentDataArrayIpah1(data);
+            } // }
+
+          } catch (e) {
+            return false;
+          } // if (message.ID == 301) {
+          //   let payload1 = {
+          //     station: 3,
+          //     block: 0,
+          //     soilNitrogen: message.NTR1,
+          //     soilPhosphorus: message.PHOS1,
+          //     soilPotassium: message.POT1,
+          //     soilPH: message.pH1,
+          //     soilEC: message.EC1,
+          //     soilMS: message.HMD1
+          //   };
+          //   let payload2 = {
+          //     station: 3,
+          //     block: 1,
+          //     soilNitrogen: message.NTR2,
+          //     soilPhosphorus: message.PHOS2,
+          //     soilPotassium: message.POT2,
+          //     soilPH: message.pH2,
+          //     soilEC: message.EC2,
+          //     soilMS: message.HMD2
+          //   };
+          //   this.getCurrentDataKongPo(payload1);
+          //   this.getCurrentDataKongPo(payload2);
+          //   this.check(3, 0, 0, " Nitrogen", message.NTR1, 20);
+          //   this.check(3, 0, 1, " Phosphorus", message.PHOS1, 20);
+          //   this.check(3, 0, 2, " Potassium", message.POT1, 20);
+          //   this.check(3, 0, 3, " pH", message.pH1, 7);
+          //   this.check(3, 0, 4, " EC", message.EC1, 10);
+          //   this.check(3, 0, 5, " MS", message.HMD1, 10);
+          //   this.check(3, 1, 0, " Nitrogen", message.NTR2, 20);
+          //   this.check(3, 1, 1, " Phosphorus", message.PHOS2, 20);
+          //   this.check(3, 1, 2, " Potassium", message.POT2, 20);
+          //   this.check(3, 1, 3, " pH", message.pH2, 7);
+          //   this.check(3, 1, 4, " EC", message.EC2, 10);
+          //   this.check(3, 1, 5, " MS", message.HMD2, 10);
+          //   const payloadStringArray = {
+          //     indexStation: 0,
+          //     indexBlock: 0
+          //   };
+          //   this.stringArray(payloadStringArray);
+          //   const val = [
+          //     "soilNitrogen",
+          //     "soilPhosphorus",
+          //     "soilPotassium",
+          //     "soilPH",
+          //     "soilEC",
+          //     "soilMS",
+          //     "soilTEMP"
+          //   ];
+          //   // //currentTrend
+          //   for (let j = 0; j < val.length; j++) {
+          //     let sensor = val[j];
+          //     let indexStation = 0;
+          //     let indexSensor = j;
+          //     let data = { sensor, indexStation, indexSensor };
+          //     this.getCurrentDataArrayIpah1(data);
+          //   }
+          // }
+
+        }
+
+        if (topic === "kongkong/topic/data2") {
+          try {
+            message = JSON.parse(message); // if (message.TID == 381) {
+            //   // console.log(message);
+            //   let payload = {
+            //     station: 0,
+            //     EC: message.EC
+            //   };
+            //   this.getCurrentDataNutrientIpah1EC(payload);
+            // }
+            // if (message.ID == 301) {
+            // console.log(message);
+            // let payload1 = {
+            //   station: 3,
+            //   block: 0,
+            //   soilNitrogen: message.NTR1,
+            //   soilPhosphorus: message.PHOS1,
+            //   soilPotassium: message.POT1,
+            //   soilPH: message.pH1,
+            //   soilEC: message.EC1,
+            //   soilMS: message.HMD1
+            // };
+
+            let payload2 = {
+              station: 3,
+              block: 1,
+              soilNitrogen: message.NTR2,
+              soilPhosphorus: message.PHOS2,
+              soilPotassium: message.POT2,
+              soilPH: message.pH2,
+              soilEC: message.EC2,
+              soilMS: message.HMD2
+            }; // this.getCurrentDataKongPo(payload1);
+
+            this.getCurrentDataKongPo(payload2); // this.check(3, 0, 0, " Nitrogen", message.NTR1, 20);
+            // this.check(3, 0, 1, " Phosphorus", message.PHOS1, 20);
+            // this.check(3, 0, 2, " Potassium", message.POT1, 20);
+            // this.check(3, 0, 3, " pH", message.pH1, 7);
+            // this.check(3, 0, 4, " EC", message.EC1, 10);
+            // this.check(3, 0, 5, " Humidity", message.HMD1, 10);
+
+            this.check(3, 1, 0, " Nitrogen", message.NTR2, 20);
+            this.check(3, 1, 1, " Phosphorus", message.PHOS2, 20);
+            this.check(3, 1, 2, " Potassium", message.POT2, 20);
+            this.check(3, 1, 3, " pH", message.pH2, -7);
+            this.check(3, 1, 4, " EC", message.EC2, -10);
+            this.check(3, 1, 5, " Humidity", message.HMD2, -10);
+            const payloadStringArray = {
+              indexStation: 0,
+              indexBlock: 0
+            };
+            this.stringArray(payloadStringArray);
+            const val = ["soilNitrogen", "soilPhosphorus", "soilPotassium", "soilPH", "soilEC", "soilMS", "soilTEMP"]; // //currentTrend
+
+            for (let j = 0; j < val.length; j++) {
+              let sensor = val[j];
+              let indexStation = 0;
+              let indexSensor = j;
+              let data = {
+                sensor,
+                indexStation,
+                indexSensor
+              };
+              this.getCurrentDataArrayIpah1(data);
+            } // }
+
           } catch (e) {
             return false;
           } // if (message.ID == 301) {
@@ -15828,8 +15955,8 @@ if (style0.__inject__) style0.__inject__(context)
 
 var default_component = Object(componentNormalizer["a" /* default */])(
   layouts_defaultvue_type_script_lang_js_,
-  defaultvue_type_template_id_279464fd_render,
-  defaultvue_type_template_id_279464fd_staticRenderFns,
+  defaultvue_type_template_id_64853be2_render,
+  defaultvue_type_template_id_64853be2_staticRenderFns,
   false,
   default_injectStyles,
   null,
@@ -15919,12 +16046,12 @@ var login_component = Object(componentNormalizer["a" /* default */])(
 
 installComponents_default()(login_component, {VMain: VMain_VMain})
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/status.vue?vue&type=template&id=6660b16c&
-var statusvue_type_template_id_6660b16c_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-app',{attrs:{"dark":""}},[_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":"","temporary":""},model:{value:(_vm.drawer),callback:function ($$v) {_vm.drawer=$$v},expression:"drawer"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1),_vm._v(" "),_c('v-app-bar',{attrs:{"fixed":"","app":""}},[_c('v-app-bar-nav-icon',{staticStyle:{"color":"white"},on:{"click":function($event){$event.stopPropagation();_vm.drawer = !_vm.drawer}}}),_vm._v(" "),_c('v-toolbar-title',{staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name"},[_c('h4',{staticStyle:{"color":"white"}},[_vm._v(_vm._s(_vm.loggedInUser.username))])]):_vm._e(),_vm._v(" "),_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1),_vm._v(" "),_c('v-main',[_c('v-container',[_c('nuxt')],1)],1),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('div',{staticClass:"layer",attrs:{"id":"layer"}}):_vm._e()]),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('v-card',{staticClass:"logout elevation-12"},[_c('v-card-title',[_vm._v("\n        Logout\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("\n        Are you sure?\n      ")]),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"success logout-btn",on:{"click":_vm.logout}},[_vm._v("Yes")]),_vm._v(" "),_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1):_vm._e()],1),_vm._v(" "),_c('v-footer',{attrs:{"absolute":!_vm.fixed,"app":""}},[_c('span',[_vm._v("© "+_vm._s(new Date().getFullYear()))])])],1)}
-var statusvue_type_template_id_6660b16c_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/status.vue?vue&type=template&id=584644d6&
+var statusvue_type_template_id_584644d6_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-app',{attrs:{"dark":""}},[_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":"","temporary":""},model:{value:(_vm.drawer),callback:function ($$v) {_vm.drawer=$$v},expression:"drawer"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1),_vm._v(" "),_c('v-app-bar',{attrs:{"fixed":"","app":""}},[_c('v-app-bar-nav-icon',{staticStyle:{"color":"white"},on:{"click":function($event){$event.stopPropagation();_vm.drawer = !_vm.drawer}}}),_vm._v(" "),_c('v-toolbar-title',{staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name"},[_c('h4',{staticStyle:{"color":"white"}},[_vm._v(_vm._s(_vm.loggedInUser.username))])]):_vm._e(),_vm._v(" "),_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1),_vm._v(" "),_c('v-main',[_c('v-container',[_c('nuxt')],1)],1),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('div',{staticClass:"layer",attrs:{"id":"layer"}}):_vm._e()]),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('v-card',{staticClass:"logout elevation-12"},[_c('v-card-title',[_vm._v("\n        Logout\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("\n        Are you sure?\n      ")]),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"success logout-btn",on:{"click":_vm.logout}},[_vm._v("Yes")]),_vm._v(" "),_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1):_vm._e()],1),_vm._v(" "),_c('v-footer',{attrs:{"absolute":!_vm.fixed,"app":""}},[_c('span',[_vm._v("© "+_vm._s(new Date().getFullYear()))])])],1)}
+var statusvue_type_template_id_584644d6_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./layouts/status.vue?vue&type=template&id=6660b16c&
+// CONCATENATED MODULE: ./layouts/status.vue?vue&type=template&id=584644d6&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/status.vue?vue&type=script&lang=js&
 //
@@ -16233,6 +16360,7 @@ var statusvue_type_template_id_6660b16c_staticRenderFns = []
 
         if (topic === "new/np/kongpo/s/c/true") {
           message = JSON.parse(message);
+          console.log(message);
           this.kongPoStatus(message);
         }
       });
@@ -16481,8 +16609,8 @@ if (style0.__inject__) style0.__inject__(context)
 
 var status_component = Object(componentNormalizer["a" /* default */])(
   layouts_statusvue_type_script_lang_js_,
-  statusvue_type_template_id_6660b16c_render,
-  statusvue_type_template_id_6660b16c_staticRenderFns,
+  statusvue_type_template_id_584644d6_render,
+  statusvue_type_template_id_584644d6_staticRenderFns,
   false,
   status_injectStyles,
   null,
@@ -16837,7 +16965,7 @@ const components = {
   OverviewSingleSummary: () => __webpack_require__.e(/* import() | components/overview-single-summary */ 36).then(__webpack_require__.bind(null, 299)).then(c => wrapFunctional(c.default || c)),
   OverviewSingleWeather: () => __webpack_require__.e(/* import() | components/overview-single-weather */ 37).then(__webpack_require__.bind(null, 324)).then(c => wrapFunctional(c.default || c)),
   OverviewSingleWeatherMain: () => __webpack_require__.e(/* import() | components/overview-single-weather-main */ 38).then(__webpack_require__.bind(null, 323)).then(c => wrapFunctional(c.default || c)),
-  AdminOverviewSingleData: () => __webpack_require__.e(/* import() | components/admin-overview-single-data */ 8).then(__webpack_require__.bind(null, 231)).then(c => wrapFunctional(c.default || c))
+  AdminOverviewSingleData: () => __webpack_require__.e(/* import() | components/admin-overview-single-data */ 8).then(__webpack_require__.bind(null, 230)).then(c => wrapFunctional(c.default || c))
 };
 
 for (const name in components) {
