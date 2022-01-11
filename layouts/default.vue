@@ -366,7 +366,8 @@ export default {
     // Create connection
     createConnection() {
       const { host, port, endpoint, ...options } = this.connection;
-      const connectUrl = `ws://${host}:${port}${endpoint}`;
+      // const connectUrl = `ws://${host}:${port}${endpoint}`;
+      const connectUrl = `${host}`;
       try {
         this.client = mqtt.connect(connectUrl, options);
       } catch (error) {
