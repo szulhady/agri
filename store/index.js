@@ -185,8 +185,9 @@ export const state = () => ({
             new sensor('pH','pH',0,'',25,false, 'pH'),
             new sensor('EC','EC',0,'',25,false, 'EC'),
             new sensor('HMD','HMD',0,'',25,false, 'HMD'),
-            new sensor('Temp','Temp',0,'',25,false, 'Temp')
+            new sensor('Temp','Temp',0,'',25,false, 'Temp'),
           ],
+          lastUpdate:"waiting for incoming data...",
           warnings:[],
           warningsCounts: [],
         },
@@ -204,6 +205,7 @@ export const state = () => ({
             new sensor('HMD','HMD',0,'',25,false, 'HMD'),
             new sensor('Temp','Temp',0,'',25,false, 'Temp')
           ],
+          lastUpdate:"waiting for incoming data...",
           warnings:[],
           warningsCounts: [],
         },
@@ -221,6 +223,7 @@ export const state = () => ({
             new sensor('HMD','HMD',0,'',25,false, 'HMD'),
             new sensor('Temp','Temp',0,'',25,false, 'Temp')
           ],
+          lastUpdate:"waiting for incoming data...",
           warnings:[],
           warningsCounts: [],
         },
@@ -238,6 +241,7 @@ export const state = () => ({
             new sensor('HMD','HMD',0,'',25,false, 'HMD'),
             new sensor('Temp','Temp',0,'',25,false, 'Temp')
           ],
+          lastUpdate:"waiting for incoming data...",
           warnings:[],
           warningsCounts: [],
         },
@@ -271,7 +275,7 @@ export const state = () => ({
       warningsCounts: [],
       sensorType:[
         {
-          name:"Soil",
+          name:"Soil Data",
           image:"ipah1/ipah1.png"
         },
         {
@@ -301,6 +305,7 @@ export const state = () => ({
             new sensor('EC','EC',0,'',25,false, 'EC'),
             new sensor('HMD','HMD',0,'',25,false, 'HMD'),
           ],
+          lastUpdate:"waiting for incoming data...",
           warnings:[],
           warningsCounts: [],
         },
@@ -314,6 +319,7 @@ export const state = () => ({
             new sensor('EC','EC',0,'',25,false, 'EC'),
             new sensor('HMD','HMD',0,'',25,false, 'HMD'),
           ],
+          lastUpdate:"waiting for incoming data...",
           warnings:[],
           warningsCounts: [],
           
@@ -328,10 +334,12 @@ export const state = () => ({
             new sensor('EC','EC',0,'',25,false, 'EC'),
             new sensor('HMD','HMD',0,'',25,false, 'HMD'),
           ],
+          lastUpdate:"waiting for incoming data...",
           warnings:[],
           warningsCounts: [],
         },
       ],
+      lastUpdate:"waiting for incoming data...",
       sensorWater:[
         {
           block:'Block 1',
@@ -377,7 +385,7 @@ export const state = () => ({
       warningsCounts: [],
       sensorType:[
         {
-          name:"Soil",
+          name:"Soil Data",
           image:"ipah2/ipah2.png"
         },
         {
@@ -406,6 +414,7 @@ export const state = () => ({
             new sensor('EC','EC',0,'',25,false, 'EC'),
             new sensor('HMD','HMD',0,'',25,false, 'HMD'),
           ],
+          lastUpdate:"waiting for incoming data...",
           warnings:[],
           warningsCounts: [],
         },
@@ -419,6 +428,7 @@ export const state = () => ({
             new sensor('EC','EC',0,'',25,false, 'EC'),
             new sensor('HMD','HMD',0,'',25,false, 'HMD'),
           ],
+          lastUpdate:"waiting for incoming data...",
           warnings:[],
           warningsCounts: [],
         },
@@ -432,6 +442,7 @@ export const state = () => ({
             new sensor('EC','EC',0,'',25,false, 'EC'),
             new sensor('HMD','HMD',0,'',25,false, 'HMD'),
           ],
+          lastUpdate:"waiting for incoming data...",
           warnings:[],
           warningsCounts: [],
         },
@@ -484,7 +495,7 @@ export const state = () => ({
       warningsCounts: [],
       sensorType:[
         {
-          name:"Soil",
+          name:"Soil Data",
           image:"tkpmPagoh/tkpmPagoh.png"
         },
         {
@@ -2311,6 +2322,7 @@ export const mutations = {
     let soilEC = payload.soilEC
     let soilMS = payload.soilMS
     let soilTEMP = payload.soilTEMP
+    let ts = payload.ts
     state.stations[station].sensorSoil[block].sensorData[0].data = soilNitrogen
     state.stations[station].sensorSoil[block].sensorData[1].data = soilPhosphorus
     state.stations[station].sensorSoil[block].sensorData[2].data = soilPotassium
@@ -2318,6 +2330,7 @@ export const mutations = {
     state.stations[station].sensorSoil[block].sensorData[4].data = soilEC
     state.stations[station].sensorSoil[block].sensorData[5].data = soilMS
     state.stations[station].sensorSoil[block].sensorData[6].data = soilTEMP
+    state.stations[station].sensorSoil[block].lastUpdate = ts
   },
   getCurrentDataNutrientIpah1(state, payload){
     let station = payload.station
@@ -2426,9 +2439,11 @@ export const mutations = {
     let soilPH = payload.soilPH
     let soilEC = payload.soilEC
     let soilMS = payload.soilMS
+    let ts = payload.ts
     state.stations[station].sensorSoil[block].sensorData[0].data = soilPH
     state.stations[station].sensorSoil[block].sensorData[1].data = soilEC
     state.stations[station].sensorSoil[block].sensorData[2].data = soilMS
+    state.stations[station].sensorSoil[block].lastUpdate = ts
   },
 
   getCurrentDataNutrientIpah2(state, payload){
@@ -2524,9 +2539,11 @@ export const mutations = {
     let soilPH = payload.soilPH
     let soilEC = payload.soilEC
     let soilMS = payload.soilMS
+    let ts = payload.ts
     state.stations[station].sensorSoil[block].sensorData[0].data = soilPH
     state.stations[station].sensorSoil[block].sensorData[1].data = soilEC
     state.stations[station].sensorSoil[block].sensorData[2].data = soilMS
+    state.stations[station].sensorSoil[block].lastUpdate = ts
   },
   // END OF TkpmPagoh //
 

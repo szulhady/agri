@@ -27,17 +27,25 @@
         <!-- </v-list> -->
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar fixed app>
-      <v-toolbar-title v-text="title" style="font-weight:bold" />
+    <v-app-bar fixed app class="app-bar-top">
+      <v-toolbar-title
+        class="title-container"
+        v-text="title"
+        style="font-weight:bold"
+      />
       <v-spacer />
-      <div class="user-name" v-if="loggedInUser">
+      <div class="user-name-container" v-if="loggedInUser">
         <!-- <v-icon>mdi-account-circle</v-icon> -->
-        <h4 style="color:white">{{ loggedInUser.username }}</h4>
+        <h4 class="user-name-title" style="color:white">
+          {{ loggedInUser.username }}
+        </h4>
         <!-- <h4>{{loggedInUser.topics}}</h4> -->
       </div>
-      <v-btn icon @click.stop="rightDrawer = !rightDrawer">
-        <v-icon v-if="loggedInUser" color="success">mdi-logout</v-icon>
-      </v-btn>
+      <div class="logout-container">
+        <v-btn icon @click.stop="rightDrawer = !rightDrawer">
+          <v-icon v-if="loggedInUser" color="success">mdi-logout</v-icon>
+        </v-btn>
+      </div>
     </v-app-bar>
     <!-- End of NavBar -->
     <v-main>
@@ -66,6 +74,41 @@
     <v-footer :absolute="!fixed" app>
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
+    <v-row justify="center">
+      <v-dialog v-model="dialog" persistent max-width="300">
+        <v-card>
+          <v-card-title class="text-h5">
+            Alert
+          </v-card-title>
+          <hr class="hr" />
+          <v-card-subtitle style="padding-top:10px"
+            >Cannot connect to server. There are several cause for this problem
+            :</v-card-subtitle
+          >
+          <v-card-subtitle
+            style="margin-top:-10px; justify-contents:center; display:flex"
+            ><span style="font-weight:bold; font-size:25px; padding-right:10px"
+              >•</span
+            >
+            No internet connection</v-card-subtitle
+          >
+          <v-card-subtitle
+            style="margin-top:-10px;justify-contents:center; display:flex"
+            ><span style="font-weight:bold; font-size:25px;padding-right:10px"
+              >•</span
+            >
+            Server error (Please contact admin to resolve the
+            issue)</v-card-subtitle
+          >
+          <!-- <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn class="success logout-btn" @click="dialog = false">
+              Okay
+            </v-btn>
+          </v-card-actions> -->
+        </v-card>
+      </v-dialog>
+    </v-row>
   </v-app>
 </template>
 
@@ -77,6 +120,7 @@ import mqtt from "mqtt";
 export default {
   data() {
     return {
+      dialog: false,
       clipped: false,
       fixed: false,
       drawer: true,
@@ -237,13 +281,14 @@ export default {
         port: 8083,
         endpoint: "/mqtt",
         clean: true, // Reserved session
-        connectTimeout: 4000, // Time out
-        reconnectPeriod: 4000 // Reconnection interval
+        connectTimeout: 3000, // Time out
+        reconnectPeriod: 3000 // Reconnection interval
       },
       subscription: {
         // topic: "geyzer/#",
         topic: [
           "nexplex/sense/#",
+          "new/nexplex/#",
           "np/s/#",
           "new/nexplex/#",
           "nexplex/sense",
@@ -300,6 +345,7 @@ export default {
     },
     cancel: function() {
       this.rightDrawer = false;
+      this.dialog2 = true;
     },
     track: function() {
       window.onclick = event => {
@@ -366,41 +412,54 @@ export default {
     // Create connection
     createConnection() {
       const { host, port, endpoint, ...options } = this.connection;
-      // const connectUrl = `ws://${host}:${port}${endpoint}`;
+      // const connectUrl = `wss:${host}:${port}${endpoint}`;
       const connectUrl = `${host}`;
       try {
         this.client = mqtt.connect(connectUrl, options);
       } catch (error) {
         console.log("mqtt.connect error", error);
       }
+
       this.client.on("connect", () => {
         console.log("Connection succeeded!");
+        this.dialog = false;
+        console.log("here");
       });
       this.client.on("error", error => {
         console.log("Connection failed", error);
       });
+      this.client.on("close", () => {
+        this.dialog = true;
+      });
+      this.client.stream.on("error", error => {
+        // This does trigger when the URL is invalid
+        console.error("Connection error:", error);
+        this.dialog = true;
+      });
       this.client.on("message", (topic, message) => {
-        if (topic === "nexplex/sense/ipah/block1") {
+        if (topic === "new/nexplex/ipah/sense/block1") {
           message = JSON.parse(message);
+          console.log(message);
           let payload = {
             station: 0,
             block: 0,
-            soilNitrogen: message.NTR,
-            soilPhosphorus: message.PHOS,
-            soilPotassium: message.POT,
-            soilPH: message.pH,
-            soilEC: message.EC,
-            soilMS: message.HMD,
-            soilTEMP: message.TMP
+            soilNitrogen: message.nt,
+            soilPhosphorus: message.ps,
+            soilPotassium: message.po,
+            soilPH: message.ph,
+            soilEC: message.ec,
+            soilMS: message.mo,
+            soilTEMP: message.tp,
+            ts: message.ts
           };
           this.getCurrentDataIpah1(payload);
-          this.check(0, 0, 0, " Nitrogen", message.NTR, 20);
-          this.check(0, 0, 1, " Phosphorus", message.PHOS, 20);
-          this.check(0, 0, 2, " Potassium", message.POT, 20);
-          this.check(0, 0, 3, " pH", message.pH, 7);
-          this.check(0, 0, 4, " EC", message.EC, 10);
-          this.check(0, 0, 5, " Humidity", message.HMD, 10);
-          this.check(0, 0, 6, " Temp", message.TMP, 10);
+          this.check(0, 0, 0, " Nitrogen", message.nt, 20);
+          this.check(0, 0, 1, " Phosphorus", message.ps, 20);
+          this.check(0, 0, 2, " Potassium", message.po, 20);
+          this.check(0, 0, 3, " pH", message.ph, 7);
+          this.check(0, 0, 4, " EC", message.ec, 10);
+          this.check(0, 0, 5, " Humidity", message.mo, 10);
+          this.check(0, 0, 6, " Temp", message.tp, 10);
           const payloadStringArray = {
             indexStation: 0,
             indexBlock: 0
@@ -429,27 +488,28 @@ export default {
           this.countWarningsIpah(data);
         }
 
-        if (topic === "nexplex/sense/ipah/block2") {
+        if (topic === "new/nexplex/ipah/sense/block2") {
           message = JSON.parse(message);
           let payload = {
             station: 0,
             block: 1,
-            soilNitrogen: message.NTR,
-            soilPhosphorus: message.PHOS,
-            soilPotassium: message.POT,
-            soilPH: message.pH,
-            soilEC: message.EC,
-            soilMS: message.HMD,
-            soilTEMP: message.TMP
+            soilNitrogen: message.nt,
+            soilPhosphorus: message.ps,
+            soilPotassium: message.po,
+            soilPH: message.ph,
+            soilEC: message.ec,
+            soilMS: message.mo,
+            soilTEMP: message.tp,
+            ts: message.ts
           };
           this.getCurrentDataIpah1(payload);
-          this.check(0, 1, 0, " Nitrogen", message.NTR, 10);
-          this.check(0, 1, 1, " Phosphorus", message.PHOS, 10);
-          this.check(0, 1, 2, " Potassium", message.POT, 10);
-          this.check(0, 1, 3, " pH", message.pH, 7);
-          this.check(0, 1, 4, " EC", message.EC, 10);
-          this.check(0, 1, 5, " Humidity", message.HMD, 10);
-          this.check(0, 1, 6, " Temp", message.TMP, 10);
+          this.check(0, 1, 0, " Nitrogen", message.nt, 10);
+          this.check(0, 1, 1, " Phosphorus", message.ps, 10);
+          this.check(0, 1, 2, " Potassium", message.po, 10);
+          this.check(0, 1, 3, " pH", message.ph, 7);
+          this.check(0, 1, 4, " EC", message.ec, 10);
+          this.check(0, 1, 5, " Humidity", message.mo, 10);
+          this.check(0, 1, 6, " Temp", message.tp, 10);
           const payloadStringArray = {
             indexStation: 0,
             indexBlock: 1
@@ -477,27 +537,28 @@ export default {
           this.countWarningsIpah(data);
         }
 
-        if (topic === "nexplex/sense/ipah/block3") {
+        if (topic === "new/nexplex/ipah/sense/block3") {
           message = JSON.parse(message);
           let payload = {
             station: 0,
             block: 2,
-            soilNitrogen: message.NTR,
-            soilPhosphorus: message.PHOS,
-            soilPotassium: message.POT,
-            soilPH: message.pH,
-            soilEC: message.EC,
-            soilMS: message.HMD,
-            soilTEMP: message.TMP
+            soilNitrogen: message.nt,
+            soilPhosphorus: message.ps,
+            soilPotassium: message.po,
+            soilPH: message.ph,
+            soilEC: message.ec,
+            soilMS: message.mo,
+            soilTEMP: message.tp,
+            ts: message.ts
           };
           this.getCurrentDataIpah1(payload);
-          this.check(0, 2, 0, " Nitrogen", message.NTR, 10);
-          this.check(0, 2, 1, " Phosphorus", message.PHOS, 10);
-          this.check(0, 2, 2, " Potassium", message.POT, 10);
-          this.check(0, 2, 3, " pH", message.pH, 7);
-          this.check(0, 2, 4, " EC", message.EC, 10);
-          this.check(0, 2, 5, " Humidity", message.HMD, 10);
-          this.check(0, 2, 6, " Temp", message.TMP, 10);
+          this.check(0, 2, 0, " Nitrogen", message.nt, 10);
+          this.check(0, 2, 1, " Phosphorus", message.ps, 10);
+          this.check(0, 2, 2, " Potassium", message.po, 10);
+          this.check(0, 2, 3, " pH", message.ph, 7);
+          this.check(0, 2, 4, " EC", message.ec, 10);
+          this.check(0, 2, 5, " Humidity", message.mo, 10);
+          this.check(0, 2, 6, " Temp", message.tp, 10);
           const payloadStringArray = {
             indexStation: 0,
             indexBlock: 2
@@ -525,27 +586,28 @@ export default {
           this.countWarningsIpah(data);
         }
 
-        if (topic === "nexplex/sense/ipah/block4") {
+        if (topic === "new/nexplex/ipah/sense/block4") {
           message = JSON.parse(message);
           let payload = {
             station: 0,
             block: 3,
-            soilNitrogen: message.NTR,
-            soilPhosphorus: message.PHOS,
-            soilPotassium: message.POT,
-            soilPH: message.pH,
-            soilEC: message.EC,
-            soilMS: message.HMD,
-            soilTEMP: message.TMP
+            soilNitrogen: message.nt,
+            soilPhosphorus: message.ps,
+            soilPotassium: message.po,
+            soilPH: message.ph,
+            soilEC: message.ec,
+            soilMS: message.mo,
+            soilTEMP: message.tp,
+            ts: message.ts
           };
           this.getCurrentDataIpah1(payload);
-          this.check(0, 3, 0, " Nitrogen", message.NTR, 10);
-          this.check(0, 3, 1, " Phosphorus", message.PHOS, 10);
-          this.check(0, 3, 2, " Potassium", message.POT, 10);
-          this.check(0, 3, 3, " pH", message.pH, 7);
-          this.check(0, 3, 4, " EC", message.EC, 10);
-          this.check(0, 3, 5, " Humidity", message.HMD, 10);
-          this.check(0, 3, 6, " Temp", message.TMP, 10);
+          this.check(0, 3, 0, " Nitrogen", message.nt, 10);
+          this.check(0, 3, 1, " Phosphorus", message.ps, 10);
+          this.check(0, 3, 2, " Potassium", message.po, 10);
+          this.check(0, 3, 3, " pH", message.ph, 7);
+          this.check(0, 3, 4, " EC", message.ec, 10);
+          this.check(0, 3, 5, " Humidity", message.mo, 10);
+          this.check(0, 3, 6, " Temp", message.tp, 10);
           const payloadStringArray = {
             indexStation: 0,
             indexBlock: 3
@@ -587,31 +649,36 @@ export default {
           this.getCurrentDataNutrientIpah1(payload);
         }
 
-        // if (topic == "nexplex/sense") {
-        //   message = JSON.parse(message);
-        //   if (TID == 318) {
-        //     let payload = {
-        //       station: 0,
-        //       EC: message.EC
-        //     };
-        //     this.getCurrentDataNutrientIpah1EC(payload);
-        //   }
-        // }
-
-        if (topic === "nexplex/sense/tkpmIpah/block1") {
+        if (topic == "nexplex/sense") {
+          // console.log("here");
           message = JSON.parse(message);
+          console.log(message);
+          if (message.TID == 381) {
+            let payload = {
+              station: 0,
+              EC: message.EC
+            };
+            console.log(payload);
+            this.getCurrentDataNutrientIpah1EC(payload);
+          }
+        }
+
+        if (topic === "nexplex/sense/tkpmIpah/block1/retain") {
+          message = JSON.parse(message);
+          console.log(message);
           let payload = {
             station: 1,
             block: 0,
-            soilPH: message.pH,
-            soilEC: message.EC,
-            soilMS: message.HMD
+            soilPH: message.ph,
+            soilEC: message.ec,
+            soilMS: message.mo,
+            ts: message.ts
           };
           this.getCurrentDataIpah2(payload);
 
-          this.check(1, 0, 0, " pH", message.pH, 7);
-          this.check(1, 0, 1, " EC", message.EC, 10);
-          this.check(1, 0, 2, " Humidity", message.HMD, 10);
+          this.check(1, 0, 0, " pH", message.ph, 7);
+          this.check(1, 0, 1, " EC", message.ec, 10);
+          this.check(1, 0, 2, " Humidity", message.mo, 10);
 
           const payloadStringArray = {
             indexStation: 1,
@@ -633,19 +700,20 @@ export default {
           this.countWarningsTkpmIpah(data);
         }
 
-        if (topic === "nexplex/sense/tkpmIpah/block2") {
+        if (topic === "nexplex/sense/tkpmIpah/block2/retain") {
           message = JSON.parse(message);
           let payload = {
             station: 1,
             block: 1,
-            soilPH: message.pH,
-            soilEC: message.EC,
-            soilMS: message.HMD
+            soilPH: message.ph,
+            soilEC: message.ec,
+            soilMS: message.mo,
+            ts: message.ts
           };
           this.getCurrentDataIpah2(payload);
-          this.check(1, 1, 0, " pH", message.pH, 7);
-          this.check(1, 1, 1, " EC", message.EC, 10);
-          this.check(1, 1, 2, " Humidity", message.HMD, 10);
+          this.check(1, 1, 0, " pH", message.ph, 7);
+          this.check(1, 1, 1, " EC", message.ec, 10);
+          this.check(1, 1, 2, " Humidity", message.mo, 10);
 
           const payloadStringArray = {
             indexStation: 1,
@@ -666,19 +734,20 @@ export default {
           this.countWarningsTkpmIpah(data);
         }
 
-        if (topic === "nexplex/sense/tkpmIpah/block3") {
+        if (topic === "nexplex/sense/tkpmIpah/block3/retain") {
           message = JSON.parse(message);
           let payload = {
             station: 1,
             block: 2,
-            soilPH: message.pH,
-            soilEC: message.EC,
-            soilMS: message.HMD
+            soilPH: message.ph,
+            soilEC: message.ec,
+            soilMS: message.mo,
+            ts: message.ts
           };
           this.getCurrentDataIpah2(payload);
-          this.check(1, 2, 0, " pH", message.pH, 7);
-          this.check(1, 2, 1, " EC", message.EC, 10);
-          this.check(1, 2, 2, " Humidity", message.HMD, 0.5);
+          this.check(1, 2, 0, " pH", message.ph, 7);
+          this.check(1, 2, 1, " EC", message.ec, 10);
+          this.check(1, 2, 2, " Humidity", message.mo, 0.5);
 
           const payloadStringArray = {
             indexStation: 1,
@@ -711,7 +780,8 @@ export default {
             block: 0,
             soilPH: message.pH,
             soilEC: message.EC,
-            soilMS: message.HMD
+            soilMS: message.HMD,
+            ts: message.ts
           };
           this.getCurrentDataTkpmPagoh(payload);
           this.check(2, 0, 0, " pH", message.pH, 7);
@@ -745,7 +815,8 @@ export default {
             block: 1,
             soilPH: message.pH,
             soilEC: message.EC,
-            soilMS: message.HMD
+            soilMS: message.HMD,
+            ts: message.ts
           };
           this.getCurrentDataTkpmPagoh(payload);
           this.check(2, 1, 0, " pH", message.pH, 7);
@@ -773,12 +844,14 @@ export default {
 
         if (topic === "new/nexplex/tkpmPagoh/sense/block3") {
           message = JSON.parse(message);
+          console.log(message);
           let payload = {
             station: 2,
             block: 2,
             soilPH: message.pH,
             soilEC: message.EC,
-            soilMS: message.HMD
+            soilMS: message.HMD,
+            ts: message.ts
           };
           this.getCurrentDataTkpmPagoh(payload);
           this.check(2, 2, 0, " pH", message.pH, 7);
@@ -1331,5 +1404,49 @@ tbody tr:nth-of-type(odd) {
 }
 .v-menu__content .v-list-item__title {
   color: black !important;
+}
+.app-bar-top {
+  max-width: 100%;
+}
+.user-name-title {
+  margin-bottom: 0 !important;
+}
+/* .title-container {
+  max-width: 60%;
+}
+.user-name-container {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+.logout-container {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  padding-right: 10px;
+} */
+@media (max-width: 500px) {
+  .app-bar-top {
+    max-width: 100%;
+  }
+  .user-name-title {
+    margin-bottom: 0 !important;
+  }
+  .title-container {
+    max-width: 50%;
+  }
+  .user-name-container {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+  }
+  .logout-container {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    padding-right: 10px;
+  }
 }
 </style>

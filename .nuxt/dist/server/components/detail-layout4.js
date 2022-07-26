@@ -259,7 +259,7 @@ var staticRenderFns = []
 // CONCATENATED MODULE: ./components/detail/layout4.vue?vue&type=script&lang=js&
  /* harmony default export */ var detail_layout4vue_type_script_lang_js_ = (layout4vue_type_script_lang_js_); 
 // EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
-var componentNormalizer = __webpack_require__(15);
+var componentNormalizer = __webpack_require__(16);
 
 // CONCATENATED MODULE: ./components/detail/layout4.vue
 
@@ -279,7 +279,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "4f278ed8"
+  "550b4efa"
   
 )
 

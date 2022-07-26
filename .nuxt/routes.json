@@ -2,176 +2,151 @@
   {
     "name": "adminDetail",
     "path": "/adminDetail",
-    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app\\\\pages\\\\adminDetail.vue",
-    "chunkName": "pages/adminDetail",
-    "_name": "_d4a5737c"
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app V2.0\\\\pages\\\\adminDetail.vue",
+    "chunkName": "pages/adminDetail"
   },
   {
     "name": "adminDetailIpah1",
     "path": "/adminDetailIpah1",
-    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app\\\\pages\\\\adminDetailIpah1.vue",
-    "chunkName": "pages/adminDetailIpah1",
-    "_name": "_27abd41e"
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app V2.0\\\\pages\\\\adminDetailIpah1.vue",
+    "chunkName": "pages/adminDetailIpah1"
   },
   {
     "name": "adminStatus",
     "path": "/adminStatus",
-    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app\\\\pages\\\\adminStatus.vue",
-    "chunkName": "pages/adminStatus",
-    "_name": "_3b8b753a"
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app V2.0\\\\pages\\\\adminStatus.vue",
+    "chunkName": "pages/adminStatus"
   },
   {
     "name": "control",
     "path": "/control",
-    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app\\\\pages\\\\control.vue",
-    "chunkName": "pages/control",
-    "_name": "_3cd3ecc2"
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app V2.0\\\\pages\\\\control.vue",
+    "chunkName": "pages/control"
   },
   {
     "name": "current",
     "path": "/current",
-    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app\\\\pages\\\\current.vue",
-    "chunkName": "pages/current",
-    "_name": "_6ba8f3bb"
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app V2.0\\\\pages\\\\current.vue",
+    "chunkName": "pages/current"
   },
   {
     "name": "detail",
     "path": "/detail",
-    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app\\\\pages\\\\detail.vue",
-    "chunkName": "pages/detail",
-    "_name": "_b918b602"
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app V2.0\\\\pages\\\\detail.vue",
+    "chunkName": "pages/detail"
   },
   {
     "name": "general",
     "path": "/general",
-    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app\\\\pages\\\\general.vue",
-    "chunkName": "pages/general",
-    "_name": "_7c34efaa"
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app V2.0\\\\pages\\\\general.vue",
+    "chunkName": "pages/general"
   },
   {
     "name": "inspire",
     "path": "/inspire",
-    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app\\\\pages\\\\inspire.vue",
-    "chunkName": "pages/inspire",
-    "_name": "_4dc3dec8"
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app V2.0\\\\pages\\\\inspire.vue",
+    "chunkName": "pages/inspire"
   },
   {
     "name": "ipah2Status",
     "path": "/ipah2Status",
-    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app\\\\pages\\\\ipah2Status.vue",
-    "chunkName": "pages/ipah2Status",
-    "_name": "_2c0b3238"
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app V2.0\\\\pages\\\\ipah2Status.vue",
+    "chunkName": "pages/ipah2Status"
   },
   {
     "name": "ipahStatus",
     "path": "/ipahStatus",
-    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app\\\\pages\\\\ipahStatus.vue",
-    "chunkName": "pages/ipahStatus",
-    "_name": "_465bd164"
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app V2.0\\\\pages\\\\ipahStatus.vue",
+    "chunkName": "pages/ipahStatus"
   },
   {
     "name": "kongPoStatus",
     "path": "/kongPoStatus",
-    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app\\\\pages\\\\kongPoStatus.vue",
-    "chunkName": "pages/kongPoStatus",
-    "_name": "_184df5bc"
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app V2.0\\\\pages\\\\kongPoStatus.vue",
+    "chunkName": "pages/kongPoStatus"
   },
   {
     "name": "login",
     "path": "/login",
-    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app\\\\pages\\\\login.vue",
-    "chunkName": "pages/login",
-    "_name": "_5ea8b02b"
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app V2.0\\\\pages\\\\login.vue",
+    "chunkName": "pages/login"
   },
   {
     "name": "overview-admin",
     "path": "/overview-admin",
-    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app\\\\pages\\\\overview-admin.vue",
-    "chunkName": "pages/overview-admin",
-    "_name": "_4baaf7a9"
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app V2.0\\\\pages\\\\overview-admin.vue",
+    "chunkName": "pages/overview-admin"
   },
   {
     "name": "register",
     "path": "/register",
-    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app\\\\pages\\\\register.vue",
-    "chunkName": "pages/register",
-    "_name": "_4ebdf4d1"
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app V2.0\\\\pages\\\\register.vue",
+    "chunkName": "pages/register"
   },
   {
     "name": "scheduleIpah1",
     "path": "/scheduleIpah1",
-    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app\\\\pages\\\\scheduleIpah1.vue",
-    "chunkName": "pages/scheduleIpah1",
-    "_name": "_54cff74e"
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app V2.0\\\\pages\\\\scheduleIpah1.vue",
+    "chunkName": "pages/scheduleIpah1"
   },
   {
     "name": "scheduleIpah2",
     "path": "/scheduleIpah2",
-    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app\\\\pages\\\\scheduleIpah2.vue",
-    "chunkName": "pages/scheduleIpah2",
-    "_name": "_54de0ecf"
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app V2.0\\\\pages\\\\scheduleIpah2.vue",
+    "chunkName": "pages/scheduleIpah2"
   },
   {
     "name": "scheduleKongPo",
     "path": "/scheduleKongPo",
-    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app\\\\pages\\\\scheduleKongPo.vue",
-    "chunkName": "pages/scheduleKongPo",
-    "_name": "_39401fbe"
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app V2.0\\\\pages\\\\scheduleKongPo.vue",
+    "chunkName": "pages/scheduleKongPo"
   },
   {
     "name": "scheduleTkpmPagoh",
     "path": "/scheduleTkpmPagoh",
-    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app\\\\pages\\\\scheduleTkpmPagoh.vue",
-    "chunkName": "pages/scheduleTkpmPagoh",
-    "_name": "_0cf22a06"
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app V2.0\\\\pages\\\\scheduleTkpmPagoh.vue",
+    "chunkName": "pages/scheduleTkpmPagoh"
   },
   {
     "name": "tkpmPagohStatus",
     "path": "/tkpmPagohStatus",
-    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app\\\\pages\\\\tkpmPagohStatus.vue",
-    "chunkName": "pages/tkpmPagohStatus",
-    "_name": "_95c9b6a2"
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app V2.0\\\\pages\\\\tkpmPagohStatus.vue",
+    "chunkName": "pages/tkpmPagohStatus"
   },
   {
     "name": "trendsIpah1",
     "path": "/trendsIpah1",
-    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app\\\\pages\\\\trendsIpah1.vue",
-    "chunkName": "pages/trendsIpah1",
-    "_name": "_7a0ee4cf"
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app V2.0\\\\pages\\\\trendsIpah1.vue",
+    "chunkName": "pages/trendsIpah1"
   },
   {
     "name": "trendsIpah2",
     "path": "/trendsIpah2",
-    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app\\\\pages\\\\trendsIpah2.vue",
-    "chunkName": "pages/trendsIpah2",
-    "_name": "_7a1cfc50"
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app V2.0\\\\pages\\\\trendsIpah2.vue",
+    "chunkName": "pages/trendsIpah2"
   },
   {
     "name": "trendsKongPo",
     "path": "/trendsKongPo",
-    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app\\\\pages\\\\trendsKongPo.vue",
-    "chunkName": "pages/trendsKongPo",
-    "_name": "_65feb2c0"
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app V2.0\\\\pages\\\\trendsKongPo.vue",
+    "chunkName": "pages/trendsKongPo"
   },
   {
     "name": "trendsTkpmPagoh",
     "path": "/trendsTkpmPagoh",
-    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app\\\\pages\\\\trendsTkpmPagoh.vue",
-    "chunkName": "pages/trendsTkpmPagoh",
-    "_name": "_760c6f07"
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app V2.0\\\\pages\\\\trendsTkpmPagoh.vue",
+    "chunkName": "pages/trendsTkpmPagoh"
   },
   {
     "name": "user",
     "path": "/user",
-    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app\\\\pages\\\\user.vue",
-    "chunkName": "pages/user",
-    "_name": "_40bbd8f9"
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app V2.0\\\\pages\\\\user.vue",
+    "chunkName": "pages/user"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_d5fde5d8"
+    "component": "C:\\\\Users\\\\Sea-Ic\\\\Desktop\\\\FINALIZE\\\\Web app V2.0\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
   }
 ]

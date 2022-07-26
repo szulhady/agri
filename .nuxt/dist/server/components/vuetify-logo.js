@@ -60,7 +60,7 @@ var staticRenderFns = []
 // CONCATENATED MODULE: ./components/VuetifyLogo.vue?vue&type=template&id=8eb5e2de&
 
 // EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
-var componentNormalizer = __webpack_require__(15);
+var componentNormalizer = __webpack_require__(16);
 
 // CONCATENATED MODULE: ./components/VuetifyLogo.vue
 
@@ -81,7 +81,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "18dd66b4"
+  "6a434be4"
   
 )
 

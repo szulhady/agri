@@ -1,7 +1,7 @@
 exports.ids = [25];
 exports.modules = {
 
-/***/ 261:
+/***/ 265:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33,17 +33,17 @@ var staticRenderFns = []
 // CONCATENATED MODULE: ./components/Notification.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_Notificationvue_type_script_lang_js_ = (Notificationvue_type_script_lang_js_); 
 // EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
-var componentNormalizer = __webpack_require__(15);
+var componentNormalizer = __webpack_require__(16);
 
 // EXTERNAL MODULE: ./node_modules/vuetify-loader/lib/runtime/installComponents.js
-var installComponents = __webpack_require__(19);
+var installComponents = __webpack_require__(20);
 var installComponents_default = /*#__PURE__*/__webpack_require__.n(installComponents);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VCard/VCard.js
-var VCard = __webpack_require__(47);
+var VCard = __webpack_require__(51);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VCard/index.js
-var components_VCard = __webpack_require__(14);
+var components_VCard = __webpack_require__(15);
 
 // CONCATENATED MODULE: ./components/Notification.vue
 
@@ -60,7 +60,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "1ef79920"
+  "a5d5ddf4"
   
 )
 

@@ -20,7 +20,7 @@
               max-height="150px"
               style="object-fit: cover;"
             ></v-img>
-            <v-card-title class="button" style="justify-content:center">
+            <v-card-title class="button">
               {{ category.name }}
             </v-card-title>
           </v-card>
@@ -128,6 +128,8 @@ export default {
 
 .button {
   padding: 5px;
+  display: flex;
+  justify-content: center;
 }
 .active {
   color: aliceblue;
@@ -136,5 +138,20 @@ export default {
 .category:hover {
   background: #395524a4;
   color: aliceblue;
+}
+
+@media (max-width: 500px) {
+  .button {
+    width: calc(100%);
+    display: block;
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    font-size: 16px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 3px 15px;
+  }
 }
 </style>

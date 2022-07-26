@@ -876,7 +876,7 @@ import TableSchedule from "~/components/Schedule/TableSchedule.vue";
 import TableScheduleNutrient from "~/components/Schedule/TableScheduleNutrient.vue";
 
 import moment from "moment";
-
+import mqtt from "mqtt";
 export default {
   middleware: ["isTkpmIpah"],
   layout: "status",
@@ -999,7 +999,30 @@ export default {
       dateStart: "",
       dateEnd: "",
       dateStartNutrient: "",
-      dateEndNutrient: ""
+      dateEndNutrient: "",
+      connection: {
+        host: this.$auth.$state.user.server_mqtt,
+        port: 8083,
+        endpoint: "/mqtt",
+        clean: true, // Reserved session
+        connectTimeout: 3000, // Time out
+        reconnectPeriod: 3000 // Reconnection interval
+      },
+      subscription: {
+        // topic: "geyzer/#",
+        topic: [],
+        qos: 0
+      },
+      receiveNews: "",
+      qosList: [
+        { label: 0, value: 0 },
+        { label: 1, value: 1 },
+        { label: 2, value: 2 }
+      ],
+      client: {
+        connected: false
+      },
+      subscribeSuccess: false
     };
   },
   methods: {
@@ -1040,6 +1063,7 @@ export default {
             // this.disabled.push(moment(i).format("YYYY-MM-DD"))
             this.isDateBeforeToday(i);
           });
+          this.client.publish("np/tkpmIpah/table/dripping", "update");
         })
         .catch(error => {
           console.log(error);
@@ -1054,6 +1078,7 @@ export default {
           response.forEach(i => {
             this.isDateBeforeTodayNutrient(i);
           });
+          this.client.publish("np/tkpmIpah/table/dosing", "update");
           this.getScheduleIpah1();
         })
         .catch(error => {
@@ -1072,7 +1097,10 @@ export default {
           substance: substance
         })
         .then(response => {
-          window.location.reload();
+          this.client.publish("np/tkpmIpah/table/dripping", "update");
+          setTimeout(() => {
+            window.location.reload();
+          }, 1);
         })
         .catch(error => {
           console.log(error);
@@ -1088,7 +1116,10 @@ export default {
           duration: duration
         })
         .then(response => {
-          window.location.reload();
+          this.client.publish("np/tkmpIpah/table/dosing", "update");
+          setTimeout(() => {
+            window.location.reload();
+          }, 1);
         })
         .catch(error => {
           console.log(error);
@@ -1582,6 +1613,43 @@ export default {
         this.allDurationNutrient
       );
       this.dialogPostNutrient = false;
+    },
+    createConnection() {
+      const { host, port, endpoint, ...options } = this.connection;
+      // const connectUrl = `wss:${host}:${port}${endpoint}`;
+      const connectUrl = `${host}`;
+      try {
+        this.client = mqtt.connect(connectUrl, options);
+      } catch (error) {
+        console.log("mqtt.connect error", error);
+      }
+
+      this.client.on("connect", () => {
+        console.log("Connection succeeded!");
+        this.dialog = false;
+        console.log("here");
+      });
+      this.client.on("error", error => {
+        console.log("Connection failed", error);
+      });
+      this.client.on("close", () => {
+        this.dialog = true;
+      });
+      this.client.stream.on("error", error => {
+        // This does trigger when the URL is invalid
+        console.error("Connection error:", error);
+        this.dialog = true;
+      });
+      this.client.on("message", (topic, message) => {});
+    },
+    doSubscribe() {
+      const { topic, qos } = this.subscription;
+      this.client.subscribe(topic, { qos }, (error, res) => {
+        if (error) {
+          return;
+        }
+        this.subscribeSuccess = true;
+      });
     }
   },
   watch: {
@@ -1616,6 +1684,8 @@ export default {
   },
   async mounted() {
     this.getScheduleIpah1Nutrient();
+    this.createConnection();
+    this.doSubscribe();
   }
 };
 </script>

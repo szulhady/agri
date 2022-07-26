@@ -60,7 +60,7 @@ var staticRenderFns = []
 // CONCATENATED MODULE: ./components/Logo.vue?vue&type=template&id=1184cdf1&
 
 // EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
-var componentNormalizer = __webpack_require__(15);
+var componentNormalizer = __webpack_require__(16);
 
 // CONCATENATED MODULE: ./components/Logo.vue
 
@@ -81,7 +81,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "f48a3a40"
+  "332cbe74"
   
 )
 

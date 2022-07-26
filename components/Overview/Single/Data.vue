@@ -25,8 +25,20 @@
         </v-card-subtitle>
       </div>
     </div>
-    <!-- <hr /> -->
+    <hr class="hrData" />
     <!-- <Duration :duration="duration" /> -->
+    <div
+      style="  display: flex;justify-contents:center;align-items:center;
+  margin-left: 25px;"
+    >
+      <v-icon class="mdi mdi-refresh icon-detail" size="20" color="grey">
+      </v-icon>
+      <v-card-subtitle
+        style="  display: flex;justify-contents:center;align-items:center;padding-bottom:15px"
+      >
+        Updated on {{ lastUpdate }}
+      </v-card-subtitle>
+    </div>
   </v-card>
   <!-- </v-flex> -->
   <!-- </v-layout> -->
@@ -38,7 +50,7 @@ export default {
   components: {
     Duration
   },
-  props: ["jetty", "sensorData", "sensorUnit", "duration"]
+  props: ["jetty", "sensorData", "sensorUnit", "duration", "lastUpdate"]
 };
 </script>
 
@@ -67,6 +79,10 @@ export default {
 .bottom {
   padding-bottom: 20px;
 }
+
+.left {
+  padding-left: 10px;
+}
 .reading-box {
   display: flex;
   justify-content: space-evenly;
@@ -80,8 +96,8 @@ export default {
   /* width: 50px; */
 }
 
-hr {
-  margin: 0 20px;
+.hrData {
+  margin: -20px 20px 0 20px;
 }
 
 .low {

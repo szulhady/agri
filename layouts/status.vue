@@ -70,6 +70,41 @@
     <v-footer :absolute="!fixed" app>
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
+    <v-row justify="center">
+      <v-dialog v-model="dialog" persistent max-width="300">
+        <v-card>
+          <v-card-title class="text-h5">
+            Alert
+          </v-card-title>
+          <hr class="hr" />
+          <v-card-subtitle style="padding-top:10px"
+            >Cannot connect to server. There are several cause for this problem
+            :</v-card-subtitle
+          >
+          <v-card-subtitle
+            style="margin-top:-10px; justify-contents:center; display:flex"
+            ><span style="font-weight:bold; font-size:25px; padding-right:10px"
+              >•</span
+            >
+            No internet connection</v-card-subtitle
+          >
+          <v-card-subtitle
+            style="margin-top:-10px;justify-contents:center; display:flex"
+            ><span style="font-weight:bold; font-size:25px;padding-right:10px"
+              >•</span
+            >
+            Server error (Please contact admin to resolve the
+            issue)</v-card-subtitle
+          >
+          <!-- <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn class="success logout-btn" @click="dialog = false">
+              Okay
+            </v-btn>
+          </v-card-actions> -->
+        </v-card>
+      </v-dialog>
+    </v-row>
   </v-app>
 </template>
 
@@ -79,6 +114,7 @@ import mqtt from "mqtt";
 export default {
   data() {
     return {
+      dialog: false,
       clipped: false,
       fixed: false,
       drawer: false,
@@ -297,13 +333,23 @@ export default {
       }
       this.client.on("connect", () => {
         console.log("Connection succeeded!");
+        this.dialog = false;
       });
       this.client.on("error", error => {
         console.log("Connection failed", error);
       });
+      this.client.on("close", () => {
+        this.dialog = true;
+      });
+      this.client.stream.on("error", error => {
+        // This does trigger when the URL is invalid
+        console.error("Connection error:", error);
+        this.dialog = true;
+      });
       this.client.on("message", (topic, message) => {
         if (topic === "new/np/ipah/s/c/true") {
           message = JSON.parse(message);
+          console.log(message);
           this.ipahStatus(message);
         }
 
