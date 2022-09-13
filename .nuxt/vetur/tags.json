@@ -47,11 +47,11 @@
   "DetailYieldCropInformation": {
     "description": "Auto imported from components/detail/yieldCropInformation.vue"
   },
-  "LoginForm": {
-    "description": "Auto imported from components/Login/Form.vue"
-  },
   "GeneralUserInfo": {
     "description": "Auto imported from components/General/UserInfo.vue"
+  },
+  "LoginForm": {
+    "description": "Auto imported from components/Login/Form.vue"
   },
   "OverviewCardDataLeaf": {
     "description": "Auto imported from components/Overview/CardDataLeaf.vue"

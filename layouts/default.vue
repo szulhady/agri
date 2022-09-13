@@ -291,6 +291,7 @@ export default {
           "new/nexplex/#",
           "np/s/#",
           "new/nexplex/#",
+          "new2/nexplex/#",
           "nexplex/sense",
           "kongkong/topic/#"
         ],
@@ -413,7 +414,9 @@ export default {
     createConnection() {
       const { host, port, endpoint, ...options } = this.connection;
       // const connectUrl = `wss:${host}:${port}${endpoint}`;
-      const connectUrl = `${host}`;
+      const connectUrl = `ws://www.txio.live:8083/mqtt`;
+      // const connectUrl = `ws://txio.uitm.edu.my:8083/mqtt`;
+      // const connectUrl = `${host}`;
       try {
         this.client = mqtt.connect(connectUrl, options);
       } catch (error) {
@@ -437,7 +440,7 @@ export default {
         this.dialog = true;
       });
       this.client.on("message", (topic, message) => {
-        if (topic === "new/nexplex/ipah/sense/block1") {
+        if (topic === "new2/nexplex/ipah/sense/block1") {
           message = JSON.parse(message);
           console.log(message);
           let payload = {
@@ -488,7 +491,7 @@ export default {
           this.countWarningsIpah(data);
         }
 
-        if (topic === "new/nexplex/ipah/sense/block2") {
+        if (topic === "new2/nexplex/ipah/sense/block2") {
           message = JSON.parse(message);
           let payload = {
             station: 0,
@@ -537,7 +540,7 @@ export default {
           this.countWarningsIpah(data);
         }
 
-        if (topic === "new/nexplex/ipah/sense/block3") {
+        if (topic === "new2/nexplex/ipah/sense/block3") {
           message = JSON.parse(message);
           let payload = {
             station: 0,
@@ -586,7 +589,7 @@ export default {
           this.countWarningsIpah(data);
         }
 
-        if (topic === "new/nexplex/ipah/sense/block4") {
+        if (topic === "new2/nexplex/ipah/sense/block4") {
           message = JSON.parse(message);
           let payload = {
             station: 0,
