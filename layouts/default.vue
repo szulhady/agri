@@ -413,10 +413,7 @@ export default {
     // Create connection
     createConnection() {
       const { host, port, endpoint, ...options } = this.connection;
-      // const connectUrl = `wss:${host}:${port}${endpoint}`;
-      const connectUrl = `ws://www.txio.live:8083/mqtt`;
-      // const connectUrl = `ws://txio.uitm.edu.my:8083/mqtt`;
-      // const connectUrl = `${host}`;
+      const connectUrl = `${host}`;
       try {
         this.client = mqtt.connect(connectUrl, options);
       } catch (error) {

@@ -13344,55 +13344,55 @@ function shouldScrollToTop(route) {
 
 
 
-const _a7e074b8 = () => interopDefault(__webpack_require__.e(/* import() | pages/adminDetail */ 57).then(__webpack_require__.bind(null, 456)));
+const _e58fe228 = () => interopDefault(__webpack_require__.e(/* import() | pages/adminDetail */ 57).then(__webpack_require__.bind(null, 456)));
 
-const _3c8c3862 = () => interopDefault(__webpack_require__.e(/* import() | pages/adminDetailIpah1 */ 58).then(__webpack_require__.bind(null, 457)));
+const _f397b0f2 = () => interopDefault(__webpack_require__.e(/* import() | pages/adminDetailIpah1 */ 58).then(__webpack_require__.bind(null, 457)));
 
-const _0ec67676 = () => interopDefault(__webpack_require__.e(/* import() | pages/adminStatus */ 59).then(__webpack_require__.bind(null, 458)));
+const _4c75e3e6 = () => interopDefault(__webpack_require__.e(/* import() | pages/adminStatus */ 59).then(__webpack_require__.bind(null, 458)));
 
-const _0d538a01 = () => interopDefault(__webpack_require__.e(/* import() | pages/control */ 60).then(__webpack_require__.bind(null, 459)));
+const _7863b749 = () => interopDefault(__webpack_require__.e(/* import() | pages/control */ 60).then(__webpack_require__.bind(null, 459)));
 
-const _d13317c6 = () => interopDefault(__webpack_require__.e(/* import() | pages/current */ 61).then(__webpack_require__.bind(null, 460)));
+const _0276a165 = () => interopDefault(__webpack_require__.e(/* import() | pages/current */ 61).then(__webpack_require__.bind(null, 460)));
 
-const _0098df46 = () => interopDefault(__webpack_require__.e(/* import() | pages/detail */ 62).then(__webpack_require__.bind(null, 461)));
+const _76c49a15 = () => interopDefault(__webpack_require__.e(/* import() | pages/detail */ 62).then(__webpack_require__.bind(null, 461)));
 
-const _b01b1fe8 = () => interopDefault(__webpack_require__.e(/* import() | pages/general */ 63).then(__webpack_require__.bind(null, 462)));
+const _13029d54 = () => interopDefault(__webpack_require__.e(/* import() | pages/general */ 63).then(__webpack_require__.bind(null, 462)));
 
-const _04db90fe = () => interopDefault(__webpack_require__.e(/* import() | pages/inspire */ 65).then(__webpack_require__.bind(null, 487)));
+const _6febbe46 = () => interopDefault(__webpack_require__.e(/* import() | pages/inspire */ 65).then(__webpack_require__.bind(null, 487)));
 
-const _426db19a = () => interopDefault(__webpack_require__.e(/* import() | pages/ipah2Status */ 66).then(__webpack_require__.bind(null, 463)));
+const _2395fae2 = () => interopDefault(__webpack_require__.e(/* import() | pages/ipah2Status */ 66).then(__webpack_require__.bind(null, 463)));
 
-const _135db8a8 = () => interopDefault(__webpack_require__.e(/* import() | pages/ipahStatus */ 67).then(__webpack_require__.bind(null, 464)));
+const _05d69164 = () => interopDefault(__webpack_require__.e(/* import() | pages/ipahStatus */ 67).then(__webpack_require__.bind(null, 464)));
 
-const _63893acc = () => interopDefault(__webpack_require__.e(/* import() | pages/kongPoStatus */ 68).then(__webpack_require__.bind(null, 465)));
+const _121c4252 = () => interopDefault(__webpack_require__.e(/* import() | pages/kongPoStatus */ 68).then(__webpack_require__.bind(null, 465)));
 
-const _d9a23de6 = () => interopDefault(__webpack_require__.e(/* import() | pages/login */ 69).then(__webpack_require__.bind(null, 466)));
+const _6579c055 = () => interopDefault(__webpack_require__.e(/* import() | pages/login */ 69).then(__webpack_require__.bind(null, 466)));
 
-const _3bf0a507 = () => interopDefault(__webpack_require__.e(/* import() | pages/overview-admin */ 70).then(__webpack_require__.bind(null, 467)));
+const _0b1876bf = () => interopDefault(__webpack_require__.e(/* import() | pages/overview-admin */ 70).then(__webpack_require__.bind(null, 467)));
 
-const _ca9efea2 = () => interopDefault(__webpack_require__.e(/* import() | pages/register */ 71).then(__webpack_require__.bind(null, 468)));
+const _dcb40732 = () => interopDefault(__webpack_require__.e(/* import() | pages/register */ 71).then(__webpack_require__.bind(null, 468)));
 
-const _5c902630 = () => interopDefault(__webpack_require__.e(/* import() | pages/scheduleIpah1 */ 72).then(__webpack_require__.bind(null, 469)));
+const _d6698510 = () => interopDefault(__webpack_require__.e(/* import() | pages/scheduleIpah1 */ 72).then(__webpack_require__.bind(null, 469)));
 
-const _5c9e3db1 = () => interopDefault(__webpack_require__.e(/* import() | pages/scheduleIpah2 */ 73).then(__webpack_require__.bind(null, 470)));
+const _d64d560e = () => interopDefault(__webpack_require__.e(/* import() | pages/scheduleIpah2 */ 73).then(__webpack_require__.bind(null, 470)));
 
-const _58b4c502 = () => interopDefault(__webpack_require__.e(/* import() | pages/scheduleKongPo */ 74).then(__webpack_require__.bind(null, 471)));
+const _ba652192 = () => interopDefault(__webpack_require__.e(/* import() | pages/scheduleKongPo */ 74).then(__webpack_require__.bind(null, 471)));
 
-const _6d47d030 = () => interopDefault(__webpack_require__.e(/* import() | pages/scheduleTkpmPagoh */ 75).then(__webpack_require__.bind(null, 472)));
+const _97ab69a0 = () => interopDefault(__webpack_require__.e(/* import() | pages/scheduleTkpmPagoh */ 75).then(__webpack_require__.bind(null, 472)));
 
-const _64e9b9de = () => interopDefault(__webpack_require__.e(/* import() | pages/tkpmPagohStatus */ 76).then(__webpack_require__.bind(null, 473)));
+const _3944ef4e = () => interopDefault(__webpack_require__.e(/* import() | pages/tkpmPagohStatus */ 76).then(__webpack_require__.bind(null, 473)));
 
-const _df1d379e = () => interopDefault(__webpack_require__.e(/* import() | pages/trendsIpah1 */ 77).then(__webpack_require__.bind(null, 474)));
+const _7199ad79 = () => interopDefault(__webpack_require__.e(/* import() | pages/trendsIpah1 */ 77).then(__webpack_require__.bind(null, 474)));
 
-const _df01089c = () => interopDefault(__webpack_require__.e(/* import() | pages/trendsIpah2 */ 78).then(__webpack_require__.bind(null, 475)));
+const _71a7c4fa = () => interopDefault(__webpack_require__.e(/* import() | pages/trendsIpah2 */ 78).then(__webpack_require__.bind(null, 475)));
 
-const _1bec1f9e = () => interopDefault(__webpack_require__.e(/* import() | pages/trendsKongPo */ 79).then(__webpack_require__.bind(null, 476)));
+const _5fccff56 = () => interopDefault(__webpack_require__.e(/* import() | pages/trendsKongPo */ 79).then(__webpack_require__.bind(null, 476)));
 
-const _e307252e = () => interopDefault(__webpack_require__.e(/* import() | pages/trendsTkpmPagoh */ 80).then(__webpack_require__.bind(null, 477)));
+const _b7625a9e = () => interopDefault(__webpack_require__.e(/* import() | pages/trendsTkpmPagoh */ 80).then(__webpack_require__.bind(null, 477)));
 
-const _0fc9f852 = () => interopDefault(__webpack_require__.e(/* import() | pages/user */ 81).then(__webpack_require__.bind(null, 478)));
+const _8659c8e2 = () => interopDefault(__webpack_require__.e(/* import() | pages/user */ 81).then(__webpack_require__.bind(null, 478)));
 
-const _6cf18414 = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 64).then(__webpack_require__.bind(null, 479)));
+const _c85bc584 = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 64).then(__webpack_require__.bind(null, 479)));
 
 const emptyFn = () => {};
 
@@ -13405,103 +13405,103 @@ const routerOptions = {
   scrollBehavior: router_scrollBehavior,
   routes: [{
     path: "/adminDetail",
-    component: _a7e074b8,
+    component: _e58fe228,
     name: "adminDetail"
   }, {
     path: "/adminDetailIpah1",
-    component: _3c8c3862,
+    component: _f397b0f2,
     name: "adminDetailIpah1"
   }, {
     path: "/adminStatus",
-    component: _0ec67676,
+    component: _4c75e3e6,
     name: "adminStatus"
   }, {
     path: "/control",
-    component: _0d538a01,
+    component: _7863b749,
     name: "control"
   }, {
     path: "/current",
-    component: _d13317c6,
+    component: _0276a165,
     name: "current"
   }, {
     path: "/detail",
-    component: _0098df46,
+    component: _76c49a15,
     name: "detail"
   }, {
     path: "/general",
-    component: _b01b1fe8,
+    component: _13029d54,
     name: "general"
   }, {
     path: "/inspire",
-    component: _04db90fe,
+    component: _6febbe46,
     name: "inspire"
   }, {
     path: "/ipah2Status",
-    component: _426db19a,
+    component: _2395fae2,
     name: "ipah2Status"
   }, {
     path: "/ipahStatus",
-    component: _135db8a8,
+    component: _05d69164,
     name: "ipahStatus"
   }, {
     path: "/kongPoStatus",
-    component: _63893acc,
+    component: _121c4252,
     name: "kongPoStatus"
   }, {
     path: "/login",
-    component: _d9a23de6,
+    component: _6579c055,
     name: "login"
   }, {
     path: "/overview-admin",
-    component: _3bf0a507,
+    component: _0b1876bf,
     name: "overview-admin"
   }, {
     path: "/register",
-    component: _ca9efea2,
+    component: _dcb40732,
     name: "register"
   }, {
     path: "/scheduleIpah1",
-    component: _5c902630,
+    component: _d6698510,
     name: "scheduleIpah1"
   }, {
     path: "/scheduleIpah2",
-    component: _5c9e3db1,
+    component: _d64d560e,
     name: "scheduleIpah2"
   }, {
     path: "/scheduleKongPo",
-    component: _58b4c502,
+    component: _ba652192,
     name: "scheduleKongPo"
   }, {
     path: "/scheduleTkpmPagoh",
-    component: _6d47d030,
+    component: _97ab69a0,
     name: "scheduleTkpmPagoh"
   }, {
     path: "/tkpmPagohStatus",
-    component: _64e9b9de,
+    component: _3944ef4e,
     name: "tkpmPagohStatus"
   }, {
     path: "/trendsIpah1",
-    component: _df1d379e,
+    component: _7199ad79,
     name: "trendsIpah1"
   }, {
     path: "/trendsIpah2",
-    component: _df01089c,
+    component: _71a7c4fa,
     name: "trendsIpah2"
   }, {
     path: "/trendsKongPo",
-    component: _1bec1f9e,
+    component: _5fccff56,
     name: "trendsKongPo"
   }, {
     path: "/trendsTkpmPagoh",
-    component: _e307252e,
+    component: _b7625a9e,
     name: "trendsTkpmPagoh"
   }, {
     path: "/user",
-    component: _0fc9f852,
+    component: _8659c8e2,
     name: "user"
   }, {
     path: "/",
-    component: _6cf18414,
+    component: _c85bc584,
     name: "index"
   }],
   fallback: false
@@ -13759,7 +13759,7 @@ var error_component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "bfedb7fe",
-  "dcbc33ac"
+  "e218f9ac"
   
 )
 
@@ -14069,17 +14069,17 @@ var nuxt_loading_component = Object(componentNormalizer["a" /* default */])(
   false,
   nuxt_loading_injectStyles,
   null,
-  "49040a02"
+  "9d08b1fc"
   
 )
 
 /* harmony default export */ var nuxt_loading = (nuxt_loading_component.exports);
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/default.vue?vue&type=template&id=582e33c8&
-var defaultvue_type_template_id_582e33c8_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-app',{attrs:{"dark":""}},[_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":""},model:{value:(_vm.drawer),callback:function ($$v) {_vm.drawer=$$v},expression:"drawer"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1),_vm._v(" "),_c('v-app-bar',{staticClass:"app-bar-top",attrs:{"fixed":"","app":""}},[_c('v-toolbar-title',{staticClass:"title-container",staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name-container"},[_c('h4',{staticClass:"user-name-title",staticStyle:{"color":"white"}},[_vm._v("\n        "+_vm._s(_vm.loggedInUser.username)+"\n      ")])]):_vm._e(),_vm._v(" "),_c('div',{staticClass:"logout-container"},[_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1)],1),_vm._v(" "),_c('v-main',[_c('v-container',[_c('nuxt')],1)],1),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('div',{staticClass:"layer",attrs:{"id":"layer"}}):_vm._e()]),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('v-card',{staticClass:"logout elevation-12"},[_c('v-card-title',[_vm._v("\n        Logout\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("\n        Are you sure?\n      ")]),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"success logout-btn",on:{"click":_vm.logout}},[_vm._v("Yes")]),_vm._v(" "),_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1):_vm._e()],1),_vm._v(" "),_c('v-footer',{attrs:{"absolute":!_vm.fixed,"app":""}},[_c('span',[_vm._v("© "+_vm._s(new Date().getFullYear()))])]),_vm._v(" "),_c('v-row',{attrs:{"justify":"center"}},[_c('v-dialog',{attrs:{"persistent":"","max-width":"300"},model:{value:(_vm.dialog),callback:function ($$v) {_vm.dialog=$$v},expression:"dialog"}},[_c('v-card',[_c('v-card-title',{staticClass:"text-h5"},[_vm._v("\n          Alert\n        ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"padding-top":"10px"}},[_vm._v("Cannot connect to server. There are several cause for this problem\n          :")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"margin-top":"-10px","justify-contents":"center","display":"flex"}},[_c('span',{staticStyle:{"font-weight":"bold","font-size":"25px","padding-right":"10px"}},[_vm._v("•")]),_vm._v("\n          No internet connection")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"margin-top":"-10px","justify-contents":"center","display":"flex"}},[_c('span',{staticStyle:{"font-weight":"bold","font-size":"25px","padding-right":"10px"}},[_vm._v("•")]),_vm._v("\n          Server error (Please contact admin to resolve the\n          issue)")])],1)],1)],1)],1)}
-var defaultvue_type_template_id_582e33c8_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/default.vue?vue&type=template&id=63eaea99&
+var defaultvue_type_template_id_63eaea99_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-app',{attrs:{"dark":""}},[_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":""},model:{value:(_vm.drawer),callback:function ($$v) {_vm.drawer=$$v},expression:"drawer"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1),_vm._v(" "),_c('v-app-bar',{staticClass:"app-bar-top",attrs:{"fixed":"","app":""}},[_c('v-toolbar-title',{staticClass:"title-container",staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name-container"},[_c('h4',{staticClass:"user-name-title",staticStyle:{"color":"white"}},[_vm._v("\n        "+_vm._s(_vm.loggedInUser.username)+"\n      ")])]):_vm._e(),_vm._v(" "),_c('div',{staticClass:"logout-container"},[_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1)],1),_vm._v(" "),_c('v-main',[_c('v-container',[_c('nuxt')],1)],1),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('div',{staticClass:"layer",attrs:{"id":"layer"}}):_vm._e()]),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('v-card',{staticClass:"logout elevation-12"},[_c('v-card-title',[_vm._v("\n        Logout\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("\n        Are you sure?\n      ")]),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"success logout-btn",on:{"click":_vm.logout}},[_vm._v("Yes")]),_vm._v(" "),_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1):_vm._e()],1),_vm._v(" "),_c('v-footer',{attrs:{"absolute":!_vm.fixed,"app":""}},[_c('span',[_vm._v("© "+_vm._s(new Date().getFullYear()))])]),_vm._v(" "),_c('v-row',{attrs:{"justify":"center"}},[_c('v-dialog',{attrs:{"persistent":"","max-width":"300"},model:{value:(_vm.dialog),callback:function ($$v) {_vm.dialog=$$v},expression:"dialog"}},[_c('v-card',[_c('v-card-title',{staticClass:"text-h5"},[_vm._v("\n          Alert\n        ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"padding-top":"10px"}},[_vm._v("Cannot connect to server. There are several cause for this problem\n          :")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"margin-top":"-10px","justify-contents":"center","display":"flex"}},[_c('span',{staticStyle:{"font-weight":"bold","font-size":"25px","padding-right":"10px"}},[_vm._v("•")]),_vm._v("\n          No internet connection")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"margin-top":"-10px","justify-contents":"center","display":"flex"}},[_c('span',{staticStyle:{"font-weight":"bold","font-size":"25px","padding-right":"10px"}},[_vm._v("•")]),_vm._v("\n          Server error (Please contact admin to resolve the\n          issue)")])],1)],1)],1)],1)}
+var defaultvue_type_template_id_63eaea99_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./layouts/default.vue?vue&type=template&id=582e33c8&
+// CONCATENATED MODULE: ./layouts/default.vue?vue&type=template&id=63eaea99&
 
 // EXTERNAL MODULE: ./src/class.js
 var src_class = __webpack_require__(2);
@@ -14493,10 +14493,8 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
         port,
         endpoint,
         ...options
-      } = this.connection; // const connectUrl = `wss:${host}:${port}${endpoint}`;
-
-      const connectUrl = `ws://www.txio.live:8083/mqtt`; // const connectUrl = `ws://txio.uitm.edu.my:8083/mqtt`;
-      // const connectUrl = `${host}`;
+      } = this.connection;
+      const connectUrl = `${host}`;
 
       try {
         this.client = external_mqtt_default.a.connect(connectUrl, options);
@@ -16655,12 +16653,12 @@ if (style0.__inject__) style0.__inject__(context)
 
 var default_component = Object(componentNormalizer["a" /* default */])(
   layouts_defaultvue_type_script_lang_js_,
-  defaultvue_type_template_id_582e33c8_render,
-  defaultvue_type_template_id_582e33c8_staticRenderFns,
+  defaultvue_type_template_id_63eaea99_render,
+  defaultvue_type_template_id_63eaea99_staticRenderFns,
   false,
   default_injectStyles,
   null,
-  "1adeeb63"
+  "0a3d4863"
   
 )
 
@@ -16737,7 +16735,7 @@ var login_component = Object(componentNormalizer["a" /* default */])(
   false,
   login_injectStyles,
   null,
-  "17836b0b"
+  "14d5080b"
   
 )
 
@@ -16748,12 +16746,12 @@ var login_component = Object(componentNormalizer["a" /* default */])(
 
 installComponents_default()(login_component, {VMain: VMain_VMain})
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/status.vue?vue&type=template&id=21903a80&
-var statusvue_type_template_id_21903a80_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-app',{attrs:{"dark":""}},[_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":"","temporary":""},model:{value:(_vm.drawer),callback:function ($$v) {_vm.drawer=$$v},expression:"drawer"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1),_vm._v(" "),_c('v-app-bar',{attrs:{"fixed":"","app":""}},[_c('v-app-bar-nav-icon',{staticStyle:{"color":"white"},on:{"click":function($event){$event.stopPropagation();_vm.drawer = !_vm.drawer}}}),_vm._v(" "),_c('v-toolbar-title',{staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name"},[_c('h4',{staticStyle:{"color":"white"}},[_vm._v(_vm._s(_vm.loggedInUser.username))])]):_vm._e(),_vm._v(" "),_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1),_vm._v(" "),_c('v-main',[_c('v-container',[_c('nuxt')],1)],1),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('div',{staticClass:"layer",attrs:{"id":"layer"}}):_vm._e()]),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('v-card',{staticClass:"logout elevation-12"},[_c('v-card-title',[_vm._v("\n        Logout\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("\n        Are you sure?\n      ")]),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"success logout-btn",on:{"click":_vm.logout}},[_vm._v("Yes")]),_vm._v(" "),_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1):_vm._e()],1),_vm._v(" "),_c('v-footer',{attrs:{"absolute":!_vm.fixed,"app":""}},[_c('span',[_vm._v("© "+_vm._s(new Date().getFullYear()))])]),_vm._v(" "),_c('v-row',{attrs:{"justify":"center"}},[_c('v-dialog',{attrs:{"persistent":"","max-width":"300"},model:{value:(_vm.dialog),callback:function ($$v) {_vm.dialog=$$v},expression:"dialog"}},[_c('v-card',[_c('v-card-title',{staticClass:"text-h5"},[_vm._v("\n          Alert\n        ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"padding-top":"10px"}},[_vm._v("Cannot connect to server. There are several cause for this problem\n          :")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"margin-top":"-10px","justify-contents":"center","display":"flex"}},[_c('span',{staticStyle:{"font-weight":"bold","font-size":"25px","padding-right":"10px"}},[_vm._v("•")]),_vm._v("\n          No internet connection")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"margin-top":"-10px","justify-contents":"center","display":"flex"}},[_c('span',{staticStyle:{"font-weight":"bold","font-size":"25px","padding-right":"10px"}},[_vm._v("•")]),_vm._v("\n          Server error (Please contact admin to resolve the\n          issue)")])],1)],1)],1)],1)}
-var statusvue_type_template_id_21903a80_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/status.vue?vue&type=template&id=a950c53a&
+var statusvue_type_template_id_a950c53a_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-app',{attrs:{"dark":""}},[_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":"","temporary":""},model:{value:(_vm.drawer),callback:function ($$v) {_vm.drawer=$$v},expression:"drawer"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1),_vm._v(" "),_c('v-app-bar',{attrs:{"fixed":"","app":""}},[_c('v-app-bar-nav-icon',{staticStyle:{"color":"white"},on:{"click":function($event){$event.stopPropagation();_vm.drawer = !_vm.drawer}}}),_vm._v(" "),_c('v-toolbar-title',{staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name"},[_c('h4',{staticStyle:{"color":"white"}},[_vm._v(_vm._s(_vm.loggedInUser.username))])]):_vm._e(),_vm._v(" "),_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1),_vm._v(" "),_c('v-main',[_c('v-container',[_c('nuxt')],1)],1),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('div',{staticClass:"layer",attrs:{"id":"layer"}}):_vm._e()]),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('v-card',{staticClass:"logout elevation-12"},[_c('v-card-title',[_vm._v("\n        Logout\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("\n        Are you sure?\n      ")]),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"success logout-btn",on:{"click":_vm.logout}},[_vm._v("Yes")]),_vm._v(" "),_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1):_vm._e()],1),_vm._v(" "),_c('v-footer',{attrs:{"absolute":!_vm.fixed,"app":""}},[_c('span',[_vm._v("© "+_vm._s(new Date().getFullYear()))])]),_vm._v(" "),_c('v-row',{attrs:{"justify":"center"}},[_c('v-dialog',{attrs:{"persistent":"","max-width":"300"},model:{value:(_vm.dialog),callback:function ($$v) {_vm.dialog=$$v},expression:"dialog"}},[_c('v-card',[_c('v-card-title',{staticClass:"text-h5"},[_vm._v("\n          Alert\n        ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"padding-top":"10px"}},[_vm._v("Cannot connect to server. There are several cause for this problem\n          :")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"margin-top":"-10px","justify-contents":"center","display":"flex"}},[_c('span',{staticStyle:{"font-weight":"bold","font-size":"25px","padding-right":"10px"}},[_vm._v("•")]),_vm._v("\n          No internet connection")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"margin-top":"-10px","justify-contents":"center","display":"flex"}},[_c('span',{staticStyle:{"font-weight":"bold","font-size":"25px","padding-right":"10px"}},[_vm._v("•")]),_vm._v("\n          Server error (Please contact admin to resolve the\n          issue)")])],1)],1)],1)],1)}
+var statusvue_type_template_id_a950c53a_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./layouts/status.vue?vue&type=template&id=21903a80&
+// CONCATENATED MODULE: ./layouts/status.vue?vue&type=template&id=a950c53a&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/status.vue?vue&type=script&lang=js&
 //
@@ -16983,6 +16981,7 @@ var statusvue_type_template_id_21903a80_staticRenderFns = []
       //   to: "/detail"
       // }
       ],
+      // this.$auth.$state.user.server_mqtt
       miniVariant: false,
       title: "SMART FERTIGATION DASHBOARD",
       connection: {
@@ -17066,7 +17065,7 @@ var statusvue_type_template_id_21903a80_staticRenderFns = []
         endpoint,
         ...options
       } = this.connection;
-      const connectUrl = `${host}`; // const connectUrl = `wss://${host}:${port}${endpoint}`;
+      const connectUrl = `${host}`;
 
       try {
         this.client = external_mqtt_default.a.connect(connectUrl, options);
@@ -17357,12 +17356,12 @@ if (style0.__inject__) style0.__inject__(context)
 
 var status_component = Object(componentNormalizer["a" /* default */])(
   layouts_statusvue_type_script_lang_js_,
-  statusvue_type_template_id_21903a80_render,
-  statusvue_type_template_id_21903a80_staticRenderFns,
+  statusvue_type_template_id_a950c53a_render,
+  statusvue_type_template_id_a950c53a_staticRenderFns,
   false,
   status_injectStyles,
   null,
-  "527d4540"
+  "01416f80"
   
 )
 

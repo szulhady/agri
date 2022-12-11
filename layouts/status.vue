@@ -256,6 +256,7 @@ export default {
         //   to: "/detail"
         // }
       ],
+      // this.$auth.$state.user.server_mqtt
       miniVariant: false,
       title: "SMART FERTIGATION DASHBOARD",
       connection: {
@@ -325,7 +326,6 @@ export default {
     createConnection() {
       const { host, port, endpoint, ...options } = this.connection;
       const connectUrl = `${host}`;
-      // const connectUrl = `wss://${host}:${port}${endpoint}`;
       try {
         this.client = mqtt.connect(connectUrl, options);
       } catch (error) {
