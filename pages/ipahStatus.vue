@@ -268,15 +268,15 @@ export default {
 /* BLINK RED */
 @-webkit-keyframes blinkRed {
   0% {
-    filter: invert(21%) sepia(100%) saturate(7414%) hue-rotate(359deg)
+    -webkit-filter: invert(21%) sepia(100%) saturate(7414%) hue-rotate(359deg)
       brightness(94%) contrast(117%);
   }
   50% {
-    filter: invert(21%) sepia(100%) saturate(7414%) hue-rotate(359deg)
+    -webkit-filter: invert(21%) sepia(100%) saturate(7414%) hue-rotate(359deg)
       brightness(50%) contrast(117%);
   }
   100% {
-    filter: invert(21%) sepia(100%) saturate(7414%) hue-rotate(359deg)
+    -webkit-filter: invert(21%) sepia(100%) saturate(7414%) hue-rotate(359deg)
       brightness(94%) contrast(117%);
   }
 }
@@ -340,15 +340,15 @@ export default {
 /* BLINK GREEN */
 @-webkit-keyframes blinkGreen {
   0% {
-    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg)
+    -webkit-filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg)
       brightness(90%) contrast(119%);
   }
   50% {
-    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg)
+    -webkit-filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg)
       brightness(70%) contrast(119%);
   }
   100% {
-    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg)
+    -webkit-filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg)
       brightness(90%) contrast(119%);
   }
 }
