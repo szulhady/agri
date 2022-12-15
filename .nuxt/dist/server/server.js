@@ -9506,7 +9506,7 @@ var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(5);
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);
 ___CSS_LOADER_EXPORT___.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "*{font-family:\"Montserrat\",sans-serif}.v-data-footer__select{width:50px}.icon2 .v-icon{color:#888!important}.v-navigation-drawer{max-height:100vh!important}.brand{display:flex}.brand-logo{padding-top:25px;padding-bottom:10px;margin:auto;width:50%}.horizontal-line{margin:5px 50px 10px}.v-list{padding:10px 0}.v-list-item{margin:0 20px 15px}.v-list-item .v-list-item__title{font-family:\"Montserrat\",sans-serif;font-size:.85rem;color:#f0f2f0}.v-icon.v-icon{color:#f0f2f0}.v-list-item--active .v-icon,.v-list-item--active .v-list-item__title{color:#71b340!important}tbody tr:nth-of-type(2n){background-color:#fff}tbody tr:nth-of-type(odd){background-color:rgba(131,170,101,.23922)}.v-data-table__wrapper{border-bottom-left-radius:8px!important;border-bottom-right-radius:8px!important}.v-data-table-header{border-top-left-radius:8px!important;border-top-right-radius:8px!important;background-color:#fff}.v-data-footer{background-color:#eef8f8!important;border-radius:8px}.theme--light.v-app-bar.v-toolbar.v-sheet{background-color:#395524;color:#f0f8ff}.logout{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:9999;width:300px}.hr{margin:0 20px;border-top:1px solid #bdc7c7}.btn-div{display:flex;justify-content:flex-end}.logout-btn{width:100px;margin-right:10px;margin-bottom:10px}.layer{position:absolute;width:100%;height:100%;background:#000;opacity:.6;z-index:999}.v-messages__message{font-size:1rem!important;letter-spacing:2px;color:grey;line-height:20px}.v-list-item--highlighted{background:#3c5a14}.v-menu__content .v-list-item--highlighted .v-list-item__title{color:#f0f8ff!important}.v-menu__content .v-list-item__title{color:#000!important}.container{max-width:90vw}.v-label{font-size:.8rem!important}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, "*{font-family:\"Montserrat\",sans-serif}.vue__time-picker input.display-time{width:5em!important}.v-data-footer__select{width:50px}.icon2 .v-icon{color:#888!important}.v-navigation-drawer{max-height:100vh!important}.brand{display:flex}.brand-logo{padding-top:25px;padding-bottom:10px;margin:auto;width:50%}.horizontal-line{margin:5px 50px 10px}.v-list{padding:10px 0}.v-list-item{margin:0 20px 15px}.v-list-item .v-list-item__title{font-family:\"Montserrat\",sans-serif;font-size:.85rem;color:#f0f2f0}.v-icon.v-icon{color:#f0f2f0}.v-list-item--active .v-icon,.v-list-item--active .v-list-item__title{color:#71b340!important}tbody tr:nth-of-type(2n){background-color:#fff}tbody tr:nth-of-type(odd){background-color:rgba(131,170,101,.23922)}.v-data-table__wrapper{border-bottom-left-radius:8px!important;border-bottom-right-radius:8px!important}.v-data-table-header{border-top-left-radius:8px!important;border-top-right-radius:8px!important;background-color:#fff}.v-data-footer{background-color:#eef8f8!important;border-radius:8px}.theme--light.v-app-bar.v-toolbar.v-sheet{background-color:#395524;color:#f0f8ff}.logout{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:9999;width:300px}.hr{margin:0 20px;border-top:1px solid #bdc7c7}.btn-div{display:flex;justify-content:flex-end}.logout-btn{width:100px;margin-right:10px;margin-bottom:10px}.layer{position:absolute;width:100%;height:100%;background:#000;opacity:.6;z-index:999}.v-messages__message{font-size:1rem!important;letter-spacing:2px;color:grey;line-height:20px}.v-list-item--highlighted{background:#3c5a14}.v-menu__content .v-list-item--highlighted .v-list-item__title{color:#f0f8ff!important}.v-menu__content .v-list-item__title{color:#000!important}.container{max-width:90vw}.v-label{font-size:.8rem!important}", ""]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -14080,12 +14080,12 @@ var nuxt_loading_component = Object(componentNormalizer["a" /* default */])(
 )
 
 /* harmony default export */ var nuxt_loading = (nuxt_loading_component.exports);
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/default.vue?vue&type=template&id=0b6343a2&
-var defaultvue_type_template_id_0b6343a2_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-app',{attrs:{"dark":""}},[(_vm.$vuetify.breakpoint.mdAndUp)?_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":""},model:{value:(_vm.drawer),callback:function ($$v) {_vm.drawer=$$v},expression:"drawer"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1):_vm._e(),_vm._v(" "),(_vm.$vuetify.breakpoint.mdAndUp)?_c('v-app-bar',{staticClass:"app-bar-top",attrs:{"fixed":"","app":""}},[_c('v-toolbar-title',{staticClass:"title-container",staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name-container"},[_c('h4',{staticClass:"user-name-title",staticStyle:{"color":"white"}},[_vm._v("\n        "+_vm._s(_vm.loggedInUser.username)+"\n      ")])]):_vm._e(),_vm._v(" "),_c('div',{staticClass:"logout-container"},[_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1)],1):_vm._e(),_vm._v(" "),(_vm.$vuetify.breakpoint.mdAndDown)?_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":"","temporary":""},model:{value:(_vm.drawer2),callback:function ($$v) {_vm.drawer2=$$v},expression:"drawer2"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1):_vm._e(),_vm._v(" "),(_vm.$vuetify.breakpoint.mdAndDown)?_c('v-app-bar',{attrs:{"fixed":"","app":""}},[_c('v-app-bar-nav-icon',{staticStyle:{"color":"white"},on:{"click":function($event){$event.stopPropagation();_vm.drawer2 = !_vm.drawer2}}}),_vm._v(" "),_c('v-toolbar-title',{staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name"},[_c('h4',{staticStyle:{"color":"white"}},[_vm._v(_vm._s(_vm.loggedInUser.username))])]):_vm._e(),_vm._v(" "),_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1):_vm._e(),_vm._v(" "),_c('v-main',[_c('v-container',[_c('nuxt')],1)],1),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('div',{staticClass:"layer",attrs:{"id":"layer"}}):_vm._e()]),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('v-card',{staticClass:"logout elevation-12"},[_c('v-card-title',[_vm._v("\n        Logout\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("\n        Are you sure?\n      ")]),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"success logout-btn",on:{"click":_vm.logout}},[_vm._v("Yes")]),_vm._v(" "),_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1):_vm._e()],1),_vm._v(" "),_c('v-footer',{attrs:{"absolute":!_vm.fixed,"app":""}},[_c('span',[_vm._v("© "+_vm._s(new Date().getFullYear()))])]),_vm._v(" "),_c('v-row',{attrs:{"justify":"center"}},[_c('v-dialog',{attrs:{"persistent":"","max-width":"300"},model:{value:(_vm.dialog),callback:function ($$v) {_vm.dialog=$$v},expression:"dialog"}},[_c('v-card',[_c('v-card-title',{staticClass:"text-h5"},[_vm._v("\n          Alert\n        ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"padding-top":"10px"}},[_vm._v("Cannot connect to server. There are several cause for this problem\n          :")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"margin-top":"-10px","justify-contents":"center","display":"flex"}},[_c('span',{staticStyle:{"font-weight":"bold","font-size":"25px","padding-right":"10px"}},[_vm._v("•")]),_vm._v("\n          No internet connection")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"margin-top":"-10px","justify-contents":"center","display":"flex"}},[_c('span',{staticStyle:{"font-weight":"bold","font-size":"25px","padding-right":"10px"}},[_vm._v("•")]),_vm._v("\n          Server error (Please contact admin to resolve the\n          issue)")])],1)],1)],1)],1)}
-var defaultvue_type_template_id_0b6343a2_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/default.vue?vue&type=template&id=1f1ac714&
+var defaultvue_type_template_id_1f1ac714_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-app',{attrs:{"dark":""}},[(_vm.$vuetify.breakpoint.mdAndUp)?_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":""},model:{value:(_vm.drawer),callback:function ($$v) {_vm.drawer=$$v},expression:"drawer"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1):_vm._e(),_vm._v(" "),(_vm.$vuetify.breakpoint.mdAndUp)?_c('v-app-bar',{staticClass:"app-bar-top",attrs:{"fixed":"","app":""}},[_c('v-toolbar-title',{staticClass:"title-container",staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name-container"},[_c('h4',{staticClass:"user-name-title",staticStyle:{"color":"white"}},[_vm._v("\n        "+_vm._s(_vm.loggedInUser.username)+"\n      ")])]):_vm._e(),_vm._v(" "),_c('div',{staticClass:"logout-container"},[_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1)],1):_vm._e(),_vm._v(" "),(_vm.$vuetify.breakpoint.mdAndDown)?_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":"","temporary":""},model:{value:(_vm.drawer2),callback:function ($$v) {_vm.drawer2=$$v},expression:"drawer2"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1):_vm._e(),_vm._v(" "),(_vm.$vuetify.breakpoint.mdAndDown)?_c('v-app-bar',{attrs:{"fixed":"","app":""}},[_c('v-app-bar-nav-icon',{staticStyle:{"color":"white"},on:{"click":function($event){$event.stopPropagation();_vm.drawer2 = !_vm.drawer2}}}),_vm._v(" "),_c('v-toolbar-title',{staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name"},[_c('h4',{staticStyle:{"color":"white"}},[_vm._v(_vm._s(_vm.loggedInUser.username))])]):_vm._e(),_vm._v(" "),_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1):_vm._e(),_vm._v(" "),_c('v-main',[_c('v-container',[_c('nuxt')],1)],1),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('div',{staticClass:"layer",attrs:{"id":"layer"}}):_vm._e()]),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('v-card',{staticClass:"logout elevation-12"},[_c('v-card-title',[_vm._v("\n        Logout\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("\n        Are you sure?\n      ")]),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"success logout-btn",on:{"click":_vm.logout}},[_vm._v("Yes")]),_vm._v(" "),_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1):_vm._e()],1),_vm._v(" "),_c('v-footer',{attrs:{"absolute":!_vm.fixed,"app":""}},[_c('span',[_vm._v("© "+_vm._s(new Date().getFullYear()))])]),_vm._v(" "),_c('v-row',{attrs:{"justify":"center"}},[_c('v-dialog',{attrs:{"persistent":"","max-width":"300"},model:{value:(_vm.dialog),callback:function ($$v) {_vm.dialog=$$v},expression:"dialog"}},[_c('v-card',[_c('v-card-title',{staticClass:"text-h5"},[_vm._v("\n          Alert\n        ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"padding-top":"10px"}},[_vm._v("Cannot connect to server. There are several cause for this problem\n          :")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"margin-top":"-10px","justify-contents":"center","display":"flex"}},[_c('span',{staticStyle:{"font-weight":"bold","font-size":"25px","padding-right":"10px"}},[_vm._v("•")]),_vm._v("\n          No internet connection")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"margin-top":"-10px","justify-contents":"center","display":"flex"}},[_c('span',{staticStyle:{"font-weight":"bold","font-size":"25px","padding-right":"10px"}},[_vm._v("•")]),_vm._v("\n          Server error (Please contact admin to resolve the\n          issue)")])],1)],1)],1)],1)}
+var defaultvue_type_template_id_1f1ac714_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./layouts/default.vue?vue&type=template&id=0b6343a2&
+// CONCATENATED MODULE: ./layouts/default.vue?vue&type=template&id=1f1ac714&
 
 // EXTERNAL MODULE: ./src/class.js
 var src_class = __webpack_require__(2);
@@ -14589,7 +14589,6 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
       this.client.on("message", (topic, message) => {
         if (topic === "new2/nexplex/ipah/sense/block1") {
           message = JSON.parse(message);
-          console.log(message);
           let payload = {
             station: 0,
             block: 0,
@@ -14614,7 +14613,34 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
             indexStation: 0,
             indexBlock: 0
           };
-          this.stringArray(payloadStringArray);
+          this.stringArray(payloadStringArray); // const val = [
+          //   "soilNitrogen",
+          //   "soilPhosphorus",
+          //   "soilPotassium",
+          //   "soilPH",
+          //   "soilEC",
+          //   "soilMS",
+          //   "soilTEMP"
+          // ];
+          // // //currentTrend
+          // for (let j = 0; j < val.length; j++) {
+          //   let sensor = val[j];
+          //   let indexStation = 0;
+          //   let indexSensor = j;
+          //   let data = { sensor, indexStation, indexSensor };
+          //   this.getCurrentDataArrayIpah1(data);
+          // }
+
+          this.addDataIpah1(0);
+          let data = {
+            station: 0,
+            block: 4
+          };
+          this.countWarningsIpah(data);
+        }
+
+        if (topic === "new3/nexplex/ipah/sense/block1") {
+          message = JSON.parse(message);
           const val = ["soilNitrogen", "soilPhosphorus", "soilPotassium", "soilPH", "soilEC", "soilMS", "soilTEMP"]; // //currentTrend
 
           for (let j = 0; j < val.length; j++) {
@@ -14627,14 +14653,8 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
               indexSensor
             };
             this.getCurrentDataArrayIpah1(data);
-          }
+          } // this.addDataIpah1(0);
 
-          this.addDataIpah1(0);
-          let data = {
-            station: 0,
-            block: 4
-          };
-          this.countWarningsIpah(data);
         }
 
         if (topic === "new2/nexplex/ipah/sense/block2") {
@@ -14664,6 +14684,16 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
             indexBlock: 1
           };
           this.stringArray(payloadStringArray);
+          this.addDataIpah1(1);
+          let data = {
+            station: 0,
+            block: 4
+          };
+          this.countWarningsIpah(data);
+        }
+
+        if (topic === "new3/nexplex/ipah/sense/block2") {
+          message = JSON.parse(message);
           const val = ["soilNitrogen", "soilPhosphorus", "soilPotassium", "soilPH", "soilEC", "soilMS", "soilTEMP"]; // //currentTrend
 
           for (let j = 0; j < val.length; j++) {
@@ -14677,13 +14707,6 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
             };
             this.getCurrentDataArrayIpah1(data);
           }
-
-          this.addDataIpah1(1);
-          let data = {
-            station: 0,
-            block: 4
-          };
-          this.countWarningsIpah(data);
         }
 
         if (topic === "new2/nexplex/ipah/sense/block3") {
@@ -14713,6 +14736,16 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
             indexBlock: 2
           };
           this.stringArray(payloadStringArray);
+          this.addDataIpah1(2);
+          let data = {
+            station: 0,
+            block: 4
+          };
+          this.countWarningsIpah(data);
+        }
+
+        if (topic === "new3/nexplex/ipah/sense/block3") {
+          message = JSON.parse(message);
           const val = ["soilNitrogen", "soilPhosphorus", "soilPotassium", "soilPH", "soilEC", "soilMS", "soilTEMP"]; // //currentTrend
 
           for (let j = 0; j < val.length; j++) {
@@ -14726,13 +14759,6 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
             };
             this.getCurrentDataArrayIpah1(data);
           }
-
-          this.addDataIpah1(2);
-          let data = {
-            station: 0,
-            block: 4
-          };
-          this.countWarningsIpah(data);
         }
 
         if (topic === "new2/nexplex/ipah/sense/block4") {
@@ -14762,6 +14788,16 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
             indexBlock: 3
           };
           this.stringArray(payloadStringArray);
+          this.addDataIpah1(3);
+          let data = {
+            station: 0,
+            block: 4
+          };
+          this.countWarningsIpah(data);
+        }
+
+        if (topic === "new3/nexplex/ipah/sense/block4") {
+          message = JSON.parse(message);
           const val = ["soilNitrogen", "soilPhosphorus", "soilPotassium", "soilPH", "soilEC", "soilMS", "soilTEMP"]; // //currentTrend
 
           for (let j = 0; j < val.length; j++) {
@@ -14775,13 +14811,6 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
             };
             this.getCurrentDataArrayIpah1(data);
           }
-
-          this.addDataIpah1(3);
-          let data = {
-            station: 0,
-            block: 4
-          };
-          this.countWarningsIpah(data);
         }
 
         if (topic === "np/s/ipah/n") {
@@ -16754,8 +16783,8 @@ if (style0.__inject__) style0.__inject__(context)
 
 var default_component = Object(componentNormalizer["a" /* default */])(
   layouts_defaultvue_type_script_lang_js_,
-  defaultvue_type_template_id_0b6343a2_render,
-  defaultvue_type_template_id_0b6343a2_staticRenderFns,
+  defaultvue_type_template_id_1f1ac714_render,
+  defaultvue_type_template_id_1f1ac714_staticRenderFns,
   false,
   default_injectStyles,
   null,
@@ -16848,12 +16877,12 @@ var login_component = Object(componentNormalizer["a" /* default */])(
 
 installComponents_default()(login_component, {VMain: VMain_VMain})
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/status.vue?vue&type=template&id=4bc8d17a&
-var statusvue_type_template_id_4bc8d17a_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-app',{attrs:{"dark":""}},[_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":"","temporary":""},model:{value:(_vm.drawer),callback:function ($$v) {_vm.drawer=$$v},expression:"drawer"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1),_vm._v(" "),_c('v-app-bar',{attrs:{"fixed":"","app":""}},[_c('v-app-bar-nav-icon',{staticStyle:{"color":"white"},on:{"click":function($event){$event.stopPropagation();_vm.drawer = !_vm.drawer}}}),_vm._v(" "),_c('v-toolbar-title',{staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name"},[_c('h4',{staticStyle:{"color":"white"}},[_vm._v(_vm._s(_vm.loggedInUser.username))])]):_vm._e(),_vm._v(" "),_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1),_vm._v(" "),_c('v-main',[_c('v-container',[_c('nuxt')],1)],1),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('div',{staticClass:"layer",attrs:{"id":"layer"}}):_vm._e()]),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('v-card',{staticClass:"logout elevation-12"},[_c('v-card-title',[_vm._v("\n        Logout\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("\n        Are you sure?\n      ")]),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"success logout-btn",on:{"click":_vm.logout}},[_vm._v("Yes")]),_vm._v(" "),_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1):_vm._e()],1),_vm._v(" "),_c('v-footer',{attrs:{"absolute":!_vm.fixed,"app":""}},[_c('span',[_vm._v("© "+_vm._s(new Date().getFullYear()))])]),_vm._v(" "),_c('v-row',{attrs:{"justify":"center"}},[_c('v-dialog',{attrs:{"persistent":"","max-width":"300"},model:{value:(_vm.dialog),callback:function ($$v) {_vm.dialog=$$v},expression:"dialog"}},[_c('v-card',[_c('v-card-title',{staticClass:"text-h5"},[_vm._v("\n          Alert\n        ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"padding-top":"10px"}},[_vm._v("Cannot connect to server. There are several cause for this problem\n          :")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"margin-top":"-10px","justify-contents":"center","display":"flex"}},[_c('span',{staticStyle:{"font-weight":"bold","font-size":"25px","padding-right":"10px"}},[_vm._v("•")]),_vm._v("\n          No internet connection")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"margin-top":"-10px","justify-contents":"center","display":"flex"}},[_c('span',{staticStyle:{"font-weight":"bold","font-size":"25px","padding-right":"10px"}},[_vm._v("•")]),_vm._v("\n          Server error (Please contact admin to resolve the\n          issue)")])],1)],1)],1)],1)}
-var statusvue_type_template_id_4bc8d17a_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/status.vue?vue&type=template&id=4e05b706&
+var statusvue_type_template_id_4e05b706_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-app',{attrs:{"dark":""}},[_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":"","temporary":""},model:{value:(_vm.drawer),callback:function ($$v) {_vm.drawer=$$v},expression:"drawer"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1),_vm._v(" "),_c('v-app-bar',{attrs:{"fixed":"","app":""}},[_c('v-app-bar-nav-icon',{staticStyle:{"color":"white"},on:{"click":function($event){$event.stopPropagation();_vm.drawer = !_vm.drawer}}}),_vm._v(" "),_c('v-toolbar-title',{staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name"},[_c('h4',{staticStyle:{"color":"white"}},[_vm._v(_vm._s(_vm.loggedInUser.username))])]):_vm._e(),_vm._v(" "),_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1),_vm._v(" "),_c('v-main',[_c('v-container',[_c('nuxt')],1)],1),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('div',{staticClass:"layer",attrs:{"id":"layer"}}):_vm._e()]),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('v-card',{staticClass:"logout elevation-12"},[_c('v-card-title',[_vm._v("\n        Logout\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("\n        Are you sure?\n      ")]),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"success logout-btn",on:{"click":_vm.logout}},[_vm._v("Yes")]),_vm._v(" "),_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1):_vm._e()],1),_vm._v(" "),_c('v-footer',{attrs:{"absolute":!_vm.fixed,"app":""}},[_c('span',[_vm._v("© "+_vm._s(new Date().getFullYear()))])]),_vm._v(" "),_c('v-row',{attrs:{"justify":"center"}},[_c('v-dialog',{attrs:{"persistent":"","max-width":"300"},model:{value:(_vm.dialog),callback:function ($$v) {_vm.dialog=$$v},expression:"dialog"}},[_c('v-card',[_c('v-card-title',{staticClass:"text-h5"},[_vm._v("\n          Alert\n        ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"padding-top":"10px"}},[_vm._v("Cannot connect to server. There are several cause for this problem\n          :")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"margin-top":"-10px","justify-contents":"center","display":"flex"}},[_c('span',{staticStyle:{"font-weight":"bold","font-size":"25px","padding-right":"10px"}},[_vm._v("•")]),_vm._v("\n          No internet connection")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"margin-top":"-10px","justify-contents":"center","display":"flex"}},[_c('span',{staticStyle:{"font-weight":"bold","font-size":"25px","padding-right":"10px"}},[_vm._v("•")]),_vm._v("\n          Server error (Please contact admin to resolve the\n          issue)")])],1)],1)],1)],1)}
+var statusvue_type_template_id_4e05b706_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./layouts/status.vue?vue&type=template&id=4bc8d17a&
+// CONCATENATED MODULE: ./layouts/status.vue?vue&type=template&id=4e05b706&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/status.vue?vue&type=script&lang=js&
 //
@@ -17057,7 +17086,7 @@ var statusvue_type_template_id_4bc8d17a_staticRenderFns = []
       //     this.$auth.$state.user.station[0] == "ipah2",
       //   // this.$auth.user.userId == 3,
       //   to: "/trendsIpah2"
-      // },
+      // }
       // {
       //   icon: "mdi-chart-areaspline",
       //   title: "TRENDS",
@@ -17427,8 +17456,8 @@ if (style0.__inject__) style0.__inject__(context)
 
 var status_component = Object(componentNormalizer["a" /* default */])(
   layouts_statusvue_type_script_lang_js_,
-  statusvue_type_template_id_4bc8d17a_render,
-  statusvue_type_template_id_4bc8d17a_staticRenderFns,
+  statusvue_type_template_id_4e05b706_render,
+  statusvue_type_template_id_4e05b706_staticRenderFns,
   false,
   status_injectStyles,
   null,
@@ -17748,6 +17777,7 @@ const components = {
   DetailYieldCropInformation: () => __webpack_require__.e(/* import() | components/detail-yield-crop-information */ 20).then(__webpack_require__.bind(null, 416)).then(c => wrapFunctional(c.default || c)),
   GeneralUserInfo: () => __webpack_require__.e(/* import() | components/general-user-info */ 22).then(__webpack_require__.bind(null, 418)).then(c => wrapFunctional(c.default || c)),
   LoginForm: () => __webpack_require__.e(/* import() | components/login-form */ 23).then(__webpack_require__.bind(null, 389)).then(c => wrapFunctional(c.default || c)),
+  RegisterForm2: () => __webpack_require__.e(/* import() | components/register-form2 */ 41).then(__webpack_require__.bind(null, 422)).then(c => wrapFunctional(c.default || c)),
   OverviewCardDataLeaf: () => __webpack_require__.e(/* import() | components/overview-card-data-leaf */ 26).then(__webpack_require__.bind(null, 360)).then(c => wrapFunctional(c.default || c)),
   OverviewCardDataSoil: () => __webpack_require__.e(/* import() | components/overview-card-data-soil */ 27).then(__webpack_require__.bind(null, 359)).then(c => wrapFunctional(c.default || c)),
   OverviewCardDataWater: () => __webpack_require__.e(/* import() | components/overview-card-data-water */ 28).then(__webpack_require__.bind(null, 361)).then(c => wrapFunctional(c.default || c)),
@@ -17756,21 +17786,20 @@ const components = {
   OverviewCardSummary: () => __webpack_require__.e(/* import() | components/overview-card-summary */ 31).then(__webpack_require__.bind(null, 427)).then(c => wrapFunctional(c.default || c)),
   OverviewCardWeather3: () => __webpack_require__.e(/* import() | components/overview-card-weather3 */ 32).then(__webpack_require__.bind(null, 358)).then(c => wrapFunctional(c.default || c)),
   OverviewTable: () => __webpack_require__.e(/* import() | components/overview-table */ 39).then(__webpack_require__.bind(null, 429)).then(c => wrapFunctional(c.default || c)),
-  RegisterForm2: () => __webpack_require__.e(/* import() | components/register-form2 */ 41).then(__webpack_require__.bind(null, 422)).then(c => wrapFunctional(c.default || c)),
   ScheduleCalendar: () => __webpack_require__.e(/* import() | components/schedule-calendar */ 42).then(__webpack_require__.bind(null, 307)).then(c => wrapFunctional(c.default || c)),
   ScheduleTableSchedule: () => __webpack_require__.e(/* import() | components/schedule-table-schedule */ 43).then(__webpack_require__.bind(null, 309)).then(c => wrapFunctional(c.default || c)),
   ScheduleTableScheduleNutrient: () => __webpack_require__.e(/* import() | components/schedule-table-schedule-nutrient */ 44).then(__webpack_require__.bind(null, 310)).then(c => wrapFunctional(c.default || c)),
   ScheduleTime: () => __webpack_require__.e(/* import() | components/schedule-time */ 45).then(__webpack_require__.bind(null, 308)).then(c => wrapFunctional(c.default || c)),
-  StatusIpah1Status: () => __webpack_require__.e(/* import() | components/status-ipah1-status */ 46).then(__webpack_require__.bind(null, 303)).then(c => wrapFunctional(c.default || c)),
-  StatusIpah2Status: () => __webpack_require__.e(/* import() | components/status-ipah2-status */ 47).then(__webpack_require__.bind(null, 304)).then(c => wrapFunctional(c.default || c)),
-  StatusKongPoStatus: () => __webpack_require__.e(/* import() | components/status-kong-po-status */ 48).then(__webpack_require__.bind(null, 419)).then(c => wrapFunctional(c.default || c)),
-  StatusTkpmPagohStatus: () => __webpack_require__.e(/* import() | components/status-tkpm-pagoh-status */ 49).then(__webpack_require__.bind(null, 305)).then(c => wrapFunctional(c.default || c)),
   TrendCardStationTrendIpah1: () => __webpack_require__.e(/* import() | components/trend-card-station-trend-ipah1 */ 50).then(__webpack_require__.bind(null, 423)).then(c => wrapFunctional(c.default || c)),
   TrendCardStationTrendIpah2: () => __webpack_require__.e(/* import() | components/trend-card-station-trend-ipah2 */ 51).then(__webpack_require__.bind(null, 424)).then(c => wrapFunctional(c.default || c)),
   TrendCardStationTrendKongPo: () => __webpack_require__.e(/* import() | components/trend-card-station-trend-kong-po */ 52).then(__webpack_require__.bind(null, 425)).then(c => wrapFunctional(c.default || c)),
   TrendCardStationTrendTkpmPagoh: () => __webpack_require__.e(/* import() | components/trend-card-station-trend-tkpm-pagoh */ 53).then(__webpack_require__.bind(null, 426)).then(c => wrapFunctional(c.default || c)),
   TrendLineChart: () => __webpack_require__.e(/* import() | components/trend-line-chart */ 54).then(__webpack_require__.bind(null, 242)).then(c => wrapFunctional(c.default || c)),
   TrendLineChartSingleData: () => __webpack_require__.e(/* import() | components/trend-line-chart-single-data */ 55).then(__webpack_require__.bind(null, 243)).then(c => wrapFunctional(c.default || c)),
+  StatusIpah1Status: () => __webpack_require__.e(/* import() | components/status-ipah1-status */ 46).then(__webpack_require__.bind(null, 303)).then(c => wrapFunctional(c.default || c)),
+  StatusIpah2Status: () => __webpack_require__.e(/* import() | components/status-ipah2-status */ 47).then(__webpack_require__.bind(null, 304)).then(c => wrapFunctional(c.default || c)),
+  StatusKongPoStatus: () => __webpack_require__.e(/* import() | components/status-kong-po-status */ 48).then(__webpack_require__.bind(null, 419)).then(c => wrapFunctional(c.default || c)),
+  StatusTkpmPagohStatus: () => __webpack_require__.e(/* import() | components/status-tkpm-pagoh-status */ 49).then(__webpack_require__.bind(null, 305)).then(c => wrapFunctional(c.default || c)),
   AdminOverviewCardDataLeafAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-card-data-leaf-admin */ 1).then(__webpack_require__.bind(null, 328)).then(c => wrapFunctional(c.default || c)),
   AdminOverviewCardDataSoilAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-card-data-soil-admin */ 2).then(__webpack_require__.bind(null, 327)).then(c => wrapFunctional(c.default || c)),
   AdminOverviewCardDataWaterAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-card-data-water-admin */ 3).then(__webpack_require__.bind(null, 329)).then(c => wrapFunctional(c.default || c)),

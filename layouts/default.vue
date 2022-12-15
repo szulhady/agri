@@ -501,7 +501,6 @@ export default {
       this.client.on("message", (topic, message) => {
         if (topic === "new2/nexplex/ipah/sense/block1") {
           message = JSON.parse(message);
-          console.log(message);
           let payload = {
             station: 0,
             block: 0,
@@ -527,6 +526,31 @@ export default {
             indexBlock: 0
           };
           this.stringArray(payloadStringArray);
+          // const val = [
+          //   "soilNitrogen",
+          //   "soilPhosphorus",
+          //   "soilPotassium",
+          //   "soilPH",
+          //   "soilEC",
+          //   "soilMS",
+          //   "soilTEMP"
+          // ];
+          // // //currentTrend
+          // for (let j = 0; j < val.length; j++) {
+          //   let sensor = val[j];
+          //   let indexStation = 0;
+          //   let indexSensor = j;
+          //   let data = { sensor, indexStation, indexSensor };
+          //   this.getCurrentDataArrayIpah1(data);
+          // }
+          this.addDataIpah1(0);
+
+          let data = { station: 0, block: 4 };
+          this.countWarningsIpah(data);
+        }
+
+        if (topic === "new3/nexplex/ipah/sense/block1") {
+          message = JSON.parse(message);
           const val = [
             "soilNitrogen",
             "soilPhosphorus",
@@ -544,10 +568,7 @@ export default {
             let data = { sensor, indexStation, indexSensor };
             this.getCurrentDataArrayIpah1(data);
           }
-          this.addDataIpah1(0);
-
-          let data = { station: 0, block: 4 };
-          this.countWarningsIpah(data);
+          // this.addDataIpah1(0);
         }
 
         if (topic === "new2/nexplex/ipah/sense/block2") {
@@ -577,6 +598,12 @@ export default {
             indexBlock: 1
           };
           this.stringArray(payloadStringArray);
+          this.addDataIpah1(1);
+          let data = { station: 0, block: 4 };
+          this.countWarningsIpah(data);
+        }
+        if (topic === "new3/nexplex/ipah/sense/block2") {
+          message = JSON.parse(message);
           const val = [
             "soilNitrogen",
             "soilPhosphorus",
@@ -594,9 +621,6 @@ export default {
             let data = { sensor, indexStation, indexSensor };
             this.getCurrentDataArrayIpah1(data);
           }
-          this.addDataIpah1(1);
-          let data = { station: 0, block: 4 };
-          this.countWarningsIpah(data);
         }
 
         if (topic === "new2/nexplex/ipah/sense/block3") {
@@ -626,6 +650,12 @@ export default {
             indexBlock: 2
           };
           this.stringArray(payloadStringArray);
+          this.addDataIpah1(2);
+          let data = { station: 0, block: 4 };
+          this.countWarningsIpah(data);
+        }
+        if (topic === "new3/nexplex/ipah/sense/block3") {
+          message = JSON.parse(message);
           const val = [
             "soilNitrogen",
             "soilPhosphorus",
@@ -643,9 +673,6 @@ export default {
             let data = { sensor, indexStation, indexSensor };
             this.getCurrentDataArrayIpah1(data);
           }
-          this.addDataIpah1(2);
-          let data = { station: 0, block: 4 };
-          this.countWarningsIpah(data);
         }
 
         if (topic === "new2/nexplex/ipah/sense/block4") {
@@ -675,6 +702,12 @@ export default {
             indexBlock: 3
           };
           this.stringArray(payloadStringArray);
+          this.addDataIpah1(3);
+          let data = { station: 0, block: 4 };
+          this.countWarningsIpah(data);
+        }
+        if (topic === "new3/nexplex/ipah/sense/block4") {
+          message = JSON.parse(message);
           const val = [
             "soilNitrogen",
             "soilPhosphorus",
@@ -692,9 +725,6 @@ export default {
             let data = { sensor, indexStation, indexSensor };
             this.getCurrentDataArrayIpah1(data);
           }
-          this.addDataIpah1(3);
-          let data = { station: 0, block: 4 };
-          this.countWarningsIpah(data);
         }
 
         if (topic === "np/s/ipah/n") {

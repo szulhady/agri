@@ -11,6 +11,7 @@ import CardStationTrend from "~/components/Trend/CardStationTrendIpah1";
 import { mapMutations, mapState } from "vuex";
 export default {
   middleware: ["isIpah"],
+  layout: "default",
   computed: {
     ...mapState({
       items: state => state.stations[0].sensorSoil

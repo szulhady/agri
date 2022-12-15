@@ -789,7 +789,7 @@ if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
 var add = __webpack_require__(6).default
 module.exports.__inject__ = function (context) {
-  add("6c26ffd7", content, true, context)
+  add("5fbe1343", content, true, context)
 };
 
 /***/ }),
@@ -799,9 +799,9 @@ module.exports.__inject__ = function (context) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardStationTrendIpah1_vue_vue_type_style_index_0_id_40bd1d51_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(345);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardStationTrendIpah1_vue_vue_type_style_index_0_id_40bd1d51_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardStationTrendIpah1_vue_vue_type_style_index_0_id_40bd1d51_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardStationTrendIpah1_vue_vue_type_style_index_0_id_40bd1d51_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardStationTrendIpah1_vue_vue_type_style_index_0_id_40bd1d51_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardStationTrendIpah1_vue_vue_type_style_index_0_id_9a39ac4e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(345);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardStationTrendIpah1_vue_vue_type_style_index_0_id_9a39ac4e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardStationTrendIpah1_vue_vue_type_style_index_0_id_9a39ac4e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardStationTrendIpah1_vue_vue_type_style_index_0_id_9a39ac4e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardStationTrendIpah1_vue_vue_type_style_index_0_id_9a39ac4e_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
@@ -813,7 +813,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(5);
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".center[data-v-40bd1d51]{justify-content:center;background:#11270b!important;color:#fff!important;border-top-left-radius:8px;border-top-right-radius:8px}.padding[data-v-40bd1d51]{padding:0 1em}.active[data-v-40bd1d51]{background:#58be3c!important}.card[data-v-40bd1d51],.card-color[data-v-40bd1d51]{border-radius:8px}.flex-column[data-v-40bd1d51]{display:flex;flex-direction:column}.button[data-v-40bd1d51]{margin:15px}.card-detail[data-v-40bd1d51]{background-color:#f1f1f1!important;border-radius:8px}.flex-btn[data-v-40bd1d51]{display:flex;justify-content:space-around;flex-wrap:wrap}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, ".center[data-v-9a39ac4e]{justify-content:center;background:#11270b!important;color:#fff!important;border-top-left-radius:8px;border-top-right-radius:8px}.padding[data-v-9a39ac4e]{padding:0 1em}.active[data-v-9a39ac4e]{background:#58be3c!important}.card[data-v-9a39ac4e],.card-color[data-v-9a39ac4e]{border-radius:8px}.flex-column[data-v-9a39ac4e]{display:flex;flex-direction:column}.button[data-v-9a39ac4e]{margin:15px}.card-detail[data-v-9a39ac4e]{background-color:#f1f1f1!important;border-radius:8px}.flex-btn[data-v-9a39ac4e]{display:flex;justify-content:space-around;flex-wrap:wrap}", ""]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -827,12 +827,12 @@ module.exports = ___CSS_LOADER_EXPORT___;
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Trend/CardStationTrendIpah1.vue?vue&type=template&id=40bd1d51&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('v-row',{staticClass:"pb-3"},_vm._l((_vm.items),function(item,index){return _c('v-col',{key:item.title,attrs:{"cols":item.cols,"sm":"3"}},[_c('v-card',{staticClass:"card card-color  elevation-12 ",attrs:{"id":index},on:{"click":function($event){return _vm.console(index)}}},[_c('v-card-title',[_vm._v(_vm._s(item.block))]),_vm._v(" "),_c('v-card-subtitle',[_vm._v(_vm._s(item.description))])],1)],1)}),1),_vm._ssrNode(" "),_c('v-card',{staticClass:"card-color elevation-12"},[_c('v-card-title',{staticClass:"color"},[_vm._v("DETAILS")]),_vm._v(" "),_c('v-row',[_c('v-col',{staticClass:"flex-btn"},_vm._l((_vm.sensorsID),function(sensor,index){return _c('v-btn',{key:sensor,staticClass:"button card card-color elevation-12",staticStyle:{"width":"250px"},attrs:{"id":sensor},on:{"click":function($event){return _vm.console2(sensor, index)}}},[_vm._v(_vm._s(_vm.sensors[index]))])}),1)],1),_vm._v(" "),_c('v-row',{staticClass:"padding"},[_c('v-col',{staticClass:"left",attrs:{"cols":"6","lg":"6"}},[_c('v-card-subtitle',{staticClass:"center"},[_vm._v("Current")]),_vm._v(" "),_c('LineChartSingleData',{attrs:{"id":"current","data":_vm.trends[_vm.index].current[_vm.index2],"dailyHour":_vm.arrayTime[_vm.index],"x-axis":"Hour","index":_vm.index2}})],1),_vm._v(" "),_c('v-col',{staticClass:"left",attrs:{"cols":"6","lg":"6"}},[_c('v-card-subtitle',{staticClass:"center"},[_vm._v("Hourly")]),_vm._v(" "),_c('LineChart',{attrs:{"id":"houry","dailyMax":_vm.trends[_vm.index].hourly[_vm.index2].max,"dailyMin":_vm.trends[_vm.index].hourly[_vm.index2].min,"dailyAvg":_vm.trends[_vm.index].hourly[_vm.index2].avg,"dailyHour":_vm.trends[_vm.index].hourly[_vm.index2].hour,"x-axis":"Hour","index":_vm.index2}})],1),_vm._v(" "),_c('v-col',{staticClass:"right",attrs:{"cols":"6","lg":"6"}},[_c('v-card-subtitle',{staticClass:"center"},[_vm._v("Daily")]),_vm._v(" "),_c('LineChart',{attrs:{"id":"weekly","dailyMax":_vm.trends[_vm.index].daily[_vm.index2].max,"dailyMin":_vm.trends[_vm.index].daily[_vm.index2].min,"dailyAvg":_vm.trends[_vm.index].daily[_vm.index2].avg,"dailyHour":_vm.trends[_vm.index].daily[_vm.index2].day,"x-axis":"Day","index":_vm.index2}})],1),_vm._v(" "),_c('v-col',{staticClass:"left",attrs:{"cols":"6","lg":"6"}},[_c('v-card-subtitle',{staticClass:"center"},[_vm._v("Monthly")]),_vm._v(" "),_c('LineChart',{attrs:{"id":"monthly","dailyMax":_vm.trends[_vm.index].monthly[_vm.index2].max,"dailyMin":_vm.trends[_vm.index].monthly[_vm.index2].min,"dailyAvg":_vm.trends[_vm.index].monthly[_vm.index2].avg,"dailyHour":_vm.trends[_vm.index].monthly[_vm.index2].monthName,"x-axis":"Month","index":_vm.index2}})],1)],1)],1)],2)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Trend/CardStationTrendIpah1.vue?vue&type=template&id=9a39ac4e&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('v-row',{staticClass:"pb-3"},_vm._l((_vm.items),function(item,index){return _c('v-col',{key:item.title,attrs:{"cols":item.cols,"sm":"3"}},[_c('v-card',{staticClass:"card card-color  elevation-12 ",attrs:{"id":index},on:{"click":function($event){return _vm.console(index)}}},[_c('v-card-title',[_vm._v(_vm._s(item.block))]),_vm._v(" "),_c('v-card-subtitle',[_vm._v(_vm._s(item.description))])],1)],1)}),1),_vm._ssrNode(" "),_c('v-card',{staticClass:"card-color elevation-12"},[_c('v-card-title',{staticClass:"color"},[_vm._v("DETAILS")]),_vm._v(" "),_c('v-row',{staticStyle:{"justify-content":"center"}},_vm._l((_vm.sensorsID),function(sensor,index){return _c('v-col',{key:sensor,staticClass:"flex-btn col-md-3 col-6"},[_c('v-btn',{staticClass:"button card card-color elevation-12",staticStyle:{"width":"130px"},attrs:{"id":sensor},on:{"click":function($event){return _vm.console2(sensor, index)}}},[_vm._v(_vm._s(_vm.sensors[index]))])],1)}),1),_vm._v(" "),_c('v-row',{staticClass:"padding"},[_c('v-col',{staticClass:"left",attrs:{"cols":"12","md":"6"}},[_c('v-card-subtitle',{staticClass:"center"},[_vm._v("Current")]),_vm._v(" "),_c('LineChartSingleData',{attrs:{"id":"current","data":_vm.trends[_vm.index].current[_vm.index2],"dailyHour":_vm.arrayTime[_vm.index],"x-axis":"Hour","index":_vm.index2}})],1),_vm._v(" "),_c('v-col',{staticClass:"left",attrs:{"cols":"12","md":"6"}},[_c('v-card-subtitle',{staticClass:"center"},[_vm._v("Hourly")]),_vm._v(" "),_c('LineChart',{attrs:{"id":"houry","dailyMax":_vm.trends[_vm.index].hourly[_vm.index2].max,"dailyMin":_vm.trends[_vm.index].hourly[_vm.index2].min,"dailyAvg":_vm.trends[_vm.index].hourly[_vm.index2].avg,"dailyHour":_vm.trends[_vm.index].hourly[_vm.index2].hour,"x-axis":"Hour","index":_vm.index2}})],1),_vm._v(" "),_c('v-col',{staticClass:"right",attrs:{"cols":"12","md":"6"}},[_c('v-card-subtitle',{staticClass:"center"},[_vm._v("Daily")]),_vm._v(" "),_c('LineChart',{attrs:{"id":"weekly","dailyMax":_vm.trends[_vm.index].daily[_vm.index2].max,"dailyMin":_vm.trends[_vm.index].daily[_vm.index2].min,"dailyAvg":_vm.trends[_vm.index].daily[_vm.index2].avg,"dailyHour":_vm.trends[_vm.index].daily[_vm.index2].day,"x-axis":"Day","index":_vm.index2}})],1),_vm._v(" "),_c('v-col',{staticClass:"left",attrs:{"cols":"12","md":"6"}},[_c('v-card-subtitle',{staticClass:"center"},[_vm._v("Monthly")]),_vm._v(" "),_c('LineChart',{attrs:{"id":"monthly","dailyMax":_vm.trends[_vm.index].monthly[_vm.index2].max,"dailyMin":_vm.trends[_vm.index].monthly[_vm.index2].min,"dailyAvg":_vm.trends[_vm.index].monthly[_vm.index2].avg,"dailyHour":_vm.trends[_vm.index].monthly[_vm.index2].monthName,"x-axis":"Month","index":_vm.index2}})],1)],1)],1)],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/Trend/CardStationTrendIpah1.vue?vue&type=template&id=40bd1d51&scoped=true&
+// CONCATENATED MODULE: ./components/Trend/CardStationTrendIpah1.vue?vue&type=template&id=9a39ac4e&scoped=true&
 
 // EXTERNAL MODULE: ./components/Trend/LineChart.vue + 4 modules
 var LineChart = __webpack_require__(242);
@@ -932,6 +932,8 @@ var external_vuex_ = __webpack_require__(12);
 //
 //
 //
+//
+//
 
 
 
@@ -943,7 +945,7 @@ var external_vuex_ = __webpack_require__(12);
       station: "Block 1",
       sensorsID: ["SoilNitrogen", "SoilPhosphorus", "SoilPotassium", "SoilPH", "SoilEC", "SoilMS", "SoilTEMP"],
       // sensorsID: ["SoilNPK", "SoilPH", "SoilEC", "SoilMS", "SoilTEMP"],
-      sensors: ["Soil Nitrogen", "Soil Phosphorus", "Soil Potassium", "Soil pH", "Soil EC", "Soil MS", "Soil Temp"],
+      sensors: ["Nitrogen", "Phosphorus", "Potassium", "pH", "EC", "Humidity", "Temperature"],
       // sensors: ["Soil NPK", "Soil pH", "Soil EC", "Soil MS", "Soil Temp"],
       theme: "blue-theme"
     };
@@ -1034,7 +1036,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   staticRenderFns,
   false,
   injectStyles,
-  "40bd1d51",
+  "9a39ac4e",
   "a06f2e00"
   
 )

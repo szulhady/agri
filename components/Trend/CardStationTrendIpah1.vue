@@ -20,21 +20,23 @@
     </v-row>
     <v-card class="card-color elevation-12">
       <v-card-title class="color">DETAILS</v-card-title>
-      <v-row>
-        <v-col class="flex-btn">
+      <v-row style="justify-content:center">
+        <v-col
+          class="flex-btn col-md-3 col-6"
+          v-for="(sensor, index) in sensorsID"
+          :key="sensor"
+        >
           <v-btn
-            v-for="(sensor, index) in sensorsID"
-            :id="sensor"
-            :key="sensor"
             @click="console2(sensor, index)"
+            :id="sensor"
             class="button card card-color elevation-12"
-            style="width:250px"
+            style="width:130px;"
             >{{ sensors[index] }}</v-btn
           >
         </v-col>
       </v-row>
       <v-row class="padding">
-        <v-col cols="6" lg="6" class="left">
+        <v-col cols="12" md="6" class="left">
           <v-card-subtitle class="center">Current</v-card-subtitle>
           <LineChartSingleData
             id="current"
@@ -44,7 +46,7 @@
             :index="index2"
           />
         </v-col>
-        <v-col cols="6" lg="6" class="left">
+        <v-col cols="12" md="6" class="left">
           <v-card-subtitle class="center">Hourly</v-card-subtitle>
           <LineChart
             id="houry"
@@ -56,7 +58,7 @@
             :index="index2"
           />
         </v-col>
-        <v-col cols="6" lg="6" class="right">
+        <v-col cols="12" md="6" class="right">
           <v-card-subtitle class="center">Daily</v-card-subtitle>
           <LineChart
             id="weekly"
@@ -69,7 +71,7 @@
           />
         </v-col>
 
-        <v-col cols="6" lg="6" class="left">
+        <v-col cols="12" md="6" class="left">
           <v-card-subtitle class="center">Monthly</v-card-subtitle>
           <LineChart
             id="monthly"
@@ -109,13 +111,13 @@ export default {
       ],
       // sensorsID: ["SoilNPK", "SoilPH", "SoilEC", "SoilMS", "SoilTEMP"],
       sensors: [
-        "Soil Nitrogen",
-        "Soil Phosphorus",
-        "Soil Potassium",
-        "Soil pH",
-        "Soil EC",
-        "Soil MS",
-        "Soil Temp"
+        "Nitrogen",
+        "Phosphorus",
+        "Potassium",
+        "pH",
+        "EC",
+        "Humidity",
+        "Temperature"
       ],
       // sensors: ["Soil NPK", "Soil pH", "Soil EC", "Soil MS", "Soil Temp"],
       theme: "blue-theme"

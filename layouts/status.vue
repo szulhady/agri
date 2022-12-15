@@ -230,7 +230,7 @@ export default {
         //     this.$auth.$state.user.station[0] == "ipah2",
         //   // this.$auth.user.userId == 3,
         //   to: "/trendsIpah2"
-        // },
+        // }
         // {
         //   icon: "mdi-chart-areaspline",
         //   title: "TRENDS",
@@ -591,6 +591,9 @@ export default {
   font-family: "Montserrat", sans-serif;
 }
 
+.vue__time-picker input.display-time {
+  width: 5em !important;
+}
 .v-data-footer__select {
   width: 50px;
 }
