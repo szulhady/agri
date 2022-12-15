@@ -591,9 +591,12 @@ export default {
   font-family: "Montserrat", sans-serif;
 }
 
-.vue__time-picker input.display-time {
-  width: 5em !important;
+@media only screen and (max-width: 600px) {
+  .vue__time-picker input.display-time {
+    width: 5em !important;
+  }
 }
+
 .v-data-footer__select {
   width: 50px;
 }

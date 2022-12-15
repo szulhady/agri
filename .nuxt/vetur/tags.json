@@ -92,6 +92,18 @@
   "ScheduleTime": {
     "description": "Auto imported from components/Schedule/Time.vue"
   },
+  "StatusIpah1Status": {
+    "description": "Auto imported from components/Status/Ipah1Status.vue"
+  },
+  "StatusIpah2Status": {
+    "description": "Auto imported from components/Status/Ipah2Status.vue"
+  },
+  "StatusKongPoStatus": {
+    "description": "Auto imported from components/Status/KongPoStatus.vue"
+  },
+  "StatusTkpmPagohStatus": {
+    "description": "Auto imported from components/Status/TkpmPagohStatus.vue"
+  },
   "TrendCardStationTrendIpah1": {
     "description": "Auto imported from components/Trend/CardStationTrendIpah1.vue"
   },
@@ -109,18 +121,6 @@
   },
   "TrendLineChartSingleData": {
     "description": "Auto imported from components/Trend/LineChartSingleData.vue"
-  },
-  "StatusIpah1Status": {
-    "description": "Auto imported from components/Status/Ipah1Status.vue"
-  },
-  "StatusIpah2Status": {
-    "description": "Auto imported from components/Status/Ipah2Status.vue"
-  },
-  "StatusKongPoStatus": {
-    "description": "Auto imported from components/Status/KongPoStatus.vue"
-  },
-  "StatusTkpmPagohStatus": {
-    "description": "Auto imported from components/Status/TkpmPagohStatus.vue"
   },
   "AdminOverviewCardDataLeafAdmin": {
     "description": "Auto imported from components/Admin/Overview/CardDataLeafAdmin.vue"
