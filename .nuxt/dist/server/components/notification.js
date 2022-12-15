@@ -40,7 +40,7 @@ var installComponents = __webpack_require__(20);
 var installComponents_default = /*#__PURE__*/__webpack_require__.n(installComponents);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VCard/VCard.js
-var VCard = __webpack_require__(51);
+var VCard = __webpack_require__(53);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VCard/index.js
 var components_VCard = __webpack_require__(15);
@@ -60,7 +60,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "3ac66e06"
+  "42aae486"
   
 )
 

@@ -2,7 +2,12 @@
   <div>
     <v-card class="elevation-12 card-border card-color">
       <v-card-title class="color no-padding">SUMMARY</v-card-title>
-      <v-data-table :headers="headers" :items="status" :items-per-page="5">
+      <v-data-table
+        :headers="headers"
+        :items="status"
+        :items-per-page="5"
+        :footer-props="{ itemsPerPageText: '' }"
+      >
         <!-- <template v-slot:top="{ pagination, options, updateOptions }">
           <v-data-footer
             :pagination="pagination"

@@ -256,7 +256,6 @@ export default {
         //   to: "/detail"
         // }
       ],
-      // this.$auth.$state.user.server_mqtt
       miniVariant: false,
       title: "SMART FERTIGATION DASHBOARD",
       connection: {
@@ -326,6 +325,7 @@ export default {
     createConnection() {
       const { host, port, endpoint, ...options } = this.connection;
       const connectUrl = `${host}`;
+      // const connectUrl = `wss://${host}:${port}${endpoint}`;
       try {
         this.client = mqtt.connect(connectUrl, options);
       } catch (error) {
@@ -417,6 +417,8 @@ export default {
   mounted: function() {
     // let elHtml = document.getElementsByTagName("html")[0];
     // elHtml.style.overflowY = null;
+    let rowsperpage = document.querySelector(".v-data-footer__select");
+    rowsperpage.innerText = "";
   },
   async created() {
     // this.$store.dispatch("setForecasts");
@@ -587,6 +589,10 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 * {
   font-family: "Montserrat", sans-serif;
+}
+
+.v-data-footer__select {
+  width: 50px;
 }
 .icon2 .v-icon {
   color: #888 !important;

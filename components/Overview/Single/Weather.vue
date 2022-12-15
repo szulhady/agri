@@ -66,7 +66,7 @@ export default {
 
 <style scoped>
 .weather-card {
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   align-items: center;
   width: 200px !important;

@@ -17,6 +17,7 @@ export default {
 <style scoped>
 .duration {
   display: flex;
+  align-items: center;
   margin-left: 20px;
 }
 .detail {

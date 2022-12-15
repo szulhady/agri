@@ -31,7 +31,7 @@ exports.modules = {
 /* harmony import */ var core_js_modules_esnext_map_some_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_esnext_map_some_js__WEBPACK_IMPORTED_MODULE_11__);
 /* harmony import */ var core_js_modules_esnext_map_update_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(96);
 /* harmony import */ var core_js_modules_esnext_map_update_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_esnext_map_update_js__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _src_components_VGrid_VGrid_sass__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(59);
+/* harmony import */ var _src_components_VGrid_VGrid_sass__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(60);
 /* harmony import */ var _src_components_VGrid_VGrid_sass__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_src_components_VGrid_VGrid_sass__WEBPACK_IMPORTED_MODULE_13__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(1);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_14__);
@@ -204,7 +204,7 @@ const cache = new Map();
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(239);
+var content = __webpack_require__(238);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -222,7 +222,7 @@ module.exports.__inject__ = function (context) {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(241);
+var content = __webpack_require__(240);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -234,7 +234,7 @@ module.exports.__inject__ = function (context) {
 
 /***/ }),
 
-/***/ 238:
+/***/ 237:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -246,7 +246,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 239:
+/***/ 238:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -260,7 +260,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 240:
+/***/ 239:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -272,7 +272,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 241:
+/***/ 240:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -286,7 +286,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 243:
+/***/ 242:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -544,7 +544,7 @@ var componentNormalizer = __webpack_require__(16);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(238)
+  var style0 = __webpack_require__(237)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -558,7 +558,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "6f99e610",
-  "743d5ae0"
+  "30915740"
   
 )
 
@@ -566,7 +566,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 244:
+/***/ 243:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -754,7 +754,7 @@ var componentNormalizer = __webpack_require__(16);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(240)
+  var style0 = __webpack_require__(239)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -768,7 +768,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "185f5285",
-  "33ad9812"
+  "481db192"
   
 )
 
@@ -776,13 +776,13 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 335:
+/***/ 345:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(370);
+var content = __webpack_require__(376);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -794,19 +794,19 @@ module.exports.__inject__ = function (context) {
 
 /***/ }),
 
-/***/ 369:
+/***/ 375:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardStationTrendIpah1_vue_vue_type_style_index_0_id_40bd1d51_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(335);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardStationTrendIpah1_vue_vue_type_style_index_0_id_40bd1d51_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(345);
 /* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardStationTrendIpah1_vue_vue_type_style_index_0_id_40bd1d51_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardStationTrendIpah1_vue_vue_type_style_index_0_id_40bd1d51_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardStationTrendIpah1_vue_vue_type_style_index_0_id_40bd1d51_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardStationTrendIpah1_vue_vue_type_style_index_0_id_40bd1d51_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
 
-/***/ 370:
+/***/ 376:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -820,7 +820,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 412:
+/***/ 423:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -835,10 +835,10 @@ var staticRenderFns = []
 // CONCATENATED MODULE: ./components/Trend/CardStationTrendIpah1.vue?vue&type=template&id=40bd1d51&scoped=true&
 
 // EXTERNAL MODULE: ./components/Trend/LineChart.vue + 4 modules
-var LineChart = __webpack_require__(243);
+var LineChart = __webpack_require__(242);
 
 // EXTERNAL MODULE: ./components/Trend/LineChartSingleData.vue + 4 modules
-var LineChartSingleData = __webpack_require__(244);
+var LineChartSingleData = __webpack_require__(243);
 
 // EXTERNAL MODULE: external "vuex"
 var external_vuex_ = __webpack_require__(12);
@@ -1001,10 +1001,10 @@ var installComponents = __webpack_require__(20);
 var installComponents_default = /*#__PURE__*/__webpack_require__.n(installComponents);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VBtn/VBtn.js + 2 modules
-var VBtn = __webpack_require__(61);
+var VBtn = __webpack_require__(62);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VCard/VCard.js
-var VCard = __webpack_require__(51);
+var VCard = __webpack_require__(53);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VCard/index.js
 var components_VCard = __webpack_require__(15);
@@ -1021,7 +1021,7 @@ var VRow = __webpack_require__(184);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(369)
+  var style0 = __webpack_require__(375)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -1035,7 +1035,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "40bd1d51",
-  "120ea100"
+  "a06f2e00"
   
 )
 

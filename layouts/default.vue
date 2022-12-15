@@ -1,6 +1,12 @@
 <template>
   <v-app dark>
-    <v-navigation-drawer v-model="drawer" fixed app class="sidebar">
+    <v-navigation-drawer
+      v-model="drawer"
+      fixed
+      app
+      class="sidebar"
+      v-if="$vuetify.breakpoint.mdAndUp"
+    >
       <div class="brand">
         <img src="nex-plex-h.png" alt="nex-plex-logo" class="brand-logo" />
       </div>
@@ -27,7 +33,7 @@
         <!-- </v-list> -->
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar fixed app class="app-bar-top">
+    <v-app-bar fixed app class="app-bar-top" v-if="$vuetify.breakpoint.mdAndUp">
       <v-toolbar-title
         class="title-container"
         v-text="title"
@@ -48,6 +54,58 @@
       </div>
     </v-app-bar>
     <!-- End of NavBar -->
+
+    <v-navigation-drawer
+      v-model="drawer2"
+      fixed
+      app
+      class="sidebar"
+      temporary
+      v-if="$vuetify.breakpoint.mdAndDown"
+    >
+      <div class="brand">
+        <img src="nex-plex-h.png" alt="nex-plex-logo" class="brand-logo" />
+      </div>
+      <hr class="horizontal-line" />
+      <v-list>
+        <!-- <v-list> -->
+        <div v-for="(item, i) in items" :key="i">
+          <v-list-item
+            :to="item.to"
+            router
+            exact
+            active-class="active_list"
+            v-if="item.state"
+          >
+            <v-list-item-action>
+              <v-icon>{{ item.icon }}</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title v-text="item.title" />
+            </v-list-item-content>
+          </v-list-item>
+        </div>
+
+        <!-- </v-list> -->
+      </v-list>
+    </v-navigation-drawer>
+    <v-app-bar fixed app v-if="$vuetify.breakpoint.mdAndDown">
+      <v-app-bar-nav-icon
+        @click.stop="drawer2 = !drawer2"
+        style="color:white"
+      ></v-app-bar-nav-icon>
+      <v-toolbar-title v-text="title" style="font-weight:bold" />
+      <v-spacer />
+      <div class="user-name" v-if="loggedInUser">
+        <!-- <v-icon>mdi-account-circle</v-icon> -->
+        <h4 style="color:white">{{ loggedInUser.username }}</h4>
+        <!-- <h4>{{loggedInUser.topics}}</h4> -->
+      </div>
+      <v-btn icon @click.stop="rightDrawer = !rightDrawer">
+        <v-icon v-if="loggedInUser" color="success">mdi-logout</v-icon>
+      </v-btn>
+    </v-app-bar>
+
     <v-main>
       <v-container>
         <nuxt />
@@ -124,6 +182,7 @@ export default {
       clipped: false,
       fixed: false,
       drawer: true,
+      drawer2: false,
       right: true,
       rightDrawer: false,
       items: [
@@ -413,6 +472,9 @@ export default {
     // Create connection
     createConnection() {
       const { host, port, endpoint, ...options } = this.connection;
+      // const connectUrl = `wss:${host}:${port}${endpoint}`;
+      // const connectUrl = `ws://www.txio.live:8083/mqtt`;
+      // const connectUrl = `ws://txio.uitm.edu.my:8083/mqtt`;
       const connectUrl = `${host}`;
       try {
         this.client = mqtt.connect(connectUrl, options);

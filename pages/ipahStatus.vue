@@ -65,8 +65,8 @@
                     Nutrient preparation is done via schedule set by user on
                     schedule panel. It is done on
                     <span style="font-weight:bold">5.00am on choosen date</span
-                    >. Please fill EC value input and click button below to
-                    start nutrient preparation manually.
+                    >. Please fill EC value input ( eg: 1.00 ) and click button
+                    below to start nutrient preparation manually.
                   </h4>
                 </div>
 
@@ -242,9 +242,10 @@ export default {
 .filter-green {
   filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg)
     brightness(90%) contrast(119%);
-  -webkit-animation-name: blinkGreen;
+  /* -webkit-animation-name: blinkGreen;
   -webkit-animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite; */
+  -webkit-animation: blinkGreen 1s infinite;
   -moz-animation: blinkGreen 1s infinite;
   -ms-animation: blinkGreen 1s infinite;
   -o-animation: blinkGreen 1s infinite;
@@ -254,9 +255,10 @@ export default {
 .filter-red {
   filter: invert(21%) sepia(100%) saturate(7414%) hue-rotate(359deg)
     brightness(94%) contrast(117%);
-  -webkit-animation-name: blinkRed;
+  /* -webkit-animation-name: blinkRed;
   -webkit-animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite; */
+  -webkit-animation: blinkRed 1s infinite;
   -moz-animation: blinkRed 1s infinite;
   -ms-animation: blinkRed 1s infinite;
   -o-animation: blinkRed 1s infinite;

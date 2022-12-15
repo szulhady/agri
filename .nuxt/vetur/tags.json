@@ -50,6 +50,9 @@
   "GeneralUserInfo": {
     "description": "Auto imported from components/General/UserInfo.vue"
   },
+  "RegisterForm2": {
+    "description": "Auto imported from components/Register/Form2.vue"
+  },
   "LoginForm": {
     "description": "Auto imported from components/Login/Form.vue"
   },
@@ -76,9 +79,6 @@
   },
   "OverviewTable": {
     "description": "Auto imported from components/Overview/Table.vue"
-  },
-  "RegisterForm2": {
-    "description": "Auto imported from components/Register/Form2.vue"
   },
   "ScheduleCalendar": {
     "description": "Auto imported from components/Schedule/Calendar.vue"

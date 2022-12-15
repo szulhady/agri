@@ -11,9 +11,10 @@
         :key="index"
         class="reading"
         :sensorData="sensorData"
+        style="text-align:center"
       >
         <v-card-subtitle class="top" :class="data.class">
-          <span>
+          <span style="display:flex">
             {{ data.description }}
           </span>
         </v-card-subtitle>

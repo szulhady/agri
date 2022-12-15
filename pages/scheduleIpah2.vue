@@ -9,7 +9,7 @@
       <v-row style="display:flex; justify-content:center; align-items:center">
         <v-col
           cols="12"
-          class="pl-8 col-lg-3 mb-5"
+          class="pl-8 col-md-4 mb-5"
           style="display:flex;flex-direction:column;justify-content:center;align-items:center"
         >
           <div>
@@ -26,16 +26,19 @@
             <!-- </span> -->
           </div>
         </v-col>
-        <v-col cols="12" class="mx-auto col-lg-9">
+        <v-col cols="12" class="mx-auto col-md-8">
           <v-row>
-            <v-col class="ml-10 ml-lg-0" cols="4">
+            <v-col class="ml-10 ml-lg-0 col-lg-11" cols="10">
               <v-row>
                 <v-col>
                   <div>
-                    <h4 style="text-align: justify">
+                    <h4
+                      style="text-align: justify;
+  text-justify: inter-word;"
+                    >
                       Default time for nutrient preparation process on selected
-                      date is on 5am. Please select date and duration (minute)
-                      for dosing process.
+                      date is on 5am. Please select date and EC value ( eg: 1.00
+                      ) for dosing process.
                     </h4>
                     <!-- <h4>
                       Below is guideline for duration input:
@@ -51,22 +54,28 @@
               </v-row>
               <v-row>
                 <v-col cols="12" class="userInputNutriet">
-                  <div>
+                  <div style="display:flex; justify-content:center">
                     <!-- <v-select
                         :items="itemsDuration1"
                         label="Duration (minute)"
                         v-model="durationNutrient"
                         class="long"
                       ></v-select> -->
-                    <v-text-field
+                    <!-- <v-text-field
                       label="Duration (minute)"
                       :rules="rules"
                       type="number"
                       v-model.number="durationNutrient"
                       class="long"
-                    ></v-text-field>
+                    ></v-text-field> -->
+                    <input
+                      class="long2"
+                      type="text"
+                      v-mask="'#.##'"
+                      v-model.number="durationNutrient"
+                    />
                   </div>
-                  <div>
+                  <div style="display:flex; justify-content:center">
                     <v-btn class="mt-5" @click="checkScheduleNutrient">
                       SET SCHEDULE
                     </v-btn>
@@ -74,7 +83,7 @@
                 </v-col>
               </v-row>
             </v-col>
-            <v-col class="ml-10 ml-lg-0 px-10" cols="8">
+            <v-col class="px-10" cols="12">
               <TableScheduleNutrient
                 :allDate="detailNutrient"
                 description="Nutrient preparation schedule"
@@ -122,7 +131,7 @@
               </h4>
             </v-col>
           </v-row>
-          <v-row>
+          <v-row v-if="$vuetify.breakpoint.smAndUp">
             <v-col cols="12" class="userInput col-md-6">
               <div>
                 <label>1)</label>
@@ -725,6 +734,858 @@
                 ></v-select>
               </div>
             </v-col>
+          </v-row>
+          <v-row v-else>
+            <v-expansion-panels class="mx-5">
+              <v-expansion-panel>
+                <v-expansion-panel-header>
+                  List 1 - 10
+                </v-expansion-panel-header>
+                <v-expansion-panel-content>
+                  <div
+                    style="display:flex; flex-wrap: wrap; background:#f7f7f7"
+                    class="mx-8 mb-3"
+                  >
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <!-- <label>1)</label> -->
+                      <div class="short">
+                        <vue-timepicker
+                          v-model="yourStringTimeValue1"
+                          format="HH:mm"
+                          :hour-range="[[7, 23]]"
+                          hide-disabled-hours
+                        ></vue-timepicker>
+                      </div>
+                      <div>
+                        <v-select
+                          v-model="block1"
+                          :items="items"
+                          label="Block"
+                          multiple
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <div>
+                        <v-text-field
+                          label="Duration (minute)"
+                          :rules="rules"
+                          type="number"
+                          v-model.number="duration1"
+                          class="short"
+                        ></v-text-field>
+                      </div>
+                      <div>
+                        <v-select
+                          :items="itemsSubstance"
+                          label="Substance"
+                          v-model="substance1"
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                  </div>
+                  <div
+                    style="display:flex; flex-wrap: wrap; background:#ffffff"
+                    class="mx-8 mb-3"
+                  >
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <!-- <label>1)</label> -->
+                      <div class="short">
+                        <vue-timepicker
+                          v-model="yourStringTimeValue2"
+                          format="HH:mm"
+                          :hour-range="[[7, 23]]"
+                          hide-disabled-hours
+                        ></vue-timepicker>
+                      </div>
+                      <div>
+                        <v-select
+                          v-model="block2"
+                          :items="items"
+                          label="Block"
+                          multiple
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <div>
+                        <v-text-field
+                          label="Duration (minute)"
+                          :rules="rules"
+                          type="number"
+                          v-model.number="duration2"
+                          class="short"
+                        ></v-text-field>
+                      </div>
+                      <div>
+                        <v-select
+                          :items="itemsSubstance"
+                          label="Substance"
+                          v-model="substance2"
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                  </div>
+                  <div
+                    style="display:flex; flex-wrap: wrap; background:#f7f7f7"
+                    class="mx-8 mb-3"
+                  >
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <!-- <label>1)</label> -->
+                      <div class="short">
+                        <vue-timepicker
+                          v-model="yourStringTimeValue3"
+                          format="HH:mm"
+                          :hour-range="[[7, 23]]"
+                          hide-disabled-hours
+                        ></vue-timepicker>
+                      </div>
+                      <div>
+                        <v-select
+                          v-model="block3"
+                          :items="items"
+                          label="Block"
+                          multiple
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <div>
+                        <v-text-field
+                          label="Duration (minute)"
+                          :rules="rules"
+                          type="number"
+                          v-model.number="duration3"
+                          class="short"
+                        ></v-text-field>
+                      </div>
+                      <div>
+                        <v-select
+                          :items="itemsSubstance"
+                          label="Substance"
+                          v-model="substance3"
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                  </div>
+                  <div
+                    style="display:flex; flex-wrap: wrap; background:#ffffff"
+                    class="mx-8 mb-3"
+                  >
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <!-- <label>1)</label> -->
+                      <div class="short">
+                        <vue-timepicker
+                          v-model="yourStringTimeValue4"
+                          format="HH:mm"
+                          :hour-range="[[7, 23]]"
+                          hide-disabled-hours
+                        ></vue-timepicker>
+                      </div>
+                      <div>
+                        <v-select
+                          v-model="block4"
+                          :items="items"
+                          label="Block"
+                          multiple
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <div>
+                        <v-text-field
+                          label="Duration (minute)"
+                          :rules="rules"
+                          type="number"
+                          v-model.number="duration4"
+                          class="short"
+                        ></v-text-field>
+                      </div>
+                      <div>
+                        <v-select
+                          :items="itemsSubstance"
+                          label="Substance"
+                          v-model="substance4"
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                  </div>
+                  <div
+                    style="display:flex; flex-wrap: wrap; background:#f7f7f7"
+                    class="mx-8 mb-3"
+                  >
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <!-- <label>1)</label> -->
+                      <div class="short">
+                        <vue-timepicker
+                          v-model="yourStringTimeValue5"
+                          format="HH:mm"
+                          :hour-range="[[7, 23]]"
+                          hide-disabled-hours
+                        ></vue-timepicker>
+                      </div>
+                      <div>
+                        <v-select
+                          v-model="block5"
+                          :items="items"
+                          label="Block"
+                          multiple
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <div>
+                        <v-text-field
+                          label="Duration (minute)"
+                          :rules="rules"
+                          type="number"
+                          v-model.number="duration5"
+                          class="short"
+                        ></v-text-field>
+                      </div>
+                      <div>
+                        <v-select
+                          :items="itemsSubstance"
+                          label="Substance"
+                          v-model="substance5"
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                  </div>
+                  <div
+                    style="display:flex; flex-wrap: wrap; background:#ffffff"
+                    class="mx-8 mb-3"
+                  >
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <!-- <label>1)</label> -->
+                      <div class="short">
+                        <vue-timepicker
+                          v-model="yourStringTimeValue6"
+                          format="HH:mm"
+                          :hour-range="[[7, 23]]"
+                          hide-disabled-hours
+                        ></vue-timepicker>
+                      </div>
+                      <div>
+                        <v-select
+                          v-model="block6"
+                          :items="items"
+                          label="Block"
+                          multiple
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <div>
+                        <v-text-field
+                          label="Duration (minute)"
+                          :rules="rules"
+                          type="number"
+                          v-model.number="duration6"
+                          class="short"
+                        ></v-text-field>
+                      </div>
+                      <div>
+                        <v-select
+                          :items="itemsSubstance"
+                          label="Substance"
+                          v-model="substance6"
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                  </div>
+                  <div
+                    style="display:flex; flex-wrap: wrap; background:#f7f7f7"
+                    class="mx-8 mb-3"
+                  >
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <!-- <label>1)</label> -->
+                      <div class="short">
+                        <vue-timepicker
+                          v-model="yourStringTimeValue7"
+                          format="HH:mm"
+                          :hour-range="[[7, 23]]"
+                          hide-disabled-hours
+                        ></vue-timepicker>
+                      </div>
+                      <div>
+                        <v-select
+                          v-model="block7"
+                          :items="items"
+                          label="Block"
+                          multiple
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <div>
+                        <v-text-field
+                          label="Duration (minute)"
+                          :rules="rules"
+                          type="number"
+                          v-model.number="duration7"
+                          class="short"
+                        ></v-text-field>
+                      </div>
+                      <div>
+                        <v-select
+                          :items="itemsSubstance"
+                          label="Substance"
+                          v-model="substance7"
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                  </div>
+                  <div
+                    style="display:flex; flex-wrap: wrap; background:#ffffff"
+                    class="mx-8 mb-3"
+                  >
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <!-- <label>1)</label> -->
+                      <div class="short">
+                        <vue-timepicker
+                          v-model="yourStringTimeValue8"
+                          format="HH:mm"
+                          :hour-range="[[7, 23]]"
+                          hide-disabled-hours
+                        ></vue-timepicker>
+                      </div>
+                      <div>
+                        <v-select
+                          v-model="block8"
+                          :items="items"
+                          label="Block"
+                          multiple
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <div>
+                        <v-text-field
+                          label="Duration (minute)"
+                          :rules="rules"
+                          type="number"
+                          v-model.number="duration8"
+                          class="short"
+                        ></v-text-field>
+                      </div>
+                      <div>
+                        <v-select
+                          :items="itemsSubstance"
+                          label="Substance"
+                          v-model="substance8"
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                  </div>
+                  <div
+                    style="display:flex; flex-wrap: wrap; background:#f7f7f7"
+                    class="mx-8 mb-3"
+                  >
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <!-- <label>1)</label> -->
+                      <div class="short">
+                        <vue-timepicker
+                          v-model="yourStringTimeValue9"
+                          format="HH:mm"
+                          :hour-range="[[7, 23]]"
+                          hide-disabled-hours
+                        ></vue-timepicker>
+                      </div>
+                      <div>
+                        <v-select
+                          v-model="block9"
+                          :items="items"
+                          label="Block"
+                          multiple
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <div>
+                        <v-text-field
+                          label="Duration (minute)"
+                          :rules="rules"
+                          type="number"
+                          v-model.number="duration9"
+                          class="short"
+                        ></v-text-field>
+                      </div>
+                      <div>
+                        <v-select
+                          :items="itemsSubstance"
+                          label="Substance"
+                          v-model="substance9"
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                  </div>
+                  <div
+                    style="display:flex; flex-wrap: wrap; background:#ffffff"
+                    class="mx-8 mb-3"
+                  >
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <!-- <label>1)</label> -->
+                      <div class="short">
+                        <vue-timepicker
+                          v-model="yourStringTimeValue10"
+                          format="HH:mm"
+                          :hour-range="[[7, 23]]"
+                          hide-disabled-hours
+                        ></vue-timepicker>
+                      </div>
+                      <div>
+                        <v-select
+                          v-model="block10"
+                          :items="items"
+                          label="Block"
+                          multiple
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <div>
+                        <v-text-field
+                          label="Duration (minute)"
+                          :rules="rules"
+                          type="number"
+                          v-model.number="duration10"
+                          class="short"
+                        ></v-text-field>
+                      </div>
+                      <div>
+                        <v-select
+                          :items="itemsSubstance"
+                          label="Substance"
+                          v-model="substance10"
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                  </div>
+                </v-expansion-panel-content>
+              </v-expansion-panel>
+            </v-expansion-panels>
+            <v-expansion-panels class="mx-5">
+              <v-expansion-panel>
+                <v-expansion-panel-header>
+                  List 11 - 16
+                </v-expansion-panel-header>
+                <v-expansion-panel-content>
+                  <div
+                    style="display:flex; flex-wrap: wrap; background:#f7f7f7"
+                    class="mx-8 mb-3"
+                  >
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <!-- <label>1)</label> -->
+                      <div class="short">
+                        <vue-timepicker
+                          v-model="yourStringTimeValue11"
+                          format="HH:mm"
+                          :hour-range="[[7, 23]]"
+                          hide-disabled-hours
+                        ></vue-timepicker>
+                      </div>
+                      <div>
+                        <v-select
+                          v-model="block11"
+                          :items="items"
+                          label="Block"
+                          multiple
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <div>
+                        <v-text-field
+                          label="Duration (minute)"
+                          :rules="rules"
+                          type="number"
+                          v-model.number="duration11"
+                          class="short"
+                        ></v-text-field>
+                      </div>
+                      <div>
+                        <v-select
+                          :items="itemsSubstance"
+                          label="Substance"
+                          v-model="substance11"
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                  </div>
+                  <div
+                    style="display:flex; flex-wrap: wrap; background:#ffffff"
+                    class="mx-8 mb-3"
+                  >
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <!-- <label>1)</label> -->
+                      <div class="short">
+                        <vue-timepicker
+                          v-model="yourStringTimeValue12"
+                          format="HH:mm"
+                          :hour-range="[[7, 23]]"
+                          hide-disabled-hours
+                        ></vue-timepicker>
+                      </div>
+                      <div>
+                        <v-select
+                          v-model="block12"
+                          :items="items"
+                          label="Block"
+                          multiple
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <div>
+                        <v-text-field
+                          label="Duration (minute)"
+                          :rules="rules"
+                          type="number"
+                          v-model.number="duration12"
+                          class="short"
+                        ></v-text-field>
+                      </div>
+                      <div>
+                        <v-select
+                          :items="itemsSubstance"
+                          label="Substance"
+                          v-model="substance12"
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                  </div>
+                  <div
+                    style="display:flex; flex-wrap: wrap; background:#f7f7f7"
+                    class="mx-8 mb-3"
+                  >
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <!-- <label>1)</label> -->
+                      <div class="short">
+                        <vue-timepicker
+                          v-model="yourStringTimeValue13"
+                          format="HH:mm"
+                          :hour-range="[[7, 23]]"
+                          hide-disabled-hours
+                        ></vue-timepicker>
+                      </div>
+                      <div>
+                        <v-select
+                          v-model="block13"
+                          :items="items"
+                          label="Block"
+                          multiple
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <div>
+                        <v-text-field
+                          label="Duration (minute)"
+                          :rules="rules"
+                          type="number"
+                          v-model.number="duration13"
+                          class="short"
+                        ></v-text-field>
+                      </div>
+                      <div>
+                        <v-select
+                          :items="itemsSubstance"
+                          label="Substance"
+                          v-model="substance13"
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                  </div>
+                  <div
+                    style="display:flex; flex-wrap: wrap; background:#ffffff"
+                    class="mx-8 mb-3"
+                  >
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <!-- <label>1)</label> -->
+                      <div class="short">
+                        <vue-timepicker
+                          v-model="yourStringTimeValue14"
+                          format="HH:mm"
+                          :hour-range="[[7, 23]]"
+                          hide-disabled-hours
+                        ></vue-timepicker>
+                      </div>
+                      <div>
+                        <v-select
+                          v-model="block14"
+                          :items="items"
+                          label="Block"
+                          multiple
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <div>
+                        <v-text-field
+                          label="Duration (minute)"
+                          :rules="rules"
+                          type="number"
+                          v-model.number="duration14"
+                          class="short"
+                        ></v-text-field>
+                      </div>
+                      <div>
+                        <v-select
+                          :items="itemsSubstance"
+                          label="Substance"
+                          v-model="substance14"
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                  </div>
+                  <div
+                    style="display:flex; flex-wrap: wrap; background:#f7f7f7"
+                    class="mx-8 mb-3"
+                  >
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <!-- <label>1)</label> -->
+                      <div class="short">
+                        <vue-timepicker
+                          v-model="yourStringTimeValue15"
+                          format="HH:mm"
+                          :hour-range="[[7, 23]]"
+                          hide-disabled-hours
+                        ></vue-timepicker>
+                      </div>
+                      <div>
+                        <v-select
+                          v-model="block15"
+                          :items="items"
+                          label="Block"
+                          multiple
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <div>
+                        <v-text-field
+                          label="Duration (minute)"
+                          :rules="rules"
+                          type="number"
+                          v-model.number="duration15"
+                          class="short"
+                        ></v-text-field>
+                      </div>
+                      <div>
+                        <v-select
+                          :items="itemsSubstance"
+                          label="Substance"
+                          v-model="substance15"
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                  </div>
+                  <div
+                    style="display:flex; flex-wrap: wrap; background:#ffffff"
+                    class="mx-8 mb-3"
+                  >
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <!-- <label>1)</label> -->
+                      <div class="short">
+                        <vue-timepicker
+                          v-model="yourStringTimeValue16"
+                          format="HH:mm"
+                          :hour-range="[[7, 23]]"
+                          hide-disabled-hours
+                        ></vue-timepicker>
+                      </div>
+                      <div>
+                        <v-select
+                          v-model="block16"
+                          :items="items"
+                          label="Block"
+                          multiple
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                    <v-col
+                      cols="12"
+                      class="userInput col-md-6"
+                      style="justify-content:space-evenly"
+                    >
+                      <div>
+                        <v-text-field
+                          label="Duration (minute)"
+                          :rules="rules"
+                          type="number"
+                          v-model.number="duration16"
+                          class="short"
+                        ></v-text-field>
+                      </div>
+                      <div>
+                        <v-select
+                          :items="itemsSubstance"
+                          label="Substance"
+                          v-model="substance16"
+                          class="short"
+                        ></v-select>
+                      </div>
+                    </v-col>
+                  </div>
+                </v-expansion-panel-content>
+              </v-expansion-panel>
+            </v-expansion-panels>
           </v-row>
         </v-col>
       </v-row>
@@ -1702,18 +2563,32 @@ export default {
   font-size: 0.5rem !important;
 }
 
-.v-select .v-select__selections {
+/* .v-select .v-select__selections {
   width: 300px !important;
-}
+} */
 
 /* .v-input {
   width: 80px;
 } */
-
+.long2 {
+  border: black 1px solid;
+  text-align: center;
+}
 .short {
   width: 80px;
 }
 .v-select__selection--comma {
   font-size: 0.8rem;
+}
+</style>
+<style>
+@media only screen and (max-width: 600px) {
+  .vue__time-picker input.display-time {
+    width: 6em !important;
+  }
+  .v-expansion-panel-content__wrap {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 </style>

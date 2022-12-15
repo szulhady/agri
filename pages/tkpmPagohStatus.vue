@@ -99,19 +99,26 @@
                     Nutrient preparation is done via schedule set by user on
                     schedule panel. It is done on
                     <span style="font-weight:bold">5.00am on choosen date</span
-                    >. Please fill duration input and click button below to
-                    start nutrient preparation manually.
+                    >. Please fill EC value input ( eg: 1.00 ) and click button
+                    below to start nutrient preparation manually.
                   </h4>
                 </div>
                 <div
                   style="display:flex; flex-direction:column;justify-content:center; align-items:center"
                 >
-                  <v-text-field
+                  <!-- <v-text-field
                     label="Duration (minute)"
                     type="number"
                     v-model.number="duration"
                     class="short"
-                  ></v-text-field>
+                  ></v-text-field> -->
+
+                  <input
+                    class="long2"
+                    type="text"
+                    v-mask="'#.##'"
+                    v-model.number="duration"
+                  />
                   <v-btn @click="nutrient" class="mt-4 mb-4"
                     >Start Preparation</v-btn
                   >

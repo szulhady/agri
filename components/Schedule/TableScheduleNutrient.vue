@@ -11,6 +11,7 @@
         show-select
         class="icon2"
         v-model="selected"
+        :footer-props="{ itemsPerPageText: '' }"
       >
         <template v-if="selected.length > 0" v-slot:footer>
           <v-btn @click="handleClick" class="error logout-btn mt-2 ml-5"

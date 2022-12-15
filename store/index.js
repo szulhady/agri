@@ -345,9 +345,10 @@ export const state = () => ({
           block:'Block 1',
           description:"Block 1",
           cols:4,
-          sensors:['pH', 'EC'],
+          sensors:['EC'],
+          // sensors:['pH', 'EC'],
           sensorData:[
-            new sensor('pH','pH',0,'',25,false, 'pH'),
+            // new sensor('pH','pH',0,'',25,false, 'pH'),
             new sensor('EC','EC',0,'',25,false, 'EC'),
           ],
           warnings:[]
@@ -356,9 +357,10 @@ export const state = () => ({
           block:'Block 2',
           description:"Block 2",
           cols:4,
-          sensors:['pH', 'EC'],
+          sensors:['EC'],
+          // sensors:['pH', 'EC'],
           sensorData:[
-            new sensor('pH','pH',0,'',25,false, 'pH'),
+            // new sensor('pH','pH',0,'',25,false, 'pH'),
             new sensor('EC','EC',0,'',25,false, 'EC'),
           ],
           warnings:[]
@@ -367,9 +369,10 @@ export const state = () => ({
           block:'Block 3',
           description:"Block 3",
           cols:4,
-          sensors:['pH', 'EC'],
+          sensors:['EC'],
+          // sensors:['pH', 'EC'],
           sensorData:[
-            new sensor('pH','pH',0,'',25,false, 'pH'),
+            // new sensor('pH','pH',0,'',25,false, 'pH'),
             new sensor('EC','EC',0,'',25,false, 'EC'),
           ],
          warnings:[]
@@ -500,7 +503,7 @@ export const state = () => ({
         },
         {
           name:"Nutrient House",
-          image:"tkpmPagohWater.jpeg"
+          image:"tkpmPagohWater2.jpeg"
         }
       ],
       status: [

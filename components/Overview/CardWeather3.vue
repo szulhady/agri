@@ -2,7 +2,7 @@
   <v-card class="elevation-15 rounded-lg pb-8">
     <!-- <CardTitle title="Weather" class="pb-3" /> -->
     <v-card-title class="color mb-4">WEATHER</v-card-title>
-    <div class="container2">
+    <div class="container2" v-if="$vuetify.breakpoint.smAndUp">
       <WeatherMain
         class=" mb-3 mb-md-0 mx-4"
         :weather="weather[0].weatherMain"
@@ -97,6 +97,67 @@
       </v-row>
       <!-- </div> -->
     </div>
+    <div v-else>
+      <div style="display:flex; justify-content:center">
+        <WeatherMain
+          :weather="weather[0].weatherMain"
+          :feels_like="weather[0].feels_like"
+          :humidity="weather[0].humidity"
+          :windSpeed="weather[0].windSpeed"
+          :windDeg="weather[0].windDeg"
+          :pressure="weather[0].pressure"
+        />
+      </div>
+      <div class="mt-5">
+        <VueSlickCarousel
+          :arrows="true"
+          :dots="true"
+          v-bind="settings"
+          style="display:flex; justify-content:center"
+        >
+          <Weather
+            day="Monday"
+            :date="weather[1].dt_txt"
+            :weather="weather[1].weatherMain"
+            :description="weather[1].weatherDescription"
+            :feels_like="weather[1].feels_like"
+            :temp_max="weather[1].temp_max"
+            :temp_min="weather[1].temp_min"
+            :humidity="weather[1].humidity"
+          />
+          <Weather
+            day="Monday"
+            :date="weather[2].dt_txt"
+            :weather="weather[2].weatherMain"
+            :description="weather[2].weatherDescription"
+            :feels_like="weather[2].feels_like"
+            :temp_max="weather[2].temp_max"
+            :temp_min="weather[2].temp_min"
+            :humidity="weather[2].humidity"
+          />
+          <Weather
+            day="Monday"
+            :date="weather[3].dt_txt"
+            :weather="weather[3].weatherMain"
+            :description="weather[3].weatherDescription"
+            :feels_like="weather[3].feels_like"
+            :temp_max="weather[3].temp_max"
+            :temp_min="weather[3].temp_min"
+            :humidity="weather[3].humidity"
+          />
+          <Weather
+            day="Monday"
+            :date="weather[4].dt_txt"
+            :weather="weather[4].weatherMain"
+            :description="weather[4].weatherDescription"
+            :feels_like="weather[4].feels_like"
+            :temp_max="weather[4].temp_max"
+            :temp_min="weather[4].temp_min"
+            :humidity="weather[4].humidity"
+          />
+        </VueSlickCarousel>
+      </div>
+    </div>
   </v-card>
 </template>
 
@@ -105,11 +166,31 @@ import CardTitle from "~/components/CardTitle";
 import WeatherMain from "~/components/Overview/Single/WeatherMain";
 import Weather from "~/components/Overview/Single/Weather";
 import { mapState } from "vuex";
+
+import VueSlickCarousel from "vue-slick-carousel";
+import "vue-slick-carousel/dist/vue-slick-carousel.css";
+// optional style for arrows & dots
+import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
+
 export default {
+  data() {
+    return {
+      settings: {
+        dots: true,
+        // "focusOnSelect": true,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        touchThreshold: 5
+      }
+    };
+  },
   components: {
     CardTitle,
     WeatherMain,
-    Weather
+    Weather,
+    VueSlickCarousel
   },
   computed: {
     ...mapState({
@@ -124,6 +205,26 @@ export default {
 };
 </script>
 
+<style>
+.slick-initialized .slick-slide {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+button.slick-prev:before,
+button.slick-next:before {
+  color: black !important;
+}
+.slick-prev {
+  margin-left: 50px;
+  z-index: 100;
+}
+
+.slick-next {
+  margin-right: 50px;
+  z-index: 100;
+}
+</style>
 <style scoped>
 .row {
   margin: 0;

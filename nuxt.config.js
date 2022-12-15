@@ -5,7 +5,7 @@ const colors = require('vuetify/es5/util/colors').default
 module.exports = {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    titleTemplate: '%s Agriculture',
+    titleTemplate: '%s Agriculture Dashboard',
     title: 'Nex-plex',
     meta: [
       { charset: 'utf-8' },
@@ -13,7 +13,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/nex-plex-ico.png' }
     ],
     scipt:[
       {
