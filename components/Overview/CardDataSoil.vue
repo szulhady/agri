@@ -2,7 +2,7 @@
   <v-row class="padding arragement">
     <div
       v-if="$vuetify.breakpoint.mdAndUp"
-      style="width:100%; display:flex;flex-wrap: wrap;"
+      style="width:100%; display:flex;flex-wrap: wrap; justify-content:center"
     >
       <v-col
         v-for="(station, index) in stations"

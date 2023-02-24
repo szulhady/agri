@@ -298,12 +298,16 @@ export const state = () => ({
         {
           block:'Block 1',
           description:"Block 1",
-          cols:4,
-          sensors:[ 'pH','EC', 'HMD'],
+          cols:6,
+          sensors:['N','P','K', 'pH', 'EC', 'HMD','Temp'],
           sensorData:[
+            new sensor('N','N',0,'',40,false, 'N'),
+            new sensor('P','P',0,'',40,false, 'P'),
+            new sensor('K','K',0,'',40,false, 'K'),
             new sensor('pH','pH',0,'',25,false, 'pH'),
             new sensor('EC','EC',0,'',25,false, 'EC'),
             new sensor('HMD','HMD',0,'',25,false, 'HMD'),
+            new sensor('Temp','Temp',0,'',25,false, 'Temp'),
           ],
           lastUpdate:"waiting for incoming data...",
           warnings:[],
@@ -312,27 +316,34 @@ export const state = () => ({
         {
           block:'Block 2',
           description:"Block 2",
-          cols:4,
-          sensors:[ 'pH','EC', 'HMD'],
+          cols:6,
+          sensors:['N','P','K', 'pH', 'EC', 'HMD','Temp'],
           sensorData:[
+            new sensor('N','N',0,'',40,false, 'N'),
+            new sensor('P','P',0,'',40,false, 'P'),
+            new sensor('K','K',0,'',40,false, 'K'),
             new sensor('pH','pH',0,'',25,false, 'pH'),
             new sensor('EC','EC',0,'',25,false, 'EC'),
             new sensor('HMD','HMD',0,'',25,false, 'HMD'),
+            new sensor('Temp','Temp',0,'',25,false, 'Temp')
           ],
           lastUpdate:"waiting for incoming data...",
           warnings:[],
           warningsCounts: [],
-          
         },
         {
           block:'Block 3',
           description:"Block 3",
-          cols:4,
-          sensors:[ 'pH','EC', 'HMD'],
+          cols:6,
+          sensors:['N','P','K', 'pH', 'EC', 'HMD','Temp'],
           sensorData:[
+            new sensor('N','N',0,'',40,false, 'N'),
+            new sensor('P','P',0,'',40,false, 'P'),
+            new sensor('K','K',0,'',40,false, 'K'),
             new sensor('pH','pH',0,'',25,false, 'pH'),
             new sensor('EC','EC',0,'',25,false, 'EC'),
             new sensor('HMD','HMD',0,'',25,false, 'HMD'),
+            new sensor('Temp','Temp',0,'',25,false, 'Temp')
           ],
           lastUpdate:"waiting for incoming data...",
           warnings:[],
@@ -1226,8 +1237,29 @@ export const state = () => ({
   trendsIpah2:[
     {
       name:"Block 1",
-      current:[[],[],[]],
+      current:[[],[],[],[],[],[],[]],
       hourly:[
+        {
+          name:"soilNitrogen",
+          max:[],
+          min:[],
+          avg:[],
+          hour:[]
+        },
+        {
+          name:"soilPhosphorus",
+          max:[],
+          min:[],
+          avg:[],
+          hour:[]
+        },
+        {
+          name:"soilPotassium",
+          max:[],
+          min:[],
+          avg:[],
+          hour:[]
+        },
         {
           name:"soilPH",
           max:[],
@@ -1248,9 +1280,37 @@ export const state = () => ({
           min:[],
           avg:[],
           hour:[]
+        },
+        {
+          name:"soilTEMP",
+          max:[],
+          min:[],
+          avg:[],
+          hour:[]
         }, 
       ],
       daily:[
+        {
+          name:"soilNitrogen",
+          max:[],
+          min:[],
+          avg:[],
+          day:[] 
+        },
+        {
+          name:"soilPhosphorus",
+          max:[],
+          min:[],
+          avg:[],
+          day:[] 
+        },
+        {
+          name:"soilPotassium",
+          max:[],
+          min:[],
+          avg:[],
+          day:[] 
+        },
         {
           name:"soilPH",
           max:[],
@@ -1260,6 +1320,13 @@ export const state = () => ({
         },
         {
           name:"soilEC",
+          max:[],
+          min:[],
+          avg:[],
+          day:[] 
+        },
+        {
+          name:"soilMS",
           max:[],
           min:[],
           avg:[],
@@ -1275,6 +1342,27 @@ export const state = () => ({
       ],
       monthly:[
         {
+          name:"soilNitrogen",
+          max:[],
+          min:[],
+          avg:[],
+          monthName:[] 
+        },
+        {
+          name:"soilPhosphorus",
+          max:[],
+          min:[],
+          avg:[],
+          monthName:[] 
+        },
+        {
+          name:"soilPotassium",
+          max:[],
+          min:[],
+          avg:[],
+          monthName:[] 
+        },
+        {
           name:"soilPH",
           max:[],
           min:[],
@@ -1295,12 +1383,40 @@ export const state = () => ({
           avg:[],
           monthName:[] 
         },
+        {
+          name:"soilTEMP",
+          max:[],
+          min:[],
+          avg:[],
+          monthName:[] 
+        }
       ]
     },
     {
       name:"Block 2",
-      current:[[],[],[]],
+      current:[[],[],[],[],[],[],[]],
       hourly:[
+        {
+          name:"soilNitrogen",
+          max:[],
+          min:[],
+          avg:[],
+          hour:[]
+        },
+        {
+          name:"soilPhosphorus",
+          max:[],
+          min:[],
+          avg:[],
+          hour:[]
+        },
+        {
+          name:"soilPotassium",
+          max:[],
+          min:[],
+          avg:[],
+          hour:[]
+        },
         {
           name:"soilPH",
           max:[],
@@ -1322,9 +1438,37 @@ export const state = () => ({
           avg:[],
           hour:[]
         },
+        {
+          name:"soilTEMP",
+          max:[],
+          min:[],
+          avg:[],
+          hour:[]
+        }, 
       ],
       daily:[
         {
+          name:"soilNitrogen",
+          max:[],
+          min:[],
+          avg:[],
+          day:[] 
+        },
+        {
+          name:"soilPhosphorus",
+          max:[],
+          min:[],
+          avg:[],
+          day:[] 
+        },
+        {
+          name:"soilPotassium",
+          max:[],
+          min:[],
+          avg:[],
+          day:[] 
+        },
+        {
           name:"soilPH",
           max:[],
           min:[],
@@ -1345,9 +1489,37 @@ export const state = () => ({
           avg:[],
           day:[] 
         },
+        {
+          name:"soilTEMP",
+          max:[],
+          min:[],
+          avg:[],
+          day:[] 
+        }
       ],
       monthly:[
         {
+          name:"soilNitrogen",
+          max:[],
+          min:[],
+          avg:[],
+          monthName:[] 
+        },
+        {
+          name:"soilPhosphorus",
+          max:[],
+          min:[],
+          avg:[],
+          monthName:[] 
+        },
+        {
+          name:"soilPotassium",
+          max:[],
+          min:[],
+          avg:[],
+          monthName:[] 
+        },
+        {
           name:"soilPH",
           max:[],
           min:[],
@@ -1368,12 +1540,40 @@ export const state = () => ({
           avg:[],
           monthName:[] 
         },
+        {
+          name:"soilTEMP",
+          max:[],
+          min:[],
+          avg:[],
+          monthName:[] 
+        }
       ]
     },
     {
       name:"Block 3",
-      current:[[],[],[]],
+      current:[[],[],[],[],[],[],[]],
       hourly:[
+        {
+          name:"soilNitrogen",
+          max:[],
+          min:[],
+          avg:[],
+          hour:[]
+        },
+        {
+          name:"soilPhosphorus",
+          max:[],
+          min:[],
+          avg:[],
+          hour:[]
+        },
+        {
+          name:"soilPotassium",
+          max:[],
+          min:[],
+          avg:[],
+          hour:[]
+        },
         {
           name:"soilPH",
           max:[],
@@ -1395,9 +1595,37 @@ export const state = () => ({
           avg:[],
           hour:[]
         },
+        {
+          name:"soilTEMP",
+          max:[],
+          min:[],
+          avg:[],
+          hour:[]
+        }, 
       ],
       daily:[
         {
+          name:"soilNitrogen",
+          max:[],
+          min:[],
+          avg:[],
+          day:[] 
+        },
+        {
+          name:"soilPhosphorus",
+          max:[],
+          min:[],
+          avg:[],
+          day:[] 
+        },
+        {
+          name:"soilPotassium",
+          max:[],
+          min:[],
+          avg:[],
+          day:[] 
+        },
+        {
           name:"soilPH",
           max:[],
           min:[],
@@ -1418,9 +1646,37 @@ export const state = () => ({
           avg:[],
           day:[] 
         },
+        {
+          name:"soilTEMP",
+          max:[],
+          min:[],
+          avg:[],
+          day:[] 
+        }
       ],
       monthly:[
         {
+          name:"soilNitrogen",
+          max:[],
+          min:[],
+          avg:[],
+          monthName:[] 
+        },
+        {
+          name:"soilPhosphorus",
+          max:[],
+          min:[],
+          avg:[],
+          monthName:[] 
+        },
+        {
+          name:"soilPotassium",
+          max:[],
+          min:[],
+          avg:[],
+          monthName:[] 
+        },
+        {
           name:"soilPH",
           max:[],
           min:[],
@@ -1441,6 +1697,13 @@ export const state = () => ({
           avg:[],
           monthName:[] 
         },
+        {
+          name:"soilTEMP",
+          max:[],
+          min:[],
+          avg:[],
+          monthName:[] 
+        }
       ]
     },
   ],
@@ -2262,6 +2525,8 @@ export const mutations = {
     state.trendsIpah1[indexStation].monthly[indexSensor].avg=data.avg;
     state.trendsIpah1[indexStation].monthly[indexSensor].monthName=data.monthName;
   },
+
+
   //Insert array time for current trend IPAH1
   getCurrentTimeArrayIpah1(state,payload){
     if (state.arrayTime[payload.index].length < 10) {
@@ -2422,58 +2687,141 @@ export const mutations = {
   },
 
    //Insert data into array for current trend IPAH2
-   getCurrentDataArrayIpah2(state,payload,){
+  //  getCurrentDataArrayIpah2(state,payload,){
+  //   let sensor=payload.sensor;
+  //   let indexStation=payload.indexStation;
+  //   let indexSensor=payload.indexSensor;
+
+  //   if(state.trendsIpah2[indexStation].current[indexSensor].length<10){
+  //     if( sensor=='soilPH'){
+  //       state.trendsIpah2[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[0].data)
+  //     }
+  //     if( sensor=='soilEC'){
+  //       state.trendsIpah2[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[1].data)
+  //     }
+  //     if( sensor=='soilMS'){
+  //       state.trendsIpah2[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[2].data)
+  //     }
+  //   }else{
+  //     if( sensor=='soilPH'){
+  //       state.trendsIpah2[indexStation].current[indexSensor].splice(0, 1);
+  //       state.trendsIpah2[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[0].data)
+  //     }
+  //     if( sensor=='soilEC'){
+  //       state.trendsIpah2[indexStation].current[indexSensor].splice(0, 1);
+  //       state.trendsIpah2[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[1].data)
+  //     }
+  //     if( sensor=='soilMS'){
+  //       state.trendsIpah2[indexStation].current[indexSensor].splice(0, 1);
+  //       state.trendsIpah2[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[2].data)
+  //     }
+  //   }
+  // },
+
+  getCurrentDataArrayIpah2(state,payload,){
     let sensor=payload.sensor;
     let indexStation=payload.indexStation;
     let indexSensor=payload.indexSensor;
 
-    if(state.trendsIpah2[indexStation].current[indexSensor].length<10){
+    if(state.trendsIpah1[indexStation].current[indexSensor].length<10){
+      if( sensor=='soilNitrogen'){
+        state.trendsIpah1[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[0].data)
+      }
+      if( sensor=='soilPhosphorus'){
+        state.trendsIpah1[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[1].data)
+      }
+      if( sensor=='soilPotassium'){
+        state.trendsIpah1[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[2].data)
+      }
       if( sensor=='soilPH'){
-        state.trendsIpah2[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[0].data)
+        state.trendsIpah1[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[3].data)
       }
       if( sensor=='soilEC'){
-        state.trendsIpah2[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[1].data)
+        state.trendsIpah1[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[4].data)
       }
       if( sensor=='soilMS'){
-        state.trendsIpah2[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[2].data)
+        state.trendsIpah1[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[5].data)
+      }
+      if( sensor=='soilTEMP'){
+        state.trendsIpah1[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[6].data)
       }
     }else{
+      if( sensor=='soilNitrogen'){
+      state.trendsIpah1[indexStation].current[indexSensor].splice(0, 1);
+      state.trendsIpah1[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[0].data)
+      }
+      if( sensor=='soilPhosphorus'){
+      state.trendsIpah1[indexStation].current[indexSensor].splice(0, 1);
+      state.trendsIpah1[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[1].data)
+      }
+      if( sensor=='soilPotassium'){
+      state.trendsIpah1[indexStation].current[indexSensor].splice(0, 1);
+      state.trendsIpah1[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[2].data)
+      }
       if( sensor=='soilPH'){
-        state.trendsIpah2[indexStation].current[indexSensor].splice(0, 1);
-        state.trendsIpah2[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[0].data)
+        state.trendsIpah1[indexStation].current[indexSensor].splice(0, 1);
+        state.trendsIpah1[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[3].data)
       }
       if( sensor=='soilEC'){
-        state.trendsIpah2[indexStation].current[indexSensor].splice(0, 1);
-        state.trendsIpah2[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[1].data)
+        state.trendsIpah1[indexStation].current[indexSensor].splice(0, 1);
+        state.trendsIpah1[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[4].data)
       }
       if( sensor=='soilMS'){
-        state.trendsIpah2[indexStation].current[indexSensor].splice(0, 1);
-        state.trendsIpah2[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[2].data)
+        state.trendsIpah1[indexStation].current[indexSensor].splice(0, 1);
+        state.trendsIpah1[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[5].data)
+      }
+      if( sensor=='soilTEMP'){
+        state.trendsIpah1[indexStation].current[indexSensor].splice(0, 1);
+        state.trendsIpah1[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[6].data)
       }
     }
   },
 
+
   // UPDATE CURRENT DATA IPAH2
+  // getCurrentDataIpah2(state,payload){
+  //   let station = payload.station
+  //   let block = payload.block
+  //   let soilPH = payload.soilPH
+  //   let soilEC = payload.soilEC
+  //   let soilMS = payload.soilMS
+  //   let ts = payload.ts
+  //   state.stations[station].sensorSoil[block].sensorData[0].data = soilPH
+  //   state.stations[station].sensorSoil[block].sensorData[1].data = soilEC
+  //   state.stations[station].sensorSoil[block].sensorData[2].data = soilMS
+  //   state.stations[station].sensorSoil[block].lastUpdate = ts
+  // },
   getCurrentDataIpah2(state,payload){
     let station = payload.station
     let block = payload.block
+    let soilNitrogen = payload.soilNitrogen
+    let soilPhosphorus = payload.soilPhosphorus
+    let soilPotassium = payload.soilPotassium
     let soilPH = payload.soilPH
     let soilEC = payload.soilEC
     let soilMS = payload.soilMS
+    let soilTEMP = payload.soilTEMP
     let ts = payload.ts
-    state.stations[station].sensorSoil[block].sensorData[0].data = soilPH
-    state.stations[station].sensorSoil[block].sensorData[1].data = soilEC
-    state.stations[station].sensorSoil[block].sensorData[2].data = soilMS
+    state.stations[station].sensorSoil[block].sensorData[0].data = soilNitrogen
+    state.stations[station].sensorSoil[block].sensorData[1].data = soilPhosphorus
+    state.stations[station].sensorSoil[block].sensorData[2].data = soilPotassium
+    state.stations[station].sensorSoil[block].sensorData[3].data = soilPH
+    state.stations[station].sensorSoil[block].sensorData[4].data = soilEC
+    state.stations[station].sensorSoil[block].sensorData[5].data = soilMS
+    state.stations[station].sensorSoil[block].sensorData[6].data = soilTEMP
     state.stations[station].sensorSoil[block].lastUpdate = ts
   },
 
+
   getCurrentDataNutrientIpah2(state, payload){
-    let station = payload.station
-    let block = payload.block
-    let soilPH = payload.soilPH
-    let soilEC = payload.soilEC
-    state.stations[station].sensorWater[block].sensorData[0].data = soilPH
-    state.stations[station].sensorWater[block].sensorData[1].data = soilEC
+    // let station = payload.station
+    // let block = payload.block
+    let tank = payload.tank
+    let EC = payload.EC
+    // let soilEC = payload.soilEC
+    // let soilEC = payload.soilEC
+    state.stations[1].sensorWater[tank].sensorData[0].data = EC
+    // state.stations[station].sensorWater[block].sensorData[1].data = soilEC
   },
 
   // END OF IPAH2 //

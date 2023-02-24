@@ -348,7 +348,8 @@ export default {
           "new/nexplex/#",
           "new2/nexplex/#",
           "nexplex/sense",
-          "kongkong/topic/#"
+          "kongkong/topic/#",
+          "qwazx/np/tkpmIpah/#"
         ],
         qos: 0
       },
@@ -751,30 +752,50 @@ export default {
           }
         }
 
-        if (topic === "nexplex/sense/tkpmIpah/block1/retain") {
+        if (topic === "new2/nexplex/tkpmIpah/sense/block1/retain") {
           message = JSON.parse(message);
-          console.log(message);
           let payload = {
             station: 1,
             block: 0,
+            soilNitrogen: message.nt,
+            soilPhosphorus: message.ps,
+            soilPotassium: message.po,
             soilPH: message.ph,
             soilEC: message.ec,
             soilMS: message.mo,
+            soilTEMP: message.tp,
             ts: message.ts
           };
           this.getCurrentDataIpah2(payload);
-
-          this.check(1, 0, 0, " pH", message.ph, 7);
-          this.check(1, 0, 1, " EC", message.ec, 10);
-          this.check(1, 0, 2, " Humidity", message.mo, 10);
-
+          this.check(1, 0, 0, " Nitrogen", message.nt, 20);
+          this.check(1, 0, 1, " Phosphorus", message.ps, 20);
+          this.check(1, 0, 2, " Potassium", message.po, 20);
+          this.check(1, 0, 3, " pH", message.ph, 7);
+          this.check(1, 0, 4, " EC", message.ec, 10);
+          this.check(1, 0, 5, " Humidity", message.mo, 10);
+          this.check(1, 0, 6, " Temp", message.tp, 10);
           const payloadStringArray = {
             indexStation: 1,
             indexBlock: 0
           };
           this.stringArray(payloadStringArray);
+          this.addDataIpah2(0);
 
-          const val = ["soilPH", "soilEC", "soilMS"];
+          let data = { station: 1, block: 3 };
+          this.countWarningsTkpmIpah(data);
+        }
+
+        if (topic === "new3/nexplex/tkpmIpah/sense/block1") {
+          message = JSON.parse(message);
+          const val = [
+            "soilNitrogen",
+            "soilPhosphorus",
+            "soilPotassium",
+            "soilPH",
+            "soilEC",
+            "soilMS",
+            "soilTEMP"
+          ];
           // //currentTrend
           for (let j = 0; j < val.length; j++) {
             let sensor = val[j];
@@ -783,32 +804,91 @@ export default {
             let data = { sensor, indexStation, indexSensor };
             this.getCurrentDataArrayIpah2(data);
           }
-          this.addDataIpah2(0);
-          let data = { station: 1, block: 3 };
-          this.countWarningsTkpmIpah(data);
+          // this.addDataIpah1(0);
         }
 
-        if (topic === "nexplex/sense/tkpmIpah/block2/retain") {
+        // if (topic === "new2/nexplex/tkpmIpah/sense/block1/retain") {
+        //   // if (topic === "nexplex/sense/tkpmIpah/block1/retain") {
+        //   message = JSON.parse(message);
+        //   console.log(message);
+        //   let payload = {
+        //     station: 1,
+        //     block: 0,
+        //     soilPH: message.ph,
+        //     soilEC: message.ec,
+        //     soilMS: message.mo,
+        //     ts: message.ts
+        //   };
+        //   this.getCurrentDataIpah2(payload);
+
+        //   this.check(1, 0, 0, " pH", message.ph, 7);
+        //   this.check(1, 0, 1, " EC", message.ec, 10);
+        //   this.check(1, 0, 2, " Humidity", message.mo, 10);
+
+        //   const payloadStringArray = {
+        //     indexStation: 1,
+        //     indexBlock: 0
+        //   };
+        //   this.stringArray(payloadStringArray);
+
+        //   const val = ["soilPH", "soilEC", "soilMS"];
+        //   // //currentTrend
+        //   for (let j = 0; j < val.length; j++) {
+        //     let sensor = val[j];
+        //     let indexStation = 0;
+        //     let indexSensor = j;
+        //     let data = { sensor, indexStation, indexSensor };
+        //     this.getCurrentDataArrayIpah2(data);
+        //   }
+        //   this.addDataIpah2(0);
+        //   let data = { station: 1, block: 3 };
+        //   this.countWarningsTkpmIpah(data);
+        // }
+
+        if (topic === "new2/nexplex/tkpmIpah/sense/block2/retain") {
           message = JSON.parse(message);
           let payload = {
             station: 1,
             block: 1,
+            soilNitrogen: message.nt,
+            soilPhosphorus: message.ps,
+            soilPotassium: message.po,
             soilPH: message.ph,
             soilEC: message.ec,
             soilMS: message.mo,
+            soilTEMP: message.tp,
             ts: message.ts
           };
           this.getCurrentDataIpah2(payload);
-          this.check(1, 1, 0, " pH", message.ph, 7);
-          this.check(1, 1, 1, " EC", message.ec, 10);
-          this.check(1, 1, 2, " Humidity", message.mo, 10);
-
+          this.check(1, 1, 0, " Nitrogen", message.nt, 20);
+          this.check(1, 1, 1, " Phosphorus", message.ps, 20);
+          this.check(1, 1, 2, " Potassium", message.po, 20);
+          this.check(1, 1, 3, " pH", message.ph, 7);
+          this.check(1, 1, 4, " EC", message.ec, 10);
+          this.check(1, 1, 5, " Humidity", message.mo, 10);
+          this.check(1, 1, 6, " Temp", message.tp, 10);
           const payloadStringArray = {
             indexStation: 1,
             indexBlock: 1
           };
           this.stringArray(payloadStringArray);
-          const val = ["soilPH", "soilEC", "soilMS"];
+          this.addDataIpah2(1);
+
+          let data = { station: 1, block: 3 };
+          this.countWarningsTkpmIpah(data);
+        }
+
+        if (topic === "new3/nexplex/tkpmIpah/sense/block2") {
+          message = JSON.parse(message);
+          const val = [
+            "soilNitrogen",
+            "soilPhosphorus",
+            "soilPotassium",
+            "soilPH",
+            "soilEC",
+            "soilMS",
+            "soilTEMP"
+          ];
           // //currentTrend
           for (let j = 0; j < val.length; j++) {
             let sensor = val[j];
@@ -817,32 +897,87 @@ export default {
             let data = { sensor, indexStation, indexSensor };
             this.getCurrentDataArrayIpah2(data);
           }
-          this.addDataIpah2(1);
-          let data = { station: 1, block: 3 };
-          this.countWarningsTkpmIpah(data);
+          // this.addDataIpah1(0);
         }
 
-        if (topic === "nexplex/sense/tkpmIpah/block3/retain") {
+        // if (topic === "nexplex/sense/tkpmIpah/block2/retain") {
+        //   message = JSON.parse(message);
+        //   let payload = {
+        //     station: 1,
+        //     block: 1,
+        //     soilPH: message.ph,
+        //     soilEC: message.ec,
+        //     soilMS: message.mo,
+        //     ts: message.ts
+        //   };
+        //   this.getCurrentDataIpah2(payload);
+        //   this.check(1, 1, 0, " pH", message.ph, 7);
+        //   this.check(1, 1, 1, " EC", message.ec, 10);
+        //   this.check(1, 1, 2, " Humidity", message.mo, 10);
+
+        //   const payloadStringArray = {
+        //     indexStation: 1,
+        //     indexBlock: 1
+        //   };
+        //   this.stringArray(payloadStringArray);
+        //   const val = ["soilPH", "soilEC", "soilMS"];
+        //   // //currentTrend
+        //   for (let j = 0; j < val.length; j++) {
+        //     let sensor = val[j];
+        //     let indexStation = 1;
+        //     let indexSensor = j;
+        //     let data = { sensor, indexStation, indexSensor };
+        //     this.getCurrentDataArrayIpah2(data);
+        //   }
+        //   this.addDataIpah2(1);
+        //   let data = { station: 1, block: 3 };
+        //   this.countWarningsTkpmIpah(data);
+        // }
+
+        if (topic === "new2/nexplex/tkpmIpah/sense/block3/retain") {
           message = JSON.parse(message);
           let payload = {
             station: 1,
             block: 2,
+            soilNitrogen: message.nt,
+            soilPhosphorus: message.ps,
+            soilPotassium: message.po,
             soilPH: message.ph,
             soilEC: message.ec,
             soilMS: message.mo,
+            soilTEMP: message.tp,
             ts: message.ts
           };
           this.getCurrentDataIpah2(payload);
-          this.check(1, 2, 0, " pH", message.ph, 7);
-          this.check(1, 2, 1, " EC", message.ec, 10);
-          this.check(1, 2, 2, " Humidity", message.mo, 0.5);
-
+          this.check(1, 2, 0, " Nitrogen", message.nt, 20);
+          this.check(1, 2, 1, " Phosphorus", message.ps, 20);
+          this.check(1, 2, 2, " Potassium", message.po, 20);
+          this.check(1, 2, 3, " pH", message.ph, 7);
+          this.check(1, 2, 4, " EC", message.ec, 10);
+          this.check(1, 2, 5, " Humidity", message.mo, 10);
+          this.check(1, 2, 6, " Temp", message.tp, 10);
           const payloadStringArray = {
             indexStation: 1,
             indexBlock: 2
           };
           this.stringArray(payloadStringArray);
-          const val = ["soilPH", "soilEC", "soilMS"];
+          this.addDataIpah2(2);
+
+          let data = { station: 1, block: 3 };
+          this.countWarningsTkpmIpah(data);
+        }
+
+        if (topic === "new3/nexplex/tkpmIpah/sense/block3") {
+          message = JSON.parse(message);
+          const val = [
+            "soilNitrogen",
+            "soilPhosphorus",
+            "soilPotassium",
+            "soilPH",
+            "soilEC",
+            "soilMS",
+            "soilTEMP"
+          ];
           // //currentTrend
           for (let j = 0; j < val.length; j++) {
             let sensor = val[j];
@@ -851,15 +986,71 @@ export default {
             let data = { sensor, indexStation, indexSensor };
             this.getCurrentDataArrayIpah2(data);
           }
-          this.addDataIpah2(2);
-          let data = { station: 1, block: 3 };
-          this.countWarningsTkpmIpah(data);
+          // this.addDataIpah1(0);
         }
 
-        if (topic === "np/s/tkpmIpah/n") {
+        // if (topic === "nexplex/sense/tkpmIpah/block3/retain") {
+        //   message = JSON.parse(message);
+        //   let payload = {
+        //     station: 1,
+        //     block: 2,
+        //     soilPH: message.ph,
+        //     soilEC: message.ec,
+        //     soilMS: message.mo,
+        //     ts: message.ts
+        //   };
+        //   this.getCurrentDataIpah2(payload);
+        //   this.check(1, 2, 0, " pH", message.ph, 7);
+        //   this.check(1, 2, 1, " EC", message.ec, 10);
+        //   this.check(1, 2, 2, " Humidity", message.mo, 0.5);
+
+        //   const payloadStringArray = {
+        //     indexStation: 1,
+        //     indexBlock: 2
+        //   };
+        //   this.stringArray(payloadStringArray);
+        //   const val = ["soilPH", "soilEC", "soilMS"];
+        //   // //currentTrend
+        //   for (let j = 0; j < val.length; j++) {
+        //     let sensor = val[j];
+        //     let indexStation = 2;
+        //     let indexSensor = j;
+        //     let data = { sensor, indexStation, indexSensor };
+        //     this.getCurrentDataArrayIpah2(data);
+        //   }
+        //   this.addDataIpah2(2);
+        //   let data = { station: 1, block: 3 };
+        //   this.countWarningsTkpmIpah(data);
+        // }
+
+        if (topic === "qwazx/np/tkpmIpah/s/ec/t1") {
           message = JSON.parse(message);
-          // console.log(message);
+          let payload = {
+            tank: 0,
+            EC: message.EC
+          };
+          this.getCurrentDataNutrientIpah2(payload);
         }
+        if (topic === "qwazx/np/tkpmIpah/s/ec/t2") {
+          message = JSON.parse(message);
+          let payload = {
+            tank: 1,
+            EC: message.EC
+          };
+          this.getCurrentDataNutrientIpah2(payload);
+        }
+        if (topic === "qwazx/np/tkpmIpah/s/ec/t3") {
+          message = JSON.parse(message);
+          let payload = {
+            tank: 2,
+            EC: message.EC
+          };
+          this.getCurrentDataNutrientIpah2(payload);
+        }
+        // if (topic === "np/s/tkpmIpah/n") {
+        //   message = JSON.parse(message);
+        //   // console.log(message);
+        // }
 
         if (topic === "new/nexplex/tkpmPagoh/sense/block1") {
           message = JSON.parse(message);

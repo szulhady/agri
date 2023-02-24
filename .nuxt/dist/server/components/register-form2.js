@@ -964,7 +964,7 @@ var intersect = __webpack_require__(25);
 var console = __webpack_require__(4);
 
 // EXTERNAL MODULE: external "vue"
-var external_vue_ = __webpack_require__(1);
+var external_vue_ = __webpack_require__(2);
 var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
 
 // CONCATENATED MODULE: ./node_modules/vuetify/lib/mixins/intersectable/index.js

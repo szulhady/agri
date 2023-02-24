@@ -162,7 +162,7 @@ module.exports =
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return camelizeObjectKeys; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "y", function() { return mergeDeep; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return fillArray; });
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 
 function createSimpleFunctional(c, el = 'div', name) {
@@ -589,12 +589,6 @@ function fillArray(length, obj) {
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports) {
-
-module.exports = require("vue");
-
-/***/ }),
-/* 2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -688,12 +682,18 @@ class IsHigh {
 }
 
 /***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+module.exports = require("vue");
+
+/***/ }),
 /* 3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return mixins; });
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 /* eslint-disable max-len, import/export, no-use-before-define */
 
@@ -1043,7 +1043,7 @@ function renderStyles (styles) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return functionalThemeClasses; });
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 
 /* @vue/component */
@@ -1158,7 +1158,7 @@ function functionalThemeClasses(context) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _util_console__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4);
 /* harmony import */ var _util_colorUtils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(14);
@@ -1243,7 +1243,7 @@ function functionalThemeClasses(context) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return factory; });
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 
 function factory(prop = 'value', event = 'input') {
@@ -1310,7 +1310,7 @@ var VIcon = __webpack_require__(22);
 var VListItem = __webpack_require__(30);
 
 // EXTERNAL MODULE: external "vue"
-var external_vue_ = __webpack_require__(1);
+var external_vue_ = __webpack_require__(2);
 var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
 
 // CONCATENATED MODULE: ./node_modules/vuetify/lib/components/VList/VListItemIcon.js
@@ -2124,7 +2124,7 @@ function normalizeComponent (
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _directives_ripple__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(23);
 /* harmony import */ var _util_helpers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
@@ -3136,7 +3136,7 @@ const Ripple = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 
 /**
@@ -3235,7 +3235,7 @@ const Intersect = {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return factory; });
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _util_helpers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
 
@@ -3289,7 +3289,7 @@ let all = factory().extend({
 
 "use strict";
 /* harmony import */ var _util_helpers__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_1__);
 // Helpers
  // Types
@@ -3535,7 +3535,7 @@ __webpack_require__.d(easing_patterns_namespaceObject, "easeOutQuint", function(
 __webpack_require__.d(easing_patterns_namespaceObject, "easeInOutQuint", function() { return easeInOutQuint; });
 
 // EXTERNAL MODULE: external "vue"
-var external_vue_ = __webpack_require__(1);
+var external_vue_ = __webpack_require__(2);
 var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/util/console.js
@@ -5021,7 +5021,7 @@ var mixins = __webpack_require__(3);
 var helpers = __webpack_require__(0);
 
 // EXTERNAL MODULE: external "vue"
-var external_vue_ = __webpack_require__(1);
+var external_vue_ = __webpack_require__(2);
 var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
 
 // CONCATENATED MODULE: ./node_modules/vuetify/lib/mixins/overlayable/index.js
@@ -5236,7 +5236,7 @@ module.exports = require("axios");
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return inject; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return provide; });
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _util_console__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4);
 
@@ -5515,7 +5515,7 @@ const Groupable = factory('itemGroup');
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 
 /* @vue/component */
@@ -5556,7 +5556,7 @@ const Groupable = factory('itemGroup');
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 
 /* harmony default export */ __webpack_exports__["a"] = (vue__WEBPACK_IMPORTED_MODULE_0___default.a.extend({
@@ -5591,7 +5591,7 @@ const Groupable = factory('itemGroup');
 
 "use strict";
 /* harmony import */ var _util_console__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4);
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_1__);
 // Utilities
  // Types
@@ -5897,7 +5897,7 @@ module.exports = require("mqtt");
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 
 /* harmony default export */ __webpack_exports__["a"] = (vue__WEBPACK_IMPORTED_MODULE_0___default.a.extend({
@@ -5928,7 +5928,7 @@ module.exports = require("mqtt");
 
 "use strict";
 /* unused harmony export factory */
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 
 function factory(prop = 'value', event = 'change') {
@@ -6349,7 +6349,7 @@ module.exports = require("vue-no-ssr");
 "use strict";
 
 // EXTERNAL MODULE: external "vue"
-var external_vue_ = __webpack_require__(1);
+var external_vue_ = __webpack_require__(2);
 var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VProgressLinear/VProgressLinear.sass
@@ -6712,7 +6712,7 @@ function attachedRoot(node) {
 
 "use strict";
 /* harmony import */ var _util_console__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4);
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -6773,7 +6773,7 @@ function attachedRoot(node) {
 /* harmony import */ var _mixins_sizeable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(39);
 /* harmony import */ var _mixins_themeable__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7);
 /* harmony import */ var _util_helpers__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(0);
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(1);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(2);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _util_mixins__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(3);
  // Mixins
@@ -7202,7 +7202,7 @@ const VIcon = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 // Types
 
@@ -7954,7 +7954,7 @@ const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_2__[/* default *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 
 /**
@@ -8146,7 +8146,7 @@ function validateAttachTarget(val) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 
 /* @vue/component */
@@ -8186,7 +8186,7 @@ function validateAttachTarget(val) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _util_helpers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
 
@@ -9521,7 +9521,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mutations", function() { return mutations; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getters", function() { return getters; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "actions", function() { return actions; });
-/* harmony import */ var _src_class__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
+/* harmony import */ var _src_class__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 
 const state = () => ({
   updated: false,
@@ -9725,27 +9725,27 @@ const state = () => ({
     sensorSoil: [{
       block: 'Block 1',
       description: "Block 1",
-      cols: 4,
-      sensors: ['pH', 'EC', 'HMD'],
-      sensorData: [new _src_class__WEBPACK_IMPORTED_MODULE_0__[/* sensor */ "b"]('pH', 'pH', 0, '', 25, false, 'pH'), new _src_class__WEBPACK_IMPORTED_MODULE_0__[/* sensor */ "b"]('EC', 'EC', 0, '', 25, false, 'EC'), new _src_class__WEBPACK_IMPORTED_MODULE_0__[/* sensor */ "b"]('HMD', 'HMD', 0, '', 25, false, 'HMD')],
+      cols: 6,
+      sensors: ['N', 'P', 'K', 'pH', 'EC', 'HMD', 'Temp'],
+      sensorData: [new _src_class__WEBPACK_IMPORTED_MODULE_0__[/* sensor */ "b"]('N', 'N', 0, '', 40, false, 'N'), new _src_class__WEBPACK_IMPORTED_MODULE_0__[/* sensor */ "b"]('P', 'P', 0, '', 40, false, 'P'), new _src_class__WEBPACK_IMPORTED_MODULE_0__[/* sensor */ "b"]('K', 'K', 0, '', 40, false, 'K'), new _src_class__WEBPACK_IMPORTED_MODULE_0__[/* sensor */ "b"]('pH', 'pH', 0, '', 25, false, 'pH'), new _src_class__WEBPACK_IMPORTED_MODULE_0__[/* sensor */ "b"]('EC', 'EC', 0, '', 25, false, 'EC'), new _src_class__WEBPACK_IMPORTED_MODULE_0__[/* sensor */ "b"]('HMD', 'HMD', 0, '', 25, false, 'HMD'), new _src_class__WEBPACK_IMPORTED_MODULE_0__[/* sensor */ "b"]('Temp', 'Temp', 0, '', 25, false, 'Temp')],
       lastUpdate: "waiting for incoming data...",
       warnings: [],
       warningsCounts: []
     }, {
       block: 'Block 2',
       description: "Block 2",
-      cols: 4,
-      sensors: ['pH', 'EC', 'HMD'],
-      sensorData: [new _src_class__WEBPACK_IMPORTED_MODULE_0__[/* sensor */ "b"]('pH', 'pH', 0, '', 25, false, 'pH'), new _src_class__WEBPACK_IMPORTED_MODULE_0__[/* sensor */ "b"]('EC', 'EC', 0, '', 25, false, 'EC'), new _src_class__WEBPACK_IMPORTED_MODULE_0__[/* sensor */ "b"]('HMD', 'HMD', 0, '', 25, false, 'HMD')],
+      cols: 6,
+      sensors: ['N', 'P', 'K', 'pH', 'EC', 'HMD', 'Temp'],
+      sensorData: [new _src_class__WEBPACK_IMPORTED_MODULE_0__[/* sensor */ "b"]('N', 'N', 0, '', 40, false, 'N'), new _src_class__WEBPACK_IMPORTED_MODULE_0__[/* sensor */ "b"]('P', 'P', 0, '', 40, false, 'P'), new _src_class__WEBPACK_IMPORTED_MODULE_0__[/* sensor */ "b"]('K', 'K', 0, '', 40, false, 'K'), new _src_class__WEBPACK_IMPORTED_MODULE_0__[/* sensor */ "b"]('pH', 'pH', 0, '', 25, false, 'pH'), new _src_class__WEBPACK_IMPORTED_MODULE_0__[/* sensor */ "b"]('EC', 'EC', 0, '', 25, false, 'EC'), new _src_class__WEBPACK_IMPORTED_MODULE_0__[/* sensor */ "b"]('HMD', 'HMD', 0, '', 25, false, 'HMD'), new _src_class__WEBPACK_IMPORTED_MODULE_0__[/* sensor */ "b"]('Temp', 'Temp', 0, '', 25, false, 'Temp')],
       lastUpdate: "waiting for incoming data...",
       warnings: [],
       warningsCounts: []
     }, {
       block: 'Block 3',
       description: "Block 3",
-      cols: 4,
-      sensors: ['pH', 'EC', 'HMD'],
-      sensorData: [new _src_class__WEBPACK_IMPORTED_MODULE_0__[/* sensor */ "b"]('pH', 'pH', 0, '', 25, false, 'pH'), new _src_class__WEBPACK_IMPORTED_MODULE_0__[/* sensor */ "b"]('EC', 'EC', 0, '', 25, false, 'EC'), new _src_class__WEBPACK_IMPORTED_MODULE_0__[/* sensor */ "b"]('HMD', 'HMD', 0, '', 25, false, 'HMD')],
+      cols: 6,
+      sensors: ['N', 'P', 'K', 'pH', 'EC', 'HMD', 'Temp'],
+      sensorData: [new _src_class__WEBPACK_IMPORTED_MODULE_0__[/* sensor */ "b"]('N', 'N', 0, '', 40, false, 'N'), new _src_class__WEBPACK_IMPORTED_MODULE_0__[/* sensor */ "b"]('P', 'P', 0, '', 40, false, 'P'), new _src_class__WEBPACK_IMPORTED_MODULE_0__[/* sensor */ "b"]('K', 'K', 0, '', 40, false, 'K'), new _src_class__WEBPACK_IMPORTED_MODULE_0__[/* sensor */ "b"]('pH', 'pH', 0, '', 25, false, 'pH'), new _src_class__WEBPACK_IMPORTED_MODULE_0__[/* sensor */ "b"]('EC', 'EC', 0, '', 25, false, 'EC'), new _src_class__WEBPACK_IMPORTED_MODULE_0__[/* sensor */ "b"]('HMD', 'HMD', 0, '', 25, false, 'HMD'), new _src_class__WEBPACK_IMPORTED_MODULE_0__[/* sensor */ "b"]('Temp', 'Temp', 0, '', 25, false, 'Temp')],
       lastUpdate: "waiting for incoming data...",
       warnings: [],
       warningsCounts: []
@@ -10432,8 +10432,26 @@ const state = () => ({
   }],
   trendsIpah2: [{
     name: "Block 1",
-    current: [[], [], []],
+    current: [[], [], [], [], [], [], []],
     hourly: [{
+      name: "soilNitrogen",
+      max: [],
+      min: [],
+      avg: [],
+      hour: []
+    }, {
+      name: "soilPhosphorus",
+      max: [],
+      min: [],
+      avg: [],
+      hour: []
+    }, {
+      name: "soilPotassium",
+      max: [],
+      min: [],
+      avg: [],
+      hour: []
+    }, {
       name: "soilPH",
       max: [],
       min: [],
@@ -10451,8 +10469,32 @@ const state = () => ({
       min: [],
       avg: [],
       hour: []
+    }, {
+      name: "soilTEMP",
+      max: [],
+      min: [],
+      avg: [],
+      hour: []
     }],
     daily: [{
+      name: "soilNitrogen",
+      max: [],
+      min: [],
+      avg: [],
+      day: []
+    }, {
+      name: "soilPhosphorus",
+      max: [],
+      min: [],
+      avg: [],
+      day: []
+    }, {
+      name: "soilPotassium",
+      max: [],
+      min: [],
+      avg: [],
+      day: []
+    }, {
       name: "soilPH",
       max: [],
       min: [],
@@ -10460,6 +10502,12 @@ const state = () => ({
       day: []
     }, {
       name: "soilEC",
+      max: [],
+      min: [],
+      avg: [],
+      day: []
+    }, {
+      name: "soilMS",
       max: [],
       min: [],
       avg: [],
@@ -10472,6 +10520,24 @@ const state = () => ({
       day: []
     }],
     monthly: [{
+      name: "soilNitrogen",
+      max: [],
+      min: [],
+      avg: [],
+      monthName: []
+    }, {
+      name: "soilPhosphorus",
+      max: [],
+      min: [],
+      avg: [],
+      monthName: []
+    }, {
+      name: "soilPotassium",
+      max: [],
+      min: [],
+      avg: [],
+      monthName: []
+    }, {
       name: "soilPH",
       max: [],
       min: [],
@@ -10485,6 +10551,12 @@ const state = () => ({
       monthName: []
     }, {
       name: "soilMS",
+      max: [],
+      min: [],
+      avg: [],
+      monthName: []
+    }, {
+      name: "soilTEMP",
       max: [],
       min: [],
       avg: [],
@@ -10492,8 +10564,26 @@ const state = () => ({
     }]
   }, {
     name: "Block 2",
-    current: [[], [], []],
+    current: [[], [], [], [], [], [], []],
     hourly: [{
+      name: "soilNitrogen",
+      max: [],
+      min: [],
+      avg: [],
+      hour: []
+    }, {
+      name: "soilPhosphorus",
+      max: [],
+      min: [],
+      avg: [],
+      hour: []
+    }, {
+      name: "soilPotassium",
+      max: [],
+      min: [],
+      avg: [],
+      hour: []
+    }, {
       name: "soilPH",
       max: [],
       min: [],
@@ -10507,12 +10597,36 @@ const state = () => ({
       hour: []
     }, {
       name: "soilMS",
+      max: [],
+      min: [],
+      avg: [],
+      hour: []
+    }, {
+      name: "soilTEMP",
       max: [],
       min: [],
       avg: [],
       hour: []
     }],
     daily: [{
+      name: "soilNitrogen",
+      max: [],
+      min: [],
+      avg: [],
+      day: []
+    }, {
+      name: "soilPhosphorus",
+      max: [],
+      min: [],
+      avg: [],
+      day: []
+    }, {
+      name: "soilPotassium",
+      max: [],
+      min: [],
+      avg: [],
+      day: []
+    }, {
       name: "soilPH",
       max: [],
       min: [],
@@ -10526,12 +10640,36 @@ const state = () => ({
       day: []
     }, {
       name: "soilMS",
+      max: [],
+      min: [],
+      avg: [],
+      day: []
+    }, {
+      name: "soilTEMP",
       max: [],
       min: [],
       avg: [],
       day: []
     }],
     monthly: [{
+      name: "soilNitrogen",
+      max: [],
+      min: [],
+      avg: [],
+      monthName: []
+    }, {
+      name: "soilPhosphorus",
+      max: [],
+      min: [],
+      avg: [],
+      monthName: []
+    }, {
+      name: "soilPotassium",
+      max: [],
+      min: [],
+      avg: [],
+      monthName: []
+    }, {
       name: "soilPH",
       max: [],
       min: [],
@@ -10545,6 +10683,12 @@ const state = () => ({
       monthName: []
     }, {
       name: "soilMS",
+      max: [],
+      min: [],
+      avg: [],
+      monthName: []
+    }, {
+      name: "soilTEMP",
       max: [],
       min: [],
       avg: [],
@@ -10552,8 +10696,26 @@ const state = () => ({
     }]
   }, {
     name: "Block 3",
-    current: [[], [], []],
+    current: [[], [], [], [], [], [], []],
     hourly: [{
+      name: "soilNitrogen",
+      max: [],
+      min: [],
+      avg: [],
+      hour: []
+    }, {
+      name: "soilPhosphorus",
+      max: [],
+      min: [],
+      avg: [],
+      hour: []
+    }, {
+      name: "soilPotassium",
+      max: [],
+      min: [],
+      avg: [],
+      hour: []
+    }, {
       name: "soilPH",
       max: [],
       min: [],
@@ -10567,12 +10729,36 @@ const state = () => ({
       hour: []
     }, {
       name: "soilMS",
+      max: [],
+      min: [],
+      avg: [],
+      hour: []
+    }, {
+      name: "soilTEMP",
       max: [],
       min: [],
       avg: [],
       hour: []
     }],
     daily: [{
+      name: "soilNitrogen",
+      max: [],
+      min: [],
+      avg: [],
+      day: []
+    }, {
+      name: "soilPhosphorus",
+      max: [],
+      min: [],
+      avg: [],
+      day: []
+    }, {
+      name: "soilPotassium",
+      max: [],
+      min: [],
+      avg: [],
+      day: []
+    }, {
       name: "soilPH",
       max: [],
       min: [],
@@ -10586,12 +10772,36 @@ const state = () => ({
       day: []
     }, {
       name: "soilMS",
+      max: [],
+      min: [],
+      avg: [],
+      day: []
+    }, {
+      name: "soilTEMP",
       max: [],
       min: [],
       avg: [],
       day: []
     }],
     monthly: [{
+      name: "soilNitrogen",
+      max: [],
+      min: [],
+      avg: [],
+      monthName: []
+    }, {
+      name: "soilPhosphorus",
+      max: [],
+      min: [],
+      avg: [],
+      monthName: []
+    }, {
+      name: "soilPotassium",
+      max: [],
+      min: [],
+      avg: [],
+      monthName: []
+    }, {
       name: "soilPH",
       max: [],
       min: [],
@@ -10605,6 +10815,12 @@ const state = () => ({
       monthName: []
     }, {
       name: "soilMS",
+      max: [],
+      min: [],
+      avg: [],
+      monthName: []
+    }, {
+      name: "soilTEMP",
       max: [],
       min: [],
       avg: [],
@@ -11509,62 +11725,148 @@ const mutations = {
   },
 
   //Insert data into array for current trend IPAH2
+  //  getCurrentDataArrayIpah2(state,payload,){
+  //   let sensor=payload.sensor;
+  //   let indexStation=payload.indexStation;
+  //   let indexSensor=payload.indexSensor;
+  //   if(state.trendsIpah2[indexStation].current[indexSensor].length<10){
+  //     if( sensor=='soilPH'){
+  //       state.trendsIpah2[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[0].data)
+  //     }
+  //     if( sensor=='soilEC'){
+  //       state.trendsIpah2[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[1].data)
+  //     }
+  //     if( sensor=='soilMS'){
+  //       state.trendsIpah2[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[2].data)
+  //     }
+  //   }else{
+  //     if( sensor=='soilPH'){
+  //       state.trendsIpah2[indexStation].current[indexSensor].splice(0, 1);
+  //       state.trendsIpah2[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[0].data)
+  //     }
+  //     if( sensor=='soilEC'){
+  //       state.trendsIpah2[indexStation].current[indexSensor].splice(0, 1);
+  //       state.trendsIpah2[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[1].data)
+  //     }
+  //     if( sensor=='soilMS'){
+  //       state.trendsIpah2[indexStation].current[indexSensor].splice(0, 1);
+  //       state.trendsIpah2[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[2].data)
+  //     }
+  //   }
+  // },
   getCurrentDataArrayIpah2(state, payload) {
     let sensor = payload.sensor;
     let indexStation = payload.indexStation;
     let indexSensor = payload.indexSensor;
 
-    if (state.trendsIpah2[indexStation].current[indexSensor].length < 10) {
+    if (state.trendsIpah1[indexStation].current[indexSensor].length < 10) {
+      if (sensor == 'soilNitrogen') {
+        state.trendsIpah1[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[0].data);
+      }
+
+      if (sensor == 'soilPhosphorus') {
+        state.trendsIpah1[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[1].data);
+      }
+
+      if (sensor == 'soilPotassium') {
+        state.trendsIpah1[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[2].data);
+      }
+
       if (sensor == 'soilPH') {
-        state.trendsIpah2[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[0].data);
+        state.trendsIpah1[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[3].data);
       }
 
       if (sensor == 'soilEC') {
-        state.trendsIpah2[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[1].data);
+        state.trendsIpah1[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[4].data);
       }
 
       if (sensor == 'soilMS') {
-        state.trendsIpah2[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[2].data);
+        state.trendsIpah1[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[5].data);
+      }
+
+      if (sensor == 'soilTEMP') {
+        state.trendsIpah1[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[6].data);
       }
     } else {
+      if (sensor == 'soilNitrogen') {
+        state.trendsIpah1[indexStation].current[indexSensor].splice(0, 1);
+        state.trendsIpah1[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[0].data);
+      }
+
+      if (sensor == 'soilPhosphorus') {
+        state.trendsIpah1[indexStation].current[indexSensor].splice(0, 1);
+        state.trendsIpah1[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[1].data);
+      }
+
+      if (sensor == 'soilPotassium') {
+        state.trendsIpah1[indexStation].current[indexSensor].splice(0, 1);
+        state.trendsIpah1[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[2].data);
+      }
+
       if (sensor == 'soilPH') {
-        state.trendsIpah2[indexStation].current[indexSensor].splice(0, 1);
-        state.trendsIpah2[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[0].data);
+        state.trendsIpah1[indexStation].current[indexSensor].splice(0, 1);
+        state.trendsIpah1[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[3].data);
       }
 
       if (sensor == 'soilEC') {
-        state.trendsIpah2[indexStation].current[indexSensor].splice(0, 1);
-        state.trendsIpah2[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[1].data);
+        state.trendsIpah1[indexStation].current[indexSensor].splice(0, 1);
+        state.trendsIpah1[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[4].data);
       }
 
       if (sensor == 'soilMS') {
-        state.trendsIpah2[indexStation].current[indexSensor].splice(0, 1);
-        state.trendsIpah2[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[2].data);
+        state.trendsIpah1[indexStation].current[indexSensor].splice(0, 1);
+        state.trendsIpah1[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[5].data);
+      }
+
+      if (sensor == 'soilTEMP') {
+        state.trendsIpah1[indexStation].current[indexSensor].splice(0, 1);
+        state.trendsIpah1[indexStation].current[indexSensor].push(state.stations[1].sensorSoil[indexStation].sensorData[6].data);
       }
     }
   },
 
   // UPDATE CURRENT DATA IPAH2
+  // getCurrentDataIpah2(state,payload){
+  //   let station = payload.station
+  //   let block = payload.block
+  //   let soilPH = payload.soilPH
+  //   let soilEC = payload.soilEC
+  //   let soilMS = payload.soilMS
+  //   let ts = payload.ts
+  //   state.stations[station].sensorSoil[block].sensorData[0].data = soilPH
+  //   state.stations[station].sensorSoil[block].sensorData[1].data = soilEC
+  //   state.stations[station].sensorSoil[block].sensorData[2].data = soilMS
+  //   state.stations[station].sensorSoil[block].lastUpdate = ts
+  // },
   getCurrentDataIpah2(state, payload) {
     let station = payload.station;
     let block = payload.block;
+    let soilNitrogen = payload.soilNitrogen;
+    let soilPhosphorus = payload.soilPhosphorus;
+    let soilPotassium = payload.soilPotassium;
     let soilPH = payload.soilPH;
     let soilEC = payload.soilEC;
     let soilMS = payload.soilMS;
+    let soilTEMP = payload.soilTEMP;
     let ts = payload.ts;
-    state.stations[station].sensorSoil[block].sensorData[0].data = soilPH;
-    state.stations[station].sensorSoil[block].sensorData[1].data = soilEC;
-    state.stations[station].sensorSoil[block].sensorData[2].data = soilMS;
+    state.stations[station].sensorSoil[block].sensorData[0].data = soilNitrogen;
+    state.stations[station].sensorSoil[block].sensorData[1].data = soilPhosphorus;
+    state.stations[station].sensorSoil[block].sensorData[2].data = soilPotassium;
+    state.stations[station].sensorSoil[block].sensorData[3].data = soilPH;
+    state.stations[station].sensorSoil[block].sensorData[4].data = soilEC;
+    state.stations[station].sensorSoil[block].sensorData[5].data = soilMS;
+    state.stations[station].sensorSoil[block].sensorData[6].data = soilTEMP;
     state.stations[station].sensorSoil[block].lastUpdate = ts;
   },
 
   getCurrentDataNutrientIpah2(state, payload) {
-    let station = payload.station;
-    let block = payload.block;
-    let soilPH = payload.soilPH;
-    let soilEC = payload.soilEC;
-    state.stations[station].sensorWater[block].sensorData[0].data = soilPH;
-    state.stations[station].sensorWater[block].sensorData[1].data = soilEC;
+    // let station = payload.station
+    // let block = payload.block
+    let tank = payload.tank;
+    let EC = payload.EC; // let soilEC = payload.soilEC
+    // let soilEC = payload.soilEC
+
+    state.stations[1].sensorWater[tank].sensorData[0].data = EC; // state.stations[station].sensorWater[block].sensorData[1].data = soilEC
   },
 
   // END OF IPAH2 //
@@ -12640,7 +12942,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 __webpack_require__.r(__webpack_exports__);
 
 // EXTERNAL MODULE: external "vue"
-var external_vue_ = __webpack_require__(1);
+var external_vue_ = __webpack_require__(2);
 var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
 
 // EXTERNAL MODULE: external "ufo"
@@ -14175,15 +14477,15 @@ var nuxt_loading_component = Object(componentNormalizer["a" /* default */])(
 )
 
 /* harmony default export */ var nuxt_loading = (nuxt_loading_component.exports);
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/default.vue?vue&type=template&id=15dbb8aa&
-var defaultvue_type_template_id_15dbb8aa_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-app',{attrs:{"dark":""}},[(_vm.$vuetify.breakpoint.mdAndUp)?_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":""},model:{value:(_vm.drawer),callback:function ($$v) {_vm.drawer=$$v},expression:"drawer"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1):_vm._e(),_vm._v(" "),(_vm.$vuetify.breakpoint.mdAndUp)?_c('v-app-bar',{staticClass:"app-bar-top",attrs:{"fixed":"","app":""}},[_c('v-toolbar-title',{staticClass:"title-container",staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name-container"},[_c('h4',{staticClass:"user-name-title",staticStyle:{"color":"white"}},[_vm._v("\n        "+_vm._s(_vm.loggedInUser.username)+"\n      ")])]):_vm._e(),_vm._v(" "),_c('div',{staticClass:"logout-container"},[_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1)],1):_vm._e(),_vm._v(" "),(_vm.$vuetify.breakpoint.mdAndDown)?_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":"","temporary":""},model:{value:(_vm.drawer2),callback:function ($$v) {_vm.drawer2=$$v},expression:"drawer2"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1):_vm._e(),_vm._v(" "),(_vm.$vuetify.breakpoint.mdAndDown)?_c('v-app-bar',{attrs:{"fixed":"","app":""}},[_c('v-app-bar-nav-icon',{staticStyle:{"color":"white"},on:{"click":function($event){$event.stopPropagation();_vm.drawer2 = !_vm.drawer2}}}),_vm._v(" "),_c('v-toolbar-title',{staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name"},[_c('h4',{staticStyle:{"color":"white"}},[_vm._v(_vm._s(_vm.loggedInUser.username))])]):_vm._e(),_vm._v(" "),_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1):_vm._e(),_vm._v(" "),_c('v-main',[_c('v-container',[_c('nuxt')],1)],1),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('div',{staticClass:"layer",attrs:{"id":"layer"}}):_vm._e()]),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('v-card',{staticClass:"logout elevation-12"},[_c('v-card-title',[_vm._v(" Logout ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v(" Are you sure? ")]),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"success logout-btn",on:{"click":_vm.logout}},[_vm._v("Yes")]),_vm._v(" "),_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1):_vm._e()],1),_vm._v(" "),_c('v-footer',{attrs:{"absolute":!_vm.fixed,"app":""}},[_c('span',[_vm._v("© "+_vm._s(new Date().getFullYear()))])]),_vm._v(" "),_c('v-row',{attrs:{"justify":"center"}},[_c('v-dialog',{attrs:{"persistent":"","max-width":"300"},model:{value:(_vm.dialog),callback:function ($$v) {_vm.dialog=$$v},expression:"dialog"}},[_c('v-card',[_c('v-card-title',{staticClass:"text-h5"},[_vm._v(" Alert ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"padding-top":"10px"}},[_vm._v("Cannot connect to server. There are several cause for this problem\n          :")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"margin-top":"-10px","justify-contents":"center","display":"flex"}},[_c('span',{staticStyle:{"font-weight":"bold","font-size":"25px","padding-right":"10px"}},[_vm._v("•")]),_vm._v("\n          No internet connection")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"margin-top":"-10px","justify-contents":"center","display":"flex"}},[_c('span',{staticStyle:{"font-weight":"bold","font-size":"25px","padding-right":"10px"}},[_vm._v("•")]),_vm._v("\n          Server error (Please contact admin to resolve the\n          issue)")])],1)],1)],1)],1)}
-var defaultvue_type_template_id_15dbb8aa_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/default.vue?vue&type=template&id=02f8a1b2&
+var defaultvue_type_template_id_02f8a1b2_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-app',{attrs:{"dark":""}},[(_vm.$vuetify.breakpoint.mdAndUp)?_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":""},model:{value:(_vm.drawer),callback:function ($$v) {_vm.drawer=$$v},expression:"drawer"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1):_vm._e(),_vm._v(" "),(_vm.$vuetify.breakpoint.mdAndUp)?_c('v-app-bar',{staticClass:"app-bar-top",attrs:{"fixed":"","app":""}},[_c('v-toolbar-title',{staticClass:"title-container",staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name-container"},[_c('h4',{staticClass:"user-name-title",staticStyle:{"color":"white"}},[_vm._v("\n        "+_vm._s(_vm.loggedInUser.username)+"\n      ")])]):_vm._e(),_vm._v(" "),_c('div',{staticClass:"logout-container"},[_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1)],1):_vm._e(),_vm._v(" "),(_vm.$vuetify.breakpoint.mdAndDown)?_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":"","temporary":""},model:{value:(_vm.drawer2),callback:function ($$v) {_vm.drawer2=$$v},expression:"drawer2"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1):_vm._e(),_vm._v(" "),(_vm.$vuetify.breakpoint.mdAndDown)?_c('v-app-bar',{attrs:{"fixed":"","app":""}},[_c('v-app-bar-nav-icon',{staticStyle:{"color":"white"},on:{"click":function($event){$event.stopPropagation();_vm.drawer2 = !_vm.drawer2}}}),_vm._v(" "),_c('v-toolbar-title',{staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name"},[_c('h4',{staticStyle:{"color":"white"}},[_vm._v(_vm._s(_vm.loggedInUser.username))])]):_vm._e(),_vm._v(" "),_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1):_vm._e(),_vm._v(" "),_c('v-main',[_c('v-container',[_c('nuxt')],1)],1),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('div',{staticClass:"layer",attrs:{"id":"layer"}}):_vm._e()]),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('v-card',{staticClass:"logout elevation-12"},[_c('v-card-title',[_vm._v(" Logout ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v(" Are you sure? ")]),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"success logout-btn",on:{"click":_vm.logout}},[_vm._v("Yes")]),_vm._v(" "),_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1):_vm._e()],1),_vm._v(" "),_c('v-footer',{attrs:{"absolute":!_vm.fixed,"app":""}},[_c('span',[_vm._v("© "+_vm._s(new Date().getFullYear()))])]),_vm._v(" "),_c('v-row',{attrs:{"justify":"center"}},[_c('v-dialog',{attrs:{"persistent":"","max-width":"300"},model:{value:(_vm.dialog),callback:function ($$v) {_vm.dialog=$$v},expression:"dialog"}},[_c('v-card',[_c('v-card-title',{staticClass:"text-h5"},[_vm._v(" Alert ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"padding-top":"10px"}},[_vm._v("Cannot connect to server. There are several cause for this problem\n          :")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"margin-top":"-10px","justify-contents":"center","display":"flex"}},[_c('span',{staticStyle:{"font-weight":"bold","font-size":"25px","padding-right":"10px"}},[_vm._v("•")]),_vm._v("\n          No internet connection")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"margin-top":"-10px","justify-contents":"center","display":"flex"}},[_c('span',{staticStyle:{"font-weight":"bold","font-size":"25px","padding-right":"10px"}},[_vm._v("•")]),_vm._v("\n          Server error (Please contact admin to resolve the\n          issue)")])],1)],1)],1)],1)}
+var defaultvue_type_template_id_02f8a1b2_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./layouts/default.vue?vue&type=template&id=15dbb8aa&
+// CONCATENATED MODULE: ./layouts/default.vue?vue&type=template&id=02f8a1b2&
 
 // EXTERNAL MODULE: ./src/class.js
-var src_class = __webpack_require__(2);
+var src_class = __webpack_require__(1);
 
 // EXTERNAL MODULE: external "mqtt"
 var external_mqtt_ = __webpack_require__(43);
@@ -14502,7 +14804,7 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
       },
       subscription: {
         // topic: "geyzer/#",
-        topic: ["nexplex/sense/#", "new/nexplex/#", "np/s/#", "new/nexplex/#", "new2/nexplex/#", "nexplex/sense", "kongkong/topic/#"],
+        topic: ["nexplex/sense/#", "new/nexplex/#", "np/s/#", "new/nexplex/#", "new2/nexplex/#", "nexplex/sense", "kongkong/topic/#", "qwazx/np/tkpmIpah/#"],
         qos: 0
       },
       receiveNews: "",
@@ -14933,27 +15235,44 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
           }
         }
 
-        if (topic === "nexplex/sense/tkpmIpah/block1/retain") {
+        if (topic === "new2/nexplex/tkpmIpah/sense/block1/retain") {
           message = JSON.parse(message);
-          console.log(message);
           let payload = {
             station: 1,
             block: 0,
+            soilNitrogen: message.nt,
+            soilPhosphorus: message.ps,
+            soilPotassium: message.po,
             soilPH: message.ph,
             soilEC: message.ec,
             soilMS: message.mo,
+            soilTEMP: message.tp,
             ts: message.ts
           };
           this.getCurrentDataIpah2(payload);
-          this.check(1, 0, 0, " pH", message.ph, 7);
-          this.check(1, 0, 1, " EC", message.ec, 10);
-          this.check(1, 0, 2, " Humidity", message.mo, 10);
+          this.check(1, 0, 0, " Nitrogen", message.nt, 20);
+          this.check(1, 0, 1, " Phosphorus", message.ps, 20);
+          this.check(1, 0, 2, " Potassium", message.po, 20);
+          this.check(1, 0, 3, " pH", message.ph, 7);
+          this.check(1, 0, 4, " EC", message.ec, 10);
+          this.check(1, 0, 5, " Humidity", message.mo, 10);
+          this.check(1, 0, 6, " Temp", message.tp, 10);
           const payloadStringArray = {
             indexStation: 1,
             indexBlock: 0
           };
           this.stringArray(payloadStringArray);
-          const val = ["soilPH", "soilEC", "soilMS"]; // //currentTrend
+          this.addDataIpah2(0);
+          let data = {
+            station: 1,
+            block: 3
+          };
+          this.countWarningsTkpmIpah(data);
+        }
+
+        if (topic === "new3/nexplex/tkpmIpah/sense/block1") {
+          message = JSON.parse(message);
+          const val = ["soilNitrogen", "soilPhosphorus", "soilPotassium", "soilPH", "soilEC", "soilMS", "soilTEMP"]; // //currentTrend
 
           for (let j = 0; j < val.length; j++) {
             let sensor = val[j];
@@ -14965,9 +15284,72 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
               indexSensor
             };
             this.getCurrentDataArrayIpah2(data);
-          }
+          } // this.addDataIpah1(0);
 
-          this.addDataIpah2(0);
+        } // if (topic === "new2/nexplex/tkpmIpah/sense/block1/retain") {
+        //   // if (topic === "nexplex/sense/tkpmIpah/block1/retain") {
+        //   message = JSON.parse(message);
+        //   console.log(message);
+        //   let payload = {
+        //     station: 1,
+        //     block: 0,
+        //     soilPH: message.ph,
+        //     soilEC: message.ec,
+        //     soilMS: message.mo,
+        //     ts: message.ts
+        //   };
+        //   this.getCurrentDataIpah2(payload);
+        //   this.check(1, 0, 0, " pH", message.ph, 7);
+        //   this.check(1, 0, 1, " EC", message.ec, 10);
+        //   this.check(1, 0, 2, " Humidity", message.mo, 10);
+        //   const payloadStringArray = {
+        //     indexStation: 1,
+        //     indexBlock: 0
+        //   };
+        //   this.stringArray(payloadStringArray);
+        //   const val = ["soilPH", "soilEC", "soilMS"];
+        //   // //currentTrend
+        //   for (let j = 0; j < val.length; j++) {
+        //     let sensor = val[j];
+        //     let indexStation = 0;
+        //     let indexSensor = j;
+        //     let data = { sensor, indexStation, indexSensor };
+        //     this.getCurrentDataArrayIpah2(data);
+        //   }
+        //   this.addDataIpah2(0);
+        //   let data = { station: 1, block: 3 };
+        //   this.countWarningsTkpmIpah(data);
+        // }
+
+
+        if (topic === "new2/nexplex/tkpmIpah/sense/block2/retain") {
+          message = JSON.parse(message);
+          let payload = {
+            station: 1,
+            block: 1,
+            soilNitrogen: message.nt,
+            soilPhosphorus: message.ps,
+            soilPotassium: message.po,
+            soilPH: message.ph,
+            soilEC: message.ec,
+            soilMS: message.mo,
+            soilTEMP: message.tp,
+            ts: message.ts
+          };
+          this.getCurrentDataIpah2(payload);
+          this.check(1, 1, 0, " Nitrogen", message.nt, 20);
+          this.check(1, 1, 1, " Phosphorus", message.ps, 20);
+          this.check(1, 1, 2, " Potassium", message.po, 20);
+          this.check(1, 1, 3, " pH", message.ph, 7);
+          this.check(1, 1, 4, " EC", message.ec, 10);
+          this.check(1, 1, 5, " Humidity", message.mo, 10);
+          this.check(1, 1, 6, " Temp", message.tp, 10);
+          const payloadStringArray = {
+            indexStation: 1,
+            indexBlock: 1
+          };
+          this.stringArray(payloadStringArray);
+          this.addDataIpah2(1);
           let data = {
             station: 1,
             block: 3
@@ -14975,26 +15357,9 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
           this.countWarningsTkpmIpah(data);
         }
 
-        if (topic === "nexplex/sense/tkpmIpah/block2/retain") {
+        if (topic === "new3/nexplex/tkpmIpah/sense/block2") {
           message = JSON.parse(message);
-          let payload = {
-            station: 1,
-            block: 1,
-            soilPH: message.ph,
-            soilEC: message.ec,
-            soilMS: message.mo,
-            ts: message.ts
-          };
-          this.getCurrentDataIpah2(payload);
-          this.check(1, 1, 0, " pH", message.ph, 7);
-          this.check(1, 1, 1, " EC", message.ec, 10);
-          this.check(1, 1, 2, " Humidity", message.mo, 10);
-          const payloadStringArray = {
-            indexStation: 1,
-            indexBlock: 1
-          };
-          this.stringArray(payloadStringArray);
-          const val = ["soilPH", "soilEC", "soilMS"]; // //currentTrend
+          const val = ["soilNitrogen", "soilPhosphorus", "soilPotassium", "soilPH", "soilEC", "soilMS", "soilTEMP"]; // //currentTrend
 
           for (let j = 0; j < val.length; j++) {
             let sensor = val[j];
@@ -15006,9 +15371,70 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
               indexSensor
             };
             this.getCurrentDataArrayIpah2(data);
-          }
+          } // this.addDataIpah1(0);
 
-          this.addDataIpah2(1);
+        } // if (topic === "nexplex/sense/tkpmIpah/block2/retain") {
+        //   message = JSON.parse(message);
+        //   let payload = {
+        //     station: 1,
+        //     block: 1,
+        //     soilPH: message.ph,
+        //     soilEC: message.ec,
+        //     soilMS: message.mo,
+        //     ts: message.ts
+        //   };
+        //   this.getCurrentDataIpah2(payload);
+        //   this.check(1, 1, 0, " pH", message.ph, 7);
+        //   this.check(1, 1, 1, " EC", message.ec, 10);
+        //   this.check(1, 1, 2, " Humidity", message.mo, 10);
+        //   const payloadStringArray = {
+        //     indexStation: 1,
+        //     indexBlock: 1
+        //   };
+        //   this.stringArray(payloadStringArray);
+        //   const val = ["soilPH", "soilEC", "soilMS"];
+        //   // //currentTrend
+        //   for (let j = 0; j < val.length; j++) {
+        //     let sensor = val[j];
+        //     let indexStation = 1;
+        //     let indexSensor = j;
+        //     let data = { sensor, indexStation, indexSensor };
+        //     this.getCurrentDataArrayIpah2(data);
+        //   }
+        //   this.addDataIpah2(1);
+        //   let data = { station: 1, block: 3 };
+        //   this.countWarningsTkpmIpah(data);
+        // }
+
+
+        if (topic === "new2/nexplex/tkpmIpah/sense/block3/retain") {
+          message = JSON.parse(message);
+          let payload = {
+            station: 1,
+            block: 2,
+            soilNitrogen: message.nt,
+            soilPhosphorus: message.ps,
+            soilPotassium: message.po,
+            soilPH: message.ph,
+            soilEC: message.ec,
+            soilMS: message.mo,
+            soilTEMP: message.tp,
+            ts: message.ts
+          };
+          this.getCurrentDataIpah2(payload);
+          this.check(1, 2, 0, " Nitrogen", message.nt, 20);
+          this.check(1, 2, 1, " Phosphorus", message.ps, 20);
+          this.check(1, 2, 2, " Potassium", message.po, 20);
+          this.check(1, 2, 3, " pH", message.ph, 7);
+          this.check(1, 2, 4, " EC", message.ec, 10);
+          this.check(1, 2, 5, " Humidity", message.mo, 10);
+          this.check(1, 2, 6, " Temp", message.tp, 10);
+          const payloadStringArray = {
+            indexStation: 1,
+            indexBlock: 2
+          };
+          this.stringArray(payloadStringArray);
+          this.addDataIpah2(2);
           let data = {
             station: 1,
             block: 3
@@ -15016,26 +15442,9 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
           this.countWarningsTkpmIpah(data);
         }
 
-        if (topic === "nexplex/sense/tkpmIpah/block3/retain") {
+        if (topic === "new3/nexplex/tkpmIpah/sense/block3") {
           message = JSON.parse(message);
-          let payload = {
-            station: 1,
-            block: 2,
-            soilPH: message.ph,
-            soilEC: message.ec,
-            soilMS: message.mo,
-            ts: message.ts
-          };
-          this.getCurrentDataIpah2(payload);
-          this.check(1, 2, 0, " pH", message.ph, 7);
-          this.check(1, 2, 1, " EC", message.ec, 10);
-          this.check(1, 2, 2, " Humidity", message.mo, 0.5);
-          const payloadStringArray = {
-            indexStation: 1,
-            indexBlock: 2
-          };
-          this.stringArray(payloadStringArray);
-          const val = ["soilPH", "soilEC", "soilMS"]; // //currentTrend
+          const val = ["soilNitrogen", "soilPhosphorus", "soilPotassium", "soilPH", "soilEC", "soilMS", "soilTEMP"]; // //currentTrend
 
           for (let j = 0; j < val.length; j++) {
             let sensor = val[j];
@@ -15047,19 +15456,72 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
               indexSensor
             };
             this.getCurrentDataArrayIpah2(data);
-          }
+          } // this.addDataIpah1(0);
 
-          this.addDataIpah2(2);
-          let data = {
-            station: 1,
-            block: 3
+        } // if (topic === "nexplex/sense/tkpmIpah/block3/retain") {
+        //   message = JSON.parse(message);
+        //   let payload = {
+        //     station: 1,
+        //     block: 2,
+        //     soilPH: message.ph,
+        //     soilEC: message.ec,
+        //     soilMS: message.mo,
+        //     ts: message.ts
+        //   };
+        //   this.getCurrentDataIpah2(payload);
+        //   this.check(1, 2, 0, " pH", message.ph, 7);
+        //   this.check(1, 2, 1, " EC", message.ec, 10);
+        //   this.check(1, 2, 2, " Humidity", message.mo, 0.5);
+        //   const payloadStringArray = {
+        //     indexStation: 1,
+        //     indexBlock: 2
+        //   };
+        //   this.stringArray(payloadStringArray);
+        //   const val = ["soilPH", "soilEC", "soilMS"];
+        //   // //currentTrend
+        //   for (let j = 0; j < val.length; j++) {
+        //     let sensor = val[j];
+        //     let indexStation = 2;
+        //     let indexSensor = j;
+        //     let data = { sensor, indexStation, indexSensor };
+        //     this.getCurrentDataArrayIpah2(data);
+        //   }
+        //   this.addDataIpah2(2);
+        //   let data = { station: 1, block: 3 };
+        //   this.countWarningsTkpmIpah(data);
+        // }
+
+
+        if (topic === "qwazx/np/tkpmIpah/s/ec/t1") {
+          message = JSON.parse(message);
+          let payload = {
+            tank: 0,
+            EC: message.EC
           };
-          this.countWarningsTkpmIpah(data);
+          this.getCurrentDataNutrientIpah2(payload);
         }
 
-        if (topic === "np/s/tkpmIpah/n") {
-          message = JSON.parse(message); // console.log(message);
+        if (topic === "qwazx/np/tkpmIpah/s/ec/t2") {
+          message = JSON.parse(message);
+          let payload = {
+            tank: 1,
+            EC: message.EC
+          };
+          this.getCurrentDataNutrientIpah2(payload);
         }
+
+        if (topic === "qwazx/np/tkpmIpah/s/ec/t3") {
+          message = JSON.parse(message);
+          let payload = {
+            tank: 2,
+            EC: message.EC
+          };
+          this.getCurrentDataNutrientIpah2(payload);
+        } // if (topic === "np/s/tkpmIpah/n") {
+        //   message = JSON.parse(message);
+        //   // console.log(message);
+        // }
+
 
         if (topic === "new/nexplex/tkpmPagoh/sense/block1") {
           message = JSON.parse(message);
@@ -16874,8 +17336,8 @@ if (style0.__inject__) style0.__inject__(context)
 
 var default_component = Object(componentNormalizer["a" /* default */])(
   layouts_defaultvue_type_script_lang_js_,
-  defaultvue_type_template_id_15dbb8aa_render,
-  defaultvue_type_template_id_15dbb8aa_staticRenderFns,
+  defaultvue_type_template_id_02f8a1b2_render,
+  defaultvue_type_template_id_02f8a1b2_staticRenderFns,
   false,
   default_injectStyles,
   null,
@@ -20256,7 +20718,7 @@ const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_10__[/* default 
 /* harmony import */ var core_js_modules_esnext_map_update_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_esnext_map_update_js__WEBPACK_IMPORTED_MODULE_12__);
 /* harmony import */ var _src_components_VGrid_VGrid_sass__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(60);
 /* harmony import */ var _src_components_VGrid_VGrid_sass__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_src_components_VGrid_VGrid_sass__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(1);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(2);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_14__);
 /* harmony import */ var _util_mergeData__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(18);
 /* harmony import */ var _util_helpers__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(0);
@@ -20441,7 +20903,7 @@ var _grid = __webpack_require__(74);
 var VGrid = __webpack_require__(60);
 
 // EXTERNAL MODULE: external "vue"
-var external_vue_ = __webpack_require__(1);
+var external_vue_ = __webpack_require__(2);
 var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
 
 // CONCATENATED MODULE: ./node_modules/vuetify/lib/components/VGrid/grid.js
