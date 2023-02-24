@@ -11148,6 +11148,7 @@ const state = () => ({
   ipah2ManualStop: false,
   ipah2ManualNutrient: false,
   ipah2ManualNutrientDuration: "",
+  ipah2ManualNutrientTank: "",
   tkpmPagohManualFill: false,
   tkpmPagohManualStop: false,
   tkpmPagohManualNutrient: false,
@@ -11159,7 +11160,24 @@ const state = () => ({
   detailActive: "",
   detailIpah1: "",
   detailIpah2: "",
-  detailTkpmPagoh: ""
+  detailTkpmPagoh: "",
+  tkpmIpahStatusControllino: {
+    SID: "",
+    WFT1: "",
+    WFT2: "",
+    WFT3: "",
+    WFT3: "",
+    NPT1: "",
+    NPT2: "",
+    NPT3: "",
+    WDB1: "",
+    WDB2: "",
+    WDB3: "",
+    NDB1: "",
+    NDB2: "",
+    NDB3: "",
+    MAN: ""
+  }
 });
 const mutations = {
   // api for OpenWeatherMap
@@ -11949,7 +11967,8 @@ const mutations = {
 
   // STATUS TKPM IPAH 
   tkpmIpahStatus(state, payload) {
-    // RESET
+    state.tkpmIpahStatusControllino = payload; // RESET
+
     state.tkpmIpahStatus.SV1 = 0;
     state.tkpmIpahStatus.SV2 = 0;
     state.tkpmIpahStatus.SV3 = 0;
@@ -11968,7 +11987,34 @@ const mutations = {
     state.tkpmIpahStatus.P1 = 0;
     state.tkpmIpahStatus.P2 = 0;
     state.tkpmIpahStatus.P3 = 0;
-    state.tkpmIpahStatus.DP = 0; // Water Dripping on Block 1
+    state.tkpmIpahStatus.DP = 0; // Water Filling on Tank 1
+
+    if (payload.WFT1 == 1) {
+      state.tkpmIpahStatus.SV1 = 1;
+      state.tkpmIpahStatus.SV3 = 1;
+      state.tkpmIpahStatus.SV4 = 1;
+      state.tkpmIpahStatus.P1 = 1;
+      state.tkpmIpahProcess = 'Water filling on tank 1.';
+    } // Water Filling on Tank 2
+
+
+    if (payload.WFT2 == 1) {
+      state.tkpmIpahStatus.SV5 = 1;
+      state.tkpmIpahStatus.SV8 = 1;
+      state.tkpmIpahStatus.SV7 = 1;
+      state.tkpmIpahStatus.P2 = 1;
+      state.tkpmIpahProcess = 'Water filling on tank 2.';
+    } // Water Filling on Tank 3
+
+
+    if (payload.WFT3 == 1) {
+      state.tkpmIpahStatus.SV9 = 1;
+      state.tkpmIpahStatus.SV11 = 1;
+      state.tkpmIpahStatus.SV12 = 1;
+      state.tkpmIpahStatus.P3 = 1;
+      state.tkpmIpahProcess = 'Water filling on tank 3.';
+    } // Water Dripping on Block 1
+
 
     if (payload.WDB1 == 1) {
       state.tkpmIpahStatus.SV1 = 1;
@@ -12084,10 +12130,55 @@ const mutations = {
 
     if (payload.NDB1 == 1 && payload.NDB2 == 1 && payload.NDB3 == 1) {
       state.tkpmIpahProcess = 'Nutrient dripping on all block.';
+    } // WATER FILLING
+
+
+    if (payload.WFT1 == 1 && payload.WFT2 == 1) {
+      state.tkpmIpahProcess = 'Water filling in tank 1 and 2.';
+    }
+
+    if (payload.WFT1 == 1 && payload.WFT3 == 1) {
+      state.tkpmIpahProcess = 'Water filling in tank block 1 and 3.';
+    }
+
+    if (payload.WFT2 == 1 && payload.WFT3 == 1) {
+      state.tkpmIpahProcess = 'Water filling in tank 2 and 3.';
+    }
+
+    if (payload.WFT1 == 1 && payload.WFT2 == 1 && payload.WFT2 == 1) {
+      state.tkpmIpahProcess = 'Water filling in all tanks.';
+    } // NUTRIENT PREPARATION
+
+
+    if (payload.NPT1 == 1) {
+      state.tkpmIpahProcess = 'Nutrient preparation in tank 1.';
+      state.tkpmIpahStatus.SV2 = 1;
+      state.tkpmIpahStatus.SV3 = 1;
+      state.tkpmIpahStatus.SV4 = 1;
+      state.tkpmIpahStatus.P1 = 1;
+      state.tkpmIpahStatus.DP = 1;
+    }
+
+    if (payload.NPT2 == 1) {
+      state.tkpmIpahProcess = 'Nutrient preparation in tank 2.';
+      state.tkpmIpahStatus.SV6 = 1;
+      state.tkpmIpahStatus.SV7 = 1;
+      state.tkpmIpahStatus.SV8 = 1;
+      state.tkpmIpahStatus.P2 = 1;
+      state.tkpmIpahStatus.DP = 1;
+    }
+
+    if (payload.NPT3 == 1) {
+      state.tkpmIpahProcess = 'Nutrient preparation in tank 3.';
+      state.tkpmIpahStatus.SV10 = 1;
+      state.tkpmIpahStatus.SV11 = 1;
+      state.tkpmIpahStatus.SV12 = 1;
+      state.tkpmIpahStatus.P3 = 1;
+      state.tkpmIpahStatus.DP = 1;
     } // System idle. No process
 
 
-    if (payload.WDB1 == 0 && payload.WDB2 == 0 && payload.WDB3 == 0 && payload.NDB1 == 0 && payload.NDB2 == 0 && payload.NDB3 == 0 && payload.NF == 0 && payload.WF == 0) {
+    if (payload.WDB1 == 0 && payload.WDB2 == 0 && payload.WDB3 == 0 && payload.NDB1 == 0 && payload.NDB2 == 0 && payload.NDB3 == 0 && payload.NPT1 == 0 && payload.NPT2 == 0 && payload.NPT3 == 0 && payload.WFT1 == 0 && payload.WFT2 == 0 && payload.WFT3 == 0) {
       state.tkpmIpahStatus.SV1 = 0;
       state.tkpmIpahStatus.SV2 = 0;
       state.tkpmIpahStatus.SV3 = 0;
@@ -12393,6 +12484,10 @@ const mutations = {
 
   setIpah2ManualNutrientDuration(state, payload) {
     state.ipah2ManualNutrientDuration = payload;
+  },
+
+  setIpah2ManualNutrientTank(state, payload) {
+    state.ipah2ManualNutrientTank = payload;
   },
 
   setTkpmPagohManualFill(state, payload) {
@@ -13350,55 +13445,55 @@ function shouldScrollToTop(route) {
 
 
 
-const _a64feae8 = () => interopDefault(__webpack_require__.e(/* import() | pages/adminDetail */ 57).then(__webpack_require__.bind(null, 469)));
+const _be403b26 = () => interopDefault(__webpack_require__.e(/* import() | pages/adminDetail */ 57).then(__webpack_require__.bind(null, 469)));
 
-const _993f2032 = () => interopDefault(__webpack_require__.e(/* import() | pages/adminDetailIpah1 */ 58).then(__webpack_require__.bind(null, 470)));
+const _e4cd46b4 = () => interopDefault(__webpack_require__.e(/* import() | pages/adminDetailIpah1 */ 58).then(__webpack_require__.bind(null, 470)));
 
-const _0d35eca6 = () => interopDefault(__webpack_require__.e(/* import() | pages/adminStatus */ 59).then(__webpack_require__.bind(null, 471)));
+const _25263ce4 = () => interopDefault(__webpack_require__.e(/* import() | pages/adminStatus */ 59).then(__webpack_require__.bind(null, 471)));
 
-const _acdafa2e = () => interopDefault(__webpack_require__.e(/* import() | pages/control */ 60).then(__webpack_require__.bind(null, 472)));
+const _1389196c = () => interopDefault(__webpack_require__.e(/* import() | pages/control */ 60).then(__webpack_require__.bind(null, 472)));
 
-const _33a56d05 = () => interopDefault(__webpack_require__.e(/* import() | pages/current */ 61).then(__webpack_require__.bind(null, 473)));
+const _ff634534 = () => interopDefault(__webpack_require__.e(/* import() | pages/current */ 61).then(__webpack_require__.bind(null, 473)));
 
-const _04bdda75 = () => interopDefault(__webpack_require__.e(/* import() | pages/detail */ 62).then(__webpack_require__.bind(null, 474)));
+const _02164c18 = () => interopDefault(__webpack_require__.e(/* import() | pages/detail */ 62).then(__webpack_require__.bind(null, 474)));
 
-const _443168f4 = () => interopDefault(__webpack_require__.e(/* import() | pages/general */ 63).then(__webpack_require__.bind(null, 475)));
+const _de4b4d56 = () => interopDefault(__webpack_require__.e(/* import() | pages/general */ 63).then(__webpack_require__.bind(null, 475)));
 
-const _bdcaec34 = () => interopDefault(__webpack_require__.e(/* import() | pages/inspire */ 65).then(__webpack_require__.bind(null, 500)));
+const _24790b72 = () => interopDefault(__webpack_require__.e(/* import() | pages/inspire */ 65).then(__webpack_require__.bind(null, 500)));
 
-const _4335f682 = () => interopDefault(__webpack_require__.e(/* import() | pages/ipah2Status */ 66).then(__webpack_require__.bind(null, 476)));
+const _373dce63 = () => interopDefault(__webpack_require__.e(/* import() | pages/ipah2Status */ 66).then(__webpack_require__.bind(null, 476)));
 
-const _7a78a1c4 = () => interopDefault(__webpack_require__.e(/* import() | pages/ipahStatus */ 67).then(__webpack_require__.bind(null, 477)));
+const _7a15c9c3 = () => interopDefault(__webpack_require__.e(/* import() | pages/ipahStatus */ 67).then(__webpack_require__.bind(null, 477)));
 
-const _33088a9c = () => interopDefault(__webpack_require__.e(/* import() | pages/kongPoStatus */ 68).then(__webpack_require__.bind(null, 478)));
+const _736edef1 = () => interopDefault(__webpack_require__.e(/* import() | pages/kongPoStatus */ 68).then(__webpack_require__.bind(null, 478)));
 
-const _65b21816 = () => interopDefault(__webpack_require__.e(/* import() | pages/login */ 69).then(__webpack_require__.bind(null, 479)));
+const _7a628896 = () => interopDefault(__webpack_require__.e(/* import() | pages/login */ 69).then(__webpack_require__.bind(null, 479)));
 
-const _457b571f = () => interopDefault(__webpack_require__.e(/* import() | pages/overview-admin */ 70).then(__webpack_require__.bind(null, 480)));
+const _6236679e = () => interopDefault(__webpack_require__.e(/* import() | pages/overview-admin */ 70).then(__webpack_require__.bind(null, 480)));
 
-const _f35eb672 = () => interopDefault(__webpack_require__.e(/* import() | pages/register */ 71).then(__webpack_require__.bind(null, 481)));
+const _62747ef4 = () => interopDefault(__webpack_require__.e(/* import() | pages/register */ 71).then(__webpack_require__.bind(null, 481)));
 
-const _4c5ad118 = () => interopDefault(__webpack_require__.e(/* import() | pages/scheduleIpah1 */ 72).then(__webpack_require__.bind(null, 482)));
+const _5dcc34b9 = () => interopDefault(__webpack_require__.e(/* import() | pages/scheduleIpah1 */ 72).then(__webpack_require__.bind(null, 482)));
 
-const _4c68e899 = () => interopDefault(__webpack_require__.e(/* import() | pages/scheduleIpah2 */ 73).then(__webpack_require__.bind(null, 483)));
+const _5dda4c3a = () => interopDefault(__webpack_require__.e(/* import() | pages/scheduleIpah2 */ 73).then(__webpack_require__.bind(null, 483)));
 
-const _459f60d2 = () => interopDefault(__webpack_require__.e(/* import() | pages/scheduleKongPo */ 74).then(__webpack_require__.bind(null, 484)));
+const _0c293fd4 = () => interopDefault(__webpack_require__.e(/* import() | pages/scheduleKongPo */ 74).then(__webpack_require__.bind(null, 484)));
 
-const _2c870ed0 = () => interopDefault(__webpack_require__.e(/* import() | pages/scheduleTkpmPagoh */ 75).then(__webpack_require__.bind(null, 485)));
+const _cd288c1e = () => interopDefault(__webpack_require__.e(/* import() | pages/scheduleTkpmPagoh */ 75).then(__webpack_require__.bind(null, 485)));
 
-const _1552980e = () => interopDefault(__webpack_require__.e(/* import() | pages/tkpmPagohStatus */ 76).then(__webpack_require__.bind(null, 486)));
+const _6ffdb35a = () => interopDefault(__webpack_require__.e(/* import() | pages/tkpmPagohStatus */ 76).then(__webpack_require__.bind(null, 486)));
 
-const _dd8cadce = () => interopDefault(__webpack_require__.e(/* import() | pages/trendsIpah1 */ 77).then(__webpack_require__.bind(null, 487)));
+const _f57cfe0c = () => interopDefault(__webpack_require__.e(/* import() | pages/trendsIpah1 */ 77).then(__webpack_require__.bind(null, 487)));
 
-const _dd707ecc = () => interopDefault(__webpack_require__.e(/* import() | pages/trendsIpah2 */ 78).then(__webpack_require__.bind(null, 488)));
+const _f560cf0a = () => interopDefault(__webpack_require__.e(/* import() | pages/trendsIpah2 */ 78).then(__webpack_require__.bind(null, 488)));
 
-const _342c77b6 = () => interopDefault(__webpack_require__.e(/* import() | pages/trendsKongPo */ 79).then(__webpack_require__.bind(null, 489)));
+const _7dc0c816 = () => interopDefault(__webpack_require__.e(/* import() | pages/trendsKongPo */ 79).then(__webpack_require__.bind(null, 489)));
 
-const _9370035e = () => interopDefault(__webpack_require__.e(/* import() | pages/trendsTkpmPagoh */ 80).then(__webpack_require__.bind(null, 490)));
+const _30eefdb2 = () => interopDefault(__webpack_require__.e(/* import() | pages/trendsTkpmPagoh */ 80).then(__webpack_require__.bind(null, 490)));
 
-const _d23e1822 = () => interopDefault(__webpack_require__.e(/* import() | pages/user */ 81).then(__webpack_require__.bind(null, 491)));
+const _850071a4 = () => interopDefault(__webpack_require__.e(/* import() | pages/user */ 81).then(__webpack_require__.bind(null, 491)));
 
-const _037f50de = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 64).then(__webpack_require__.bind(null, 492)));
+const _9e8a3502 = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 64).then(__webpack_require__.bind(null, 492)));
 
 const emptyFn = () => {};
 
@@ -13411,103 +13506,103 @@ const routerOptions = {
   scrollBehavior: router_scrollBehavior,
   routes: [{
     path: "/adminDetail",
-    component: _a64feae8,
+    component: _be403b26,
     name: "adminDetail"
   }, {
     path: "/adminDetailIpah1",
-    component: _993f2032,
+    component: _e4cd46b4,
     name: "adminDetailIpah1"
   }, {
     path: "/adminStatus",
-    component: _0d35eca6,
+    component: _25263ce4,
     name: "adminStatus"
   }, {
     path: "/control",
-    component: _acdafa2e,
+    component: _1389196c,
     name: "control"
   }, {
     path: "/current",
-    component: _33a56d05,
+    component: _ff634534,
     name: "current"
   }, {
     path: "/detail",
-    component: _04bdda75,
+    component: _02164c18,
     name: "detail"
   }, {
     path: "/general",
-    component: _443168f4,
+    component: _de4b4d56,
     name: "general"
   }, {
     path: "/inspire",
-    component: _bdcaec34,
+    component: _24790b72,
     name: "inspire"
   }, {
     path: "/ipah2Status",
-    component: _4335f682,
+    component: _373dce63,
     name: "ipah2Status"
   }, {
     path: "/ipahStatus",
-    component: _7a78a1c4,
+    component: _7a15c9c3,
     name: "ipahStatus"
   }, {
     path: "/kongPoStatus",
-    component: _33088a9c,
+    component: _736edef1,
     name: "kongPoStatus"
   }, {
     path: "/login",
-    component: _65b21816,
+    component: _7a628896,
     name: "login"
   }, {
     path: "/overview-admin",
-    component: _457b571f,
+    component: _6236679e,
     name: "overview-admin"
   }, {
     path: "/register",
-    component: _f35eb672,
+    component: _62747ef4,
     name: "register"
   }, {
     path: "/scheduleIpah1",
-    component: _4c5ad118,
+    component: _5dcc34b9,
     name: "scheduleIpah1"
   }, {
     path: "/scheduleIpah2",
-    component: _4c68e899,
+    component: _5dda4c3a,
     name: "scheduleIpah2"
   }, {
     path: "/scheduleKongPo",
-    component: _459f60d2,
+    component: _0c293fd4,
     name: "scheduleKongPo"
   }, {
     path: "/scheduleTkpmPagoh",
-    component: _2c870ed0,
+    component: _cd288c1e,
     name: "scheduleTkpmPagoh"
   }, {
     path: "/tkpmPagohStatus",
-    component: _1552980e,
+    component: _6ffdb35a,
     name: "tkpmPagohStatus"
   }, {
     path: "/trendsIpah1",
-    component: _dd8cadce,
+    component: _f57cfe0c,
     name: "trendsIpah1"
   }, {
     path: "/trendsIpah2",
-    component: _dd707ecc,
+    component: _f560cf0a,
     name: "trendsIpah2"
   }, {
     path: "/trendsKongPo",
-    component: _342c77b6,
+    component: _7dc0c816,
     name: "trendsKongPo"
   }, {
     path: "/trendsTkpmPagoh",
-    component: _9370035e,
+    component: _30eefdb2,
     name: "trendsTkpmPagoh"
   }, {
     path: "/user",
-    component: _d23e1822,
+    component: _850071a4,
     name: "user"
   }, {
     path: "/",
-    component: _037f50de,
+    component: _9e8a3502,
     name: "index"
   }],
   fallback: false
@@ -13765,7 +13860,7 @@ var error_component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "bfedb7fe",
-  "2d4219aa"
+  "6a50dfea"
   
 )
 
@@ -14075,17 +14170,17 @@ var nuxt_loading_component = Object(componentNormalizer["a" /* default */])(
   false,
   nuxt_loading_injectStyles,
   null,
-  "5e6584fc"
+  "83f0f87c"
   
 )
 
 /* harmony default export */ var nuxt_loading = (nuxt_loading_component.exports);
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/default.vue?vue&type=template&id=1f1ac714&
-var defaultvue_type_template_id_1f1ac714_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-app',{attrs:{"dark":""}},[(_vm.$vuetify.breakpoint.mdAndUp)?_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":""},model:{value:(_vm.drawer),callback:function ($$v) {_vm.drawer=$$v},expression:"drawer"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1):_vm._e(),_vm._v(" "),(_vm.$vuetify.breakpoint.mdAndUp)?_c('v-app-bar',{staticClass:"app-bar-top",attrs:{"fixed":"","app":""}},[_c('v-toolbar-title',{staticClass:"title-container",staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name-container"},[_c('h4',{staticClass:"user-name-title",staticStyle:{"color":"white"}},[_vm._v("\n        "+_vm._s(_vm.loggedInUser.username)+"\n      ")])]):_vm._e(),_vm._v(" "),_c('div',{staticClass:"logout-container"},[_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1)],1):_vm._e(),_vm._v(" "),(_vm.$vuetify.breakpoint.mdAndDown)?_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":"","temporary":""},model:{value:(_vm.drawer2),callback:function ($$v) {_vm.drawer2=$$v},expression:"drawer2"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1):_vm._e(),_vm._v(" "),(_vm.$vuetify.breakpoint.mdAndDown)?_c('v-app-bar',{attrs:{"fixed":"","app":""}},[_c('v-app-bar-nav-icon',{staticStyle:{"color":"white"},on:{"click":function($event){$event.stopPropagation();_vm.drawer2 = !_vm.drawer2}}}),_vm._v(" "),_c('v-toolbar-title',{staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name"},[_c('h4',{staticStyle:{"color":"white"}},[_vm._v(_vm._s(_vm.loggedInUser.username))])]):_vm._e(),_vm._v(" "),_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1):_vm._e(),_vm._v(" "),_c('v-main',[_c('v-container',[_c('nuxt')],1)],1),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('div',{staticClass:"layer",attrs:{"id":"layer"}}):_vm._e()]),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('v-card',{staticClass:"logout elevation-12"},[_c('v-card-title',[_vm._v("\n        Logout\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("\n        Are you sure?\n      ")]),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"success logout-btn",on:{"click":_vm.logout}},[_vm._v("Yes")]),_vm._v(" "),_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1):_vm._e()],1),_vm._v(" "),_c('v-footer',{attrs:{"absolute":!_vm.fixed,"app":""}},[_c('span',[_vm._v("© "+_vm._s(new Date().getFullYear()))])]),_vm._v(" "),_c('v-row',{attrs:{"justify":"center"}},[_c('v-dialog',{attrs:{"persistent":"","max-width":"300"},model:{value:(_vm.dialog),callback:function ($$v) {_vm.dialog=$$v},expression:"dialog"}},[_c('v-card',[_c('v-card-title',{staticClass:"text-h5"},[_vm._v("\n          Alert\n        ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"padding-top":"10px"}},[_vm._v("Cannot connect to server. There are several cause for this problem\n          :")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"margin-top":"-10px","justify-contents":"center","display":"flex"}},[_c('span',{staticStyle:{"font-weight":"bold","font-size":"25px","padding-right":"10px"}},[_vm._v("•")]),_vm._v("\n          No internet connection")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"margin-top":"-10px","justify-contents":"center","display":"flex"}},[_c('span',{staticStyle:{"font-weight":"bold","font-size":"25px","padding-right":"10px"}},[_vm._v("•")]),_vm._v("\n          Server error (Please contact admin to resolve the\n          issue)")])],1)],1)],1)],1)}
-var defaultvue_type_template_id_1f1ac714_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/default.vue?vue&type=template&id=15dbb8aa&
+var defaultvue_type_template_id_15dbb8aa_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-app',{attrs:{"dark":""}},[(_vm.$vuetify.breakpoint.mdAndUp)?_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":""},model:{value:(_vm.drawer),callback:function ($$v) {_vm.drawer=$$v},expression:"drawer"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1):_vm._e(),_vm._v(" "),(_vm.$vuetify.breakpoint.mdAndUp)?_c('v-app-bar',{staticClass:"app-bar-top",attrs:{"fixed":"","app":""}},[_c('v-toolbar-title',{staticClass:"title-container",staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name-container"},[_c('h4',{staticClass:"user-name-title",staticStyle:{"color":"white"}},[_vm._v("\n        "+_vm._s(_vm.loggedInUser.username)+"\n      ")])]):_vm._e(),_vm._v(" "),_c('div',{staticClass:"logout-container"},[_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1)],1):_vm._e(),_vm._v(" "),(_vm.$vuetify.breakpoint.mdAndDown)?_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":"","temporary":""},model:{value:(_vm.drawer2),callback:function ($$v) {_vm.drawer2=$$v},expression:"drawer2"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1):_vm._e(),_vm._v(" "),(_vm.$vuetify.breakpoint.mdAndDown)?_c('v-app-bar',{attrs:{"fixed":"","app":""}},[_c('v-app-bar-nav-icon',{staticStyle:{"color":"white"},on:{"click":function($event){$event.stopPropagation();_vm.drawer2 = !_vm.drawer2}}}),_vm._v(" "),_c('v-toolbar-title',{staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name"},[_c('h4',{staticStyle:{"color":"white"}},[_vm._v(_vm._s(_vm.loggedInUser.username))])]):_vm._e(),_vm._v(" "),_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1):_vm._e(),_vm._v(" "),_c('v-main',[_c('v-container',[_c('nuxt')],1)],1),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('div',{staticClass:"layer",attrs:{"id":"layer"}}):_vm._e()]),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('v-card',{staticClass:"logout elevation-12"},[_c('v-card-title',[_vm._v(" Logout ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v(" Are you sure? ")]),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"success logout-btn",on:{"click":_vm.logout}},[_vm._v("Yes")]),_vm._v(" "),_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1):_vm._e()],1),_vm._v(" "),_c('v-footer',{attrs:{"absolute":!_vm.fixed,"app":""}},[_c('span',[_vm._v("© "+_vm._s(new Date().getFullYear()))])]),_vm._v(" "),_c('v-row',{attrs:{"justify":"center"}},[_c('v-dialog',{attrs:{"persistent":"","max-width":"300"},model:{value:(_vm.dialog),callback:function ($$v) {_vm.dialog=$$v},expression:"dialog"}},[_c('v-card',[_c('v-card-title',{staticClass:"text-h5"},[_vm._v(" Alert ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"padding-top":"10px"}},[_vm._v("Cannot connect to server. There are several cause for this problem\n          :")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"margin-top":"-10px","justify-contents":"center","display":"flex"}},[_c('span',{staticStyle:{"font-weight":"bold","font-size":"25px","padding-right":"10px"}},[_vm._v("•")]),_vm._v("\n          No internet connection")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"margin-top":"-10px","justify-contents":"center","display":"flex"}},[_c('span',{staticStyle:{"font-weight":"bold","font-size":"25px","padding-right":"10px"}},[_vm._v("•")]),_vm._v("\n          Server error (Please contact admin to resolve the\n          issue)")])],1)],1)],1)],1)}
+var defaultvue_type_template_id_15dbb8aa_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./layouts/default.vue?vue&type=template&id=1f1ac714&
+// CONCATENATED MODULE: ./layouts/default.vue?vue&type=template&id=15dbb8aa&
 
 // EXTERNAL MODULE: ./src/class.js
 var src_class = __webpack_require__(2);
@@ -14095,10 +14190,6 @@ var external_mqtt_ = __webpack_require__(43);
 var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/default.vue?vue&type=script&lang=js&
-//
-//
-//
-//
 //
 //
 //
@@ -16783,12 +16874,12 @@ if (style0.__inject__) style0.__inject__(context)
 
 var default_component = Object(componentNormalizer["a" /* default */])(
   layouts_defaultvue_type_script_lang_js_,
-  defaultvue_type_template_id_1f1ac714_render,
-  defaultvue_type_template_id_1f1ac714_staticRenderFns,
+  defaultvue_type_template_id_15dbb8aa_render,
+  defaultvue_type_template_id_15dbb8aa_staticRenderFns,
   false,
   default_injectStyles,
   null,
-  "4f403ee3"
+  "f89315ba"
   
 )
 
@@ -16866,7 +16957,7 @@ var login_component = Object(componentNormalizer["a" /* default */])(
   false,
   login_injectStyles,
   null,
-  "99b8c2ea"
+  "1f9b366a"
   
 )
 
@@ -16877,12 +16968,12 @@ var login_component = Object(componentNormalizer["a" /* default */])(
 
 installComponents_default()(login_component, {VMain: VMain_VMain})
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/status.vue?vue&type=template&id=0e83dc35&
-var statusvue_type_template_id_0e83dc35_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-app',{attrs:{"dark":""}},[_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":"","temporary":""},model:{value:(_vm.drawer),callback:function ($$v) {_vm.drawer=$$v},expression:"drawer"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1),_vm._v(" "),_c('v-app-bar',{attrs:{"fixed":"","app":""}},[_c('v-app-bar-nav-icon',{staticStyle:{"color":"white"},on:{"click":function($event){$event.stopPropagation();_vm.drawer = !_vm.drawer}}}),_vm._v(" "),_c('v-toolbar-title',{staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name"},[_c('h4',{staticStyle:{"color":"white"}},[_vm._v(_vm._s(_vm.loggedInUser.username))])]):_vm._e(),_vm._v(" "),_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1),_vm._v(" "),_c('v-main',[_c('v-container',[_c('nuxt')],1)],1),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('div',{staticClass:"layer",attrs:{"id":"layer"}}):_vm._e()]),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('v-card',{staticClass:"logout elevation-12"},[_c('v-card-title',[_vm._v("\n        Logout\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("\n        Are you sure?\n      ")]),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"success logout-btn",on:{"click":_vm.logout}},[_vm._v("Yes")]),_vm._v(" "),_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1):_vm._e()],1),_vm._v(" "),_c('v-footer',{attrs:{"absolute":!_vm.fixed,"app":""}},[_c('span',[_vm._v("© "+_vm._s(new Date().getFullYear()))])]),_vm._v(" "),_c('v-row',{attrs:{"justify":"center"}},[_c('v-dialog',{attrs:{"persistent":"","max-width":"300"},model:{value:(_vm.dialog),callback:function ($$v) {_vm.dialog=$$v},expression:"dialog"}},[_c('v-card',[_c('v-card-title',{staticClass:"text-h5"},[_vm._v("\n          Alert\n        ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"padding-top":"10px"}},[_vm._v("Cannot connect to server. There are several cause for this problem\n          :")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"margin-top":"-10px","justify-contents":"center","display":"flex"}},[_c('span',{staticStyle:{"font-weight":"bold","font-size":"25px","padding-right":"10px"}},[_vm._v("•")]),_vm._v("\n          No internet connection")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"margin-top":"-10px","justify-contents":"center","display":"flex"}},[_c('span',{staticStyle:{"font-weight":"bold","font-size":"25px","padding-right":"10px"}},[_vm._v("•")]),_vm._v("\n          Server error (Please contact admin to resolve the\n          issue)")])],1)],1)],1)],1)}
-var statusvue_type_template_id_0e83dc35_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/status.vue?vue&type=template&id=68c1e5e3&
+var statusvue_type_template_id_68c1e5e3_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-app',{attrs:{"dark":""}},[_c('v-navigation-drawer',{staticClass:"sidebar",attrs:{"fixed":"","app":"","temporary":""},model:{value:(_vm.drawer),callback:function ($$v) {_vm.drawer=$$v},expression:"drawer"}},[_c('div',{staticClass:"brand"},[_c('img',{staticClass:"brand-logo",attrs:{"src":"nex-plex-h.png","alt":"nex-plex-logo"}})]),_vm._v(" "),_c('hr',{staticClass:"horizontal-line"}),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('div',{key:i},[(item.state)?_c('v-list-item',{attrs:{"to":item.to,"router":"","exact":"","active-class":"active_list"}},[_c('v-list-item-action',[_c('v-icon',[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1):_vm._e()],1)}),0)],1),_vm._v(" "),_c('v-app-bar',{attrs:{"fixed":"","app":""}},[_c('v-app-bar-nav-icon',{staticStyle:{"color":"white"},on:{"click":function($event){$event.stopPropagation();_vm.drawer = !_vm.drawer}}}),_vm._v(" "),_c('v-toolbar-title',{staticStyle:{"font-weight":"bold"},domProps:{"textContent":_vm._s(_vm.title)}}),_vm._v(" "),_c('v-spacer'),_vm._v(" "),(_vm.loggedInUser)?_c('div',{staticClass:"user-name"},[_c('h4',{staticStyle:{"color":"white"}},[_vm._v(_vm._s(_vm.loggedInUser.username))])]):_vm._e(),_vm._v(" "),_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();_vm.rightDrawer = !_vm.rightDrawer}}},[(_vm.loggedInUser)?_c('v-icon',{attrs:{"color":"success"}},[_vm._v("mdi-logout")]):_vm._e()],1)],1),_vm._v(" "),_c('v-main',[_c('v-container',[_c('nuxt')],1)],1),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('div',{staticClass:"layer",attrs:{"id":"layer"}}):_vm._e()]),_vm._v(" "),_c('v-scroll-y-transition',[(_vm.rightDrawer)?_c('v-card',{staticClass:"logout elevation-12"},[_c('v-card-title',[_vm._v("\n        Logout\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("\n        Are you sure?\n      ")]),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"success logout-btn",on:{"click":_vm.logout}},[_vm._v("Yes")]),_vm._v(" "),_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1):_vm._e()],1),_vm._v(" "),_c('v-footer',{attrs:{"absolute":!_vm.fixed,"app":""}},[_c('span',[_vm._v("© "+_vm._s(new Date().getFullYear()))])]),_vm._v(" "),_c('v-row',{attrs:{"justify":"center"}},[_c('v-dialog',{attrs:{"persistent":"","max-width":"300"},model:{value:(_vm.dialog),callback:function ($$v) {_vm.dialog=$$v},expression:"dialog"}},[_c('v-card',[_c('v-card-title',{staticClass:"text-h5"},[_vm._v("\n          Alert\n        ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"padding-top":"10px"}},[_vm._v("Cannot connect to server. There are several cause for this problem\n          :")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"margin-top":"-10px","justify-contents":"center","display":"flex"}},[_c('span',{staticStyle:{"font-weight":"bold","font-size":"25px","padding-right":"10px"}},[_vm._v("•")]),_vm._v("\n          No internet connection")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"margin-top":"-10px","justify-contents":"center","display":"flex"}},[_c('span',{staticStyle:{"font-weight":"bold","font-size":"25px","padding-right":"10px"}},[_vm._v("•")]),_vm._v("\n          Server error (Please contact admin to resolve the\n          issue)")])],1)],1)],1)],1)}
+var statusvue_type_template_id_68c1e5e3_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./layouts/status.vue?vue&type=template&id=0e83dc35&
+// CONCATENATED MODULE: ./layouts/status.vue?vue&type=template&id=68c1e5e3&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/status.vue?vue&type=script&lang=js&
 //
@@ -17220,13 +17311,14 @@ var statusvue_type_template_id_0e83dc35_staticRenderFns = []
       });
       this.client.on("message", (topic, message) => {
         if (topic === "new/np/ipah/s/c/true") {
-          message = JSON.parse(message);
-          console.log(message);
+          message = JSON.parse(message); // console.log(message);
+
           this.ipahStatus(message);
         }
 
         if (topic === "new/np/tkpmIpah/s/c/true") {
           message = JSON.parse(message);
+          console.log(message);
           this.tkpmIpahStatus(message);
         }
 
@@ -17282,6 +17374,7 @@ var statusvue_type_template_id_0e83dc35_staticRenderFns = []
       ipah1ManualNutrient: state => state.ipah1ManualNutrient,
       ipah1ManualNutrientDuration: state => state.ipah1ManualNutrientDuration,
       ipah2ManualNutrientDuration: state => state.ipah2ManualNutrientDuration,
+      ipah2ManualNutrientTank: state => state.ipah2ManualNutrientTank,
       tkpmPagohManualNutrientDuration: state => state.tkpmPagohManualNutrientDuration,
       kongPoManualNutrientDuration: state => state.kongPoManualNutrientDuration,
       ipah2ManualFill: state => state.ipah2ManualFill,
@@ -17364,21 +17457,22 @@ var statusvue_type_template_id_0e83dc35_staticRenderFns = []
     },
     ipah2ManualFill: function () {
       if (this.ipah2ManualFill == true) {
-        this.client.publish("np/c/tkpmIpah/wf", "10"); // console.log("np/c/tkpmIpah/wf", "10");
+        this.client.publish("qwazx/np/tkpmIpah/c/wf", "10"); // console.log("np/c/tkpmIpah/wf", "10");
       }
 
       this.setIpah2ManualFill(false); // console.log(this.ipah2ManualFill);
     },
     ipah2ManualStop: function () {
       if (this.ipah2ManualStop == true) {
-        this.client.publish("np/c/tkpmIpah/wf", "20"); // console.log("np/c/tkpmIpah/wf", "20");
+        this.client.publish("qwazx/np/tkpmIpah/c/wf", "20"); // console.log("np/c/tkpmIpah/wf", "20");
       }
 
       this.setIpah2ManualStop(false); // console.log(this.ipah2ManualNutrientDuration);
     },
     ipah2ManualNutrient: function () {
       if (this.ipah2ManualNutrient == true) {
-        this.client.publish("filter/np/c/tkpmIpah/n", `{"D1":10,"D2":${this.ipah2ManualNutrientDuration}}`); // console.log(
+        this.client.publish("qwazx/np/tkpmIpah/c/n/start", `{"D1":[${this.ipah2ManualNutrientTank}],"D2":${this.ipah2ManualNutrientDuration}}` // `{"D1":10,"D2":${this.ipah2ManualNutrientDuration}}`
+        ); // console.log(
         //   "filter/np/c/tkpmIpah/n",
         //   `{"D1":10,"D2":${this.ipah2ManualNutrientDuration}}`
         // );
@@ -17456,12 +17550,12 @@ if (style0.__inject__) style0.__inject__(context)
 
 var status_component = Object(componentNormalizer["a" /* default */])(
   layouts_statusvue_type_script_lang_js_,
-  statusvue_type_template_id_0e83dc35_render,
-  statusvue_type_template_id_0e83dc35_staticRenderFns,
+  statusvue_type_template_id_68c1e5e3_render,
+  statusvue_type_template_id_68c1e5e3_staticRenderFns,
   false,
   status_injectStyles,
   null,
-  "2ae381c0"
+  "e0a4f900"
   
 )
 
@@ -17759,25 +17853,24 @@ function wrapFunctional(options) {
 
 
 const components = {
-  CardTitle: () => __webpack_require__.e(/* import() | components/card-title */ 10).then(__webpack_require__.bind(null, 210)).then(c => wrapFunctional(c.default || c)),
+  CardTitle: () => __webpack_require__.e(/* import() | components/card-title */ 10).then(__webpack_require__.bind(null, 212)).then(c => wrapFunctional(c.default || c)),
   Duration: () => __webpack_require__.e(/* import() | components/duration */ 21).then(__webpack_require__.bind(null, 192)).then(c => wrapFunctional(c.default || c)),
   Logo: () => __webpack_require__.e(/* import() | components/logo */ 24).then(__webpack_require__.bind(null, 501)).then(c => wrapFunctional(c.default || c)),
   Notification: () => __webpack_require__.e(/* import() | components/notification */ 25).then(__webpack_require__.bind(null, 265)).then(c => wrapFunctional(c.default || c)),
-  PageTitle: () => __webpack_require__.e(/* import() | components/page-title */ 40).then(__webpack_require__.bind(null, 189)).then(c => wrapFunctional(c.default || c)),
+  PageTitle: () => __webpack_require__.e(/* import() | components/page-title */ 40).then(__webpack_require__.bind(null, 191)).then(c => wrapFunctional(c.default || c)),
   VuetifyLogo: () => __webpack_require__.e(/* import() | components/vuetify-logo */ 56).then(__webpack_require__.bind(null, 502)).then(c => wrapFunctional(c.default || c)),
   ControlPumpStatus: () => __webpack_require__.e(/* import() | components/control-pump-status */ 11).then(__webpack_require__.bind(null, 413)).then(c => wrapFunctional(c.default || c)),
   DetailLayout: () => __webpack_require__.e(/* import() | components/detail-layout */ 12).then(__webpack_require__.bind(null, 493)).then(c => wrapFunctional(c.default || c)),
   DetailLayout2: () => __webpack_require__.e(/* import() | components/detail-layout2 */ 14).then(__webpack_require__.bind(null, 494)).then(c => wrapFunctional(c.default || c)),
   DetailLayout3: () => __webpack_require__.e(/* import() | components/detail-layout3 */ 15).then(__webpack_require__.bind(null, 495)).then(c => wrapFunctional(c.default || c)),
   DetailLayout4: () => __webpack_require__.e(/* import() | components/detail-layout4 */ 16).then(__webpack_require__.bind(null, 496)).then(c => wrapFunctional(c.default || c)),
-  DetailLayoutFull: () => __webpack_require__.e(/* import() | components/detail-layout-full */ 13).then(__webpack_require__.bind(null, 326)).then(c => wrapFunctional(c.default || c)),
+  DetailLayoutFull: () => __webpack_require__.e(/* import() | components/detail-layout-full */ 13).then(__webpack_require__.bind(null, 327)).then(c => wrapFunctional(c.default || c)),
   DetailOperationInformation: () => __webpack_require__.e(/* import() | components/detail-operation-information */ 17).then(__webpack_require__.bind(null, 415)).then(c => wrapFunctional(c.default || c)),
   DetailReport: () => __webpack_require__.e(/* import() | components/detail-report */ 18).then(__webpack_require__.bind(null, 417)).then(c => wrapFunctional(c.default || c)),
   DetailUsers: () => __webpack_require__.e(/* import() | components/detail-users */ 19).then(__webpack_require__.bind(null, 414)).then(c => wrapFunctional(c.default || c)),
   DetailYieldCropInformation: () => __webpack_require__.e(/* import() | components/detail-yield-crop-information */ 20).then(__webpack_require__.bind(null, 416)).then(c => wrapFunctional(c.default || c)),
   GeneralUserInfo: () => __webpack_require__.e(/* import() | components/general-user-info */ 22).then(__webpack_require__.bind(null, 418)).then(c => wrapFunctional(c.default || c)),
   LoginForm: () => __webpack_require__.e(/* import() | components/login-form */ 23).then(__webpack_require__.bind(null, 389)).then(c => wrapFunctional(c.default || c)),
-  RegisterForm2: () => __webpack_require__.e(/* import() | components/register-form2 */ 41).then(__webpack_require__.bind(null, 422)).then(c => wrapFunctional(c.default || c)),
   OverviewCardDataLeaf: () => __webpack_require__.e(/* import() | components/overview-card-data-leaf */ 26).then(__webpack_require__.bind(null, 360)).then(c => wrapFunctional(c.default || c)),
   OverviewCardDataSoil: () => __webpack_require__.e(/* import() | components/overview-card-data-soil */ 27).then(__webpack_require__.bind(null, 359)).then(c => wrapFunctional(c.default || c)),
   OverviewCardDataWater: () => __webpack_require__.e(/* import() | components/overview-card-data-water */ 28).then(__webpack_require__.bind(null, 361)).then(c => wrapFunctional(c.default || c)),
@@ -17786,6 +17879,7 @@ const components = {
   OverviewCardSummary: () => __webpack_require__.e(/* import() | components/overview-card-summary */ 31).then(__webpack_require__.bind(null, 427)).then(c => wrapFunctional(c.default || c)),
   OverviewCardWeather3: () => __webpack_require__.e(/* import() | components/overview-card-weather3 */ 32).then(__webpack_require__.bind(null, 358)).then(c => wrapFunctional(c.default || c)),
   OverviewTable: () => __webpack_require__.e(/* import() | components/overview-table */ 39).then(__webpack_require__.bind(null, 429)).then(c => wrapFunctional(c.default || c)),
+  RegisterForm2: () => __webpack_require__.e(/* import() | components/register-form2 */ 41).then(__webpack_require__.bind(null, 422)).then(c => wrapFunctional(c.default || c)),
   ScheduleCalendar: () => __webpack_require__.e(/* import() | components/schedule-calendar */ 42).then(__webpack_require__.bind(null, 307)).then(c => wrapFunctional(c.default || c)),
   ScheduleTableSchedule: () => __webpack_require__.e(/* import() | components/schedule-table-schedule */ 43).then(__webpack_require__.bind(null, 309)).then(c => wrapFunctional(c.default || c)),
   ScheduleTableScheduleNutrient: () => __webpack_require__.e(/* import() | components/schedule-table-schedule-nutrient */ 44).then(__webpack_require__.bind(null, 310)).then(c => wrapFunctional(c.default || c)),
@@ -17800,9 +17894,9 @@ const components = {
   TrendCardStationTrendTkpmPagoh: () => __webpack_require__.e(/* import() | components/trend-card-station-trend-tkpm-pagoh */ 53).then(__webpack_require__.bind(null, 426)).then(c => wrapFunctional(c.default || c)),
   TrendLineChart: () => __webpack_require__.e(/* import() | components/trend-line-chart */ 54).then(__webpack_require__.bind(null, 242)).then(c => wrapFunctional(c.default || c)),
   TrendLineChartSingleData: () => __webpack_require__.e(/* import() | components/trend-line-chart-single-data */ 55).then(__webpack_require__.bind(null, 243)).then(c => wrapFunctional(c.default || c)),
-  AdminOverviewCardDataLeafAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-card-data-leaf-admin */ 1).then(__webpack_require__.bind(null, 328)).then(c => wrapFunctional(c.default || c)),
-  AdminOverviewCardDataSoilAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-card-data-soil-admin */ 2).then(__webpack_require__.bind(null, 327)).then(c => wrapFunctional(c.default || c)),
-  AdminOverviewCardDataWaterAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-card-data-water-admin */ 3).then(__webpack_require__.bind(null, 329)).then(c => wrapFunctional(c.default || c)),
+  AdminOverviewCardDataLeafAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-card-data-leaf-admin */ 1).then(__webpack_require__.bind(null, 329)).then(c => wrapFunctional(c.default || c)),
+  AdminOverviewCardDataSoilAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-card-data-soil-admin */ 2).then(__webpack_require__.bind(null, 328)).then(c => wrapFunctional(c.default || c)),
+  AdminOverviewCardDataWaterAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-card-data-water-admin */ 3).then(__webpack_require__.bind(null, 330)).then(c => wrapFunctional(c.default || c)),
   AdminOverviewCardOverviewDataAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-card-overview-data-admin */ 4).then(__webpack_require__.bind(null, 421)).then(c => wrapFunctional(c.default || c)),
   AdminOverviewCardSummaryAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-card-summary-admin */ 5).then(__webpack_require__.bind(null, 420)).then(c => wrapFunctional(c.default || c)),
   AdminOverviewIpah2StatusAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-ipah2-status-admin */ 7).then(__webpack_require__.bind(null, 497)).then(c => wrapFunctional(c.default || c)),
@@ -17812,8 +17906,8 @@ const components = {
   OverviewSingleGauge: () => __webpack_require__.e(/* import() | components/overview-single-gauge */ 34).then(__webpack_require__.bind(null, 261)).then(c => wrapFunctional(c.default || c)),
   OverviewSingleServer: () => __webpack_require__.e(/* import() | components/overview-single-server */ 35).then(__webpack_require__.bind(null, 362)).then(c => wrapFunctional(c.default || c)),
   OverviewSingleSummary: () => __webpack_require__.e(/* import() | components/overview-single-summary */ 36).then(__webpack_require__.bind(null, 306)).then(c => wrapFunctional(c.default || c)),
-  OverviewSingleWeather: () => __webpack_require__.e(/* import() | components/overview-single-weather */ 37).then(__webpack_require__.bind(null, 331)).then(c => wrapFunctional(c.default || c)),
-  OverviewSingleWeatherMain: () => __webpack_require__.e(/* import() | components/overview-single-weather-main */ 38).then(__webpack_require__.bind(null, 330)).then(c => wrapFunctional(c.default || c)),
+  OverviewSingleWeather: () => __webpack_require__.e(/* import() | components/overview-single-weather */ 37).then(__webpack_require__.bind(null, 332)).then(c => wrapFunctional(c.default || c)),
+  OverviewSingleWeatherMain: () => __webpack_require__.e(/* import() | components/overview-single-weather-main */ 38).then(__webpack_require__.bind(null, 331)).then(c => wrapFunctional(c.default || c)),
   AdminOverviewSingleData: () => __webpack_require__.e(/* import() | components/admin-overview-single-data */ 8).then(__webpack_require__.bind(null, 236)).then(c => wrapFunctional(c.default || c))
 };
 

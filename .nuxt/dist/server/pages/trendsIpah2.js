@@ -19,7 +19,7 @@ module.exports.__inject__ = function (context) {
 
 /***/ }),
 
-/***/ 189:
+/***/ 191:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68,7 +68,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "48d66cb0",
-  "4542477e"
+  "05180d84"
   
 )
 
@@ -659,7 +659,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "6f99e610",
-  "30915740"
+  "5a6693c0"
   
 )
 
@@ -869,7 +869,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "185f5285",
-  "481db192"
+  "7033e352"
   
 )
 
@@ -1134,7 +1134,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "3720697b",
-  "a052fefe"
+  "2b274241"
   
 )
 
@@ -1168,7 +1168,7 @@ var staticRenderFns = []
 // CONCATENATED MODULE: ./pages/trendsIpah2.vue?vue&type=template&id=a3f0a326&
 
 // EXTERNAL MODULE: ./components/PageTitle.vue + 4 modules
-var PageTitle = __webpack_require__(189);
+var PageTitle = __webpack_require__(191);
 
 // EXTERNAL MODULE: ./components/Trend/CardStationTrendIpah2.vue + 4 modules
 var CardStationTrendIpah2 = __webpack_require__(424);
@@ -1347,14 +1347,14 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "57b4e52b"
+  "47768b6b"
   
 )
 
 /* harmony default export */ var trendsIpah2 = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {PageTitle: __webpack_require__(189).default})
+installComponents(component, {PageTitle: __webpack_require__(191).default})
 
 
 /***/ })

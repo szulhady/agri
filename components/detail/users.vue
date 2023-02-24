@@ -4,12 +4,8 @@
       <template>
         <v-form v-model="valid" v-on:submit.prevent>
           <v-container>
-            <v-card-title>
-              FORM
-            </v-card-title>
-            <v-card-title>
-              User registration
-            </v-card-title>
+            <v-card-title> FORM </v-card-title>
+            <v-card-title> User registration </v-card-title>
             <v-row>
               <v-col cols="12" md="3">
                 <v-text-field
@@ -62,9 +58,7 @@
                 ></v-text-field>
               </v-col>
             </v-row>
-            <v-card-title>
-              Operation information
-            </v-card-title>
+            <v-card-title> Operation information </v-card-title>
             <v-row>
               <v-col cols="12" md="3">
                 <v-text-field
@@ -137,9 +131,7 @@
                 ></v-text-field>
               </v-col>
             </v-row>
-            <v-card-title>
-              Yield crop information
-            </v-card-title>
+            <v-card-title> Yield crop information </v-card-title>
             <v-row>
               <v-col cols="12" md="3">
                 <v-text-field
@@ -184,9 +176,7 @@
                 ></v-text-field>
               </v-col>
             </v-row>
-            <v-card-title>
-              Report
-            </v-card-title>
+            <v-card-title> Report </v-card-title>
             <v-row>
               <v-col cols="12" md="3">
                 <v-text-field
@@ -245,9 +235,7 @@
                 ></v-text-field>
               </v-col>
             </v-row>
-            <v-btn @click="generateReport" color="primary">
-              Submit
-            </v-btn>
+            <v-btn @click="generateReport" color="primary"> Submit </v-btn>
           </v-container>
         </v-form>
       </template>

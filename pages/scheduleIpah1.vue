@@ -3,14 +3,19 @@
     <!-- <client-only> -->
     <PageTitle title="SCHEDULE" />
     <v-card class="mb-10">
-      <v-card-title>
-        Set schedule for nutrient preparation
-      </v-card-title>
-      <v-row style="display:flex; justify-content:center; align-items:center">
+      <v-card-title> Set schedule for nutrient preparation </v-card-title>
+      <v-row
+        style="display: flex; justify-content: center; align-items: center"
+      >
         <v-col
           cols="12"
           class="pl-8 col-md-4 mb-5"
-          style="display:flex;flex-direction:column;justify-content:center;align-items:center"
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          "
         >
           <div>
             <h4>Select Date</h4>
@@ -32,10 +37,7 @@
               <v-row>
                 <v-col>
                   <div>
-                    <h4
-                      style="text-align: justify;
-  text-justify: inter-word;"
-                    >
+                    <h4 style="text-align: justify; text-justify: inter-word">
                       Default time for nutrient preparation process on selected
                       date is on 5am. Please select date and EC value ( eg: 1.00
                       ) for dosing process.
@@ -54,7 +56,7 @@
               </v-row>
               <v-row>
                 <v-col cols="12" class="userInputNutriet">
-                  <div style="display:flex; justify-content:center">
+                  <div style="display: flex; justify-content: center">
                     <!-- <v-select
                         :items="itemsDuration1"
                         label="Duration (minute)"
@@ -75,7 +77,7 @@
                       v-model.number="durationNutrient"
                     />
                   </div>
-                  <div style="display:flex; justify-content:center">
+                  <div style="display: flex; justify-content: center">
                     <v-btn class="mt-5" @click="checkScheduleNutrient">
                       SET SCHEDULE
                     </v-btn>
@@ -94,14 +96,17 @@
       </v-row>
     </v-card>
     <v-card>
-      <v-card-title>
-        Set schedule for fertigation / irrigation
-      </v-card-title>
+      <v-card-title> Set schedule for fertigation / irrigation </v-card-title>
       <v-row>
         <v-col
           cols="12"
           class="pl-8 col-lg-3"
-          style="display:flex;flex-direction:column;justify-content:center;align-items:center"
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          "
         >
           <div>
             <h4>Select Date</h4>
@@ -114,9 +119,7 @@
             ></vc-date-picker>
           </div>
           <div>
-            <v-btn class="mt-5" @click="checkSchedule">
-              SET SCHEDULE
-            </v-btn>
+            <v-btn class="mt-5" @click="checkSchedule"> SET SCHEDULE </v-btn>
           </div>
         </v-col>
         <v-col cols="12" class="mx-auto col-lg-9">
@@ -714,13 +717,13 @@
                 </v-expansion-panel-header>
                 <v-expansion-panel-content>
                   <div
-                    style="display:flex; flex-wrap: wrap; background:#f7f7f7"
+                    style="display: flex; flex-wrap: wrap; background: #f7f7f7"
                     class="mx-8 mb-3"
                   >
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <!-- <label>1)</label> -->
                       <div class="short">
@@ -743,7 +746,7 @@
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <div>
                         <v-text-field
@@ -765,13 +768,13 @@
                     </v-col>
                   </div>
                   <div
-                    style="display:flex; flex-wrap: wrap; background:#ffffff"
+                    style="display: flex; flex-wrap: wrap; background: #ffffff"
                     class="mx-8 mb-3"
                   >
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <!-- <label>1)</label> -->
                       <div class="short">
@@ -794,7 +797,7 @@
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <div>
                         <v-text-field
@@ -816,13 +819,13 @@
                     </v-col>
                   </div>
                   <div
-                    style="display:flex; flex-wrap: wrap; background:#f7f7f7"
+                    style="display: flex; flex-wrap: wrap; background: #f7f7f7"
                     class="mx-8 mb-3"
                   >
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <!-- <label>1)</label> -->
                       <div class="short">
@@ -845,7 +848,7 @@
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <div>
                         <v-text-field
@@ -867,13 +870,13 @@
                     </v-col>
                   </div>
                   <div
-                    style="display:flex; flex-wrap: wrap; background:#ffffff"
+                    style="display: flex; flex-wrap: wrap; background: #ffffff"
                     class="mx-8 mb-3"
                   >
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <!-- <label>1)</label> -->
                       <div class="short">
@@ -896,7 +899,7 @@
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <div>
                         <v-text-field
@@ -918,13 +921,13 @@
                     </v-col>
                   </div>
                   <div
-                    style="display:flex; flex-wrap: wrap; background:#f7f7f7"
+                    style="display: flex; flex-wrap: wrap; background: #f7f7f7"
                     class="mx-8 mb-3"
                   >
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <!-- <label>1)</label> -->
                       <div class="short">
@@ -947,7 +950,7 @@
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <div>
                         <v-text-field
@@ -969,13 +972,13 @@
                     </v-col>
                   </div>
                   <div
-                    style="display:flex; flex-wrap: wrap; background:#ffffff"
+                    style="display: flex; flex-wrap: wrap; background: #ffffff"
                     class="mx-8 mb-3"
                   >
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <!-- <label>1)</label> -->
                       <div class="short">
@@ -998,7 +1001,7 @@
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <div>
                         <v-text-field
@@ -1020,13 +1023,13 @@
                     </v-col>
                   </div>
                   <div
-                    style="display:flex; flex-wrap: wrap; background:#f7f7f7"
+                    style="display: flex; flex-wrap: wrap; background: #f7f7f7"
                     class="mx-8 mb-3"
                   >
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <!-- <label>1)</label> -->
                       <div class="short">
@@ -1049,7 +1052,7 @@
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <div>
                         <v-text-field
@@ -1071,13 +1074,13 @@
                     </v-col>
                   </div>
                   <div
-                    style="display:flex; flex-wrap: wrap; background:#ffffff"
+                    style="display: flex; flex-wrap: wrap; background: #ffffff"
                     class="mx-8 mb-3"
                   >
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <!-- <label>1)</label> -->
                       <div class="short">
@@ -1100,7 +1103,7 @@
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <div>
                         <v-text-field
@@ -1122,13 +1125,13 @@
                     </v-col>
                   </div>
                   <div
-                    style="display:flex; flex-wrap: wrap; background:#f7f7f7"
+                    style="display: flex; flex-wrap: wrap; background: #f7f7f7"
                     class="mx-8 mb-3"
                   >
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <!-- <label>1)</label> -->
                       <div class="short">
@@ -1151,7 +1154,7 @@
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <div>
                         <v-text-field
@@ -1173,13 +1176,13 @@
                     </v-col>
                   </div>
                   <div
-                    style="display:flex; flex-wrap: wrap; background:#ffffff"
+                    style="display: flex; flex-wrap: wrap; background: #ffffff"
                     class="mx-8 mb-3"
                   >
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <!-- <label>1)</label> -->
                       <div class="short">
@@ -1202,7 +1205,7 @@
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <div>
                         <v-text-field
@@ -1233,13 +1236,13 @@
                 </v-expansion-panel-header>
                 <v-expansion-panel-content>
                   <div
-                    style="display:flex; flex-wrap: wrap; background:#f7f7f7"
+                    style="display: flex; flex-wrap: wrap; background: #f7f7f7"
                     class="mx-8 mb-3"
                   >
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <!-- <label>1)</label> -->
                       <div class="short">
@@ -1262,7 +1265,7 @@
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <div>
                         <v-text-field
@@ -1284,13 +1287,13 @@
                     </v-col>
                   </div>
                   <div
-                    style="display:flex; flex-wrap: wrap; background:#ffffff"
+                    style="display: flex; flex-wrap: wrap; background: #ffffff"
                     class="mx-8 mb-3"
                   >
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <!-- <label>1)</label> -->
                       <div class="short">
@@ -1313,7 +1316,7 @@
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <div>
                         <v-text-field
@@ -1335,13 +1338,13 @@
                     </v-col>
                   </div>
                   <div
-                    style="display:flex; flex-wrap: wrap; background:#f7f7f7"
+                    style="display: flex; flex-wrap: wrap; background: #f7f7f7"
                     class="mx-8 mb-3"
                   >
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <!-- <label>1)</label> -->
                       <div class="short">
@@ -1364,7 +1367,7 @@
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <div>
                         <v-text-field
@@ -1386,13 +1389,13 @@
                     </v-col>
                   </div>
                   <div
-                    style="display:flex; flex-wrap: wrap; background:#ffffff"
+                    style="display: flex; flex-wrap: wrap; background: #ffffff"
                     class="mx-8 mb-3"
                   >
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <!-- <label>1)</label> -->
                       <div class="short">
@@ -1415,7 +1418,7 @@
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <div>
                         <v-text-field
@@ -1437,13 +1440,13 @@
                     </v-col>
                   </div>
                   <div
-                    style="display:flex; flex-wrap: wrap; background:#f7f7f7"
+                    style="display: flex; flex-wrap: wrap; background: #f7f7f7"
                     class="mx-8 mb-3"
                   >
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <!-- <label>1)</label> -->
                       <div class="short">
@@ -1466,7 +1469,7 @@
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <div>
                         <v-text-field
@@ -1488,13 +1491,13 @@
                     </v-col>
                   </div>
                   <div
-                    style="display:flex; flex-wrap: wrap; background:#ffffff"
+                    style="display: flex; flex-wrap: wrap; background: #ffffff"
                     class="mx-8 mb-3"
                   >
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <!-- <label>1)</label> -->
                       <div class="short">
@@ -1517,7 +1520,7 @@
                     <v-col
                       cols="12"
                       class="userInput col-md-6"
-                      style="justify-content:space-evenly"
+                      style="justify-content: space-evenly"
                     >
                       <div>
                         <v-text-field
@@ -1557,9 +1560,7 @@
     <!-- AFTER POST SCHEDULE -->
     <v-dialog v-model="dialog" persistent max-width="290">
       <v-card>
-        <v-card-title>
-          Status
-        </v-card-title>
+        <v-card-title> Status </v-card-title>
         <hr class="hr" />
         <v-card-subtitle>{{ message }}</v-card-subtitle>
         <v-card-actions>
@@ -1587,9 +1588,7 @@
     <!-- POST SCHEDULE CONFIRMATION -->
     <v-dialog v-model="dialogPost" persistent max-width="490">
       <v-card>
-        <v-card-title>
-          Action
-        </v-card-title>
+        <v-card-title> Action </v-card-title>
         <hr class="hr" />
         <v-card-subtitle
           >Are you confirm to set schedule as below?</v-card-subtitle
@@ -1606,12 +1605,8 @@
         </v-card-subtitle>
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn text @click="sendSchedule" class="success">
-            Confirm
-          </v-btn>
-          <v-btn text @click="dialogPost = false" class="error">
-            Cancel
-          </v-btn>
+          <v-btn text @click="sendSchedule" class="success"> Confirm </v-btn>
+          <v-btn text @click="dialogPost = false" class="error"> Cancel </v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
@@ -1619,9 +1614,7 @@
     <!-- AFTER POST SCHEDULE NUTRIENT -->
     <v-dialog v-model="dialogNutrient" persistent max-width="290">
       <v-card>
-        <v-card-title>
-          Status
-        </v-card-title>
+        <v-card-title> Status </v-card-title>
         <hr class="hr" />
         <v-card-subtitle>{{ messageNutrient }}</v-card-subtitle>
         <v-card-subtitle></v-card-subtitle>
@@ -1650,9 +1643,7 @@
     <!-- POST SCHEDULE CONFIRMATION NUTRIENT -->
     <v-dialog v-model="dialogPostNutrient" persistent max-width="490">
       <v-card>
-        <v-card-title>
-          Action
-        </v-card-title>
+        <v-card-title> Action </v-card-title>
         <hr class="hr" />
         <v-card-subtitle
           >Are you confirm to set schedule as below?</v-card-subtitle

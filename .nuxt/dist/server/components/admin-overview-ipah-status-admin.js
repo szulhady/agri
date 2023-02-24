@@ -19,7 +19,7 @@ module.exports.__inject__ = function (context) {
 
 /***/ }),
 
-/***/ 189:
+/***/ 191:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68,7 +68,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "48d66cb0",
-  "4542477e"
+  "05180d84"
   
 )
 
@@ -161,7 +161,7 @@ var staticRenderFns = []
 // CONCATENATED MODULE: ./components/Admin/Overview/ipahStatusAdmin.vue?vue&type=template&id=174c18ae&scoped=true&
 
 // EXTERNAL MODULE: ./components/PageTitle.vue + 4 modules
-var PageTitle = __webpack_require__(189);
+var PageTitle = __webpack_require__(191);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Admin/Overview/ipahStatusAdmin.vue?vue&type=script&lang=js&
 //
@@ -227,7 +227,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "174c18ae",
-  "0efa90d8"
+  "53459dd4"
   
 )
 

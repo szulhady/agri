@@ -19,7 +19,7 @@ module.exports.__inject__ = function (context) {
 
 /***/ }),
 
-/***/ 189:
+/***/ 191:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68,7 +68,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "48d66cb0",
-  "4542477e"
+  "05180d84"
   
 )
 
@@ -1068,7 +1068,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "7aafee64",
-  "37876b84"
+  "fb2d1f04"
   
 )
 
@@ -1135,7 +1135,7 @@ var staticRenderFns = []
 // CONCATENATED MODULE: ./pages/tkpmPagohStatus.vue?vue&type=template&id=3dcd1ce6&
 
 // EXTERNAL MODULE: ./components/PageTitle.vue + 4 modules
-var PageTitle = __webpack_require__(189);
+var PageTitle = __webpack_require__(191);
 
 // EXTERNAL MODULE: ./components/Status/TkpmPagohStatus.vue + 4 modules
 var TkpmPagohStatus = __webpack_require__(305);
@@ -1486,14 +1486,14 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "7ee5afec"
+  "0e91ae4a"
   
 )
 
 /* harmony default export */ var tkpmPagohStatus = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents_default()(component, {PageTitle: __webpack_require__(189).default})
+installComponents_default()(component, {PageTitle: __webpack_require__(191).default})
 
 
 /* vuetify-loader */

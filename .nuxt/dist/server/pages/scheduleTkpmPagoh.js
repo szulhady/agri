@@ -41,63 +41,6 @@ module.exports.__inject__ = function (context) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/PageTitle.vue?vue&type=template&id=48d66cb0&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('h2',{staticClass:"mt-3 mb-5 title"},[_vm._ssrNode(_vm._ssrEscape("\n  "+_vm._s(_vm.title)+"\n"))])}
-var staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./components/PageTitle.vue?vue&type=template&id=48d66cb0&scoped=true&
-
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/PageTitle.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-/* harmony default export */ var PageTitlevue_type_script_lang_js_ = ({
-  props: ["title"]
-});
-// CONCATENATED MODULE: ./components/PageTitle.vue?vue&type=script&lang=js&
- /* harmony default export */ var components_PageTitlevue_type_script_lang_js_ = (PageTitlevue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
-var componentNormalizer = __webpack_require__(16);
-
-// CONCATENATED MODULE: ./components/PageTitle.vue
-
-
-
-function injectStyles (context) {
-  
-  var style0 = __webpack_require__(198)
-if (style0.__inject__) style0.__inject__(context)
-
-}
-
-/* normalize component */
-
-var component = Object(componentNormalizer["a" /* default */])(
-  components_PageTitlevue_type_script_lang_js_,
-  render,
-  staticRenderFns,
-  false,
-  injectStyles,
-  "48d66cb0",
-  "4542477e"
-  
-)
-
-/* harmony default export */ var PageTitle = __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ 190:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony import */ var _colorable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8);
 /* harmony import */ var _themeable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7);
 /* harmony import */ var _registrable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(34);
@@ -365,7 +308,7 @@ const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_5__[/* default *
 
 /***/ }),
 
-/***/ 191:
+/***/ 190:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -373,7 +316,7 @@ const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_5__[/* default *
 // UNUSED EXPORTS: VLabel
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VLabel/VLabel.sass
-var VLabel = __webpack_require__(204);
+var VLabel = __webpack_require__(203);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/colorable/index.js
 var colorable = __webpack_require__(8);
@@ -457,6 +400,63 @@ var helpers = __webpack_require__(0);
 
 /***/ }),
 
+/***/ 191:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/PageTitle.vue?vue&type=template&id=48d66cb0&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('h2',{staticClass:"mt-3 mb-5 title"},[_vm._ssrNode(_vm._ssrEscape("\n  "+_vm._s(_vm.title)+"\n"))])}
+var staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./components/PageTitle.vue?vue&type=template&id=48d66cb0&scoped=true&
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/PageTitle.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+/* harmony default export */ var PageTitlevue_type_script_lang_js_ = ({
+  props: ["title"]
+});
+// CONCATENATED MODULE: ./components/PageTitle.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_PageTitlevue_type_script_lang_js_ = (PageTitlevue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
+var componentNormalizer = __webpack_require__(16);
+
+// CONCATENATED MODULE: ./components/PageTitle.vue
+
+
+
+function injectStyles (context) {
+  
+  var style0 = __webpack_require__(198)
+if (style0.__inject__) style0.__inject__(context)
+
+}
+
+/* normalize component */
+
+var component = Object(componentNormalizer["a" /* default */])(
+  components_PageTitlevue_type_script_lang_js_,
+  render,
+  staticRenderFns,
+  false,
+  injectStyles,
+  "48d66cb0",
+  "05180d84"
+  
+)
+
+/* harmony default export */ var PageTitle = __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
 /***/ 192:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -520,7 +520,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "2ca3c490",
-  "697de62f"
+  "6f6efc6f"
   
 )
 
@@ -541,7 +541,7 @@ installComponents_default()(component, {VCardSubtitle: VCard["b" /* VCardSubtitl
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(201);
+var content = __webpack_require__(200);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -557,16 +557,16 @@ __webpack_require__(6).default("4f4f805e", content, true)
 // UNUSED EXPORTS: VInput
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VInput/VInput.sass
-var VInput = __webpack_require__(202);
+var VInput = __webpack_require__(201);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VIcon/index.js
 var VIcon = __webpack_require__(22);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VLabel/index.js + 1 modules
-var VLabel = __webpack_require__(191);
+var VLabel = __webpack_require__(190);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VMessages/VMessages.sass
-var VMessages = __webpack_require__(206);
+var VMessages = __webpack_require__(205);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/colorable/index.js
 var colorable = __webpack_require__(8);
@@ -638,7 +638,7 @@ var helpers = __webpack_require__(0);
 var binds_attrs = __webpack_require__(24);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/validatable/index.js
-var validatable = __webpack_require__(190);
+var validatable = __webpack_require__(189);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/util/mergeData.js
 var mergeData = __webpack_require__(18);
@@ -1187,7 +1187,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 201:
+/***/ 200:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -1201,13 +1201,13 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 202:
+/***/ 201:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(203);
+var content = __webpack_require__(202);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -1215,7 +1215,7 @@ __webpack_require__(6).default("22487aae", content, true)
 
 /***/ }),
 
-/***/ 203:
+/***/ 202:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -1229,13 +1229,13 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 204:
+/***/ 203:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(205);
+var content = __webpack_require__(204);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -1243,7 +1243,7 @@ __webpack_require__(6).default("371f82d0", content, true)
 
 /***/ }),
 
-/***/ 205:
+/***/ 204:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -1257,13 +1257,13 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 206:
+/***/ 205:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(207);
+var content = __webpack_require__(206);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -1271,7 +1271,7 @@ __webpack_require__(6).default("2bb34da4", content, true)
 
 /***/ }),
 
-/***/ 207:
+/***/ 206:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -1285,13 +1285,13 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 208:
+/***/ 207:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(209);
+var content = __webpack_require__(208);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -1299,7 +1299,7 @@ __webpack_require__(6).default("3dc908a0", content, true)
 
 /***/ }),
 
-/***/ 209:
+/***/ 208:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -1313,11 +1313,11 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 211:
+/***/ 210:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _src_components_VCheckbox_VSimpleCheckbox_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(228);
+/* harmony import */ var _src_components_VCheckbox_VSimpleCheckbox_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(227);
 /* harmony import */ var _src_components_VCheckbox_VSimpleCheckbox_sass__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_src_components_VCheckbox_VSimpleCheckbox_sass__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _directives_ripple__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(23);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
@@ -1418,7 +1418,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 212:
+/***/ 211:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1468,7 +1468,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _src_components_VSubheader_VSubheader_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(230);
+/* harmony import */ var _src_components_VSubheader_VSubheader_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(229);
 /* harmony import */ var _src_components_VSubheader_VSubheader_sass__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_src_components_VSubheader_VSubheader_sass__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _mixins_themeable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7);
 /* harmony import */ var _util_mixins__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
@@ -1513,7 +1513,7 @@ var VTextField = __webpack_require__(193);
 var VInput = __webpack_require__(194);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VCounter/VCounter.sass
-var VCounter = __webpack_require__(208);
+var VCounter = __webpack_require__(207);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/themeable/index.js
 var themeable = __webpack_require__(7);
@@ -1563,7 +1563,7 @@ var mixins = __webpack_require__(3);
 
 /* harmony default export */ var components_VCounter = (VCounter_VCounter);
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VLabel/index.js + 1 modules
-var VLabel = __webpack_require__(191);
+var VLabel = __webpack_require__(190);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/directives/intersect/index.js
 var intersect = __webpack_require__(25);
@@ -1620,7 +1620,7 @@ function intersectable(options) {
 var loadable = __webpack_require__(48);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/validatable/index.js
-var validatable = __webpack_require__(190);
+var validatable = __webpack_require__(189);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/directives/resize/index.js
 var resize = __webpack_require__(61);
@@ -2192,7 +2192,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 // UNUSED EXPORTS: VChip
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VChip/VChip.sass
-var VChip = __webpack_require__(232);
+var VChip = __webpack_require__(231);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/util/mixins.js
 var mixins = __webpack_require__(3);
@@ -2404,7 +2404,7 @@ var console = __webpack_require__(4);
 
 /***/ }),
 
-/***/ 222:
+/***/ 220:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2457,13 +2457,13 @@ var esnext_map_update_js_ = __webpack_require__(96);
 var VTextField = __webpack_require__(193);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VSelect/VSelect.sass
-var VSelect = __webpack_require__(226);
+var VSelect = __webpack_require__(225);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VChip/index.js + 1 modules
 var VChip = __webpack_require__(217);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VMenu/VMenu.sass
-var VMenu = __webpack_require__(234);
+var VMenu = __webpack_require__(233);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VThemeProvider/VThemeProvider.js
 var VThemeProvider = __webpack_require__(174);
@@ -3367,7 +3367,7 @@ const VMenu_baseMixins = Object(mixins["a" /* default */])(dependent["a" /* defa
 
 /* harmony default export */ var components_VMenu = (VMenu_VMenu);
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VCheckbox/VSimpleCheckbox.js
-var VSimpleCheckbox = __webpack_require__(211);
+var VSimpleCheckbox = __webpack_require__(210);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VDivider/index.js
 var VDivider = __webpack_require__(223);
@@ -4500,7 +4500,7 @@ const VSelect_baseMixins = Object(mixins["a" /* default */])(VTextField_VTextFie
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _VDivider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(212);
+/* harmony import */ var _VDivider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(211);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (_VDivider__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"]);
@@ -4518,13 +4518,13 @@ const VSelect_baseMixins = Object(mixins["a" /* default */])(VTextField_VTextFie
 
 /***/ }),
 
-/***/ 226:
+/***/ 225:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(227);
+var content = __webpack_require__(226);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -4532,7 +4532,7 @@ __webpack_require__(6).default("3f1da7f4", content, true)
 
 /***/ }),
 
-/***/ 227:
+/***/ 226:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -4546,13 +4546,13 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 228:
+/***/ 227:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(229);
+var content = __webpack_require__(228);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -4560,7 +4560,7 @@ __webpack_require__(6).default("5c37caa6", content, true)
 
 /***/ }),
 
-/***/ 229:
+/***/ 228:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -4574,13 +4574,13 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 230:
+/***/ 229:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(231);
+var content = __webpack_require__(230);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -4588,7 +4588,7 @@ __webpack_require__(6).default("e8b41e5e", content, true)
 
 /***/ }),
 
-/***/ 231:
+/***/ 230:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -4602,13 +4602,13 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 232:
+/***/ 231:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(233);
+var content = __webpack_require__(232);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -4616,7 +4616,7 @@ __webpack_require__(6).default("197fcea4", content, true)
 
 /***/ }),
 
-/***/ 233:
+/***/ 232:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -4630,13 +4630,13 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 234:
+/***/ 233:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(235);
+var content = __webpack_require__(234);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -4644,7 +4644,7 @@ __webpack_require__(6).default("1f651591", content, true)
 
 /***/ }),
 
-/***/ 235:
+/***/ 234:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -4783,7 +4783,7 @@ if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
 var add = __webpack_require__(6).default
 module.exports.__inject__ = function (context) {
-  add("a0cb8d24", content, true, context)
+  add("0bf63326", content, true, context)
 };
 
 /***/ }),
@@ -4801,7 +4801,7 @@ if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
 var add = __webpack_require__(6).default
 module.exports.__inject__ = function (context) {
-  add("140ef9e2", content, true, context)
+  add("e49ba2d0", content, true, context)
 };
 
 /***/ }),
@@ -4839,9 +4839,9 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TableSchedule_vue_vue_type_style_index_0_id_49b4e4f8_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(258);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TableSchedule_vue_vue_type_style_index_0_id_49b4e4f8_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TableSchedule_vue_vue_type_style_index_0_id_49b4e4f8_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TableSchedule_vue_vue_type_style_index_0_id_49b4e4f8_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TableSchedule_vue_vue_type_style_index_0_id_49b4e4f8_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TableSchedule_vue_vue_type_style_index_0_id_7b6f4d38_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(258);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TableSchedule_vue_vue_type_style_index_0_id_7b6f4d38_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TableSchedule_vue_vue_type_style_index_0_id_7b6f4d38_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TableSchedule_vue_vue_type_style_index_0_id_7b6f4d38_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TableSchedule_vue_vue_type_style_index_0_id_7b6f4d38_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
@@ -4853,7 +4853,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(5);
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".card-border[data-v-49b4e4f8]{border-radius:8px}.card-color[data-v-49b4e4f8]{border-radius:8px!important}.v-data-table[data-v-49b4e4f8]{background:#f0f4e6}.hr[data-v-49b4e4f8]{margin:0 20px;border-top:1px solid #bdc7c7}.card-subtitle[data-v-49b4e4f8]{padding-left:20px}.flex-card[data-v-49b4e4f8]{display:flex;padding:12px 0 0 10px}.v-card__subtitle[data-v-49b4e4f8]{padding:12px}.no-padding[data-v-49b4e4f8]{padding-bottom:5px}.layer2[data-v-49b4e4f8]{position:fixed;width:100vw;height:100vh;background:#000;opacity:.6;z-index:999;top:0;left:0}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, ".card-border[data-v-7b6f4d38]{border-radius:8px}.card-color[data-v-7b6f4d38]{border-radius:8px!important}.v-data-table[data-v-7b6f4d38]{background:#f0f4e6}.hr[data-v-7b6f4d38]{margin:0 20px;border-top:1px solid #bdc7c7}.card-subtitle[data-v-7b6f4d38]{padding-left:20px}.flex-card[data-v-7b6f4d38]{display:flex;padding:12px 0 0 10px}.v-card__subtitle[data-v-7b6f4d38]{padding:12px}.no-padding[data-v-7b6f4d38]{padding-bottom:5px}.layer2[data-v-7b6f4d38]{position:fixed;width:100vw;height:100vh;background:#000;opacity:.6;z-index:999;top:0;left:0}", ""]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -4865,9 +4865,9 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TableScheduleNutrient_vue_vue_type_style_index_0_id_7779c912_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(259);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TableScheduleNutrient_vue_vue_type_style_index_0_id_7779c912_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TableScheduleNutrient_vue_vue_type_style_index_0_id_7779c912_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TableScheduleNutrient_vue_vue_type_style_index_0_id_7779c912_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TableScheduleNutrient_vue_vue_type_style_index_0_id_7779c912_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TableScheduleNutrient_vue_vue_type_style_index_0_id_0f2b85dc_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(259);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TableScheduleNutrient_vue_vue_type_style_index_0_id_0f2b85dc_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TableScheduleNutrient_vue_vue_type_style_index_0_id_0f2b85dc_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TableScheduleNutrient_vue_vue_type_style_index_0_id_0f2b85dc_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TableScheduleNutrient_vue_vue_type_style_index_0_id_0f2b85dc_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
@@ -4879,7 +4879,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(5);
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".card-border[data-v-7779c912]{border-radius:8px}.card-color[data-v-7779c912]{border-radius:8px!important}.v-data-table[data-v-7779c912]{background:#f0f4e6}.hr[data-v-7779c912]{margin:0 20px;border-top:1px solid #bdc7c7}.card-subtitle[data-v-7779c912]{padding-left:20px}.flex-card[data-v-7779c912]{display:flex;padding:12px 0 0 10px}.v-card__subtitle[data-v-7779c912]{padding:12px}.no-padding[data-v-7779c912]{padding-bottom:5px}.layer2[data-v-7779c912]{position:fixed;width:100vw;height:100vh;background:#000;opacity:.6;z-index:999;top:0;left:0}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, ".card-border[data-v-0f2b85dc]{border-radius:8px}.card-color[data-v-0f2b85dc]{border-radius:8px!important}.v-data-table[data-v-0f2b85dc]{background:#f0f4e6}.hr[data-v-0f2b85dc]{margin:0 20px;border-top:1px solid #bdc7c7}.card-subtitle[data-v-0f2b85dc]{padding-left:20px}.flex-card[data-v-0f2b85dc]{display:flex;padding:12px 0 0 10px}.v-card__subtitle[data-v-0f2b85dc]{padding:12px}.no-padding[data-v-0f2b85dc]{padding-bottom:5px}.layer2[data-v-0f2b85dc]{position:fixed;width:100vw;height:100vh;background:#000;opacity:.6;z-index:999;top:0;left:0}", ""]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -5020,7 +5020,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "b3a2b110"
+  "21729938"
   
 )
 
@@ -5170,7 +5170,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "39d34087"
+  "3a561247"
   
 )
 
@@ -5192,19 +5192,17 @@ installComponents_default()(component, {VCol: VCol["a" /* default */],VRow: VRow
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Schedule/TableSchedule.vue?vue&type=template&id=49b4e4f8&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('v-card',{staticClass:"elevation-12 card-border card-color"},[_c('v-card-title',{staticClass:"color no-padding"},[_vm._v(_vm._s(_vm.description))]),_vm._v(" "),_c('v-data-table',{staticClass:"icon2",attrs:{"single-select":_vm.singleSelect,"headers":_vm.headers,"items":_vm.allDate,"items-per-page":5,"item-key":"date","show-select":"","footer-props":{ itemsPerPageText: '' }},scopedSlots:_vm._u([(_vm.selected.length > 0)?{key:"footer",fn:function(){return [_c('v-btn',{staticClass:"error logout-btn mt-2 ml-5",on:{"click":_vm.handleClick}},[_vm._v("Delete")])]},proxy:true}:null],null,true),model:{value:(_vm.selected),callback:function ($$v) {_vm.selected=$$v},expression:"selected"}})],1),_vm._ssrNode(" "),_c('v-dialog',{attrs:{"persistent":"","max-width":"290"},model:{value:(_vm.box),callback:function ($$v) {_vm.box=$$v},expression:"box"}},[_c('v-card',[_c('v-card-title',[_vm._v("\n        Action\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("Are you sure you want to delete the schedule set on selected\n        date?")]),_vm._v(" "),_c('v-card-actions',[_c('v-spacer'),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.deleteSchedule}},[_vm._v("Delete")]),_vm._v(" "),_c('v-btn',{staticClass:"success logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1)],1)],1)],2)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Schedule/TableSchedule.vue?vue&type=template&id=7b6f4d38&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('v-card',{staticClass:"elevation-12 card-border card-color"},[_c('v-card-title',{staticClass:"color no-padding"},[_vm._v(_vm._s(_vm.description))]),_vm._v(" "),_c('v-data-table',{staticClass:"icon2",attrs:{"single-select":_vm.singleSelect,"headers":_vm.headers,"items":_vm.allDate,"items-per-page":5,"item-key":"date","show-select":"","footer-props":{ itemsPerPageText: '' }},scopedSlots:_vm._u([(_vm.selected.length > 0)?{key:"footer",fn:function(){return [_c('v-btn',{staticClass:"error logout-btn mt-2 ml-5",on:{"click":_vm.handleClick}},[_vm._v("Delete")])]},proxy:true}:null],null,true),model:{value:(_vm.selected),callback:function ($$v) {_vm.selected=$$v},expression:"selected"}})],1),_vm._ssrNode(" "),_c('v-dialog',{attrs:{"persistent":"","max-width":"290"},model:{value:(_vm.box),callback:function ($$v) {_vm.box=$$v},expression:"box"}},[_c('v-card',[_c('v-card-title',[_vm._v(" Action ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("Are you sure you want to delete the schedule set on selected\n        date?")]),_vm._v(" "),_c('v-card-actions',[_c('v-spacer'),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.deleteSchedule}},[_vm._v("Delete")]),_vm._v(" "),_c('v-btn',{staticClass:"success logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1)],1)],1)],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/Schedule/TableSchedule.vue?vue&type=template&id=49b4e4f8&scoped=true&
+// CONCATENATED MODULE: ./components/Schedule/TableSchedule.vue?vue&type=template&id=7b6f4d38&scoped=true&
 
 // EXTERNAL MODULE: external "vuex"
 var external_vuex_ = __webpack_require__(12);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Schedule/TableSchedule.vue?vue&type=script&lang=js&
-//
-//
 //
 //
 //
@@ -5411,8 +5409,8 @@ var component = Object(componentNormalizer["a" /* default */])(
   staticRenderFns,
   false,
   injectStyles,
-  "49b4e4f8",
-  "2a67b93b"
+  "7b6f4d38",
+  "6ed6410a"
   
 )
 
@@ -5440,12 +5438,12 @@ installComponents_default()(component, {VBtn: VBtn["a" /* default */],VCard: VCa
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Schedule/TableScheduleNutrient.vue?vue&type=template&id=7779c912&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('v-card',{staticClass:"elevation-12 card-border card-color"},[_c('v-card-title',{staticClass:"color no-padding"},[_vm._v(_vm._s(_vm.description))]),_vm._v(" "),_c('v-data-table',{staticClass:"icon2",attrs:{"single-select":_vm.singleSelect,"headers":_vm.headers,"items":_vm.allDate,"items-per-page":5,"item-key":"date","show-select":"","footer-props":{ itemsPerPageText: '' }},scopedSlots:_vm._u([(_vm.selected.length > 0)?{key:"footer",fn:function(){return [_c('v-btn',{staticClass:"error logout-btn mt-2 ml-5",on:{"click":_vm.handleClick}},[_vm._v("Delete")])]},proxy:true}:null],null,true),model:{value:(_vm.selected),callback:function ($$v) {_vm.selected=$$v},expression:"selected"}})],1),_vm._ssrNode(" "),_c('v-dialog',{attrs:{"persistent":"","max-width":"290"},model:{value:(_vm.box),callback:function ($$v) {_vm.box=$$v},expression:"box"}},[_c('v-card',[_c('v-card-title',[_vm._v("\n        Action\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("Are you sure you want to delete the schedule set on selected\n        date?")]),_vm._v(" "),_c('v-card-actions',[_c('v-spacer'),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.deleteSchedule}},[_vm._v("Delete")]),_vm._v(" "),_c('v-btn',{staticClass:"success logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1)],1)],1)],2)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Schedule/TableScheduleNutrient.vue?vue&type=template&id=0f2b85dc&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('v-card',{staticClass:"elevation-12 card-border card-color"},[_c('v-card-title',{staticClass:"color no-padding"},[_vm._v(_vm._s(_vm.description))]),_vm._v(" "),_c('v-data-table',{staticClass:"icon2",attrs:{"single-select":_vm.singleSelect,"headers":_vm.headers,"items":_vm.allDate,"items-per-page":5,"item-key":"date","show-select":"","footer-props":{ itemsPerPageText: '' }},scopedSlots:_vm._u([(_vm.selected.length > 0)?{key:"footer",fn:function(){return [_c('v-btn',{staticClass:"error logout-btn mt-2 ml-5",on:{"click":_vm.handleClick}},[_vm._v("Delete")])]},proxy:true}:null],null,true),model:{value:(_vm.selected),callback:function ($$v) {_vm.selected=$$v},expression:"selected"}})],1),_vm._ssrNode(" "),_c('v-dialog',{attrs:{"persistent":"","max-width":"290"},model:{value:(_vm.box),callback:function ($$v) {_vm.box=$$v},expression:"box"}},[_c('v-card',[_c('v-card-title',[_vm._v(" Action ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("Are you sure you want to delete the schedule set on selected\n        date?")]),_vm._v(" "),_c('v-card-actions',[_c('v-spacer'),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.deleteSchedule}},[_vm._v("Delete")]),_vm._v(" "),_c('v-btn',{staticClass:"success logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1)],1)],1)],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/Schedule/TableScheduleNutrient.vue?vue&type=template&id=7779c912&scoped=true&
+// CONCATENATED MODULE: ./components/Schedule/TableScheduleNutrient.vue?vue&type=template&id=0f2b85dc&scoped=true&
 
 // EXTERNAL MODULE: ./components/Duration.vue + 4 modules
 var Duration = __webpack_require__(192);
@@ -5454,8 +5452,6 @@ var Duration = __webpack_require__(192);
 var external_vuex_ = __webpack_require__(12);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Schedule/TableScheduleNutrient.vue?vue&type=script&lang=js&
-//
-//
 //
 //
 //
@@ -5650,8 +5646,8 @@ var component = Object(componentNormalizer["a" /* default */])(
   staticRenderFns,
   false,
   injectStyles,
-  "7779c912",
-  "b778a27c"
+  "0f2b85dc",
+  "01f2d5fc"
   
 )
 
@@ -6121,7 +6117,7 @@ var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
 var VDataFooter = __webpack_require__(248);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VSelect/VSelect.js + 6 modules
-var VSelect = __webpack_require__(222);
+var VSelect = __webpack_require__(220);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VIcon/index.js
 var VIcon = __webpack_require__(22);
@@ -6694,7 +6690,7 @@ var VDataTableHeader = __webpack_require__(250);
 var VChip = __webpack_require__(217);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VCheckbox/VSimpleCheckbox.js
-var VSimpleCheckbox = __webpack_require__(211);
+var VSimpleCheckbox = __webpack_require__(210);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/directives/ripple/index.js
 var ripple = __webpack_require__(23);
@@ -8337,12 +8333,12 @@ module.exports = ___CSS_LOADER_EXPORT___;
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/scheduleTkpmPagoh.vue?vue&type=template&id=71237bdc&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',[_c('PageTitle',{attrs:{"title":"SCHEDULE"}}),_vm._ssrNode(" "),_c('v-card',{staticClass:"mb-10"},[_c('v-card-title',[_vm._v("\n      Set schedule for nutrient preparation\n    ")]),_vm._v(" "),_c('v-row',{staticStyle:{"display":"flex","justify-content":"center","align-items":"center"}},[_c('v-col',{staticClass:"pl-8 col-md-4 mb-5",staticStyle:{"display":"flex","flex-direction":"column","justify-content":"center","align-items":"center"},attrs:{"cols":"12"}},[_c('div',[_c('h4',[_vm._v("Select Date")]),_vm._v(" "),_c('h5',[_vm._v("Can be a day or range of days")]),_vm._v(" "),_c('vc-date-picker',{attrs:{"min-date":_vm.today,"disabled-dates":_vm.disabledNutrient,"is-range":""},model:{value:(_vm.rangeNutrient),callback:function ($$v) {_vm.rangeNutrient=$$v},expression:"rangeNutrient"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"mx-auto col-md-8",attrs:{"cols":"12"}},[_c('v-row',[_c('v-col',{staticClass:"ml-10 ml-lg-0 col-lg-11",attrs:{"cols":"10"}},[_c('v-row',[_c('v-col',[_c('div',[_c('h4',{staticStyle:{"text-align":"justify","text-justify":"inter-word"}},[_vm._v("\n                    Default time for nutrient preparation process on selected\n                    date is on 5am. Please select date and EC value ( eg: 1.00\n                    ) for dosing process.\n                  ")])])])],1),_vm._v(" "),_c('v-row',[_c('v-col',{staticClass:"userInputNutriet",attrs:{"cols":"12"}},[_c('div',{staticStyle:{"display":"flex","justify-content":"center"}},[_c('input',{directives:[{name:"mask",rawName:"v-mask",value:('#.##'),expression:"'#.##'"},{name:"model",rawName:"v-model.number",value:(_vm.durationNutrient),expression:"durationNutrient",modifiers:{"number":true}}],staticClass:"long2",attrs:{"type":"text"},domProps:{"value":(_vm.durationNutrient)},on:{"input":function($event){if($event.target.composing){ return; }_vm.durationNutrient=_vm._n($event.target.value)},"blur":function($event){return _vm.$forceUpdate()}}})]),_vm._v(" "),_c('div',{staticStyle:{"display":"flex","justify-content":"center"}},[_c('v-btn',{staticClass:"mt-5",on:{"click":_vm.checkScheduleNutrient}},[_vm._v("\n                    SET SCHEDULE\n                  ")])],1)])],1)],1),_vm._v(" "),_c('v-col',{staticClass:"px-10",attrs:{"cols":"12"}},[_c('TableScheduleNutrient',{attrs:{"allDate":_vm.detailNutrient,"description":"Nutrient preparation schedule"}})],1)],1)],1)],1)],1),_vm._ssrNode(" "),_c('v-card',[_c('v-card-title',[_vm._v("\n      Set schedule for fertigation\n    ")]),_vm._v(" "),_c('v-row',[_c('v-col',{staticClass:"pl-8 col-lg-3",staticStyle:{"display":"flex","flex-direction":"column","justify-content":"center","align-items":"center"},attrs:{"cols":"12"}},[_c('div',[_c('h4',[_vm._v("Select Date")]),_vm._v(" "),_c('h5',[_vm._v("Can be a day or range of days")]),_vm._v(" "),_c('span',[_c('vc-date-picker',{attrs:{"min-date":_vm.today,"disabled-dates":_vm.disabled,"is-range":""},model:{value:(_vm.range),callback:function ($$v) {_vm.range=$$v},expression:"range"}})],1)]),_vm._v(" "),_c('div',[_c('v-btn',{staticClass:"mt-5",on:{"click":_vm.checkSchedule}},[_vm._v("\n            SET SCHEDULE\n          ")])],1)]),_vm._v(" "),_c('v-col',{staticClass:"mx-auto col-lg-9",attrs:{"cols":"12"}},[_c('v-row',[_c('v-col',{staticClass:"ml-10 ml-lg-0"},[_c('h4',[_vm._v("\n              Please fill first option first, then fill other options if\n              needed.\n            ")])])],1),_vm._v(" "),(_vm.$vuetify.breakpoint.smAndUp)?_c('v-row',[_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("1)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue1),callback:function ($$v) {_vm.yourStringTimeValue1=$$v},expression:"yourStringTimeValue1"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block1),callback:function ($$v) {_vm.block1=$$v},expression:"block1"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration1),callback:function ($$v) {_vm.duration1=_vm._n($$v)},expression:"duration1"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance1),callback:function ($$v) {_vm.substance1=$$v},expression:"substance1"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("2)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue2),callback:function ($$v) {_vm.yourStringTimeValue2=$$v},expression:"yourStringTimeValue2"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block2),callback:function ($$v) {_vm.block2=$$v},expression:"block2"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration2),callback:function ($$v) {_vm.duration2=_vm._n($$v)},expression:"duration2"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance2),callback:function ($$v) {_vm.substance2=$$v},expression:"substance2"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("3)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue3),callback:function ($$v) {_vm.yourStringTimeValue3=$$v},expression:"yourStringTimeValue3"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block3),callback:function ($$v) {_vm.block3=$$v},expression:"block3"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration3),callback:function ($$v) {_vm.duration3=_vm._n($$v)},expression:"duration3"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance3),callback:function ($$v) {_vm.substance3=$$v},expression:"substance3"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("4)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue4),callback:function ($$v) {_vm.yourStringTimeValue4=$$v},expression:"yourStringTimeValue4"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block4),callback:function ($$v) {_vm.block4=$$v},expression:"block4"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration4),callback:function ($$v) {_vm.duration4=_vm._n($$v)},expression:"duration4"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance4),callback:function ($$v) {_vm.substance4=$$v},expression:"substance4"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("5)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue5),callback:function ($$v) {_vm.yourStringTimeValue5=$$v},expression:"yourStringTimeValue5"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block5),callback:function ($$v) {_vm.block5=$$v},expression:"block5"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration5),callback:function ($$v) {_vm.duration5=_vm._n($$v)},expression:"duration5"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance5),callback:function ($$v) {_vm.substance5=$$v},expression:"substance5"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("6)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue6),callback:function ($$v) {_vm.yourStringTimeValue6=$$v},expression:"yourStringTimeValue6"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block6),callback:function ($$v) {_vm.block6=$$v},expression:"block6"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration6),callback:function ($$v) {_vm.duration6=_vm._n($$v)},expression:"duration6"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance6),callback:function ($$v) {_vm.substance6=$$v},expression:"substance6"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("7)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue7),callback:function ($$v) {_vm.yourStringTimeValue7=$$v},expression:"yourStringTimeValue7"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block7),callback:function ($$v) {_vm.block7=$$v},expression:"block7"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration7),callback:function ($$v) {_vm.duration7=_vm._n($$v)},expression:"duration7"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance7),callback:function ($$v) {_vm.substance7=$$v},expression:"substance7"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("8)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue8),callback:function ($$v) {_vm.yourStringTimeValue8=$$v},expression:"yourStringTimeValue8"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block8),callback:function ($$v) {_vm.block8=$$v},expression:"block8"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration8),callback:function ($$v) {_vm.duration8=_vm._n($$v)},expression:"duration8"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance8),callback:function ($$v) {_vm.substance8=$$v},expression:"substance8"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("9)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue9),callback:function ($$v) {_vm.yourStringTimeValue9=$$v},expression:"yourStringTimeValue9"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block9),callback:function ($$v) {_vm.block9=$$v},expression:"block9"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration9),callback:function ($$v) {_vm.duration9=_vm._n($$v)},expression:"duration9"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance9),callback:function ($$v) {_vm.substance9=$$v},expression:"substance9"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("10)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue10),callback:function ($$v) {_vm.yourStringTimeValue10=$$v},expression:"yourStringTimeValue10"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block10),callback:function ($$v) {_vm.block10=$$v},expression:"block10"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration10),callback:function ($$v) {_vm.duration10=_vm._n($$v)},expression:"duration10"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance10),callback:function ($$v) {_vm.substance10=$$v},expression:"substance10"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("11)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue11),callback:function ($$v) {_vm.yourStringTimeValue11=$$v},expression:"yourStringTimeValue11"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block11),callback:function ($$v) {_vm.block11=$$v},expression:"block11"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration11),callback:function ($$v) {_vm.duration11=_vm._n($$v)},expression:"duration11"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance11),callback:function ($$v) {_vm.substance11=$$v},expression:"substance11"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("12)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue12),callback:function ($$v) {_vm.yourStringTimeValue12=$$v},expression:"yourStringTimeValue12"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block12),callback:function ($$v) {_vm.block12=$$v},expression:"block12"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration12),callback:function ($$v) {_vm.duration12=_vm._n($$v)},expression:"duration12"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance12),callback:function ($$v) {_vm.substance12=$$v},expression:"substance12"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("13)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue13),callback:function ($$v) {_vm.yourStringTimeValue13=$$v},expression:"yourStringTimeValue13"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block13),callback:function ($$v) {_vm.block13=$$v},expression:"block13"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration13),callback:function ($$v) {_vm.duration13=_vm._n($$v)},expression:"duration13"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance13),callback:function ($$v) {_vm.substance13=$$v},expression:"substance13"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("14)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue14),callback:function ($$v) {_vm.yourStringTimeValue14=$$v},expression:"yourStringTimeValue14"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block14),callback:function ($$v) {_vm.block14=$$v},expression:"block14"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration14),callback:function ($$v) {_vm.duration14=_vm._n($$v)},expression:"duration14"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance14),callback:function ($$v) {_vm.substance14=$$v},expression:"substance14"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("15)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue15),callback:function ($$v) {_vm.yourStringTimeValue15=$$v},expression:"yourStringTimeValue15"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block15),callback:function ($$v) {_vm.block15=$$v},expression:"block15"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration15),callback:function ($$v) {_vm.duration15=_vm._n($$v)},expression:"duration15"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance15),callback:function ($$v) {_vm.substance15=$$v},expression:"substance15"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("16)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue16),callback:function ($$v) {_vm.yourStringTimeValue16=$$v},expression:"yourStringTimeValue16"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block16),callback:function ($$v) {_vm.block16=$$v},expression:"block16"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration16),callback:function ($$v) {_vm.duration16=_vm._n($$v)},expression:"duration16"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance16),callback:function ($$v) {_vm.substance16=$$v},expression:"substance16"}})],1)])],1):_c('v-row',[_c('v-expansion-panels',{staticClass:"mx-5"},[_c('v-expansion-panel',[_c('v-expansion-panel-header',[_vm._v("\n                List 1 - 10\n              ")]),_vm._v(" "),_c('v-expansion-panel-content',[_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#f7f7f7"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue1),callback:function ($$v) {_vm.yourStringTimeValue1=$$v},expression:"yourStringTimeValue1"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block1),callback:function ($$v) {_vm.block1=$$v},expression:"block1"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration1),callback:function ($$v) {_vm.duration1=_vm._n($$v)},expression:"duration1"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance1),callback:function ($$v) {_vm.substance1=$$v},expression:"substance1"}})],1)])],1),_vm._v(" "),_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#ffffff"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue2),callback:function ($$v) {_vm.yourStringTimeValue2=$$v},expression:"yourStringTimeValue2"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block2),callback:function ($$v) {_vm.block2=$$v},expression:"block2"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration2),callback:function ($$v) {_vm.duration2=_vm._n($$v)},expression:"duration2"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance2),callback:function ($$v) {_vm.substance2=$$v},expression:"substance2"}})],1)])],1),_vm._v(" "),_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#f7f7f7"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue3),callback:function ($$v) {_vm.yourStringTimeValue3=$$v},expression:"yourStringTimeValue3"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block3),callback:function ($$v) {_vm.block3=$$v},expression:"block3"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration3),callback:function ($$v) {_vm.duration3=_vm._n($$v)},expression:"duration3"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance3),callback:function ($$v) {_vm.substance3=$$v},expression:"substance3"}})],1)])],1),_vm._v(" "),_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#ffffff"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue4),callback:function ($$v) {_vm.yourStringTimeValue4=$$v},expression:"yourStringTimeValue4"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block4),callback:function ($$v) {_vm.block4=$$v},expression:"block4"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration4),callback:function ($$v) {_vm.duration4=_vm._n($$v)},expression:"duration4"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance4),callback:function ($$v) {_vm.substance4=$$v},expression:"substance4"}})],1)])],1),_vm._v(" "),_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#f7f7f7"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue5),callback:function ($$v) {_vm.yourStringTimeValue5=$$v},expression:"yourStringTimeValue5"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block5),callback:function ($$v) {_vm.block5=$$v},expression:"block5"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration5),callback:function ($$v) {_vm.duration5=_vm._n($$v)},expression:"duration5"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance5),callback:function ($$v) {_vm.substance5=$$v},expression:"substance5"}})],1)])],1),_vm._v(" "),_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#ffffff"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue6),callback:function ($$v) {_vm.yourStringTimeValue6=$$v},expression:"yourStringTimeValue6"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block6),callback:function ($$v) {_vm.block6=$$v},expression:"block6"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration6),callback:function ($$v) {_vm.duration6=_vm._n($$v)},expression:"duration6"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance6),callback:function ($$v) {_vm.substance6=$$v},expression:"substance6"}})],1)])],1),_vm._v(" "),_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#f7f7f7"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue7),callback:function ($$v) {_vm.yourStringTimeValue7=$$v},expression:"yourStringTimeValue7"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block7),callback:function ($$v) {_vm.block7=$$v},expression:"block7"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration7),callback:function ($$v) {_vm.duration7=_vm._n($$v)},expression:"duration7"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance7),callback:function ($$v) {_vm.substance7=$$v},expression:"substance7"}})],1)])],1),_vm._v(" "),_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#ffffff"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue8),callback:function ($$v) {_vm.yourStringTimeValue8=$$v},expression:"yourStringTimeValue8"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block8),callback:function ($$v) {_vm.block8=$$v},expression:"block8"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration8),callback:function ($$v) {_vm.duration8=_vm._n($$v)},expression:"duration8"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance8),callback:function ($$v) {_vm.substance8=$$v},expression:"substance8"}})],1)])],1),_vm._v(" "),_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#f7f7f7"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue9),callback:function ($$v) {_vm.yourStringTimeValue9=$$v},expression:"yourStringTimeValue9"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block9),callback:function ($$v) {_vm.block9=$$v},expression:"block9"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration9),callback:function ($$v) {_vm.duration9=_vm._n($$v)},expression:"duration9"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance9),callback:function ($$v) {_vm.substance9=$$v},expression:"substance9"}})],1)])],1),_vm._v(" "),_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#ffffff"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue10),callback:function ($$v) {_vm.yourStringTimeValue10=$$v},expression:"yourStringTimeValue10"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block10),callback:function ($$v) {_vm.block10=$$v},expression:"block10"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration10),callback:function ($$v) {_vm.duration10=_vm._n($$v)},expression:"duration10"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance10),callback:function ($$v) {_vm.substance10=$$v},expression:"substance10"}})],1)])],1)])],1)],1),_vm._v(" "),_c('v-expansion-panels',{staticClass:"mx-5"},[_c('v-expansion-panel',[_c('v-expansion-panel-header',[_vm._v("\n                List 11 - 16\n              ")]),_vm._v(" "),_c('v-expansion-panel-content',[_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#f7f7f7"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue11),callback:function ($$v) {_vm.yourStringTimeValue11=$$v},expression:"yourStringTimeValue11"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block11),callback:function ($$v) {_vm.block11=$$v},expression:"block11"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration11),callback:function ($$v) {_vm.duration11=_vm._n($$v)},expression:"duration11"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance11),callback:function ($$v) {_vm.substance11=$$v},expression:"substance11"}})],1)])],1),_vm._v(" "),_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#ffffff"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue12),callback:function ($$v) {_vm.yourStringTimeValue12=$$v},expression:"yourStringTimeValue12"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block12),callback:function ($$v) {_vm.block12=$$v},expression:"block12"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration12),callback:function ($$v) {_vm.duration12=_vm._n($$v)},expression:"duration12"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance12),callback:function ($$v) {_vm.substance12=$$v},expression:"substance12"}})],1)])],1),_vm._v(" "),_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#f7f7f7"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue13),callback:function ($$v) {_vm.yourStringTimeValue13=$$v},expression:"yourStringTimeValue13"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block13),callback:function ($$v) {_vm.block13=$$v},expression:"block13"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration13),callback:function ($$v) {_vm.duration13=_vm._n($$v)},expression:"duration13"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance13),callback:function ($$v) {_vm.substance13=$$v},expression:"substance13"}})],1)])],1),_vm._v(" "),_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#ffffff"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue14),callback:function ($$v) {_vm.yourStringTimeValue14=$$v},expression:"yourStringTimeValue14"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block14),callback:function ($$v) {_vm.block14=$$v},expression:"block14"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration14),callback:function ($$v) {_vm.duration14=_vm._n($$v)},expression:"duration14"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance14),callback:function ($$v) {_vm.substance14=$$v},expression:"substance14"}})],1)])],1),_vm._v(" "),_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#f7f7f7"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue15),callback:function ($$v) {_vm.yourStringTimeValue15=$$v},expression:"yourStringTimeValue15"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block15),callback:function ($$v) {_vm.block15=$$v},expression:"block15"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration15),callback:function ($$v) {_vm.duration15=_vm._n($$v)},expression:"duration15"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance15),callback:function ($$v) {_vm.substance15=$$v},expression:"substance15"}})],1)])],1),_vm._v(" "),_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#ffffff"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue16),callback:function ($$v) {_vm.yourStringTimeValue16=$$v},expression:"yourStringTimeValue16"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block16),callback:function ($$v) {_vm.block16=$$v},expression:"block16"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration16),callback:function ($$v) {_vm.duration16=_vm._n($$v)},expression:"duration16"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance16),callback:function ($$v) {_vm.substance16=$$v},expression:"substance16"}})],1)])],1)])],1)],1)],1)],1)],1),_vm._v(" "),_c('v-row',[_c('v-col',[_c('TableSchedule',{staticClass:"mx-10 mb-5",attrs:{"allDate":_vm.detail,"description":"Fertigation / Irrigation schedule"}})],1)],1)],1),_vm._ssrNode(" "),_c('v-dialog',{attrs:{"persistent":"","max-width":"290"},model:{value:(_vm.dialog),callback:function ($$v) {_vm.dialog=$$v},expression:"dialog"}},[_c('v-card',[_c('v-card-title',[_vm._v("\n        Status\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v(_vm._s(_vm.message))]),_vm._v(" "),_c('v-card-actions',[_c('v-spacer'),_vm._v(" "),(_vm.message == 'Success')?_c('v-btn',{staticClass:"success",attrs:{"text":""},on:{"click":_vm.reloadPage}},[_vm._v("\n          Okay\n        ")]):_vm._e(),_vm._v(" "),(_vm.message != 'Success')?_c('v-btn',{staticClass:"success",attrs:{"text":""},on:{"click":function($event){_vm.dialog = false}}},[_vm._v("\n          Okay\n        ")]):_vm._e()],1)],1)],1),_vm._ssrNode(" "),_c('v-dialog',{attrs:{"persistent":"","max-width":"490"},model:{value:(_vm.dialogPost),callback:function ($$v) {_vm.dialogPost=$$v},expression:"dialogPost"}},[_c('v-card',[_c('v-card-title',[_vm._v("\n        Action\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("Are you confirm to set schedule as below?")]),_vm._v(" "),_c('v-card-subtitle',[_vm._v(_vm._s(_vm.dateStart)+" -\n        "+_vm._s(_vm.dateEnd)+"\n      ")]),_vm._v(" "),_vm._l((_vm.allTime),function(time,index){return _c('v-card-subtitle',{key:index},[_vm._v("("+_vm._s(index + 1)+") Time : "+_vm._s(_vm.allTime[index])+", Block :\n        "+_vm._s(_vm.allBlock[index])+", Duration : "+_vm._s(_vm.allDuration[index])+", Substance\n        :\n        "+_vm._s(_vm.allSubstance[index])+"\n      ")])}),_vm._v(" "),_c('v-card-actions',[_c('v-spacer'),_vm._v(" "),_c('v-btn',{staticClass:"success",attrs:{"text":""},on:{"click":_vm.sendSchedule}},[_vm._v("\n          Confirm\n        ")]),_vm._v(" "),_c('v-btn',{staticClass:"error",attrs:{"text":""},on:{"click":function($event){_vm.dialogPost = false}}},[_vm._v("\n          Cancel\n        ")])],1)],2)],1),_vm._ssrNode(" "),_c('v-dialog',{attrs:{"persistent":"","max-width":"290"},model:{value:(_vm.dialogNutrient),callback:function ($$v) {_vm.dialogNutrient=$$v},expression:"dialogNutrient"}},[_c('v-card',[_c('v-card-title',[_vm._v("\n        Status\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v(_vm._s(_vm.messageNutrient))]),_vm._v(" "),_c('v-card-subtitle'),_vm._v(" "),_c('v-card-actions',[_c('v-spacer'),_vm._v(" "),(_vm.messageNutrient == 'Success')?_c('v-btn',{staticClass:"success",attrs:{"text":""},on:{"click":_vm.reloadPage}},[_vm._v("\n          Okay\n        ")]):_vm._e(),_vm._v(" "),(_vm.messageNutrient != 'Success')?_c('v-btn',{staticClass:"success",attrs:{"text":""},on:{"click":function($event){_vm.dialog = false}}},[_vm._v("\n          Okay\n        ")]):_vm._e()],1)],1)],1),_vm._ssrNode(" "),_c('v-dialog',{attrs:{"persistent":"","max-width":"490"},model:{value:(_vm.dialogPostNutrient),callback:function ($$v) {_vm.dialogPostNutrient=$$v},expression:"dialogPostNutrient"}},[_c('v-card',[_c('v-card-title',[_vm._v("\n        Action\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("Are you confirm to set schedule as below?")]),_vm._v(" "),_c('v-card-subtitle',[_vm._v(_vm._s(_vm.dateStartNutrient)+" -\n        "+_vm._s(_vm.dateEndNutrient)+"\n      ")]),_vm._v(" "),_c('v-card-subtitle',[_vm._v("Duration : "+_vm._s(_vm.durationNutrient)+" minute/s\n      ")]),_vm._v(" "),_c('v-card-actions',[_c('v-spacer'),_vm._v(" "),_c('v-btn',{staticClass:"success",attrs:{"text":""},on:{"click":_vm.sendScheduleNutrient}},[_vm._v("\n          Confirm\n        ")]),_vm._v(" "),_c('v-btn',{staticClass:"error",attrs:{"text":""},on:{"click":function($event){_vm.dialogPostNutrient = false}}},[_vm._v("\n          Cancel\n        ")])],1)],1)],1)],2)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/scheduleTkpmPagoh.vue?vue&type=template&id=5431b4af&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',[_c('PageTitle',{attrs:{"title":"SCHEDULE"}}),_vm._ssrNode(" "),_c('v-card',{staticClass:"mb-10"},[_c('v-card-title',[_vm._v(" Set schedule for nutrient preparation ")]),_vm._v(" "),_c('v-row',{staticStyle:{"display":"flex","justify-content":"center","align-items":"center"}},[_c('v-col',{staticClass:"pl-8 col-md-4 mb-5",staticStyle:{"display":"flex","flex-direction":"column","justify-content":"center","align-items":"center"},attrs:{"cols":"12"}},[_c('div',[_c('h4',[_vm._v("Select Date")]),_vm._v(" "),_c('h5',[_vm._v("Can be a day or range of days")]),_vm._v(" "),_c('vc-date-picker',{attrs:{"min-date":_vm.today,"disabled-dates":_vm.disabledNutrient,"is-range":""},model:{value:(_vm.rangeNutrient),callback:function ($$v) {_vm.rangeNutrient=$$v},expression:"rangeNutrient"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"mx-auto col-md-8",attrs:{"cols":"12"}},[_c('v-row',[_c('v-col',{staticClass:"ml-10 ml-lg-0 col-lg-11",attrs:{"cols":"10"}},[_c('v-row',[_c('v-col',[_c('div',[_c('h4',{staticStyle:{"text-align":"justify","text-justify":"inter-word"}},[_vm._v("\n                    Default time for nutrient preparation process on selected\n                    date is on 5am. Please select date and EC value ( eg: 1.00\n                    ) for dosing process.\n                  ")])])])],1),_vm._v(" "),_c('v-row',[_c('v-col',{staticClass:"userInputNutriet",attrs:{"cols":"12"}},[_c('div',{staticStyle:{"display":"flex","justify-content":"center"}},[_c('input',{directives:[{name:"mask",rawName:"v-mask",value:('#.##'),expression:"'#.##'"},{name:"model",rawName:"v-model.number",value:(_vm.durationNutrient),expression:"durationNutrient",modifiers:{"number":true}}],staticClass:"long2",attrs:{"type":"text"},domProps:{"value":(_vm.durationNutrient)},on:{"input":function($event){if($event.target.composing){ return; }_vm.durationNutrient=_vm._n($event.target.value)},"blur":function($event){return _vm.$forceUpdate()}}})]),_vm._v(" "),_c('div',{staticStyle:{"display":"flex","justify-content":"center"}},[_c('v-btn',{staticClass:"mt-5",on:{"click":_vm.checkScheduleNutrient}},[_vm._v("\n                    SET SCHEDULE\n                  ")])],1)])],1)],1),_vm._v(" "),_c('v-col',{staticClass:"px-10",attrs:{"cols":"12"}},[_c('TableScheduleNutrient',{attrs:{"allDate":_vm.detailNutrient,"description":"Nutrient preparation schedule"}})],1)],1)],1)],1)],1),_vm._ssrNode(" "),_c('v-card',[_c('v-card-title',[_vm._v(" Set schedule for fertigation ")]),_vm._v(" "),_c('v-row',[_c('v-col',{staticClass:"pl-8 col-lg-3",staticStyle:{"display":"flex","flex-direction":"column","justify-content":"center","align-items":"center"},attrs:{"cols":"12"}},[_c('div',[_c('h4',[_vm._v("Select Date")]),_vm._v(" "),_c('h5',[_vm._v("Can be a day or range of days")]),_vm._v(" "),_c('span',[_c('vc-date-picker',{attrs:{"min-date":_vm.today,"disabled-dates":_vm.disabled,"is-range":""},model:{value:(_vm.range),callback:function ($$v) {_vm.range=$$v},expression:"range"}})],1)]),_vm._v(" "),_c('div',[_c('v-btn',{staticClass:"mt-5",on:{"click":_vm.checkSchedule}},[_vm._v(" SET SCHEDULE ")])],1)]),_vm._v(" "),_c('v-col',{staticClass:"mx-auto col-lg-9",attrs:{"cols":"12"}},[_c('v-row',[_c('v-col',{staticClass:"ml-10 ml-lg-0"},[_c('h4',[_vm._v("\n              Please fill first option first, then fill other options if\n              needed.\n            ")])])],1),_vm._v(" "),(_vm.$vuetify.breakpoint.smAndUp)?_c('v-row',[_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("1)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue1),callback:function ($$v) {_vm.yourStringTimeValue1=$$v},expression:"yourStringTimeValue1"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block1),callback:function ($$v) {_vm.block1=$$v},expression:"block1"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration1),callback:function ($$v) {_vm.duration1=_vm._n($$v)},expression:"duration1"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance1),callback:function ($$v) {_vm.substance1=$$v},expression:"substance1"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("2)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue2),callback:function ($$v) {_vm.yourStringTimeValue2=$$v},expression:"yourStringTimeValue2"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block2),callback:function ($$v) {_vm.block2=$$v},expression:"block2"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration2),callback:function ($$v) {_vm.duration2=_vm._n($$v)},expression:"duration2"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance2),callback:function ($$v) {_vm.substance2=$$v},expression:"substance2"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("3)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue3),callback:function ($$v) {_vm.yourStringTimeValue3=$$v},expression:"yourStringTimeValue3"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block3),callback:function ($$v) {_vm.block3=$$v},expression:"block3"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration3),callback:function ($$v) {_vm.duration3=_vm._n($$v)},expression:"duration3"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance3),callback:function ($$v) {_vm.substance3=$$v},expression:"substance3"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("4)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue4),callback:function ($$v) {_vm.yourStringTimeValue4=$$v},expression:"yourStringTimeValue4"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block4),callback:function ($$v) {_vm.block4=$$v},expression:"block4"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration4),callback:function ($$v) {_vm.duration4=_vm._n($$v)},expression:"duration4"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance4),callback:function ($$v) {_vm.substance4=$$v},expression:"substance4"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("5)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue5),callback:function ($$v) {_vm.yourStringTimeValue5=$$v},expression:"yourStringTimeValue5"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block5),callback:function ($$v) {_vm.block5=$$v},expression:"block5"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration5),callback:function ($$v) {_vm.duration5=_vm._n($$v)},expression:"duration5"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance5),callback:function ($$v) {_vm.substance5=$$v},expression:"substance5"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("6)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue6),callback:function ($$v) {_vm.yourStringTimeValue6=$$v},expression:"yourStringTimeValue6"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block6),callback:function ($$v) {_vm.block6=$$v},expression:"block6"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration6),callback:function ($$v) {_vm.duration6=_vm._n($$v)},expression:"duration6"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance6),callback:function ($$v) {_vm.substance6=$$v},expression:"substance6"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("7)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue7),callback:function ($$v) {_vm.yourStringTimeValue7=$$v},expression:"yourStringTimeValue7"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block7),callback:function ($$v) {_vm.block7=$$v},expression:"block7"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration7),callback:function ($$v) {_vm.duration7=_vm._n($$v)},expression:"duration7"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance7),callback:function ($$v) {_vm.substance7=$$v},expression:"substance7"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("8)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue8),callback:function ($$v) {_vm.yourStringTimeValue8=$$v},expression:"yourStringTimeValue8"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block8),callback:function ($$v) {_vm.block8=$$v},expression:"block8"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration8),callback:function ($$v) {_vm.duration8=_vm._n($$v)},expression:"duration8"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance8),callback:function ($$v) {_vm.substance8=$$v},expression:"substance8"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("9)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue9),callback:function ($$v) {_vm.yourStringTimeValue9=$$v},expression:"yourStringTimeValue9"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block9),callback:function ($$v) {_vm.block9=$$v},expression:"block9"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration9),callback:function ($$v) {_vm.duration9=_vm._n($$v)},expression:"duration9"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance9),callback:function ($$v) {_vm.substance9=$$v},expression:"substance9"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("10)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue10),callback:function ($$v) {_vm.yourStringTimeValue10=$$v},expression:"yourStringTimeValue10"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block10),callback:function ($$v) {_vm.block10=$$v},expression:"block10"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration10),callback:function ($$v) {_vm.duration10=_vm._n($$v)},expression:"duration10"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance10),callback:function ($$v) {_vm.substance10=$$v},expression:"substance10"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("11)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue11),callback:function ($$v) {_vm.yourStringTimeValue11=$$v},expression:"yourStringTimeValue11"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block11),callback:function ($$v) {_vm.block11=$$v},expression:"block11"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration11),callback:function ($$v) {_vm.duration11=_vm._n($$v)},expression:"duration11"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance11),callback:function ($$v) {_vm.substance11=$$v},expression:"substance11"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("12)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue12),callback:function ($$v) {_vm.yourStringTimeValue12=$$v},expression:"yourStringTimeValue12"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block12),callback:function ($$v) {_vm.block12=$$v},expression:"block12"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration12),callback:function ($$v) {_vm.duration12=_vm._n($$v)},expression:"duration12"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance12),callback:function ($$v) {_vm.substance12=$$v},expression:"substance12"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("13)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue13),callback:function ($$v) {_vm.yourStringTimeValue13=$$v},expression:"yourStringTimeValue13"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block13),callback:function ($$v) {_vm.block13=$$v},expression:"block13"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration13),callback:function ($$v) {_vm.duration13=_vm._n($$v)},expression:"duration13"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance13),callback:function ($$v) {_vm.substance13=$$v},expression:"substance13"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("14)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue14),callback:function ($$v) {_vm.yourStringTimeValue14=$$v},expression:"yourStringTimeValue14"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block14),callback:function ($$v) {_vm.block14=$$v},expression:"block14"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration14),callback:function ($$v) {_vm.duration14=_vm._n($$v)},expression:"duration14"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance14),callback:function ($$v) {_vm.substance14=$$v},expression:"substance14"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("15)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue15),callback:function ($$v) {_vm.yourStringTimeValue15=$$v},expression:"yourStringTimeValue15"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block15),callback:function ($$v) {_vm.block15=$$v},expression:"block15"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration15),callback:function ($$v) {_vm.duration15=_vm._n($$v)},expression:"duration15"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance15),callback:function ($$v) {_vm.substance15=$$v},expression:"substance15"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",attrs:{"cols":"12"}},[_c('div',[_c('label',[_vm._v("16)")]),_vm._v(" "),_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue16),callback:function ($$v) {_vm.yourStringTimeValue16=$$v},expression:"yourStringTimeValue16"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block16),callback:function ($$v) {_vm.block16=$$v},expression:"block16"}})],1),_vm._v(" "),_c('div',{staticClass:"mx-3"},[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration16),callback:function ($$v) {_vm.duration16=_vm._n($$v)},expression:"duration16"}})],1),_vm._v(" "),_c('div',{},[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance16),callback:function ($$v) {_vm.substance16=$$v},expression:"substance16"}})],1)])],1):_c('v-row',[_c('v-expansion-panels',{staticClass:"mx-5"},[_c('v-expansion-panel',[_c('v-expansion-panel-header',[_vm._v("\n                List 1 - 10\n              ")]),_vm._v(" "),_c('v-expansion-panel-content',[_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#f7f7f7"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue1),callback:function ($$v) {_vm.yourStringTimeValue1=$$v},expression:"yourStringTimeValue1"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block1),callback:function ($$v) {_vm.block1=$$v},expression:"block1"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration1),callback:function ($$v) {_vm.duration1=_vm._n($$v)},expression:"duration1"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance1),callback:function ($$v) {_vm.substance1=$$v},expression:"substance1"}})],1)])],1),_vm._v(" "),_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#ffffff"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue2),callback:function ($$v) {_vm.yourStringTimeValue2=$$v},expression:"yourStringTimeValue2"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block2),callback:function ($$v) {_vm.block2=$$v},expression:"block2"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration2),callback:function ($$v) {_vm.duration2=_vm._n($$v)},expression:"duration2"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance2),callback:function ($$v) {_vm.substance2=$$v},expression:"substance2"}})],1)])],1),_vm._v(" "),_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#f7f7f7"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue3),callback:function ($$v) {_vm.yourStringTimeValue3=$$v},expression:"yourStringTimeValue3"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block3),callback:function ($$v) {_vm.block3=$$v},expression:"block3"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration3),callback:function ($$v) {_vm.duration3=_vm._n($$v)},expression:"duration3"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance3),callback:function ($$v) {_vm.substance3=$$v},expression:"substance3"}})],1)])],1),_vm._v(" "),_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#ffffff"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue4),callback:function ($$v) {_vm.yourStringTimeValue4=$$v},expression:"yourStringTimeValue4"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block4),callback:function ($$v) {_vm.block4=$$v},expression:"block4"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration4),callback:function ($$v) {_vm.duration4=_vm._n($$v)},expression:"duration4"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance4),callback:function ($$v) {_vm.substance4=$$v},expression:"substance4"}})],1)])],1),_vm._v(" "),_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#f7f7f7"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue5),callback:function ($$v) {_vm.yourStringTimeValue5=$$v},expression:"yourStringTimeValue5"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block5),callback:function ($$v) {_vm.block5=$$v},expression:"block5"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration5),callback:function ($$v) {_vm.duration5=_vm._n($$v)},expression:"duration5"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance5),callback:function ($$v) {_vm.substance5=$$v},expression:"substance5"}})],1)])],1),_vm._v(" "),_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#ffffff"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue6),callback:function ($$v) {_vm.yourStringTimeValue6=$$v},expression:"yourStringTimeValue6"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block6),callback:function ($$v) {_vm.block6=$$v},expression:"block6"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration6),callback:function ($$v) {_vm.duration6=_vm._n($$v)},expression:"duration6"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance6),callback:function ($$v) {_vm.substance6=$$v},expression:"substance6"}})],1)])],1),_vm._v(" "),_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#f7f7f7"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue7),callback:function ($$v) {_vm.yourStringTimeValue7=$$v},expression:"yourStringTimeValue7"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block7),callback:function ($$v) {_vm.block7=$$v},expression:"block7"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration7),callback:function ($$v) {_vm.duration7=_vm._n($$v)},expression:"duration7"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance7),callback:function ($$v) {_vm.substance7=$$v},expression:"substance7"}})],1)])],1),_vm._v(" "),_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#ffffff"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue8),callback:function ($$v) {_vm.yourStringTimeValue8=$$v},expression:"yourStringTimeValue8"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block8),callback:function ($$v) {_vm.block8=$$v},expression:"block8"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration8),callback:function ($$v) {_vm.duration8=_vm._n($$v)},expression:"duration8"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance8),callback:function ($$v) {_vm.substance8=$$v},expression:"substance8"}})],1)])],1),_vm._v(" "),_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#f7f7f7"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue9),callback:function ($$v) {_vm.yourStringTimeValue9=$$v},expression:"yourStringTimeValue9"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block9),callback:function ($$v) {_vm.block9=$$v},expression:"block9"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration9),callback:function ($$v) {_vm.duration9=_vm._n($$v)},expression:"duration9"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance9),callback:function ($$v) {_vm.substance9=$$v},expression:"substance9"}})],1)])],1),_vm._v(" "),_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#ffffff"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue10),callback:function ($$v) {_vm.yourStringTimeValue10=$$v},expression:"yourStringTimeValue10"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block10),callback:function ($$v) {_vm.block10=$$v},expression:"block10"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration10),callback:function ($$v) {_vm.duration10=_vm._n($$v)},expression:"duration10"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance10),callback:function ($$v) {_vm.substance10=$$v},expression:"substance10"}})],1)])],1)])],1)],1),_vm._v(" "),_c('v-expansion-panels',{staticClass:"mx-5"},[_c('v-expansion-panel',[_c('v-expansion-panel-header',[_vm._v("\n                List 11 - 16\n              ")]),_vm._v(" "),_c('v-expansion-panel-content',[_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#f7f7f7"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue11),callback:function ($$v) {_vm.yourStringTimeValue11=$$v},expression:"yourStringTimeValue11"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block11),callback:function ($$v) {_vm.block11=$$v},expression:"block11"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration11),callback:function ($$v) {_vm.duration11=_vm._n($$v)},expression:"duration11"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance11),callback:function ($$v) {_vm.substance11=$$v},expression:"substance11"}})],1)])],1),_vm._v(" "),_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#ffffff"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue12),callback:function ($$v) {_vm.yourStringTimeValue12=$$v},expression:"yourStringTimeValue12"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block12),callback:function ($$v) {_vm.block12=$$v},expression:"block12"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration12),callback:function ($$v) {_vm.duration12=_vm._n($$v)},expression:"duration12"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance12),callback:function ($$v) {_vm.substance12=$$v},expression:"substance12"}})],1)])],1),_vm._v(" "),_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#f7f7f7"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue13),callback:function ($$v) {_vm.yourStringTimeValue13=$$v},expression:"yourStringTimeValue13"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block13),callback:function ($$v) {_vm.block13=$$v},expression:"block13"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration13),callback:function ($$v) {_vm.duration13=_vm._n($$v)},expression:"duration13"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance13),callback:function ($$v) {_vm.substance13=$$v},expression:"substance13"}})],1)])],1),_vm._v(" "),_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#ffffff"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue14),callback:function ($$v) {_vm.yourStringTimeValue14=$$v},expression:"yourStringTimeValue14"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block14),callback:function ($$v) {_vm.block14=$$v},expression:"block14"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration14),callback:function ($$v) {_vm.duration14=_vm._n($$v)},expression:"duration14"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance14),callback:function ($$v) {_vm.substance14=$$v},expression:"substance14"}})],1)])],1),_vm._v(" "),_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#f7f7f7"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue15),callback:function ($$v) {_vm.yourStringTimeValue15=$$v},expression:"yourStringTimeValue15"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block15),callback:function ($$v) {_vm.block15=$$v},expression:"block15"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration15),callback:function ($$v) {_vm.duration15=_vm._n($$v)},expression:"duration15"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance15),callback:function ($$v) {_vm.substance15=$$v},expression:"substance15"}})],1)])],1),_vm._v(" "),_c('div',{staticClass:"mx-8 mb-3",staticStyle:{"display":"flex","flex-wrap":"wrap","background":"#ffffff"}},[_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',{staticClass:"short"},[_c('vue-timepicker',{attrs:{"format":"HH:mm","hour-range":[[7, 23]],"hide-disabled-hours":""},model:{value:(_vm.yourStringTimeValue16),callback:function ($$v) {_vm.yourStringTimeValue16=$$v},expression:"yourStringTimeValue16"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.items,"label":"Block","multiple":""},model:{value:(_vm.block16),callback:function ($$v) {_vm.block16=$$v},expression:"block16"}})],1)]),_vm._v(" "),_c('v-col',{staticClass:"userInput col-md-6",staticStyle:{"justify-content":"space-evenly"},attrs:{"cols":"12"}},[_c('div',[_c('v-text-field',{staticClass:"short",attrs:{"label":"Duration (minute)","rules":_vm.rules,"type":"number"},model:{value:(_vm.duration16),callback:function ($$v) {_vm.duration16=_vm._n($$v)},expression:"duration16"}})],1),_vm._v(" "),_c('div',[_c('v-select',{staticClass:"short",attrs:{"items":_vm.itemsSubstance,"label":"Substance"},model:{value:(_vm.substance16),callback:function ($$v) {_vm.substance16=$$v},expression:"substance16"}})],1)])],1)])],1)],1)],1)],1)],1),_vm._v(" "),_c('v-row',[_c('v-col',[_c('TableSchedule',{staticClass:"mx-10 mb-5",attrs:{"allDate":_vm.detail,"description":"Fertigation / Irrigation schedule"}})],1)],1)],1),_vm._ssrNode(" "),_c('v-dialog',{attrs:{"persistent":"","max-width":"290"},model:{value:(_vm.dialog),callback:function ($$v) {_vm.dialog=$$v},expression:"dialog"}},[_c('v-card',[_c('v-card-title',[_vm._v(" Status ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v(_vm._s(_vm.message))]),_vm._v(" "),_c('v-card-actions',[_c('v-spacer'),_vm._v(" "),(_vm.message == 'Success')?_c('v-btn',{staticClass:"success",attrs:{"text":""},on:{"click":_vm.reloadPage}},[_vm._v("\n          Okay\n        ")]):_vm._e(),_vm._v(" "),(_vm.message != 'Success')?_c('v-btn',{staticClass:"success",attrs:{"text":""},on:{"click":function($event){_vm.dialog = false}}},[_vm._v("\n          Okay\n        ")]):_vm._e()],1)],1)],1),_vm._ssrNode(" "),_c('v-dialog',{attrs:{"persistent":"","max-width":"490"},model:{value:(_vm.dialogPost),callback:function ($$v) {_vm.dialogPost=$$v},expression:"dialogPost"}},[_c('v-card',[_c('v-card-title',[_vm._v(" Action ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("Are you confirm to set schedule as below?")]),_vm._v(" "),_c('v-card-subtitle',[_vm._v(_vm._s(_vm.dateStart)+" -\n        "+_vm._s(_vm.dateEnd)+"\n      ")]),_vm._v(" "),_vm._l((_vm.allTime),function(time,index){return _c('v-card-subtitle',{key:index},[_vm._v("("+_vm._s(index + 1)+") Time : "+_vm._s(_vm.allTime[index])+", Block :\n        "+_vm._s(_vm.allBlock[index])+", Duration : "+_vm._s(_vm.allDuration[index])+", Substance\n        :\n        "+_vm._s(_vm.allSubstance[index])+"\n      ")])}),_vm._v(" "),_c('v-card-actions',[_c('v-spacer'),_vm._v(" "),_c('v-btn',{staticClass:"success",attrs:{"text":""},on:{"click":_vm.sendSchedule}},[_vm._v(" Confirm ")]),_vm._v(" "),_c('v-btn',{staticClass:"error",attrs:{"text":""},on:{"click":function($event){_vm.dialogPost = false}}},[_vm._v(" Cancel ")])],1)],2)],1),_vm._ssrNode(" "),_c('v-dialog',{attrs:{"persistent":"","max-width":"290"},model:{value:(_vm.dialogNutrient),callback:function ($$v) {_vm.dialogNutrient=$$v},expression:"dialogNutrient"}},[_c('v-card',[_c('v-card-title',[_vm._v(" Status ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v(_vm._s(_vm.messageNutrient))]),_vm._v(" "),_c('v-card-subtitle'),_vm._v(" "),_c('v-card-actions',[_c('v-spacer'),_vm._v(" "),(_vm.messageNutrient == 'Success')?_c('v-btn',{staticClass:"success",attrs:{"text":""},on:{"click":_vm.reloadPage}},[_vm._v("\n          Okay\n        ")]):_vm._e(),_vm._v(" "),(_vm.messageNutrient != 'Success')?_c('v-btn',{staticClass:"success",attrs:{"text":""},on:{"click":function($event){_vm.dialog = false}}},[_vm._v("\n          Okay\n        ")]):_vm._e()],1)],1)],1),_vm._ssrNode(" "),_c('v-dialog',{attrs:{"persistent":"","max-width":"490"},model:{value:(_vm.dialogPostNutrient),callback:function ($$v) {_vm.dialogPostNutrient=$$v},expression:"dialogPostNutrient"}},[_c('v-card',[_c('v-card-title',[_vm._v(" Action ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("Are you confirm to set schedule as below?")]),_vm._v(" "),_c('v-card-subtitle',[_vm._v(_vm._s(_vm.dateStartNutrient)+" -\n        "+_vm._s(_vm.dateEndNutrient)+"\n      ")]),_vm._v(" "),_c('v-card-subtitle',[_vm._v("Duration : "+_vm._s(_vm.durationNutrient)+" minute/s\n      ")]),_vm._v(" "),_c('v-card-actions',[_c('v-spacer'),_vm._v(" "),_c('v-btn',{staticClass:"success",attrs:{"text":""},on:{"click":_vm.sendScheduleNutrient}},[_vm._v("\n          Confirm\n        ")]),_vm._v(" "),_c('v-btn',{staticClass:"error",attrs:{"text":""},on:{"click":function($event){_vm.dialogPostNutrient = false}}},[_vm._v("\n          Cancel\n        ")])],1)],1)],1)],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/scheduleTkpmPagoh.vue?vue&type=template&id=71237bdc&
+// CONCATENATED MODULE: ./pages/scheduleTkpmPagoh.vue?vue&type=template&id=5431b4af&
 
 // EXTERNAL MODULE: external "vue2-timepicker"
 var external_vue2_timepicker_ = __webpack_require__(177);
@@ -8352,7 +8348,7 @@ var external_vue2_timepicker_default = /*#__PURE__*/__webpack_require__.n(extern
 var VueTimepicker = __webpack_require__(264);
 
 // EXTERNAL MODULE: ./components/PageTitle.vue + 4 modules
-var PageTitle = __webpack_require__(189);
+var PageTitle = __webpack_require__(191);
 
 // EXTERNAL MODULE: ./components/Schedule/Calendar.vue + 4 modules
 var Calendar = __webpack_require__(307);
@@ -8374,15 +8370,6 @@ var external_moment_default = /*#__PURE__*/__webpack_require__.n(external_moment
 var external_vuex_ = __webpack_require__(12);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/scheduleTkpmPagoh.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -10871,7 +10858,7 @@ var VExpansionPanels = __webpack_require__(402);
 var VRow = __webpack_require__(184);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VSelect/VSelect.js + 6 modules
-var VSelect = __webpack_require__(222);
+var VSelect = __webpack_require__(220);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VSpacer.js
 var VSpacer = __webpack_require__(185);
@@ -10899,14 +10886,14 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "03f0c2a1"
+  "3a268e3e"
   
 )
 
 /* harmony default export */ var scheduleTkpmPagoh = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents_default()(component, {PageTitle: __webpack_require__(189).default})
+installComponents_default()(component, {PageTitle: __webpack_require__(191).default})
 
 
 /* vuetify-loader */

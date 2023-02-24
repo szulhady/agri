@@ -19,7 +19,7 @@ module.exports.__inject__ = function (context) {
 
 /***/ }),
 
-/***/ 189:
+/***/ 191:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68,7 +68,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "48d66cb0",
-  "4542477e"
+  "05180d84"
   
 )
 
@@ -659,7 +659,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "6f99e610",
-  "30915740"
+  "5a6693c0"
   
 )
 
@@ -869,7 +869,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "185f5285",
-  "481db192"
+  "7033e352"
   
 )
 
@@ -1136,7 +1136,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "01c0665c",
-  "311496a2"
+  "5385aa22"
   
 )
 
@@ -1170,7 +1170,7 @@ var staticRenderFns = []
 // CONCATENATED MODULE: ./pages/trendsKongPo.vue?vue&type=template&id=178fb72a&scoped=true&
 
 // EXTERNAL MODULE: ./components/PageTitle.vue + 4 modules
-var PageTitle = __webpack_require__(189);
+var PageTitle = __webpack_require__(191);
 
 // EXTERNAL MODULE: ./components/Trend/CardStationTrendKongPo.vue + 4 modules
 var CardStationTrendKongPo = __webpack_require__(425);
@@ -1361,14 +1361,14 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "178fb72a",
-  "3b63e545"
+  "43d70705"
   
 )
 
 /* harmony default export */ var trendsKongPo = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {PageTitle: __webpack_require__(189).default})
+installComponents(component, {PageTitle: __webpack_require__(191).default})
 
 
 /***/ })

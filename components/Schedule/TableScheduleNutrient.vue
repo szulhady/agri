@@ -22,9 +22,7 @@
     </v-card>
     <v-dialog v-model="box" persistent max-width="290">
       <v-card>
-        <v-card-title>
-          Action
-        </v-card-title>
+        <v-card-title> Action </v-card-title>
         <hr class="hr" />
         <v-card-subtitle
           >Are you sure you want to delete the schedule set on selected

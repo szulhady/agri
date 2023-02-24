@@ -6,7 +6,7 @@
         OPERATION
       </v-card-title>
       <v-row>
-        <v-col col="12" class="col-lg-9 pb-0 ">
+        <v-col col="12" class="col-lg-8 pb-0 ">
           <Ipah2Status
             sv1="red"
             sv2="green"
@@ -54,7 +54,7 @@
         </v-col>
         <v-col
           cols="12"
-          class="col-lg-3 pr-lg-10 pt-0"
+          class="col-lg-4 pr-lg-10 pt-0"
           style="display:flex;justify-contents:center; align-items:center; flex-direction:column"
         >
           <v-card class="elevation-18 rounded-lg px-5 mb-5 ">
@@ -64,6 +64,112 @@
             </v-card-subtitle>
           </v-card>
           <v-card class="elevation-18 rounded-lg px-5 ">
+            <v-card-title style="font-size:1.3rem">
+              MANUAL DRIPPING CONTROL
+            </v-card-title>
+            <v-row>
+              <v-col>
+                <div>
+                  <h4 style="text-align: justify">
+                    Click button bellow to start / stop manual water / nutrient
+                    dripping process or to stop all process. (W - water, N -
+                    nutrient, B - block)
+                  </h4>
+                  <div style="display:flex; justify-content:space-evenly">
+                    <v-btn
+                      :color="
+                        tkpmIpahStatusControllino.WDB1 == 1
+                          ? 'success'
+                          : 'error'
+                      "
+                      @click="waterBlock(1)"
+                      width="90px"
+                      :disabled="
+                        tkpmIpahStatusControllino.NDB1 == 1 ? true : false
+                      "
+                      >W B-1</v-btn
+                    >
+                    <v-btn
+                      :color="
+                        tkpmIpahStatusControllino.WDB2 == 1
+                          ? 'success'
+                          : 'error'
+                      "
+                      @click="waterBlock(2)"
+                      width="90px"
+                      :disabled="
+                        tkpmIpahStatusControllino.NDB2 == 1 ? true : false
+                      "
+                      >W B-2</v-btn
+                    >
+                    <v-btn
+                      :color="
+                        tkpmIpahStatusControllino.WDB3 == 1
+                          ? 'success'
+                          : 'error'
+                      "
+                      @click="waterBlock(3)"
+                      width="90px"
+                      :disabled="
+                        tkpmIpahStatusControllino.NDB3 == 1 ? true : false
+                      "
+                      >W B-3</v-btn
+                    >
+                  </div>
+
+                  <div
+                    style="display:flex; justify-content:space-evenly;margin-top:20px"
+                  >
+                    <v-btn
+                      :color="
+                        tkpmIpahStatusControllino.NDB1 == 1
+                          ? 'success'
+                          : 'error'
+                      "
+                      @click="waterBlock(4)"
+                      width="90px"
+                      :disabled="
+                        tkpmIpahStatusControllino.WDB1 == 1 ? true : false
+                      "
+                      >N B-1</v-btn
+                    >
+                    <v-btn
+                      :color="
+                        tkpmIpahStatusControllino.NDB2 == 1
+                          ? 'success'
+                          : 'error'
+                      "
+                      @click="waterBlock(5)"
+                      width="90px"
+                      :disabled="
+                        tkpmIpahStatusControllino.WDB2 == 1 ? true : false
+                      "
+                      >N B-2</v-btn
+                    >
+                    <v-btn
+                      :color="
+                        tkpmIpahStatusControllino.NDB3 == 1
+                          ? 'success'
+                          : 'error'
+                      "
+                      @click="waterBlock(6)"
+                      width="90px"
+                      :disabled="
+                        tkpmIpahStatusControllino.WDB3 == 1 ? true : false
+                      "
+                      >N B-3</v-btn
+                    >
+                  </div>
+                  <div
+                    style="padding-top:20px; display:flex;justify-content:center"
+                  >
+                    <v-btn color="error" @click="masterStop" width="190px"
+                      >STOP ALL PROCESS</v-btn
+                    >
+                  </div>
+                </div>
+              </v-col>
+            </v-row>
             <v-card-title style="font-size:1.3rem">
               MANUAL FERTIGATION CONTROL
             </v-card-title>
@@ -91,9 +197,13 @@
                   <h4 style="text-align: justify">
                     Nutrient preparation is done via schedule set by user on
                     schedule panel. It is done on
-                    <span style="font-weight:bold">5.00am on choosen date</span
-                    >. Please fill EC value input ( eg: 1.00 ) and click button
-                    below to start nutrient preparation manually.
+                    <span style="font-weight:bold">3.00am on choosen date</span
+                    >. Please select
+                    <span style="font-weight:bold"
+                      >tank, fill Volume EC value input ( in litre )</span
+                    >
+                    and click button below to start nutrient preparation
+                    manually.
                   </h4>
                 </div>
                 <div
@@ -111,12 +221,36 @@
                     v-model.number="duration"
                     class="short"
                   ></v-text-field> -->
-                  <input
+                  <!-- <input
                     class="long2"
                     type="text"
                     v-mask="'#.##'"
                     v-model.number="duration"
-                  />
+                  /> -->
+                  <v-row>
+                    <v-col
+                      style="display:flex; justify-content:center; align-items:center"
+                    >
+                      <div class="mx-3">
+                        <v-select
+                          v-model="tank"
+                          :items="items"
+                          label="Tank"
+                          multiple
+                          style="width:100px"
+                        ></v-select>
+                        <!-- class="short" -->
+                      </div>
+                      <div>
+                        <input
+                          class="long2"
+                          type="text"
+                          v-mask="'##.##'"
+                          v-model.number="duration"
+                        />
+                      </div>
+                    </v-col>
+                  </v-row>
                   <v-btn @click="nutrient" class="mt-4 mb-4"
                     >Start Preparation</v-btn
                   >
@@ -159,15 +293,69 @@ import "vue-slick-carousel/dist/vue-slick-carousel.css";
 // optional style for arrows & dots
 import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 import { mapState, mapMutations } from "vuex";
+
+import mqtt from "mqtt";
 export default {
   middleware: ["isTkpmIpah"],
   layout: "status",
   methods: {
+    masterStop: function() {
+      this.client.publish("qwazx/np/tkpmIpah/c/m/s", "404");
+    },
+    waterBlock: function(block) {
+      console.log(block);
+      if (block == 1) {
+        if (this.tkpmIpahStatusControllino.WDB1 == 1) {
+          this.client.publish("qwazx/np/tkpmIpah/c/d", "D1:19");
+        } else {
+          this.client.publish("qwazx/np/tkpmIpah/c/d", "D1:1");
+        }
+      }
+      if (block == 2) {
+        if (this.tkpmIpahStatusControllino.WDB2 == 1) {
+          this.client.publish("qwazx/np/tkpmIpah/c/d", "D1:29");
+        } else {
+          this.client.publish("qwazx/np/tkpmIpah/c/d", "D1:2");
+        }
+      }
+      if (block == 3) {
+        if (this.tkpmIpahStatusControllino.WDB3 == 1) {
+          this.client.publish("qwazx/np/tkpmIpah/c/d", "D1:39");
+        } else {
+          this.client.publish("qwazx/np/tkpmIpah/c/d", "D1:3");
+        }
+      }
+
+      if (block == 4) {
+        if (this.tkpmIpahStatusControllino.NDB1 == 1) {
+          this.client.publish("qwazx/np/tkpmIpah/c/d", "D1:49");
+        } else {
+          this.client.publish("qwazx/np/tkpmIpah/c/d", "D1:4");
+        }
+      }
+
+      if (block == 5) {
+        if (this.tkpmIpahStatusControllino.NDB2 == 1) {
+          this.client.publish("qwazx/np/tkpmIpah/c/d", "D1:59");
+        } else {
+          this.client.publish("qwazx/np/tkpmIpah/c/d", "D1:5");
+        }
+      }
+
+      if (block == 6) {
+        if (this.tkpmIpahStatusControllino.NDB3 == 1) {
+          this.client.publish("qwazx/np/tkpmIpah/c/d", "D1:69");
+        } else {
+          this.client.publish("qwazx/np/tkpmIpah/c/d", "D1:6");
+        }
+      }
+    },
     ...mapMutations({
       setIpah2ManualFill: "setIpah2ManualFill",
       setIpah2ManualStop: "setIpah2ManualStop",
       setIpah2ManualNutrient: "setIpah2ManualNutrient",
-      setIpah2ManualNutrientDuration: "setIpah2ManualNutrientDuration"
+      setIpah2ManualNutrientDuration: "setIpah2ManualNutrientDuration",
+      setIpah2ManualNutrientTank: "setIpah2ManualNutrientTank"
     }),
     trigger: function(device, state, deviceName) {
       this.state2 = false;
@@ -210,20 +398,65 @@ export default {
     },
     nutrient: function() {
       if (!this.duration) {
-        alert("Please select valid duration");
+        alert("Please select valid volume EC");
         return;
       }
-      if (!Number.isInteger(this.duration) || this.duration < 1) {
-        alert("Please select valid duration (integer number)");
+      if (!this.tank) {
+        alert("Please select tank");
         return;
       }
+      // if (!this.duration || this.duration < 1) {
+      // // if (!Number.isInteger(this.duration) || this.duration < 1) {
+      //   alert("Please select valid duration (integer number)");
+      //   return;
+      // }
       this.setIpah2ManualNutrientDuration(this.duration);
+      this.setIpah2ManualNutrientTank(this.tank);
       this.setIpah2ManualNutrient(true);
+      this.duration = "";
+      this.tank = "";
       console.log("heree");
+    },
+    createConnection() {
+      const { host, port, endpoint, ...options } = this.connection;
+      const connectUrl = `${host}`;
+      // const connectUrl = `wss://${host}:${port}${endpoint}`;
+      try {
+        this.client = mqtt.connect(connectUrl, options);
+      } catch (error) {
+        console.log("mqtt.connect error", error);
+      }
+      this.client.on("connect", () => {
+        console.log("Connection succeeded!");
+        this.dialog = false;
+      });
+      this.client.on("error", error => {
+        console.log("Connection failed", error);
+      });
+      this.client.on("close", () => {
+        this.dialog = true;
+      });
+      this.client.stream.on("error", error => {
+        // This does trigger when the URL is invalid
+        console.error("Connection error:", error);
+        this.dialog = true;
+      });
+      this.client.on("message", (topic, message) => {});
+    },
+    doSubscribe() {
+      const { topic, qos } = this.subscription;
+      this.client.subscribe(topic, { qos }, (error, res) => {
+        if (error) {
+          return;
+        }
+        this.subscribeSuccess = true;
+      });
     }
   },
   data() {
     return {
+      tank: "",
+      items: ["1", "2", "3"],
       activeDevice: "",
       stateDevice: "",
       activeSwitch: "",
@@ -264,7 +497,30 @@ export default {
       block: [],
       itemsBlock: ["Block 1", "Block 2", "Block 3"],
       itemsDuration: ["10", "20", "30"],
-      duration: ""
+      duration: "",
+      connection: {
+        host: this.$auth.$state.user.server_mqtt,
+        port: 8083,
+        endpoint: "/mqtt",
+        clean: true, // Reserved session
+        connectTimeout: 4000, // Time out
+        reconnectPeriod: 4000 // Reconnection interval
+      },
+      subscription: {
+        // topic: "geyzer/#",
+        topic: ["np/#", "new/#"],
+        qos: 0
+      },
+      receiveNews: "",
+      qosList: [
+        { label: 0, value: 0 },
+        { label: 1, value: 1 },
+        { label: 2, value: 2 }
+      ],
+      client: {
+        connected: false
+      },
+      subscribeSuccess: false
     };
   },
   components: {
@@ -275,13 +531,24 @@ export default {
   computed: {
     ...mapState({
       tkpmIpahStatus: state => state.tkpmIpahStatus,
-      tkpmIpahProcess: state => state.tkpmIpahProcess
+      tkpmIpahProcess: state => state.tkpmIpahProcess,
+      tkpmIpahStatusControllino: state => state.tkpmIpahStatusControllino
     })
+  },
+  async mounted() {
+    // let elHtml = document.getElementsByTagName("html")[0];
+    // elHtml.style.overflowY = null;
+    this.createConnection();
+    this.doSubscribe();
   }
 };
 </script>
 
 <style>
+.long2 {
+  border: black 1px solid;
+  text-align: center;
+}
 .overlay {
   position: relative;
   /* display: inline-block; */

@@ -19,7 +19,7 @@ module.exports.__inject__ = function (context) {
 
 /***/ }),
 
-/***/ 189:
+/***/ 191:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68,7 +68,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "48d66cb0",
-  "4542477e"
+  "05180d84"
   
 )
 
@@ -644,7 +644,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "95c276f4"
+  "bb4dea74"
   
 )
 
@@ -711,7 +711,7 @@ var staticRenderFns = []
 // CONCATENATED MODULE: ./pages/ipahStatus.vue?vue&type=template&id=2f0c7c6f&scoped=true&
 
 // EXTERNAL MODULE: ./components/PageTitle.vue + 4 modules
-var PageTitle = __webpack_require__(189);
+var PageTitle = __webpack_require__(191);
 
 // EXTERNAL MODULE: ./components/Status/Ipah1Status.vue + 4 modules
 var Ipah1Status = __webpack_require__(303);
@@ -996,14 +996,14 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "2f0c7c6f",
-  "1707b1da"
+  "4eccb8d3"
   
 )
 
 /* harmony default export */ var ipahStatus = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents_default()(component, {PageTitle: __webpack_require__(189).default})
+installComponents_default()(component, {PageTitle: __webpack_require__(191).default})
 
 
 /* vuetify-loader */

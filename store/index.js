@@ -2073,6 +2073,7 @@ ipah2ManualFill:false,
 ipah2ManualStop:false,
 ipah2ManualNutrient:false,
 ipah2ManualNutrientDuration:"",
+ipah2ManualNutrientTank:"",
 tkpmPagohManualFill:false,
 tkpmPagohManualStop:false,
 tkpmPagohManualNutrient:false,
@@ -2085,7 +2086,24 @@ kongPoManualNutrientDuration:"",
 detailActive:"",
 detailIpah1:"",
 detailIpah2:"",
-detailTkpmPagoh:""
+detailTkpmPagoh:"",
+tkpmIpahStatusControllino:{
+  SID:"",
+  WFT1:"",
+  WFT2:"",
+  WFT3:"",
+  WFT3:"",
+  NPT1:"",
+  NPT2:"",
+  NPT3:"",
+  WDB1:"",
+  WDB2:"",
+  WDB3:"",
+  NDB1:"",
+  NDB2:"",
+  NDB3:"",
+  MAN:""
+}
 });
 
 
@@ -2832,6 +2850,7 @@ export const mutations = {
     },
     // STATUS TKPM IPAH 
     tkpmIpahStatus(state,payload){
+      state.tkpmIpahStatusControllino= payload
       // RESET
       state.tkpmIpahStatus.SV1=0
       state.tkpmIpahStatus.SV2=0
@@ -2852,6 +2871,33 @@ export const mutations = {
       state.tkpmIpahStatus.P2=0
       state.tkpmIpahStatus.P3=0
       state.tkpmIpahStatus.DP=0
+
+
+        // Water Filling on Tank 1
+        if(payload.WFT1==1){
+          state.tkpmIpahStatus.SV1=1
+          state.tkpmIpahStatus.SV3=1
+          state.tkpmIpahStatus.SV4=1
+          state.tkpmIpahStatus.P1=1
+          state.tkpmIpahProcess = 'Water filling on tank 1.'
+        }
+        // Water Filling on Tank 2
+        if(payload.WFT2==1){
+          state.tkpmIpahStatus.SV5=1
+          state.tkpmIpahStatus.SV8=1
+          state.tkpmIpahStatus.SV7=1
+          state.tkpmIpahStatus.P2=1
+          state.tkpmIpahProcess = 'Water filling on tank 2.'
+        }
+
+                // Water Filling on Tank 3
+                if(payload.WFT3==1){
+                  state.tkpmIpahStatus.SV9=1
+                  state.tkpmIpahStatus.SV11=1
+                  state.tkpmIpahStatus.SV12=1
+                  state.tkpmIpahStatus.P3=1
+                  state.tkpmIpahProcess = 'Water filling on tank 3.'
+                }
 
       // Water Dripping on Block 1
       if(payload.WDB1==1){
@@ -2964,9 +3010,49 @@ export const mutations = {
       if (payload.NDB1 == 1 && payload.NDB2 == 1 && payload.NDB3 == 1){
         state.tkpmIpahProcess = 'Nutrient dripping on all block.'
       }
+
+      // WATER FILLING
+ 
+      if (payload.WFT1 == 1 && payload.WFT2 == 1){
+        state.tkpmIpahProcess = 'Water filling in tank 1 and 2.'
+      }
+      if (payload.WFT1 == 1 && payload.WFT3 == 1){
+        state.tkpmIpahProcess = 'Water filling in tank block 1 and 3.'
+      }
+      if (payload.WFT2 == 1 && payload.WFT3 == 1){
+        state.tkpmIpahProcess = 'Water filling in tank 2 and 3.'
+      }
+      if (payload.WFT1 == 1 && payload.WFT2 == 1 && payload.WFT2 == 1){
+        state.tkpmIpahProcess = 'Water filling in all tanks.'
+      }
       
+      // NUTRIENT PREPARATION
+      if (payload.NPT1 == 1 ){
+        state.tkpmIpahProcess = 'Nutrient preparation in tank 1.'
+        state.tkpmIpahStatus.SV2=1
+        state.tkpmIpahStatus.SV3=1
+        state.tkpmIpahStatus.SV4=1
+        state.tkpmIpahStatus.P1=1
+        state.tkpmIpahStatus.DP=1
+      }
+      if (payload.NPT2 == 1 ){
+        state.tkpmIpahProcess = 'Nutrient preparation in tank 2.'
+        state.tkpmIpahStatus.SV6=1
+        state.tkpmIpahStatus.SV7=1
+        state.tkpmIpahStatus.SV8=1
+        state.tkpmIpahStatus.P2=1
+        state.tkpmIpahStatus.DP=1
+      }
+      if (payload.NPT3 == 1 ){
+        state.tkpmIpahProcess = 'Nutrient preparation in tank 3.'
+        state.tkpmIpahStatus.SV10=1
+        state.tkpmIpahStatus.SV11=1
+        state.tkpmIpahStatus.SV12=1
+        state.tkpmIpahStatus.P3=1
+        state.tkpmIpahStatus.DP=1
+      }
       // System idle. No process
-      if(payload.WDB1==0 && payload.WDB2==0 && payload.WDB3==0 && payload.NDB1==0 && payload.NDB2==0 && payload.NDB3==0 && payload.NF==0 && payload.WF==0){
+      if(payload.WDB1==0 && payload.WDB2==0 && payload.WDB3==0 && payload.NDB1==0 && payload.NDB2==0 && payload.NDB3==0 && payload.NPT1==0 && payload.NPT2==0&& payload.NPT3==0 && payload.WFT1==0&& payload.WFT2==0&& payload.WFT3==0){
         state.tkpmIpahStatus.SV1=0
         state.tkpmIpahStatus.SV2=0
         state.tkpmIpahStatus.SV3=0
@@ -3259,6 +3345,9 @@ export const mutations = {
     },
     setIpah2ManualNutrientDuration(state, payload){
       state.ipah2ManualNutrientDuration= payload;
+    },
+    setIpah2ManualNutrientTank(state, payload){
+      state.ipah2ManualNutrientTank= payload;
     },
     setTkpmPagohManualFill(state, payload){
       state.tkpmPagohManualFill= payload;

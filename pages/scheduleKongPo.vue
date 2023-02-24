@@ -3,14 +3,19 @@
     <!-- <client-only> -->
     <PageTitle title="SCHEDULE" />
     <v-card class="mb-10">
-      <v-card-title>
-        Set schedule for nutrient preparation
-      </v-card-title>
-      <v-row style="display:flex; justify-content:center; align-items:center">
+      <v-card-title> Set schedule for nutrient preparation </v-card-title>
+      <v-row
+        style="display: flex; justify-content: center; align-items: center"
+      >
         <v-col
           cols="12"
           class="pl-8 col-lg-3 mb-5"
-          style="display:flex;flex-direction:column;justify-content:center;align-items:center"
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          "
         >
           <div>
             <h4>Select Date</h4>
@@ -47,7 +52,7 @@
                       v-model.number="durationNutrient"
                       class="long"
                     ></v-text-field> -->
-                           <input
+                    <input
                       class="long2"
                       type="text"
                       v-mask="'#.##'"
@@ -73,14 +78,17 @@
       </v-row>
     </v-card>
     <v-card>
-      <v-card-title>
-        Set schedule for fertigation / irrigation
-      </v-card-title>
+      <v-card-title> Set schedule for fertigation / irrigation </v-card-title>
       <v-row>
         <v-col
           cols="12"
           class="pl-8 col-lg-3"
-          style="display:flex;flex-direction:column;justify-content:center;align-items:center"
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          "
         >
           <div>
             <h4>Select Date</h4>
@@ -93,9 +101,7 @@
             ></vc-date-picker>
           </div>
           <div>
-            <v-btn class="mt-5" @click="checkSchedule">
-              SET SCHEDULE
-            </v-btn>
+            <v-btn class="mt-5" @click="checkSchedule"> SET SCHEDULE </v-btn>
           </div>
         </v-col>
         <v-col cols="12" class="mx-auto col-lg-9">
@@ -577,9 +583,7 @@
     <!-- AFTER POST SCHEDULE -->
     <v-dialog v-model="dialog" persistent max-width="290">
       <v-card>
-        <v-card-title>
-          Status
-        </v-card-title>
+        <v-card-title> Status </v-card-title>
         <hr class="hr" />
         <v-card-subtitle>{{ message }}</v-card-subtitle>
         <v-card-actions>
@@ -607,9 +611,7 @@
     <!-- POST SCHEDULE CONFIRMATION -->
     <v-dialog v-model="dialogPost" persistent max-width="490">
       <v-card>
-        <v-card-title>
-          Action
-        </v-card-title>
+        <v-card-title> Action </v-card-title>
         <hr class="hr" />
         <v-card-subtitle
           >Are you confirm to set schedule as below?</v-card-subtitle
@@ -626,12 +628,8 @@
         </v-card-subtitle>
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn text @click="sendSchedule" class="success">
-            Confirm
-          </v-btn>
-          <v-btn text @click="dialogPost = false" class="error">
-            Cancel
-          </v-btn>
+          <v-btn text @click="sendSchedule" class="success"> Confirm </v-btn>
+          <v-btn text @click="dialogPost = false" class="error"> Cancel </v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
@@ -639,9 +637,7 @@
     <!-- AFTER POST SCHEDULE NUTRIENT -->
     <v-dialog v-model="dialogNutrient" persistent max-width="290">
       <v-card>
-        <v-card-title>
-          Status
-        </v-card-title>
+        <v-card-title> Status </v-card-title>
         <hr class="hr" />
         <v-card-subtitle>{{ messageNutrient }}</v-card-subtitle>
         <v-card-subtitle></v-card-subtitle>
@@ -670,9 +666,7 @@
     <!-- POST SCHEDULE CONFIRMATION NUTRIENT -->
     <v-dialog v-model="dialogPostNutrient" persistent max-width="490">
       <v-card>
-        <v-card-title>
-          Action
-        </v-card-title>
+        <v-card-title> Action </v-card-title>
         <hr class="hr" />
         <v-card-subtitle
           >Are you confirm to set schedule as below?</v-card-subtitle

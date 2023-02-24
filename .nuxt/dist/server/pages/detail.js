@@ -23,63 +23,6 @@ module.exports.__inject__ = function (context) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/PageTitle.vue?vue&type=template&id=48d66cb0&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('h2',{staticClass:"mt-3 mb-5 title"},[_vm._ssrNode(_vm._ssrEscape("\n  "+_vm._s(_vm.title)+"\n"))])}
-var staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./components/PageTitle.vue?vue&type=template&id=48d66cb0&scoped=true&
-
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/PageTitle.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-/* harmony default export */ var PageTitlevue_type_script_lang_js_ = ({
-  props: ["title"]
-});
-// CONCATENATED MODULE: ./components/PageTitle.vue?vue&type=script&lang=js&
- /* harmony default export */ var components_PageTitlevue_type_script_lang_js_ = (PageTitlevue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
-var componentNormalizer = __webpack_require__(16);
-
-// CONCATENATED MODULE: ./components/PageTitle.vue
-
-
-
-function injectStyles (context) {
-  
-  var style0 = __webpack_require__(198)
-if (style0.__inject__) style0.__inject__(context)
-
-}
-
-/* normalize component */
-
-var component = Object(componentNormalizer["a" /* default */])(
-  components_PageTitlevue_type_script_lang_js_,
-  render,
-  staticRenderFns,
-  false,
-  injectStyles,
-  "48d66cb0",
-  "4542477e"
-  
-)
-
-/* harmony default export */ var PageTitle = __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ 190:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony import */ var _colorable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8);
 /* harmony import */ var _themeable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7);
 /* harmony import */ var _registrable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(34);
@@ -347,7 +290,7 @@ const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_5__[/* default *
 
 /***/ }),
 
-/***/ 191:
+/***/ 190:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -355,7 +298,7 @@ const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_5__[/* default *
 // UNUSED EXPORTS: VLabel
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VLabel/VLabel.sass
-var VLabel = __webpack_require__(204);
+var VLabel = __webpack_require__(203);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/colorable/index.js
 var colorable = __webpack_require__(8);
@@ -439,13 +382,70 @@ var helpers = __webpack_require__(0);
 
 /***/ }),
 
+/***/ 191:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/PageTitle.vue?vue&type=template&id=48d66cb0&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('h2',{staticClass:"mt-3 mb-5 title"},[_vm._ssrNode(_vm._ssrEscape("\n  "+_vm._s(_vm.title)+"\n"))])}
+var staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./components/PageTitle.vue?vue&type=template&id=48d66cb0&scoped=true&
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/PageTitle.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+/* harmony default export */ var PageTitlevue_type_script_lang_js_ = ({
+  props: ["title"]
+});
+// CONCATENATED MODULE: ./components/PageTitle.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_PageTitlevue_type_script_lang_js_ = (PageTitlevue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
+var componentNormalizer = __webpack_require__(16);
+
+// CONCATENATED MODULE: ./components/PageTitle.vue
+
+
+
+function injectStyles (context) {
+  
+  var style0 = __webpack_require__(198)
+if (style0.__inject__) style0.__inject__(context)
+
+}
+
+/* normalize component */
+
+var component = Object(componentNormalizer["a" /* default */])(
+  components_PageTitlevue_type_script_lang_js_,
+  render,
+  staticRenderFns,
+  false,
+  injectStyles,
+  "48d66cb0",
+  "05180d84"
+  
+)
+
+/* harmony default export */ var PageTitle = __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
 /***/ 193:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(201);
+var content = __webpack_require__(200);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -461,16 +461,16 @@ __webpack_require__(6).default("4f4f805e", content, true)
 // UNUSED EXPORTS: VInput
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VInput/VInput.sass
-var VInput = __webpack_require__(202);
+var VInput = __webpack_require__(201);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VIcon/index.js
 var VIcon = __webpack_require__(22);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VLabel/index.js + 1 modules
-var VLabel = __webpack_require__(191);
+var VLabel = __webpack_require__(190);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VMessages/VMessages.sass
-var VMessages = __webpack_require__(206);
+var VMessages = __webpack_require__(205);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/colorable/index.js
 var colorable = __webpack_require__(8);
@@ -542,7 +542,7 @@ var helpers = __webpack_require__(0);
 var binds_attrs = __webpack_require__(24);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/validatable/index.js
-var validatable = __webpack_require__(190);
+var validatable = __webpack_require__(189);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/util/mergeData.js
 var mergeData = __webpack_require__(18);
@@ -1065,7 +1065,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 201:
+/***/ 200:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -1079,13 +1079,13 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 202:
+/***/ 201:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(203);
+var content = __webpack_require__(202);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -1093,7 +1093,7 @@ __webpack_require__(6).default("22487aae", content, true)
 
 /***/ }),
 
-/***/ 203:
+/***/ 202:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -1107,13 +1107,13 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 204:
+/***/ 203:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(205);
+var content = __webpack_require__(204);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -1121,7 +1121,7 @@ __webpack_require__(6).default("371f82d0", content, true)
 
 /***/ }),
 
-/***/ 205:
+/***/ 204:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -1135,13 +1135,13 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 206:
+/***/ 205:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(207);
+var content = __webpack_require__(206);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -1149,7 +1149,7 @@ __webpack_require__(6).default("2bb34da4", content, true)
 
 /***/ }),
 
-/***/ 207:
+/***/ 206:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -1163,13 +1163,13 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 208:
+/***/ 207:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(209);
+var content = __webpack_require__(208);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -1177,7 +1177,7 @@ __webpack_require__(6).default("3dc908a0", content, true)
 
 /***/ }),
 
-/***/ 209:
+/***/ 208:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -1191,7 +1191,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 212:
+/***/ 211:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1249,7 +1249,7 @@ var VTextField = __webpack_require__(193);
 var VInput = __webpack_require__(194);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VCounter/VCounter.sass
-var VCounter = __webpack_require__(208);
+var VCounter = __webpack_require__(207);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/themeable/index.js
 var themeable = __webpack_require__(7);
@@ -1299,7 +1299,7 @@ var mixins = __webpack_require__(3);
 
 /* harmony default export */ var components_VCounter = (VCounter_VCounter);
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VLabel/index.js + 1 modules
-var VLabel = __webpack_require__(191);
+var VLabel = __webpack_require__(190);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/directives/intersect/index.js
 var intersect = __webpack_require__(25);
@@ -1356,7 +1356,7 @@ function intersectable(options) {
 var loadable = __webpack_require__(48);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/validatable/index.js
-var validatable = __webpack_require__(190);
+var validatable = __webpack_require__(189);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/directives/resize/index.js
 var resize = __webpack_require__(61);
@@ -2091,7 +2091,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 326:
+/***/ 327:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3124,7 +3124,7 @@ var VCard = __webpack_require__(53);
 var components_VCard = __webpack_require__(15);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VDivider/VDivider.js
-var VDivider = __webpack_require__(212);
+var VDivider = __webpack_require__(211);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VSpacer.js
 var VSpacer = __webpack_require__(185);
@@ -3585,7 +3585,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "1f870959"
+  "ca6a09ce"
   
 )
 
@@ -3614,29 +3614,17 @@ installComponents_default()(component, {VAvatar: VAvatar["a" /* default */],VBtn
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/detail/users.vue?vue&type=template&id=971cd544&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',[_c('v-card',[[_c('v-form',{on:{"submit":function($event){$event.preventDefault();}},model:{value:(_vm.valid),callback:function ($$v) {_vm.valid=$$v},expression:"valid"}},[_c('v-container',[_c('v-card-title',[_vm._v("\n            FORM\n          ")]),_vm._v(" "),_c('v-card-title',[_vm._v("\n            User registration\n          ")]),_vm._v(" "),_c('v-row',[_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"rules":_vm.nameRules,"label":"Full name","required":""},model:{value:(_vm.fullName),callback:function ($$v) {_vm.fullName=$$v},expression:"fullName"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Width area","required":""},model:{value:(_vm.widthArea),callback:function ($$v) {_vm.widthArea=$$v},expression:"widthArea"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Type of plant","required":""},model:{value:(_vm.typeOfPlant),callback:function ($$v) {_vm.typeOfPlant=$$v},expression:"typeOfPlant"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Location","required":""},model:{value:(_vm.location),callback:function ($$v) {_vm.location=$$v},expression:"location"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Type of plant system","required":""},model:{value:(_vm.typeOfPlantSystem),callback:function ($$v) {_vm.typeOfPlantSystem=$$v},expression:"typeOfPlantSystem"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Type of irrigation system","required":""},model:{value:(_vm.typeOfIrrigationSystem),callback:function ($$v) {_vm.typeOfIrrigationSystem=$$v},expression:"typeOfIrrigationSystem"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Type of water source","required":""},model:{value:(_vm.typeOfWaterSource),callback:function ($$v) {_vm.typeOfWaterSource=$$v},expression:"typeOfWaterSource"}})],1)],1),_vm._v(" "),_c('v-card-title',[_vm._v("\n            Operation information\n          ")]),_vm._v(" "),_c('v-row',[_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Type of water pump","required":""},model:{value:(_vm.typeOfWaterPump),callback:function ($$v) {_vm.typeOfWaterPump=$$v},expression:"typeOfWaterPump"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Water pump output","required":""},model:{value:(_vm.waterPumpOutput),callback:function ($$v) {_vm.waterPumpOutput=$$v},expression:"waterPumpOutput"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Type of fertilizer","required":""},model:{value:(_vm.typeOfFertilizer),callback:function ($$v) {_vm.typeOfFertilizer=$$v},expression:"typeOfFertilizer"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Type of insecticide","required":""},model:{value:(_vm.typeOfInsecticide),callback:function ($$v) {_vm.typeOfInsecticide=$$v},expression:"typeOfInsecticide"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Type of nozzle","required":""},model:{value:(_vm.typeOfNozzle),callback:function ($$v) {_vm.typeOfNozzle=$$v},expression:"typeOfNozzle"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Duration of flush","required":""},model:{value:(_vm.durationOfFlush),callback:function ($$v) {_vm.durationOfFlush=$$v},expression:"durationOfFlush"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Date of planting","required":""},model:{value:(_vm.dateOfPlanting),callback:function ($$v) {_vm.dateOfPlanting=$$v},expression:"dateOfPlanting"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Date of crop yield","required":""},model:{value:(_vm.dateOfCropYield),callback:function ($$v) {_vm.dateOfCropYield=$$v},expression:"dateOfCropYield"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Fertilizing date","required":""},model:{value:(_vm.fertilizingDate),callback:function ($$v) {_vm.fertilizingDate=$$v},expression:"fertilizingDate"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Insecticide process date","required":""},model:{value:(_vm.insecticideProcessDate),callback:function ($$v) {_vm.insecticideProcessDate=$$v},expression:"insecticideProcessDate"}})],1)],1),_vm._v(" "),_c('v-card-title',[_vm._v("\n            Yield crop information\n          ")]),_vm._v(" "),_c('v-row',[_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Date of planting","required":""},model:{value:(_vm.dateOfPlantingYieldCropInformation),callback:function ($$v) {_vm.dateOfPlantingYieldCropInformation=$$v},expression:"dateOfPlantingYieldCropInformation"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Date of crop yield","required":""},model:{value:(_vm.dateOfCropYieldYieldCropInformation),callback:function ($$v) {_vm.dateOfCropYieldYieldCropInformation=$$v},expression:"dateOfCropYieldYieldCropInformation"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Yield quantity","required":""},model:{value:(_vm.yieldQuantity),callback:function ($$v) {_vm.yieldQuantity=$$v},expression:"yieldQuantity"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Damage yield quantity","required":""},model:{value:(_vm.damageYieldQuantity),callback:function ($$v) {_vm.damageYieldQuantity=$$v},expression:"damageYieldQuantity"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Selling price","required":""},model:{value:(_vm.sellingPrice),callback:function ($$v) {_vm.sellingPrice=$$v},expression:"sellingPrice"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Sales revenue","required":""},model:{value:(_vm.salesRevenue),callback:function ($$v) {_vm.salesRevenue=$$v},expression:"salesRevenue"}})],1)],1),_vm._v(" "),_c('v-card-title',[_vm._v("\n            Report\n          ")]),_vm._v(" "),_c('v-row',[_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Seasonal result","required":""},model:{value:(_vm.seasonalResult),callback:function ($$v) {_vm.seasonalResult=$$v},expression:"seasonalResult"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Annual result","required":""},model:{value:(_vm.annualResult),callback:function ($$v) {_vm.annualResult=$$v},expression:"annualResult"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Sales revenue","required":""},model:{value:(_vm.salesRevenueReport),callback:function ($$v) {_vm.salesRevenueReport=$$v},expression:"salesRevenueReport"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Yield improvement","required":""},model:{value:(_vm.yieldImprovement),callback:function ($$v) {_vm.yieldImprovement=$$v},expression:"yieldImprovement"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Irrigation period","required":""},model:{value:(_vm.irrigationPeriod),callback:function ($$v) {_vm.irrigationPeriod=$$v},expression:"irrigationPeriod"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Rain intensity","required":""},model:{value:(_vm.rainIntensity),callback:function ($$v) {_vm.rainIntensity=$$v},expression:"rainIntensity"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Days of raining","required":""},model:{value:(_vm.daysOfRaining),callback:function ($$v) {_vm.daysOfRaining=$$v},expression:"daysOfRaining"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"System breakdown","required":""},model:{value:(_vm.systemBreakdown),callback:function ($$v) {_vm.systemBreakdown=$$v},expression:"systemBreakdown"}})],1)],1),_vm._v(" "),_c('v-btn',{attrs:{"color":"primary"},on:{"click":_vm.generateReport}},[_vm._v("\n            Submit\n          ")])],1)],1)]],2)],1)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/detail/users.vue?vue&type=template&id=7b883bc6&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',[_c('v-card',[[_c('v-form',{on:{"submit":function($event){$event.preventDefault();}},model:{value:(_vm.valid),callback:function ($$v) {_vm.valid=$$v},expression:"valid"}},[_c('v-container',[_c('v-card-title',[_vm._v(" FORM ")]),_vm._v(" "),_c('v-card-title',[_vm._v(" User registration ")]),_vm._v(" "),_c('v-row',[_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"rules":_vm.nameRules,"label":"Full name","required":""},model:{value:(_vm.fullName),callback:function ($$v) {_vm.fullName=$$v},expression:"fullName"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Width area","required":""},model:{value:(_vm.widthArea),callback:function ($$v) {_vm.widthArea=$$v},expression:"widthArea"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Type of plant","required":""},model:{value:(_vm.typeOfPlant),callback:function ($$v) {_vm.typeOfPlant=$$v},expression:"typeOfPlant"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Location","required":""},model:{value:(_vm.location),callback:function ($$v) {_vm.location=$$v},expression:"location"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Type of plant system","required":""},model:{value:(_vm.typeOfPlantSystem),callback:function ($$v) {_vm.typeOfPlantSystem=$$v},expression:"typeOfPlantSystem"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Type of irrigation system","required":""},model:{value:(_vm.typeOfIrrigationSystem),callback:function ($$v) {_vm.typeOfIrrigationSystem=$$v},expression:"typeOfIrrigationSystem"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Type of water source","required":""},model:{value:(_vm.typeOfWaterSource),callback:function ($$v) {_vm.typeOfWaterSource=$$v},expression:"typeOfWaterSource"}})],1)],1),_vm._v(" "),_c('v-card-title',[_vm._v(" Operation information ")]),_vm._v(" "),_c('v-row',[_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Type of water pump","required":""},model:{value:(_vm.typeOfWaterPump),callback:function ($$v) {_vm.typeOfWaterPump=$$v},expression:"typeOfWaterPump"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Water pump output","required":""},model:{value:(_vm.waterPumpOutput),callback:function ($$v) {_vm.waterPumpOutput=$$v},expression:"waterPumpOutput"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Type of fertilizer","required":""},model:{value:(_vm.typeOfFertilizer),callback:function ($$v) {_vm.typeOfFertilizer=$$v},expression:"typeOfFertilizer"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Type of insecticide","required":""},model:{value:(_vm.typeOfInsecticide),callback:function ($$v) {_vm.typeOfInsecticide=$$v},expression:"typeOfInsecticide"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Type of nozzle","required":""},model:{value:(_vm.typeOfNozzle),callback:function ($$v) {_vm.typeOfNozzle=$$v},expression:"typeOfNozzle"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Duration of flush","required":""},model:{value:(_vm.durationOfFlush),callback:function ($$v) {_vm.durationOfFlush=$$v},expression:"durationOfFlush"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Date of planting","required":""},model:{value:(_vm.dateOfPlanting),callback:function ($$v) {_vm.dateOfPlanting=$$v},expression:"dateOfPlanting"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Date of crop yield","required":""},model:{value:(_vm.dateOfCropYield),callback:function ($$v) {_vm.dateOfCropYield=$$v},expression:"dateOfCropYield"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Fertilizing date","required":""},model:{value:(_vm.fertilizingDate),callback:function ($$v) {_vm.fertilizingDate=$$v},expression:"fertilizingDate"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Insecticide process date","required":""},model:{value:(_vm.insecticideProcessDate),callback:function ($$v) {_vm.insecticideProcessDate=$$v},expression:"insecticideProcessDate"}})],1)],1),_vm._v(" "),_c('v-card-title',[_vm._v(" Yield crop information ")]),_vm._v(" "),_c('v-row',[_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Date of planting","required":""},model:{value:(_vm.dateOfPlantingYieldCropInformation),callback:function ($$v) {_vm.dateOfPlantingYieldCropInformation=$$v},expression:"dateOfPlantingYieldCropInformation"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Date of crop yield","required":""},model:{value:(_vm.dateOfCropYieldYieldCropInformation),callback:function ($$v) {_vm.dateOfCropYieldYieldCropInformation=$$v},expression:"dateOfCropYieldYieldCropInformation"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Yield quantity","required":""},model:{value:(_vm.yieldQuantity),callback:function ($$v) {_vm.yieldQuantity=$$v},expression:"yieldQuantity"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Damage yield quantity","required":""},model:{value:(_vm.damageYieldQuantity),callback:function ($$v) {_vm.damageYieldQuantity=$$v},expression:"damageYieldQuantity"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Selling price","required":""},model:{value:(_vm.sellingPrice),callback:function ($$v) {_vm.sellingPrice=$$v},expression:"sellingPrice"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Sales revenue","required":""},model:{value:(_vm.salesRevenue),callback:function ($$v) {_vm.salesRevenue=$$v},expression:"salesRevenue"}})],1)],1),_vm._v(" "),_c('v-card-title',[_vm._v(" Report ")]),_vm._v(" "),_c('v-row',[_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Seasonal result","required":""},model:{value:(_vm.seasonalResult),callback:function ($$v) {_vm.seasonalResult=$$v},expression:"seasonalResult"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Annual result","required":""},model:{value:(_vm.annualResult),callback:function ($$v) {_vm.annualResult=$$v},expression:"annualResult"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Sales revenue","required":""},model:{value:(_vm.salesRevenueReport),callback:function ($$v) {_vm.salesRevenueReport=$$v},expression:"salesRevenueReport"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Yield improvement","required":""},model:{value:(_vm.yieldImprovement),callback:function ($$v) {_vm.yieldImprovement=$$v},expression:"yieldImprovement"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Irrigation period","required":""},model:{value:(_vm.irrigationPeriod),callback:function ($$v) {_vm.irrigationPeriod=$$v},expression:"irrigationPeriod"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Rain intensity","required":""},model:{value:(_vm.rainIntensity),callback:function ($$v) {_vm.rainIntensity=$$v},expression:"rainIntensity"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"Days of raining","required":""},model:{value:(_vm.daysOfRaining),callback:function ($$v) {_vm.daysOfRaining=$$v},expression:"daysOfRaining"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"System breakdown","required":""},model:{value:(_vm.systemBreakdown),callback:function ($$v) {_vm.systemBreakdown=$$v},expression:"systemBreakdown"}})],1)],1),_vm._v(" "),_c('v-btn',{attrs:{"color":"primary"},on:{"click":_vm.generateReport}},[_vm._v(" Submit ")])],1)],1)]],2)],1)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/detail/users.vue?vue&type=template&id=971cd544&
+// CONCATENATED MODULE: ./components/detail/users.vue?vue&type=template&id=7b883bc6&
 
 // EXTERNAL MODULE: external "vuex"
 var external_vuex_ = __webpack_require__(12);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/detail/users.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -4029,7 +4017,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "358e1d38"
+  "148a1378"
   
 )
 
@@ -4247,7 +4235,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "683ad5c5"
+  "38e8d0f6"
   
 )
 
@@ -4429,7 +4417,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "1a3216a2"
+  "6e37b66f"
   
 )
 
@@ -4629,7 +4617,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "5d9a4034"
+  "5e1d11f4"
   
 )
 
@@ -4657,21 +4645,21 @@ installComponents_default()(component, {VBtn: VBtn["a" /* default */],VCard: VCa
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/detail.vue?vue&type=template&id=61f9c4cd&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',[_c('PageTitle',{attrs:{"title":"DETAILS"}}),_vm._ssrNode(" "),_c('v-btn',{on:{"click":function($event){return _vm.change(1)}}},[_vm._v("\n    Form\n  ")]),_vm._ssrNode(" "),_c('v-btn',{on:{"click":function($event){return _vm.change(2)}}},[_vm._v("Detail ")]),_vm._ssrNode(" "),(_vm.page == 1)?_c('Users'):_vm._e(),_vm._ssrNode(" "),(_vm.page == 2)?_c('Layout',{attrs:{"detail":_vm.detailActive}}):_vm._e()],2)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/detail.vue?vue&type=template&id=0e10d20d&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',[_c('PageTitle',{attrs:{"title":"DETAILS"}}),_vm._ssrNode(" "),_c('v-btn',{on:{"click":function($event){return _vm.change(1)}}},[_vm._v(" Form ")]),_vm._ssrNode(" "),_c('v-btn',{on:{"click":function($event){return _vm.change(2)}}},[_vm._v("Detail ")]),_vm._ssrNode(" "),(_vm.page == 1)?_c('Users'):_vm._e(),_vm._ssrNode(" "),(_vm.page == 2)?_c('Layout',{attrs:{"detail":_vm.detailActive}}):_vm._e()],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/detail.vue?vue&type=template&id=61f9c4cd&
+// CONCATENATED MODULE: ./pages/detail.vue?vue&type=template&id=0e10d20d&
 
 // EXTERNAL MODULE: ./components/PageTitle.vue + 4 modules
-var PageTitle = __webpack_require__(189);
+var PageTitle = __webpack_require__(191);
 
 // EXTERNAL MODULE: ./components/detail/users.vue + 4 modules
 var users = __webpack_require__(414);
 
 // EXTERNAL MODULE: ./components/detail/layoutFull.vue + 6 modules
-var layoutFull = __webpack_require__(326);
+var layoutFull = __webpack_require__(327);
 
 // EXTERNAL MODULE: ./components/detail/operationInformation.vue + 4 modules
 var operationInformation = __webpack_require__(415);
@@ -4686,8 +4674,6 @@ var report = __webpack_require__(417);
 var external_vuex_ = __webpack_require__(12);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/detail.vue?vue&type=script&lang=js&
-//
-//
 //
 //
 //
@@ -4815,14 +4801,14 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "6f3e5f44"
+  "0e1dd104"
   
 )
 
 /* harmony default export */ var detail = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents_default()(component, {PageTitle: __webpack_require__(189).default})
+installComponents_default()(component, {PageTitle: __webpack_require__(191).default})
 
 
 /* vuetify-loader */

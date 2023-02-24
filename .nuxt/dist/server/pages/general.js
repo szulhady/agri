@@ -19,7 +19,7 @@ module.exports.__inject__ = function (context) {
 
 /***/ }),
 
-/***/ 189:
+/***/ 191:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -68,7 +68,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "48d66cb0",
-  "4542477e"
+  "05180d84"
   
 )
 
@@ -423,7 +423,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "654da8e1",
-  "1f41dcc8"
+  "d24e99f0"
   
 )
 
@@ -453,7 +453,7 @@ var staticRenderFns = []
 // CONCATENATED MODULE: ./pages/general.vue?vue&type=template&id=03d32a97&
 
 // EXTERNAL MODULE: ./components/PageTitle.vue + 4 modules
-var PageTitle = __webpack_require__(189);
+var PageTitle = __webpack_require__(191);
 
 // EXTERNAL MODULE: ./components/General/UserInfo.vue + 4 modules
 var UserInfo = __webpack_require__(418);
@@ -512,14 +512,14 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "29c17e05"
+  "66d04445"
   
 )
 
 /* harmony default export */ var general = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents_default()(component, {PageTitle: __webpack_require__(189).default})
+installComponents_default()(component, {PageTitle: __webpack_require__(191).default})
 
 
 /* vuetify-loader */

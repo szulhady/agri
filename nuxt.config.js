@@ -110,6 +110,7 @@ module.exports = {
         endpoints: {
           login: {
             // url: "http://139.59.109.48/api/auth/login",
+            // url: "http://159.223.55.150/api/auth/login",
             url: "http://159.223.55.150/api/auth/login",
             // url: "http://127.0.0.1:5000/api/auth/login",
             method: 'post',

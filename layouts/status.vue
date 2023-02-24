@@ -349,12 +349,13 @@ export default {
       this.client.on("message", (topic, message) => {
         if (topic === "new/np/ipah/s/c/true") {
           message = JSON.parse(message);
-          console.log(message);
+          // console.log(message);
           this.ipahStatus(message);
         }
 
         if (topic === "new/np/tkpmIpah/s/c/true") {
           message = JSON.parse(message);
+          console.log(message);
           this.tkpmIpahStatus(message);
         }
 
@@ -400,6 +401,7 @@ export default {
       ipah1ManualNutrient: state => state.ipah1ManualNutrient,
       ipah1ManualNutrientDuration: state => state.ipah1ManualNutrientDuration,
       ipah2ManualNutrientDuration: state => state.ipah2ManualNutrientDuration,
+      ipah2ManualNutrientTank: state => state.ipah2ManualNutrientTank,
       tkpmPagohManualNutrientDuration: state =>
         state.tkpmPagohManualNutrientDuration,
       kongPoManualNutrientDuration: state => state.kongPoManualNutrientDuration,
@@ -490,7 +492,7 @@ export default {
     },
     ipah2ManualFill: function() {
       if (this.ipah2ManualFill == true) {
-        this.client.publish("np/c/tkpmIpah/wf", "10");
+        this.client.publish("qwazx/np/tkpmIpah/c/wf", "10");
         // console.log("np/c/tkpmIpah/wf", "10");
       }
       this.setIpah2ManualFill(false);
@@ -498,7 +500,7 @@ export default {
     },
     ipah2ManualStop: function() {
       if (this.ipah2ManualStop == true) {
-        this.client.publish("np/c/tkpmIpah/wf", "20");
+        this.client.publish("qwazx/np/tkpmIpah/c/wf", "20");
         // console.log("np/c/tkpmIpah/wf", "20");
       }
       this.setIpah2ManualStop(false);
@@ -507,8 +509,9 @@ export default {
     ipah2ManualNutrient: function() {
       if (this.ipah2ManualNutrient == true) {
         this.client.publish(
-          "filter/np/c/tkpmIpah/n",
-          `{"D1":10,"D2":${this.ipah2ManualNutrientDuration}}`
+          "qwazx/np/tkpmIpah/c/n/start",
+          `{"D1":[${this.ipah2ManualNutrientTank}],"D2":${this.ipah2ManualNutrientDuration}}`
+          // `{"D1":10,"D2":${this.ipah2ManualNutrientDuration}}`
         );
         // console.log(
         //   "filter/np/c/tkpmIpah/n",

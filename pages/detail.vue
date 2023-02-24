@@ -1,9 +1,7 @@
 <template>
   <section>
     <PageTitle title="DETAILS" />
-    <v-btn @click="change(1)">
-      Form
-    </v-btn>
+    <v-btn @click="change(1)"> Form </v-btn>
     <v-btn @click="change(2)">Detail </v-btn>
     <Users v-if="page == 1" />
     <!-- <OperationInformation class="mt-6" />

@@ -37,12 +37,12 @@
       <v-toolbar-title
         class="title-container"
         v-text="title"
-        style="font-weight:bold"
+        style="font-weight: bold"
       />
       <v-spacer />
       <div class="user-name-container" v-if="loggedInUser">
         <!-- <v-icon>mdi-account-circle</v-icon> -->
-        <h4 class="user-name-title" style="color:white">
+        <h4 class="user-name-title" style="color: white">
           {{ loggedInUser.username }}
         </h4>
         <!-- <h4>{{loggedInUser.topics}}</h4> -->
@@ -92,13 +92,13 @@
     <v-app-bar fixed app v-if="$vuetify.breakpoint.mdAndDown">
       <v-app-bar-nav-icon
         @click.stop="drawer2 = !drawer2"
-        style="color:white"
+        style="color: white"
       ></v-app-bar-nav-icon>
-      <v-toolbar-title v-text="title" style="font-weight:bold" />
+      <v-toolbar-title v-text="title" style="font-weight: bold" />
       <v-spacer />
       <div class="user-name" v-if="loggedInUser">
         <!-- <v-icon>mdi-account-circle</v-icon> -->
-        <h4 style="color:white">{{ loggedInUser.username }}</h4>
+        <h4 style="color: white">{{ loggedInUser.username }}</h4>
         <!-- <h4>{{loggedInUser.topics}}</h4> -->
       </div>
       <v-btn icon @click.stop="rightDrawer = !rightDrawer">
@@ -116,13 +116,9 @@
     </v-scroll-y-transition>
     <v-scroll-y-transition>
       <v-card class="logout elevation-12" v-if="rightDrawer">
-        <v-card-title>
-          Logout
-        </v-card-title>
+        <v-card-title> Logout </v-card-title>
         <hr class="hr" />
-        <v-card-subtitle>
-          Are you sure?
-        </v-card-subtitle>
+        <v-card-subtitle> Are you sure? </v-card-subtitle>
         <div class="btn-div">
           <v-btn @click="logout" class="success logout-btn">Yes</v-btn>
           <v-btn @click="cancel" class="error logout-btn">Cancel</v-btn>
@@ -135,24 +131,24 @@
     <v-row justify="center">
       <v-dialog v-model="dialog" persistent max-width="300">
         <v-card>
-          <v-card-title class="text-h5">
-            Alert
-          </v-card-title>
+          <v-card-title class="text-h5"> Alert </v-card-title>
           <hr class="hr" />
-          <v-card-subtitle style="padding-top:10px"
+          <v-card-subtitle style="padding-top: 10px"
             >Cannot connect to server. There are several cause for this problem
             :</v-card-subtitle
           >
           <v-card-subtitle
-            style="margin-top:-10px; justify-contents:center; display:flex"
-            ><span style="font-weight:bold; font-size:25px; padding-right:10px"
+            style="margin-top: -10px; justify-contents: center; display: flex"
+            ><span
+              style="font-weight: bold; font-size: 25px; padding-right: 10px"
               >•</span
             >
             No internet connection</v-card-subtitle
           >
           <v-card-subtitle
-            style="margin-top:-10px;justify-contents:center; display:flex"
-            ><span style="font-weight:bold; font-size:25px;padding-right:10px"
+            style="margin-top: -10px; justify-contents: center; display: flex"
+            ><span
+              style="font-weight: bold; font-size: 25px; padding-right: 10px"
               >•</span
             >
             Server error (Please contact admin to resolve the
