@@ -365,7 +365,7 @@
           <v-btn color="error" variant="text" @click="dialogCutOff = false">
             Cancel
           </v-btn>
-          <v-btn color="green-darken-1" variant="text" @click="updateCutOff">
+          <v-btn color="success" variant="text" @click="updateCutOff">
             Confirm
           </v-btn>
         </v-card-actions>
