@@ -1,12 +1,10 @@
 <template>
   <section>
     <PageTitle title="STATUS" />
-    <v-card class="elevation-10 ">
-      <v-card-title>
-        OPERATION
-      </v-card-title>
+    <v-card class="elevation-10">
+      <v-card-title> OPERATION </v-card-title>
       <v-row>
-        <v-col col="12" class="col-lg-8 pb-0 ">
+        <v-col col="12" class="col-lg-8 pb-0">
           <Ipah2Status
             sv1="red"
             sv2="green"
@@ -55,16 +53,21 @@
         <v-col
           cols="12"
           class="col-lg-4 pr-lg-10 pt-0"
-          style="display:flex;justify-contents:center; align-items:center; flex-direction:column"
+          style="
+            display: flex;
+            justify-contents: center;
+            align-items: center;
+            flex-direction: column;
+          "
         >
-          <v-card class="elevation-18 rounded-lg px-5 mb-5 ">
+          <v-card class="elevation-18 rounded-lg px-5 mb-5">
             <v-card-title>PROCESS</v-card-title>
-            <v-card-subtitle style="font-size:1.2em">
+            <v-card-subtitle style="font-size: 1.2em">
               {{ tkpmIpahProcess }}
             </v-card-subtitle>
           </v-card>
-          <v-card class="elevation-18 rounded-lg px-5 ">
-            <v-card-title style="font-size:1.3rem">
+          <v-card class="elevation-18 rounded-lg px-5">
+            <v-card-title style="font-size: 1.3rem">
               MANUAL DRIPPING CONTROL
             </v-card-title>
             <v-row>
@@ -75,7 +78,7 @@
                     dripping process or to stop all process. (W - water, N -
                     nutrient, B - block)
                   </h4>
-                  <div style="display:flex; justify-content:space-evenly">
+                  <div style="display: flex; justify-content: space-evenly">
                     <v-btn
                       :color="
                         tkpmIpahStatusControllino.WDB1 == 1
@@ -118,7 +121,11 @@
                   </div>
 
                   <div
-                    style="display:flex; justify-content:space-evenly;margin-top:20px"
+                    style="
+                      display: flex;
+                      justify-content: space-evenly;
+                      margin-top: 20px;
+                    "
                   >
                     <v-btn
                       :color="
@@ -161,7 +168,11 @@
                     >
                   </div>
                   <div
-                    style="padding-top:20px; display:flex;justify-content:center"
+                    style="
+                      padding-top: 20px;
+                      display: flex;
+                      justify-content: center;
+                    "
                   >
                     <v-btn color="error" @click="masterStop" width="190px"
                       >STOP ALL PROCESS</v-btn
@@ -170,7 +181,7 @@
                 </div>
               </v-col>
             </v-row>
-            <v-card-title style="font-size:1.3rem">
+            <v-card-title style="font-size: 1.3rem">
               MANUAL FERTIGATION CONTROL
             </v-card-title>
             <v-row>
@@ -180,26 +191,24 @@
                 </v-card-title>
                 <div>
                   <h4 style="text-align: justify">
-                    Press <span style="font-weight:bold">FILL</span> button to
+                    Press <span style="font-weight: bold">FILL</span> button to
                     start filling water manually into fetilizer solution tank.
-                    Press <span style="font-weight:bold">STOP</span> button to
+                    Press <span style="font-weight: bold">STOP</span> button to
                     stop filling process.
                   </h4>
-                  <div style="display:flex; justify-content:space-evenly">
+                  <div style="display: flex; justify-content: space-evenly">
                     <v-btn @click="fill" class="mt-4 mb-4">FILL</v-btn>
                     <v-btn @click="stop" class="mt-4 mb-4">STOP</v-btn>
                   </div>
                 </div>
-                <v-card-title>
-                  Nutrient Preparation
-                </v-card-title>
+                <v-card-title> Nutrient Preparation </v-card-title>
                 <div>
                   <h4 style="text-align: justify">
                     Nutrient preparation is done via schedule set by user on
                     schedule panel. It is done on
-                    <span style="font-weight:bold">3.00am on choosen date</span
+                    <span style="font-weight: bold">3.00am on choosen date</span
                     >. Please select
-                    <span style="font-weight:bold"
+                    <span style="font-weight: bold"
                       >tank, fill Volume EC value input ( in litre )</span
                     >
                     and click button below to start nutrient preparation
@@ -207,7 +216,12 @@
                   </h4>
                 </div>
                 <div
-                  style="display:flex; flex-direction:column;justify-content:center; align-items:center"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                  "
                 >
                   <!-- <v-select
                     :items="itemsDuration"
@@ -229,7 +243,11 @@
                   /> -->
                   <v-row>
                     <v-col
-                      style="display:flex; justify-content:center; align-items:center"
+                      style="
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                      "
                     >
                       <div class="mx-3">
                         <v-select
@@ -237,7 +255,7 @@
                           :items="items"
                           label="Tank"
                           multiple
-                          style="width:100px"
+                          style="width: 100px"
                         ></v-select>
                         <!-- class="short" -->
                       </div>
@@ -255,9 +273,7 @@
                     >Start Preparation</v-btn
                   >
                 </div>
-                <v-card-title>
-                  CUT OFF SETTING
-                </v-card-title>
+                <v-card-title> CUT OFF SETTING </v-card-title>
                 <div>
                   <h4 style="text-align: justify">
                     Cut off system will stop the dripping process if reach the
@@ -267,7 +283,11 @@
                   </h4>
                 </div>
                 <div
-                  style="display:flex; justify-content:center; margin-bottom:20px"
+                  style="
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 20px;
+                  "
                 >
                   <v-btn
                     :color="cutOffState == 'enable' ? 'success' : 'error'"
@@ -298,9 +318,7 @@
     </v-scroll-y-transition>
     <v-scroll-y-transition>
       <v-card class="logout elevation-12" v-if="layerDrawer">
-        <v-card-title>
-          Action
-        </v-card-title>
+        <v-card-title> Action </v-card-title>
         <hr class="hr" />
         <v-card-subtitle>
           Are you sure you want to {{ stateDevice }} the {{ activeDevice }}?
@@ -313,11 +331,14 @@
         </div>
       </v-card>
     </v-scroll-y-transition>
-    <v-dialog v-model="dialogCutOff" persistent width="auto">
+    <v-dialog
+      v-model="dialogCutOff"
+      persistent
+      max-width="500px"
+      style="overflow: hidden"
+    >
       <v-card>
-        <v-card-title class="text-h5">
-          Enable cut off system?
-        </v-card-title>
+        <v-card-title class="text-h5"> Enable cut off system? </v-card-title>
         <v-card-text
           >Please input the maximum value of humidity for each block. If not
           require for block, please empty the input section for that
@@ -326,7 +347,12 @@
         <v-row>
           <v-col>
             <div
-              style="display:flex; height:30px; align-items:center; justify-content:center"
+              style="
+                display: flex;
+                height: 30px;
+                align-items: center;
+                justify-content: center;
+              "
             >
               <v-card-subtitle>Block 1</v-card-subtitle>
               <input
@@ -337,7 +363,12 @@
               />
             </div>
             <div
-              style="display:flex; height:30px; align-items:center; justify-content:center"
+              style="
+                display: flex;
+                height: 30px;
+                align-items: center;
+                justify-content: center;
+              "
             >
               <v-card-subtitle>Block 2</v-card-subtitle>
               <input
@@ -348,7 +379,12 @@
               />
             </div>
             <div
-              style="display:flex; height:30px; align-items:center; justify-content:center"
+              style="
+                display: flex;
+                height: 30px;
+                align-items: center;
+                justify-content: center;
+              "
             >
               <v-card-subtitle>Block 3</v-card-subtitle>
               <input
@@ -389,16 +425,16 @@ export default {
   middleware: ["isTkpmIpah"],
   layout: "status",
   methods: {
-    openDialogCutOff: function() {
+    openDialogCutOff: function () {
       this.dialogCutOff = true;
     },
-    updateCutOff: function() {
+    updateCutOff: function () {
       if (this.cutOffState == "disable") {
         let payload = {
           state: "enable",
           cutOffValueBlock1: this.cutOffValueBlock1,
           cutOffValueBlock2: this.cutOffValueBlock2,
-          cutOffValueBlock3: this.cutOffValueBlock3
+          cutOffValueBlock3: this.cutOffValueBlock3,
         };
         payload = JSON.stringify(payload);
         this.client.publish("qwazx/np/tkpmIpah/table/cutoff/update", payload);
@@ -414,7 +450,7 @@ export default {
           state: "disable",
           cutOffValueBlock1: "",
           cutOffValueBlock2: "",
-          cutOffValueBlock3: ""
+          cutOffValueBlock3: "",
         };
         payload = JSON.stringify(payload);
         this.client.publish("qwazx/np/tkpmIpah/table/cutoff/update", payload);
@@ -426,10 +462,10 @@ export default {
         }, 2000);
       }
     },
-    masterStop: function() {
+    masterStop: function () {
       this.client.publish("qwazx/np/tkpmIpah/c/m/s", "404");
     },
-    waterBlock: function(block) {
+    waterBlock: function (block) {
       console.log(block);
       if (block == 1) {
         if (this.tkpmIpahStatusControllino.WDB1 == 1) {
@@ -482,9 +518,9 @@ export default {
       setIpah2ManualStop: "setIpah2ManualStop",
       setIpah2ManualNutrient: "setIpah2ManualNutrient",
       setIpah2ManualNutrientDuration: "setIpah2ManualNutrientDuration",
-      setIpah2ManualNutrientTank: "setIpah2ManualNutrientTank"
+      setIpah2ManualNutrientTank: "setIpah2ManualNutrientTank",
     }),
-    trigger: function(device, state, deviceName) {
+    trigger: function (device, state, deviceName) {
       this.state2 = false;
       this.layerDrawer = true;
       this.activeDevice = device;
@@ -498,32 +534,32 @@ export default {
       console.log(this.activeSwitch);
       // this.switchPump = !this.switchPump;
     },
-    yes: async function(Device) {
+    yes: async function (Device) {
       // console.log(Device);
       this.layerDrawer = false;
       // this.switchPump = !this.switchPump;
       this[Device] = !this[Device];
     },
-    cancel: function() {
+    cancel: function () {
       this.layerDrawer = false;
     },
-    track: function() {
-      window.onclick = event => {
+    track: function () {
+      window.onclick = (event) => {
         const modal = document.getElementById("layerDrawer");
         if (event.target == modal) {
           this.layerDrawer = false;
         }
       };
     },
-    fill: function() {
+    fill: function () {
       this.setIpah2ManualFill(true);
       console.log("fill");
     },
-    stop: function() {
+    stop: function () {
       this.setIpah2ManualStop(true);
       console.log("stop");
     },
-    nutrient: function() {
+    nutrient: function () {
       if (!this.duration) {
         alert("Please select valid volume EC");
         return;
@@ -567,13 +603,13 @@ export default {
           );
         }, 6000);
       });
-      this.client.on("error", error => {
+      this.client.on("error", (error) => {
         console.log("Connection failed", error);
       });
       this.client.on("close", () => {
         this.dialog = true;
       });
-      this.client.stream.on("error", error => {
+      this.client.stream.on("error", (error) => {
         // This does trigger when the URL is invalid
         console.error("Connection error:", error);
         this.dialog = true;
@@ -599,7 +635,7 @@ export default {
         }
         this.subscribeSuccess = true;
       });
-    }
+    },
   },
   data() {
     return {
@@ -643,7 +679,7 @@ export default {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        touchThreshold: 5
+        touchThreshold: 5,
       },
       substance: "(substance)",
       itemsSubstance: ["water", "fertilizer"],
@@ -657,43 +693,43 @@ export default {
         endpoint: "/mqtt",
         clean: true, // Reserved session
         connectTimeout: 4000, // Time out
-        reconnectPeriod: 4000 // Reconnection interval
+        reconnectPeriod: 4000, // Reconnection interval
       },
       subscription: {
         // topic: "geyzer/#",
         topic: ["np/#", "new/#", "qwazx/np/tkpmIpah/#"],
-        qos: 0
+        qos: 0,
       },
       receiveNews: "",
       qosList: [
         { label: 0, value: 0 },
         { label: 1, value: 1 },
-        { label: 2, value: 2 }
+        { label: 2, value: 2 },
       ],
       client: {
-        connected: false
+        connected: false,
       },
-      subscribeSuccess: false
+      subscribeSuccess: false,
     };
   },
   components: {
     PageTitle,
     Ipah2Status,
-    VueSlickCarousel
+    VueSlickCarousel,
   },
   computed: {
     ...mapState({
-      tkpmIpahStatus: state => state.tkpmIpahStatus,
-      tkpmIpahProcess: state => state.tkpmIpahProcess,
-      tkpmIpahStatusControllino: state => state.tkpmIpahStatusControllino
-    })
+      tkpmIpahStatus: (state) => state.tkpmIpahStatus,
+      tkpmIpahProcess: (state) => state.tkpmIpahProcess,
+      tkpmIpahStatusControllino: (state) => state.tkpmIpahStatusControllino,
+    }),
   },
   async mounted() {
     // let elHtml = document.getElementsByTagName("html")[0];
     // elHtml.style.overflowY = null;
     this.createConnection();
     this.doSubscribe();
-  }
+  },
 };
 </script>
 
