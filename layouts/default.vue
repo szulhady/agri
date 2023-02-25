@@ -1025,6 +1025,7 @@ export default {
 
         if (topic === "qwazx/np/tkpmIpah/s/ec/t1") {
           message = JSON.parse(message);
+          if (!message.tid == 342) return;
           let payload = {
             tank: 0,
             EC: message.EC
@@ -1033,6 +1034,7 @@ export default {
         }
         if (topic === "qwazx/np/tkpmIpah/s/ec/t2") {
           message = JSON.parse(message);
+          if (!message.tid == 352) return;
           let payload = {
             tank: 1,
             EC: message.EC
@@ -1041,6 +1043,7 @@ export default {
         }
         if (topic === "qwazx/np/tkpmIpah/s/ec/t3") {
           message = JSON.parse(message);
+          if (!message.tid == 362) return;
           let payload = {
             tank: 2,
             EC: message.EC

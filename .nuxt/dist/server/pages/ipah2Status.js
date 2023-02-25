@@ -5358,7 +5358,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/ipah2Status.vue?vue&type=template&id=4502b0c3&
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/ipah2Status.vue?vue&type=template&id=aa09274a&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',[_c('PageTitle',{attrs:{"title":"STATUS"}}),_vm._ssrNode(" "),_c('v-card',{staticClass:"elevation-10 "},[_c('v-card-title',[_vm._v("\n      OPERATION\n    ")]),_vm._v(" "),_c('v-row',[_c('v-col',{staticClass:"col-lg-8 pb-0 ",attrs:{"col":"12"}},[_c('Ipah2Status',{attrs:{"sv1":"red","sv2":"green","classSV1":_vm.tkpmIpahStatus.SV1 == 1 ? 'filter-green' : 'filter-red',"classSV2":_vm.tkpmIpahStatus.SV2 == 1 ? 'filter-green' : 'filter-red',"classSV3":_vm.tkpmIpahStatus.SV3 == 1 ? 'filter-green' : 'filter-red',"classSV4":_vm.tkpmIpahStatus.SV4 == 1 ? 'filter-green' : 'filter-red',"classSV5":_vm.tkpmIpahStatus.SV5 == 1 ? 'filter-green' : 'filter-red',"classSV6":_vm.tkpmIpahStatus.SV6 == 1 ? 'filter-green' : 'filter-red',"classSV7":_vm.tkpmIpahStatus.SV7 == 1 ? 'filter-green' : 'filter-red',"classSV8":_vm.tkpmIpahStatus.SV8 == 1 ? 'filter-green' : 'filter-red',"classSV9":_vm.tkpmIpahStatus.SV9 == 1 ? 'filter-green' : 'filter-red',"classSV10":_vm.tkpmIpahStatus.SV10 == 1 ? 'filter-green' : 'filter-red',"classSV11":_vm.tkpmIpahStatus.SV11 == 1 ? 'filter-green' : 'filter-red',"classSV12":_vm.tkpmIpahStatus.SV12 == 1 ? 'filter-green' : 'filter-red',"classSV13":_vm.tkpmIpahStatus.SV13 == 1 ? 'filter-green' : 'filter-red',"classSV14":_vm.tkpmIpahStatus.SV14 == 1 ? 'filter-green' : 'filter-red',"classSV15":_vm.tkpmIpahStatus.SV15 == 1 ? 'filter-green' : 'filter-red',"classPump":"filter-green","classDosingPump":_vm.tkpmIpahStatus.DP == 1 ? 'filter-green' : 'filter-red',"classPumpNaturalWater":"filter-green","classPump1":_vm.tkpmIpahStatus.P1 == 1 ? 'filter-green' : 'filter-red',"classPump2":_vm.tkpmIpahStatus.P2 == 1 ? 'filter-green' : 'filter-red',"classPump3":_vm.tkpmIpahStatus.P3 == 1 ? 'filter-green' : 'filter-red',"ph":"","waterLvl":"","EC1":"","EC2":"","EC3":""}})],1),_vm._v(" "),_c('v-col',{staticClass:"col-lg-4 pr-lg-10 pt-0",staticStyle:{"display":"flex","justify-contents":"center","align-items":"center","flex-direction":"column"},attrs:{"cols":"12"}},[_c('v-card',{staticClass:"elevation-18 rounded-lg px-5 mb-5 "},[_c('v-card-title',[_vm._v("PROCESS")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"font-size":"1.2em"}},[_vm._v("\n            "+_vm._s(_vm.tkpmIpahProcess)+"\n          ")])],1),_vm._v(" "),_c('v-card',{staticClass:"elevation-18 rounded-lg px-5 "},[_c('v-card-title',{staticStyle:{"font-size":"1.3rem"}},[_vm._v("\n            MANUAL DRIPPING CONTROL\n          ")]),_vm._v(" "),_c('v-row',[_c('v-col',[_c('div',[_c('h4',{staticStyle:{"text-align":"justify"}},[_vm._v("\n                  Click button bellow to start / stop manual water / nutrient\n                  dripping process or to stop all process. (W - water, N -\n                  nutrient, B - block)\n                ")]),_vm._v(" "),_c('div',{staticStyle:{"display":"flex","justify-content":"space-evenly"}},[_c('v-btn',{attrs:{"color":_vm.tkpmIpahStatusControllino.WDB1 == 1
                         ? 'success'
                         : 'error',"width":"90px","disabled":_vm.tkpmIpahStatusControllino.NDB1 == 1 ? true : false},on:{"click":function($event){return _vm.waterBlock(1)}}},[_vm._v("W B-1")]),_vm._v(" "),_c('v-btn',{attrs:{"color":_vm.tkpmIpahStatusControllino.WDB2 == 1
@@ -5372,16 +5372,31 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
                         : 'error',"width":"90px","disabled":_vm.tkpmIpahStatusControllino.WDB2 == 1 ? true : false},on:{"click":function($event){return _vm.waterBlock(5)}}},[_vm._v("N B-2")]),_vm._v(" "),_c('v-btn',{attrs:{"color":_vm.tkpmIpahStatusControllino.NDB3 == 1
                         ? 'success'
                         : 'error',"width":"90px","disabled":_vm.tkpmIpahStatusControllino.WDB3 == 1 ? true : false},on:{"click":function($event){return _vm.waterBlock(6)}}},[_vm._v("N B-3")])],1),_vm._v(" "),_c('div',{staticStyle:{"padding-top":"20px","display":"flex","justify-content":"center"}},[_c('v-btn',{attrs:{"color":"error","width":"190px"},on:{"click":_vm.masterStop}},[_vm._v("STOP ALL PROCESS")])],1)])])],1),_vm._v(" "),_c('v-card-title',{staticStyle:{"font-size":"1.3rem"}},[_vm._v("\n            MANUAL FERTIGATION CONTROL\n          ")]),_vm._v(" "),_c('v-row',[_c('v-col',[_c('v-card-title',[_vm._v("\n                Water Filling for fetilizer solution tank\n              ")]),_vm._v(" "),_c('div',[_c('h4',{staticStyle:{"text-align":"justify"}},[_vm._v("\n                  Press "),_c('span',{staticStyle:{"font-weight":"bold"}},[_vm._v("FILL")]),_vm._v(" button to\n                  start filling water manually into fetilizer solution tank.\n                  Press "),_c('span',{staticStyle:{"font-weight":"bold"}},[_vm._v("STOP")]),_vm._v(" button to\n                  stop filling process.\n                ")]),_vm._v(" "),_c('div',{staticStyle:{"display":"flex","justify-content":"space-evenly"}},[_c('v-btn',{staticClass:"mt-4 mb-4",on:{"click":_vm.fill}},[_vm._v("FILL")]),_vm._v(" "),_c('v-btn',{staticClass:"mt-4 mb-4",on:{"click":_vm.stop}},[_vm._v("STOP")])],1)]),_vm._v(" "),_c('v-card-title',[_vm._v("\n                Nutrient Preparation\n              ")]),_vm._v(" "),_c('div',[_c('h4',{staticStyle:{"text-align":"justify"}},[_vm._v("\n                  Nutrient preparation is done via schedule set by user on\n                  schedule panel. It is done on\n                  "),_c('span',{staticStyle:{"font-weight":"bold"}},[_vm._v("3.00am on choosen date")]),_vm._v(". Please select\n                  "),_c('span',{staticStyle:{"font-weight":"bold"}},[_vm._v("tank, fill Volume EC value input ( in litre )")]),_vm._v("\n                  and click button below to start nutrient preparation\n                  manually.\n                ")])]),_vm._v(" "),_c('div',{staticStyle:{"display":"flex","flex-direction":"column","justify-content":"center","align-items":"center"}},[_c('v-row',[_c('v-col',{staticStyle:{"display":"flex","justify-content":"center","align-items":"center"}},[_c('div',{staticClass:"mx-3"},[_c('v-select',{staticStyle:{"width":"100px"},attrs:{"items":_vm.items,"label":"Tank","multiple":""},model:{value:(_vm.tank),callback:function ($$v) {_vm.tank=$$v},expression:"tank"}})],1),_vm._v(" "),_c('div',[_c('input',{directives:[{name:"mask",rawName:"v-mask",value:('##.##'),expression:"'##.##'"},{name:"model",rawName:"v-model.number",value:(_vm.duration),expression:"duration",modifiers:{"number":true}}],staticClass:"long2",attrs:{"type":"text"},domProps:{"value":(_vm.duration)},on:{"input":function($event){if($event.target.composing){ return; }_vm.duration=_vm._n($event.target.value)},"blur":function($event){return _vm.$forceUpdate()}}})])])],1),_vm._v(" "),_c('v-btn',{staticClass:"mt-4 mb-4",on:{"click":_vm.nutrient}},[_vm._v("Start Preparation")])],1),_vm._v(" "),_c('v-card-title',[_vm._v("\n                CUT OFF SETTING\n              ")]),_vm._v(" "),_c('div',[_c('h4',{staticStyle:{"text-align":"justify"}},[_vm._v("\n                  Cut off system will stop the dripping process if reach the\n                  maximum amount of humidity on plants. Cut off system setting\n                  can be pre-set wether to enable or disable, and can be set\n                  the value of maximum humidity of soil sensor for each tank.\n                ")])]),_vm._v(" "),_c('div',{staticStyle:{"display":"flex","justify-content":"center","margin-bottom":"20px"}},[_c('v-btn',{attrs:{"color":_vm.cutOffState == 'enable' ? 'success' : 'error',"width":"220px","disabled":_vm.cutOffState == '' ? true : false},on:{"click":function($event){_vm.cutOffState == 'enable'
-                      ? _vm.updateCutOff()
+                      ? _vm.openEditDisanbleDialogCutOff()
                       : _vm.openDialogCutOff()}}},[_vm._v(_vm._s(_vm.cutOffState == ""
                       ? "Waiting from server"
                       : _vm.cutOffState == "disable"
                       ? "Disable"
-                      : "Enable"))])],1)],1)],1)],1)],1)],1)],1),_vm._ssrNode(" "),_c('v-scroll-y-transition',[(_vm.layerDrawer)?_c('div',{staticClass:"layer2",attrs:{"id":"layerDrawer"}}):_vm._e()]),_vm._ssrNode(" "),_c('v-scroll-y-transition',[(_vm.layerDrawer)?_c('v-card',{staticClass:"logout elevation-12"},[_c('v-card-title',[_vm._v("\n        Action\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("\n        Are you sure you want to "+_vm._s(_vm.stateDevice)+" the "+_vm._s(_vm.activeDevice)+"?\n      ")]),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"success logout-btn",on:{"click":function($event){return _vm.yes(_vm.activeSwitch)}}},[_vm._v("Yes")]),_vm._v(" "),_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1):_vm._e()],1),_vm._ssrNode(" "),_c('v-dialog',{attrs:{"persistent":"","width":"auto"},model:{value:(_vm.dialogCutOff),callback:function ($$v) {_vm.dialogCutOff=$$v},expression:"dialogCutOff"}},[_c('v-card',[_c('v-card-title',{staticClass:"text-h5"},[_vm._v("\n        Enable cut off system?\n      ")]),_vm._v(" "),_c('v-card-text',[_vm._v("Please input the maximum value of humidity for each block. If not\n        require for block, please empty the input section for that\n        block.")]),_vm._v(" "),_c('v-row',[_c('v-col',[_c('div',{staticStyle:{"display":"flex","height":"30px","align-items":"center","justify-content":"center"}},[_c('v-card-subtitle',[_vm._v("Block 1")]),_vm._v(" "),_c('input',{directives:[{name:"mask",rawName:"v-mask",value:('##.##'),expression:"'##.##'"},{name:"model",rawName:"v-model.number",value:(_vm.cutOffValueBlock1),expression:"cutOffValueBlock1",modifiers:{"number":true}}],staticClass:"long2",attrs:{"type":"text"},domProps:{"value":(_vm.cutOffValueBlock1)},on:{"input":function($event){if($event.target.composing){ return; }_vm.cutOffValueBlock1=_vm._n($event.target.value)},"blur":function($event){return _vm.$forceUpdate()}}})],1),_vm._v(" "),_c('div',{staticStyle:{"display":"flex","height":"30px","align-items":"center","justify-content":"center"}},[_c('v-card-subtitle',[_vm._v("Block 2")]),_vm._v(" "),_c('input',{directives:[{name:"mask",rawName:"v-mask",value:('##.##'),expression:"'##.##'"},{name:"model",rawName:"v-model.number",value:(_vm.cutOffValueBlock2),expression:"cutOffValueBlock2",modifiers:{"number":true}}],staticClass:"long2",attrs:{"type":"text"},domProps:{"value":(_vm.cutOffValueBlock2)},on:{"input":function($event){if($event.target.composing){ return; }_vm.cutOffValueBlock2=_vm._n($event.target.value)},"blur":function($event){return _vm.$forceUpdate()}}})],1),_vm._v(" "),_c('div',{staticStyle:{"display":"flex","height":"30px","align-items":"center","justify-content":"center"}},[_c('v-card-subtitle',[_vm._v("Block 3")]),_vm._v(" "),_c('input',{directives:[{name:"mask",rawName:"v-mask",value:('##.##'),expression:"'##.##'"},{name:"model",rawName:"v-model.number",value:(_vm.cutOffValueBlock3),expression:"cutOffValueBlock3",modifiers:{"number":true}}],staticClass:"long2",attrs:{"type":"text"},domProps:{"value":(_vm.cutOffValueBlock3)},on:{"input":function($event){if($event.target.composing){ return; }_vm.cutOffValueBlock3=_vm._n($event.target.value)},"blur":function($event){return _vm.$forceUpdate()}}})],1)])],1),_vm._v(" "),_c('v-card-actions',[_c('v-spacer'),_vm._v(" "),_c('v-btn',{attrs:{"color":"error","variant":"text"},on:{"click":function($event){_vm.dialogCutOff = false}}},[_vm._v("\n          Cancel\n        ")]),_vm._v(" "),_c('v-btn',{attrs:{"color":"green-darken-1","variant":"text"},on:{"click":_vm.updateCutOff}},[_vm._v("\n          Confirm\n        ")])],1)],1)],1)],2)}
+                      : "Enable"))])],1)],1)],1)],1)],1)],1)],1),_vm._ssrNode(" "),_c('v-scroll-y-transition',[(_vm.layerDrawer)?_c('div',{staticClass:"layer2",attrs:{"id":"layerDrawer"}}):_vm._e()]),_vm._ssrNode(" "),_c('v-scroll-y-transition',[(_vm.layerDrawer)?_c('v-card',{staticClass:"logout elevation-12"},[_c('v-card-title',[_vm._v("\n        Action\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("\n        Are you sure you want to "+_vm._s(_vm.stateDevice)+" the "+_vm._s(_vm.activeDevice)+"?\n      ")]),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"success logout-btn",on:{"click":function($event){return _vm.yes(_vm.activeSwitch)}}},[_vm._v("Yes")]),_vm._v(" "),_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1):_vm._e()],1),_vm._ssrNode(" "),_c('v-dialog',{staticStyle:{"overflow":"hidden"},attrs:{"persistent":"","max-width":"500px"},model:{value:(_vm.dialogCutOff),callback:function ($$v) {_vm.dialogCutOff=$$v},expression:"dialogCutOff"}},[_c('v-card',[_c('v-card-title',{staticClass:"text-h5"},[_vm._v("\n        Enable cut off system?\n      ")]),_vm._v(" "),_c('v-card-text',[_vm._v("Please input the maximum value of humidity for each block. If not\n        require for block, please empty the input section for that\n        block.")]),_vm._v(" "),_c('v-row',[_c('v-col',[_c('div',{staticStyle:{"display":"flex","height":"30px","align-items":"center","justify-content":"center"}},[_c('v-card-subtitle',[_vm._v("Block 1")]),_vm._v(" "),_c('input',{directives:[{name:"mask",rawName:"v-mask",value:('##.##'),expression:"'##.##'"},{name:"model",rawName:"v-model.number",value:(_vm.cutOffValueBlock1),expression:"cutOffValueBlock1",modifiers:{"number":true}}],staticClass:"long2",attrs:{"type":"text"},domProps:{"value":(_vm.cutOffValueBlock1)},on:{"input":function($event){if($event.target.composing){ return; }_vm.cutOffValueBlock1=_vm._n($event.target.value)},"blur":function($event){return _vm.$forceUpdate()}}})],1),_vm._v(" "),_c('div',{staticStyle:{"display":"flex","height":"30px","align-items":"center","justify-content":"center"}},[_c('v-card-subtitle',[_vm._v("Block 2")]),_vm._v(" "),_c('input',{directives:[{name:"mask",rawName:"v-mask",value:('##.##'),expression:"'##.##'"},{name:"model",rawName:"v-model.number",value:(_vm.cutOffValueBlock2),expression:"cutOffValueBlock2",modifiers:{"number":true}}],staticClass:"long2",attrs:{"type":"text"},domProps:{"value":(_vm.cutOffValueBlock2)},on:{"input":function($event){if($event.target.composing){ return; }_vm.cutOffValueBlock2=_vm._n($event.target.value)},"blur":function($event){return _vm.$forceUpdate()}}})],1),_vm._v(" "),_c('div',{staticStyle:{"display":"flex","height":"30px","align-items":"center","justify-content":"center"}},[_c('v-card-subtitle',[_vm._v("Block 3")]),_vm._v(" "),_c('input',{directives:[{name:"mask",rawName:"v-mask",value:('##.##'),expression:"'##.##'"},{name:"model",rawName:"v-model.number",value:(_vm.cutOffValueBlock3),expression:"cutOffValueBlock3",modifiers:{"number":true}}],staticClass:"long2",attrs:{"type":"text"},domProps:{"value":(_vm.cutOffValueBlock3)},on:{"input":function($event){if($event.target.composing){ return; }_vm.cutOffValueBlock3=_vm._n($event.target.value)},"blur":function($event){return _vm.$forceUpdate()}}})],1)])],1),_vm._v(" "),_c('v-card-actions',[_c('v-spacer'),_vm._v(" "),_c('v-btn',{attrs:{"color":"error","variant":"text"},on:{"click":function($event){_vm.dialogCutOff = false}}},[_vm._v("\n          Cancel\n        ")]),_vm._v(" "),_c('v-btn',{attrs:{"color":"success","variant":"text"},on:{"click":function($event){return _vm.updateCutOff(
+              'enable',
+              _vm.cutOffValueBlock1,
+              _vm.cutOffValueBlock2,
+              _vm.cutOffValueBlock3
+            )}}},[_vm._v("\n          Confirm\n        ")])],1)],1)],1),_vm._ssrNode(" "),_c('v-dialog',{staticStyle:{"overflow":"hidden"},attrs:{"persistent":"","max-width":"500px"},model:{value:(_vm.editDisableDialogCutOff),callback:function ($$v) {_vm.editDisableDialogCutOff=$$v},expression:"editDisableDialogCutOff"}},[_c('v-card',[_c('v-card-title',{staticClass:"text-h5"},[_vm._v("\n        Edit value or disable cut off system?\n      ")]),_vm._v(" "),_c('v-card-text',[_vm._v("Please input new maximum value of humidity for each block. If not\n        require for block, please empty the input section for that block.\n        Click disable to disable cut off system.")]),_vm._v(" "),_c('v-row',[_c('v-col',[_c('div',{staticStyle:{"display":"flex","height":"30px","align-items":"center","justify-content":"center"}},[_c('v-card-subtitle',[_vm._v("Block 1 - old value ("+_vm._s(_vm.cutOffValueBlock1Read)+")")]),_vm._v(" "),_c('input',{directives:[{name:"mask",rawName:"v-mask",value:('##.##'),expression:"'##.##'"},{name:"model",rawName:"v-model.number",value:(_vm.newCutOffValueBlock1),expression:"newCutOffValueBlock1",modifiers:{"number":true}}],staticClass:"long2",attrs:{"type":"text"},domProps:{"value":(_vm.newCutOffValueBlock1)},on:{"input":function($event){if($event.target.composing){ return; }_vm.newCutOffValueBlock1=_vm._n($event.target.value)},"blur":function($event){return _vm.$forceUpdate()}}})],1),_vm._v(" "),_c('div',{staticStyle:{"display":"flex","height":"30px","align-items":"center","justify-content":"center"}},[_c('v-card-subtitle',[_vm._v("Block 2 - old value ("+_vm._s(_vm.cutOffValueBlock2Read)+")")]),_vm._v(" "),_c('input',{directives:[{name:"mask",rawName:"v-mask",value:('##.##'),expression:"'##.##'"},{name:"model",rawName:"v-model.number",value:(_vm.newCutOffValueBlock2),expression:"newCutOffValueBlock2",modifiers:{"number":true}}],staticClass:"long2",attrs:{"type":"text"},domProps:{"value":(_vm.newCutOffValueBlock2)},on:{"input":function($event){if($event.target.composing){ return; }_vm.newCutOffValueBlock2=_vm._n($event.target.value)},"blur":function($event){return _vm.$forceUpdate()}}})],1),_vm._v(" "),_c('div',{staticStyle:{"display":"flex","height":"30px","align-items":"center","justify-content":"center"}},[_c('v-card-subtitle',[_vm._v("Block 3 - old value ("+_vm._s(_vm.cutOffValueBlock3Read)+")")]),_vm._v(" "),_c('input',{directives:[{name:"mask",rawName:"v-mask",value:('##.##'),expression:"'##.##'"},{name:"model",rawName:"v-model.number",value:(_vm.newCutOffValueBlock3),expression:"newCutOffValueBlock3",modifiers:{"number":true}}],staticClass:"long2",attrs:{"type":"text"},domProps:{"value":(_vm.newCutOffValueBlock3)},on:{"input":function($event){if($event.target.composing){ return; }_vm.newCutOffValueBlock3=_vm._n($event.target.value)},"blur":function($event){return _vm.$forceUpdate()}}})],1)])],1),_vm._v(" "),_c('v-card-actions',[_c('v-spacer'),_vm._v(" "),_c('v-btn',{attrs:{"color":"error","variant":"text"},on:{"click":function($event){_vm.editDisableDialogCutOff = false}}},[_vm._v("\n          Cancel\n        ")]),_vm._v(" "),_c('v-btn',{attrs:{"color":"success","variant":"text"},on:{"click":function($event){return _vm.updateCutOff(
+              'enableEdit',
+              _vm.newCutOffValueBlock1,
+              _vm.newCutOffValueBlock2,
+              _vm.newCutOffValueBlock3
+            )}}},[_vm._v("\n          Edit\n        ")]),_vm._v(" "),_c('v-btn',{attrs:{"color":"warning","variant":"text"},on:{"click":function($event){return _vm.updateCutOff(
+              'disable',
+              'cutOffValueBlock1',
+              'cutOffValueBlock2',
+              'cutOffValueBlock3'
+            )}}},[_vm._v("\n          Disable\n        ")])],1)],1)],1)],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/ipah2Status.vue?vue&type=template&id=4502b0c3&
+// CONCATENATED MODULE: ./pages/ipah2Status.vue?vue&type=template&id=aa09274a&
 
 // EXTERNAL MODULE: ./components/PageTitle.vue + 4 modules
 var PageTitle = __webpack_require__(191);
@@ -5783,6 +5798,127 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -5795,24 +5931,35 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
   middleware: ["isTkpmIpah"],
   layout: "status",
   methods: {
+    openEditDisanbleDialogCutOff: function () {
+      this.editDisableDialogCutOff = true;
+    },
     openDialogCutOff: function () {
       this.dialogCutOff = true;
     },
-    updateCutOff: function () {
-      if (this.cutOffState == "disable") {
+    updateCutOff: function (state, value1, value2, value3) {
+      this.cutOffValueBlock1 = "";
+      this.cutOffValueBlock2 = "";
+      this.cutOffValueBlock3 = "";
+      this.newCutOffValueBlock1 = "";
+      this.newCutOffValueBlock2 = "";
+      this.newCutOffValueBlock3 = "";
+
+      if (state == "enable") {
         let payload = {
           state: "enable",
-          cutOffValueBlock1: this.cutOffValueBlock1,
-          cutOffValueBlock2: this.cutOffValueBlock2,
-          cutOffValueBlock3: this.cutOffValueBlock3
+          cutOffValueBlock1: value1,
+          cutOffValueBlock2: value2,
+          cutOffValueBlock3: value3
         };
         payload = JSON.stringify(payload);
         this.client.publish("qwazx/np/tkpmIpah/table/cutoff/update", payload);
+        this.editDisableDialogCutOff = false;
         this.dialogCutOff = false;
         setTimeout(() => {
           this.client.publish("qwazx/np/tkpmIpah/table/cutoff/request", "request");
         }, 2000);
-      } else {
+      } else if (state == "disable") {
         let payload = {
           state: "disable",
           cutOffValueBlock1: "",
@@ -5820,6 +5967,22 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
           cutOffValueBlock3: ""
         };
         payload = JSON.stringify(payload);
+        this.editDisableDialogCutOff = false;
+        this.dialogCutOff = false;
+        this.client.publish("qwazx/np/tkpmIpah/table/cutoff/update", payload);
+        setTimeout(() => {
+          this.client.publish("qwazx/np/tkpmIpah/table/cutoff/request", "request");
+        }, 2000);
+      } else {
+        let payload = {
+          state: "enable",
+          cutOffValueBlock1: value1,
+          cutOffValueBlock2: value2,
+          cutOffValueBlock3: value3
+        };
+        payload = JSON.stringify(payload);
+        this.editDisableDialogCutOff = false;
+        this.dialogCutOff = false;
         this.client.publish("qwazx/np/tkpmIpah/table/cutoff/update", payload);
         setTimeout(() => {
           this.client.publish("qwazx/np/tkpmIpah/table/cutoff/request", "request");
@@ -5988,9 +6151,14 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
       });
       this.client.on("message", (topic, message) => {
         if (topic === "qwazx/np/tkpmIpah/table/cutoff/response") {
-          message = message.toString();
-          this.cutOffState = message;
-          console.log("cutoff state", message); // let payload = {
+          message = JSON.parse(message);
+          console.log(message); // message = message.toString();
+
+          this.cutOffState = message.state;
+          this.cutOffValueBlock1Read = message.cutoffblock1;
+          this.cutOffValueBlock2Read = message.cutoffblock2;
+          this.cutOffValueBlock3Read = message.cutoffblock3;
+          console.log("cutoff state", message.state); // let payload = {
           //   tank: 0,
           //   EC: message.EC
           // };
@@ -6019,6 +6187,10 @@ var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
 
   data() {
     return {
+      newCutOffValueBlock1: "",
+      newCutOffValueBlock2: "",
+      newCutOffValueBlock3: "",
+      editDisableDialogCutOff: false,
       cutOffValueBlock1: "",
       cutOffValueBlock2: "",
       cutOffValueBlock3: "",
