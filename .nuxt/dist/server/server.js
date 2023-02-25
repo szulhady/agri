@@ -1992,8 +1992,8 @@ function contrastRatio(c1, c2) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VCardActions; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return VCardSubtitle; });
-/* unused harmony export VCardText */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return VCardTitle; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return VCardText; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return VCardTitle; });
 /* harmony import */ var _VCard__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(53);
 /* harmony import */ var _util_helpers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
 
@@ -17371,7 +17371,7 @@ var default_component = Object(componentNormalizer["a" /* default */])(
 
 
 
-installComponents_default()(default_component, {VApp: VApp_VApp,VAppBar: VAppBar_VAppBar,VAppBarNavIcon: VAppBarNavIcon,VBtn: VBtn["a" /* default */],VCard: VCard["a" /* default */],VCardSubtitle: components_VCard["b" /* VCardSubtitle */],VCardTitle: components_VCard["c" /* VCardTitle */],VContainer: VContainer["a" /* default */],VDialog: VDialog["a" /* default */],VFooter: VFooter_VFooter,VIcon: VIcon_VIcon["a" /* default */],VList: VList["a" /* default */],VListItem: VListItem["a" /* default */],VListItemAction: VListItemAction["a" /* default */],VListItemContent: components_VList["a" /* VListItemContent */],VListItemTitle: components_VList["b" /* VListItemTitle */],VMain: VMain_VMain,VNavigationDrawer: VNavigationDrawer_VNavigationDrawer,VRow: VRow["a" /* default */],VScrollYTransition: transitions["d" /* VScrollYTransition */],VSpacer: VSpacer["a" /* default */],VToolbarTitle: VToolbarTitle})
+installComponents_default()(default_component, {VApp: VApp_VApp,VAppBar: VAppBar_VAppBar,VAppBarNavIcon: VAppBarNavIcon,VBtn: VBtn["a" /* default */],VCard: VCard["a" /* default */],VCardSubtitle: components_VCard["b" /* VCardSubtitle */],VCardTitle: components_VCard["d" /* VCardTitle */],VContainer: VContainer["a" /* default */],VDialog: VDialog["a" /* default */],VFooter: VFooter_VFooter,VIcon: VIcon_VIcon["a" /* default */],VList: VList["a" /* default */],VListItem: VListItem["a" /* default */],VListItemAction: VListItemAction["a" /* default */],VListItemContent: components_VList["a" /* VListItemContent */],VListItemTitle: components_VList["b" /* VListItemTitle */],VMain: VMain_VMain,VNavigationDrawer: VNavigationDrawer_VNavigationDrawer,VRow: VRow["a" /* default */],VScrollYTransition: transitions["d" /* VScrollYTransition */],VSpacer: VSpacer["a" /* default */],VToolbarTitle: VToolbarTitle})
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/login.vue?vue&type=template&id=7f12c2d3&
 var loginvue_type_template_id_7f12c2d3_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',[_c('v-main',{staticClass:"section2"},[_c('nuxt')],1)],1)}
@@ -18047,7 +18047,7 @@ var status_component = Object(componentNormalizer["a" /* default */])(
 
 
 
-installComponents_default()(status_component, {VApp: VApp_VApp,VAppBar: VAppBar_VAppBar,VAppBarNavIcon: VAppBarNavIcon,VBtn: VBtn["a" /* default */],VCard: VCard["a" /* default */],VCardSubtitle: components_VCard["b" /* VCardSubtitle */],VCardTitle: components_VCard["c" /* VCardTitle */],VContainer: VContainer["a" /* default */],VDialog: VDialog["a" /* default */],VFooter: VFooter_VFooter,VIcon: VIcon_VIcon["a" /* default */],VList: VList["a" /* default */],VListItem: VListItem["a" /* default */],VListItemAction: VListItemAction["a" /* default */],VListItemContent: components_VList["a" /* VListItemContent */],VListItemTitle: components_VList["b" /* VListItemTitle */],VMain: VMain_VMain,VNavigationDrawer: VNavigationDrawer_VNavigationDrawer,VRow: VRow["a" /* default */],VScrollYTransition: transitions["d" /* VScrollYTransition */],VSpacer: VSpacer["a" /* default */],VToolbarTitle: VToolbarTitle})
+installComponents_default()(status_component, {VApp: VApp_VApp,VAppBar: VAppBar_VAppBar,VAppBarNavIcon: VAppBarNavIcon,VBtn: VBtn["a" /* default */],VCard: VCard["a" /* default */],VCardSubtitle: components_VCard["b" /* VCardSubtitle */],VCardTitle: components_VCard["d" /* VCardTitle */],VContainer: VContainer["a" /* default */],VDialog: VDialog["a" /* default */],VFooter: VFooter_VFooter,VIcon: VIcon_VIcon["a" /* default */],VList: VList["a" /* default */],VListItem: VListItem["a" /* default */],VListItemAction: VListItemAction["a" /* default */],VListItemContent: components_VList["a" /* VListItemContent */],VListItemTitle: components_VList["b" /* VListItemTitle */],VMain: VMain_VMain,VNavigationDrawer: VNavigationDrawer_VNavigationDrawer,VRow: VRow["a" /* default */],VScrollYTransition: transitions["d" /* VScrollYTransition */],VSpacer: VSpacer["a" /* default */],VToolbarTitle: VToolbarTitle})
 
 // CONCATENATED MODULE: ./.nuxt/App.js
 
@@ -18346,10 +18346,6 @@ const components = {
   ScheduleTableSchedule: () => __webpack_require__.e(/* import() | components/schedule-table-schedule */ 43).then(__webpack_require__.bind(null, 309)).then(c => wrapFunctional(c.default || c)),
   ScheduleTableScheduleNutrient: () => __webpack_require__.e(/* import() | components/schedule-table-schedule-nutrient */ 44).then(__webpack_require__.bind(null, 310)).then(c => wrapFunctional(c.default || c)),
   ScheduleTime: () => __webpack_require__.e(/* import() | components/schedule-time */ 45).then(__webpack_require__.bind(null, 308)).then(c => wrapFunctional(c.default || c)),
-  StatusIpah1Status: () => __webpack_require__.e(/* import() | components/status-ipah1-status */ 46).then(__webpack_require__.bind(null, 303)).then(c => wrapFunctional(c.default || c)),
-  StatusIpah2Status: () => __webpack_require__.e(/* import() | components/status-ipah2-status */ 47).then(__webpack_require__.bind(null, 304)).then(c => wrapFunctional(c.default || c)),
-  StatusKongPoStatus: () => __webpack_require__.e(/* import() | components/status-kong-po-status */ 48).then(__webpack_require__.bind(null, 419)).then(c => wrapFunctional(c.default || c)),
-  StatusTkpmPagohStatus: () => __webpack_require__.e(/* import() | components/status-tkpm-pagoh-status */ 49).then(__webpack_require__.bind(null, 305)).then(c => wrapFunctional(c.default || c)),
   TrendCardStationTrendIpah1: () => __webpack_require__.e(/* import() | components/trend-card-station-trend-ipah1 */ 50).then(__webpack_require__.bind(null, 423)).then(c => wrapFunctional(c.default || c)),
   TrendCardStationTrendIpah2: () => __webpack_require__.e(/* import() | components/trend-card-station-trend-ipah2 */ 51).then(__webpack_require__.bind(null, 424)).then(c => wrapFunctional(c.default || c)),
   TrendCardStationTrendKongPo: () => __webpack_require__.e(/* import() | components/trend-card-station-trend-kong-po */ 52).then(__webpack_require__.bind(null, 425)).then(c => wrapFunctional(c.default || c)),
@@ -18364,6 +18360,10 @@ const components = {
   AdminOverviewIpah2StatusAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-ipah2-status-admin */ 7).then(__webpack_require__.bind(null, 497)).then(c => wrapFunctional(c.default || c)),
   AdminOverviewIpahStatusAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-ipah-status-admin */ 6).then(__webpack_require__.bind(null, 498)).then(c => wrapFunctional(c.default || c)),
   AdminOverviewTkpmPagohStatusAdmin: () => __webpack_require__.e(/* import() | components/admin-overview-tkpm-pagoh-status-admin */ 9).then(__webpack_require__.bind(null, 499)).then(c => wrapFunctional(c.default || c)),
+  StatusIpah1Status: () => __webpack_require__.e(/* import() | components/status-ipah1-status */ 46).then(__webpack_require__.bind(null, 303)).then(c => wrapFunctional(c.default || c)),
+  StatusIpah2Status: () => __webpack_require__.e(/* import() | components/status-ipah2-status */ 47).then(__webpack_require__.bind(null, 304)).then(c => wrapFunctional(c.default || c)),
+  StatusKongPoStatus: () => __webpack_require__.e(/* import() | components/status-kong-po-status */ 48).then(__webpack_require__.bind(null, 419)).then(c => wrapFunctional(c.default || c)),
+  StatusTkpmPagohStatus: () => __webpack_require__.e(/* import() | components/status-tkpm-pagoh-status */ 49).then(__webpack_require__.bind(null, 305)).then(c => wrapFunctional(c.default || c)),
   OverviewSingleData: () => __webpack_require__.e(/* import() | components/overview-single-data */ 33).then(__webpack_require__.bind(null, 276)).then(c => wrapFunctional(c.default || c)),
   OverviewSingleGauge: () => __webpack_require__.e(/* import() | components/overview-single-gauge */ 34).then(__webpack_require__.bind(null, 261)).then(c => wrapFunctional(c.default || c)),
   OverviewSingleServer: () => __webpack_require__.e(/* import() | components/overview-single-server */ 35).then(__webpack_require__.bind(null, 362)).then(c => wrapFunctional(c.default || c)),

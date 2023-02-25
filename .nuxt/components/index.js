@@ -31,10 +31,6 @@ export { default as ScheduleCalendar } from '../..\\components\\Schedule\\Calend
 export { default as ScheduleTableSchedule } from '../..\\components\\Schedule\\TableSchedule.vue'
 export { default as ScheduleTableScheduleNutrient } from '../..\\components\\Schedule\\TableScheduleNutrient.vue'
 export { default as ScheduleTime } from '../..\\components\\Schedule\\Time.vue'
-export { default as StatusIpah1Status } from '../..\\components\\Status\\Ipah1Status.vue'
-export { default as StatusIpah2Status } from '../..\\components\\Status\\Ipah2Status.vue'
-export { default as StatusKongPoStatus } from '../..\\components\\Status\\KongPoStatus.vue'
-export { default as StatusTkpmPagohStatus } from '../..\\components\\Status\\TkpmPagohStatus.vue'
 export { default as TrendCardStationTrendIpah1 } from '../..\\components\\Trend\\CardStationTrendIpah1.vue'
 export { default as TrendCardStationTrendIpah2 } from '../..\\components\\Trend\\CardStationTrendIpah2.vue'
 export { default as TrendCardStationTrendKongPo } from '../..\\components\\Trend\\CardStationTrendKongPo.vue'
@@ -49,6 +45,10 @@ export { default as AdminOverviewCardSummaryAdmin } from '../..\\components\\Adm
 export { default as AdminOverviewIpah2StatusAdmin } from '../..\\components\\Admin\\Overview\\ipah2StatusAdmin.vue'
 export { default as AdminOverviewIpahStatusAdmin } from '../..\\components\\Admin\\Overview\\ipahStatusAdmin.vue'
 export { default as AdminOverviewTkpmPagohStatusAdmin } from '../..\\components\\Admin\\Overview\\tkpmPagohStatusAdmin.vue'
+export { default as StatusIpah1Status } from '../..\\components\\Status\\Ipah1Status.vue'
+export { default as StatusIpah2Status } from '../..\\components\\Status\\Ipah2Status.vue'
+export { default as StatusKongPoStatus } from '../..\\components\\Status\\KongPoStatus.vue'
+export { default as StatusTkpmPagohStatus } from '../..\\components\\Status\\TkpmPagohStatus.vue'
 export { default as OverviewSingleData } from '../..\\components\\Overview\\Single\\Data.vue'
 export { default as OverviewSingleGauge } from '../..\\components\\Overview\\Single\\Gauge.vue'
 export { default as OverviewSingleServer } from '../..\\components\\Overview\\Single\\Server.vue'
@@ -88,10 +88,6 @@ export const LazyScheduleCalendar = import('../..\\components\\Schedule\\Calenda
 export const LazyScheduleTableSchedule = import('../..\\components\\Schedule\\TableSchedule.vue' /* webpackChunkName: "components/schedule-table-schedule" */).then(c => wrapFunctional(c.default || c))
 export const LazyScheduleTableScheduleNutrient = import('../..\\components\\Schedule\\TableScheduleNutrient.vue' /* webpackChunkName: "components/schedule-table-schedule-nutrient" */).then(c => wrapFunctional(c.default || c))
 export const LazyScheduleTime = import('../..\\components\\Schedule\\Time.vue' /* webpackChunkName: "components/schedule-time" */).then(c => wrapFunctional(c.default || c))
-export const LazyStatusIpah1Status = import('../..\\components\\Status\\Ipah1Status.vue' /* webpackChunkName: "components/status-ipah1-status" */).then(c => wrapFunctional(c.default || c))
-export const LazyStatusIpah2Status = import('../..\\components\\Status\\Ipah2Status.vue' /* webpackChunkName: "components/status-ipah2-status" */).then(c => wrapFunctional(c.default || c))
-export const LazyStatusKongPoStatus = import('../..\\components\\Status\\KongPoStatus.vue' /* webpackChunkName: "components/status-kong-po-status" */).then(c => wrapFunctional(c.default || c))
-export const LazyStatusTkpmPagohStatus = import('../..\\components\\Status\\TkpmPagohStatus.vue' /* webpackChunkName: "components/status-tkpm-pagoh-status" */).then(c => wrapFunctional(c.default || c))
 export const LazyTrendCardStationTrendIpah1 = import('../..\\components\\Trend\\CardStationTrendIpah1.vue' /* webpackChunkName: "components/trend-card-station-trend-ipah1" */).then(c => wrapFunctional(c.default || c))
 export const LazyTrendCardStationTrendIpah2 = import('../..\\components\\Trend\\CardStationTrendIpah2.vue' /* webpackChunkName: "components/trend-card-station-trend-ipah2" */).then(c => wrapFunctional(c.default || c))
 export const LazyTrendCardStationTrendKongPo = import('../..\\components\\Trend\\CardStationTrendKongPo.vue' /* webpackChunkName: "components/trend-card-station-trend-kong-po" */).then(c => wrapFunctional(c.default || c))
@@ -106,6 +102,10 @@ export const LazyAdminOverviewCardSummaryAdmin = import('../..\\components\\Admi
 export const LazyAdminOverviewIpah2StatusAdmin = import('../..\\components\\Admin\\Overview\\ipah2StatusAdmin.vue' /* webpackChunkName: "components/admin-overview-ipah2-status-admin" */).then(c => wrapFunctional(c.default || c))
 export const LazyAdminOverviewIpahStatusAdmin = import('../..\\components\\Admin\\Overview\\ipahStatusAdmin.vue' /* webpackChunkName: "components/admin-overview-ipah-status-admin" */).then(c => wrapFunctional(c.default || c))
 export const LazyAdminOverviewTkpmPagohStatusAdmin = import('../..\\components\\Admin\\Overview\\tkpmPagohStatusAdmin.vue' /* webpackChunkName: "components/admin-overview-tkpm-pagoh-status-admin" */).then(c => wrapFunctional(c.default || c))
+export const LazyStatusIpah1Status = import('../..\\components\\Status\\Ipah1Status.vue' /* webpackChunkName: "components/status-ipah1-status" */).then(c => wrapFunctional(c.default || c))
+export const LazyStatusIpah2Status = import('../..\\components\\Status\\Ipah2Status.vue' /* webpackChunkName: "components/status-ipah2-status" */).then(c => wrapFunctional(c.default || c))
+export const LazyStatusKongPoStatus = import('../..\\components\\Status\\KongPoStatus.vue' /* webpackChunkName: "components/status-kong-po-status" */).then(c => wrapFunctional(c.default || c))
+export const LazyStatusTkpmPagohStatus = import('../..\\components\\Status\\TkpmPagohStatus.vue' /* webpackChunkName: "components/status-tkpm-pagoh-status" */).then(c => wrapFunctional(c.default || c))
 export const LazyOverviewSingleData = import('../..\\components\\Overview\\Single\\Data.vue' /* webpackChunkName: "components/overview-single-data" */).then(c => wrapFunctional(c.default || c))
 export const LazyOverviewSingleGauge = import('../..\\components\\Overview\\Single\\Gauge.vue' /* webpackChunkName: "components/overview-single-gauge" */).then(c => wrapFunctional(c.default || c))
 export const LazyOverviewSingleServer = import('../..\\components\\Overview\\Single\\Server.vue' /* webpackChunkName: "components/overview-single-server" */).then(c => wrapFunctional(c.default || c))

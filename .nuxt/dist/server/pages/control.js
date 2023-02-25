@@ -4843,7 +4843,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 
 
-installComponents_default()(component, {VBtn: VBtn["a" /* default */],VCard: VCard["a" /* default */],VCardSubtitle: components_VCard["b" /* VCardSubtitle */],VCardTitle: components_VCard["c" /* VCardTitle */],VCol: VCol["a" /* default */],VRow: VRow["a" /* default */],VScrollYTransition: transitions["d" /* VScrollYTransition */],VSelect: VSelect["a" /* default */],VSubheader: VSubheader["a" /* default */]})
+installComponents_default()(component, {VBtn: VBtn["a" /* default */],VCard: VCard["a" /* default */],VCardSubtitle: components_VCard["b" /* VCardSubtitle */],VCardTitle: components_VCard["d" /* VCardTitle */],VCol: VCol["a" /* default */],VRow: VRow["a" /* default */],VScrollYTransition: transitions["d" /* VScrollYTransition */],VSelect: VSelect["a" /* default */],VSubheader: VSubheader["a" /* default */]})
 
 
 /***/ }),

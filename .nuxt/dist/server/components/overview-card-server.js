@@ -838,7 +838,7 @@ installComponents_default()(component, {Duration: __webpack_require__(192).defau
 
 
 
-installComponents_default()(component, {VCard: VCard["a" /* default */],VCardTitle: components_VCard["c" /* VCardTitle */]})
+installComponents_default()(component, {VCard: VCard["a" /* default */],VCardTitle: components_VCard["d" /* VCardTitle */]})
 
 
 /***/ })

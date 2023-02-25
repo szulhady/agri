@@ -255,6 +255,38 @@
                     >Start Preparation</v-btn
                   >
                 </div>
+                <v-card-title>
+                  CUT OFF SETTING
+                </v-card-title>
+                <div>
+                  <h4 style="text-align: justify">
+                    Cut off system will stop the dripping process if reach the
+                    maximum amount of humidity on plants. Cut off system setting
+                    can be pre-set wether to enable or disable, and can be set
+                    the value of maximum humidity of soil sensor for each tank.
+                  </h4>
+                </div>
+                <div
+                  style="display:flex; justify-content:center; margin-bottom:20px"
+                >
+                  <v-btn
+                    :color="cutOffState == 'enable' ? 'success' : 'error'"
+                    @click="
+                      cutOffState == 'enable'
+                        ? updateCutOff()
+                        : openDialogCutOff()
+                    "
+                    width="220px"
+                    :disabled="cutOffState == '' ? true : false"
+                    >{{
+                      cutOffState == ""
+                        ? "Waiting from server"
+                        : cutOffState == "disable"
+                        ? "Disable"
+                        : "Enable"
+                    }}</v-btn
+                  >
+                </div>
               </v-col>
             </v-row>
           </v-card>
@@ -281,6 +313,64 @@
         </div>
       </v-card>
     </v-scroll-y-transition>
+    <v-dialog v-model="dialogCutOff" persistent width="auto">
+      <v-card>
+        <v-card-title class="text-h5">
+          Enable cut off system?
+        </v-card-title>
+        <v-card-text
+          >Please input the maximum value of humidity for each block. If not
+          require for block, please empty the input section for that
+          block.</v-card-text
+        >
+        <v-row>
+          <v-col>
+            <div
+              style="display:flex; height:30px; align-items:center; justify-content:center"
+            >
+              <v-card-subtitle>Block 1</v-card-subtitle>
+              <input
+                class="long2"
+                type="text"
+                v-mask="'##.##'"
+                v-model.number="cutOffValueBlock1"
+              />
+            </div>
+            <div
+              style="display:flex; height:30px; align-items:center; justify-content:center"
+            >
+              <v-card-subtitle>Block 2</v-card-subtitle>
+              <input
+                class="long2"
+                type="text"
+                v-mask="'##.##'"
+                v-model.number="cutOffValueBlock2"
+              />
+            </div>
+            <div
+              style="display:flex; height:30px; align-items:center; justify-content:center"
+            >
+              <v-card-subtitle>Block 3</v-card-subtitle>
+              <input
+                class="long2"
+                type="text"
+                v-mask="'##.##'"
+                v-model.number="cutOffValueBlock3"
+              />
+            </div>
+          </v-col>
+        </v-row>
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn color="error" variant="text" @click="dialogCutOff = false">
+            Cancel
+          </v-btn>
+          <v-btn color="green-darken-1" variant="text" @click="updateCutOff">
+            Confirm
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
   </section>
 </template>
 
@@ -299,6 +389,43 @@ export default {
   middleware: ["isTkpmIpah"],
   layout: "status",
   methods: {
+    openDialogCutOff: function() {
+      this.dialogCutOff = true;
+    },
+    updateCutOff: function() {
+      if (this.cutOffState == "disable") {
+        let payload = {
+          state: "enable",
+          cutOffValueBlock1: this.cutOffValueBlock1,
+          cutOffValueBlock2: this.cutOffValueBlock2,
+          cutOffValueBlock3: this.cutOffValueBlock3
+        };
+        payload = JSON.stringify(payload);
+        this.client.publish("qwazx/np/tkpmIpah/table/cutoff/update", payload);
+        this.dialogCutOff = false;
+        setTimeout(() => {
+          this.client.publish(
+            "qwazx/np/tkpmIpah/table/cutoff/request",
+            "request"
+          );
+        }, 2000);
+      } else {
+        let payload = {
+          state: "disable",
+          cutOffValueBlock1: "",
+          cutOffValueBlock2: "",
+          cutOffValueBlock3: ""
+        };
+        payload = JSON.stringify(payload);
+        this.client.publish("qwazx/np/tkpmIpah/table/cutoff/update", payload);
+        setTimeout(() => {
+          this.client.publish(
+            "qwazx/np/tkpmIpah/table/cutoff/request",
+            "request"
+          );
+        }, 2000);
+      }
+    },
     masterStop: function() {
       this.client.publish("qwazx/np/tkpmIpah/c/m/s", "404");
     },
@@ -429,6 +556,16 @@ export default {
       this.client.on("connect", () => {
         console.log("Connection succeeded!");
         this.dialog = false;
+        this.client.publish(
+          "qwazx/np/tkpmIpah/table/cutoff/request",
+          "request"
+        );
+        setInterval(() => {
+          this.client.publish(
+            "qwazx/np/tkpmIpah/table/cutoff/request",
+            "request"
+          );
+        }, 6000);
       });
       this.client.on("error", error => {
         console.log("Connection failed", error);
@@ -441,7 +578,18 @@ export default {
         console.error("Connection error:", error);
         this.dialog = true;
       });
-      this.client.on("message", (topic, message) => {});
+      this.client.on("message", (topic, message) => {
+        if (topic === "qwazx/np/tkpmIpah/table/cutoff/response") {
+          message = message.toString();
+          this.cutOffState = message;
+          console.log("cutoff state", message);
+          // let payload = {
+          //   tank: 0,
+          //   EC: message.EC
+          // };
+          // this.getCurrentDataNutrientIpah2(payload);
+        }
+      });
     },
     doSubscribe() {
       const { topic, qos } = this.subscription;
@@ -455,6 +603,11 @@ export default {
   },
   data() {
     return {
+      cutOffValueBlock1: "",
+      cutOffValueBlock2: "",
+      cutOffValueBlock3: "",
+      dialogCutOff: false,
+      cutOffState: "",
       tank: "",
       items: ["1", "2", "3"],
       activeDevice: "",
@@ -508,7 +661,7 @@ export default {
       },
       subscription: {
         // topic: "geyzer/#",
-        topic: ["np/#", "new/#"],
+        topic: ["np/#", "new/#", "qwazx/np/tkpmIpah/#"],
         qos: 0
       },
       receiveNews: "",

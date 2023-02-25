@@ -5211,7 +5211,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* vuetify-loader */
 
 
-installComponents_default()(component, {VCardTitle: VCard["c" /* VCardTitle */]})
+installComponents_default()(component, {VCardTitle: VCard["d" /* VCardTitle */]})
 
 
 /***/ }),
@@ -5405,7 +5405,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 
 
-installComponents_default()(component, {VCard: VCard["a" /* default */],VCardSubtitle: components_VCard["b" /* VCardSubtitle */],VCardTitle: components_VCard["c" /* VCardTitle */],VIcon: VIcon["a" /* default */]})
+installComponents_default()(component, {VCard: VCard["a" /* default */],VCardSubtitle: components_VCard["b" /* VCardSubtitle */],VCardTitle: components_VCard["d" /* VCardTitle */],VIcon: VIcon["a" /* default */]})
 
 
 /***/ }),
@@ -8126,7 +8126,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 
 
-installComponents_default()(component, {VCard: VCard["a" /* default */],VCardSubtitle: components_VCard["b" /* VCardSubtitle */],VCardTitle: components_VCard["c" /* VCardTitle */]})
+installComponents_default()(component, {VCard: VCard["a" /* default */],VCardSubtitle: components_VCard["b" /* VCardSubtitle */],VCardTitle: components_VCard["d" /* VCardTitle */]})
 
 
 /***/ }),
@@ -8726,7 +8726,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 
 
-installComponents_default()(component, {VCard: VCard["a" /* default */],VCardTitle: components_VCard["c" /* VCardTitle */],VCol: VCol["a" /* default */],VRow: VRow["a" /* default */]})
+installComponents_default()(component, {VCard: VCard["a" /* default */],VCardTitle: components_VCard["d" /* VCardTitle */],VCol: VCol["a" /* default */],VRow: VRow["a" /* default */]})
 
 
 /***/ }),
@@ -9975,7 +9975,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 
 
-installComponents_default()(component, {VCard: VCard["a" /* default */],VCardTitle: components_VCard["c" /* VCardTitle */],VCol: VCol["a" /* default */],VImg: VImg["a" /* default */],VRow: VRow["a" /* default */]})
+installComponents_default()(component, {VCard: VCard["a" /* default */],VCardTitle: components_VCard["d" /* VCardTitle */],VCol: VCol["a" /* default */],VImg: VImg["a" /* default */],VRow: VRow["a" /* default */]})
 
 
 /***/ }),
@@ -10137,7 +10137,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 
 
-installComponents_default()(component, {VCard: VCard["a" /* default */],VCardTitle: components_VCard["c" /* VCardTitle */],VDataTable: VDataTable["a" /* default */]})
+installComponents_default()(component, {VCard: VCard["a" /* default */],VCardTitle: components_VCard["d" /* VCardTitle */],VDataTable: VDataTable["a" /* default */]})
 
 
 /***/ }),
@@ -10234,7 +10234,7 @@ installComponents_default()(component, {Duration: __webpack_require__(192).defau
 
 
 
-installComponents_default()(component, {VCard: VCard["a" /* default */],VCardTitle: components_VCard["c" /* VCardTitle */]})
+installComponents_default()(component, {VCard: VCard["a" /* default */],VCardTitle: components_VCard["d" /* VCardTitle */]})
 
 
 /***/ }),

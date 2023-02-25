@@ -6899,7 +6899,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 
 
-installComponents_default()(component, {VCard: VCard["a" /* default */],VCardTitle: components_VCard["c" /* VCardTitle */],VDataTable: VDataTable["a" /* default */]})
+installComponents_default()(component, {VCard: VCard["a" /* default */],VCardTitle: components_VCard["d" /* VCardTitle */],VDataTable: VDataTable["a" /* default */]})
 
 
 /***/ }),

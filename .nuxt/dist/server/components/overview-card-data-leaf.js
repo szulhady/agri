@@ -430,7 +430,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* vuetify-loader */
 
 
-installComponents_default()(component, {VCardTitle: VCard["c" /* VCardTitle */]})
+installComponents_default()(component, {VCardTitle: VCard["d" /* VCardTitle */]})
 
 
 /***/ }),

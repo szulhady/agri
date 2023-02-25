@@ -4748,7 +4748,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 
 
-installComponents_default()(component, {VBtn: VBtn["a" /* default */],VCard: VCard["a" /* default */],VCardActions: components_VCard["a" /* VCardActions */],VCardSubtitle: components_VCard["b" /* VCardSubtitle */],VCardTitle: components_VCard["c" /* VCardTitle */],VDataTable: VDataTable["a" /* default */],VDialog: VDialog["a" /* default */],VSpacer: VSpacer["a" /* default */]})
+installComponents_default()(component, {VBtn: VBtn["a" /* default */],VCard: VCard["a" /* default */],VCardActions: components_VCard["a" /* VCardActions */],VCardSubtitle: components_VCard["b" /* VCardSubtitle */],VCardTitle: components_VCard["d" /* VCardTitle */],VDataTable: VDataTable["a" /* default */],VDialog: VDialog["a" /* default */],VSpacer: VSpacer["a" /* default */]})
 
 
 /***/ }),
