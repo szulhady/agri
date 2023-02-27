@@ -90,7 +90,7 @@
                         <input
                           class="long2"
                           type="text"
-                          v-mask="'#.##'"
+                          v-mask="'##.##'"
                           v-model.number="durationNutrient"
                         />
                       </div>
@@ -1720,7 +1720,7 @@
           {{ dateEndNutrient }}
         </v-card-subtitle>
         <v-card-subtitle
-          >Tank : {{ tank }} , Volume : {{ durationNutrient }}
+          >Tank : {{ tank }} , Volume : {{ durationNutrient }} litre
         </v-card-subtitle>
         <v-card-actions>
           <v-spacer></v-spacer>
@@ -1989,7 +1989,7 @@ export default {
         // .$post("http://127.0.0.1:5000/api/setSchedule/ipah2/nutrient", {
         .$post("http://159.223.55.150/api/setSchedule/ipah2/nutrient", {
           date: date,
-          time: "05:00:00",
+          time: "03:00:00",
           tank: tank,
           volume: volume
         })

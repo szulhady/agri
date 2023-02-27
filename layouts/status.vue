@@ -268,7 +268,7 @@ export default {
       },
       subscription: {
         // topic: "geyzer/#",
-        topic: ["np/#", "new/#"],
+        topic: ["np/#", "new/#", "qwazx/new/np/ipah/s/c/#"],
         qos: 0
       },
       receiveNews: "",
@@ -347,19 +347,21 @@ export default {
         this.dialog = true;
       });
       this.client.on("message", (topic, message) => {
-        if (topic === "new/np/ipah/s/c/true") {
+        if (topic === "qwazx/new/np/ipah/s/c/true/retain") {
           message = JSON.parse(message);
-          // console.log(message);
-          this.ipahStatus(message);
+          console.log("sini", message);
+          if (message.sid == 371) {
+            this.ipahStatus(message);
+          }
         }
 
-        if (topic === "new/np/tkpmIpah/s/c/true") {
+        if (topic === "new/np/tkpmIpah/s/c/true/retain") {
           message = JSON.parse(message);
-          console.log(message);
+          // console.log(message);
           this.tkpmIpahStatus(message);
         }
 
-        if (topic === "new/np/tkpmPagoh/s/c/true") {
+        if (topic === "new/np/tkpmPagoh/s/c/true/retain") {
           message = JSON.parse(message);
           this.tkpmPagohStatus(message);
         }
@@ -462,7 +464,7 @@ export default {
     },
     ipah1ManualFill: function() {
       if (this.ipah1ManualFill == true) {
-        this.client.publish("np/c/ipah/wf", "10");
+        this.client.publish("qwazx/np/ipah/c/wf", "10");
         // console.log("np/c/ipah/wf", "10");
       }
       this.setIpah1ManualFill(false);
@@ -470,7 +472,7 @@ export default {
     },
     ipah1ManualStop: function() {
       if (this.ipah1ManualStop == true) {
-        this.client.publish("np/c/ipah/wf", "20");
+        this.client.publish("qwazx/np/ipah/c/wf", "20");
         // console.log("np/c/ipah/wf", "20");
       }
       this.setIpah1ManualStop(false);
@@ -479,7 +481,7 @@ export default {
     ipah1ManualNutrient: function() {
       if (this.ipah1ManualNutrient == true) {
         this.client.publish(
-          "filter/np/c/ipah/n",
+          "qwazx/np/ipah/c/n/start",
           `{"D1":10,"D2":${this.ipah1ManualNutrientDuration}}`
           // console.log(
           //   "filter/np/c/ipah/n",

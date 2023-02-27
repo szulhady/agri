@@ -5,7 +5,11 @@
       :class="station.cols === 4 ? 'col-md-4' : 'col-md-6'"
       :key="index"
     >
-      <Data :jetty="station.description" :sensorData="station.sensorData" />
+      <Data
+        :jetty="station.description"
+        :sensorData="station.sensorData"
+        :lastUpdate="station.lastUpdate"
+      />
     </v-col>
     <!-- <v-col cols="6" lg="4">
       <Gauge

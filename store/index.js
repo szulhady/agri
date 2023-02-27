@@ -362,6 +362,7 @@ export const state = () => ({
             // new sensor('pH','pH',0,'',25,false, 'pH'),
             new sensor('EC','EC',0,'',25,false, 'EC'),
           ],
+          lastUpdate:"waiting for incoming data...",
           warnings:[]
         },
           {
@@ -374,6 +375,7 @@ export const state = () => ({
             // new sensor('pH','pH',0,'',25,false, 'pH'),
             new sensor('EC','EC',0,'',25,false, 'EC'),
           ],
+          lastUpdate:"waiting for incoming data...",
           warnings:[]
           },
         {
@@ -386,6 +388,7 @@ export const state = () => ({
             // new sensor('pH','pH',0,'',25,false, 'pH'),
             new sensor('EC','EC',0,'',25,false, 'EC'),
           ],
+          lastUpdate:"waiting for incoming data...",
          warnings:[]
         },
       ],
@@ -2366,6 +2369,16 @@ tkpmIpahStatusControllino:{
   NDB2:"",
   NDB3:"",
   MAN:""
+},
+ipahStatusControllino:{
+  sid:"",
+  WFT:"",
+  NPT:"",
+  WDB1:"",
+  WDB2:"",
+  NDB1:"",
+  NDB2:"",
+  MAN:""
 }
 });
 
@@ -2817,10 +2830,12 @@ export const mutations = {
     // let station = payload.station
     // let block = payload.block
     let tank = payload.tank
-    let EC = payload.EC
+    let EC = payload.EC 
+    let ts = payload.ts 
     // let soilEC = payload.soilEC
     // let soilEC = payload.soilEC
     state.stations[1].sensorWater[tank].sensorData[0].data = EC
+    state.stations[1].sensorWater[tank].lastUpdate = ts
     // state.stations[station].sensorWater[block].sensorData[1].data = soilEC
   },
 
@@ -3107,6 +3122,8 @@ export const mutations = {
 
     //STATUS IPAH 
     ipahStatus(state,payload){
+      state.ipahStatusControllino= payload
+
       // RESET
       state.ipahStatus.SV1=0
       state.ipahStatus.SV2=0
@@ -3156,7 +3173,7 @@ export const mutations = {
       }
 
       // Nutrient Filling (Nutrient preparation, Dosing process)
-      if(payload.NF==1){
+      if(payload.NPT==1){
         state.ipahStatus.SV2=1
         state.ipahStatus.SV3=1
         state.ipahStatus.P=1
@@ -3165,11 +3182,11 @@ export const mutations = {
       }
 
       //Water Filling (Nutrient preparation)
-      if(payload.WF==1){
+      if(payload.WFT==1){
         state.ipahStatus.SV1=1
         state.ipahStatus.SV3=1
         state.ipahStatus.P=1
-        state.ipahProcess = 'Nutrient preparation. Water filling process in fertilizer solution tank.'
+        state.ipahProcess = 'Water filling process in fertilizer solution tank.'
       }
 
       // Logic for water dripping on blocks
@@ -3183,7 +3200,7 @@ export const mutations = {
       }
 
       // System idle. No process
-      if(payload.WDB1==0 && payload.WDB2==0 && payload.NDB1==0 && payload.NDB2==0 && payload.NF==0 && payload.WF==0){
+      if(payload.WDB1==0 && payload.WDB2==0 && payload.NDB1==0 && payload.NDB2==0 && payload.NPT==0 && payload.WFT==0){
         state.ipahStatus.SV1=0
         state.ipahStatus.SV2=0
         state.ipahStatus.SV3=0

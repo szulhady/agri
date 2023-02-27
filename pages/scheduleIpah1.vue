@@ -39,8 +39,8 @@
                   <div>
                     <h4 style="text-align: justify; text-justify: inter-word">
                       Default time for nutrient preparation process on selected
-                      date is on 5am. Please select date and EC value ( eg: 1.00
-                      ) for dosing process.
+                      date is on 3am. Please select date and volume EC for
+                      dosing process.
                     </h4>
                     <!-- <h4>
                       Below is guideline for duration input:
@@ -73,7 +73,7 @@
                     <input
                       class="long2"
                       type="text"
-                      v-mask="'#.##'"
+                      v-mask="'##.##'"
                       v-model.number="durationNutrient"
                     />
                   </div>
@@ -1652,7 +1652,7 @@
           >{{ dateStartNutrient }} -
           {{ dateEndNutrient }}
         </v-card-subtitle>
-        <v-card-subtitle>EC value : {{ durationNutrient2 }} </v-card-subtitle>
+        <v-card-subtitle>Volume : {{ durationNutrient }} litre</v-card-subtitle>
         <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn text @click="sendScheduleNutrient" class="success">
@@ -1679,6 +1679,8 @@ import Time from "~/components/Schedule/Time.vue";
 import TableSchedule from "~/components/Schedule/TableSchedule.vue";
 import TableScheduleNutrient from "~/components/Schedule/TableScheduleNutrient.vue";
 import moment from "moment";
+
+import mqtt from "mqtt";
 
 export default {
   middleware: ["isIpah"],
@@ -1803,7 +1805,30 @@ export default {
       dateStart: "",
       dateEnd: "",
       dateStartNutrient: "",
-      dateEndNutrient: ""
+      dateEndNutrient: "",
+      connection: {
+        host: this.$auth.$state.user.server_mqtt,
+        port: 8083,
+        endpoint: "/mqtt",
+        clean: true, // Reserved session
+        connectTimeout: 3000, // Time out
+        reconnectPeriod: 3000 // Reconnection interval
+      },
+      subscription: {
+        // topic: "geyzer/#",
+        topic: [],
+        qos: 0
+      },
+      receiveNews: "",
+      qosList: [
+        { label: 0, value: 0 },
+        { label: 1, value: 1 },
+        { label: 2, value: 2 }
+      ],
+      client: {
+        connected: false
+      },
+      subscribeSuccess: false
     };
   },
   methods: {
@@ -1883,18 +1908,21 @@ export default {
           console.log(error);
         });
     },
-    sendScheduleIpah1Nutient: function(date, duration) {
+    sendScheduleIpah1Nutient: function(date, volume) {
       this.$axios
         // .$post("http://139.59.109.48/api/setSchedule/ipah1/nutrient", {
         // .$post("http://127.0.0.1:5000/api/setSchedule/ipah1/nutrient", {
+        // .$post("http://localhost:5000/api/setSchedule/ipah1/nutrient", {
         .$post("http://159.223.55.150/api/setSchedule/ipah1/nutrient", {
           date: date,
-          time: "05:00:00",
-          duration: duration
+          time: "03:00:00",
+          volume: volume
         })
         .then(response => {
-          console.log(response);
-          window.location.reload();
+          this.client.publish("qwazx/np/ipah/table/dosing", "update");
+          setTimeout(() => {
+            window.location.reload();
+          }, 1);
         })
         .catch(error => {
           console.log(error);
@@ -2360,7 +2388,7 @@ export default {
         return;
       }
       if (!this.durationNutrient) {
-        alert("Please select valid EC value");
+        alert("Please select valid volume EC");
         return;
       }
       if (!this.durationNutrient.toFixed(2) || this.durationNutrient < 0) {
@@ -2368,13 +2396,13 @@ export default {
         //   !Number.isInteger(this.durationNutrient) ||
         //   this.durationNutrient < 1
         // ) {
-        alert("Please select valid EC value (eg:1.00)");
+        alert("Please select valid EC volume");
         return;
       }
       // duration
       if (this.durationNutrient) {
         this.allDurationNutrient.push(this.durationNutrient.toFixed(2));
-        this.durationNutrient2 = this.durationNutrient.toFixed(2);
+        // this.durationNutrient2 = this.durationNutrient.toFixed(2);
       }
       //
       this.dialogPostNutrient = true;
@@ -2385,6 +2413,48 @@ export default {
         this.allDurationNutrient
       );
       this.dialogPostNutrient = false;
+    },
+    createConnection() {
+      const { host, port, endpoint, ...options } = this.connection;
+      // const connectUrl = `wss:${host}:${port}${endpoint}`;
+      const connectUrl = `${host}`;
+      try {
+        this.client = mqtt.connect(connectUrl, options);
+      } catch (error) {
+        console.log("mqtt.connect error", error);
+      }
+
+      this.client.on("connect", () => {
+        console.log("Connection succeeded!");
+        this.dialog = false;
+        console.log("here");
+        setTimeout(() => {
+          this.client.publish("qwazx/np/ipah/table/dosing", "update");
+          this.client.publish("qwazx/np/ipah/table/dripping", "update");
+          console.log("publish");
+        }, 1);
+      });
+      this.client.on("error", error => {
+        console.log("Connection failed", error);
+      });
+      this.client.on("close", () => {
+        this.dialog = true;
+      });
+      this.client.stream.on("error", error => {
+        // This does trigger when the URL is invalid
+        console.error("Connection error:", error);
+        this.dialog = true;
+      });
+      this.client.on("message", (topic, message) => {});
+    },
+    doSubscribe() {
+      const { topic, qos } = this.subscription;
+      this.client.subscribe(topic, { qos }, (error, res) => {
+        if (error) {
+          return;
+        }
+        this.subscribeSuccess = true;
+      });
     }
   },
   watch: {
@@ -2417,8 +2487,13 @@ export default {
       );
     }
   },
-  mounted() {
+  // mounted() {
+  // this.getScheduleIpah1Nutrient();
+  // },
+  async mounted() {
     this.getScheduleIpah1Nutrient();
+    this.createConnection();
+    this.doSubscribe();
   }
 };
 </script>

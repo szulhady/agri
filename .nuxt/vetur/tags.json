@@ -20,6 +20,12 @@
   "ControlPumpStatus": {
     "description": "Auto imported from components/Control/PumpStatus.vue"
   },
+  "LoginForm": {
+    "description": "Auto imported from components/Login/Form.vue"
+  },
+  "GeneralUserInfo": {
+    "description": "Auto imported from components/General/UserInfo.vue"
+  },
   "DetailLayout": {
     "description": "Auto imported from components/detail/layout.vue"
   },
@@ -46,12 +52,6 @@
   },
   "DetailYieldCropInformation": {
     "description": "Auto imported from components/detail/yieldCropInformation.vue"
-  },
-  "GeneralUserInfo": {
-    "description": "Auto imported from components/General/UserInfo.vue"
-  },
-  "LoginForm": {
-    "description": "Auto imported from components/Login/Form.vue"
   },
   "OverviewCardDataLeaf": {
     "description": "Auto imported from components/Overview/CardDataLeaf.vue"
@@ -80,48 +80,6 @@
   "RegisterForm2": {
     "description": "Auto imported from components/Register/Form2.vue"
   },
-  "ScheduleCalendar": {
-    "description": "Auto imported from components/Schedule/Calendar.vue"
-  },
-  "ScheduleTableSchedule": {
-    "description": "Auto imported from components/Schedule/TableSchedule.vue"
-  },
-  "ScheduleTableScheduleNutrient": {
-    "description": "Auto imported from components/Schedule/TableScheduleNutrient.vue"
-  },
-  "ScheduleTime": {
-    "description": "Auto imported from components/Schedule/Time.vue"
-  },
-  "StatusIpah1Status": {
-    "description": "Auto imported from components/Status/Ipah1Status.vue"
-  },
-  "StatusIpah2Status": {
-    "description": "Auto imported from components/Status/Ipah2Status.vue"
-  },
-  "StatusKongPoStatus": {
-    "description": "Auto imported from components/Status/KongPoStatus.vue"
-  },
-  "StatusTkpmPagohStatus": {
-    "description": "Auto imported from components/Status/TkpmPagohStatus.vue"
-  },
-  "TrendCardStationTrendIpah1": {
-    "description": "Auto imported from components/Trend/CardStationTrendIpah1.vue"
-  },
-  "TrendCardStationTrendIpah2": {
-    "description": "Auto imported from components/Trend/CardStationTrendIpah2.vue"
-  },
-  "TrendCardStationTrendKongPo": {
-    "description": "Auto imported from components/Trend/CardStationTrendKongPo.vue"
-  },
-  "TrendCardStationTrendTkpmPagoh": {
-    "description": "Auto imported from components/Trend/CardStationTrendTkpmPagoh.vue"
-  },
-  "TrendLineChart": {
-    "description": "Auto imported from components/Trend/LineChart.vue"
-  },
-  "TrendLineChartSingleData": {
-    "description": "Auto imported from components/Trend/LineChartSingleData.vue"
-  },
   "AdminOverviewCardDataLeafAdmin": {
     "description": "Auto imported from components/Admin/Overview/CardDataLeafAdmin.vue"
   },
@@ -145,6 +103,48 @@
   },
   "AdminOverviewTkpmPagohStatusAdmin": {
     "description": "Auto imported from components/Admin/Overview/tkpmPagohStatusAdmin.vue"
+  },
+  "TrendCardStationTrendIpah1": {
+    "description": "Auto imported from components/Trend/CardStationTrendIpah1.vue"
+  },
+  "TrendCardStationTrendIpah2": {
+    "description": "Auto imported from components/Trend/CardStationTrendIpah2.vue"
+  },
+  "TrendCardStationTrendKongPo": {
+    "description": "Auto imported from components/Trend/CardStationTrendKongPo.vue"
+  },
+  "TrendCardStationTrendTkpmPagoh": {
+    "description": "Auto imported from components/Trend/CardStationTrendTkpmPagoh.vue"
+  },
+  "TrendLineChart": {
+    "description": "Auto imported from components/Trend/LineChart.vue"
+  },
+  "TrendLineChartSingleData": {
+    "description": "Auto imported from components/Trend/LineChartSingleData.vue"
+  },
+  "ScheduleCalendar": {
+    "description": "Auto imported from components/Schedule/Calendar.vue"
+  },
+  "ScheduleTableSchedule": {
+    "description": "Auto imported from components/Schedule/TableSchedule.vue"
+  },
+  "ScheduleTableScheduleNutrient": {
+    "description": "Auto imported from components/Schedule/TableScheduleNutrient.vue"
+  },
+  "ScheduleTime": {
+    "description": "Auto imported from components/Schedule/Time.vue"
+  },
+  "StatusIpah1Status": {
+    "description": "Auto imported from components/Status/Ipah1Status.vue"
+  },
+  "StatusIpah2Status": {
+    "description": "Auto imported from components/Status/Ipah2Status.vue"
+  },
+  "StatusKongPoStatus": {
+    "description": "Auto imported from components/Status/KongPoStatus.vue"
+  },
+  "StatusTkpmPagohStatus": {
+    "description": "Auto imported from components/Status/TkpmPagohStatus.vue"
   },
   "OverviewSingleData": {
     "description": "Auto imported from components/Overview/Single/Data.vue"

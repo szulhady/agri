@@ -665,7 +665,7 @@ if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
 var add = __webpack_require__(6).default
 module.exports.__inject__ = function (context) {
-  add("5c8ff100", content, true, context)
+  add("9cbcf238", content, true, context)
 };
 
 /***/ }),
@@ -675,9 +675,9 @@ module.exports.__inject__ = function (context) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ipahStatus_vue_vue_type_style_index_0_id_2f0c7c6f_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(394);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ipahStatus_vue_vue_type_style_index_0_id_2f0c7c6f_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ipahStatus_vue_vue_type_style_index_0_id_2f0c7c6f_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ipahStatus_vue_vue_type_style_index_0_id_2f0c7c6f_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ipahStatus_vue_vue_type_style_index_0_id_2f0c7c6f_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ipahStatus_vue_vue_type_style_index_0_id_15f16f11_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(394);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ipahStatus_vue_vue_type_style_index_0_id_15f16f11_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ipahStatus_vue_vue_type_style_index_0_id_15f16f11_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ipahStatus_vue_vue_type_style_index_0_id_15f16f11_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ipahStatus_vue_vue_type_style_index_0_id_15f16f11_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
@@ -689,7 +689,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(5);
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".overlay[data-v-2f0c7c6f]{position:relative}.overlay2[data-v-2f0c7c6f]{position:absolute;top:0;left:0}.filter-green[data-v-2f0c7c6f]{filter:invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(90%) contrast(119%);-webkit-animation:blinkGreen-data-v-2f0c7c6f 1s infinite;animation:blinkGreen-data-v-2f0c7c6f 1s infinite}.filter-red[data-v-2f0c7c6f]{filter:invert(21%) sepia(100%) saturate(7414%) hue-rotate(359deg) brightness(94%) contrast(117%);-webkit-animation:blinkRed-data-v-2f0c7c6f 1s infinite;animation:blinkRed-data-v-2f0c7c6f 1s infinite}@-webkit-keyframes blinkRed-data-v-2f0c7c6f{0%{-webkit-filter:invert(21%) sepia(100%) saturate(7414%) hue-rotate(359deg) brightness(94%) contrast(117%)}50%{-webkit-filter:invert(21%) sepia(100%) saturate(7414%) hue-rotate(359deg) brightness(50%) contrast(117%)}to{-webkit-filter:invert(21%) sepia(100%) saturate(7414%) hue-rotate(359deg) brightness(94%) contrast(117%)}}@keyframes blinkRed-data-v-2f0c7c6f{0%{filter:invert(21%) sepia(100%) saturate(7414%) hue-rotate(359deg) brightness(94%) contrast(117%)}50%{filter:invert(21%) sepia(100%) saturate(7414%) hue-rotate(359deg) brightness(50%) contrast(117%)}to{filter:invert(21%) sepia(100%) saturate(7414%) hue-rotate(359deg) brightness(94%) contrast(117%)}}@-webkit-keyframes blinkGreen-data-v-2f0c7c6f{0%{-webkit-filter:invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(90%) contrast(119%)}50%{-webkit-filter:invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(70%) contrast(119%)}to{-webkit-filter:invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(90%) contrast(119%)}}@keyframes blinkGreen-data-v-2f0c7c6f{0%{filter:invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(90%) contrast(119%)}50%{filter:invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(70%) contrast(119%)}to{filter:invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(90%) contrast(119%)}}.switch[data-v-2f0c7c6f]{display:flex;align-items:center}.v-card__text[data-v-2f0c7c6f],.v-card__title[data-v-2f0c7c6f]{word-break:normal}.logout[data-v-2f0c7c6f]{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:9999;width:300px}.hr[data-v-2f0c7c6f]{margin:0 20px;border-top:1px solid #bdc7c7}.btn-div[data-v-2f0c7c6f]{display:flex;justify-content:flex-end}.logout-btn[data-v-2f0c7c6f]{width:100px;margin-right:10px;margin-bottom:10px}.long2[data-v-2f0c7c6f]{border:1px solid #000;text-align:center}.layer2[data-v-2f0c7c6f]{position:absolute;width:100%;height:100%;background:#000;opacity:.6;top:0;left:0}@media (max-width:1264px){.switch[data-v-2f0c7c6f]{align-items:center}}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, ".overlay[data-v-15f16f11]{position:relative}.overlay2[data-v-15f16f11]{position:absolute;top:0;left:0}.filter-green[data-v-15f16f11]{filter:invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(90%) contrast(119%);-webkit-animation:blinkGreen-data-v-15f16f11 1s infinite;animation:blinkGreen-data-v-15f16f11 1s infinite}.filter-red[data-v-15f16f11]{filter:invert(21%) sepia(100%) saturate(7414%) hue-rotate(359deg) brightness(94%) contrast(117%);-webkit-animation:blinkRed-data-v-15f16f11 1s infinite;animation:blinkRed-data-v-15f16f11 1s infinite}@-webkit-keyframes blinkRed-data-v-15f16f11{0%{-webkit-filter:invert(21%) sepia(100%) saturate(7414%) hue-rotate(359deg) brightness(94%) contrast(117%)}50%{-webkit-filter:invert(21%) sepia(100%) saturate(7414%) hue-rotate(359deg) brightness(50%) contrast(117%)}to{-webkit-filter:invert(21%) sepia(100%) saturate(7414%) hue-rotate(359deg) brightness(94%) contrast(117%)}}@keyframes blinkRed-data-v-15f16f11{0%{filter:invert(21%) sepia(100%) saturate(7414%) hue-rotate(359deg) brightness(94%) contrast(117%)}50%{filter:invert(21%) sepia(100%) saturate(7414%) hue-rotate(359deg) brightness(50%) contrast(117%)}to{filter:invert(21%) sepia(100%) saturate(7414%) hue-rotate(359deg) brightness(94%) contrast(117%)}}@-webkit-keyframes blinkGreen-data-v-15f16f11{0%{-webkit-filter:invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(90%) contrast(119%)}50%{-webkit-filter:invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(70%) contrast(119%)}to{-webkit-filter:invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(90%) contrast(119%)}}@keyframes blinkGreen-data-v-15f16f11{0%{filter:invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(90%) contrast(119%)}50%{filter:invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(70%) contrast(119%)}to{filter:invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(90%) contrast(119%)}}.switch[data-v-15f16f11]{display:flex;align-items:center}.v-card__text[data-v-15f16f11],.v-card__title[data-v-15f16f11]{word-break:normal}.logout[data-v-15f16f11]{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:9999;width:300px}.hr[data-v-15f16f11]{margin:0 20px;border-top:1px solid #bdc7c7}.btn-div[data-v-15f16f11]{display:flex;justify-content:flex-end}.logout-btn[data-v-15f16f11]{width:100px;margin-right:10px;margin-bottom:10px}.long2[data-v-15f16f11]{border:1px solid #000;text-align:center}.layer2[data-v-15f16f11]{position:absolute;width:100%;height:100%;background:#000;opacity:.6;top:0;left:0}@media (max-width:1264px){.switch[data-v-15f16f11]{align-items:center}}", ""]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -703,12 +703,38 @@ module.exports = ___CSS_LOADER_EXPORT___;
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/ipahStatus.vue?vue&type=template&id=2f0c7c6f&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',[_c('PageTitle',{attrs:{"title":"STATUS"}}),_vm._ssrNode(" "),_c('v-card',{staticClass:"elevation-10"},[_c('v-card-title',[_vm._v("\n      OPERATION\n    ")]),_vm._v(" "),_c('v-row',[_c('v-col',{staticClass:"col-md-9 pb-0",attrs:{"col":"12"}},[_c('Ipah1Status',{attrs:{"sv1":"red","sv2":"green","classSV1":_vm.ipahStatus.SV1 == 1 ? 'filter-green' : 'filter-red',"classSV2":_vm.ipahStatus.SV2 == 1 ? 'filter-green' : 'filter-red',"classSV3":_vm.ipahStatus.SV3 == 1 ? 'filter-green' : 'filter-red',"classSV4":_vm.ipahStatus.SV4 == 1 ? 'filter-green' : 'filter-red',"classSV5":_vm.ipahStatus.SV5 == 1 ? 'filter-green' : 'filter-red',"classSV6":_vm.ipahStatus.SV6 == 1 ? 'filter-green' : 'filter-red',"classPump":_vm.ipahStatus.P == 1 ? 'filter-green' : 'filter-red',"classDosingPump":_vm.ipahStatus.DP == 1 ? 'filter-green' : 'filter-red',"ph":"7","waterLvl":"30","EC":"2"}})],1),_vm._v(" "),_c('v-col',{staticClass:"col-md-3 pr-md-10 pt-0",staticStyle:{"display":"flex","justify-content":"center","align-items":"center","flex-direction":"column"},attrs:{"cols":"12"}},[_c('v-card',{staticClass:"elevation-18 rounded-lg px-5 mb-5 "},[_c('v-card-title',[_vm._v("PROCESS")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"font-size":"1.2em"}},[_vm._v("\n            "+_vm._s(_vm.ipahProcess)+"\n          ")])],1),_vm._v(" "),_c('v-card',{staticClass:"elevation-18 rounded-lg px-5 "},[_c('v-card-title',{staticStyle:{"font-size":"1.3rem"}},[_vm._v("\n            MANUAL FERTIGATION CONTROL\n          ")]),_vm._v(" "),_c('v-row',[_c('v-col',[_c('v-card-title',[_vm._v("\n                Water Filling for fetilizer solution tank\n              ")]),_vm._v(" "),_c('div',[_c('h4',{staticStyle:{"text-align":"justify"}},[_vm._v("\n                  Press "),_c('span',{staticStyle:{"font-weight":"bold"}},[_vm._v("FILL")]),_vm._v(" button to\n                  start filling water manually into fetilizer solution tank.\n                  Press "),_c('span',{staticStyle:{"font-weight":"bold"}},[_vm._v("STOP")]),_vm._v(" button to\n                  stop filling process.\n                ")]),_vm._v(" "),_c('div',{staticStyle:{"display":"flex","justify-content":"space-evenly"}},[_c('v-btn',{staticClass:"mt-4 mb-4",on:{"click":_vm.fill}},[_vm._v("FILL")]),_vm._v(" "),_c('v-btn',{staticClass:"mt-4 mb-4",on:{"click":_vm.stop}},[_vm._v("STOP")])],1)]),_vm._v(" "),_c('v-card-title',[_vm._v("\n                Nutrient Preparation\n              ")]),_vm._v(" "),_c('div',[_c('h4',{staticStyle:{"text-align":"justify"}},[_vm._v("\n                  Nutrient preparation is done via schedule set by user on\n                  schedule panel. It is done on\n                  "),_c('span',{staticStyle:{"font-weight":"bold"}},[_vm._v("5.00am on choosen date")]),_vm._v(". Please fill EC value input ( eg: 1.00 ) and click button\n                  below to start nutrient preparation manually.\n                ")])]),_vm._v(" "),_c('div',{}),_vm._v(" "),_c('div',{staticStyle:{"display":"flex","flex-direction":"column","justify-content":"center","align-items":"center"}},[_c('input',{directives:[{name:"mask",rawName:"v-mask",value:('#.##'),expression:"'#.##'"},{name:"model",rawName:"v-model.number",value:(_vm.duration),expression:"duration",modifiers:{"number":true}}],staticClass:"long2",attrs:{"type":"text"},domProps:{"value":(_vm.duration)},on:{"input":function($event){if($event.target.composing){ return; }_vm.duration=_vm._n($event.target.value)},"blur":function($event){return _vm.$forceUpdate()}}}),_vm._v(" "),_c('v-btn',{staticClass:"mt-4 mb-4",on:{"click":_vm.nutrient}},[_vm._v("Start Preparation")])],1)],1)],1)],1),_vm._v(" "),_c('v-row',[_c('v-col',{staticClass:"mt-5"})],1)],1)],1)],1),_vm._ssrNode(" "),_c('v-scroll-y-transition',[(_vm.layerDrawer)?_c('div',{staticClass:"layer2",attrs:{"id":"layerDrawer"}}):_vm._e()]),_vm._ssrNode(" "),_c('v-scroll-y-transition',[(_vm.layerDrawer)?_c('v-card',{staticClass:"logout elevation-12"},[_c('v-card-title',[_vm._v("\n        Action\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("\n        Are you sure you want to "+_vm._s(_vm.stateDevice)+" the "+_vm._s(_vm.activeDevice)+"?\n      ")]),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"success logout-btn",on:{"click":function($event){return _vm.yes(_vm.activeSwitch)}}},[_vm._v("Yes")]),_vm._v(" "),_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1):_vm._e()],1)],2)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/ipahStatus.vue?vue&type=template&id=15f16f11&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',[_c('PageTitle',{attrs:{"title":"STATUS"}}),_vm._ssrNode(" "),_c('v-card',{staticClass:"elevation-10"},[_c('v-card-title',[_vm._v("\n      OPERATION\n    ")]),_vm._v(" "),_c('v-row',[_c('v-col',{staticClass:"col-lg-8 pb-0",attrs:{"col":"12"}},[_c('Ipah1Status',{attrs:{"sv1":"red","sv2":"green","classSV1":_vm.ipahStatus.SV1 == 1 ? 'filter-green' : 'filter-red',"classSV2":_vm.ipahStatus.SV2 == 1 ? 'filter-green' : 'filter-red',"classSV3":_vm.ipahStatus.SV3 == 1 ? 'filter-green' : 'filter-red',"classSV4":_vm.ipahStatus.SV4 == 1 ? 'filter-green' : 'filter-red',"classSV5":_vm.ipahStatus.SV5 == 1 ? 'filter-green' : 'filter-red',"classSV6":_vm.ipahStatus.SV6 == 1 ? 'filter-green' : 'filter-red',"classPump":_vm.ipahStatus.P == 1 ? 'filter-green' : 'filter-red',"classDosingPump":_vm.ipahStatus.DP == 1 ? 'filter-green' : 'filter-red',"ph":"7","waterLvl":"30","EC":"2"}})],1),_vm._v(" "),_c('v-col',{staticClass:"col-lg-4 pr-md-10 pt-0",staticStyle:{"display":"flex","justify-content":"center","align-items":"center","flex-direction":"column"},attrs:{"cols":"12"}},[_c('v-card',{staticClass:"elevation-18 rounded-lg px-5 mb-5 "},[_c('v-card-title',[_vm._v("PROCESS")]),_vm._v(" "),_c('v-card-subtitle',{staticStyle:{"font-size":"1.2em"}},[_vm._v("\n            "+_vm._s(_vm.ipahProcess)+"\n          ")])],1),_vm._v(" "),_c('v-card',{staticClass:"elevation-18 rounded-lg px-5 "},[_c('v-card-title',{staticStyle:{"font-size":"1.3rem"}},[_vm._v("\n            MANUAL DRIPPING CONTROL\n          ")]),_vm._v(" "),_c('v-row',[_c('v-col',[_c('div',[_c('h4',{staticStyle:{"text-align":"justify"}},[_vm._v("\n                  Click button bellow to start / stop manual water / nutrient\n                  dripping process or to stop all process. (W - water, N -\n                  nutrient, B - block)\n                ")]),_vm._v(" "),_c('div',{staticStyle:{"display":"flex","justify-content":"space-evenly"}},[_c('v-btn',{attrs:{"color":_vm.ipahStatusControllino.WDB1 == 1 ? 'success' : 'error',"width":"90px","disabled":_vm.ipahStatusControllino.NDB1 == 1
+                        ? true
+                        : _vm.ipahStatusControllino.NDB2 == 1
+                        ? true
+                        : false},on:{"click":function($event){return _vm.waterBlock(1)}}},[_vm._v("W B-1")]),_vm._v(" "),_c('v-btn',{attrs:{"color":_vm.ipahStatusControllino.WDB2 == 1 ? 'success' : 'error',"width":"90px","disabled":_vm.ipahStatusControllino.NDB1 == 1
+                        ? true
+                        : _vm.ipahStatusControllino.NDB2 == 1
+                        ? true
+                        : false},on:{"click":function($event){return _vm.waterBlock(2)}}},[_vm._v("W B-2")])],1),_vm._v(" "),_c('div',{staticStyle:{"display":"flex","justify-content":"space-evenly","margin-top":"20px"}},[_c('v-btn',{attrs:{"color":_vm.ipahStatusControllino.NDB1 == 1 ? 'success' : 'error',"width":"90px","disabled":_vm.ipahStatusControllino.WDB1 == 1
+                        ? true
+                        : _vm.ipahStatusControllino.WDB2 == 1
+                        ? true
+                        : false},on:{"click":function($event){return _vm.waterBlock(3)}}},[_vm._v("N B-1")]),_vm._v(" "),_c('v-btn',{attrs:{"color":_vm.ipahStatusControllino.NDB2 == 1 ? 'success' : 'error',"width":"90px","disabled":_vm.ipahStatusControllino.WDB1 == 1
+                        ? true
+                        : _vm.ipahStatusControllino.WDB2 == 1
+                        ? true
+                        : false},on:{"click":function($event){return _vm.waterBlock(4)}}},[_vm._v("N B-2")])],1),_vm._v(" "),_c('div',{staticStyle:{"padding-top":"20px","display":"flex","justify-content":"center"}},[_c('v-btn',{attrs:{"color":"error","width":"190px"},on:{"click":_vm.masterStop}},[_vm._v("STOP ALL PROCESS")])],1)])])],1),_vm._v(" "),_c('v-card-title',{staticStyle:{"font-size":"1.3rem"}},[_vm._v("\n            MANUAL FERTIGATION CONTROL\n          ")]),_vm._v(" "),_c('v-row',[_c('v-col',[_c('v-card-title',[_vm._v("\n                Water Filling for fetilizer solution tank\n              ")]),_vm._v(" "),_c('div',[_c('h4',{staticStyle:{"text-align":"justify"}},[_vm._v("\n                  Press "),_c('span',{staticStyle:{"font-weight":"bold"}},[_vm._v("FILL")]),_vm._v(" button to\n                  start filling water manually into fetilizer solution tank.\n                  Press "),_c('span',{staticStyle:{"font-weight":"bold"}},[_vm._v("STOP")]),_vm._v(" button to\n                  stop filling process.\n                ")]),_vm._v(" "),_c('div',{staticStyle:{"display":"flex","justify-content":"space-evenly"}},[_c('v-btn',{staticClass:"mt-4 mb-4",on:{"click":_vm.fill}},[_vm._v("FILL")]),_vm._v(" "),_c('v-btn',{staticClass:"mt-4 mb-4",on:{"click":_vm.stop}},[_vm._v("STOP")])],1)]),_vm._v(" "),_c('v-card-title',[_vm._v("\n                Nutrient Preparation\n              ")]),_vm._v(" "),_c('div',[_c('h4',{staticStyle:{"text-align":"justify"}},[_vm._v("\n                  Nutrient preparation is done via schedule set by user on\n                  schedule panel. It is done on\n                  "),_c('span',{staticStyle:{"font-weight":"bold"}},[_vm._v("3.00am on choosen date")]),_vm._v(". Please fill\n                  "),_c('span',{staticStyle:{"font-weight":"bold"}},[_vm._v("\n                    Volume EC value input ( in litre )")]),_vm._v("\n                  and click button below to start nutrient preparation\n                  manually.\n                ")])]),_vm._v(" "),_c('div',{}),_vm._v(" "),_c('div',{staticStyle:{"display":"flex","flex-direction":"column","justify-content":"center","align-items":"center"}},[_c('input',{directives:[{name:"mask",rawName:"v-mask",value:('##.##'),expression:"'##.##'"},{name:"model",rawName:"v-model.number",value:(_vm.duration),expression:"duration",modifiers:{"number":true}}],staticClass:"long2",attrs:{"type":"text"},domProps:{"value":(_vm.duration)},on:{"input":function($event){if($event.target.composing){ return; }_vm.duration=_vm._n($event.target.value)},"blur":function($event){return _vm.$forceUpdate()}}}),_vm._v(" "),_c('v-btn',{staticClass:"mt-4 mb-4",on:{"click":_vm.nutrient}},[_vm._v("Start Preparation")])],1),_vm._v(" "),_c('v-card-title',[_vm._v("\n                CUT OFF SETTING\n              ")]),_vm._v(" "),_c('div',[_c('h4',{staticStyle:{"text-align":"justify"}},[_vm._v("\n                  Cut off system will stop the dripping process if reach the\n                  maximum amount of humidity on plants. Cut off system setting\n                  can be pre-set wether to enable or disable, and can be set\n                  the value of maximum humidity of soil sensor for each tank.\n                ")])]),_vm._v(" "),_c('div',{staticStyle:{"display":"flex","justify-content":"center","margin-bottom":"20px"}},[_c('v-btn',{attrs:{"color":_vm.cutOffState == 'enable' ? 'success' : 'error',"width":"220px","disabled":_vm.cutOffState == '' ? true : false},on:{"click":function($event){_vm.cutOffState == 'enable'
+                      ? _vm.openEditDisanbleDialogCutOff()
+                      : _vm.openDialogCutOff()}}},[_vm._v(_vm._s(_vm.cutOffState == ""
+                      ? "Waiting from server"
+                      : _vm.cutOffState == "disable"
+                      ? "Disable"
+                      : "Enable"))])],1)],1)],1)],1),_vm._v(" "),_c('v-row',[_c('v-col',{staticClass:"mt-5"})],1)],1)],1)],1),_vm._ssrNode(" "),_c('v-scroll-y-transition',[(_vm.layerDrawer)?_c('div',{staticClass:"layer2",attrs:{"id":"layerDrawer"}}):_vm._e()]),_vm._ssrNode(" "),_c('v-scroll-y-transition',[(_vm.layerDrawer)?_c('v-card',{staticClass:"logout elevation-12"},[_c('v-card-title',[_vm._v("\n        Action\n      ")]),_vm._v(" "),_c('hr',{staticClass:"hr"}),_vm._v(" "),_c('v-card-subtitle',[_vm._v("\n        Are you sure you want to "+_vm._s(_vm.stateDevice)+" the "+_vm._s(_vm.activeDevice)+"?\n      ")]),_vm._v(" "),_c('div',{staticClass:"btn-div"},[_c('v-btn',{staticClass:"success logout-btn",on:{"click":function($event){return _vm.yes(_vm.activeSwitch)}}},[_vm._v("Yes")]),_vm._v(" "),_c('v-btn',{staticClass:"error logout-btn",on:{"click":_vm.cancel}},[_vm._v("Cancel")])],1)],1):_vm._e()],1),_vm._ssrNode(" "),_c('v-dialog',{staticStyle:{"overflow":"hidden"},attrs:{"persistent":"","max-width":"500px"},model:{value:(_vm.dialogCutOff),callback:function ($$v) {_vm.dialogCutOff=$$v},expression:"dialogCutOff"}},[_c('v-card',[_c('v-card-title',{staticClass:"text-h5"},[_vm._v("\n        Enable cut off system?\n      ")]),_vm._v(" "),_c('v-card-text',[_vm._v("Please input the maximum value of humidity for each block. If not\n        require for block, please empty the input section for that\n        block.")]),_vm._v(" "),_c('v-row',[_c('v-col',[_c('div',{staticStyle:{"display":"flex","height":"30px","align-items":"center","justify-content":"center"}},[_c('v-card-subtitle',[_vm._v("Block 1")]),_vm._v(" "),_c('input',{directives:[{name:"mask",rawName:"v-mask",value:('##.##'),expression:"'##.##'"},{name:"model",rawName:"v-model.number",value:(_vm.cutOffValueBlock1),expression:"cutOffValueBlock1",modifiers:{"number":true}}],staticClass:"long2",attrs:{"type":"text"},domProps:{"value":(_vm.cutOffValueBlock1)},on:{"input":function($event){if($event.target.composing){ return; }_vm.cutOffValueBlock1=_vm._n($event.target.value)},"blur":function($event){return _vm.$forceUpdate()}}})],1),_vm._v(" "),_c('div',{staticStyle:{"display":"flex","height":"30px","align-items":"center","justify-content":"center"}},[_c('v-card-subtitle',[_vm._v("Block 2")]),_vm._v(" "),_c('input',{directives:[{name:"mask",rawName:"v-mask",value:('##.##'),expression:"'##.##'"},{name:"model",rawName:"v-model.number",value:(_vm.cutOffValueBlock2),expression:"cutOffValueBlock2",modifiers:{"number":true}}],staticClass:"long2",attrs:{"type":"text"},domProps:{"value":(_vm.cutOffValueBlock2)},on:{"input":function($event){if($event.target.composing){ return; }_vm.cutOffValueBlock2=_vm._n($event.target.value)},"blur":function($event){return _vm.$forceUpdate()}}})],1)])],1),_vm._v(" "),_c('v-card-actions',[_c('v-spacer'),_vm._v(" "),_c('v-btn',{attrs:{"color":"error","variant":"text"},on:{"click":function($event){_vm.dialogCutOff = false}}},[_vm._v("\n          Cancel\n        ")]),_vm._v(" "),_c('v-btn',{attrs:{"color":"success","variant":"text"},on:{"click":function($event){return _vm.updateCutOff('enable', _vm.cutOffValueBlock1, _vm.cutOffValueBlock2)}}},[_vm._v("\n          Confirm\n        ")])],1)],1)],1),_vm._ssrNode(" "),_c('v-dialog',{staticStyle:{"overflow":"hidden"},attrs:{"persistent":"","max-width":"500px"},model:{value:(_vm.editDisableDialogCutOff),callback:function ($$v) {_vm.editDisableDialogCutOff=$$v},expression:"editDisableDialogCutOff"}},[_c('v-card',[_c('v-card-title',{staticClass:"text-h5"},[_vm._v("\n        Edit value or disable cut off system?\n      ")]),_vm._v(" "),_c('v-card-text',[_vm._v("Please input new maximum value of humidity for each block. If not\n        require for block, please empty the input section for that block.\n        Click disable to disable cut off system.")]),_vm._v(" "),_c('v-row',[_c('v-col',[_c('div',{staticStyle:{"display":"flex","height":"30px","align-items":"center","justify-content":"center"}},[_c('v-card-subtitle',[_vm._v("Block 1 - old value ("+_vm._s(_vm.cutOffValueBlock1Read)+")")]),_vm._v(" "),_c('input',{directives:[{name:"mask",rawName:"v-mask",value:('##.##'),expression:"'##.##'"},{name:"model",rawName:"v-model.number",value:(_vm.newCutOffValueBlock1),expression:"newCutOffValueBlock1",modifiers:{"number":true}}],staticClass:"long2",attrs:{"type":"text"},domProps:{"value":(_vm.newCutOffValueBlock1)},on:{"input":function($event){if($event.target.composing){ return; }_vm.newCutOffValueBlock1=_vm._n($event.target.value)},"blur":function($event){return _vm.$forceUpdate()}}})],1),_vm._v(" "),_c('div',{staticStyle:{"display":"flex","height":"30px","align-items":"center","justify-content":"center"}},[_c('v-card-subtitle',[_vm._v("Block 2 - old value ("+_vm._s(_vm.cutOffValueBlock2Read)+")")]),_vm._v(" "),_c('input',{directives:[{name:"mask",rawName:"v-mask",value:('##.##'),expression:"'##.##'"},{name:"model",rawName:"v-model.number",value:(_vm.newCutOffValueBlock2),expression:"newCutOffValueBlock2",modifiers:{"number":true}}],staticClass:"long2",attrs:{"type":"text"},domProps:{"value":(_vm.newCutOffValueBlock2)},on:{"input":function($event){if($event.target.composing){ return; }_vm.newCutOffValueBlock2=_vm._n($event.target.value)},"blur":function($event){return _vm.$forceUpdate()}}})],1)])],1),_vm._v(" "),_c('v-card-actions',[_c('v-spacer'),_vm._v(" "),_c('v-btn',{attrs:{"color":"error","variant":"text"},on:{"click":function($event){_vm.editDisableDialogCutOff = false}}},[_vm._v("\n          Cancel\n        ")]),_vm._v(" "),_c('v-btn',{attrs:{"color":"success","variant":"text"},on:{"click":function($event){return _vm.updateCutOff(
+              'enableEdit',
+              _vm.newCutOffValueBlock1,
+              _vm.newCutOffValueBlock2
+            )}}},[_vm._v("\n          Edit\n        ")]),_vm._v(" "),_c('v-btn',{attrs:{"color":"warning","variant":"text"},on:{"click":function($event){return _vm.updateCutOff('disable', 'cutOffValueBlock1', 'cutOffValueBlock2')}}},[_vm._v("\n          Disable\n        ")])],1)],1)],1)],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/ipahStatus.vue?vue&type=template&id=2f0c7c6f&scoped=true&
+// CONCATENATED MODULE: ./pages/ipahStatus.vue?vue&type=template&id=15f16f11&scoped=true&
 
 // EXTERNAL MODULE: ./components/PageTitle.vue + 4 modules
 var PageTitle = __webpack_require__(191);
@@ -718,6 +744,10 @@ var Ipah1Status = __webpack_require__(303);
 
 // EXTERNAL MODULE: external "vuex"
 var external_vuex_ = __webpack_require__(12);
+
+// EXTERNAL MODULE: external "mqtt"
+var external_mqtt_ = __webpack_require__(42);
+var external_mqtt_default = /*#__PURE__*/__webpack_require__.n(external_mqtt_);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/ipahStatus.vue?vue&type=script&lang=js&
 //
@@ -845,13 +875,373 @@ var external_vuex_ = __webpack_require__(12);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 
 
 
 /* harmony default export */ var ipahStatusvue_type_script_lang_js_ = ({
   middleware: ["isIpah"],
   layout: "status",
-  methods: { ...Object(external_vuex_["mapMutations"])({
+  methods: {
+    openEditDisanbleDialogCutOff: function () {
+      this.editDisableDialogCutOff = true;
+    },
+    openDialogCutOff: function () {
+      this.dialogCutOff = true;
+    },
+    updateCutOff: function (state, value1, value2) {
+      this.cutOffValueBlock1 = "";
+      this.cutOffValueBlock2 = "";
+      this.newCutOffValueBlock1 = "";
+      this.newCutOffValueBlock2 = "";
+
+      if (state == "enable") {
+        let payload = {
+          state: "enable",
+          cutOffValueBlock1: value1,
+          cutOffValueBlock2: value2
+        };
+        payload = JSON.stringify(payload);
+        this.client.publish("qwazx/np/ipah/table/cutoff/update", payload);
+        this.editDisableDialogCutOff = false;
+        this.dialogCutOff = false;
+        setTimeout(() => {
+          this.client.publish("qwazx/np/ipah/table/cutoff/request", "request");
+        }, 2000);
+      } else if (state == "disable") {
+        let payload = {
+          state: "disable",
+          cutOffValueBlock1: "",
+          cutOffValueBlock2: ""
+        };
+        payload = JSON.stringify(payload);
+        this.editDisableDialogCutOff = false;
+        this.dialogCutOff = false;
+        this.client.publish("qwazx/np/ipah/table/cutoff/update", payload);
+        setTimeout(() => {
+          this.client.publish("qwazx/np/ipah/table/cutoff/request", "request");
+        }, 2000);
+      } else {
+        let payload = {
+          state: "enable",
+          cutOffValueBlock1: value1,
+          cutOffValueBlock2: value2
+        };
+        payload = JSON.stringify(payload);
+        this.editDisableDialogCutOff = false;
+        this.dialogCutOff = false;
+        this.client.publish("qwazx/np/ipah/table/cutoff/update", payload);
+        setTimeout(() => {
+          this.client.publish("qwazx/np/ipah/table/cutoff/request", "request");
+        }, 2000);
+      }
+    },
+    masterStop: function () {
+      console.log("stop");
+      this.client.publish("qwazx/np/ipah/c/m/s", "404");
+    },
+    waterBlock: function (block) {
+      console.log(block);
+
+      if (block == 1) {
+        if (this.ipahStatusControllino.WDB1 == 1) {
+          this.client.publish("qwazx/np/ipah/c/d", "D1:19");
+        } else {
+          this.client.publish("qwazx/np/ipah/c/d", "D1:1");
+        }
+      }
+
+      if (block == 2) {
+        if (this.ipahStatusControllino.WDB2 == 1) {
+          this.client.publish("qwazx/np/ipah/c/d", "D1:29");
+        } else {
+          this.client.publish("qwazx/np/ipah/c/d", "D1:2");
+        }
+      }
+
+      if (block == 3) {
+        if (this.ipahStatusControllino.NDB1 == 1) {
+          this.client.publish("qwazx/np/ipah/c/d", "D1:39");
+        } else {
+          this.client.publish("qwazx/np/ipah/c/d", "D1:3");
+        }
+      }
+
+      if (block == 4) {
+        if (this.ipahStatusControllino.NDB2 == 1) {
+          this.client.publish("qwazx/np/ipah/c/d", "D1:49");
+        } else {
+          this.client.publish("qwazx/np/ipah/c/d", "D1:4");
+        }
+      }
+    },
+    ...Object(external_vuex_["mapMutations"])({
       setIpah1ManualFill: "setIpah1ManualFill",
       setIpah1ManualStop: "setIpah1ManualStop",
       setIpah1ManualNutrient: "setIpah1ManualNutrient",
@@ -900,18 +1290,81 @@ var external_vuex_ = __webpack_require__(12);
     },
     nutrient: function () {
       if (!this.duration) {
-        alert("Please select valid duration");
-        return;
-      }
-
-      if (!this.duration.toFixed(2) || this.duration < 0) {
-        alert("Please select valid EC value (eg:1.00)");
+        alert("Please select valid volume EC");
         return;
       }
 
       this.setIpah1ManualNutrientDuration(this.duration.toFixed(2));
       this.setIpah1ManualNutrient(true); // console.log("heree");
+    },
+
+    createConnection() {
+      const {
+        host,
+        port,
+        endpoint,
+        ...options
+      } = this.connection;
+      const connectUrl = `${host}`; // const connectUrl = `wss://${host}:${port}${endpoint}`;
+
+      try {
+        this.client = external_mqtt_default.a.connect(connectUrl, options);
+      } catch (error) {
+        console.log("mqtt.connect error", error);
+      }
+
+      this.client.on("connect", () => {
+        console.log("Connection succeeded!");
+        this.dialog = false;
+        this.client.publish("qwazx/np/ipah/table/cutoff/request", "request");
+        setInterval(() => {
+          this.client.publish("qwazx/np/ipah/table/cutoff/request", "request");
+        }, 6000);
+      });
+      this.client.on("error", error => {
+        console.log("Connection failed", error);
+      });
+      this.client.on("close", () => {
+        this.dialog = true;
+      });
+      this.client.stream.on("error", error => {
+        // This does trigger when the URL is invalid
+        console.error("Connection error:", error);
+        this.dialog = true;
+      });
+      this.client.on("message", (topic, message) => {
+        if (topic === "qwazx/np/ipah/table/cutoff/response") {
+          message = JSON.parse(message);
+          console.log("here", message); // message = message.toString();
+
+          this.cutOffState = message.state;
+          this.cutOffValueBlock1Read = message.cutoffblock1;
+          this.cutOffValueBlock2Read = message.cutoffblock2;
+          console.log("cutoff state", message.state); // let payload = {
+          //   tank: 0,
+          //   EC: message.EC
+          // };
+          // this.getCurrentDataNutrientIpah2(payload);
+        }
+      });
+    },
+
+    doSubscribe() {
+      const {
+        topic,
+        qos
+      } = this.subscription;
+      this.client.subscribe(topic, {
+        qos
+      }, (error, res) => {
+        if (error) {
+          return;
+        }
+
+        this.subscribeSuccess = true;
+      });
     }
+
   },
   components: {
     PageTitle: PageTitle["default"],
@@ -920,6 +1373,13 @@ var external_vuex_ = __webpack_require__(12);
 
   data() {
     return {
+      newCutOffValueBlock1: "",
+      newCutOffValueBlock2: "",
+      editDisableDialogCutOff: false,
+      cutOffValueBlock1: "",
+      cutOffValueBlock2: "",
+      dialogCutOff: false,
+      cutOffState: "",
       activeDevice: "",
       stateDevice: "",
       activeSwitch: "",
@@ -939,15 +1399,55 @@ var external_vuex_ = __webpack_require__(12);
       block: "(SPH)",
       itemsBlock: ["SPH 1", "SPH 2", "All SPH"],
       itemsDuration: ["10", "20", "30"],
-      duration: ""
+      duration: "",
+      connection: {
+        host: this.$auth.$state.user.server_mqtt,
+        port: 8083,
+        endpoint: "/mqtt",
+        clean: true,
+        // Reserved session
+        connectTimeout: 4000,
+        // Time out
+        reconnectPeriod: 4000 // Reconnection interval
+
+      },
+      subscription: {
+        // topic: "geyzer/#",
+        topic: ["np/#", "new/#", "qwazx/np/ipah/#"],
+        qos: 0
+      },
+      receiveNews: "",
+      qosList: [{
+        label: 0,
+        value: 0
+      }, {
+        label: 1,
+        value: 1
+      }, {
+        label: 2,
+        value: 2
+      }],
+      client: {
+        connected: false
+      },
+      subscribeSuccess: false
     };
   },
 
   computed: { ...Object(external_vuex_["mapState"])({
       ipahStatus: state => state.ipahStatus,
-      ipahProcess: state => state.ipahProcess
+      ipahProcess: state => state.ipahProcess,
+      ipahStatusControllino: state => state.ipahStatusControllino
     })
+  },
+
+  async mounted() {
+    // let elHtml = document.getElementsByTagName("html")[0];
+    // elHtml.style.overflowY = null;
+    this.createConnection();
+    this.doSubscribe();
   }
+
 });
 // CONCATENATED MODULE: ./pages/ipahStatus.vue?vue&type=script&lang=js&
  /* harmony default export */ var pages_ipahStatusvue_type_script_lang_js_ = (ipahStatusvue_type_script_lang_js_); 
@@ -970,11 +1470,17 @@ var components_VCard = __webpack_require__(15);
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VCol.js
 var VCol = __webpack_require__(197);
 
+// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VDialog/VDialog.js
+var VDialog = __webpack_require__(183);
+
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VRow.js
 var VRow = __webpack_require__(184);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/transitions/index.js + 2 modules
 var transitions = __webpack_require__(19);
+
+// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VSpacer.js
+var VSpacer = __webpack_require__(185);
 
 // CONCATENATED MODULE: ./pages/ipahStatus.vue
 
@@ -995,7 +1501,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   staticRenderFns,
   false,
   injectStyles,
-  "2f0c7c6f",
+  "15f16f11",
   "4eccb8d3"
   
 )
@@ -1015,7 +1521,11 @@ installComponents_default()(component, {PageTitle: __webpack_require__(191).defa
 
 
 
-installComponents_default()(component, {VBtn: VBtn["a" /* default */],VCard: VCard["a" /* default */],VCardSubtitle: components_VCard["b" /* VCardSubtitle */],VCardTitle: components_VCard["d" /* VCardTitle */],VCol: VCol["a" /* default */],VRow: VRow["a" /* default */],VScrollYTransition: transitions["d" /* VScrollYTransition */]})
+
+
+
+
+installComponents_default()(component, {VBtn: VBtn["a" /* default */],VCard: VCard["a" /* default */],VCardActions: components_VCard["a" /* VCardActions */],VCardSubtitle: components_VCard["b" /* VCardSubtitle */],VCardText: components_VCard["c" /* VCardText */],VCardTitle: components_VCard["d" /* VCardTitle */],VCol: VCol["a" /* default */],VDialog: VDialog["a" /* default */],VRow: VRow["a" /* default */],VScrollYTransition: transitions["d" /* VScrollYTransition */],VSpacer: VSpacer["a" /* default */]})
 
 
 /***/ })

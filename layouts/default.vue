@@ -496,7 +496,7 @@ export default {
         this.dialog = true;
       });
       this.client.on("message", (topic, message) => {
-        if (topic === "new2/nexplex/ipah/sense/block1") {
+        if (topic === "new2/nexplex/ipah/sense/block1/retain") {
           message = JSON.parse(message);
           let payload = {
             station: 0,
@@ -568,7 +568,7 @@ export default {
           // this.addDataIpah1(0);
         }
 
-        if (topic === "new2/nexplex/ipah/sense/block2") {
+        if (topic === "new2/nexplex/ipah/sense/block2/retain") {
           message = JSON.parse(message);
           let payload = {
             station: 0,
@@ -620,7 +620,7 @@ export default {
           }
         }
 
-        if (topic === "new2/nexplex/ipah/sense/block3") {
+        if (topic === "new2/nexplex/ipah/sense/block3/retain") {
           message = JSON.parse(message);
           let payload = {
             station: 0,
@@ -672,7 +672,7 @@ export default {
           }
         }
 
-        if (topic === "new2/nexplex/ipah/sense/block4") {
+        if (topic === "new2/nexplex/ipah/sense/block4/retain") {
           message = JSON.parse(message);
           let payload = {
             station: 0,
@@ -1023,32 +1023,41 @@ export default {
         //   this.countWarningsTkpmIpah(data);
         // }
 
-        if (topic === "qwazx/np/tkpmIpah/s/ec/t1") {
+        if (topic === "qwazx/np/tkpmIpah/s/ec/t1/retain/new") {
           message = JSON.parse(message);
-          if (!message.tid == 342) return;
-          let payload = {
-            tank: 0,
-            EC: message.EC
-          };
-          this.getCurrentDataNutrientIpah2(payload);
+          console.log("h");
+          if (message.tid == 342) {
+            let payload = {
+              tank: 0,
+              EC: message.EC,
+              ts: message.ts
+            };
+            this.getCurrentDataNutrientIpah2(payload);
+          }
         }
-        if (topic === "qwazx/np/tkpmIpah/s/ec/t2") {
+        if (topic === "qwazx/np/tkpmIpah/s/ec/t2/retain/new") {
           message = JSON.parse(message);
-          if (!message.tid == 352) return;
-          let payload = {
-            tank: 1,
-            EC: message.EC
-          };
-          this.getCurrentDataNutrientIpah2(payload);
+          console.log(message);
+          if (message.tid == 352) {
+            let payload = {
+              tank: 1,
+              EC: message.EC,
+              ts: message.ts
+            };
+            this.getCurrentDataNutrientIpah2(payload);
+          }
         }
-        if (topic === "qwazx/np/tkpmIpah/s/ec/t3") {
+        if (topic === "qwazx/np/tkpmIpah/s/ec/t3/retain/new") {
           message = JSON.parse(message);
-          if (!message.tid == 362) return;
-          let payload = {
-            tank: 2,
-            EC: message.EC
-          };
-          this.getCurrentDataNutrientIpah2(payload);
+          // console.log(message);
+          if (message.tid != 362) {
+            let payload = {
+              tank: 2,
+              EC: message.EC,
+              ts: message.ts
+            };
+            this.getCurrentDataNutrientIpah2(payload);
+          }
         }
         // if (topic === "np/s/tkpmIpah/n") {
         //   message = JSON.parse(message);

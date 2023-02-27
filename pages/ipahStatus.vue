@@ -6,7 +6,7 @@
         OPERATION
       </v-card-title>
       <v-row>
-        <v-col col="12" class="col-md-9 pb-0">
+        <v-col col="12" class="col-lg-8 pb-0">
           <Ipah1Status
             sv1="red"
             sv2="green"
@@ -27,7 +27,7 @@
         </v-col>
         <v-col
           cols="12"
-          class="col-md-3 pr-md-10 pt-0"
+          class="col-lg-4 pr-md-10 pt-0"
           style="display:flex;justify-content:center; align-items:center; flex-direction:column"
         >
           <v-card class="elevation-18 rounded-lg px-5 mb-5 ">
@@ -37,6 +37,94 @@
             </v-card-subtitle>
           </v-card>
           <v-card class="elevation-18 rounded-lg px-5 ">
+            <v-card-title style="font-size:1.3rem">
+              MANUAL DRIPPING CONTROL
+            </v-card-title>
+            <v-row>
+              <v-col>
+                <div>
+                  <h4 style="text-align: justify">
+                    Click button bellow to start / stop manual water / nutrient
+                    dripping process or to stop all process. (W - water, N -
+                    nutrient, B - block)
+                  </h4>
+                  <div style="display:flex; justify-content:space-evenly">
+                    <v-btn
+                      :color="
+                        ipahStatusControllino.WDB1 == 1 ? 'success' : 'error'
+                      "
+                      @click="waterBlock(1)"
+                      width="90px"
+                      :disabled="
+                        ipahStatusControllino.NDB1 == 1
+                          ? true
+                          : ipahStatusControllino.NDB2 == 1
+                          ? true
+                          : false
+                      "
+                      >W B-1</v-btn
+                    >
+                    <v-btn
+                      :color="
+                        ipahStatusControllino.WDB2 == 1 ? 'success' : 'error'
+                      "
+                      @click="waterBlock(2)"
+                      width="90px"
+                      :disabled="
+                        ipahStatusControllino.NDB1 == 1
+                          ? true
+                          : ipahStatusControllino.NDB2 == 1
+                          ? true
+                          : false
+                      "
+                      >W B-2</v-btn
+                    >
+                  </div>
+
+                  <div
+                    style="display:flex; justify-content:space-evenly;margin-top:20px"
+                  >
+                    <v-btn
+                      :color="
+                        ipahStatusControllino.NDB1 == 1 ? 'success' : 'error'
+                      "
+                      @click="waterBlock(3)"
+                      width="90px"
+                      :disabled="
+                        ipahStatusControllino.WDB1 == 1
+                          ? true
+                          : ipahStatusControllino.WDB2 == 1
+                          ? true
+                          : false
+                      "
+                      >N B-1</v-btn
+                    >
+                    <v-btn
+                      :color="
+                        ipahStatusControllino.NDB2 == 1 ? 'success' : 'error'
+                      "
+                      @click="waterBlock(4)"
+                      width="90px"
+                      :disabled="
+                        ipahStatusControllino.WDB1 == 1
+                          ? true
+                          : ipahStatusControllino.WDB2 == 1
+                          ? true
+                          : false
+                      "
+                      >N B-2</v-btn
+                    >
+                  </div>
+                  <div
+                    style="padding-top:20px; display:flex;justify-content:center"
+                  >
+                    <v-btn color="error" @click="masterStop" width="190px"
+                      >STOP ALL PROCESS</v-btn
+                    >
+                  </div>
+                </div>
+              </v-col>
+            </v-row>
             <v-card-title style="font-size:1.3rem">
               MANUAL FERTIGATION CONTROL
             </v-card-title>
@@ -64,9 +152,13 @@
                   <h4 style="text-align: justify">
                     Nutrient preparation is done via schedule set by user on
                     schedule panel. It is done on
-                    <span style="font-weight:bold">5.00am on choosen date</span
-                    >. Please fill EC value input ( eg: 1.00 ) and click button
-                    below to start nutrient preparation manually.
+                    <span style="font-weight:bold">3.00am on choosen date</span
+                    >. Please fill
+                    <span style="font-weight:bold">
+                      Volume EC value input ( in litre )</span
+                    >
+                    and click button below to start nutrient preparation
+                    manually.
                   </h4>
                 </div>
 
@@ -83,11 +175,43 @@
                   <input
                     class="long2"
                     type="text"
-                    v-mask="'#.##'"
+                    v-mask="'##.##'"
                     v-model.number="duration"
                   />
                   <v-btn @click="nutrient" class="mt-4 mb-4"
                     >Start Preparation</v-btn
+                  >
+                </div>
+                <v-card-title>
+                  CUT OFF SETTING
+                </v-card-title>
+                <div>
+                  <h4 style="text-align: justify">
+                    Cut off system will stop the dripping process if reach the
+                    maximum amount of humidity on plants. Cut off system setting
+                    can be pre-set wether to enable or disable, and can be set
+                    the value of maximum humidity of soil sensor for each tank.
+                  </h4>
+                </div>
+                <div
+                  style="display:flex; justify-content:center; margin-bottom:20px"
+                >
+                  <v-btn
+                    :color="cutOffState == 'enable' ? 'success' : 'error'"
+                    @click="
+                      cutOffState == 'enable'
+                        ? openEditDisanbleDialogCutOff()
+                        : openDialogCutOff()
+                    "
+                    width="220px"
+                    :disabled="cutOffState == '' ? true : false"
+                    >{{
+                      cutOffState == ""
+                        ? "Waiting from server"
+                        : cutOffState == "disable"
+                        ? "Disable"
+                        : "Enable"
+                    }}</v-btn
                   >
                 </div>
               </v-col>
@@ -120,6 +244,148 @@
         </div>
       </v-card>
     </v-scroll-y-transition>
+    <v-dialog
+      v-model="dialogCutOff"
+      persistent
+      max-width="500px"
+      style="overflow:hidden"
+    >
+      <v-card>
+        <v-card-title class="text-h5">
+          Enable cut off system?
+        </v-card-title>
+        <v-card-text
+          >Please input the maximum value of humidity for each block. If not
+          require for block, please empty the input section for that
+          block.</v-card-text
+        >
+        <v-row>
+          <v-col>
+            <div
+              style="display:flex; height:30px; align-items:center; justify-content:center"
+            >
+              <v-card-subtitle>Block 1</v-card-subtitle>
+              <input
+                class="long2"
+                type="text"
+                v-mask="'##.##'"
+                v-model.number="cutOffValueBlock1"
+              />
+            </div>
+            <div
+              style="display:flex; height:30px; align-items:center; justify-content:center"
+            >
+              <v-card-subtitle>Block 2</v-card-subtitle>
+              <input
+                class="long2"
+                type="text"
+                v-mask="'##.##'"
+                v-model.number="cutOffValueBlock2"
+              />
+            </div>
+          </v-col>
+        </v-row>
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn color="error" variant="text" @click="dialogCutOff = false">
+            Cancel
+          </v-btn>
+          <v-btn
+            color="success"
+            variant="text"
+            @click="
+              updateCutOff('enable', cutOffValueBlock1, cutOffValueBlock2)
+            "
+          >
+            Confirm
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+
+    <v-dialog
+      v-model="editDisableDialogCutOff"
+      persistent
+      max-width="500px"
+      style="overflow:hidden"
+    >
+      <v-card>
+        <v-card-title class="text-h5">
+          Edit value or disable cut off system?
+        </v-card-title>
+        <v-card-text
+          >Please input new maximum value of humidity for each block. If not
+          require for block, please empty the input section for that block.
+          Click disable to disable cut off system.</v-card-text
+        >
+        <v-row>
+          <v-col>
+            <div
+              style="display:flex; height:30px; align-items:center; justify-content:center"
+            >
+              <v-card-subtitle
+                >Block 1 - old value ({{
+                  cutOffValueBlock1Read
+                }})</v-card-subtitle
+              >
+              <input
+                class="long2"
+                type="text"
+                v-mask="'##.##'"
+                v-model.number="newCutOffValueBlock1"
+              />
+            </div>
+            <div
+              style="display:flex; height:30px; align-items:center; justify-content:center"
+            >
+              <v-card-subtitle
+                >Block 2 - old value ({{
+                  cutOffValueBlock2Read
+                }})</v-card-subtitle
+              >
+              <input
+                class="long2"
+                type="text"
+                v-mask="'##.##'"
+                v-model.number="newCutOffValueBlock2"
+              />
+            </div>
+          </v-col>
+        </v-row>
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn
+            color="error"
+            variant="text"
+            @click="editDisableDialogCutOff = false"
+          >
+            Cancel
+          </v-btn>
+          <v-btn
+            color="success"
+            variant="text"
+            @click="
+              updateCutOff(
+                'enableEdit',
+                newCutOffValueBlock1,
+                newCutOffValueBlock2
+              )
+            "
+          >
+            Edit
+          </v-btn>
+          <v-btn
+            color="warning"
+            variant="text"
+            @click="
+              updateCutOff('disable', 'cutOffValueBlock1', 'cutOffValueBlock2')
+            "
+          >
+            Disable
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
   </section>
 </template>
 
@@ -129,10 +395,101 @@ import Ipah1Status from "~/components/Status/Ipah1Status.vue";
 
 import { mapState, mapMutations } from "vuex";
 
+import mqtt from "mqtt";
+
 export default {
   middleware: ["isIpah"],
   layout: "status",
   methods: {
+    openEditDisanbleDialogCutOff: function() {
+      this.editDisableDialogCutOff = true;
+    },
+    openDialogCutOff: function() {
+      this.dialogCutOff = true;
+    },
+    updateCutOff: function(state, value1, value2) {
+      this.cutOffValueBlock1 = "";
+      this.cutOffValueBlock2 = "";
+      this.newCutOffValueBlock1 = "";
+      this.newCutOffValueBlock2 = "";
+      if (state == "enable") {
+        let payload = {
+          state: "enable",
+          cutOffValueBlock1: value1,
+          cutOffValueBlock2: value2
+        };
+
+        payload = JSON.stringify(payload);
+        this.client.publish("qwazx/np/ipah/table/cutoff/update", payload);
+        this.editDisableDialogCutOff = false;
+        this.dialogCutOff = false;
+        setTimeout(() => {
+          this.client.publish("qwazx/np/ipah/table/cutoff/request", "request");
+        }, 2000);
+      } else if (state == "disable") {
+        let payload = {
+          state: "disable",
+          cutOffValueBlock1: "",
+          cutOffValueBlock2: ""
+        };
+        payload = JSON.stringify(payload);
+        this.editDisableDialogCutOff = false;
+        this.dialogCutOff = false;
+        this.client.publish("qwazx/np/ipah/table/cutoff/update", payload);
+        setTimeout(() => {
+          this.client.publish("qwazx/np/ipah/table/cutoff/request", "request");
+        }, 2000);
+      } else {
+        let payload = {
+          state: "enable",
+          cutOffValueBlock1: value1,
+          cutOffValueBlock2: value2
+        };
+        payload = JSON.stringify(payload);
+        this.editDisableDialogCutOff = false;
+        this.dialogCutOff = false;
+        this.client.publish("qwazx/np/ipah/table/cutoff/update", payload);
+        setTimeout(() => {
+          this.client.publish("qwazx/np/ipah/table/cutoff/request", "request");
+        }, 2000);
+      }
+    },
+    masterStop: function() {
+      console.log("stop");
+      this.client.publish("qwazx/np/ipah/c/m/s", "404");
+    },
+    waterBlock: function(block) {
+      console.log(block);
+      if (block == 1) {
+        if (this.ipahStatusControllino.WDB1 == 1) {
+          this.client.publish("qwazx/np/ipah/c/d", "D1:19");
+        } else {
+          this.client.publish("qwazx/np/ipah/c/d", "D1:1");
+        }
+      }
+      if (block == 2) {
+        if (this.ipahStatusControllino.WDB2 == 1) {
+          this.client.publish("qwazx/np/ipah/c/d", "D1:29");
+        } else {
+          this.client.publish("qwazx/np/ipah/c/d", "D1:2");
+        }
+      }
+      if (block == 3) {
+        if (this.ipahStatusControllino.NDB1 == 1) {
+          this.client.publish("qwazx/np/ipah/c/d", "D1:39");
+        } else {
+          this.client.publish("qwazx/np/ipah/c/d", "D1:3");
+        }
+      }
+
+      if (block == 4) {
+        if (this.ipahStatusControllino.NDB2 == 1) {
+          this.client.publish("qwazx/np/ipah/c/d", "D1:49");
+        } else {
+          this.client.publish("qwazx/np/ipah/c/d", "D1:4");
+        }
+      }
+    },
     ...mapMutations({
       setIpah1ManualFill: "setIpah1ManualFill",
       setIpah1ManualStop: "setIpah1ManualStop",
@@ -180,16 +537,67 @@ export default {
     },
     nutrient: function() {
       if (!this.duration) {
-        alert("Please select valid duration");
+        alert("Please select valid volume EC");
         return;
       }
-      if (!this.duration.toFixed(2) || this.duration < 0) {
-        alert("Please select valid EC value (eg:1.00)");
-        return;
-      }
+
       this.setIpah1ManualNutrientDuration(this.duration.toFixed(2));
       this.setIpah1ManualNutrient(true);
       // console.log("heree");
+    },
+    createConnection() {
+      const { host, port, endpoint, ...options } = this.connection;
+      const connectUrl = `${host}`;
+      // const connectUrl = `wss://${host}:${port}${endpoint}`;
+      try {
+        this.client = mqtt.connect(connectUrl, options);
+      } catch (error) {
+        console.log("mqtt.connect error", error);
+      }
+      this.client.on("connect", () => {
+        console.log("Connection succeeded!");
+        this.dialog = false;
+        this.client.publish("qwazx/np/ipah/table/cutoff/request", "request");
+        setInterval(() => {
+          this.client.publish("qwazx/np/ipah/table/cutoff/request", "request");
+        }, 6000);
+      });
+      this.client.on("error", error => {
+        console.log("Connection failed", error);
+      });
+      this.client.on("close", () => {
+        this.dialog = true;
+      });
+      this.client.stream.on("error", error => {
+        // This does trigger when the URL is invalid
+        console.error("Connection error:", error);
+        this.dialog = true;
+      });
+      this.client.on("message", (topic, message) => {
+        if (topic === "qwazx/np/ipah/table/cutoff/response") {
+          message = JSON.parse(message);
+          console.log("here", message);
+          // message = message.toString();
+          this.cutOffState = message.state;
+          this.cutOffValueBlock1Read = message.cutoffblock1;
+          this.cutOffValueBlock2Read = message.cutoffblock2;
+          console.log("cutoff state", message.state);
+          // let payload = {
+          //   tank: 0,
+          //   EC: message.EC
+          // };
+          // this.getCurrentDataNutrientIpah2(payload);
+        }
+      });
+    },
+    doSubscribe() {
+      const { topic, qos } = this.subscription;
+      this.client.subscribe(topic, { qos }, (error, res) => {
+        if (error) {
+          return;
+        }
+        this.subscribeSuccess = true;
+      });
     }
   },
   components: {
@@ -198,6 +606,14 @@ export default {
   },
   data() {
     return {
+      newCutOffValueBlock1: "",
+      newCutOffValueBlock2: "",
+      editDisableDialogCutOff: false,
+      cutOffValueBlock1: "",
+      cutOffValueBlock2: "",
+
+      dialogCutOff: false,
+      cutOffState: "",
       activeDevice: "",
       stateDevice: "",
       activeSwitch: "",
@@ -217,14 +633,44 @@ export default {
       block: "(SPH)",
       itemsBlock: ["SPH 1", "SPH 2", "All SPH"],
       itemsDuration: ["10", "20", "30"],
-      duration: ""
+      duration: "",
+      connection: {
+        host: this.$auth.$state.user.server_mqtt,
+        port: 8083,
+        endpoint: "/mqtt",
+        clean: true, // Reserved session
+        connectTimeout: 4000, // Time out
+        reconnectPeriod: 4000 // Reconnection interval
+      },
+      subscription: {
+        // topic: "geyzer/#",
+        topic: ["np/#", "new/#", "qwazx/np/ipah/#"],
+        qos: 0
+      },
+      receiveNews: "",
+      qosList: [
+        { label: 0, value: 0 },
+        { label: 1, value: 1 },
+        { label: 2, value: 2 }
+      ],
+      client: {
+        connected: false
+      },
+      subscribeSuccess: false
     };
   },
   computed: {
     ...mapState({
       ipahStatus: state => state.ipahStatus,
-      ipahProcess: state => state.ipahProcess
+      ipahProcess: state => state.ipahProcess,
+      ipahStatusControllino: state => state.ipahStatusControllino
     })
+  },
+  async mounted() {
+    // let elHtml = document.getElementsByTagName("html")[0];
+    // elHtml.style.overflowY = null;
+    this.createConnection();
+    this.doSubscribe();
   }
 };
 </script>
