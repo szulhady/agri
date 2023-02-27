@@ -1026,7 +1026,7 @@ export default {
         if (topic === "qwazx/np/tkpmIpah/s/ec/t1/retain/new") {
           message = JSON.parse(message);
           console.log("h");
-          if (message.tid == 342) {
+          if (message.tid == 342 && message.ECVD == 1) {
             let payload = {
               tank: 0,
               EC: message.EC,
@@ -1037,8 +1037,8 @@ export default {
         }
         if (topic === "qwazx/np/tkpmIpah/s/ec/t2/retain/new") {
           message = JSON.parse(message);
-          console.log(message);
-          if (message.tid == 352) {
+          // console.log(message);
+          if (message.tid == 352 && message.ECVD == 1) {
             let payload = {
               tank: 1,
               EC: message.EC,
@@ -1049,8 +1049,8 @@ export default {
         }
         if (topic === "qwazx/np/tkpmIpah/s/ec/t3/retain/new") {
           message = JSON.parse(message);
-          // console.log(message);
-          if (message.tid != 362) {
+          if (message.tid == 362 && message.ECVD == 1) {
+            console.log(message);
             let payload = {
               tank: 2,
               EC: message.EC,

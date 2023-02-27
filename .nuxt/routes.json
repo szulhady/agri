@@ -3,175 +3,150 @@
     "name": "adminDetail",
     "path": "/adminDetail",
     "component": "C:\\\\Users\\\\Sea-Ic\\\\Downloads\\\\agri-main (2)\\\\agri-main\\\\pages\\\\adminDetail.vue",
-    "chunkName": "pages/adminDetail",
-    "_name": "_be403b26"
+    "chunkName": "pages/adminDetail"
   },
   {
     "name": "adminDetailIpah1",
     "path": "/adminDetailIpah1",
     "component": "C:\\\\Users\\\\Sea-Ic\\\\Downloads\\\\agri-main (2)\\\\agri-main\\\\pages\\\\adminDetailIpah1.vue",
-    "chunkName": "pages/adminDetailIpah1",
-    "_name": "_e4cd46b4"
+    "chunkName": "pages/adminDetailIpah1"
   },
   {
     "name": "adminStatus",
     "path": "/adminStatus",
     "component": "C:\\\\Users\\\\Sea-Ic\\\\Downloads\\\\agri-main (2)\\\\agri-main\\\\pages\\\\adminStatus.vue",
-    "chunkName": "pages/adminStatus",
-    "_name": "_25263ce4"
+    "chunkName": "pages/adminStatus"
   },
   {
     "name": "control",
     "path": "/control",
     "component": "C:\\\\Users\\\\Sea-Ic\\\\Downloads\\\\agri-main (2)\\\\agri-main\\\\pages\\\\control.vue",
-    "chunkName": "pages/control",
-    "_name": "_1389196c"
+    "chunkName": "pages/control"
   },
   {
     "name": "current",
     "path": "/current",
     "component": "C:\\\\Users\\\\Sea-Ic\\\\Downloads\\\\agri-main (2)\\\\agri-main\\\\pages\\\\current.vue",
-    "chunkName": "pages/current",
-    "_name": "_ff634534"
+    "chunkName": "pages/current"
   },
   {
     "name": "detail",
     "path": "/detail",
     "component": "C:\\\\Users\\\\Sea-Ic\\\\Downloads\\\\agri-main (2)\\\\agri-main\\\\pages\\\\detail.vue",
-    "chunkName": "pages/detail",
-    "_name": "_02164c18"
+    "chunkName": "pages/detail"
   },
   {
     "name": "general",
     "path": "/general",
     "component": "C:\\\\Users\\\\Sea-Ic\\\\Downloads\\\\agri-main (2)\\\\agri-main\\\\pages\\\\general.vue",
-    "chunkName": "pages/general",
-    "_name": "_de4b4d56"
+    "chunkName": "pages/general"
   },
   {
     "name": "inspire",
     "path": "/inspire",
     "component": "C:\\\\Users\\\\Sea-Ic\\\\Downloads\\\\agri-main (2)\\\\agri-main\\\\pages\\\\inspire.vue",
-    "chunkName": "pages/inspire",
-    "_name": "_24790b72"
+    "chunkName": "pages/inspire"
   },
   {
     "name": "ipah2Status",
     "path": "/ipah2Status",
     "component": "C:\\\\Users\\\\Sea-Ic\\\\Downloads\\\\agri-main (2)\\\\agri-main\\\\pages\\\\ipah2Status.vue",
-    "chunkName": "pages/ipah2Status",
-    "_name": "_373dce63"
+    "chunkName": "pages/ipah2Status"
   },
   {
     "name": "ipahStatus",
     "path": "/ipahStatus",
     "component": "C:\\\\Users\\\\Sea-Ic\\\\Downloads\\\\agri-main (2)\\\\agri-main\\\\pages\\\\ipahStatus.vue",
-    "chunkName": "pages/ipahStatus",
-    "_name": "_7a15c9c3"
+    "chunkName": "pages/ipahStatus"
   },
   {
     "name": "kongPoStatus",
     "path": "/kongPoStatus",
     "component": "C:\\\\Users\\\\Sea-Ic\\\\Downloads\\\\agri-main (2)\\\\agri-main\\\\pages\\\\kongPoStatus.vue",
-    "chunkName": "pages/kongPoStatus",
-    "_name": "_736edef1"
+    "chunkName": "pages/kongPoStatus"
   },
   {
     "name": "login",
     "path": "/login",
     "component": "C:\\\\Users\\\\Sea-Ic\\\\Downloads\\\\agri-main (2)\\\\agri-main\\\\pages\\\\login.vue",
-    "chunkName": "pages/login",
-    "_name": "_7a628896"
+    "chunkName": "pages/login"
   },
   {
     "name": "overview-admin",
     "path": "/overview-admin",
     "component": "C:\\\\Users\\\\Sea-Ic\\\\Downloads\\\\agri-main (2)\\\\agri-main\\\\pages\\\\overview-admin.vue",
-    "chunkName": "pages/overview-admin",
-    "_name": "_6236679e"
+    "chunkName": "pages/overview-admin"
   },
   {
     "name": "register",
     "path": "/register",
     "component": "C:\\\\Users\\\\Sea-Ic\\\\Downloads\\\\agri-main (2)\\\\agri-main\\\\pages\\\\register.vue",
-    "chunkName": "pages/register",
-    "_name": "_62747ef4"
+    "chunkName": "pages/register"
   },
   {
     "name": "scheduleIpah1",
     "path": "/scheduleIpah1",
     "component": "C:\\\\Users\\\\Sea-Ic\\\\Downloads\\\\agri-main (2)\\\\agri-main\\\\pages\\\\scheduleIpah1.vue",
-    "chunkName": "pages/scheduleIpah1",
-    "_name": "_5dcc34b9"
+    "chunkName": "pages/scheduleIpah1"
   },
   {
     "name": "scheduleIpah2",
     "path": "/scheduleIpah2",
     "component": "C:\\\\Users\\\\Sea-Ic\\\\Downloads\\\\agri-main (2)\\\\agri-main\\\\pages\\\\scheduleIpah2.vue",
-    "chunkName": "pages/scheduleIpah2",
-    "_name": "_5dda4c3a"
+    "chunkName": "pages/scheduleIpah2"
   },
   {
     "name": "scheduleKongPo",
     "path": "/scheduleKongPo",
     "component": "C:\\\\Users\\\\Sea-Ic\\\\Downloads\\\\agri-main (2)\\\\agri-main\\\\pages\\\\scheduleKongPo.vue",
-    "chunkName": "pages/scheduleKongPo",
-    "_name": "_0c293fd4"
+    "chunkName": "pages/scheduleKongPo"
   },
   {
     "name": "scheduleTkpmPagoh",
     "path": "/scheduleTkpmPagoh",
     "component": "C:\\\\Users\\\\Sea-Ic\\\\Downloads\\\\agri-main (2)\\\\agri-main\\\\pages\\\\scheduleTkpmPagoh.vue",
-    "chunkName": "pages/scheduleTkpmPagoh",
-    "_name": "_cd288c1e"
+    "chunkName": "pages/scheduleTkpmPagoh"
   },
   {
     "name": "tkpmPagohStatus",
     "path": "/tkpmPagohStatus",
     "component": "C:\\\\Users\\\\Sea-Ic\\\\Downloads\\\\agri-main (2)\\\\agri-main\\\\pages\\\\tkpmPagohStatus.vue",
-    "chunkName": "pages/tkpmPagohStatus",
-    "_name": "_6ffdb35a"
+    "chunkName": "pages/tkpmPagohStatus"
   },
   {
     "name": "trendsIpah1",
     "path": "/trendsIpah1",
     "component": "C:\\\\Users\\\\Sea-Ic\\\\Downloads\\\\agri-main (2)\\\\agri-main\\\\pages\\\\trendsIpah1.vue",
-    "chunkName": "pages/trendsIpah1",
-    "_name": "_f57cfe0c"
+    "chunkName": "pages/trendsIpah1"
   },
   {
     "name": "trendsIpah2",
     "path": "/trendsIpah2",
     "component": "C:\\\\Users\\\\Sea-Ic\\\\Downloads\\\\agri-main (2)\\\\agri-main\\\\pages\\\\trendsIpah2.vue",
-    "chunkName": "pages/trendsIpah2",
-    "_name": "_f560cf0a"
+    "chunkName": "pages/trendsIpah2"
   },
   {
     "name": "trendsKongPo",
     "path": "/trendsKongPo",
     "component": "C:\\\\Users\\\\Sea-Ic\\\\Downloads\\\\agri-main (2)\\\\agri-main\\\\pages\\\\trendsKongPo.vue",
-    "chunkName": "pages/trendsKongPo",
-    "_name": "_7dc0c816"
+    "chunkName": "pages/trendsKongPo"
   },
   {
     "name": "trendsTkpmPagoh",
     "path": "/trendsTkpmPagoh",
     "component": "C:\\\\Users\\\\Sea-Ic\\\\Downloads\\\\agri-main (2)\\\\agri-main\\\\pages\\\\trendsTkpmPagoh.vue",
-    "chunkName": "pages/trendsTkpmPagoh",
-    "_name": "_30eefdb2"
+    "chunkName": "pages/trendsTkpmPagoh"
   },
   {
     "name": "user",
     "path": "/user",
     "component": "C:\\\\Users\\\\Sea-Ic\\\\Downloads\\\\agri-main (2)\\\\agri-main\\\\pages\\\\user.vue",
-    "chunkName": "pages/user",
-    "_name": "_850071a4"
+    "chunkName": "pages/user"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\Sea-Ic\\\\Downloads\\\\agri-main (2)\\\\agri-main\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_9e8a3502"
+    "chunkName": "pages/index"
   }
 ]
